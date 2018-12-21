@@ -7,16 +7,16 @@
         {{ range sort .Paginator.Pages }}
         <article class="" style="margin-bottom: 30px;">
           <h3 class="news-item__title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-          <p class="news-item__date">{{ .Date.Format "January 2, 2006" }} {{ if .Params.author }}<span>by {{ .Params.author }}</span>{{ end }}</p>
-          {{ if .Params.tags }}
+          <p class="news-item__date">{{ if .Params.author }}<span>by {{ .Params.author }}</span>{{ end }} | {{ .Date.Format "January 2, 2006" }} | Tags Here</p>
+          <!-- {{ if .Params.tags }}
           {{ partial "tags" .Params.tags }}
-          {{ end }}
+          {{ end }} -->
           <div class="news-item__content">
-            {{ .Summary | plainify | safeHTML }}
-            <!-- {{ if .Truncated }}
+            {{ .Summary | plainify | safeHTML | truncate 70 }}
+            {{ if .Truncated }}
             <br>
-            <a class="news-item__link" href="{{ .Permalink }}">Read More</a>
-            {{ end }} -->
+            <a class="news-item__link" href="{{ .Permalink }}" style="color: #00A98F; margin-top: 10px; display: inline-block;">Read More</a>
+            {{ end }}
           </div>
         </article>
         {{ end }}

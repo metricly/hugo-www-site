@@ -1,12 +1,36 @@
 <head>
-     <meta charset="UTF-8">
-     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-     {{ if .Params.nofollow }}
-     <meta name="robots" content="noindex" />
-     {{ end }}
-     <title>{{ .Title }}</title>
-     {{ template "_internal/opengraph.html" . }}
-     {{ partial "headers/scripts.html" . }}
-    <link rel="stylesheet" id="child-style-css" href="https://www.metricly.com/wp-content/themes/Your-Generated-Divi-child-theme-template-by-DiviCake/styles.css" type="text/css" media="all">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  {{ if .Params.nofollow }}
+  <meta name="robots" content="noindex" />
+  {{ end }}
+  <title>{{ .Title }}</title>
+  {{ template "_internal/opengraph.html" . }}
+  {{ partial "headers/scripts.html" . }}
+  <link rel="stylesheet" id="child-style-css" href="https://www.metricly.com/wp-content/themes/Your-Generated-Divi-child-theme-template-by-DiviCake/styles.css" type="text/css" media="all">
+  <style>
+    .post-content h4 {
+      padding-top: 30px;
+      padding-bottom: 20px;
+      color: #34587A;
+      font-size: 30px;
+      font-weight: 300;
+      line-height: 1.3em;
+    }
+    .post-content p {
+      color: #58595b;
+      line-height: 35px;
+      font-size: 17px;
+      padding-bottom: 2em;
+    }
+    .post-content a {
+      color: #34587a;
+      font-weight: 600;
+    }
+    .post-content ul {
+      margin-left: 30px;
+      list-style-type: disc;
+    }
+  </style>
 </head>
