@@ -1,8 +1,27 @@
 <html>
 {{ partial "headers/head.html" . }}
 <body>
-     {{ partial "headers/dark.html" . }}
-     {{.Content}}
-     {{ partial "footer" . }}
+  {{ partial "headers/dark.html" . }}
+  <section class="section">
+    <div class="container" style="max-width: 1200px;">
+      <div class="post-wrapper">
+        <div class="post-header">
+          <h1 class="post-header__title title-1">{{ .Title }}</h1>
+          <p class="post-header__date text-muted">{{ .Date.Format "January 2, 2006" }} {{ if .Params.author }}<span>by {{ .Params.author }}</span>{{ end }}</p>
+          <p>{{ .ReadingTime }} minutes read</p>
+          <!-- {{ if .Params.tags }}
+          {{ partial "tags" .Params.tags }}
+          {{ end }} -->
+          {{ if .Params.image }}
+          <img src="{{ .Params.image | absURL }}" class="img-responsive post-header__image" alt="news-iamge">
+          {{ end }}
+        </div>
+        <div class="post-content">
+          {{ .Content }}
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ partial "footer" . }}
 </body>
 </html>

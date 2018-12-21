@@ -1,8 +1,27 @@
 <html>
 {{ partial "headers/head.html" . }}
 <body>
-     {{ partial "headers/dark.html" . }}
-     {{.Content}}
-     {{ partial "footer" . }}
+    {{ partial "headers/dark.html" . }}
+    <section class="section" style="margin-top: 100px;">
+      <div class="container" style="max-width: 1200px; margin: 0 auto;">
+        {{ range sort .Paginator.Pages }}
+        <article class="" style="margin-bottom: 30px;">
+          <h3 class="news-item__title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+          <p class="news-item__date">{{ .Date.Format "January 2, 2006" }} {{ if .Params.author }}<span>by {{ .Params.author }}</span>{{ end }}</p>
+          {{ if .Params.tags }}
+          {{ partial "tags" .Params.tags }}
+          {{ end }}
+          <div class="news-item__content">
+            {{ .Summary | plainify | safeHTML }}
+            <!-- {{ if .Truncated }}
+            <br>
+            <a class="news-item__link" href="{{ .Permalink }}">Read More</a>
+            {{ end }} -->
+          </div>
+        </article>
+        {{ end }}
+      </div>
+    </section>
+    {{ partial "footer" . }}
 </body>
 </html>
