@@ -2,6 +2,7 @@
 author = "Mike Mackrory"
 date = "2018-11-05T13:44:00+00:00"
 title = "AWS Lambda Cost—Your Guide to Understand, Calculate, and Optimize"
+tags = ["Cloud Cost Management"]
 #url = "/aws-lambda-cost/"
 +++
 

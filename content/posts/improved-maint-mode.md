@@ -2,6 +2,7 @@
 author = "Lawrence Lane"
 date = "2018-09-17T13:44:00+00:00"
 title = "Improved Maintenance Mode"
+tags = ["Product Updates"]
 #url = "/improved-maint-mode/"
 +++
 
