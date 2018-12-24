@@ -7,12 +7,22 @@
         {{ range sort .Paginator.Pages }}
         <article class="" style="margin-bottom: 30px;">
           <h3 class="news-item__title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
-          <p class="news-item__date">{{ if .Params.author }}<span>by {{ .Params.author }}</span>{{ end }} | {{ .Date.Format "January 2, 2006" }} | </p>
-          {{ if .Params.tags }}
-          {{ partial "tags" .Params.tags }}
+          <p class="news-item__date">
+            {{ if .Params.author }}<span>by {{ .Params.author }}</span>{{ end }} | <span>{{ .Date.Format "January 2, 2006" }}</span>
+            <!-- https://discourse.gohugo.io/t/howto-delimiter-separated-tags/146 -->
+            {{ if .Params.tags }}
+            | <span class="news-tag">
+            {{ range $i, $e := .Params.tags }}
+            {{ if $i }}, {{ end }}
+            <a class="news-tag__link" href="{{ "/tags/" | relURL }}{{ . | urlize }}">{{ . }}</a>
+            {{ end }}
+            </span>
+            {{ end }}
+            <!-- {{ if .Params.tags }}
+            {{ partial "tags" .Params.tags }}
+            {{ end }} -->
+          </p>
 
-          <!-- {{ range $i, $e := .Params.tags }}{{ if $i }}, {{ end }}{{ $e }}{{ end }} -->
-          {{ end }}
           <div class="news-item__content">
             {{ .Summary | plainify | safeHTML | truncate 70 }}
             {{ if .Truncated }}

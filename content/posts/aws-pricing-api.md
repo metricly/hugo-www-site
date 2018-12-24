@@ -23,6 +23,7 @@ Skip to section:
 - [Using the Report to Optimize Costs and Performance](https://www.metricly.com/aws-pricing-api/#using)
 - [The Metricly EC2 Recommendation Report](https://www.metricly.com/aws-pricing-api/#recommendation)
 
+<br/>
 In this article, we’ll first explain how to use the service index, which you can download in JSON format from the following link: https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/index.json (approx. 7 KB).
 
 Second, we’ll trace down to the EC2 SKU report, which lists each possible configuration of EC2 instance available. If you’re a data geek, you’re in for an exciting ride. And if you’re just an AWS enthusiast, I think you’ll find yourself amazed and overwhelmed at the abundance of options and data available within the report.
@@ -44,6 +45,7 @@ I’ll share the specific steps I used to locate the EC2 SKU report so you can f
 },
 ```
 
+<br/>
 The two properties we’re specifically interested in are the *versionIndexUrl* and the *currentVersionUrl*.
 
 *VersionIndexUrl* provides us with the URL which returns all of the pricing versions for this offering. Because pricing can change over time, this file can direct us to the specific pricing data which was in place during a particular time range. If we needed to know the pricing policy in place for a specific EC2 configuration on January 15, 2018, we could use the date to identify the policy within the file downloaded from the link below.
@@ -61,6 +63,7 @@ https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonEC2/index.json (ap
 },
 ```
 
+<br/>
 Once we know the active version of the pricing policy for the date in question, we can download it, and find the information we need. We’ll talk about that information next.Figure 2. Identifying EC2 Pricing Information for a Specific Date
 
 *CurrentVersionUrl* will give us the current pricing policy being used. Pricing information is provided at a SKU level. The stock keeping unit (SKU) represents a specific service with a unique configuration that is available in a particular region. The pricing policy lists all of the available SKUs with their configurations. Each SKU is also mapped to various pricing policies, which determine the price of the service based on how the service is purchased, when payment is made, and the terms of any associated contract.
@@ -78,6 +81,7 @@ The file I downloaded had over 10 million lines of data. Some text editors can h
 - Exporting the data into a searchable data source.
 - Changing the extension of the download URL from *.json* to *.csv* and opening the file with a product like Microsoft Excel.
 
+<br/>
 Using the search feature of my editor, I was able to find the t2.medium I was interested in. This was in the first section of the file in the **_Products_** object.
 
 **Object Describing a t2.medium EC2 Instance running Suse Linux in the US West 2 Region**
@@ -107,14 +111,14 @@ Using the search feature of my editor, I was able to find the t2.medium I was in
     "operation" : "RunInstances:000g",
     "capacitystatus" : "Used",
     "ecu" : "Variable",
-    "normalizationSizeFactor" : "2,
+    "normalizationSizeFactor" : "2",
     "preInstalledSw" : "NA",
     "processorFeatures" : "Intel AVX; Intel Turbo",
     "servicename" : "Amazon Elastic Compute Cloud"
   }
 },
 ```
-
+<br/>
 Before we move on, let’s look at the information available and consider a more complex use case where this could be useful. We’re able to see the number of virtual CPUs available and the type of processor being used. Perhaps if processing power is the primary driver for us in selecting this instance type, we could run analysis to determine if there are more cost effective instance types with this same processor configuration. We might also filter those results based on whether the instances are considered **_Current generation_** or if they have at least **_Low to Moderate_** network performance. At this point, custom computer logic might well be more efficient than research on the AWS website, especially if you plan to conduct the analysis regularly.Figure 3. Object Describing a t2.medium EC2 Instance running Suse Linux in the US West 2 Region.
 
 Returning to our example, the most valuable piece of information for us to determine price is the SKU. **KPFD5NH6DG25VSCB** is used to uniquely identify this configuration. We can now search within the **_Terms_** object in the file to identify pricing plans associated with this SKU. I found 11 distinct offers in the terms object which included On Demand, Reserved Instances, Prepaid, Partial Prepaid, 3-Year Contracts, and various combinations of those options.
