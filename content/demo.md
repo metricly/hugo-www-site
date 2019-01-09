@@ -4,7 +4,7 @@ description = "here is the new description"
 featured_image = ""
 header_type = "light"
 title = "Demo"
-
+layout = "page"
 +++
 <div class="demo_head">
    <div class="grid-container -thin">

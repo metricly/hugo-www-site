@@ -4,10 +4,13 @@
 name = "GiraffeAcademy Theme"
 license = "MIT"
 description = "A theme used in the Giraffe Academy Hugo course"
-tags = []
+#tags = []
 features = []
 min_version = "0.25.1"
 
 [author]
   name = "Mike Dane"
   homepage = "http://www.giraffeacademy.com"
+
+[taxonomies]
+  tag = "tags"

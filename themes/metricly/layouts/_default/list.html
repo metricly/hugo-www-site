@@ -1,8 +1,39 @@
 <html>
 {{ partial "headers/head.html" . }}
 <body>
-     {{ partial "headers/dark.html" . }}
-     {{.Content}}
-     {{ partial "footer" . }}
+    {{ partial "headers/dark.html" . }}
+    <section class="section" style="margin-top: 100px;">
+      <div class="container" style="max-width: 1200px; margin: 0 auto;">
+        {{ range sort .Paginator.Pages }}
+        <article class="" style="margin-bottom: 30px;">
+          <h3 class="news-item__title"><a href="{{ .Permalink }}">{{ .Title }}</a></h3>
+          <p class="news-item__date">
+            {{ if .Params.author }}<span>by {{ .Params.author }}</span>{{ end }} | <span>{{ .Date.Format "January 2, 2006" }}</span>
+            <!-- https://discourse.gohugo.io/t/howto-delimiter-separated-tags/146 -->
+            {{ if .Params.tags }}
+            | <span class="news-tag">
+            {{ range $i, $e := .Params.tags }}
+            {{ if $i }}, {{ end }}
+            <a class="news-tag__link" href="{{ "/tags/" | relURL }}{{ . | urlize }}">{{ . }}</a>
+            {{ end }}
+            </span>
+            {{ end }}
+            <!-- {{ if .Params.tags }}
+            {{ partial "tags" .Params.tags }}
+            {{ end }} -->
+          </p>
+
+          <div class="news-item__content">
+            {{ .Summary | plainify | safeHTML | truncate 70 }}
+            {{ if .Truncated }}
+            <br>
+            <a class="news-item__link" href="{{ .Permalink }}" style="color: #00A98F; margin-top: 10px; display: inline-block;">Read More</a>
+            {{ end }}
+          </div>
+        </article>
+        {{ end }}
+      </div>
+    </section>
+    {{ partial "footer" . }}
 </body>
 </html>

@@ -2,6 +2,7 @@
 title: "Blog"
 date: 2018-12-10T08:42:59-05:00
 draft: false
+layout: "page"
 ---
 <link rel="stylesheet" href="https://www.metricly.com/wp-content/themes/Your-Generated-Divi-child-theme-template-by-DiviCake/style.css?ver=1.0" type="text/css" media="all">
 <article id="post-1565" class="post-1565 page type-page status-publish hentry wpautop">
