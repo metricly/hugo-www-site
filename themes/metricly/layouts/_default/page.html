@@ -1,8 +1,9 @@
+
 <html>
 {{ partial "headers/head.html" . }}
-<body>
-  {{ partial "headers/dark.html" . }}
-  {{.Content}}
-  {{ partial "footer" . }}
+<body{{ if .Params.body_class }} class="{{ .Params.body_class }}"{{ end }}>
+{{ partial "headers/header.html" . }}
+{{.Content}}
+{{ partial "footer.html" . }}
 </body>
 </html>

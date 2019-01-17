@@ -2,7 +2,9 @@
 title: "Home"
 draft: false
 layout: "page"
+body_class: ""
 ---
-# This is h1
-## This is h2
-### This is h3
+
+Current links
+[Demo Page](/demo/)
+[Pricing Page](/pricing/)
