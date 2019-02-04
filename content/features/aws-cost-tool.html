@@ -1,0 +1,246 @@
++++
+description = "here is the new description"
+title = "AWS Cost Tool"
+layout = "page"
+url = "/aws-cost-tool/"
++++
+<style>
+[features="total-cost-dashboard"] h4:before {
+	content: url(/wp-content/uploads/assets/icons/dashboard.svg);
+}
+[features="aws-services-cost"] h4:before {
+	content: url(/wp-content/uploads/assets/icons/pie-chart.svg);
+}
+[features="ec2-recommendation"] h4:before {
+	content: url(/wp-content/uploads/assets/icons/ec2-sizing.svg);
+}
+[features="boxplot-report"] h4:before {
+	content: url(/wp-content/uploads/assets/icons/boxplot-report.svg);
+}
+
+.aws-head .row:before {
+    content: "";
+    position: absolute;
+    left: 100px;
+    background-image: url(https://www.metricly.com/wp-content/uploads/assets/icons/test-hero.png);
+    width: 300px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+.aws-head .row:after {
+    content: "";
+    position: absolute;
+    right: 100px;
+    background-image: url(https://www.metricly.com/wp-content/uploads/assets/icons/test-right.png);
+    width: 300px;
+    height: 300px;
+    background-repeat: no-repeat;
+    background-size: contain;
+}
+@media only screen and (max-width: 1450px) {
+  .aws-head .row:after {
+    right: 0px;
+  }
+.aws-head .row:before {
+    left: 0px;
+  }
+}
+@media only screen and (max-width: 1200px) {
+  .aws-head .row:after, .aws-head .row:before {
+    height: 200px;
+	width: 200px;
+  }
+}
+
+@media only screen and (max-width: 680px) {
+  .aws-head .row:after, .aws-head .row:before {
+    display:  none;
+  }
+}
+
+.devops-join {
+    padding: 110px 0 86px;
+    background: #f9fbfc !important;
+}
+</style>
+
+<main class="aws">
+      <section class="aws-head">
+        <div class="grid-container -thin">
+          <div class="row">
+            <h1>AWS Cost Features</h1>
+            <h3>The Ultimate AWS Cost Management Tool is Here</h3>
+            <form action="/signup" method="GET" _lpchecked="1">
+              <input type="email" id="email" name="email" placeholder="Work Email">
+              <button type="submit" value="Submit" class="btn-hover">Sign Up Free</button>
+            </form>
+            <div class="or">or</div><a class="request-demo" href="/demo/?utm_source=aws-cost-tool">Request a Demo</a><a class="scroll-down" href="#can" data-scroll=""> <img src="/wp-content/uploads/assets/aws/icons/arrow-blue.svg" alt="arrow"></a>
+          </div>
+        </div>
+      </section>
+      <section class="can-exspect" id="can">
+        <div class="grid-container -thin">
+          <div class="row">
+            <div class="can-exspect_item"><img src="/wp-content/uploads/assets/aws/img/img-1.png" alt="cloud">
+              <h4>Lower Cloud Cost</h4>
+              <p class="desc">Users find an average of 32% savings from wasted spend</p>
+            </div>
+            <div class="can-exspect_item"><img src="/wp-content/uploads/assets/aws/img/img-2.png" alt="billing">
+              <h4>No Billing Surprises</h4>
+              <p class="desc">Catch a sudden rise on spend before it becomes problematic</p>
+            </div>
+            <div class="can-exspect_item"><img src="/wp-content/uploads/assets/aws/img/img-3.png" alt="optimized">
+              <h4>Optimized resources</h4>
+              <p class="desc">Analyze AWS performance, capacity, and cost in one view</p>
+            </div>
+          </div>
+        </div>
+      </section>
+	      <section class="aws-billing section tabs-section" id="start">
+        <div class="grid-container -thin">
+          <div class="title-section">
+            <h2>Bill Analysis</h2>
+            <h3>End the Complication of AWS Billing</h3>
+          </div>
+		<div class="row">
+            <div class="tabs-block">
+              <ul class="tabs-list">
+                <li features="total-cost-dashboard" class="active" data-id="1">
+                  <h4>Total Cost Dashboard</h4>
+                  <p class="desc">When using the AWS services cost report, you can easily see all of your costs at a glance with 4 dashboard widgets.</p>
+                </li>
+                <li features="aws-services-cost" data-id="2">
+                  <h4>AWS Services Cost</h4>
+                  <p class="desc">A full breakdown of your AWS Services, sortable by: Service, Total Cost, Comparison Period Cost, Delta, and Delta %.</p>
+                </li>
+              </ul>
+            </div>
+            <div class="image-block"><img class="bg" src="/wp-content/uploads/assets/aws/img/shape-img.svg">
+              <div class="image-block_item active" data-id="1"><img src="/wp-content/uploads/assets/screenshots/service-cost-dashboard.png" alt="aws"></div>
+              <div class="image-block_item" data-id="2"><img src="/wp-content/uploads/assets/screenshots/aws-services-report.png" alt="img"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+<section class="aws-billing section tabs-section">
+<div class="grid-container -thin">
+<div class="title-section">
+<h2>Right-Sizing</h2>
+<h3>Find The Perfect EC2 For Any Scenario</h3>
+<p></p></div>
+<div class="row reverse">
+<div class="tabs-block">
+<ul class="tabs-list">
+<li features="ec2-recommendation" class="active" data-id="1">
+<h4>EC2 Recommendation</h4>
+<p class="desc">We analyze EC2s resource utilization (ex. CPU, memory) to give recommendations for right-sizing your instances.</p>
+</li>
+<li features="boxplot-report" data-id="2">
+<h4>Utilization Box-plot</h4>
+<p class="desc">Visualize utilization of AWS elements, making it easy to identify where your environment is over- or under-provisioned.</p>
+</li>
+</ul></div>
+<div class="image-block"><img class="bg" src="https://www.metricly.com/wp-content/uploads/assets/aws/img/shape-img.svg"><p></p>
+<div class="image-block_item active" data-id="1"><img src="/wp-content/uploads/assets/screenshots/ec2-reccomendation.png" alt="aws"></div>
+<div class="image-block_item" data-id="2"><img src="/wp-content/uploads/assets/screenshots/boxplot-report.png" alt="aws"></div>
+<p></p></div>
+<p></p></div>
+<p></p></div>
+</section>
+<div class="stories">
+    <div class="grid-container -thin">
+		<div class="stories_subwrap">
+		<div class="stories_story -with-review">
+                <div class="stories_story_main">
+                    <div class="stories_story_main_img"><img src="https://www.metricly.com/wp-content/uploads/assets/stories/icons/lines.svg" alt=""></div>
+                        <p class="stories_story_main_title">“Great AWS cost saving features and performance monitoring capabilities”</p>
+                        <ul class="stories_story_review_score">
+                            <li class="stories_story_review_score_item"><span class="stories_story_review_score_item_label">Ease of Use</span>
+                                <div class="stories_story_review_score_item_stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            </li>
+                            <li class="stories_story_review_score_item"><span class="stories_story_review_score_item_label">Features &amp; Functionality</span>
+                                <div class="stories_story_review_score_item_stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fal fa-star"></i></div>
+                            </li>
+                            <li class="stories_story_review_score_item"><span class="stories_story_review_score_item_label">Customer Support</span>
+                                <div class="stories_story_review_score_item_stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            </li>
+                            <li class="stories_story_review_score_item"><span class="stories_story_review_score_item_label">Value for Money</span>
+                                <div class="stories_story_review_score_item_stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+                            </li>
+                        </ul>
+                        <p class="stories_story_review_summary"><b>James W.</b><br>Product Ops and IT Manager</p>
+                    <div class="stories_story_review">
+                      <div class="stories_story_main_img -review-img"><img src="https://www.metricly.com/wp-content/uploads/assets/stories/icons/lines.svg" alt=""></div>
+                      <p class="stories_story_main_summary">“I love the weekly AWS potential cost saving notifications. We’ve been able to reduce our monthly costs by resizing several EC2 instances. The performance monitoring and alerts have helped us with proactive issue resolution before our customers noticed and performance issues. Customer support is always ready and eager to help with any issues or questions…”</p>
+                      <a class="stories_story_main_link -review-link" target="_blank" href="https://www.capterra.com/p/167977/Metricly/">Read Full Review</a>
+                    </div>
+                </div>
+            </div>
+			<div class="stories_story">
+                <div class="stories_story_main">
+                    <div class="stories_story_main_img"><img src="https://www.metricly.com/wp-content/uploads/2018/10/viewpost.png" alt=""></div>
+                    <h4 class="stories_story_main_title"><b>Viewpost Gets Insights To Cut AWS Cost in Half</b></h4>
+                    <p class="stories_story_main_summary"><b>Result:</b> Clarity of AWS costs, right-sized EC2 instances, and actionable performance alerting.</p>
+                    <a class="stories_story_main_link" href="https://www.metricly.com/customers/viewpost/">Read Case Study </a>
+                </div>
+                <img class="stories_story_img" src="https://www.metricly.com/wp-content/uploads/2018/10/viewpost-background-1.png" alt="">
+            </div>
+		</div>
+    </div>
+</div>
+      <section class="right-sizing section" id="three">
+        <div class="grid-container -thin">
+          <div class="title-section">
+            <h2>More Features...</h2>
+          </div>
+          <div class="row">
+            <div class="image-block"><img class="bg" src="/wp-content/uploads/assets/aws/img/shape-img.svg" alt="bg">
+              <div class="image-block_item"><img src="/wp-content/uploads/assets/screenshots/reserved-instances-report.svg" alt="img"></div>
+            </div>
+            <div class="content-block">
+              <div class="content-block_wrapper">
+                <h3>Plan Reserved Instances</h3>
+                <h4>We analyze your usage on an hourly basis so you won’t overbuy reservations.</h4>
+                <ul>
+				  <li>Get recommendation for RI purchases.</li>
+                  <li>Visualize historic usage data, with filters, groups and tags.</li>
+                  <li>Hourly usage data used to avoid costly overbuying mistakes.  <a href="/aws-reserved-instances-mistake/?utm_source=aws-cost-tool" style="color: #2FC3AA;">Learn More</a></li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="image-block"><img class="bg" src="/wp-content/uploads/assets/aws/img/shape-img.svg" alt="bg">
+              <div class="image-block_item"><img src="/wp-content/uploads/assets/screenshots/asg-tuning.png" alt="img"></div>
+            </div>
+            <div class="content-block">
+              <div class="content-block_wrapper">
+                <h3>Fine Tune Auto-Scaling-Groups</h3>
+                <h4>Get tuning suggestions to fit your risk tolerance with cost-savings for each “what-if” scenario.</h4>
+                <ul>
+                  <li>See historical ASG instance count with utilization.</li>
+                  <li>Receive hourly web-hooks to trigger changes.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+          <div class="row">
+            <div class="image-block"><img class="bg" src="/wp-content/uploads/assets/aws/img/shape-img.svg" alt="bg">
+              <div class="image-block_item"><img src="/wp-content/uploads/assets/aws/img/img-ec2.jpg" alt="img"></div>
+            </div>
+            <div class="content-block">
+              <div class="content-block_wrapper">
+                <h3>Uncover Idle Resources</h3>
+                <h4>Find unused AWS resources that are costing you money.</h4>
+                <ul>
+                  <li>See EBS volumes attached to a stopped EC2</li>
+                  <li>See EBS volumes not attached to an EC2</li>
+				  <li>Receive an emailed report.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>

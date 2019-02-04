@@ -1,0 +1,46 @@
+
+<html>
+{{ partial "headers/head.html" . }}
+<body{{ if .Params.body_class }} class="{{ .Params.body_class }}"{{ end }}>
+{{ partial "headers/header.html" . }}
+<style>
+  p {
+    padding-bottom: 2em;
+  }
+  .info_hero {
+    background: url(https://www.metricly.com/wp-content/uploads/2016/05/privacy-policy-bg.png);
+    background-size: 100%;
+  }
+  .info_hero-div {
+    padding-top: 150px;
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 100px;
+  }
+  .info_hero-div h1 {
+    color: white;
+    font-size: 35px;
+    font-weight: lighter;
+    margin-bottom: 20px;
+  }
+  .info_section {
+    padding: 80px 0px;
+  }
+  #parent-dir {
+    text-transform: capitalize;
+  }
+</style>
+<section class="info_hero">
+  <div class="grid-container info_hero-div">
+    <h1>{{.Title}}</h1>
+    <a href="/{{.Dir}}" style="color: white;"><i class="fal fa-long-arrow-left" style="margin-right: 10px;"></i>Back to <span id="parent-dir">{{ replace .Dir "/" "" }}</span></a>
+</div>
+</section>
+<section class="info_section">
+  <div class="grid-container -thin">
+    {{.Content}}
+  </div>
+</section>
+{{ partial "footer.html" . }}
+</body>
+</html>
