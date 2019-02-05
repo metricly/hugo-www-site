@@ -1,7 +1,7 @@
 +++
 author = "Mike Mackrory"
 date = "2018-10-16T13:44:00+00:00"
-title = "EC2 Instance Types—6 Things You Need To Know Before Selecting"
+title = "EC2 Instance Types — 6 Things You Need To Know Before Selecting"
 tags = ["Cloud Cost Management", "DevOps"]
 #url = "/ec2-instance-types/"
 +++
