@@ -24,7 +24,7 @@
           </p>
 
           <div class="news-item__content">
-            {{ .Summary | plainify | safeHTML | truncate 70 }}
+            {{ .Summary | plainify | safeHTML | truncate 260 }}
             {{ if .Truncated }}
             <br>
             <a class="news-item__link" href="{{ .Permalink }}" style="color: #00A98F; margin-top: 10px; display: inline-block;">Read More</a>
