@@ -21,10 +21,10 @@ function buildCss() {
                 'Android >= 4',
                 'Opera >= 12']})]))
         .pipe(sourcemaps.write())
-        .pipe(gulp.dest('css/'))
+        .pipe(gulp.dest('../static/css/'))
         .pipe(cleanCss())
         .pipe(rename({suffix: '.min'}))
-        .pipe(gulp.dest('css/'))
+        .pipe(gulp.dest('../static/css/'))
 }
 
 function watcher() {

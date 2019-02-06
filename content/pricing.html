@@ -4,12 +4,12 @@ layout: "page"
 header-light: true
 ---
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-<section class="pricing pt-lg pt-lg-xl pb-md">
+<section class="pricing pt-lg pt-lg-xl pb-md bg-limegreen">
   <div class="container">
     <div class="justify-content-center">
       <h1 class="text-white text-center font-weight-light mb-5">Pick Your Metricly Plan</h1>
     </div>
-    <div class="row py-md py-md-sm">
+    <div class="row">
       <!-- Free Tier -->
       <div class="col-lg-4">
         <div class="card mb-5 mb-lg-0">
@@ -83,8 +83,8 @@ header-light: true
   </div>
 </section>
 <section>
-  <div class="container">
-    <div class="row">
+  <div class="container py-sm py-md-sm">
+    <div class="row pb-3">
       <div class="col-lg-12">
         <h2>Frequently Asked Questions:</h2>
         <p>You've got questions, we've got answers! If you need any help, you can <a href="#">chat with us.</a></p>
@@ -145,11 +145,6 @@ header-light: true
     text-decoration: none;
     color: unset;
   }
-  section.pricing {
-  background: #007bff;
-  background: linear-gradient(to right, var(--blue), #33AEFF);
-}
-
 .pricing .card {
   border: none;
   border-radius: 1rem;
@@ -186,14 +181,6 @@ header-light: true
 
 .pricing .text-muted {
   opacity: 0.7;
-}
-
-.pricing .btn {
-  font-weight: 600;
-      padding: 1rem;
-      opacity: 0.7;
-      transition: all 0.2s;
-  }
 }
 
 /* Hover Effects on Card */
