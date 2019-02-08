@@ -1,0 +1,81 @@
+@import 'custom-variables';
+
+/////custom mixins
+
+
+///custom titles
+
+@mixin h1 {
+    font-weight: 300;
+    font-size: 40px;
+    letter-spacing: 0.04px;
+    line-height: 40px;
+}
+
+@mixin h2 {
+    font-weight: 300;
+    font-size: 30px;
+    letter-spacing: 0.03px;
+    line-height: 30px;
+}
+
+@mixin h3 {
+    font-weight: 600;
+    font-size: 24px;
+    letter-spacing: 0.2px;
+    line-height: 30px;
+}
+
+@mixin h4 {
+    font-weight: 300;
+    font-size: 20px;
+    letter-spacing: 0.2px;
+    line-height: 28px;
+}
+
+////custom text
+
+@mixin text-bold{
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 0.2px;
+    line-height: 22px;
+}
+
+@mixin text-normal{
+    @include text-bold;
+    font-weight: 400;
+}
+
+@mixin text-small {
+    font-size: 14px;
+    letter-spacing: 0.51px;	
+    line-height: 20px;
+    font-weight: 400;
+}
+
+
+////buttons size
+
+@mixin btn-lg{
+    padding: 15px 50px;
+}
+
+@mixin btn-md{
+    padding: 10px 40px;
+}
+
+@mixin btn-colored($color){
+    @include btn-lg();
+    background: $color;
+    color: #fff;
+    border-radius: $border-radius;
+}
+
+@mixin btn-outline($color){
+    @include btn-md();
+    background: #fff;
+    color: $color;
+    border-radius: $border-radius;
+    box-shadow: 0 2px 4px 0 rgba(0,0,0,0.27);
+}
