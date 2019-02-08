@@ -12,16 +12,16 @@ Determining the exact price of an AWS service is a particularly important (and n
 
 Amazon released the API in response to requests from partners and customers for a programmatic way to access AWS pricing information. Consumers can access the pricing index and locate pricing information for specific services. Currently, the index lists over 100 Amazon offerings, each of which contains data that directs the consumer to detailed pricing information for that service.
 
-Before we get started, if your use-case happens to be EC2 rightsizing, I recommend checking out Metricly’s [AWS Sizing Tool](https://www.metricly.com/aws-sizing-tool/) or [skipping](https://www.metricly.com/aws-pricing-api/#recommendation) to the last section of this article. For all others, read on!
+Before we get started, if your use-case happens to be EC2 rightsizing, I recommend checking out Metricly’s [AWS Sizing Tool](/aws-sizing-tool/) or [skipping](/aws-pricing-api/#recommendation) to the last section of this article. For all others, read on!
 
 #### What We’ll Cover
 
 Skip to section:
 
-- [Finding the EC2 SKU Report](https://www.metricly.com/aws-pricing-api/#finding)
-- [Analyzing the Information in the Report](https://www.metricly.com/aws-pricing-api/#analyzing)
-- [Using the Report to Optimize Costs and Performance](https://www.metricly.com/aws-pricing-api/#using)
-- [The Metricly EC2 Recommendation Report](https://www.metricly.com/aws-pricing-api/#recommendation)
+- [Finding the EC2 SKU Report](/aws-pricing-api/#finding)
+- [Analyzing the Information in the Report](/aws-pricing-api/#analyzing)
+- [Using the Report to Optimize Costs and Performance](/aws-pricing-api/#using)
+- [The Metricly EC2 Recommendation Report](/aws-pricing-api/#recommendation)
 
 <br/>
 In this article, we’ll first explain how to use the service index, which you can download in JSON format from the following link: https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/index.json (approx. 7 KB).
@@ -163,6 +163,6 @@ Combining all of this data into a consolidated system and writing the logic and 
 
 #### The Metricly EC2 Recommendation Report
 
-I’ve written about the EC2 Recommendation report before, and you can learn more about it from their [AWS sizing guide](https://www.metricly.com/aws-sizing-tool/). The EC2 Recommendation report combines performance information gathered from your AWS account and the resources you’re using. A control panel allows you to specify which metrics you’d like to optimize for, as well as the level of risk your organization is willing to assume to optimize usage and costs.
+I’ve written about the EC2 Recommendation report before, and you can learn more about it from their [AWS sizing guide](/aws-sizing-tool/). The EC2 Recommendation report combines performance information gathered from your AWS account and the resources you’re using. A control panel allows you to specify which metrics you’d like to optimize for, as well as the level of risk your organization is willing to assume to optimize usage and costs.
 
 Metricly combines this information with the pricing information we’ve been discussing in this article. The result is a report that provides recommendations for the types of instances you should be using for maximum performance and minimized costs. The report can also be run on a regular basis, and will be updated as usage patterns change and your organization’s customer base expands.

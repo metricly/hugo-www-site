@@ -14,7 +14,7 @@ When an organization and its engineers begin their first forays into Amazon’s 
 
 For a quick prototype or a single-instance solution, this may be all that you need to consider, but as your cloud footprint increases and you begin investing in additional EC2 instances, you should consider additional factors which aren’t well known. Your goal should be to support your applications and their growth with an EC2 configuration which can handle the requirements of the application now, and in the future.
 
-In this article, we’re going to look at six of these lesser-known differences between EC2 instance types and discuss why they’re important and how they can impact the performance and cost optimization of your EC2 deployments. Understanding their impact can help you make better-informed decisions when selecting the right instance type for each of your applications or services. [Rightsizing your EC2s](https://www.metricly.com/aws-sizing-tool/) ensures that you maximize the performance of your software while achieving the best value from a budgetary standpoint.
+In this article, we’re going to look at six of these lesser-known differences between EC2 instance types and discuss why they’re important and how they can impact the performance and cost optimization of your EC2 deployments. Understanding their impact can help you make better-informed decisions when selecting the right instance type for each of your applications or services. [Rightsizing your EC2s](/aws-sizing-tool/) ensures that you maximize the performance of your software while achieving the best value from a budgetary standpoint.
 
 
 #### 1. CPU Bursting
@@ -53,7 +53,7 @@ The internal store should not be considered permanent; however, as such, it shou
 
 Storage optimized instances, such as the H1 and D2 instance families include HDD based local storage, which is included in the price of the instance and support higher throughput rate than would be available from EBS volumes attached to the instance. Like the instance store, this storage is included in the cost of the instance. H1 instances can have up to 16TB of local storage and D2 instances include up to 48 TB of HDD-based local storage.
 
-Much like the instance store, this storage only exists for the lifetime of the instance. While it provides for additional, and higher throughput of data, it cannot be detached and associated with a different instance, as can be done with an EBS volume. To learn more, consider reading our article outlining how [EBS burst balance](https://www.metricly.com/ebs-burst-balance-aws/) works.
+Much like the instance store, this storage only exists for the lifetime of the instance. While it provides for additional, and higher throughput of data, it cannot be detached and associated with a different instance, as can be done with an EBS volume. To learn more, consider reading our article outlining how [EBS burst balance](/ebs-burst-balance-aws/) works.
 
 
 #### 4. Minimum Requirements
@@ -82,7 +82,7 @@ Amazon Elastic MapReduce (EMR) is a managed cluster platform that makes it easie
 
 When creating your EMR cluster, you are responsible for determining which instance type to use for the master and slave nodes. Failure to select a supported instance type or an instance type which is unavailable in your chosen region may result in a failed setup process, or the cluster entering an unresponsive state.
 
-You can learn more about AWS EMR through the official EMR documentation, or reading our article on [EMR monitoring](https://www.metricly.com/aws-emr-monitoring/).
+You can learn more about AWS EMR through the official EMR documentation, or reading our article on [EMR monitoring](/aws-emr-monitoring/).
 
 
 #### Conclusion

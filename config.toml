@@ -1,4 +1,4 @@
-baseURL = "https://www.metricly.com"
+baseURL = ""
 languageCode = "en-us"
 title = "Welcome To Metricly"
 theme = "metricly"

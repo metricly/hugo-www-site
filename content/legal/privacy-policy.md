@@ -36,13 +36,13 @@ If you fail to provide certain Personal Information when requested, we may not b
 
 ### Information that we automatically collect
 
-We use technologies such as cookies to store visitors' preferences, record session information, as well as record past activity at the Site (see or Cookie Policy [ ](https://www.metricly.com/legal/cookie-policy)).
+We use technologies such as cookies to store visitors' preferences, record session information, as well as record past activity at the Site (see or Cookie Policy [ ](/legal/cookie-policy)).
 
 ### Information that third-parties provide
 
 We may obtain your Personal Information from the profiles that you maintain on your social media accounts. We may also obtain your Personal Information from third-party established providers who would share such information in compliance with all governing laws and regulations.
 
-We use FullStory.com to collect Personal Information regarding your use of our Site, including pages visited, links clicked, non-sensitive text entered. This information is collected for the purpose of improving our website and online services. You may find in the [ ](https://www.metricly.com/legal/cookie-policy) a link to opt-out of sharing your information with FullStory.com.
+We use FullStory.com to collect Personal Information regarding your use of our Site, including pages visited, links clicked, non-sensitive text entered. This information is collected for the purpose of improving our website and online services. You may find in the [ ](/legal/cookie-policy) a link to opt-out of sharing your information with FullStory.com.
 
 ## Purpose of the processing
 

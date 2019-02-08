@@ -12,10 +12,10 @@ When building a policy that contains multiple metric conditions, users can now u
 - **All**: Policy only fires an alert when all metric conditions are met
 - **Any**: Policy fires an alert when at least one metric condition is met
 
-Note that this Match Conditions feature is only available with metric conditions, and is found in the conditions tab in the [Policy Editor](https://www.metricly.com/support/events/policies/policy-editor-2/).
+Note that this Match Conditions feature is only available with metric conditions, and is found in the conditions tab in the [Policy Editor](/support/events/policies/policy-editor-2/).
 
 
-![alt text](https://www.metricly.com/wp-content/uploads/2018/10/Match-Conditions-on-Policies-2-768x304.png "post-image")
+![alt text](/wp-content/uploads/2018/10/Match-Conditions-on-Policies-2-768x304.png "post-image")
 
 
 **Bundle Policies With Similar Goals**

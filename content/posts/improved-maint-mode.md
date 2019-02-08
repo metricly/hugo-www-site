@@ -10,7 +10,7 @@ In the past, users had to manually end maintenance mode for elements in their in
 
 **Check it out:**
 
-![alt text](https://www.metricly.com/wp-content/uploads/2018/09/blog-maint-mode--768x263.png "post-image")
+![alt text](/wp-content/uploads/2018/09/blog-maint-mode--768x263.png "post-image")
 
 
 **Things to Remember About Maintenance Mode:**
