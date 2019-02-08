@@ -1,0 +1,13 @@
+
+<html>
+{{ partial "headers/head.html" . }}
+<body{{ if .Params.body_class }} class="{{ .Params.body_class }}"{{ end }}>
+{{ partial "headers/header.html" . }}
+<section class="pt-lg pb-md">
+  <div class="grid-container">
+    {{.Content}}
+  </div>
+</section>
+{{ partial "footer.html" . }}
+</body>
+</html>

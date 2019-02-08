@@ -1,21 +1,25 @@
 ---
 title: "Home"
 draft: false
-layout: "page"
+layout: "plain-md"
 body_class: ""
 ---
-<style>.header {display:none;}</style>
-Current links
+Current pages added, please note that WP-content folder has not been moved so many relative links are broken.
 
 
-### [Done: Demo Page](/demo/)
 
-### [AWS Cost Tool](/aws-cost-tool/)
+[Demo Page](/demo/)
 
-### [Pricing Page](/pricing/)
+[AWS Cost Tool](/aws-cost-tool/)
 
-### [About Us](/about-us/)
+[Monitoring](/monitoring/)
 
-### [Legal](/legal/)
+[Premier services](/premier-services/)
 
-### [Pricing Page](/pricing/)
+[Pricing Page](/pricing/)
+
+[About Us (not finished)](/about-us/)
+
+[Legal (not finished)](/legal/) / [Insert here](/legal/), [Insert here](/legal/)
+
+[Pricing Page](/pricing/)
