@@ -9,7 +9,7 @@
   --s-darkblue: #275A7D;
   --s-blue: #1B75BC;
   --s-green: #8DC63F;
-  --white: #fff;	
+  --white: #fff;
 }
 
 .text-green {
@@ -1927,7 +1927,7 @@ input{
 }
 .stories_story_review_score_item_stars {
   color: #34587a;
-  font-size: 13px; 
+  font-size: 13px;
 display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -3040,7 +3040,7 @@ display: -webkit-box;
   cursor: pointer;
   border: none;
   height: 50px;
-  line-height: 50px;	
+  line-height: 50px;
   width: 196px;
   border-radius: 4px;
   background-color: #1fb59d;
@@ -3325,7 +3325,7 @@ display: -webkit-box;
   }
   .use-cases_head_content_btns > a {
     height: 50px;
-	line-height: 50px;   
+	line-height: 50px;
     width: 162px;
   }
   .use-cases_head_content_btns > a:last-child {
@@ -3451,7 +3451,7 @@ display: -webkit-box;
   }
   .use-cases_head_content_btns > a {
     height: 34px;
-	 line-height: 34px; 
+	 line-height: 34px;
     width: 155px;
     font-size: 14px;
     letter-spacing: 0.38px;
@@ -3636,7 +3636,7 @@ display: -webkit-box;
   }
   .use-cases_block_slider_wrap {
     width: 274px;
-	padding-top: 50px;  
+	padding-top: 50px;
   }
   #use-cases_helps .tns-outer {
     display: -webkit-box;
@@ -4356,7 +4356,7 @@ display: -webkit-box;
 	font-size: 16px;
     line-height: 22px;
 	}
-	
+
   .use-cases_action_content_item_text {
     font-size: 14px;
   }
@@ -5100,7 +5100,7 @@ display: -webkit-box;
   color: white;
   width: 100%;
   padding-bottom: 93px;
-		
+
 }
 .use-cases_result_list {
   margin-top: 0px !important;
@@ -5556,7 +5556,7 @@ display: -webkit-box;
 	font-weight: 300;
 	letter-spacing: 0.02px;
 	font-size: 18px;
-	color: #34587A;	
+	color: #34587A;
 }
 
 @media (min-width: 375px) and (max-width: 1440px) {
@@ -5836,12 +5836,6 @@ display: -webkit-box;
 	margin-left: 90px
 }
 
-@media (min-width: 1439px) {
-	.demo_head_form {
-		-webkit-transform: translateX(115px);
-		transform: translateX(115px)
-	}
-}
 
 @media (max-width: 1080px) {
 	.demo_head_form {
@@ -8562,7 +8556,7 @@ display: -webkit-box;
     justify-content: center;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-}	
+}
 
 .no-wrap-wide {
     flex-wrap: nowrap;
@@ -8582,7 +8576,7 @@ display: -webkit-box;
 .no-shadow {
 	box-shadow: none !important;
 	-webkit-box-shadow: none !important;
-}	
+}
 
 
 .help {
@@ -9094,7 +9088,7 @@ display: -webkit-box;
 	display: flex;
 	justify-content: space-between;
 	flex-wrap: wrap;
-}	
+}
 
 @media (max-width: 1114px) {
   .features-wrapper {
