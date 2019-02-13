@@ -1,3 +1,6 @@
+{{ if .Param "hide-cta" }}
+
+{{ else }}
 <section class="devops-join bg-light">
       <div class="grid-container">
         <div class="row">
@@ -13,6 +16,7 @@
         </div>
       </div>
     </section>
+{{ end }}
     <footer>
           <div class="footer-top">
             <div class="grid-container">
@@ -67,4 +71,6 @@
             </div>
           </div>
         </footer>
-        <script src="/js/index.js"></script>
+        <script src="/js/index.js" async></script>
+        <script src="/js/jquery.slim.min.js"></script>
+        <script src="/js/bootstrap.min.js"></script>

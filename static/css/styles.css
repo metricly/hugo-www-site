@@ -228,7 +228,7 @@ body {
   margin: 0;
   padding: 0;
 }
-a {
+a, a:hover {
   text-decoration: none;
 }
 ul,
@@ -1264,7 +1264,8 @@ input{
     letter-spacing:0.02px;
     line-height:22px;
     -webkit-transition:color .3s linear;
-    transition:color .3s linear
+    transition:color .3s linear;
+    margin-bottom: 0;
 }
 .header_nav_list_item_sublist_item_head .icon{
     margin-right:8px;

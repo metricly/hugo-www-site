@@ -4,13 +4,9 @@
 <body{{ if .Params.body_class }} class="{{ .Params.body_class }}"{{ end }}>
 {{ partial "headers/header.html" . }}
 <style>
-  p {
-    padding-bottom: 2em;
-  }
-  .info_hero {
-    background: url(/wp-content/uploads/2016/05/privacy-policy-bg.png);
-    background-size: 100%;
-  }
+section p {
+  color: #58595b;
+}
   .info_hero-div {
     padding-top: 150px;
     display: flex;
@@ -23,20 +19,34 @@
     font-weight: lighter;
     margin-bottom: 20px;
   }
-  .info_section {
-    padding: 80px 0px;
-  }
   #parent-dir {
     text-transform: capitalize;
   }
+section h4 {
+    margin-top: 2em;
+}
+section h5 {
+  font-weight: normal;
+  margin-top: 1.5em
+}
+section ul {
+  color: #58595b;
+  margin-left: 2em;
+  list-style: disc;
+}
 </style>
-<section class="info_hero">
+<section class="info_hero bg-blue" style="background: url(/img/backgrounds/blue.png);">
   <div class="grid-container info_hero-div">
-    <h1>{{.Title}}</h1>
+    <div class="mb-4 d-block d-sm-flex text-left align-items-center flex-row py-3">
+						<h1 class="mb-0 mr-4">{{.Title}}</h1>
+            {{ if .Param "careers-department"}}
+						<h2 class="label label-light mb-0 mt-3 mt-sm-0" style="width: 150px;">{{ .Param "careers-department"}}</h2>
+            {{end}}
+					</div>
     <a href="/{{.Dir}}" style="color: white;"><i class="fal fa-long-arrow-left" style="margin-right: 10px;"></i>Back to <span id="parent-dir">{{ replace .Dir "/" "" }}</span></a>
 </div>
 </section>
-<section class="info_section">
+<section class="info_section pb-md">
   <div class="grid-container -thin">
     {{.Content}}
   </div>
