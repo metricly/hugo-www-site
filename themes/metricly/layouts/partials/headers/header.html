@@ -2,14 +2,14 @@
           <div class="header_wrap">
             <div class="grid-container">
               <a class="header_logo" href="/">
-                <img src="/wp-content/uploads/assets/header/images/logo_{{ if .Param "header-light" }}light{{ else }}dark{{ end }}.png" alt="Metricly">
+				  <img src="/wp-content/uploads/assets/header/images/logo_{{ if .Param "header-light" }}light{{ else }}dark{{ end }}.png" alt="Metricly">
               </a>
               <div class="header_ham">
                 <button class="hamburger hamburger--squeeze" id="header_ham"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
               </div>
               <nav class="header_nav" id="header_nav">
                 <ul class="header_nav_list">
-                  <li class="header_nav_list_item -with-sublist"> <a>Products</a>
+                  <li class="header_nav_list_item -with-sublist"> <a>Features</a>
                     <ul class="header_nav_list_item_sublist">
                       <div class="header_nav_list_item_sublist_subwrap">
                         <li class="header_nav_list_item_sublist_item"><a class="class" href="/aws-cost-tool/">
@@ -22,16 +22,32 @@
                               <h5>Monitoring</h5><img class="arrow" src="/wp-content/uploads/assets/header/icons/green-arrow2x.png" alt="">
                             </div>
                             <p class="header_nav_list_item_sublist_item_desc">Apply machine learning analytics to cloud infrastructure.</p></a></li>
-						  <li class="header_nav_list_item_sublist_item"><a class="class" href="/pricing/">
-                            <div class="header_nav_list_item_sublist_item_head" style="text-align: center;">
-                              <h5 style="color: #34587a; text-align: center; width: 100%;">See Pricing</h5>
-                            </div>
-                            </a></li>
+                            <li class="header_nav_list_item_sublist_item"><a class="class" href="/pricing/">
+                                          <div class="header_nav_list_item_sublist_item_head">
+                                            <h5>Pricing</h5><img class="arrow" src="/wp-content/uploads/assets/header/icons/green-arrow2x.png" alt="">
+                                          </div>
+                                          </a></li>
                       </div>
                     </ul>
                   </li>
                   <li class="header_nav_list_item"> <a href="/demo/">Demo<img class="hide-desktop hide-laptop header_nav_list_item_arrow" src="/wp-content/uploads/assets/header/icons/dark-green-arrow@2x.png" alt=""></a></li>
-                  <li class="header_nav_list_item"> <a href="/customers/">Customers<img class="hide-desktop hide-laptop header_nav_list_item_arrow" src="/wp-content/uploads/assets/header/icons/dark-green-arrow@2x.png" alt=""></a></li>
+<li class="header_nav_list_item -with-sublist"> <a>Why Metricly</a>
+                    <ul class="header_nav_list_item_sublist">
+                      <div class="header_nav_list_item_sublist_subwrap">
+                        <li class="header_nav_list_item_sublist_item"><a class="class" href="/customers/">
+                            <div class="header_nav_list_item_sublist_item_head">
+                              <h5>Customers</h5><img class="arrow" src="/wp-content/uploads/assets/header/icons/green-arrow2x.png" alt="">
+                            </div>
+                            <p class="header_nav_list_item_sublist_item_desc">Success stories from teams relying on Metricly.</p></a></li>
+                        <li class="header_nav_list_item_sublist_item"><a href="/premier-services/">
+                            <div class="header_nav_list_item_sublist_item_head">
+                              <h5>Premier Services</h5><img class="arrow" src="/wp-content/uploads/assets/header/icons/green-arrow2x.png" alt="">
+                            </div>
+                            <p class="header_nav_list_item_sublist_item_desc">Free assistance to fast-track your success using Metricly.</p></a></li>
+
+                      </div>
+                    </ul>
+                  </li>
 					<li class="header_nav_list_item -with-sublist"><a href="#">Resources</a>
                     <ul class="header_nav_list_item_sublist -two-column">
                       <div class="header_nav_list_item_sublist_subwrap">
@@ -45,21 +61,26 @@
                               <h5>eBook</h5>
                             </div>
                             <p class="header_nav_list_item_sublist_item_desc">Our 12-page essential guide to cloud monitoring</p></a></li>
-                        <li class="header_nav_list_item_sublist_item"><a class="class" href="https://docs.metricly.com">
+                        <li class="header_nav_list_item_sublist_item"><a class="class" href="https://tools.metricly.com?utm_source=www">
+                            <div class="header_nav_list_item_sublist_item_head">
+                              <h5>EC2 Calculator</h5>
+                            </div>
+                            <p class="header_nav_list_item_sublist_item_desc">Free tool to compare thousands of EC2 pricing options</p></a></li>
+						  <li class="header_nav_list_item_sublist_item"><a class="class" href="/ec2-instances/">
+                            <div class="header_nav_list_item_sublist_item_head">
+                              <h5>EC2 Guide</h5>
+                            </div>
+                            <p class="header_nav_list_item_sublist_item_desc">Learn about EC2s from beginner to advanced</p></a></li>
+						     <li class="header_nav_list_item_sublist_item"><a class="class" href="https://docs.metricly.com">
                             <div class="header_nav_list_item_sublist_item_head">
                               <h5>Support</h5>
                             </div>
-                            <p class="header_nav_list_item_sublist_item_desc">Setup guides, help documentation, and support portal</p></a></li>
-                        <li class="header_nav_list_item_sublist_item"><a class="class" href="http://status.metricly.com/" target="_blank">
-                            <div class="header_nav_list_item_sublist_item_head">
-                              <h5>Status</h5>
-                            </div>
-                            <p class="header_nav_list_item_sublist_item_desc">Metricly's real-time and historical system performance</p></a></li>
+                            <p class="header_nav_list_item_sublist_item_desc">Setup guides, help docs, and support portal</p></a></li>
                       </div>
                     </ul>
                   </li>
                 </ul>
-                <div class="header_nav_access"><a class="header_nav_access_link" href="https://app.metricly.com/#/login">Log In</a><span class="hide-desktop hide-laptop header_nav_access_text">or</span><a class="header_nav_access_link -alt" href="/signup">Sign Up Free</a></div>
+                <div class="header_nav_access"><a class="header_nav_access_link" href="https://app.metricly.com/#/login">Log In</a><span class="hide-desktop hide-laptop header_nav_access_text">or</span><a class="header_nav_access_link -alt" href="https://www.metricly.com/signup">Sign Up Free</a></div>
               </nav>
             </div>
           </div>

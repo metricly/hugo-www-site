@@ -1,76 +1,80 @@
+{{/* Finds if the page has "hide-cta" = true */}}
 {{ if .Param "hide-cta" }}
-
 {{ else }}
-<section class="devops-join bg-light">
+<section class="devops-join">
       <div class="grid-container">
         <div class="row">
-          <div class="devops-join_image"><img src="/wp-content/uploads/assets/footer/capterra.png" alt="capterra"></div>
+          <div class="devops-join_image"><img src="https://www.metricly.com/wp-content/uploads/assets/footer/capterra.png" alt="capterra"></div>
           <div class="devops-join_email">
-            <h2>Join other DevOps who love Metricly!</h2>
-            <p>Sign up for a free, fully featured, 21-day trial.  No credit card required!</p>
+            <h2>Ready to get started with Metricly?</h2>
+            <p>Sign up for free, and join DevOps who rate us 5-stars on Capterra!</p>
             <form action="/signup" method="GET">
               <input type="email" id="email" name="email" placeholder="Work Email">
               <button type="submit" value="Submit" class="btn-hover">Sign Up Free</button>
             </form>
+			<small style="padding-top: 20px; position: absolute; font-size: smaller;">
+				<i class="fal fa-calendar-check" style="margin-right: 5px;"></i> 21-day free trial<i class="fal fa-unlock-alt" style="margin-left: 15px; margin-right: 5px;"></i> No credit card required</small>
           </div>
         </div>
       </div>
     </section>
 {{ end }}
     <footer>
-          <div class="footer-top">
-            <div class="grid-container">
-              <div class="row">
-                <div class="footer-top_item -social"><a class="footer-top_logo" href="/"><img src="/wp-content/uploads/assets/footer/Metricly_logo.png" alt="logo"></a>
-                  <p>© Metricly, Inc. All rights reserved.</p>
-                  <ul class="social-links">
-                    <li><a href="#"><img src="/wp-content/uploads/assets/footer/Icons/facebook.svg" alt="facebook"></a></li>
-                    <li><a href="#"><img src="/wp-content/uploads/assets/footer/Icons/linked_in.svg" alt="linkedin"></a></li>
-                    <li><a href="#"><img src="/wp-content/uploads/assets/footer/Icons/twitter.svg" alt="twitter"></a></li>
-                  </ul>
-                </div>
-                <div class="footer-top_item">
-                  <h3>Products</h3>
-                  <ul class="aws-list">
-                    <li><a href="/aws-cost-tool/">AWS Cost</a></li>
-                    <li><a class="monitoring" href="/monitoring/">Monitoring</a></li>
-                  </ul>
-                  <ul class="links-list">
-                    <li><a href="/pricing/">Pricing</a></li>
-                    <li><a href="/category/product-updates/">Updates</a></li>
-                  </ul>
-                </div>
-                <div class="footer-top_item">
-                  <h3>Use Cases</h3>
-                  <ul class="aws-list">
-                    <li><a class="sizing" href="/aws-sizing-tool/">AWS Sizing Tool</a></li>
-                  </ul>
-                  <ul class="links-list">
-                    <li><a href="/demo/">See a Demo</a></li>
-                  </ul>
-                </div>
-                <div class="footer-top_item">
-                  <h3>Resources</h3>
-                  <ul class="links">
-                    <li><a href="/blog/">Blog</a></li>
-                    <li><a href="https://docs.metricly.com/">Documentation</a></li>
-                    <li><a href="http://status.metricly.com/">Status</a></li>
-                    <li><a href="/ec2-instances/">EC2 Instances Guide</a></li>
-                  </ul>
-                </div>
-                <div class="footer-top_item">
-                  <h3>Company</h3>
-                  <ul class="links">
-                    <li><a href="/about-us/">About us</a></li>
-                    <li><a href="/careers/">Careers</a></li>
-                    <li><a href="/contact/">Contact</a></li>
-    				<li><a href="/legal/">Legal &amp; Privacy</a></li>
-                  </ul>
-                </div>
-              </div>
+      <div class="footer-top">
+        <div class="grid-container">
+          <div class="row">
+            <div class="footer-top_item -social"><a class="footer-top_logo" href="https://www.metricly.com/"><img src="https://www.metricly.com/wp-content/uploads/assets/footer/Metricly_logo.png" alt="logo"></a>
+              <p>&copy; Metricly, Inc. All rights reserved.</p>
+              <ul class="social-links">
+                <li><a href="https://www.facebook.com/metricly/"><img src="https://www.metricly.com/wp-content/uploads/assets/footer/Icons/facebook.svg" alt="facebook"></a></li>
+                <li><a href="https://www.linkedin.com/company/metricly"><img src="https://www.metricly.com/wp-content/uploads/assets/footer/Icons/linked_in.svg" alt="linkedin"></a></li>
+                <li><a href="https://twitter.com/metricly"><img src="https://www.metricly.com/wp-content/uploads/assets/footer/Icons/twitter.svg" alt="twitter"></a></li>
+              </ul>
+            </div>
+            <div class="footer-top_item">
+              <h3>Products</h3>
+              <ul class="aws-list">
+                <li><a href="https://www.metricly.com/aws-cost-tool/">AWS Cost</a></li>
+                <li><a class="monitoring" href="https://www.metricly.com/monitoring/">Monitoring</a></li>
+              </ul>
+              <ul class="links-list">
+                <li><a href="https://www.metricly.com/pricing/">Pricing</a></li>
+                <li><a href="https://www.metricly.com/category/product-updates/">Updates</a></li>
+              </ul>
+            </div>
+            <div class="footer-top_item">
+              <h3>Use Cases</h3>
+              <ul class="aws-list">
+                <li><a class="sizing" href="https://www.metricly.com/aws-sizing-tool/">AWS Sizing Tool</a></li>
+              </ul>
+              <ul class="links-list">
+                <li><a href="https://www.metricly.com/demo/">See a Demo</a></li>
+              </ul>
+            </div>
+            <div class="footer-top_item">
+              <h3>Resources</h3>
+              <ul class="links">
+                <li><a href="https://www.metricly.com/blog/">Blog</a></li>
+                <li><a href="https://www.metricly.com/support/">Support</a></li>
+                <li><a href="http://status.metricly.com/">Status</a></li>
+                <li><a href="https://www.metricly.com/ec2-instances/">EC2 Instances Guide</a></li>
+              </ul>
+            </div>
+            <div class="footer-top_item">
+              <h3>Company</h3>
+              <ul class="links">
+                <li><a href="https://www.metricly.com/about-us/">About us</a></li>
+                <li><a href="https://www.metricly.com/careers/">Careers</a></li>
+                <li><a href="https://www.metricly.com/contact/">Contact</a></li>
+				<li><a href="https://www.metricly.com/legal/">Legal & Privacy</a></li>
+              </ul>
             </div>
           </div>
-        </footer>
+        </div>
+      </div>
+    </footer>
+
+
         <script src="/js/index.js" async></script>
         <script src="/js/jquery.slim.min.js"></script>
         <script src="/js/bootstrap.min.js"></script>

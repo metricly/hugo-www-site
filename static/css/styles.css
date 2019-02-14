@@ -7177,7 +7177,7 @@ display: -webkit-box;
 .aws-head .request-demo:after {
 	content: url(/wp-content/uploads/assets/aws/icons/arrow-green.svg);
 	position: absolute;
-	top: 0;
+	top: 6px;
 	right: -34px;
 	-webkit-transition: all .3s ease-in-out;
 	transition: all .3s ease-in-out
@@ -7375,7 +7375,7 @@ display: -webkit-box;
 .aws-billing .tabs-block li h4:before {
 	position: absolute;
 	top: 0;
-	left: -60px
+	left: -70px
 }
 
 
@@ -7390,7 +7390,8 @@ display: -webkit-box;
 }
 
 .aws-billing .tabs-block li.active h4 {
-	color: #439BC3
+	color: #439BC3;
+  font-weight: 400;
 }
 
 @media (max-width: 1079px) {
@@ -8257,12 +8258,6 @@ display: -webkit-box;
 	width: 100%
 }
 
-@media (max-width: 500px) {
-	.monitoring .integrate-block .image-block img {
-		-webkit-transform: translateX(-25px);
-		transform: translateX(-25px)
-	}
-}
 
 @media (max-width: 720px) {
 	.monitoring .integrate-block .content-block,
