@@ -22,9 +22,7 @@ section p {
   #parent-dir {
     text-transform: capitalize;
   }
-section h4 {
-    margin-top: 2em;
-}
+
 section h5 {
   font-weight: normal;
   margin-top: 1.5em
@@ -46,7 +44,7 @@ section ul {
     <a href="/{{.Dir}}" style="color: white;"><i class="fal fa-long-arrow-left" style="margin-right: 10px;"></i>Back to <span id="parent-dir">{{ replace .Dir "/" "" }}</span></a>
 </div>
 </section>
-<section class="info_section pb-md">
+<section class="info_section py-md">
   <div class="grid-container -thin">
     {{.Content}}
   </div>
