@@ -2,8 +2,8 @@
 author = "Mike Mackrory"
 date = "2018-10-16T13:44:00+00:00"
 title = "EC2 Instance Types—6 Things You Need To Know Before Selecting"
-tags = ["Cloud Cost Management", "DevOps"]
-#url = "/ec2-instance-types/"
+category = "Cloud Cost Management"
+url = "/ec2-instance-types/"
 +++
 
 When an organization and its engineers begin their first forays into Amazon’s Elastic Computing (EC2) solutions, the selection of the right EC2 instance type may appear to be an easy decision based on capability and cost. Early decisions might be made based on:
@@ -33,7 +33,7 @@ Credits for instances in the T3 family persist their credits for seven days if t
 
 You can learn more about CPU bursting from the AWS Documentation, including specific information about credit accrual and limits per instance.
 
- 
+
 #### 2. Storage Transfer Limitations
 When an EC2 instance is created, it is typical for an Elastic Block Storage (EBS) volume to be created at the same time and attached to the instance. If the application you are hosting on the instance requires a high number of disk reads and writes, then you should calculate the number of input and output operations (IOPS) you expect and determine whether the device and attached EBS volume can support this level.
 
