@@ -1,10 +1,12 @@
-+++
-author = "Mike Mackrory"
-date = "2018-11-05"
-title = "AWS Lambda Cost—Your Guide to Understand, Calculate, and Optimize"
-category = "Cloud Cost Management"
-url = "/aws-lambda-cost/"
-+++
+---
+authors:
+  - Mike Mackrory
+date: "2018-11-05"
+title: "AWS Lambda Cost—Your Guide to Understand, Calculate, and Optimize"
+category: "Cloud Cost Management"
+url: "/aws-lambda-cost/"
+layout: "single"
+---
 
 In this article we’ll help you get an understanding of AWS Lambda cost, and how it is calculated. More specifically, we’ll cover the relationships between configuration and cost and help you build strategies to optimize both cost and performance.
 
@@ -17,7 +19,7 @@ Related articles:
 [How To Use The AWS Pricing API](/aws-pricing-api/)
 
 
-#### Lambda Configuration and Its Effect on Cost Calculation
+### Lambda Configuration and Its Effect on Cost Calculation
 Lambda configuration appears to be very simple. The configuration for a Lambda function consists of specific memory allocation and a timeout value. The allocation of CPU capacity for the function is done proportionally to the amount of memory allocated. Thus, increased memory allocation also means increased CPU allocation, which can improve the performance of a processing-intensive Lambda function.
 
 
@@ -28,7 +30,7 @@ The cost of a Lambda invocation is calculated based on the allocated memory mult
 
 Optimizing costs for a Lambda involves balancing memory allocation with execution time. A key ingredient for this optimization is getting insights into memory and execution time for your Lambda function. Allocating additional memory to a Lambda function may improve performance in some cases, but in other cases, the performance of the Lambda may depend on external factors — in which case, allocating additional memory increases the cost of an invocation without improving its performance. Knowing what factors affect the performance of your Lambda function is another crucial ingredient in the optimization process.
 
-#### Understanding Lambda Performance
+### Understanding Lambda Performance
 Before we consider ways to optimize performance and cost, we need to be able to measure the performance of our Lambda, both concerning resource usage and duration of the invocation. CloudWatch logs are generated for each invocation, and contain information which we can use to determine how well the Lambda performed.
 
 The log entry below shows the results for an elementary Lambda function.
@@ -43,7 +45,7 @@ Since 128 MB of memory is the lowest amount you can allocate to a Lambda functio
 
 Let’s consider some use cases where adjusting the configuration of the Lambda function affects how much each invocation costs.
 
-#### Optimizing a Processing-Intensive Lambda Function
+### Optimizing a Processing-Intensive Lambda Function
 For this first example, I wrote a Lambda function that calculates the first 10,000 numbers in the Fibonacci series, logs each number, and returns the list of all numbers in the response. Executing this function with 128 MB of allocated memory resulted in the following:
 
 ```
@@ -72,7 +74,7 @@ If we allocated 512 MB to the function, we could expect to realize a 65% savings
 
 What you should optimize for in a situation like this would depend on your business model and the importance of costs vs. performance.
 
-#### Optimizing a Network-Intensive Lambda Function
+### Optimizing a Network-Intensive Lambda Function
 For this use case, we’re going to consider the following scenario. We have a Lambda function which performs an address validation function. The Lambda is invoked by a trigger that is activated whenever a new address record is added to a DynamoDB table. The Lambda validates aspects of the address updated in the original DynamoDB table, and the Lambda concludes its invocation by confirming successful processing of the update request.
 
 ![alt text](/wp-content/uploads/2018/11/image3.png "post-image")
@@ -95,7 +97,7 @@ For a Lambda function (such as the second example), maintaining the baseline mem
 
 In some cases, a Lambda function might belong to a chain of  Lambda functions, with each including periods of “wait-time.” This has the effect of compounding the “wait-time” problem across the infrastructure, and any improvement won’t be seen due to increased memory and CPU allocation.
 
-#### Some Parting Words
+### Some Parting Words
 As I mentioned at the beginning of this article, understanding the different cost components for a Lambda function and being able to monitor and observe the effect that changes in the configuration have to the performance of the Lambda are critical components in optimizing your serverless functions.
 
 Optimization can take the form of increasing allocated memory and CPU capacity, or it can require improvements to the design of your system and how components interact with each other.

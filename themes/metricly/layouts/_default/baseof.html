@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required Head Tags  -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    {{ if .Params.nofollow }}
+      <!-- No Follow If Enabled  -->
+      <meta name="robots" content="noindex" />
+    {{ end }}
+
+    <title>{{ if not .IsHome }}{{ .Title }} - Metricly{{ end }}</title>
+    <!-- Open Graph -->
+    {{ template "_internal/opengraph.html" . }}
+
+    <!--Common Scripts -->
+    {{ partial "header/common-scripts.html" . }}
+
+    {{if or (eq .Params.layout "blog") (eq .Params.layout "single")}}
+    <!-- Blog Theme -->
+    <link rel="stylesheet" href="/normalize.css">
+    <link rel="stylesheet" href="/mytheme.min.css">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/swiper.min.css">
+    <link rel="stylesheet" href="/blog.css">
+    Blog Links
+
+    {{ else }}
+    <!-- Standard Theme -->
+    <link rel="stylesheet" id="theme" href="/css/mytheme.min.css" type="text/css" media="all">
+    <link rel="stylesheet" id="styles" href="/css/styles.css" type="text/css" media="all">
+    {{ end }}
+
+
+
+  </head>
+  <body>
+
+    {{if or (eq .Params.layout "blog") (eq .Params.layout "single")}}
+    <!-- Don't insert normal header -->
+    {{ else }}
+    <!-- Normal Header -->
+    {{ partial "header/header.html" . }}
+    {{ end }}
+
+    <!-- Main Layout  -->
+    {{ block "main" . }}
+    {{ end }}
+
+    <!-- Footer -->
+    {{ partial "footer/footer.html" . }}
+
+    {{if or (eq .Params.layout "blog") (eq .Params.layout "single")}}
+    <!-- Blog Footer Scripts -->
+    {{ partial "footer/blog-scripts.html" . }}
+
+    {{ else }}
+    <!-- Common Footer Scripts -->
+    {{ partial "footer/normal-scripts.html" . }}
+
+    {{ end }}
+
+  </body>
+</html>

@@ -73,9 +73,9 @@ const swiperSingleTwo = new Swiper('.swiper-single-two', {
 const header = document.querySelector('.header');
 
 if(header){
-    
+
     document.addEventListener('scroll', () => {
-        console.log(window.pageYOffset)
+        //console.log(window.pageYOffset)
         if(window.pageYOffset > 10){
             header.classList.add('scrolled');
         }else if (window.pageYOffset < 10){
@@ -101,7 +101,7 @@ if(burger){
     });
 
     asideMenu.addEventListener('click', function(e) {
-        e.stopPropagation(); 
+        e.stopPropagation();
     });
 
     closeMenu.addEventListener('click', () =>  closeAside(aside));
@@ -133,3 +133,11 @@ function mobileMenuHeight() {
     document.documentElement.style.setProperty('--vh', `${vh}px`);
 }
 
+$("#email-subscribe").submit(function(e) {
+  e.preventDefault();
+
+  var $form = $(this);
+  $.post($form.attr("action"), $form.serialize()).then(function() {
+    alert("Thank you!");
+  });
+});
