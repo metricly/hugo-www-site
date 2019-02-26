@@ -133,11 +133,15 @@ function mobileMenuHeight() {
     document.documentElement.style.setProperty('--vh', `${vh}px`);
 }
 
-$("#email-subscribe").submit(function(e) {
-  e.preventDefault();
 
-  var $form = $(this);
-  $.post($form.attr("action"), $form.serialize()).then(function() {
-    alert("Thank you!");
+// Netlify AJAX form subsmission for email subscribe
+$( document ).ready(function() {
+  $("#email-subscribe").submit(function(e) {
+    e.preventDefault();
+
+    var $form = $(this);
+    $.post($form.attr("action"), $form.serialize()).then(function() {
+      alert("Thank you!");
+    });
   });
 });
