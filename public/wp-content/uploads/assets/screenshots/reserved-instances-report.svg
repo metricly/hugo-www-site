@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="530px" height="340px" viewBox="0 0 530 340" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: sketchtool 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>5D014D43-DBFB-4C30-89B3-52D1B414F787</title>
+    <desc>Created with sketchtool.</desc>
+    <defs>
+        <filter x="-13.1%" y="-23.0%" width="126.3%" height="146.1%" filterUnits="objectBoundingBox" id="filter-1">
+            <feGaussianBlur stdDeviation="21.3420759" in="SourceGraphic"></feGaussianBlur>
+        </filter>
+        <rect x="16" y="33" width="80" height="9" id="rect-2"></rect>
+    </defs>
+    <g id="graphics" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Graphics" transform="translate(-66.000000, -3045.000000)">
+            <g id="Group-3" transform="translate(66.000000, 3045.000000)">
+                <g id="Group-2-Copy-5">
+                    <g id="Group-5-Copy-2">
+                        <path d="M29,53 L504,53 C507.313708,53 510,55.6862915 510,59 L510,331 L23,331 L23,59 C23,55.6862915 25.6862915,53 29,53 Z" id="Rectangle-Copy-3" fill="#113B58" opacity="0.112332589" filter="url(#filter-1)"></path>
+                        <path d="M6,10 L524,10 C527.313708,10 530,12.6862915 530,16 L530,340 L0,340 L0,16 C-4.05812251e-16,12.6862915 2.6862915,10 6,10 Z" id="Rectangle-Copy-4" fill="#F6F6F6"></path>
+                        <text id="Reservation-recomend" opacity="0.882723214" font-family="OpenSans-SemiBold, Open Sans" font-size="6" font-weight="500" fill="#113B58">
+                            <tspan x="16" y="68">Reservation recomendation report</tspan>
+                        </text>
+                        <rect id="Rectangle" fill="#FFFFFF" fill-rule="nonzero" x="16" y="89" width="498" height="235"></rect>
+                        <g id="Group-2" transform="translate(209.000000, 312.000000)">
+                            <g id="Group">
+                                <text id="Spot" opacity="0.882723214" font-family="OpenSans-SemiBold, Open Sans" font-size="4" font-weight="500" fill="#113B58">
+                                    <tspan x="7" y="4">Spot</tspan>
+                                </text>
+                                <circle id="Oval-9-Copy-3" fill="#93E3E3" fill-rule="nonzero" cx="2" cy="3" r="2"></circle>
+                            </g>
+                            <g id="Group-Copy" transform="translate(36.000000, 0.000000)">
+                                <text id="Reserved" opacity="0.882723214" font-family="OpenSans-SemiBold, Open Sans" font-size="4" font-weight="500" fill="#113B58">
+                                    <tspan x="7" y="4">Reserved</tspan>
+                                </text>
+                                <circle id="Oval-9-Copy-3" fill="#74CAC8" fill-rule="nonzero" cx="2" cy="3" r="2"></circle>
+                            </g>
+                            <g id="Group-Copy-2" transform="translate(81.000000, 0.000000)">
+                                <text id="On-Demand" opacity="0.882723214" font-family="OpenSans-SemiBold, Open Sans" font-size="4" font-weight="500" fill="#113B58">
+                                    <tspan x="7" y="4">On-Demand</tspan>
+                                </text>
+                                <circle id="Oval-9-Copy-3" fill="#F06C6C" fill-rule="nonzero" cx="2" cy="3" r="2"></circle>
+                            </g>
+                        </g>
+                        <rect id="Rectangle-3-Copy" fill="#113B58" fill-rule="nonzero" x="0" y="23" width="530" height="28"></rect>
+                        <g id="METRICLY_LOGO_horizontal-Copy">
+                            <image x="16" y="33" width="80" height="9" xlink:href="data:image/png;base64,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"></image>
+                            <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#rect-2"></use>
+                        </g>
+                        <path d="M6,0 L524,0 C527.313708,-6.08718376e-16 530,2.6862915 530,6 L530,23 L0,23 L0,6 C-4.05812251e-16,2.6862915 2.6862915,6.08718376e-16 6,0 Z" id="Rectangle-2-Copy" fill="#EAEBEC" fill-rule="nonzero"></path>
+                        <circle id="Oval-3-Copy-3" fill="#FF3F41" fill-rule="nonzero" cx="15.5" cy="12.5" r="4.5"></circle>
+                        <circle id="Oval-3-Copy-4" fill="#F5A623" fill-rule="nonzero" cx="29.5" cy="12.5" r="4.5"></circle>
+                        <circle id="Oval-3-Copy-5" fill="#45C592" fill-rule="nonzero" cx="43.5" cy="12.5" r="4.5"></circle>
+                    </g>
+                </g>
+                <path d="M509.5,291.5 L28.2362888,290.155554" id="Line-3-Copy-60" stroke="#196DA6" stroke-width="0.3" opacity="0.223237071" stroke-linecap="square" fill-rule="nonzero"></path>
+                <path d="M492.5,263.166667 L28.5,263.166667" id="Line-3-Copy-61" stroke="#196DA6" stroke-width="0.3" opacity="0.223237071" stroke-linecap="square" fill-rule="nonzero"></path>
+                <path d="M492.5,237.166667 L28.5,237.166667" id="Line-3-Copy-62" stroke="#196DA6" stroke-width="0.3" opacity="0.223237071" stroke-linecap="square" fill-rule="nonzero"></path>
+                <text id="0" opacity="0.42" font-family="OpenSans, Open Sans" font-size="5" font-weight="normal" fill="#113B58">
+                    <tspan x="23" y="292">0</tspan>
+                </text>
+                <text id="10" opacity="0.42" font-family="OpenSans, Open Sans" font-size="5" font-weight="normal" fill="#113B58">
+                    <tspan x="20" y="264">10</tspan>
+                </text>
+                <text id="20" opacity="0.42" font-family="OpenSans, Open Sans" font-size="5" font-weight="normal" fill="#113B58">
+                    <tspan x="20" y="238">20</tspan>
+                </text>
+                <path d="M492.5,211.166667 L28.5,211.166667" id="Line-3-Copy-65" stroke="#196DA6" stroke-width="0.3" opacity="0.223237071" stroke-linecap="square" fill-rule="nonzero"></path>
+                <path d="M492.5,185.166667 L28.5,185.166667" id="Line-3-Copy-64" stroke="#196DA6" stroke-width="0.3" opacity="0.223237071" stroke-linecap="square" fill-rule="nonzero"></path>
+                <path d="M492.5,159.166667 L28.5,159.166667" id="Line-3-Copy-63" stroke="#196DA6" stroke-width="0.3" opacity="0.223237071" stroke-linecap="square" fill-rule="nonzero"></path>
+                <text id="30" opacity="0.42" font-family="OpenSans, Open Sans" font-size="5" font-weight="normal" fill="#113B58">
+                    <tspan x="20" y="212">30</tspan>
+                </text>
+                <text id="40" opacity="0.42" font-family="OpenSans, Open Sans" font-size="5" font-weight="normal" fill="#113B58">
+                    <tspan x="20" y="186">40</tspan>
+                </text>
+                <text id="50" opacity="0.42" font-family="OpenSans, Open Sans" font-size="5" font-weight="normal" fill="#113B58">
+                    <tspan x="20" y="160">50</tspan>
+                </text>
+                <path d="M492.5,133.166667 L28.5,133.166667" id="Line-3-Copy-67" stroke="#196DA6" stroke-width="0.3" opacity="0.223237071" stroke-linecap="square" fill-rule="nonzero"></path>
+                <path d="M492.5,107.166667 L28.5,107.166667" id="Line-3-Copy-66" stroke="#196DA6" stroke-width="0.3" opacity="0.223237071" stroke-linecap="square" fill-rule="nonzero"></path>
+                <text id="60" opacity="0.42" font-family="OpenSans, Open Sans" font-size="5" font-weight="normal" fill="#113B58">
+                    <tspan x="20" y="134">60</tspan>
+                </text>
+                <text id="70" opacity="0.42" font-family="OpenSans, Open Sans" font-size="5" font-weight="normal" fill="#113B58">
+                    <tspan x="20" y="108">70</tspan>
+                </text>
+                <text id="c5.xlarge" opacity="0.882723214" font-family="OpenSans, Open Sans" font-size="4" font-weight="normal" fill="#113B58">
+                    <tspan x="32" y="299">c5.xlarge</tspan>
+                </text>
+                <text id="i3.2xlarge" opacity="0.882723214" font-family="OpenSans, Open Sans" font-size="4" font-weight="normal" fill="#113B58">
+                    <tspan x="58" y="299">i3.2xlarge</tspan>
+                </text>
+                <text id="i3.large" opacity="0.882723214" font-family="OpenSans, Open Sans" font-size="4" font-weight="normal" fill="#113B58">
+                    <tspan x="88" y="299">i3.large</tspan>
+                </text>
+                <text id="i3.xlarge" opacity="0.882723214" font-family="OpenSans, Open Sans" font-size="4" font-weight="normal" fill="#113B58">
+                    <tspan x="113" y="299">i3.xlarge</tspan>
+                </text>
+                <text id="m3.2xlarge" opacity="0.882723214" font-family="OpenSans, Open Sans" font-size="4" font-weight="normal" fill="#113B58">
+                    <tspan x="138" y="299">m3.2xlarge</tspan>
+                </text>
+                <text id="m3.medium" opacity="0.882723214" font-family="OpenSans, Open Sans" font-size="4" font-weight="normal" fill="#113B58">
+                    <tspan x="164" y="299">m3.medium</tspan>
+                </text>
+                <text id="m3.xlarge" opacity="0.882723214" font-family="OpenSans, Open Sans" font-size="4" font-weight="normal" fill="#113B58">
+                    <tspan x="189" y="299">m3.xlarge</tspan>
+                </text>
+                <text id="m4.2xlarge" opacity="0.882723214" font-family="OpenSans, Open Sans" font-size="4" font-weight="normal" fill="#113B58">
+                    <tspan x="217" y="299">m4.2xlarge</tspan>
+                </text>
+                <text id="m4.4xlarge" opacity="0.882723214" font-family="OpenSans, Open Sans" font-size="4" font-weight="normal" fill="#113B58">
+                    <tspan x="243" y="299">m4.4xlarge</tspan>
+                </text>
+                <text id="m4.large" opacity="0.882723214" font-family="OpenSans, Open Sans" font-size="4" font-weight="normal" fill="#113B58">
+                    <tspan x="269" y="299">m4.large</tspan>
+                </text>
+                <text id="m4.xlarge" opacity="0.882723214" font-family="OpenSans, Open Sans" font-size="4" font-weight="normal" fill="#113B58">
+                    <tspan x="300" y="299">m4.xlarge</tspan>
+                </text>
+                <text id="m5.12xlarge" opacity="0.882723214" font-family="OpenSans, Open Sans" font-size="4" font-weight="normal" fill="#113B58">
+                    <tspan x="326" y="299">m5.12xlarge</tspan>
+                </text>
+                <text id="m5.2xlarge" opacity="0.882723214" font-family="OpenSans, Open Sans" font-size="4" font-weight="normal" fill="#113B58">
+                    <tspan x="352" y="299">m5.2xlarge</tspan>
+                </text>
+                <text id="m5.4xlarge" opacity="0.882723214" font-family="OpenSans, Open Sans" font-size="4" font-weight="normal" fill="#113B58">
+                    <tspan x="378" y="299">m5.4xlarge</tspan>
+                </text>
+                <text id="m5.xlarge" opacity="0.882723214" font-family="OpenSans, Open Sans" font-size="4" font-weight="normal" fill="#113B58">
+                    <tspan x="406" y="299">m5.xlarge</tspan>
+                </text>
+                <text id="t2.large" opacity="0.882723214" font-family="OpenSans, Open Sans" font-size="4" font-weight="normal" fill="#113B58">
+                    <tspan x="430" y="299">t2.large</tspan>
+                </text>
+                <text id="t2.medium" opacity="0.882723214" font-family="OpenSans, Open Sans" font-size="4" font-weight="normal" fill="#113B58">
+                    <tspan x="459" y="299">t2.medium</tspan>
+                </text>
+                <text id="t2.small" opacity="0.882723214" font-family="OpenSans, Open Sans" font-size="4" font-weight="normal" fill="#113B58">
+                    <tspan x="485" y="299">t2.small</tspan>
+                </text>
+                <path d="M509.5,290.5 L509.5,296.5" id="Line-8" stroke="#196DA6" stroke-width="0.3" opacity="0.223237071" stroke-linecap="square" fill-rule="nonzero"></path>
+                <path d="M483.25,290.5 L483.25,296.5" id="Line-8-Copy" stroke="#196DA6" stroke-width="0.3" opacity="0.223237071" stroke-linecap="square" fill-rule="nonzero"></path>
+                <path d="M456.25,290.5 L456.25,296.5" id="Line-8-Copy-2" stroke="#196DA6" stroke-width="0.3" opacity="0.223237071" stroke-linecap="square" fill-rule="nonzero"></path>
+                <path d="M430.25,290.5 L430.25,296.5" id="Line-8-Copy-3" stroke="#196DA6" stroke-width="0.3" opacity="0.223237071" stroke-linecap="square" fill-rule="nonzero"></path>
+                <path d="M403.25,290.5 L403.25,296.5" id="Line-8-Copy-4" stroke="#196DA6" stroke-width="0.3" opacity="0.223237071" stroke-linecap="square" fill-rule="nonzero"></path>
+                <path d="M376.25,290.5 L376.25,296.5" id="Line-8-Copy-5" stroke="#196DA6" stroke-width="0.3" opacity="0.223237071" stroke-linecap="square" fill-rule="nonzero"></path>
+                <path d="M349.25,290.5 L349.25,296.5" id="Line-8-Copy-6" stroke="#196DA6" stroke-width="0.3" opacity="0.223237071" stroke-linecap="square" fill-rule="nonzero"></path>
+                <path d="M323.25,290.5 L323.25,296.5" id="Line-8-Copy-7" stroke="#196DA6" stroke-width="0.3" opacity="0.223237071" stroke-linecap="square" fill-rule="nonzero"></path>
+                <path d="M296.25,290.5 L296.25,296.5" id="Line-8-Copy-8" stroke="#196DA6" stroke-width="0.3" opacity="0.223237071" stroke-linecap="square" fill-rule="nonzero"></path>
+                <path d="M270.25,290.5 L270.25,296.5" id="Line-8-Copy-9" stroke="#196DA6" stroke-width="0.3" opacity="0.223237071" stroke-linecap="square" fill-rule="nonzero"></path>
+                <path d="M215.25,290.5 L215.25,296.5" id="Line-8-Copy-10" stroke="#196DA6" stroke-width="0.3" opacity="0.223237071" stroke-linecap="square" fill-rule="nonzero"></path>
+                <path d="M188.25,290.5 L188.25,296.5" id="Line-8-Copy-12" stroke="#196DA6" stroke-width="0.3" opacity="0.223237071" stroke-linecap="square" fill-rule="nonzero"></path>
+                <path d="M162.25,290.5 L162.25,296.5" id="Line-8-Copy-13" stroke="#196DA6" stroke-width="0.3" opacity="0.223237071" stroke-linecap="square" fill-rule="nonzero"></path>
+                <path d="M135.25,290.5 L135.25,296.5" id="Line-8-Copy-14" stroke="#196DA6" stroke-width="0.3" opacity="0.223237071" stroke-linecap="square" fill-rule="nonzero"></path>
+                <path d="M108.25,290.5 L108.25,296.5" id="Line-8-Copy-15" stroke="#196DA6" stroke-width="0.3" opacity="0.223237071" stroke-linecap="square" fill-rule="nonzero"></path>
+                <path d="M81.25,290.5 L81.25,296.5" id="Line-8-Copy-16" stroke="#196DA6" stroke-width="0.3" opacity="0.223237071" stroke-linecap="square" fill-rule="nonzero"></path>
+                <path d="M54.25,290.5 L54.25,296.5" id="Line-8-Copy-17" stroke="#196DA6" stroke-width="0.3" opacity="0.223237071" stroke-linecap="square" fill-rule="nonzero"></path>
+                <path d="M28.25,290.5 L28.25,296.5" id="Line-8-Copy-18" stroke="#196DA6" stroke-width="0.3" opacity="0.223237071" stroke-linecap="square" fill-rule="nonzero"></path>
+                <path d="M241.15,290.5 L241.15,296.5" id="Line-8-Copy-11" stroke="#196DA6" stroke-width="0.3" opacity="0.223237071" stroke-linecap="square" fill-rule="nonzero"></path>
+                <rect id="Rectangle-8" fill="#93E3E3" fill-rule="nonzero" x="34" y="287" width="7" height="3"></rect>
+                <rect id="Rectangle-8-Copy-4" fill="#74CAC8" fill-rule="nonzero" x="61" y="279" width="7" height="11"></rect>
+                <rect id="Rectangle-8-Copy-6" fill="#74CAC8" fill-rule="nonzero" x="88" y="279" width="7" height="11"></rect>
+                <rect id="Rectangle-8-Copy-8" fill="#74CAC8" fill-rule="nonzero" x="114" y="279" width="7" height="11"></rect>
+                <rect id="Rectangle-8-Copy-10" fill="#F06C6C" fill-rule="nonzero" x="168" y="287" width="7" height="3"></rect>
+                <rect id="Rectangle-8-Copy" fill="#93E3E3" fill-rule="nonzero" x="42" y="277" width="7" height="13"></rect>
+                <rect id="Rectangle-8-Copy-5" fill="#74CAC8" fill-rule="nonzero" x="69" y="279" width="7" height="11"></rect>
+                <rect id="Rectangle-8-Copy-7" fill="#74CAC8" fill-rule="nonzero" x="96" y="279" width="7" height="11"></rect>
+                <rect id="Rectangle-8-Copy-9" fill="#74CAC8" fill-rule="nonzero" x="122" y="249" width="7" height="41"></rect>
+                <rect id="Rectangle-8-Copy-13" fill="#F06C6C" fill-rule="nonzero" x="176" y="287" width="7" height="3"></rect>
+                <rect id="Rectangle-8-Copy-11" fill="#93E3E3" fill-rule="nonzero" x="149" y="257" width="7" height="33"></rect>
+                <rect id="Rectangle-8-Copy-14" fill="#93E3E3" fill-rule="nonzero" x="195" y="287" width="7" height="3"></rect>
+                <rect id="Rectangle-8-Copy-19" fill="#93E3E3" fill-rule="nonzero" x="249" y="287" width="7" height="3"></rect>
+                <polygon id="Rectangle-8-Copy-21" fill="#93E3E3" fill-rule="nonzero" points="275 274 282 274 282 290 275 290"></polygon>
+                <polygon id="Rectangle-8-Copy-23" fill="#74CAC8" fill-rule="nonzero" points="302 277 309 277 309 289.931507 302 289.931507"></polygon>
+                <polygon id="Rectangle-8-Copy-32" fill="#74CAC8" fill-rule="nonzero" points="409 277 416 277 416 289.931507 409 289.931507"></polygon>
+                <polygon id="Rectangle-8-Copy-35" fill="#74CAC8" fill-rule="nonzero" points="435 277 442 277 442 289.931507 435 289.931507"></polygon>
+                <polygon id="Rectangle-8-Copy-38" fill="#74CAC8" fill-rule="nonzero" points="462 269 469 269 469 289.889357 462 289.889357"></polygon>
+                <polygon id="Rectangle-8-Copy-40" fill="#74CAC8" fill-rule="nonzero" points="489 281.889357 496 281.889357 496 289.889357 489 289.889357"></polygon>
+                <rect id="Rectangle-8-Copy-16" fill="#F06C6C" fill-rule="nonzero" x="221" y="282" width="7" height="8"></rect>
+                <rect id="Rectangle-8-Copy-29" fill="#F06C6C" fill-rule="nonzero" x="336" y="282" width="7" height="8"></rect>
+                <rect id="Rectangle-8-Copy-30" fill="#F06C6C" fill-rule="nonzero" x="390" y="253" width="7" height="32"></rect>
+                <rect id="Rectangle-8-Copy-31" fill="#74CAC8" fill-rule="nonzero" x="390" y="286" width="7" height="4"></rect>
+                <rect id="Rectangle-8-Copy-15" fill="#93E3E3" fill-rule="nonzero" x="203" y="276" width="7" height="14"></rect>
+                <rect id="Rectangle-8-Copy-20" fill="#93E3E3" fill-rule="nonzero" x="257" y="276" width="7" height="14"></rect>
+                <polygon id="Rectangle-8-Copy-22" fill="#93E3E3" fill-rule="nonzero" points="283 217 290 217 290 290 283 290"></polygon>
+                <rect id="Rectangle-8-Copy-24" fill="#93E3E3" fill-rule="nonzero" x="310" y="231" width="7" height="59"></rect>
+                <rect id="Rectangle-8-Copy-33" fill="#74CAC8" fill-rule="nonzero" x="417" y="265" width="7" height="25"></rect>
+                <rect id="Rectangle-8-Copy-36" fill="#74CAC8" fill-rule="nonzero" x="443" y="277" width="7" height="13"></rect>
+                <rect id="Rectangle-8-Copy-39" fill="#74CAC8" fill-rule="nonzero" x="470" y="269" width="7" height="21"></rect>
+                <rect id="Rectangle-8-Copy-41" fill="#74CAC8" fill-rule="nonzero" x="497" y="279" width="7" height="11"></rect>
+                <rect id="Rectangle-8-Copy-37" fill="#F06C6C" fill-rule="nonzero" x="443" y="273" width="7" height="3"></rect>
+                <rect id="Rectangle-8-Copy-34" fill="#F06C6C" fill-rule="nonzero" x="417" y="203" width="7" height="61"></rect>
+                <rect id="Rectangle-8-Copy-25" fill="#74CAC8" fill-rule="nonzero" x="310" y="179" width="7" height="51"></rect>
+                <rect id="Rectangle-8-Copy-27" fill="#74CAC8" fill-rule="nonzero" x="363" y="220" width="7" height="70"></rect>
+                <rect id="Rectangle-8-Copy-26" fill="#F06C6C" fill-rule="nonzero" x="310" y="136" width="7" height="42"></rect>
+                <rect id="Rectangle-8-Copy-28" fill="#F06C6C" fill-rule="nonzero" x="363" y="153" width="7" height="66"></rect>
+                <rect id="Rectangle-8-Copy-17" fill="#74CAC8" fill-rule="nonzero" x="229" y="277" width="7" height="13"></rect>
+                <rect id="Rectangle-8-Copy-18" fill="#F06C6C" fill-rule="nonzero" x="229" y="227" width="7" height="49"></rect>
+                <rect id="Rectangle-8-Copy-12" fill="#F06C6C" fill-rule="nonzero" x="149" y="223" width="7" height="33"></rect>
+                <rect id="Rectangle-8-Copy-2" fill="#74CAC8" fill-rule="nonzero" x="42" y="269" width="7" height="7"></rect>
+                <rect id="Rectangle-8-Copy-3" fill="#F06C6C" fill-rule="nonzero" x="42" y="255" width="7" height="13"></rect>
+            </g>
+        </g>
+    </g>
+</svg>

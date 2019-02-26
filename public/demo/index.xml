@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Demo on Welcome To Metricly</title>
+    <link>/demo/</link>
+    <description>Recent content in Demo on Welcome To Metricly</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/demo/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>/demo/lambda-request/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/demo/lambda-request/</guid>
+      <description>Beta: AWS Lambda Sizing Tool We&#39;re launching a set of tools for AWS Lambda sizing and reporting! Help shape Metricly&#39;s tools by test-driving pre-release versions and letting us know what you think.
+ Beta: AWS Lambda Sizing Tool We&#39;re launching a set of tools for AWS Lambda sizing and reporting! Help shape Metricly&#39;s tools by test-driving pre-release versions and letting us know what you think.
+ Join the beta program By joining, you&#39;ll get free early access to the tool in return for your feedback.</description>
+    </item>
+    
+  </channel>
+</rss>
