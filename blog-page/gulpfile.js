@@ -26,7 +26,7 @@ const autoprefixer = require('gulp-autoprefixer');
 const cleanCSS = require('gulp-clean-css');
 
 gulp.task('style' , () => {
-	gulp.src('./dev/scss/**/*.scss')
+	gulp.src(['./dev/scss/**/*.scss', '.dev/css/**/*.css'])
   		.pipe(sass().on('error', sass.logError))
       .pipe(autoprefixer({
               browsers: ['last 2 versions'],
@@ -94,17 +94,10 @@ gulp.task('watch', function () {
   gulp.watch(['./dev/fonts/**/*'], ['fonts']);
 });
 
-/// static
-
-gulp.task('static', () => {
-	gulp.src('.dev/static/*')
-	.pipe(gulp.dest('dist'))
-});
 
 
 
 
-
-gulp.task('default', ['template', 'style' , 'js' , 'img' , 'fonts', 'static']);
+gulp.task('default', ['template', 'style' , 'js' , 'img' , 'fonts']);
 
 gulp.task('dev' , ['default', 'connect', 'watch'])
