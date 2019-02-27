@@ -2,6 +2,7 @@
 author: "Lawrence Lane"
 date: "2018-09-17"
 title: "Improved Maintenance Mode"
+Description: "Learn how maintenance mode improved. Now, you can set a maintenance duration that expires on its own."
 category: "Product Updates"
 url: "/improved-maint-mode/"
 layout: "single"

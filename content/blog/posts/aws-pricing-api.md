@@ -2,6 +2,7 @@
 author: "Mike Mackrory"
 date: "2018-09-26T13:44:00+00:00"
 title: "AWS Pricing API—How to Use It to Predict and Control AWS Costs"
+Description: "The AWS pricing API is used to determine the cost of AWS services, and is important for most AWS use cases. Check out our on how to best use it!"
 category: "Cloud Cost Management"
 url: "/aws-pricing-api/"
 layout: "single"

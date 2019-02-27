@@ -2,6 +2,7 @@
 author: "Mike Mackrory"
 date: "2018-11-05"
 title: "AWS Lambda Cost—Your Guide to Understand, Calculate, and Optimize"
+Description: "Want an understanding of AWS Lambda cost, and how it is calculated? Read on for strategies to optimize both cost and performance of your Lambda functions."
 category: "Cloud Cost Management"
 url: "/aws-lambda-cost/"
 layout: "single"

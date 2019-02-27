@@ -2,6 +2,7 @@
 author: "Mike Mackrory"
 date: "2018-10-16T13:44:00+00:00"
 title: "EC2 Instance Types—6 Things You Need To Know Before Selecting"
+Description: "Trying to pick the right EC2 instance type? We wrote about 6 things everyone needs to know before choosing one. Check it out!"
 category: "Cloud Cost Management"
 url: "/ec2-instance-types/"
 layout: "single"

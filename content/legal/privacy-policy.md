@@ -1,5 +1,6 @@
 ---
 title: "Privacy"
+Description: "Metricly has created this privacy statement in order to demonstrate our firm commitment to protecting your privacy on our site."
 draft: false
 layout: "info"
 header-light: true

@@ -1,5 +1,6 @@
 ---
 title: "Legal & Privacy"
+Description: "Learn more about Metricly's terms of service, privacy policy, and licensure policies."
 layout: "info"
 header-light: true
 ---

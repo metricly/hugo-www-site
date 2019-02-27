@@ -2,7 +2,7 @@
 author: "Lawrence Lane"
 date: "2018-11-27"
 title: "AWS Lambda Cost—Your Guide to Understand, Calculate, and Optimize"
-description: "Description here"
+description: "New way to explore AWS Bill. Our widget uses the AWS cost service report to present cost data on the dashboard."
 category: "Product Updates"
 url: "/introducing-the-new-cost-explorer-widget/"
 layout: "single"
