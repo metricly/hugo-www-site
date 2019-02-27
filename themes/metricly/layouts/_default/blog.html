@@ -1,0 +1,342 @@
+{{ define "main" }}
+<div class="blog">
+
+    <!-- Insert Blog Header -->
+    {{ partial "header/blog-header.html" . }}
+
+    <main class="main-wrapper">
+        <section class="post">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-sm-7  post__item">
+                      {{ range first 1 (after 1 $.Site.Pages) }}
+                      {{ if in .Params.category "Product Updates" }}
+                        <a href="{{ if .Params.url }}{{ .Params.url }}{{ else }}{{ .Permalink }}{{ end }}"> <img class="image img-fluid" src="/assets/img1.jpg" alt="blog image"></a>
+                        {{ if .Params.category }}<p class="title-category">{{ .Params.category }}</p>{{ end }}
+                        <a href="{{ if .Params.url }}{{ .Params.url }}{{ else }}{{ .Permalink }}{{ end }}" class="title-h2">{{ .Title }}</a>
+
+                        {{- range .Params.authors }}
+                          {{- with $.Site.GetPage "taxonomyTerm" (printf "author/%s" (urlize .)) }}
+                            <figure>
+                              <img src="{{ .Params.photo }}" alt=""/>
+                              <figcaption>
+                                <a href="{{ .Permalink }}">{{ .Params.name }}</a>
+                              </figcaption>
+                            </figure>
+                          {{ end }}
+                        {{ end }}
+
+
+                        <div class="author">
+                            <img class="author__photo img-fluid" src="{{ .Params.photo }}" alt="author">
+                            <div>
+                                <div class="author__name">
+                                    Name
+                                </div>
+                                <div class="author__time">
+                                    5 min read
+                                </div>
+                            </div>
+                        </div>
+                        {{ end }}
+                        {{ end }}
+                    </div>
+                    <div class="col-lg-5 col-sm-5 d-flex flex-column  post__item --reverse">
+                        <a href="#" class="title-category">CLOUD COST MANAGEMENT</a>
+                        <a href="#" class="title-h2">AWS Cost Analysis: <br>
+                            Exploring Your Cost Deltas</a>
+                        <div class="author">
+                            <img class="author__photo img-fluid" src="/assets/author.png" alt="author">
+                            <div>
+                                <div class="author__name">
+                                    Mike Mackrory
+                                </div>
+                                <div class="author__time">
+                                    5 min read
+                                </div>
+                            </div>
+                        </div>
+                        <a href="#"><img class="image img-fluid" src="/assets/img2.jpg" alt="blog image"></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="multiple-slider">
+            <div class="container">
+                <h2 class="title-h2 --popular">
+                    popular stories
+                    <div class="swiper-button-next swiper-btn-m-one-next">
+                        <svg height="10" viewBox="0 0 19 10" width="19" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m13.3735714.42624339c-.1838571-.18793651-.4898571-.18793651-.6801428 0-.1838572.1815873-.1838572.48380952 0 .66497354l3.4487143 3.40613757h-15.66600004c-.26528572.00042328-.47614286.20867725-.47614286.47068783s.21085714.47703704.47614286.47703704h15.66600004l-3.4487143 3.39978835c-.1838572.18793651-.1838572.49058202 0 .67174604.1902857.1879365.4967143.1879365.6801428 0l4.2651429-4.21248678c.1902857-.1815873.1902857-.48380952 0-.66497354z"
+                                fill-rule="evenodd" stroke-width=".4" transform="matrix(-1 0 0 1 18 0)" /></svg>
+                    </div>
+                    <div class="swiper-button-prev swiper-btn-m-one-prev">
+                        <svg height="10" viewBox="0 0 19 10" width="19" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m13.3735714.42624339c-.1838571-.18793651-.4898571-.18793651-.6801428 0-.1838572.1815873-.1838572.48380952 0 .66497354l3.4487143 3.40613757h-15.66600004c-.26528572.00042328-.47614286.20867725-.47614286.47068783s.21085714.47703704.47614286.47703704h15.66600004l-3.4487143 3.39978835c-.1838572.18793651-.1838572.49058202 0 .67174604.1902857.1879365.4967143.1879365.6801428 0l4.2651429-4.21248678c.1902857-.1815873.1902857-.48380952 0-.66497354z"
+                                fill-rule="evenodd" stroke-width=".4" transform="matrix(-1 0 0 1 18 0)" /></svg>
+                    </div>
+                </h2>
+                <div class="multiple-slider__swiper swiper-multiple-one">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <a href="#"><img class="img-fluid" src="/assets/img6.jpg" alt="post image"></a>
+                            <a href="#" class="title-category">Cloud Cost Management</a>
+                            <a href="#" class="title-h3">Want to Reduce Your AWS Bill? Here’s 7 Practical Ways to Do It</a>
+                            <div class="name">Mike Mackrory&nbsp;|&nbsp;5 min read</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img class="img-fluid" src="/assets/img7.jpg" alt="post image"></a>
+                            <a href="#" class="title-category">PRODUCT UPDATE</a>
+                            <a href="#" class="title-h3">Integration Update: <br>
+                                AWS EFS Metrics & Policies</a>
+                            <div class="name">Mike Mackrory&nbsp;|&nbsp;5 min read</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img class="img-fluid" src="/assets/img8.jpg" alt="post image"></a>
+                            <a href="#" class="title-category">PRODUCT UPDATE</a href="#">
+                            <a href="#" class="title-h3">Refresh:<br>
+                                The AWS Services Cost Report</>
+                            <div class="name">Mike Mackrory&nbsp;|&nbsp;5 min read</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"> <img class="img-fluid" src="/assets/img7.jpg" alt="post image"></a>
+                            <a href="#" class="title-category">PRODUCT UPDATE</a>
+                            <a href="#" class="title-h3">Integration Update: <br>
+                                AWS EFS Metrics & Policies</a>
+                            <div class="name">Mike Mackrory&nbsp;|&nbsp;5 min read</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <a href="#"><img class="img-fluid" src="/assets/img8.jpg" alt="post image"></a>
+                            <a href="#" class="title-category">PRODUCT UPDATE</a>
+                            <a href="#" class="title-h3">Refresh:<br>
+                                The AWS Services Cost Report</a>
+                            <div class="name">Mike Mackrory&nbsp;|&nbsp;5 min read</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="single-slider --bg-blue">
+            <div class="container">
+                <div class="single-slider__swiper swiper-single-one">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <a href="#"><img class="image img-fluid" src="/assets/img2.jpg" alt="image of blog"></a>
+                                </div>
+                                <div class="slider-content col-lg-5 col-md-5 col-sm-5 offset-lg-1 offset-md-1 offset-sm-1 d-flex flex-column justify-content-center">
+                                    <a href="#" class="title-category --light">DEV’OPS</a>
+                                    <a href="#" class="title-h1 --light">EC2 Instance Types — 6 Things You Need To Know
+                                        Before Selecting</a>
+                                    <div class="author --light">
+                                        <img class="author__photo img-fluid" src="/assets/author.png" alt="author">
+                                        <div>
+                                            <div class="author__name">
+                                                Mike Mackrory
+                                            </div>
+                                            <div class="author__time">
+                                                5 min read
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <a href="#"><img class="img-fluid image" src="/assets/img2.jpg" alt="image of blog"></a>
+                                </div>
+                                <div class="slider-content col-lg-5 col-md-5 col-sm-5 offset-lg-1 offset-md-1  offset-sm-1 d-flex flex-column justify-content-center">
+                                    <a href="#" class="title-category --light">DEV’OPS</a>
+                                    <a href="#" class="title-h1 --light">EC2 Instance Types </a>
+                                    <div class="author --light">
+                                        <img class="author__photo img-fluid" src="/assets/author.png" alt="author">
+                                        <div>
+                                            <div class="author__name">
+                                                Mike Mackrory
+                                            </div>
+                                            <div class="author__time">
+                                                5 min read
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next swiper-btn-s-one-next">
+                        <svg height="10" viewBox="0 0 19 10" width="19" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m13.3735714.42624339c-.1838571-.18793651-.4898571-.18793651-.6801428 0-.1838572.1815873-.1838572.48380952 0 .66497354l3.4487143 3.40613757h-15.66600004c-.26528572.00042328-.47614286.20867725-.47614286.47068783s.21085714.47703704.47614286.47703704h15.66600004l-3.4487143 3.39978835c-.1838572.18793651-.1838572.49058202 0 .67174604.1902857.1879365.4967143.1879365.6801428 0l4.2651429-4.21248678c.1902857-.1815873.1902857-.48380952 0-.66497354z"
+                                fill-rule="evenodd" stroke-width=".4" transform="matrix(-1 0 0 1 18 0)" /></svg>
+                    </div>
+                    <div class="swiper-button-prev swiper-btn-s-one-prev">
+                        <svg height="10" viewBox="0 0 19 10" width="19" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m13.3735714.42624339c-.1838571-.18793651-.4898571-.18793651-.6801428 0-.1838572.1815873-.1838572.48380952 0 .66497354l3.4487143 3.40613757h-15.66600004c-.26528572.00042328-.47614286.20867725-.47614286.47068783s.21085714.47703704.47614286.47703704h15.66600004l-3.4487143 3.39978835c-.1838572.18793651-.1838572.49058202 0 .67174604.1902857.1879365.4967143.1879365.6801428 0l4.2651429-4.21248678c.1902857-.1815873.1902857-.48380952 0-.66497354z"
+                                fill-rule="evenodd" stroke-width=".4" transform="matrix(-1 0 0 1 18 0)" /></svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="post">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-7 col-sm-7  post__item">
+                        <img class="image img-fluid" src="/assets/img1.jpg" alt="blog image">
+                        <h2 class="title-category">PRODUCT UPDATE</h2>
+                        <h3 class="title-h2">Integration Update:<br>
+                            AWS Route 53 Metrics & Policies</h3>
+                        <div class="author">
+                            <img class="author__photo img-fluid" src="/assets/author.png" alt="author">
+                            <div>
+                                <div class="author__name">
+                                    Mike Mackrory
+                                </div>
+                                <div class="author__time">
+                                    5 min read
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-5 col-sm-5 d-flex flex-column  post__item --reverse">
+                        <h2 class="title-category">CLOUD COST MANAGEMENT</h2>
+                        <h3 class="title-h2">AWS Cost Analysis: <br>
+                            Exploring Your Cost Deltas</h3>
+                        <div class="author">
+                            <img class="author__photo img-fluid" src="/assets/author.png" alt="author">
+                            <div>
+                                <div class="author__name">
+                                    Mike Mackrory
+                                </div>
+                                <div class="author__time">
+                                    5 min read
+                                </div>
+                            </div>
+                        </div>
+                        <img class="image img-fluid" src="/assets/img2.jpg" alt="blog image">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="multiple-slider">
+            <div class="container">
+                <h2 class="title-h2 --popular">
+                    popular stories
+                    <div class="swiper-button-next swiper-btn-m-two-next">
+                        <svg height="10" viewBox="0 0 19 10" width="19" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m13.3735714.42624339c-.1838571-.18793651-.4898571-.18793651-.6801428 0-.1838572.1815873-.1838572.48380952 0 .66497354l3.4487143 3.40613757h-15.66600004c-.26528572.00042328-.47614286.20867725-.47614286.47068783s.21085714.47703704.47614286.47703704h15.66600004l-3.4487143 3.39978835c-.1838572.18793651-.1838572.49058202 0 .67174604.1902857.1879365.4967143.1879365.6801428 0l4.2651429-4.21248678c.1902857-.1815873.1902857-.48380952 0-.66497354z"
+                                fill-rule="evenodd" stroke-width=".4" transform="matrix(-1 0 0 1 18 0)" /></svg>
+                    </div>
+                    <div class="swiper-button-prev swiper-btn-m-two-prev">
+                        <svg height="10" viewBox="0 0 19 10" width="19" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m13.3735714.42624339c-.1838571-.18793651-.4898571-.18793651-.6801428 0-.1838572.1815873-.1838572.48380952 0 .66497354l3.4487143 3.40613757h-15.66600004c-.26528572.00042328-.47614286.20867725-.47614286.47068783s.21085714.47703704.47614286.47703704h15.66600004l-3.4487143 3.39978835c-.1838572.18793651-.1838572.49058202 0 .67174604.1902857.1879365.4967143.1879365.6801428 0l4.2651429-4.21248678c.1902857-.1815873.1902857-.48380952 0-.66497354z"
+                                fill-rule="evenodd" stroke-width=".4" transform="matrix(-1 0 0 1 18 0)" /></svg>
+                    </div>
+                </h2>
+                <div class="multiple-slider__swiper swiper-multiple-two">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <img class="img-fluid" src="/assets/img6.jpg" alt="post image">
+                            <a href="#" class="title-category">Cloud Cost Management</a>
+                            <h3 class="title-h3">Want to Reduce Your AWS Bill? Here’s 7 Practical Ways to Do It</h3>
+                            <div class="name">Mike Mackrory&nbsp;|&nbsp;5 min read</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="img-fluid" src="/assets/img7.jpg" alt="post image">
+                            <a href="#" class="title-category">PRODUCT UPDATE</a>
+                            <h3 class="title-h3">Integration Update: <br>
+                                AWS EFS Metrics & Policies</h3>
+                            <div class="name">Mike Mackrory&nbsp;|&nbsp;5 min read</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="img-fluid" src="/assets/img8.jpg" alt="post image">
+                            <a href="#" class="title-category">PRODUCT UPDATE</a>
+                            <h3 class="title-h3">Refresh:<br>
+                                The AWS Services Cost Report</h3>
+                            <div class="name">Mike Mackrory&nbsp;|&nbsp;5 min read</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="img-fluid" src="/assets/img7.jpg" alt="post image">
+                            <a href="#" class="title-category">PRODUCT UPDATE</a>
+                            <h3 class="title-h3">Integration Update: <br>
+                                AWS EFS Metrics & Policies</h3>
+                            <div class="name">Mike Mackrory&nbsp;|&nbsp;5 min read</div>
+                        </div>
+                        <div class="swiper-slide">
+                            <img class="img-fluid" src="/assets/img8.jpg" alt="post image">
+                            <a href="#" class="title-category">PRODUCT UPDATE</a>
+                            <h3 class="title-h3">Refresh:<br>
+                                The AWS Services Cost Report</h3>
+                            <div class="name">Mike Mackrory&nbsp;|&nbsp;5 min read</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="single-slider --bg-green --reverse" style="margin-bottom: 0px;">
+            <div class="container">
+                <div class="single-slider__swiper swiper-single-two">
+                    <div class="swiper-wrapper">
+                        <div class="swiper-slide">
+                            <div class="row flex-row-reverse">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <img class="image img-fluid" src="/assets/img2.jpg" alt="image of blog">
+                                </div>
+                                <div class="slider-content col-lg-6 col-md-6 col-sm-6 d-flex flex-column justify-content-center">
+                                    <h2 class="title-category --light">DEV’OPS</h2>
+                                    <h3 class="title-h1 --light">EC2 Instance Types — 6 Things You Need To Know
+                                        Before Selecting</h3>
+                                    <div class="author --light">
+                                        <img class="author__photo img-fluid" src="/assets/author.png" alt="author">
+                                        <div>
+                                            <div class="author__name">
+                                                Mike Mackrory
+                                            </div>
+                                            <div class="author__time">
+                                                5 min read
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="row flex-row-reverse">
+                                <div class="col-lg-6 col-md-6 col-sm-6">
+                                    <img class="img-fluid image" src="/assets/img2.jpg" alt="image of blog">
+                                </div>
+                                <div class="slider-content col-lg-6 col-md-6 col-sm-6 d-flex flex-column justify-content-center">
+                                    <h2 class="title-category --light">DEV’OPS</h2>
+                                    <h3 class="title-h1 --light">EC2 Instance Types </h3>
+                                    <div class="author --light">
+                                        <img class="author__photo img-fluid" src="/assets/author.png" alt="author">
+                                        <div>
+                                            <div class="author__name">
+                                                Mike Mackrory
+                                            </div>
+                                            <div class="author__time">
+                                                5 min read
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="swiper-button-next swiper-btn-s-two-next">
+                        <svg height="10" viewBox="0 0 19 10" width="19" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m13.3735714.42624339c-.1838571-.18793651-.4898571-.18793651-.6801428 0-.1838572.1815873-.1838572.48380952 0 .66497354l3.4487143 3.40613757h-15.66600004c-.26528572.00042328-.47614286.20867725-.47614286.47068783s.21085714.47703704.47614286.47703704h15.66600004l-3.4487143 3.39978835c-.1838572.18793651-.1838572.49058202 0 .67174604.1902857.1879365.4967143.1879365.6801428 0l4.2651429-4.21248678c.1902857-.1815873.1902857-.48380952 0-.66497354z"
+                                fill-rule="evenodd" stroke-width=".4" transform="matrix(-1 0 0 1 18 0)" /></svg>
+                    </div>
+                    <div class="swiper-button-prev swiper-btn-s-two-prev">
+                        <svg height="10" viewBox="0 0 19 10" width="19" xmlns="http://www.w3.org/2000/svg">
+                            <path d="m13.3735714.42624339c-.1838571-.18793651-.4898571-.18793651-.6801428 0-.1838572.1815873-.1838572.48380952 0 .66497354l3.4487143 3.40613757h-15.66600004c-.26528572.00042328-.47614286.20867725-.47614286.47068783s.21085714.47703704.47614286.47703704h15.66600004l-3.4487143 3.39978835c-.1838572.18793651-.1838572.49058202 0 .67174604.1902857.1879365.4967143.1879365.6801428 0l4.2651429-4.21248678c.1902857-.1815873.1902857-.48380952 0-.66497354z"
+                                fill-rule="evenodd" stroke-width=".4" transform="matrix(-1 0 0 1 18 0)" /></svg>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</div>
+{{ end }}

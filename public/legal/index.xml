@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Legal &amp; Privacy on Welcome To Metricly</title>
+    <link>/legal/</link>
+    <description>Recent content in Legal &amp; Privacy on Welcome To Metricly</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/legal/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Cookie Policy</title>
+      <link>/legal/cookie-policy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/legal/cookie-policy/</guid>
+      <description>Effective [September 28th], 2018
+Metricly (&amp;ldquo;Metricly&amp;rdquo;, &amp;ldquo;us&amp;rdquo;, &amp;ldquo;we&amp;rdquo;) respects individual privacy and value the confidence of its customers and business partners. As such, Metricly is committed to upholding the highest ethical standards in its business practices
+This Cookie Policy (&amp;ldquo;Policy&amp;rdquo;) applies to this website or to any website or application that includes a link or reference to this Policy (together, the &amp;ldquo;Site(s)&amp;rdquo;) and describes what cookies are, what types of cookies are placed on your device when you visit the Site and how we use them.</description>
+    </item>
+    
+    <item>
+      <title>Licenses</title>
+      <link>/legal/licenses/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/legal/licenses/</guid>
+      <description>Metricly uses and promotes the use of certain third-party and open source technology (&amp;ldquo;Third Party Software&amp;rdquo;), primarily data collection agents and other tools (&amp;ldquo;Agents&amp;rdquo;), for use with the Metricly Service. Any Agents provided by Metricly utilizing Third Party Software are governed by the applicable license, including open source licenses. If there are provisions in such licenses that conflict with the applicable Metricly Terms, the relevant Third Party Software license terms will apply.</description>
+    </item>
+    
+    <item>
+      <title>Paid Terms of Service</title>
+      <link>/legal/terms-service-paid/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/legal/terms-service-paid/</guid>
+      <description>Metricly, Inc.
+SERVICE AGREEMENT
+(Software-as-a-Service)
+SERVICE SUMMARY
+ 1. Terms of Use. This Service Summary outlines the services to be provided under this agreement. Customer agrees that Customer&amp;rsquo;s access to and use of the Service (as defined in Section 3 below) shall at all times be subject to the Metricly, Inc. (&amp;ldquo;Metricly&amp;rdquo;) Terms of Use, which can be found in Exhibit A. This Service Summary and the Metricly Terms of Use are referred to collectively as the &amp;ldquo;Service Agreement.</description>
+    </item>
+    
+    <item>
+      <title>Privacy</title>
+      <link>/legal/privacy-policy/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/legal/privacy-policy/</guid>
+      <description>Metricly has created this privacy statement in order to demonstrate our firm commitment to protecting your privacy. The following discloses our information gathering and dissemination practices for this website (www.metricly.com).
+If you have questions or wish to opt-out, you can contact us at the following:
+Metricly, Inc.
+12700 Sunrise Valley Drive, 2nd Floor
+Reston, VA 20191
+USA
+Email: metricly@metricly.com
+Metricly&amp;rsquo;s Privacy practices at a Glance    Purpose Lawful Basis Relevant Personal Information Retention period     Provision of our Services, including delivering the Site, responding to your support tickets, etc.</description>
+    </item>
+    
+    <item>
+      <title>Trial Terms of Service</title>
+      <link>/legal/terms-service-trial/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/legal/terms-service-trial/</guid>
+      <description>Metricly, Inc.
+FREE SERVICE AGREEMENT
+(HOSTED ARRANGEMENT)
+ THIS SERVICE SUMMARY AND ACCOMPANYING TERMS OF USE ARE PROVIDED FOR INFORMATION PURPOSES ONLY. 
+PRIOR TO BEING GRANTED ACCESS TO THE SERVICE, CUSTOMER WILL BE REQUIRED TO ACCEPT AND AGREE TO THE TERMS OF THIS FREE SERVICE AGREEMENT, INCLUSIVE OF THIS SERVICE SUMMARY AND THE TERMS OF USE.
+SERVICE SUMMARY
+1. Terms of Use. This Service Summary outlines the services to be provided under this free services agreement (the &amp;ldquo;Free Service Agreement&amp;rdquo;).</description>
+    </item>
+    
+  </channel>
+</rss>

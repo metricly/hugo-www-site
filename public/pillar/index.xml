@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Pillars on Welcome To Metricly</title>
+    <link>/pillar/</link>
+    <description>Recent content in Pillars on Welcome To Metricly</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/pillar/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>EC2 Instances</title>
+      <link>/ec2-instances/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/ec2-instances/</guid>
+      <description>The Ultimate Guide to EC2 Instances In this guide we tackle 9 different EC2 topics, ranging from beginner to advanced, to provide you with the ultimate resource for long-term success. Feel free to skip around or dive right in at the start!
+Updated on Nov 28, 2018           The Basics of EC2 1. What is an EC2 instance? 2. EC2 Instance Pricing Options 3.</description>
+    </item>
+    
+  </channel>
+</rss>

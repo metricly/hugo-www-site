@@ -1,8 +1,5 @@
-<html>
-{{ partial "headers/head.html" . }}
-<body>
-    {{ partial "headers/header.html" . }}
-    <section class="section" style="margin-top: 100px;">
+{{ define "main" }}
+<section class="section" style="margin-top: 100px;">
       <div class="container" style="max-width: 1200px; margin: 0 auto;">
         {{ range sort .Paginator.Pages }}
         <article class="" style="margin-bottom: 30px;">
@@ -34,6 +31,5 @@
         {{ end }}
       </div>
     </section>
-    {{ partial "footer" . }}
-</body>
-</html>
+
+{{ end }}

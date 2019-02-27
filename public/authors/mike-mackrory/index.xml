@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Welcome To Metricly</title>
+    <link>/authors/mike-mackrory/</link>
+    <description>Recent content on Welcome To Metricly</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 05 Nov 2018 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/authors/mike-mackrory/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AWS Lambda Cost—Your Guide to Understand, Calculate, and Optimize</title>
+      <link>/aws-lambda-cost/</link>
+      <pubDate>Mon, 05 Nov 2018 00:00:00 +0000</pubDate>
+      
+      <guid>/aws-lambda-cost/</guid>
+      <description>In this article we’ll help you get an understanding of AWS Lambda cost, and how it is calculated. More specifically, we’ll cover the relationships between configuration and cost and help you build strategies to optimize both cost and performance.
+Since its release four years ago, AWS Lambda has enabled organizations to move their applications into a serverless architecture. The ability to build a system made up of small, on-demand units of functionality is especially appealing to companies that want to increase scalability and reduce costs.</description>
+    </item>
+    
+  </channel>
+</rss>

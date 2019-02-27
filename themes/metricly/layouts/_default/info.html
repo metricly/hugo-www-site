@@ -1,8 +1,4 @@
-
-<html>
-{{ partial "headers/head.html" . }}
-<body{{ if .Params.body_class }} class="{{ .Params.body_class }}"{{ end }}>
-{{ partial "headers/header.html" . }}
+{{ define "main" }}
 <style>
 section p {
   color: #58595b;
@@ -49,6 +45,4 @@ section ul {
     {{.Content}}
   </div>
 </section>
-{{ partial "footer.html" . }}
-</body>
-</html>
+{{ end }}

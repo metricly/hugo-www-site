@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Welcome To Metricly</title>
+    <link>/features/</link>
+    <description>Recent content on Welcome To Metricly</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    
+	<atom:link href="/features/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>AWS Cost Tool</title>
+      <link>/aws-cost-tool/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws-cost-tool/</guid>
+      <description>[features=&#34;total-cost-dashboard&#34;] h4:before { content: url(/wp-content/uploads/assets/icons/dashboard.svg); } [features=&#34;aws-services-cost&#34;] h4:before { content: url(/wp-content/uploads/assets/icons/pie-chart.svg); } [features=&#34;ec2-recommendation&#34;] h4:before { content: url(/wp-content/uploads/assets/icons/ec2-sizing.svg); } [features=&#34;boxplot-report&#34;] h4:before { content: url(/wp-content/uploads/assets/icons/boxplot-report.svg); } .aws-head .row:before { content: &#34;&#34;; position: absolute; left: 100px; background-image: url(/wp-content/uploads/assets/icons/test-hero.png); width: 300px; height: 300px; background-repeat: no-repeat; background-size: contain; } .aws-head .row:after { content: &#34;&#34;; position: absolute; right: 100px; background-image: url(/wp-content/uploads/assets/icons/test-right.png); width: 300px; height: 300px; background-repeat: no-repeat; background-size: contain; } @media only screen and (max-width: 1450px) { .</description>
+    </item>
+    
+    <item>
+      <title>AWS Cost Tool</title>
+      <link>/aws-sizing-tool/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/aws-sizing-tool/</guid>
+      <description>Using Metricly&#39;s AWS Sizing Tool Achieve instance-level AWS cost savings without compromising on performance. Try 21 Days Free Skip To Guide    Using Our AWS Sizing Tool  Rightsizing Your EC2s Monitoring The Changes Create an Ongoing Strategy    AWS Sizing is Confusing Setting up the right instance when there are over 400,000 unique EC2 SKUs (products) to choose from doesn&#39;t just sound like a challenge–it is one.</description>
+    </item>
+    
+    <item>
+      <title>Monitoring</title>
+      <link>/monitoring/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/monitoring/</guid>
+      <description>[features=&#34;tv-projection&#34;] h4:before { content: &#34;&#34;; } [features=&#34;flexible-dashboard&#34;] h4:before { content: url(/wp-content/uploads/assets/icons/monitoring/flexible-dashboard.svg); } [features=&#34;ad-hoc-graphing&#34;] h4:before { content: url(/wp-content/uploads/assets/icons/monitoring/ad-hoc-graphing.svg); } [features=&#34;tv-projection&#34;] h4:before { content: url(/wp-content/uploads/assets/icons/monitoring/tv-projection.svg); } [features=&#34;sudden-change&#34;] h4:before { content: url(/wp-content/uploads/assets/icons/monitoring/sudden-change.svg); } [features=&#34;metric-bands&#34;] h4:before { content: url(/wp-content/uploads/assets/icons/monitoring/metric-bands.svg); } [features=&#34;multiple-conditions&#34;] h4:before { content: url(/wp-content/uploads/assets/icons/monitoring/multiple-conditions.svg); } [features=&#34;pre-configured-policies&#34;] h4:before { content: url(/wp-content/uploads/assets/icons/monitoring/pre-configured.svg); } .monitoring .aws-head { background: #2D516C; } .aws-head .row:before { content: &#34;&#34;; position: absolute; left: 100px; background-image: url(/wp-content/uploads/assets/graphics/features/monitoring-left.svg); width: 300px; height: 300px; background-repeat: no-repeat; background-size: contain; } .</description>
+    </item>
+    
+  </channel>
+</rss>
