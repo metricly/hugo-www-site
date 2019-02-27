@@ -1,12 +1,14 @@
-+++
-author = "Mike Mackrory"
-date = "2018-09-26T13:44:00+00:00"
-title = "AWS Pricing API—How to Use It to Predict and Control AWS Costs"
-category = "Cloud Cost Management"
-url = "/aws-pricing-api/"
-+++
+---
+authors:
+  - Mike Mackrory
+date: "2018-09-26T13:44:00+00:00"
+title: "AWS Pricing API—How to Use It to Predict and Control AWS Costs"
+category: "Cloud Cost Management"
+url: "/aws-pricing-api/"
+layout: "single"
+---
 
-#### About The AWS Pricing API
+### About The AWS Pricing API
 
 Determining the exact price of an AWS service is a particularly important (and notoriously challenging) step in predicting and controling AWS costs. To help with this task, the AWS pricing API was introduced at the end of 2015.
 
@@ -14,7 +16,7 @@ Amazon released the API in response to requests from partners and customers for 
 
 Before we get started, if your use-case happens to be EC2 rightsizing, I recommend checking out Metricly’s [AWS Sizing Tool](/aws-sizing-tool/) or [skipping](/aws-pricing-api/#recommendation) to the last section of this article. For all others, read on!
 
-#### What We’ll Cover
+### What We’ll Cover
 
 Skip to section:
 
@@ -30,7 +32,7 @@ Second, we’ll trace down to the EC2 SKU report, which lists each possible conf
 
 To conclude, we’ll spend some time dissecting the report, identifying critical information fields, and then we’ll wrap it up by considering how the engineers at Metricly have used this information to help their customers reduce costs and take an informed and intelligent approach to provisioning their environments.
 
-#### Finding the EC2 SKU Report
+### Finding the EC2 SKU Report
 
 I’ll share the specific steps I used to locate the EC2 SKU report so you can find it yourself, and so you can replicate those steps if you’d like to dive into pricing information for other AWS offerings. The files are all presented in JSON format, which makes them easy to understand for humans and machines alike. After downloading the index file listed above, I was able to locate the AmazonEC2 object.
 
@@ -74,7 +76,7 @@ We’ll start by downloading the current pricing policy.
 
 <https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonEC2/current/index.json> (376,136 KB at the time of writing)
 
-#### Analyzing the Information in the Report
+### Analyzing the Information in the Report
 
 The file I downloaded had over 10 million lines of data. Some text editors can handle files of this size; others may truncate the file, or experience runtime errors. Other options could include:
 
@@ -155,13 +157,13 @@ If your organization is large enough and has negotiated for a discounted rate fo
 
 Finally, it is important to consider that terms change regularly and that your analysis will need to be routinely conducted if you wish to remain current. Considering the date ranges within the versions index, it appears that modifications are made at the beginning of each month, although some versions did cover multiple months. Consumers can also subscribe to an SNS topic which will publish notifications when prices are modified.
 
-#### Using the Report to Optimize Costs and Performance
+### Using the Report to Optimize Costs and Performance
 
 The real power in having a report which you can query programmatically is that you can use it to drive processes for the optimization of usage of resources and to manage costs. Combining this information with usage metrics of your AWS resources will allow you to manage your AWS infrastructure better.
 
 Combining all of this data into a consolidated system and writing the logic and functions to support reporting and optimization algorithms will require the commitment of engineering resources. If this is an endeavor your organization is interested in, but you lack the available resources to complete and maintain this system, I’d like to offer an alternative—the EC2 Recommendation report from Metricly.
 
-#### The Metricly EC2 Recommendation Report
+### The Metricly EC2 Recommendation Report
 
 I’ve written about the EC2 Recommendation report before, and you can learn more about it from their [AWS sizing guide](/aws-sizing-tool/). The EC2 Recommendation report combines performance information gathered from your AWS account and the resources you’re using. A control panel allows you to specify which metrics you’d like to optimize for, as well as the level of risk your organization is willing to assume to optimize usage and costs.
 

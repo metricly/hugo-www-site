@@ -1,10 +1,12 @@
-+++
-author = "Mike Mackrory"
-date = "2018-10-16T13:44:00+00:00"
-title = "EC2 Instance Types—6 Things You Need To Know Before Selecting"
-category = "Cloud Cost Management"
-url = "/ec2-instance-types/"
-+++
+---
+authors:
+  - Mike Mackrory
+date: "2018-10-16T13:44:00+00:00"
+title: "EC2 Instance Types—6 Things You Need To Know Before Selecting"
+category: "Cloud Cost Management"
+url: "/ec2-instance-types/"
+layout: "single"
+---
 
 When an organization and its engineers begin their first forays into Amazon’s Elastic Computing (EC2) solutions, the selection of the right EC2 instance type may appear to be an easy decision based on capability and cost. Early decisions might be made based on:
 
