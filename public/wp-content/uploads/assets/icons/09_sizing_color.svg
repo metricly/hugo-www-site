@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="27px" viewBox="0 0 28 27" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>09_sizing_color</title>
+    <desc>Created with Sketch.</desc>
+    <g id="graphics" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons" transform="translate(-482.000000, -105.000000)">
+            <g id="09_sizing_color" transform="translate(483.000000, 106.000000)">
+                <path d="M5.56390977,12.7551021 L5.56390977,0.714285714 C5.56390977,0.319796607 5.88370638,-2.3263028e-13 6.27819549,-2.32702746e-13 L24.8796992,-2.32702746e-13 C25.2741884,-2.32775212e-13 25.5939849,0.319796607 25.5939849,0.714285714 L25.5939849,19.3157895 C25.5939849,19.7102786 25.2741884,20.0300752 24.8796992,20.0300752 L11.9924812,20.0300752" id="Rectangle-6-Copy" stroke="#3BA5D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5"></path>
+                <path d="M10.3403344,15 L18.7775988,6.53010204" id="Line-5" stroke="#3BA5D6" stroke-width="1.8" stroke-linecap="square"></path>
+                <path d="M0.714285714,14.4097744 C0.595938982,14.4097744 0.5,14.5057134 0.5,14.6240601 L0.5,24.462406 C0.5,24.5807527 0.595938982,24.6766917 0.714285714,24.6766917 L10.5526316,24.6766917 C10.6709783,24.6766917 10.7669173,24.5807527 10.7669173,24.462406 L10.7669173,14.6240601 C10.7669173,14.5057134 10.6709783,14.4097744 10.5526316,14.4097744 L0.714285714,14.4097744 Z M2.14285714,14.8383459 L9.12406014,14.8383459 C9.79469164,14.8383459 10.3383459,15.3820001 10.3383459,16.0526316 L10.3383459,23.0338346 C10.3383459,23.7044661 9.79469164,24.2481203 9.12406014,24.2481203 L2.14285714,24.2481203 C1.47222566,24.2481203 0.928571429,23.7044661 0.928571429,23.0338346 L0.928571429,16.0526316 C0.928571429,15.3820001 1.47222566,14.8383459 2.14285714,14.8383459 Z" id="Combined-Shape" stroke="#2FC3AA" stroke-width="1.4" fill="#000000" fill-rule="nonzero"></path>
+                <polyline id="Path-8" stroke="#3BA5D6" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" transform="translate(17.201057, 7.993937) rotate(90.000000) translate(-17.201057, -7.993937) " points="14.6972979 10.4976962 14.6972979 5.49017743 19.7048166 5.49017743"></polyline>
+            </g>
+        </g>
+    </g>
+</svg>

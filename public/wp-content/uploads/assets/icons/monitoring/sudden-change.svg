@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 19.2.1, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="46px" height="46px" viewBox="0 0 46 46" style="enable-background:new 0 0 46 46;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#FFFFFF;}
+	.st1{fill:#E8F3F7;}
+	.st2{fill:#74CAC8;}
+	.st3{fill:none;stroke:#113B58;stroke-width:1.5;stroke-linecap:round;}
+	.st4{fill:#FFFFFF;stroke:#113B58;stroke-width:1.5;stroke-linecap:round;}
+	.st5{fill:#74CAC8;stroke:#113B58;stroke-width:1.5;stroke-linecap:round;}
+	.st6{fill:#E8F3F7;stroke:#113B58;stroke-width:1.5;stroke-linecap:round;}
+	.st7{opacity:0.5517;fill:#74CAC8;enable-background:new    ;}
+</style>
+<circle class="st0" cx="26" cy="21" r="13"/>
+<circle class="st1" cx="26" cy="21" r="9.8"/>
+<g>
+	<path class="st2" d="M26,7.9c-0.4,0-0.8-0.3-0.8-0.8v-3c0-0.4,0.3-0.8,0.8-0.8s0.8,0.3,0.8,0.8v3C26.8,7.6,26.4,7.9,26,7.9z"/>
+	<path class="st2" d="M26,36.2c-0.4,0-0.8-0.3-0.8-0.8v-3.9c0-0.4,0.3-0.8,0.8-0.8s0.8,0.3,0.8,0.8v3.9C26.8,35.9,26.4,36.2,26,36.2
+		z M26,29.4c-0.4,0-0.8-0.3-0.8-0.8v-3.9c0-0.4,0.3-0.8,0.8-0.8s0.8,0.3,0.8,0.8v3.9C26.8,29.1,26.4,29.4,26,29.4z M26,22.6
+		c-0.4,0-0.8-0.3-0.8-0.8v-3.9c0-0.4,0.3-0.8,0.8-0.8s0.8,0.3,0.8,0.8v3.9C26.8,22.2,26.4,22.6,26,22.6z M26,14.8
+		c-0.4,0-0.8-0.3-0.8-0.8v-2.9c0-0.4,0.3-0.8,0.8-0.8s0.8,0.3,0.8,0.8V14C26.8,14.4,26.4,14.8,26,14.8z"/>
+	<path class="st2" d="M26,42.1c-0.4,0-0.8-0.3-0.8-0.8v-3c0-0.4,0.3-0.8,0.8-0.8s0.8,0.3,0.8,0.8v3C26.8,41.8,26.4,42.1,26,42.1z"/>
+</g>
+<polyline class="st3" points="7.5,36.8 15,36.8 26,16.4 32.5,20.4 "/>
+<path class="st4" d="M33.5,32.4l2.8-2.8l5.7,5.7c0.4,0.4,0.4,1,0,1.4l-1.4,1.4c-0.4,0.4-1,0.4-1.4,0L33.5,32.4z"/>
+<circle class="st5" cx="26" cy="16.4" r="2"/>
+<circle class="st6" cx="15" cy="36.8" r="2"/>
+<circle class="st6" cx="5.5" cy="36.8" r="2"/>
+<circle class="st6" cx="33.5" cy="20.4" r="2"/>
+<circle class="st3" cx="26" cy="21" r="13"/>
+<path id="Combined-Shape_4_" class="st7" d="M7.4,7.6v1.5c0,0.4-0.3,0.8-0.8,0.8c-0.4,0-0.8-0.3-0.8-0.8V7.6H4.4
+	C4,7.6,3.6,7.2,3.6,6.8S4,6.1,4.4,6.1h1.6V4.6c0-0.4,0.3-0.7,0.8-0.7c0.4,0,0.8,0.3,0.8,0.7v1.5h1.4c0.4,0,0.8,0.3,0.8,0.8
+	S9.3,7.6,8.9,7.6H7.4z"/>
+</svg>
