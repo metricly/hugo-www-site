@@ -1,0 +1,1290 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    
+
+    <title>EC2 Instances - Metricly</title>
+    
+    <meta property="og:title" content="EC2 Instances" />
+<meta property="og:description" content="here is the new description" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="/ec2-instances/" />
+
+
+    
+    
+<script>
+  !function(){var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src=("https:"===document.location.protocol?"https://":"http://")+"cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var o=document.getElementsByTagName("script")[0];o.parentNode.insertBefore(n,o);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
+  analytics.load("Z019VdyfJ1LDKgU2uKBMp61JwXlMgSB1");
+  analytics.page();
+  }}();
+</script>
+
+
+<meta name="google-site-verification" content="yR24klkgwFxUbkUOMI4k52SRAf-Ywb9LVZke1jheAx4" />
+
+
+<script type="text/javascript">
+
+function getUrlVars() {
+var vars = {};
+var parts = window.location.href.replace(/[?&]+([^=&]+)=([^&]*)/gi, function(m,key,value) {
+vars[key] = value;
+});
+return vars;
+}
+
+
+function setCookie() {
+var aname = "utm_source";
+var avalue = getUrlVars()["utm_source"];
+
+var bname = "utm_medium";
+var bvalue = getUrlVars()["utm_medium"];
+
+var cname = "utm_campaign";
+var cvalue = getUrlVars()["utm_campaign"];
+
+var dname = "utm_keyword";
+var dvalue = getUrlVars()["keyword"];
+
+
+var ename = "utm_content";
+var evalue = getUrlVars()["utm_content"];
+
+
+if (avalue != undefined) {
+  document.cookie = aname+"="+avalue+";max-age=" + 60*60*24*30 + ";domain=.metricly.com;path=/";
+}
+if (bvalue != undefined) {
+  document.cookie = bname+"="+bvalue+";max-age=" + 60*60*24*30 + ";domain=.metricly.com;path=/";
+}
+if (cvalue != undefined) {
+  document.cookie = cname+"="+cvalue+";max-age=" + 60*60*24*30 + ";domain=.metricly.com;path=/";
+}
+if (dvalue != undefined) {
+  document.cookie = dname+"="+dvalue+";max-age=" + 60*60*24*30 + ";domain=.metricly.com;path=/";
+}
+if (evalue != undefined) {
+  document.cookie = ename+"="+evalue+";max-age=" + 60*60*24*30 + "'domain=.metricly.com;path=/";
+}
+}
+
+function getCookie(name){
+    var pattern = RegExp(name + "=.[^;]*")
+    matched = document.cookie.match(pattern)
+    if(matched){
+        var cookie = matched[0].split('=')
+        return cookie[1]
+    }
+    return false
+}
+
+function buildUTMurl() {
+
+var source = getCookie("utm_source")
+var medium = getCookie("utm_medium")
+var campaign = getCookie("utm_campaign")
+var keyword = getCookie("utm_keyword")
+
+var utmURL = "https://app.netuitive.com/signup/?utm_source=" + source + "&utm_medium=" + medium + "&utm_campaign=" + campaign + "&utm_keyword=" + keyword;
+window.location = utmURL;
+}
+</script>
+<link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-TXfwrfuHVznxCssTxWoPZjhcss/hp38gEOH8UPZG/JcXonvBQ6SlsIF49wUzsGno" crossorigin="anonymous">
+
+
+    
+    
+    <link rel="stylesheet" id="theme" href="/css/mytheme.min.css" type="text/css" media="all">
+    <link rel="stylesheet" id="styles" href="/css/styles.css" type="text/css" media="all">
+    
+
+
+
+  </head>
+  <body>
+
+    
+    
+    <header class="header -light align-items-start" id="header">
+          <div class="header_wrap">
+            <div class="grid-container">
+              <a class="header_logo" href="/">
+				  <img src="/img/brand/logo-light.svg" alt="Metricly">
+          <img src="/img/brand/logo-dark.svg" alt="Metricly">
+              </a>
+              <div class="header_ham">
+                <button class="hamburger hamburger--squeeze" id="header_ham"><span class="hamburger-box"><span class="hamburger-inner"></span></span></button>
+              </div>
+              <nav class="header_nav" id="header_nav">
+                <ul class="header_nav_list">
+                  <li class="header_nav_list_item -with-sublist"> <a>Features</a>
+                    <ul class="header_nav_list_item_sublist">
+                      <div class="header_nav_list_item_sublist_subwrap">
+                        <li class="header_nav_list_item_sublist_item"><a class="class" href="/aws-cost-tool/">
+                            <div class="header_nav_list_item_sublist_item_head"><img class="icon" src="/wp-content/uploads/assets/header/icons/aws-cost2x.png" alt="">
+                              <h5>AWS Cost</h5><img class="arrow" src="/wp-content/uploads/assets/header/icons/green-arrow2x.png" alt="">
+                            </div>
+                            <p class="header_nav_list_item_sublist_item_desc">Capacity & cost analysis to find 32%+ savings on your bill.</p></a></li>
+                        <li class="header_nav_list_item_sublist_item"><a href="/monitoring/">
+                            <div class="header_nav_list_item_sublist_item_head"><img class="icon" src="/wp-content/uploads/assets/header/icons/monitoring2x.png" alt="">
+                              <h5>Monitoring</h5><img class="arrow" src="/wp-content/uploads/assets/header/icons/green-arrow2x.png" alt="">
+                            </div>
+                            <p class="header_nav_list_item_sublist_item_desc">Apply machine learning analytics to cloud infrastructure.</p></a></li>
+                            <li class="header_nav_list_item_sublist_item"><a class="class" href="/pricing/">
+                                          <div class="header_nav_list_item_sublist_item_head">
+                                            <h5>Pricing</h5><img class="arrow" src="/wp-content/uploads/assets/header/icons/green-arrow2x.png" alt="">
+                                          </div>
+                                          </a></li>
+                      </div>
+                    </ul>
+                  </li>
+                  <li class="header_nav_list_item"> <a href="/demo/">Demo<img class="hide-desktop hide-laptop header_nav_list_item_arrow" src="/wp-content/uploads/assets/header/icons/dark-green-arrow@2x.png" alt=""></a></li>
+<li class="header_nav_list_item -with-sublist"> <a>Why Metricly</a>
+                    <ul class="header_nav_list_item_sublist">
+                      <div class="header_nav_list_item_sublist_subwrap">
+                        <li class="header_nav_list_item_sublist_item"><a class="class" href="/customers/">
+                            <div class="header_nav_list_item_sublist_item_head">
+                              <h5>Customers</h5><img class="arrow" src="/wp-content/uploads/assets/header/icons/green-arrow2x.png" alt="">
+                            </div>
+                            <p class="header_nav_list_item_sublist_item_desc">Success stories from teams relying on Metricly.</p></a></li>
+                        <li class="header_nav_list_item_sublist_item"><a href="/premier-services/">
+                            <div class="header_nav_list_item_sublist_item_head">
+                              <h5>Premier Services</h5><img class="arrow" src="/wp-content/uploads/assets/header/icons/green-arrow2x.png" alt="">
+                            </div>
+                            <p class="header_nav_list_item_sublist_item_desc">Free assistance to fast-track your success using Metricly.</p></a></li>
+
+                      </div>
+                    </ul>
+                  </li>
+					<li class="header_nav_list_item -with-sublist"><a href="#">Resources</a>
+                    <ul class="header_nav_list_item_sublist -two-column">
+                      <div class="header_nav_list_item_sublist_subwrap">
+                        <li class="header_nav_list_item_sublist_item"><a class="class" href="/blog/">
+                            <div class="header_nav_list_item_sublist_item_head">
+                              <h5>Blog</h5>
+                            </div>
+                            <p class="header_nav_list_item_sublist_item_desc">Learn the latest in DevOps and Metricly news</p></a></li>
+                        <li class="header_nav_list_item_sublist_item"><a class="class" href="/ebook/">
+                            <div class="header_nav_list_item_sublist_item_head">
+                              <h5>eBook</h5>
+                            </div>
+                            <p class="header_nav_list_item_sublist_item_desc">Our 12-page essential guide to cloud monitoring</p></a></li>
+                        <li class="header_nav_list_item_sublist_item"><a class="class" href="https://tools.metricly.com?utm_source=www">
+                            <div class="header_nav_list_item_sublist_item_head">
+                              <h5>EC2 Calculator</h5>
+                            </div>
+                            <p class="header_nav_list_item_sublist_item_desc">Free tool to compare thousands of EC2 pricing options</p></a></li>
+						  <li class="header_nav_list_item_sublist_item"><a class="class" href="/ec2-instances/">
+                            <div class="header_nav_list_item_sublist_item_head">
+                              <h5>EC2 Guide</h5>
+                            </div>
+                            <p class="header_nav_list_item_sublist_item_desc">Learn about EC2s from beginner to advanced</p></a></li>
+						     <li class="header_nav_list_item_sublist_item"><a class="class" href="https://docs.metricly.com">
+                            <div class="header_nav_list_item_sublist_item_head">
+                              <h5>Support</h5>
+                            </div>
+                            <p class="header_nav_list_item_sublist_item_desc">Setup guides, help docs, and support portal</p></a></li>
+                      </div>
+                    </ul>
+                  </li>
+                </ul>
+                <div class="header_nav_access"><a class="header_nav_access_link" href="https://app.metricly.com/#/login">Log In</a><span class="hide-desktop hide-laptop header_nav_access_text">or</span><a class="header_nav_access_link -alt" href="https://www.metricly.com/signup">Sign Up Free</a></div>
+              </nav>
+            </div>
+          </div>
+        </header>
+
+    
+
+    
+    
+  <script
+  src="https://code.jquery.com/jquery-3.3.1.min.js"
+  integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+  crossorigin="anonymous"></script>
+<link rel="stylesheet" id="guide-page" href="/css/guide-page.css" type="text/css" media="all">
+<main class="guide">
+   <section class="guide-section">
+      <div class="grid-container -thin">
+         <div class="row">
+            <div class="guide-section__content">
+               <h1>The Ultimate Guide to EC2 Instances</h1>
+               <p>In this guide we tackle 9 different EC2 topics, ranging from beginner to advanced, to provide you with the ultimate resource for long-term success. Feel free to skip around or dive right in at the start!</p>
+               <div class="date">Updated on Nov 28, 2018</div>
+            </div>
+            <div class="guide-section__image"><img src="/wp-content/uploads/2018/10/metricly_main_page-image-light.png" alt="metricly"></div>
+         </div>
+         <span class="scroll-button"></span>
+      </div>
+   </section>
+   <section class="nav-bar">
+      <div class="grid-container -thin">
+         <div class="row">
+            <button class="burger"><img src="/wp-content/uploads/assets/guide/burger.svg" alt="burger"></button><span class="title"> </span>
+         </div>
+      </div>
+   </section>
+   <section class="main-content">
+      <aside class="aside" id="aside-menu">
+         <div class="aside-menu">
+            <div class="aside-menu__title">The Basics of EC2</div>
+            <ul class="side-menu-items">
+               <li class="active"><a href="#1-what">1. What is an EC2 instance?</a></li>
+               <li><a href="#2-pricing">2. EC2 Instance Pricing Options</a></li>
+               <li><a href="#3-charge">3. How Does AWS Charge for EC2s?</a></li>
+            </ul>
+            <div class="aside-menu__title">Learning The Ropes</div>
+            <ul class="side-menu-items">
+               <li><a href="#4-types">4. More About Instance Types</a></li>
+               <li><a href="#5-size">5. Picking The Right EC2</a></li>
+               <li><a href="#6-pair">6. Pairing EBS Volumes</a></li>
+            </ul>
+            <div class="aside-menu__title">Mastering The Craft</div>
+            <ul class="side-menu-items">
+               <li><a href="#7-spot">7. Using Spot Instances</a></li>
+               <li><a href="#8-reserved">8. Understanding EC2 Reserved Instances</a></li>
+               <li><a href="#9-autoscaling">9. Auto Scaling your EC2s</a></li>
+            </ul>
+         </div>
+      </aside>
+      <div class="content">
+      <div class="scroll-link" id="1-what">
+         <div class="article">
+            <h2>1. What is an Amazon EC2 Instance?</h2>
+            <div class="question">EC2 is short for Amazon Elastic Compute Cloud. But what does that mean? </div>
+            <p class="text">Basically, an EC2 instance is a virtual server that replaces on-site, physical hardware. In a matter of minutes, you can spin up and configure an EC2 instance—or hundreds of them—with just a few clicks. The process is pretty simple: select an instance image (called an AMI), choose an instance type based on desired performance, and then add any storage needed.</p>
+            <img class="image" src="/wp-content/uploads/assets/guide/img-1.png" alt="choose AMI">
+            <!--<div class="large-section large-section--news">
+               <div class="row">
+                  <div class="large-section--news__content">
+                     <div class="title">Join other Dev’ops who love Metricly !</div>
+                     <p>Get the monthly DevOps newsletter that rules them all. </p>
+                  </div>
+                  <div class="large-section--news__form">
+                     <form action="">
+                        <input type="email" placeholder="Your e-mail">
+                        <button class="send-email"> <img src="/wp-content/uploads/assets/guide/arrow-form.svg" alt="Send Email"></button>
+                     </form>
+                  </div>
+               </div>
+            </div>-->
+            <div class="question">Don’t like your settings? </div>
+            <div class="text">They can be changed with ease. You just have to remember that when you terminate an EC2, your ephemeral storage (the storage that is part of your EC2) is erased, but if you use an Elastic Block Storage (EBS) then you can reattach your storage volume to the new EC2 once launched. You can also migrate certain instance types to other, better-suited performance families. The flexibility of changing EC2s ensures that you don’t have to fear spikes in usage or overpay for underused equipment. </div>
+         </div>
+         <div class="article">
+            <h3>What are the benefits of using EC2’s?</h3>
+            <div class="text text--bold">There are several benefits to migrating to EC2 instances. Here are just a few:</div>
+            <ul class="list-items">
+               <li><span>Elasticity: </span> Capacity needs can be met within a few minutes.</li>
+               <li><span>Control: </span> Keep root access for your instances. Stop or terminate instances via the API.</li>
+               <li><span>Reliability: </span> Amazon commits to an EC2 Service Level Agreement of 99.99%</li>
+               <li><span>Cost: </span> Choose from several payment models to get the most affordable rate.</li>
+            </ul>
+         </div>
+         <div class="article">
+            <h3>Are all EC2s the same?</h3>
+            <div class="text">With every configuration accounted for, there are over 400,000 different iterations of EC2. For now, we’ll stick to the basic differences you might come across when provisioning or working with EC2s.</div>
+            <!--<div class="colored-boxes">
+               <div class="colored-boxes__item --blue">
+                  <h6>More than</h6>
+                  <div class="large">60%</div>
+                  <p>lorem ipsum dolor sit amet</p>
+               </div>
+               <div class="colored-boxes__item --green">
+                  <h6>There are</h6>
+                  <div class="large">25M</div>
+                  <p>lorem ipsum dolor sit amet</p>
+               </div>
+               <div class="colored-boxes__item --red">
+                  <h6>More than</h6>
+                  <div class="large">80%</div>
+                  <p>lorem ipsum dolor sit amet</p>
+               </div>
+            </div>-->
+            <ul class="list-items">
+               <li> <span>AMIs</span></li>
+               <div class="text">Amazon provides a list of 35 stock AMIs for you to choose from. These range from Amazon Linux, to Ubuntu, to Microsoft Windows Server, and even a Deep Learning AMI. If you can’t quite find what you’re looking for, there’s also a <a href="https://aws.amazon.com/marketplace" target="_blank">marketplace</a> for selling and buying custom AMIs.</div>
+            </ul>
+            <ul class="list-items">
+               <li> <span>Instance Families</span></li>
+               <div class="text">EC2s are primarily categorized by performance family:</div>
+            </ul>
+            <div class="table-wrapper">
+               <table class="table table--families">
+                  <thead>
+                     <tr>
+                        <td>Instance Families</td>
+                        <td>Example</td>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td>Accelerated Computing</td>
+                        <td>F1 instances have Field Programmable Gate Arrays (FPGA) that allow you to create a customized hardware acceleration platform for your application.</td>
+                     </tr>
+                     <tr>
+                        <td>Compute optimized</td>
+                        <td>C5d instances use the Intel Xeon Platinum 8000 series (Skylake-SP) processor that can reach a Turbo CPU clock speed of 3.4GHz.</td>
+                     </tr>
+                     <tr>
+                        <td>General Purpose</td>
+                        <td>Offers <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/burstable-performance-instances.html">instances with burstable CPU</a> with T2 and T3</td>
+                     </tr>
+                     <tr>
+                        <td>Memory Optimized</td>
+                        <td>High Memory Instances can contain up to 12 TB of memory and utilize bare-metal performance with direct access to host hardware. </td>
+                     </tr>
+                     <tr>
+                        <td>Storage Optimized</td>
+                        <td>D2 Instances can provide up to 3.5 GBps read / 3.1 GBps write disk throughput.</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <ul class="list-items">
+               <li> <span>Instance Types</span></li>
+               <div class="text">Within those greater families are unique instance types. Here’s a list of instance types for just the General Purpose Family:</div>
+            </ul>
+            <div class="table-wrapper --types">
+               <div class="table--types">
+                  <div class="row">
+                     <div class="first"><b>t2.</b>nano</div>
+                     <div><b>t2.</b>micro</div>
+                     <div><b>t2.</b>small</div>
+                     <div><b>t2.</b>medium</div>
+                     <div><b>t2.</b>large</div>
+                     <div><b>t2.</b>xlarge</div>
+                     <div><b>t2.</b>2xlarge</div>
+                  </div>
+                  <div class="row">
+                     <div class="first"><b>t3.</b>nano</div>
+                     <div><b>t3.</b>micro</div>
+                     <div><b>t3.</b>small</div>
+                     <div><b>t3.</b>medium</div>
+                     <div><b>t3.</b>large</div>
+                     <div><b>t3.</b>xlarge</div>
+                     <div><b>t3.</b>2xlarge</div>
+                  </div>
+                  <div class="row">
+                     <div class="first"><b>m4.</b>large</div>
+                     <div><b>m4.</b>xlarge</div>
+                     <div><b>m4.</b>2xlarge</div>
+                     <div><b>m4.</b>4xlarge</div>
+                     <div><b>m4.</b>10xlarge</div>
+                     <div><b>m4.</b>16xlarge</div>
+                  </div>
+                  <div class="row">
+                     <div class="first"><b>m5.</b>large</div>
+                     <div><b>m5.</b>xlarge</div>
+                     <div><b>m5.</b>2xlarge</div>
+                     <div><b>m5.</b>4xlarge</div>
+                     <div><b>m5.</b>12xlarge</div>
+                     <div><b>m5.</b>24xlarge</div>
+                  </div>
+                  <div class="row">
+                     <div class="first"><b>m6.</b>large</div>
+                     <div><b>m6.</b>xlarge</div>
+                     <div><b>m6.</b>2xlarge</div>
+                     <div><b>m6.</b>4xlarge</div>
+                     <div><b>m6.</b>12xlarge</div>
+                     <div><b>m6.</b>24xlarge</div>
+                  </div>
+               </div>
+            </div>
+            <div class="text">Notice that T2, T3, M4, M5, and M5d are the different instance types, each having varying sizing options that range from nano to 24xlarge. From left to right, these instance types go from oldest to newest in generation. Over time, AWS deprecates the older generations.</div>
+            <div class="text">If you’d like a full breakdown on instance types, check out our guide with <a href="/ec2-instance-types/?utm_source=ec2-guide">6 tips on selecting an EC2 instance type.</a></div>
+            <div class="text">It’s important to pick carefully when choosing your AMI, Instance Family, and Instance type. All three of these components factor greatly when determining the overall price per hour Amazon charges you. </div>
+            <div class="text">Speaking of pricing, let’s take a look at amazon’s pricing options.</div>
+            <!--<blockquote class="blockquote">
+               <p>One of the most important things when choosing an EC2 instance, is picking the correct workload. Without that, you’re flying blind, and have no way to tell if something will need to be changed!</p>
+               <div class="author-block">
+                  <img src="/wp-content/uploads/assets/guide/profile-photo4.png" alt="avatar">
+                  <div class="author">
+                     <span>Brian Spindler</span>
+                     <div class="desc">VP Engineering @ Metricly</div>
+                  </div>
+               </div>
+            </blockquote>-->
+         </div>
+      </div>
+      <!--2.-->
+      <div class="scroll-link" id="2-pricing">
+         <div class="article">
+            <h2 id="2-pricing">2. EC2 Instance Pricing Options</h2>
+            <div class="text">When it comes to paying for Amazon Web Services, there are four main purchasing options: On-demand Instances, Reserved Instances, Spot Instances, and Dedicated Hosts. Each pricing option is tailored to benefit a particular usage behaviour. </div>
+            <div class="text">Properly evaluating your environment to determine the best payment method for each instance is crucial to avoiding wasteful spending. But be careful not to get too aggressive when trying to save--choosing the cheapest available option is not always the smartest choice. Doing so may lead to performance issues for your application that would be difficult to diagnose in production (especially if it involves mis-allocation related to your disk I/O requirements). </div>
+            <div class="text">After reading the following sections, you’ll have a clear understanding of when to leverage each pricing option</div>
+         </div>
+         <div class="article">
+            <h3>On-Demand Instances</h3>
+            <div class="text">On-Demand is the standard pay-as-you-use payment option. Usage is billed either <span class="colored">per-hour</span> or <span class="colored">per-second</span>, depending on the kind of instances being run. </div>
+            <div class="text text--list">On-Demand Instances are great for:</div>
+            <ul class="list-items --beforeText">
+               <li>Temporary projects</li>
+               <li>Testing/Developing with EC2s for the first time</li>
+               <li>Applications with unpredictable and spiky workloads</li>
+            </ul>
+            <div class="text">Essentially, these are a great first choice for anyone new to AWS who wants to learn without overcommitting. On-Demand Instances are also great for uncertain, flexible projects. This is because you’ll never have to pay for unused resources (which can happen with reservations) and your EC2 can still scale with growing workloads. </div>
+         </div>
+         <div class="article">
+            <h3>Spot Instances</h3>
+            <div class="text">You can obtain deep discounts of up to 90% by leveraging spot instances. How is that possible? It’s simple: spot instances are a limited pooled resource. They aren’t always available for the price you’re willing to pay. And when the price goes above your set bidding threshold, your spot instances are interrupted (via hibernation, stopping, or termination). So when choosing Spot Instances, it’s always best to pick fault-tolerant workloads and stateless distributed applications that can tolerate losing partial or full computing capacity without affecting your business processes. </div>
+            <div class="text text--list">Spot Instances are great for:</div>
+            <ul class="list-items">
+               <li>Containerized workloads</li>
+               <li>Big Data</li>
+               <li>Test &amp; Development workloads</li>
+            </ul>
+         </div>
+         <div class="article">
+            <h3>Reserved Instances</h3>
+            <div class="text">For the forward-thinker, Reserved Instances are a great resource. You can save up to 75% in cost by choosing Reserved Instances over On-Demand ones. When using RIs, you also get the added optional benefit of reserving capacity in your preferred Availability Zones. </div>
+            <div class="text">That sounds great, right? Why wouldn’t you just use RIs exclusively? Well, the downside is that you have to commit to a long-term contract of at least one year. This means continuing to pay a monthly amount even if your need goes away in six months. Also, to get the most savings possible, you have to pay upfront. That may not fit everyone’s budget.</div>
+            <div class="text">Don’t worry, though. There’s also partial upfront and no upfront payment options for Reserved Instances--meaning you’ll still save on your EC2s, just not as much.</div>
+            <div class="text text--list">Reserved Instances are great for:</div>
+            <ul class="list-items --beforeText">
+               <li>Customers able to commit to 1 or 3 year contracts</li>
+               <li>Applications that require steady state resources</li>
+               <li>Applications that would benefit from reserved capacity</li>
+            </ul>
+            <div class="text text--list">If you’re still unsure about committing to using RIs, consider the following:</div>
+            <ul class="list-items --beforeText">
+               <li>You can modify or exchange your reserved instances with convertible reservations</li>
+               <li>Standard reserved instances can be put up for sale on the Reserved Instance Marketplace</li>
+            </ul>
+            <div class="text">There’s a lot more that can be said about Reserved Instances. Want to know more? Skip to our <a href="#8-reserved">overview of Reserved Instances.</a></div>
+         </div>
+         <div class="article">
+            <h3>Dedicated Hosts</h3>
+            <div class="text">Still like the idea of having your own physical server and have full control of your hardware? Dedicated Hosts are your solution. AWS offers dedicated physical EC2 servers through the On-Demand and Reserved Instance payment methods. </div>
+            <div class="text text--list">Dedicated Hosts are great for:</div>
+            <ul class="list-items">
+               <li>Avoiding the sharing of physical computing resources with other AWS customers</li>
+               <li>Using your existing server-bound software licenses</li>
+               <li>Meeting compliance requirements</li>
+            </ul>
+            <div class="note-block">
+               <h6>Note that AWS also offers Dedicated Instances (vs. Hosts).</h6>
+               <p>The difference is that Dedicated Instances may be provisioned on a different physical server each time (preventing you from using your own software licenses tied to a specific socket, core, or CPU serial number).</p>
+            </div>
+         </div>
+     <!--
+         <div class="large-section large-section--try">
+            <h5>Plan Your Instances with Metricly’s Calculator Tool</h5>
+            <p>Metricly’s built a new <mark class="mark"><span>EC2 Instances Calculator</span></mark> to help you search through thousands of current EC2 configurations in a simple user interface and plan for your environment.</p>
+            <a href="#">Try Now</a>
+         </div>-->
+      </div>
+      <!--3.-->
+      <div class="scroll-link" id="3-charge">
+         <div class="article">
+            <h2 id="how-does-aws-charge">3. How Does AWS Charge for EC2s?</h2>
+            <div class="text">In October of 2017, AWS announced that Amazon EC2 usage of Linux-based instances launched in On-Demand, Reserved and Spot form (along with provisioned EBS volumes) will be billed on one second increments, with a minimum of 60 seconds. This means that you would no longer pay for a full hour if you only use the instance in a running state for a few minutes. You also get the benefit of reserved instance pricing for multiple instances used within the hour. Remember that AWS EC2 pricing may still be expressed in the form of instance-hour on many of their pricing pages to preserve consistency.</div>
+            <div class="text">Dedicated Instances, EBS Snapshots, and products in AWS Marketplace are still billed on an hourly basis. </div>
+         </div>
+         <div class="article">
+            <h3>Data Transfer Costs</h3>
+            <div class="text">Data transfer costs can be divided into two general categories:</div>
+            <ul class="list-items">
+               <li>
+                  Data transfers in <span>between AWS services</span> (like from EC2 to S3)
+                  <ul>
+                     <li><span>Across Availability Zones in Same Region:</span><br> $0.01/GB each direction</li>
+                     <li><span>Within Same Availability Zone:</span><br> typically free</li>
+                     <li><span>Across Regions:</span><br> varies by region</li>
+                  </ul>
+               </li>
+               <li>
+                  Data transfers <span>from AWS to the public internet</span>
+                  <ul>
+                     <li><span>IPv4 (Public or Elastic)</span><br> $0.01/GB either direction</li>
+                     <li><span>IPv6 in Different VPS:</span><br> $0.01/GB either direction</li>
+                     <li><span>Regional Out To Internet:</span><br> varies by region</li>
+                  </ul>
+               </li>
+            </ul>
+            <div class="text">The more data that is sent out from AWS, the less expensive it gets. Here are the current pricing tiers: 1GB, 9.999TB, 40TB, 100TB, 150TB, 500TB. AWS allows you to commit to a volume of data transfer per month in exchange for a more favorable pricing. </div>
+            <div class="text"><b>Remember,</b> each of these tiers will have different pricing values for each region.</div>
+         </div>
+         <div class="article">
+            <h3>One-Time Dedicated Instance Costs</h3>
+            <div class="text text--list">Dedicated Instances have two main costs:</div>
+            <ul class="list-items">
+               <li>
+                  <span>Per hour instance usage fees for each instance running</span>
+                  <ul>
+                     <li>Price varies by Region and AMI</li>
+                  </ul>
+               </li>
+               <li>
+                  <span>Per hour dedicated region fee for each region being used</span>
+                  <ul>
+                     <li>$2 per region used regardless of the number of instances in them</li>
+                  </ul>
+               </li>
+            </ul>
+         </div>
+         <div class="article">
+            <h3>How to Minimize Data Transfer Costs</h3>
+            <div class="text">A typical need for data transfer across Availability Zones or AZ (considered regional data transfer by AWS) or Regions is high availability. You may have a Cassandra ring for storing time-series data and provision it to span multiple regions in order to be resilient to any natural disaster, outages, or performance problems in a single geographic region</div>
+            <div class="text">If resiliency is not your objective, then you can eliminate the data transfer fee by launching your EC2s that are transferring data within the same Availability Zone as long as you are using a private IP address (vs. Elastic IP address). Note that you can also reduce the fees by choosing different regions or by transferring data across AZs instead of across full Regions.  </div>
+            <div class="text"><b>Looking for a tool to make your savings journey easier? </b><br>Consider <a href="/aws-cost-tool/?utm_source=ec2-guide">Metricly’s AWS Cost reports.</a><br> We’re very proud of the granularity they provide, on a per-instance level, to help you reduce spend and proactively dodge unwanted surprises in your bill. <!--If you’re just beginning your AWS journey and trying to plan your fleet, check out our free <a href="#" class="text-link --dark">EC2 calculator tool.</a>--></div>
+         </div>
+      </div>
+      <!--4.-->
+      <div class="scroll-link" id="4-types">
+         <div class="article">
+            <h2>4. More About Instance Types</h2>
+            <h3>Burstable Performance Instances</h3>
+            <div class="text text--desc">Burstable Performance Instances (T2, T3) are unique in their ability to perform beyond their baseline CPU ability. This flexibility in performance is achieved through tracking CPU Credits that accumulate over time. When credits run out, their performance returns to its baseline and the accumulation cycle continues. </div>
+            <div class="text text--list question">How CPU Credits are Accumulated:</div>
+            <ul class="list-items">
+               <li><span>T2</span></li>
+            </ul>
+            <div class="text">Accumulates CPU credits at a constant rate depending on instance size and when idle.</div>
+            <ul class="list-items">
+               <li><span>T3</span></li>
+            </ul>
+            <div class="text">Accumulates CPU credits when workload is beneath baseline CPU performance.</div>
+            <div class="text">The accumulated credit which is available to monitor via a CloudWatch metric can be used to burst above the baseline performance level before the credit is exhausted. (Note that you would need to use AMIs with device drivers that would support this functionality.) </div>
+            <div class="text">Both T2 and T3 Burstable Performance Instances can utilize Unlimited Mode, which allows the instances to indefinitely perform above baseline at an additional cost. T2 Unlimited Instances, for example, use the following formula to determine added cost:</div>
+            <div class="question formula">5 cents&nbsp; : &nbsp;vCPU-hour &nbsp; x &nbsp; instance count &nbsp; x &nbsp; %above baseline &nbsp; x &nbsp; hours above baseline</div>
+            <div class="text">T instances were built for scenarios where high CPU performance is infrequently needed but incredibly useful in certain moments. Their ideal use cases are web servers, developer environments, and small databases. </div>
+         </div>
+         <div class="article">
+            <h3>Storage Options</h3>
+            <div class="text text--desc"> There are a few storage options you should familiarize yourself with that can be used with or without an EC2. The solutions range from block storage (EBS), object storage (S3 and Glacier), file storage (EFS), and Gateways for connecting your on-premise systems to the cloud.</div>
+            <div class="question">Instance storage </div>
+            <div class="text text--desc">Also referred to as “ephemeral” storage, Instance Storage is the hard drive that is connected to your EC2 which deletes upon termination of your EC2 instance</div>
+            <div class="question">Block storage with Amazon Elastic Block Storage or EBS </div>
+            <div class="text">EBS is the equivalent to Direct Attached Storage (DAS) or Storage Area Network (SAN). A block-level storage volume made for single-instance attachment and up to 16 TB of storage space. Good for frequent updates (databases). EBS storage persists separately from your running EC2 instance similar to a networked hard drive mounted as a storage volume.</div>
+            <div class="table-wrapper">
+               <table class="table table--families">
+                  <thead>
+                     <tr>
+                        <td>Type of EBS</td>
+                        <td>Description</td>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td>Provisioned IOPS SSD (io1)</td>
+                        <td>Specialized, low-latency storage with reserved amount of IOPS up to 32k IOPS per volume, ideal for real-time NoSQL</td>
+                     </tr>
+                     <tr>
+                        <td>Compute optimized</td>
+                        <td>Default general purpose storage with low latency and up to 10k IOPS per volume</td>
+                     </tr>
+                     <tr>
+                        <td>Throughput Optimized SSD (st1)</td>
+                        <td>Inexpensive storage with only up to 500 IOPS per volume ideal for data warehouse and log processing</td>
+                     </tr>
+                     <tr>
+                        <td>Cold HDD (sc1)</td>
+                        <td>The least expensive EBS solution with up to 250 IOPS per volume best for data that requires fewer accesses per day</td>
+                     </tr>
+                     <tr>
+                        <td>Storage Optimized</td>
+                        <td>Saves point-in-time snapshots of your volumes to Amazon S3 and incremental backups and ability to restore an EBS from the snapshot. Great for backups or storing EBS content at a cheaper rate before you restore it again into a new EBS.</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <div class="question">File storage with Amazon Elastic File Storage or EFS </div>
+            <div class="text text--desc">EFS is a shared file system designed to provide massively parallel shared access to thousands of Amazon EC2 instances, enabling your applications to achieve high levels of aggregate throughput. </div>
+            <div class="question">Object storage with S3 and Glacier</div>
+            <ul class="list-items">
+               <li><span>Amazon S3:</span>      </li>
+            </ul>
+            <div class="text">Static data storage with max capacity of 5TB per bucket; data is accessed using object keys. It is accessible via multiple interfaces including a web-based interface for easy browsing by end users. It’s also highly available and architected to store data redundantly across multiple devices and geographies. Data charges are split between storing, reading, and writing your data.</div>
+            <ul class="list-items">
+               <li><span>Glacier:</span>         </li>
+            </ul>
+            <div class="text">This the cheapest storage solution for longterm archived data that doesn’t require frequent (or low-latency) access. Data retrieval charges come in three forms:  standard, expedited (you pay up to 20x more for fast retrieval), or bulk.</div>
+            <div class="question">AWS Storage Gateway</div>
+            <div class="text">This is an appliance that you deploy on-premise and used to migrate or augment your on-premise storage with cloud storage. It connects into your computing hardware with a standard interface and stores the data in S3 buckets or as EBS snapshots.</div>
+         </div>
+         <div class="article">
+            <h3>EBS-Optimized Instances</h3>
+            <div class="text text--desc">EBS optimization simply means that your EC2 instance is empowered at all times to take full advantage of the IOPS provisioned on its attached EBS volume. Newer instance generations (C5, C4, M5, M4, P3, P2, G3, and D2) have EBS optimization turned on by default at no additional cost. </div>
+            <div class="question">But what if you’re using older instances? </div>
+            <div class="text text--desc">For all other instance types not listed above, enabling EBS optimization on your EC2 incurs an hourly added fee. Here’s an easy way to remember the information below: each size up basically doubles the hourly cost.</div>
+            <div class="table-title">EBS-Optimization Cost Per Hour on Previous Generations</div>
+            <div class="table-wrapper table-with-title">
+               <table class="table table--families table--ebs">
+                  <thead>
+                     <tr>
+                        <th>General Purpose</th>
+                        <th>Memory Optimized</th>
+                        <th>Compute Optimized</th>
+                        <th>Storage Optimized</th>
+                        <th>GPU Instances</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td><b>m3.</b>xlarge - $0.25</td>
+                        <td><b>r3.</b>xlarge - $0.02</td>
+                        <td><b>c3.</b>xlarge - $0.02</td>
+                        <td><b>i3.</b>xlarge - $0.02</td>
+                        <td><b>g2.</b>2xlarge - $0.02</td>
+                     </tr>
+                     <tr>
+                        <td><b>m3.</b>2xlarge - $0.05</td>
+                        <td><b>r3.</b>2xlarge - $0.05</td>
+                        <td><b>c3.</b>2xlarge - $0.05</td>
+                        <td><b>i3.</b>2xlarge - $0.05</td>
+                        <td></td>
+                     </tr>
+                     <tr>
+                        <td> </td>
+                        <td><b>r3.</b>2xlarge - $0.10</td>
+                        <td><b>c3.</b>2xlarge - $0.10</td>
+                        <td><b>i3.</b>2xlarge - $0.10</td>
+                        <td></td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <div class="table-desc">Keep in mind that this hourly cost is in addition to your other hourly EC2 instance fees. </div>
+         </div>
+         <div class="article">
+            <h3>Cluster Networking</h3>
+            <div class="text">Setting up a cluster placement group is great for creating low-latency networks between all instances within a cluster. Traffic between clustered instances within the same region can achieve up to 5 Gbps for single-flow and 25 Gbps for multi-flow traffic in either direction. If you’re launching high-performance analytic systems or complex science and engineering applications with high data transfer between nodes, Cluster Networking is a great solution.</div>
+         </div>
+      </div>
+      <!--5.-->
+      <div class="scroll-link" id="5-size">
+         <div class="article">
+            <h2 id="picking-the-right">5. Picking The Right EC2 Size</h2>
+            <div class="text">With so many EC2 types and sizes, choosing one that’s just right is quite a challenge. This is especially true when you toss in the added complexities surrounding storage options or specialized use case requirements. And let’s not forget the difficulty in deciding whether a 1-3 year reservation contract is worth the up-front cost for long-term savings. </div>
+            <div class="text">Rushing into your migration and “playing it safe” by provisioning oversized or overpowered EC2s may get you into the cloud faster, but your infrastructure spend is going to be higher. That’s guaranteed.</div>
+            <h3>So, what should you do to plan the rollout of your EC2 instances? </h3>
+            <div class="text"><span class="num colored">1.</span> Start with what you know: how your application is consuming computing resources today. You are going to measure all server resource utilization of CPU, memory, disk I/O, and network I/O. </div>
+            <div class="text"><span class="num colored">2.</span> Monitor this data for 2-4 weeks to account for seasonal patterns and spikes. You can start monitoring CloudWatch metrics and use the AWS Amazon CloudWatch scripts or use other open source agents (such <a href="https://github.com/Netuitive/netuitive-diamond" target="_blank">Diamond</a> for Linux or <a href="https://github.com/Netuitive/netuitive-windows-agent" target="_blank">CollectdWin</a> for Windows) for more granular data (including memory, which is not provided by CloudWatch).</div>
+            <div class="text"><span class="num colored">3.</span> Record the allocated capacity of CPU, memory, network, and IOPS based on the attributes of each of your EC2s (available in AWS console). The most difficult allocation to calculate is disk IOPS since it depends on the IOPS ratings of one or more EBS volumes attached to your EC2. Once you have this information, you are ready to compare the consumed resource against the allocated resource.</div>
+            <div class="text"><span class="num colored">4.</span> Graph your historic data, instance by instance, and eyeball the graphs for the points of resistance. Determine if the highest level of resource utilizations are due to application workload during peak hours or merely spikes caused by a midnight backup. </div>
+            <div class="text"><span class="num colored">5.</span> When dealing with multiple instances, viewing one graph at a time is time consuming. Instead, download your data as a spreadsheet and aggregate it over time. You want to show a single value for each metric which represents the minimum, 5th percentile, mean, 95th percentile, and maximum over the last 2 to 4 weeks. This allows you to isolate all over- and under-provisioned instances. </div>
+            <div class="text"><span class="num colored">6.</span> We recommend that you use the agent in step 2 to measure CPU load (a.k.a. run queue), I/O wait, and disk latency to isolate performance problems due to capacity bottlenecks. </div>
+            <div class="text text--desc"><span class="num colored">7.</span> You can now select the appropriately typed and sized EC2 for your instances according to workload requirements. </div>
+            <div class="text">If all of that sounds like a lot of work, well, it can be. But it doesn’t have to be. Most of the heavy lifting can be done through <a href="/aws-cost-tool/?utm_source=ec2-guide">Metricly’s Utilization and Cost vs Utilization reports.</a> We even have recommendation reports for EC2s and ASGs to help automate that final process between reviewing your aggregated historical workload data and inferring which EC2 instances are best suited to your needs. </div>
+            <div class="text text--desc">Interested in automating the bulk of your capacity planning with our personalized EC2 sizing recommendations? Try out our <a href="/signup?utm_source=ec2-guide">21-day free trial.</a> Sizing up your needs before migrating to the Amazon cloud platform is important, but don’t forget that right-sizing is an ongoing process. Your infrastructure should continue to evolve as your business grows and workload patterns change. </div>
+            <!--<div class="large-section large-section--try">
+               <h5>Plan Your Instances with Metricly’s Calculator Tool</h5>
+               <p>Metricly’s built a new <mark class="mark"><span>EC2 Instances Calculator</span></mark> to help you search through thousands of current EC2 configurations in a simple user interface and plan for your environment.</p>
+               <a href="#">Try Now</a>
+            </div>-->
+         </div>
+         <div class="article">
+            <h3>Based on Performance Data</h3>
+            <div class="text">As outlined in the previous section, performance data is critical for accurate capacity planning. This data helps inform your choice between EC2 instance families, each specialized in meeting different workload needs. </div>
+            <div class="text">In this section, we’re going to explore compute and storage optimized use cases. </div>
+            <ul class="list-items">
+               <li>Find instances with a max CPU and memory usage of less than 40% over a four-week period. </li>
+               <li>Focus on very recent instance data and on instances that have run for at least half the time you’re looking at. </li>
+               <li>Ignore burstable (T2 and T3) instances because these are designed to run at low CPU percentages for significant periods of time to accumulate CPU Credits.</li>
+            </ul>
+         </div>
+         <div class="article">
+            <h3>Storage Optimized</h3>
+            <div class="text text--desc">The new storage-optimized instances such as the D2 include up to 48 TB of local HDD-based storage which must be considered in your pricing decisions even though it’s ephemeral (deleted when you terminate your instance). However, for right sizing Storage Optimized instances, IOPS is a key metric to measure. Consider these two points of advice from AWS when analyzing your data:</div>
+            <ul class="list-items">
+               <li>Use the following formula to convert Peak NetworkIn and NetworkOut metrics from bytes per minute to megabits per second:</li>
+            </ul>
+            <div class="question formula">Maximum Networking (or NetworkOut) &nbsp; x &nbsp; 8 &nbsp; : &nbsp; 1024 &nbsp; : &nbsp; 1024 &nbsp;  :  &nbsp;60 = Number of Mbps</div>
+            <ul class="list-items">
+               <li class="text text--desc">Notice how I/O and CPU percentage metrics change during the day and whether there are peaks that need to be accommodated.</li>
+            </ul>
+            <div class="text">Sometimes, even when I/O performance is important, you have to play it smart. For one particular use case at Metricly, we had to choose between the alluringly powerful i3 instances (which use ephemeral storage) and a safer--but less powerful--combination of m5 instances and Amazon EBS volumes. </div>
+            <div class="text">Designed for I/O-intensive workloads, i3 instances are equipped with NVMe SSD storage. They  can deliver over 3 million IOPS in 4 KB blocks and a sequential disk throughput of up to 16 GB/second. Basically, i3s are storage-optimized instances perfect for very large deployments.</div>
+            <div class="text">But while the i3 solution is powerful, for our use case it carried with it a higher risk of failure due to its limited instance store. Ultimately, we chose the m5 + EBS combination because of its greater survivability. m5 instances can be stopped and volumes resized without losing any of their data--a valuable feature which ultimately won out in our decision making. </div>
+            <div class="text">The important takeaway here is this: even though an m5 is categorically considered a general-purpose instance type, it was the right move for our storage survivability use case based on our historical performance data.  </div>
+         </div>
+         <div class="article">
+            <h3>Considerations When Switching Instance Families </h3>
+            <div class="text text--desc">If you’re already situated in the AWS ecosystem and looking for ways to improve your infrastructural spend, consider switching up your instance families. You can migrate to different models of the same instance family or, depending on certain attributes, switch to another instance family entirely. </div>
+            <div class="question">However, there are some important details to consider when switching to a new instance type:</div>
+            <ul class="list-items">
+               <li><span>Virtualization type</span></li>
+               <div class="text">Not all versions of your operating system can run on the latest instance types. In some cases, you must first upgrade your operating system before you can switch to a new type that uses the latest virtualization hypervisor technology used by AWS.<br> This page explains the <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/virtualization_types.html" target="_blank">Linux AMI virtualization types</a> and dependencies.</div>
+            </ul>
+            <ul class="list-items">
+               <li><span>Platform</span></li>
+            </ul>
+            <div class="text">You must pick an instance type that supports 32-bit AMIs if your existing instance type does as well.</div>
+            <ul class="list-items">
+               <li><span>IOPS ratings</span></li>
+            </ul>
+            <div class="text">There are times when an instance type may have a hardware limitation for supporting certain EBS ratings. AWS <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/EBSOptimized.html" target="_blank">provides this information</a> and they must be reviewed prior to your selection.</div>
+            <ul class="list-items">
+               <li><span>AMI limitations</span></li>
+            </ul>
+            <div class="text">Certain AMIs have dependencies by type and size. For example, SQL Server Enterprise 2017 on Linux requires at least 4 GiB of memory which must be factored into your selection.</div>
+            <ul class="list-items">
+               <li><span>Network Interface Card (NIC) throughput</span></li>
+            </ul>
+            <div class="text">If you depend on a high volume of network activity then you must ensure that your instance type can support it. For example, some families support enhanced networking with up to 10 Gbps such as the C3, C4, D2, I2, and R3 families.</div>
+         </div>
+      </div>
+      <!--6.-->
+      <div class="scroll-link" id="6-pair">
+         <div class="article">
+            <h2 id="how-to-pair-the-right">6. Pairing EBS Volumes</h2>
+            <div class="text">When first introduced, an AWS EC2 only came with local ephemeral storage. However, over time, various flavors of Elastic Block Store (EBS) volumes were introduced that could be paired with an expanding list of EC2 selections. Below is a summary of EBS history:</div>
+            <div class="text text--list"><span class="colored">2006</span> — EC2 launched with instance storage.</div>
+            <div class="text text--list"><span class="colored">2008</span> — EBS (Elastic Block Storage) launched on magnetic storage.</div>
+            <div class="text text--list"><span class="colored">2012</span> — EBS Provisioned IOPS and EBS-Optimized instances.</div>
+            <div class="text text--list"><span class="colored">2014</span> — SSD-Backed general purpose storage.</div>
+            <div class="text text--list"><span class="colored">2014</span> — EBS data volume encryption.</div>
+            <div class="text text--list"><span class="colored">2015</span> — Larger and faster EBS volumes.</div>
+            <div class="text text--list"><span class="colored">2015</span> — EBS boot volume encryption.</div>
+            <div class="text text--desc"><span class="colored">2016</span> — EBS Throughput Optimized HDD (st1) and Cold HDD (sc1) volume types.</div>
+            <div class="text">At present (November 2018), when it comes to selecting an EBS volume, there are four main storage options to choose from. Choosing between them requires weighing pros and cons concerning speed, size, and cost. </div>
+            <div class="table-wrapper">
+               <table class="table table--families table--ec2">
+                  <thead>
+                     <tr>
+                        <th>EBS Volume</th>
+                        <th>IOPS/vol </th>
+                        <th>Throughput/vol</th>
+                        <th>About</th>
+                        <th>Common Uses</th>
+                        <th>Price</th>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td>Cold Storage HDD (SC1)</td>
+                        <td>250 IOPS</td>
+                        <td>250 MB/s</td>
+                        <td>Used for infrequently accessed data</td>
+                        <td>Colder data requiring fewer scans per day.</td>
+                        <td>$0.025 GB/mo</td>
+                     </tr>
+                     <tr>
+                        <td>Throughput Optimized HDD (ST1)</td>
+                        <td>500 IOPS</td>
+                        <td>500 MB/s</td>
+                        <td>Used for active workloads</td>
+                        <td>Data warehouses and log data</td>
+                        <td>$0.045 GB/mo</td>
+                     </tr>
+                     <tr>
+                        <td>EBS General Purpose SSD (GP2)</td>
+                        <td>10,000 IOPS</td>
+                        <td>160 MB/s</td>
+                        <td>Used for speedy delivery on simple data</td>
+                        <td>Transactional applications and quick-deploy instance images</td>
+                        <td>$0.10 GB/mo</td>
+                     </tr>
+                     <tr>
+                        <td>EBS Provisioned IOPS SSD (IO1)</td>
+                        <td>32,000 IOPS</td>
+                        <td>500 MB/s</td>
+                        <td>Used for intensive applications and speedy delivery</td>
+                        <td>Active data warehouses and relational databases</td>
+                        <td>$0.125 GB/mo</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <div class="text">For higher performance, remember to also consider using RAID configuration for Linux and Windows, and read <a href="http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/raid-config.html" target="_blank">RAID Configuration on Linux</a> and <a href="http://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/raid-config.html" target="_blank">RAID Configuration on Windows to learn more.</a></div>
+         </div>
+      </div>
+      <!--7.-->
+      <div class="scroll-link" id="7-spot">
+         <div class="article">
+            <h2>7. Using Spot Instances</h2>
+            <div class="text">Before we diving into use cases, let’s take a minute to review how Spot Instances work and where their resources come from. Spot Instances are comprised of unused AWS infrastructure within a given capacity pool. Every capacity pool has its own price, determined by the resources available.</div>
+            <h3>Capacity Pool Overview</h3>
+            <div class="text text--desc">A capacity pool is one given instance type + size in an availability zone. Below is an example containing 36 capacity pools across 2 availability zones in Region A: 17 of the pools are unavailable at the moment of inspection in Region A. Let’s say you wanted r5.24xl and, as you can see, it’s not available in either zone. You might be tempted to back out and just pay for an on-demand instance, but wait. Staying flexible is the key to being successful with Spot Instances. </div>
+         </div>
+         <div class="article">
+            <h3>The Importance of Being Flexible</h3>
+            <div class="question">Get the most out of Spot by staying flexible in these three ways:</div>
+            <ul class="list-items">
+               <li><span>Instance flexibility</span></li>
+            </ul>
+            <div class="text">If you have specific vCPU and memory requirements, use combinations of instance sizes, generations, or even other families to meet your needs. <a href="https://aws.amazon.com/ec2/spot/instance-advisor/" target="_blank" rel="nofollow">Spot Advisor</a> makes this easier by publishing likelihood of service interruption by type, size, and region. </div>
+            <ul class="list-items">
+               <li><span>Time flexibility</span></li>
+            </ul>
+            <div class="text">If the workload can wait until the r5.24xl capacity pool becomes available again, consider simply waiting it out. Instance Hibernation is a great tool to leverage in these scenarios because it helps you resume work between interruptions without having to start over or migrate workloads. </div>
+            <ul class="list-items">
+               <li><span>Region flexibility</span></li>
+            </ul>
+            <div class="text text--desc">Each Availability Zone in every region has its own capacity pools. With the right combination, you can still achieve savings compared to on-demand instances.</div>
+            <div class="text">Most of the legwork around finding the lowest-priced capacity pools and spot instances can be done for you using <a href="https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/spot-fleet.html" target="_blank" rel="nofollow">AWS Spot Fleet.</a> Use the Instance Weighting feature to compile a list of instance types/sizes compatible with your applications and give them each a score;<br> Spot Fleet then delivers the needed resources upon deployment and replaces them when interruptions occur. </div>
+         </div>
+         <div class="article">
+            <h3>Common Questions</h3>
+            <div class="question text">— How many capacity pools should I use?</div>
+            <div class="text text--desc">There isn’t a perfect answer, but generally it’s recommended you stay between 4 to 21 capacity pools. Your main goal here is to distribute your workload across enough capacity pools to handle the occasional interruption--but not so many that your fleet is constantly exposed to them.</div>
+            <div class="question text">— Should I be afraid of Spot Instance interruptions?</div>
+            <div class="text text--desc">You won’t have to be as long as you are prepared for it. Before your instance is interrupted, AWS sends a 2-minute interruption notice. Since January of 2018, these notifications can be leveraged as a CloudWatch event to minimize the impact of interruptions significantly. Just check out this <a href="https://aws.amazon.com/blogs/compute/taking-advantage-of-amazon-ec2-spot-instance-interruption-notices/" target="_blank" rel="nofollow">AWS walk-through</a> utilizing CloudWatch Events to automatically de-register Spot Instances from an Elastic Load Balancing Application Load Balancer. And don’t forget about Instance Hibernation, which gives you the option to resume workloads that were interrupted. </div>
+            <div class="text text--desc">With a combination of multiple capacity pools and scripts that orchestrate your workloads around interruptions, you can feel much more confident in running on Spot Instances. </div>
+         </div>
+         <div class="article">
+            <h3>Use Cases</h3>
+            <div class="text">Now that you have a solid understanding of how Spot Instances work, you’ve probably put together that most use cases should have the following in common:</div>
+            <ul class="list-items">
+               <li>Fault tolerant</li>
+               <li>Instance flexible</li>
+               <li>Stateless</li>
+               <li>Loosely coupled</li>
+               <li class="text">Multi-AZ</li>
+            </ul>
+            <div class="text">AWS divides their Spot use cases based on time sensitivity</div>
+            <div class="table-wrapper --centered">
+               <table class="table table--families table--use">
+                  <thead>
+                     <tr>
+                        <td>Time Sensitive Use Cases</td>
+                        <td>Description</td>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td>Web Services</td>
+                        <td>Experiments</td>
+                     </tr>
+                     <tr>
+                        <td>APIs</td>
+                        <td>Development</td>
+                     </tr>
+                     <tr>
+                        <td>Big Data</td>
+                        <td>Testing</td>
+                     </tr>
+                     <tr>
+                        <td>Grid Computing</td>
+                        <td>One-time Queries</td>
+                     </tr>
+                     <tr>
+                        <td>Production sequencing</td>
+                        <td>Modal training</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <div class="question text">Most of the above use cases could utilize one of the following Spot use strategies: </div>
+            <ul class="list-items">
+               <li>Acceleration</li>
+            </ul>
+            <div class="text">Think 1,000 nodes for 1 hour versus 100 nodes for 10 hours. Reducing your workload hours by multiplying your vCPUs ensures faster delivery with no worry of interruptions.</div>
+            <ul class="list-items">
+               <li>Diversification</li>
+            </ul>
+            <div class="text">Make interruptions irrelevant by clustering different instance types/families and distributing your workloads among them.</div>
+            <ul class="list-items">
+               <li>Hibernation</li>
+            </ul>
+            <div class="text text--desc">Resume workloads when resources are available. </div>
+            <div class="text text--desc">Spot instances can be intimidating at first due to their risk of interruptions, but today you’ve learned several ways to mitigate that risk. Now go get those epic savings!  </div>
+         </div>
+      </div>
+      <!-- 8.-->
+      <div class="scroll-link" id="8-reserved">
+         <div class="article">
+            <h2 id="ec2-reserved-instances">8. Understanding EC2 Reserved Instances</h2>
+            <div class="text text--desc">In the <a href="#2-pricing">EC2 Pricing Options</a> section, we gave you a quick summary of the benefits and pitfalls of choosing a Reserved instance. Now, let’s look at Reserved Instances (RI) in more detail.</div>
+            <div class="text text--desc">First, let’s tackle a common misconception about RIs. People generally tend to think of a Reserved Instance as one particular instance that you deploy for the duration of the contract term. That is not the case; RIs are simply a 1 or 3 year coupon that applies to <a href="/aws-reserved-instances-mistake/?utm_source=ec2-guide">any instance usage which matches what you paid for in the reservation</a> (e.g. m5.2xl in us-east-1b running Linux). At the end of the month, any instance usage matching that criteria is billed at the discounted rate. </div>
+            <div class="question">The price of a Reserved Instance is determined by three main factors: instance attributes, term commitment, and payment method. Here’s a breakdown:</div>
+            <ul class="list-items">
+               <li>Instance Attributes</li>
+            </ul>
+            <div class="text"> Instance Type, Availability Zone, Tenancy, Platform</div>
+            <ul class="list-items">
+               <li>Term Commitment</li>
+            </ul>
+            <div class="text"> 1 year or 3 years</div>
+            <ul class="list-items">
+               <li>Payment Method</li>
+            </ul>
+            <div class="text text--desc"> Upfront, Partial Upfront, or No Upfront</div>
+            <div class="text">Deeper savings can be achieved through a combination of longer term commitments and upfront payment. That being said, who knows what their workload patterns will look like in 3 years? In reality, you run the risk of getting stuck with RIs that you no longer need. Sure, you can hawk them off on AWS’s RI Marketplace, but there’s no guarantee they’ll sell--and when they do, it might be for less than your initial contract. That’s money wasted.</div>
+            <div class="text text--desc">Fortunately, you can prevent this by using a little strategy. But before we look at some strategies, let’s talk about the RI Classes that determine which approach to take.</div>
+         </div>
+         <div class="article">
+            <h3>Standard and Convertible Reserved Instances</h3>
+            <div class="text">To complicate pricing even more, there are two Reserved Instance Classes:<br> <b>Standard RIs and Convertible RIs.</b></div>
+            <div class="text text--desc">In some ways, these classes are pretty similar. All RIs, regardless of their class and terms, can apply their usage across the Availability Zones of their AWS region. They both can reserve capacity when assigned to a specific Availability Zone. And they both can be shared between multiple accounts when part of a consolidated billing family. </div>
+            <div class="text">Here’s where they difference:</div>
+            <div class="table-wrapper">
+               <table class="table table--difference">
+                  <thead>
+                     <tr>
+                        <td>Differences</td>
+                        <td>Standard</td>
+                        <td>Convertible</td>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td>1 Year Savings</td>
+                        <td>40%</td>
+                        <td>31%</td>
+                     </tr>
+                     <tr>
+                        <td>3 Year Savings</td>
+                        <td>60%</td>
+                        <td>54%</td>
+                     </tr>
+                     <tr>
+                        <td>Change Instance Family</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                     </tr>
+                     <tr>
+                        <td>Change Payment Option</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                     </tr>
+                     <tr>
+                        <td>Sellable on RI Marketplace</td>
+                        <td>Yes</td>
+                        <td>Not Yet</td>
+                     </tr>
+                     <tr>
+                        <td>Price Reductions</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+            <div class="text text--desc">So which one’s better? Neither; you’ll likely want to use both for different needs. For the sake of this article, let’s look at Standard RI. </div>
+         </div>
+         <div class="article">
+            <h3>Standard RI</h3>
+            <div class="text text--desc">A 1 Year Standard RI with no upfront cost is the most typical scenario for reserved instances; it has the least risk with guaranteed savings against On-Demand. </div>
+            <div class="text text--desc">One possible strategy using this scenario would be to select one or two long-term applications in your infrastructure that run 24/7 and migrate them to Reserved Instances that have the capacity to handle mild workload increases. Then evaluate your reservation needs quarterly, running on-demand instances in the interim for any increase in resource needs.</div>
+            <div class="text text--desc">The absolute safest approach would be to transition only a certain percentage of your core workloads to Standard Reserved Instances. (Remember, EC2 pricing options are not all-or-nothing. Use a mix.) Something between 20-45% would still give you significant savings while allowing for future business needs to scale up or down.</div>
+            <div class="text">Size flexibility is an important and practically useful benefit which should not be underestimated and which was introduced in the March of 2017. As long as you buy your reservation for a region (vs. an Availability Zone) then your reservation could apply to any reservation of that type but of any size using a normalization model described in <a href="https://aws.amazon.com/blogs/aws/new-instance-size-flexibility-for-ec2-reserved-instances/" target="_blank" rel="nofollow">this article.</a> </div>
+            <div class="table-wrapper --centered">
+               <table class="table table--difference">
+                  <thead>
+                     <tr>
+                        <td>Instance Size</td>
+                        <td>Normalization Factor</td>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td>nano</td>
+                        <td>0.25</td>
+                     </tr>
+                     <tr>
+                        <td>micro</td>
+                        <td>0.5</td>
+                     </tr>
+                     <tr>
+                        <td>small</td>
+                        <td>1</td>
+                     </tr>
+                     <tr>
+                        <td>medium</td>
+                        <td>2</td>
+                     </tr>
+                     <tr>
+                        <td>large</td>
+                        <td>4</td>
+                     </tr>
+                     <tr>
+                        <td>xlarge</td>
+                        <td>8</td>
+                     </tr>
+                     <tr>
+                        <td>2xlarge</td>
+                        <td>16</td>
+                     </tr>
+                     <tr>
+                        <td>4xlarge</td>
+                        <td>32</td>
+                     </tr>
+                     <tr>
+                        <td>8xlarge</td>
+                        <td>64</td>
+                     </tr>
+                     <tr>
+                        <td>10xlarge</td>
+                        <td>80</td>
+                     </tr>
+                     <tr>
+                        <td>16xlarge</td>
+                        <td>128</td>
+                     </tr>
+                     <tr>
+                        <td>32xlarge</td>
+                        <td>256</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div>
+         <div class="article">
+            <h3>A couple of common mistakes to avoid</h3>
+            <div class="text text--desc">A reservation subscription does not equate to availability of capacity in a given region when you require to launch an EC2, unless you purchase your reservation for only a specific Availability Zone. There lies a common mistake: If you buy your reservation for a specific AZ, the downside is that your subscription would not only not work for instances launched in any other AZ, but also not work for instances launched of a different size. So you are trading off capacity reservation for flexibility. You must watch your reservation coverage using tools provided in the AWS console to be sure that your usage is as expected.</div>
+            <div class="text text--desc">In environments where the number of running instances vary during the day (peak vs. non-peak hours), it is easy to over-buy reservations if you don’t consider the hourly distribution of usage during the course of a day. The concept is a tricky, so it’s worth <a href="/aws-reserved-instances-mistake/?utm_source=ec2-guide">reading this blog</a> if you scale your environment during the day. </div>
+         </div>
+      </div>
+      <!--9.-->
+      <div class="scroll-link" id="9-autoscaling">
+         <div class="article">
+            <h2 id="auto-scaling-ec2">9. Auto Scaling your EC2s</h2>
+            <div class="text text--desc">Auto Scaling is a powerful tool which automates the sizing of your infrastructure based on your chosen throughput demands (such as increased traffic or workloads). Using Auto Scaling with EC2s ensures stable user experiences without overpaying for unused resources. </div>
+            <div class="question text">Here’s what you’ll need to leverage Auto Scaling:</div>
+            <ul class="list-items">
+               <li>An AMI that contains your applications</li>
+               <li>Launch Configurations to spin cloned EC2s</li>
+               <li>An Auto Scaling Group to maintain your EC2s</li>
+               <li>A Load Balancer to distribute incoming traffic within your ASG</li>
+            </ul>
+         </div>
+         <div class="article">
+            <h3>Setup Basics</h3>
+            <div class="text"><span class="num"><span class="colored">1.</span> Launch Configurations</span></div>
+            <div class="text text--desc">Launch Configurations are the blueprints needed to spin up additional instances in an Auto Scaling Group. They contain important information such as the AMI, security groups, EBS volumes, user data, and many more specifics for the instances being launched.</div>
+            <div class="text"><span class="num"><span class="colored">2.</span> Auto Scaling Groups</span></div>
+            <div class="text">Auto Scaling Groups contain a collection of EC2 instances primed to scale together based on metric thresholds that you have set in CloudWatch. This group can be configured with a minimum size, maximum size, and target capacity. Once the criteria has been met to trigger your CloudWatch alarm, the group scales in an attempt to manage your resource usage and mitigate over or under provisioning. When done correctly, this will greatly increase the efficiency of your total cost of operations and high availability of your application.</div>
+            <div class="text">While going through the ASG configuration, you will need to select your Network (VPC) and Subnets. The VPC will determine the network space that the ASG will deploy instances in while the subnets will determine which Availability Zone your ASG has the ability to deploy your instances in. We recommend providing at least two different Availability Zones (subnets) for each Auto Scaling Group. </div>
+            <div class="text text--desc">Lastly, you’ll want to attach an Elastic Load Balancer to your Auto Scaling Group. </div>
+            <div class="text"><span class="num"><span class="colored">3.</span> Elastic Load Balancers</span></div>
+            <div class="text">There are three Load Balancer types available in AWS: Application Load Balancers,  Elastic Load Balancers (now referred to as classic or CLBs) and Network Load Balancers. Load balancers serve as a single point of contact for clients and distributes traffic to maintain application availability. </div>
+            <ul class="list-items">
+               <li><span>Application Load Balancers</span></li>
+            </ul>
+            <div class="text">Route traffic to specific resource types based on URL path and complex rules.<br> For example, pointing a specific URL to a specific micro-service.</div>
+            <ul class="list-items">
+               <li><span>Classic Load Balancers</span></li>
+            </ul>
+            <div class="text">Route traffic between clients and backend servers based on TCP port. </div>
+            <ul class="list-items">
+               <li><span>Network Load Balancers</span></li>
+            </ul>
+            <div class="text text--desc">Maintain a set of static IP’s (based on the AZ’s you attach) and route traffic to a static IP address or Target Group </div>
+            <div class="text">For the purposes of this article, let’s take a look at a comparison between Classic ELBs and ALBs:</div>
+            <img class="image" src="/wp-content/uploads/assets/guide/subnet.png" alt="subnet">
+            <ul class="list-items">
+               <li><span>Elastic Load Balancer (CLB)</span></li>
+            </ul>
+            <div class="text text--desc">Using an Elastic Load Balancer to serve up <span class="colored">/</span> will always send traffic to the same backend servers. This means that the backend server is responsible for routing requests based on headers. Without having some web proxy in place (apache, nginx, etc) a user hitting <span class="colored">/billing</span> would get the same results as a user hitting <span class="colored">/blog</a></span></div>
+            <ul class="list-items">
+               <li><span>Application Load Balancer</span></li>
+            </ul>
+            <div class="text text--desc">Application Load Balancers can be set to do the proxying for you. Users hitting <span class="colored">/billing</span> can be sent to one application target group, while <span class="colored">/blog</span> can be sent to a completely different target group. This is extremely helpful in mitigating management of multiple load balancers by simply applying routing rules based on host and or header path.</div>
+            <div class="text text--bold">Feature Comparison</div>
+            <div class="text">Once you’ve picked your load balancer (most likely an ALB), it’s time to build some policies.</div>
+            <div class="table-wrapper">
+               <table class="table table--feature">
+                  <thead>
+                     <tr>
+                        <td>Feature</td>
+                        <td>ELB</td>
+                        <td>ALB</td>
+                     </tr>
+                  </thead>
+                  <tbody>
+                     <tr>
+                        <td>Cross-Zone Load Balancing</td>
+                        <td>Manual enablement required</td>
+                        <td>Automatically scales</td>
+                     </tr>
+                     <tr>
+                        <td>Health Checks</td>
+                        <td>Basic auto detection</td>
+                        <td>Customizable with detailed HTTP error codes (200-399)</td>
+                     </tr>
+                     <tr>
+                        <td>Cloudwatch</td>
+                        <td>Basic</td>
+                        <td>Added metrics</td>
+                     </tr>
+                     <tr>
+                        <td>EC2 Classic VPC Support</td>
+                        <td>Yes</td>
+                        <td>No</td>
+                     </tr>
+                     <tr>
+                        <td>Dynamic Port Mapping</td>
+                        <td>No, fixed only.</td>
+                        <td>Yes,via EC2 Container service</td>
+                     </tr>
+                     <tr>
+                        <td>Access Logs</td>
+                        <td>Yes</td>
+                        <td>Yes + HTTP/S and Websocket requests</td>
+                     </tr>
+                     <tr>
+                        <td>Path-Based Routing</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                     </tr>
+                     <tr>
+                        <td>Deletion Protection</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                     </tr>
+                     <tr>
+                        <td>Backend Auth</td>
+                        <td>No</td>
+                        <td>Yes</td>
+                     </tr>
+                  </tbody>
+               </table>
+            </div>
+         </div>
+         <div class="article">
+            <h3>Auto Scaling Policies</h3>
+            <div class="text text--desc">Policies inform how and when your Auto Scaling Group resizes. Step Scaling and Track Scaling are the most commonly used methods, but we’re going to cover them all. </div>
+            <div class="text"><span class="num">Simple Scaling versus Step Scaling</span></div>
+            <div class="text">Simple Scaling is the classic scaling option AWS first published. It works by listening to a health check on your Auto Scaling Group and provisions more instances when the alarm fires. Once triggered, a cooldown period goes into effect to prevent overcompensation for multiple alarms in a given timeframe. </div>
+            <div class="text text--desc">Unlike Simple Scaling, Step Scaling does not have a cooldown period. These policies evaluate all alarms that fire. </div>
+            <div class="text"><span class="num">Simple Scaling versus Step Scaling</span></div>
+            <div class="text">Simple Scaling is the classic scaling option AWS first published. It works by listening to a health check on your Auto Scaling Group and provisions more instances when the alarm fires. Once triggered, a cooldown period goes into effect to prevent overcompensation for multiple alarms in a given timeframe. </div>
+            <div class="text text--desc">Unlike Simple Scaling, Step Scaling does not have a cooldown period. These policies evaluate all alarms that fire. </div>
+            <div class="text"><span class="num">Adjustment Types</span></div>
+            <div class="text">The following adjustment types are used in both Simple and Step Scaling policies:</div>
+            <ul class="list-items">
+               <li><span>ChangeInCapacity</span></li>
+            </ul>
+            <div class="text">Increases or decreases capacity by a set value. </div>
+            <ul class="list-items">
+               <li><span>ExactCapacity</span></li>
+            </ul>
+            <div class="text">Changes the ASG capacity to the exact value given.</div>
+            <ul class="list-items">
+               <li><span>PercentChangeInCapacity</span></li>
+            </ul>
+            <div class="text text--desc">Increases or decreases capacity of the ASG based on a set % of the whole group.</div>
+            <div class="text"><span class="num">Target Track Scaling </span></div>
+            <div class="text text--desc">Target Track Scaling is the newest and simplest way to manage your Auto Scaling policies. When creating the scaling policy, simply choose between creating a standard or custom metric and input a preferred value for it. The scaling policy then creates CloudWatch alarms tailored to maintaining your targeted metric and value. When the alarms fire, it scales back up (or down) to match your target. </div>
+            <div class="text"><span class="num">Custom Scaling </span></div>
+            <div class="text text--desc">A good custom metric must encapsulate the state of instance utilization across your entire ASG — otherwise, it scales poorly. </div>
+         </div>
+      </div>
+      </div>
+   </section>
+</main>
+<!-- Page Plugins -->
+<script src="https://abouolia.github.io/sticky-sidebar/js/sticky-sidebar.js"></script>
+<script>
+document.addEventListener("DOMContentLoaded", function(event) {
+  new StickySidebar('#aside-menu');
+});
+</script>
+<script>
+$('#side-menu-items li a').on('click', function(event) {
+    $('#side-menu-items li').removeClass('active');
+    $(this).parent().addClass('active');
+});
+
+$(window).on('scroll', function() {
+    $('.scroll-link').each(function() {
+        if($(window).scrollTop() >= $(this).offset().top) {
+            var link_id = $(this).attr('id');
+         var hash = "#";
+         var linkHref = hash + link_id;
+            $('.side-menu-items li a').parent().removeClass('active');
+         $(".side-menu-items li a[href='" + linkHref + "']").parent().addClass('active');
+      }
+    });
+});
+</script>
+
+
+
+    
+    
+<section class="devops-join">
+      <div class="grid-container">
+        <div class="row">
+          <div class="devops-join_image"><img src="https://www.metricly.com/wp-content/uploads/assets/footer/capterra.png" alt="capterra"></div>
+          <div class="devops-join_email">
+            <h2>Ready to get started with Metricly?</h2>
+            <p>Sign up for free, and join DevOps who rate us 5-stars on Capterra!</p>
+            <form action="/signup" method="GET">
+              <input type="email" id="email" name="email" placeholder="Work Email">
+              <button type="submit" value="Submit" class="btn-hover">Sign Up Free</button>
+            </form>
+			<p class="small mb-0 mt-3" style="font-size: 14px;">
+				<i class="fal fa-calendar-check" style="margin-right: 5px;"></i> 21-day free trial<br class="d-lg-none"><i class="fal fa-unlock-alt mt-2 mt-lg-0" style="margin-left: 15px; margin-right: 5px;"></i> No credit card required</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <div class="footer-top">
+        <div class="grid-container">
+          <div class="row">
+            <div class="footer-top_item -social"><a class="footer-top_logo" href="/"><img src="/wp-content/uploads/assets/footer/Metricly_logo.png" alt="logo"></a>
+              <p>&copy; Metricly, Inc. All rights reserved.</p>
+              <ul class="social-links">
+                <li><a href="https://www.facebook.com/metricly/" target="_blank"><img src="/wp-content/uploads/assets/footer/Icons/facebook.svg" alt="facebook"></a></li>
+                <li><a href="https://www.linkedin.com/company/metricly" target="_blank"><img src="/wp-content/uploads/assets/footer/Icons/linked_in.svg" alt="linkedin"></a></li>
+                <li><a href="https://twitter.com/metricly" target="_blank"><img src="/wp-content/uploads/assets/footer/Icons/twitter.svg" alt="twitter"></a></li>
+              </ul>
+            </div>
+            <div class="footer-top_item">
+              <h3>Products</h3>
+              <ul class="aws-list">
+                <li><a href="/aws-cost-tool/">AWS Cost</a></li>
+                <li><a class="monitoring" href="/monitoring/">Monitoring</a></li>
+              </ul>
+              <ul class="links-list">
+                <li><a href="/pricing/">Pricing</a></li>
+                <li><a href="/category/product-updates/">Updates</a></li>
+              </ul>
+            </div>
+            <div class="footer-top_item">
+              <h3>Use Cases</h3>
+              <ul class="aws-list">
+                <li><a class="sizing" href="/aws-sizing-tool/">AWS Sizing Tool</a></li>
+              </ul>
+              <ul class="links-list">
+                <li><a href="/demo/">See a Demo</a></li>
+              </ul>
+            </div>
+            <div class="footer-top_item">
+              <h3>Resources</h3>
+              <ul class="links">
+                <li><a href="/blog/">Blog</a></li>
+                <li><a href="/support/">Support</a></li>
+                <li><a href="http://status.metricly.com/">Status</a></li>
+                <li><a href="/ec2-instances/">EC2 Instances Guide</a></li>
+              </ul>
+            </div>
+            <div class="footer-top_item">
+              <h3>Company</h3>
+              <ul class="links">
+                <li><a href="/about-us/">About us</a></li>
+                <li><a href="/careers/">Careers</a></li>
+                <li><a href="/contact/">Contact</a></li>
+				<li><a href="/legal/">Legal & Privacy</a></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+
+    
+    
+    <script src="/js/index.js" async></script>
+<script src="/js/jquery.slim.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+
+
+    
+
+  </body>
+</html>

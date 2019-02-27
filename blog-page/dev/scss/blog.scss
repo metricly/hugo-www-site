@@ -28,10 +28,10 @@ body,html {
     height: 100%;
     min-height: calc(var(--vh, 1vh) * 100);
 }
-.blog{ 
+.blog{
     color: $black;
     font-weight: 600;
-    
+
     .title-h1{
         font-size: 36px;
         display: block;
@@ -214,6 +214,7 @@ body,html {
                 pointer-events: none;
                 line-height: 24px;
                 position: absolute;
+                top: 10px;
                 right: 170px;
                 background: transparent;
                 @media (max-width: $xl){
@@ -417,7 +418,7 @@ body,html {
                 }
             }
         }
-        
+
         .swiper-button-next{
             top: 2px;
             right: 0;
@@ -574,7 +575,7 @@ body,html {
         }
         .social-block{
             position: sticky;
-            top: 100px;
+            top: 38%;
             svg{
                 display: block;
                 margin: 0 0 16px;
@@ -666,7 +667,7 @@ body,html {
                 text-align: center;
                 position: relative;
                 --calcWidth: ;
-                --position: calc( -1 * var(--calcWidth)); 
+                --position: calc( -1 * var(--calcWidth));
                 &:before,&:after{
                     content: "";
                     position: absolute;
@@ -689,7 +690,7 @@ body,html {
                 &__title{
                     font-size: 20px;
                     font-weight: bold;
-                    margin: 0 0 6px; 
+                    margin: 0 0 6px;
                     @media (max-width: $sm){
                         font-size: 16px;
                     }
@@ -729,7 +730,6 @@ body,html {
         }
         .aside-stories{
             display: flex;
-            justify-content: center;
             flex-direction: column;
             max-width: 290px;
             @media (max-width: $md){
@@ -757,6 +757,8 @@ body,html {
                 }
             }
             .learn-more{
+              position: sticky;
+              top: 30%;
                 .title-category{
                     margin: 0 0 4px;
                     text-transform: none;
@@ -767,7 +769,7 @@ body,html {
                     font-weight: bold;
                     padding-bottom: 14px;
                     border-bottom: 1px solid rgba(151,151,151,.2);
-                    margin: 0 0 15px; 
+                    margin: 0 0 15px;
                 }
                 p{
                     margin: 0 0 25px;
@@ -857,3 +859,4 @@ body,html {
         }
     }
 }
+

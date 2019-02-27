@@ -2,3 +2,8 @@ baseURL = ""
 languageCode = "en-us"
 title = "Welcome To Metricly"
 theme = "metricly"
+staticDir = ["static", "blog-page/dist"]
+[taxonomies]
+  author = "authors"
+  category = "categories"
+  tag = "tags"
