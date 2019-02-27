@@ -133,15 +133,13 @@ function mobileMenuHeight() {
     document.documentElement.style.setProperty('--vh', `${vh}px`);
 }
 
+// submit email address in blog subscribe
+$("#email-subscribe").submit(function(e) {
+  e.preventDefault();
 
-// Netlify AJAX form subsmission for email subscribe
-$( document ).ready(function() {
-  $("#email-subscribe").submit(function(e) {
-    e.preventDefault();
-
-    var $form = $(this);
-    $.post($form.attr("action"), $form.serialize()).then(function() {
-      alert("Thank you!");
-    });
+  var $form = $(this);
+  $.post($form.attr("action"), $form.serialize()).then(function() {
+    $("#email").blur();
+    alert("Thanks for subscribing!");
   });
 });
