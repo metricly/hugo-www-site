@@ -4,6 +4,6 @@ title = "Welcome To Metricly"
 theme = "metricly"
 staticDir = ["static", "blog-page/dist"]
 [taxonomies]
-  author = "authors"
-  category = "categories"
+  author = "author"
+  category = "category"
   tag = "tags"

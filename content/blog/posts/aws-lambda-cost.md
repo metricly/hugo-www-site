@@ -1,6 +1,5 @@
 ---
-authors:
-  - Mike Mackrory
+author: "Mike Mackrory"
 date: "2018-11-05"
 title: "AWS Lambda Cost—Your Guide to Understand, Calculate, and Optimize"
 category: "Cloud Cost Management"

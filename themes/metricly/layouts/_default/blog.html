@@ -9,21 +9,37 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg-7 col-sm-7  post__item">
-                        <a href="#"> <img class="image img-fluid" src="/assets/img1.jpg" alt="blog image"></a>
-                        <a href="#" class="title-category">PRODUCT UPDATE</a>
-                        <a href="#" class="title-h2">Integration Update:<br>
-                            AWS Route 53 Metrics & Policies</a>
+                      {{ range first 1 (after 1 $.Site.Pages) }}
+                      {{ if in .Params.category "Product Updates" }}
+                        <a href="{{ if .Params.url }}{{ .Params.url }}{{ else }}{{ .Permalink }}{{ end }}"> <img class="image img-fluid" src="/assets/img1.jpg" alt="blog image"></a>
+                        {{ if .Params.category }}<p class="title-category">{{ .Params.category }}</p>{{ end }}
+                        <a href="{{ if .Params.url }}{{ .Params.url }}{{ else }}{{ .Permalink }}{{ end }}" class="title-h2">{{ .Title }}</a>
+
+                        {{- range .Params.authors }}
+                          {{- with $.Site.GetPage "taxonomyTerm" (printf "author/%s" (urlize .)) }}
+                            <figure>
+                              <img src="{{ .Params.photo }}" alt=""/>
+                              <figcaption>
+                                <a href="{{ .Permalink }}">{{ .Params.name }}</a>
+                              </figcaption>
+                            </figure>
+                          {{ end }}
+                        {{ end }}
+
+
                         <div class="author">
-                            <img class="author__photo img-fluid" src="/assets/author.png" alt="author">
+                            <img class="author__photo img-fluid" src="{{ .Params.photo }}" alt="author">
                             <div>
                                 <div class="author__name">
-                                    Mike Mackrory
+                                    Name
                                 </div>
                                 <div class="author__time">
                                     5 min read
                                 </div>
                             </div>
                         </div>
+                        {{ end }}
+                        {{ end }}
                     </div>
                     <div class="col-lg-5 col-sm-5 d-flex flex-column  post__item --reverse">
                         <a href="#" class="title-category">CLOUD COST MANAGEMENT</a>
@@ -258,7 +274,7 @@
                 </div>
             </div>
         </section>
-        <section class="single-slider --bg-green --reverse" style="margin-bottom: 0px;"> 
+        <section class="single-slider --bg-green --reverse" style="margin-bottom: 0px;">
             <div class="container">
                 <div class="single-slider__swiper swiper-single-two">
                     <div class="swiper-wrapper">

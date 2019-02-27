@@ -11,22 +11,20 @@
       <meta name="robots" content="noindex" />
     {{ end }}
 
-    <title>{{ if not .IsHome }}{{ .Title }} - Metricly{{ end }}</title>
+    <title>{{ if .Param "custom-title" }}{{ .Title }}{{ else }}{{ .Title }} - Metricly{{ end }}</title>
     <!-- Open Graph -->
     {{ template "_internal/opengraph.html" . }}
 
     <!--Common Scripts -->
     {{ partial "header/common-scripts.html" . }}
 
-    {{if or (eq .Params.layout "blog") (eq .Params.layout "single")}}
+    {{if or (eq .Params.layout "blog") (eq .Params.layout "single") (eq .Params.layout "category")}}
     <!-- Blog Theme -->
     <link rel="stylesheet" href="/normalize.css">
     <link rel="stylesheet" href="/mytheme.min.css">
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="/swiper.min.css">
     <link rel="stylesheet" href="/blog.css">
-    Blog Links
-
     {{ else }}
     <!-- Standard Theme -->
     <link rel="stylesheet" id="theme" href="/css/mytheme.min.css" type="text/css" media="all">
@@ -38,7 +36,7 @@
   </head>
   <body>
 
-    {{if or (eq .Params.layout "blog") (eq .Params.layout "single")}}
+    {{if or (eq .Params.layout "blog") (eq .Params.layout "single") (eq .Params.layout "category")}}
     <!-- Don't insert normal header -->
     {{ else }}
     <!-- Normal Header -->
@@ -52,7 +50,7 @@
     <!-- Footer -->
     {{ partial "footer/footer.html" . }}
 
-    {{if or (eq .Params.layout "blog") (eq .Params.layout "single")}}
+    {{if or (eq .Params.layout "blog") (eq .Params.layout "single") (eq .Params.layout "category")}}
     <!-- Blog Footer Scripts -->
     {{ partial "footer/blog-scripts.html" . }}
 

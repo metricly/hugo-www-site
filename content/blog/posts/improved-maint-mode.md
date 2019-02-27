@@ -1,6 +1,5 @@
 ---
-authors:
-  - Lawrence Lane
+author: "Lawrence Lane"
 date: "2018-09-17"
 title: "Improved Maintenance Mode"
 category: "Product Updates"

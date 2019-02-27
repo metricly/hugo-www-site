@@ -1,10 +1,10 @@
 ---
-authors:
-  - Lawrence Lane
+author: "Lawrence Lane"
 date: "2018-10-30T13:44:00+00:00"
 title: "Policies With Metric Conditions Now More Flexible"
-tags: ["Product Updates"]
+category: "Product Updates"
 layout: "single"
+url: "/policy-conditions/"
 ---
 
 When building a policy that contains multiple metric conditions, users can now use the **Match Conditions** feature to toggle between validating all of the conditions listed or just any one condition provided. Previously, policies with multiple metric conditions only fired when all listed conditions were met.

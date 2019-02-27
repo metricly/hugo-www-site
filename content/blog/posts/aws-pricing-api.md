@@ -1,6 +1,5 @@
 ---
-authors:
-  - Mike Mackrory
+author: "Mike Mackrory"
 date: "2018-09-26T13:44:00+00:00"
 title: "AWS Pricing API—How to Use It to Predict and Control AWS Costs"
 category: "Cloud Cost Management"

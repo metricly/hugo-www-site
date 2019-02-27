@@ -58,8 +58,8 @@
               <p>The Elastic Block Storage (EBS) service provides storage space for your Elastic Cloud Compute account and viewing the EC2 Dashboard</p>
               <a href="#" class="btn">Try Metricly Free</a>
             </div>
-            {{- range .Params.authors }}
-            {{- with $.Site.GetPage "taxonomyTerm" (printf "authors/%s" (urlize .)) }}
+            {{ if .Params.author }}
+            {{- with $.Site.GetPage "taxonomyTerm" (printf "author" (urlize .)) }}
             <section class="about-author">
               <h2>About the Author</h2>
               <div class="post-content__author">
