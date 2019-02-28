@@ -2,10 +2,10 @@
 author: "Lawrence Lane"
 date: "2018-09-17"
 title: "Improved Maintenance Mode"
+Description: "Learn how maintenance mode improved. Now, you can set a maintenance duration that expires on its own."
 category: "Product Updates"
 url: "/improved-maint-mode/"
 layout: "single"
-featured-image: "/img/blog/maint-mode.png"
 ---
 
 In the past, users had to manually end maintenance mode for elements in their inventory. Now, you can set a maintenance duration that expires on its own! This means you won’t have to worry about remembering to re-activate your element monitoring. It also saves you quite a few clicks in the UI.
