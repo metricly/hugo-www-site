@@ -5,7 +5,7 @@
   <main class="main-wrapper">
     <div class="container">
       <div class="return">
-        <a href="#">
+        <a href="/blog/">
           <svg height="11" viewBox="0 0 7 11" width="7" xmlns="http://www.w3.org/2000/svg">
             <path d="m.81803571 10.1427143c-.18385714-.19028573-.48985714-.19028573-.68014285 0-.18385715.1838571-.18385715.4898571 0 .6732857l3.44871428 3.4487143.44679491.48-.44679491.4795714-3.44871428 3.4422857c-.18385715.1902857-.18385715.4967143 0 .6801429.19028571.1902857.49671428.1902857.68014285 0l4.26514286-4.2651429c.19028572-.1838571.19028572-.4898571 0-.6732857z"
               fill="#1e201d" fill-rule="evenodd" stroke="#1e201d" stroke-width=".4" transform="matrix(-1 0 0 1 6.225892 -9)" /></svg>
@@ -14,7 +14,11 @@
       </div>
       <h2 class="title">{{ .Title }}</h2>
       <div class="author-name">{{ if .Params.author }}{{ .Params.author }} - {{ end }}{{ .ReadingTime }} min read</div>
-      <img class="image" src="/assets/img1.jpg" alt="post image">
+      {{ if .Param "featured-image" }}<img class="image" src="{{ .Param "featured-image" }}" alt="post image">
+      {{ else }}
+      <!-- Insert Div as space for no image -->
+      <div class="pb-5"></div>
+      {{ end }}
       <div class="row">
         <div class="col-lg-1 col-md-1 col-sm-1">
           <div class="social-block">
