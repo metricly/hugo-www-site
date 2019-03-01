@@ -6,40 +6,42 @@ tags = ["Cloud Cost Management"]
 #url = "/aws-reserved-instances-mistake/"
 +++
 
-Know What Is Actually Being Reserved
-AWS offer lots of flexibility in the purchasing of Reserved Instances (RIs) but the application of RIs to actual instances is not always clear. Using our AWS cost tools will help you understand your bill at the end of the month, but there is a common pitfall of reserved instances which you must know about first.
+### Know What Is Actually Being Reserved
+AWS offer lots of flexibility in the purchasing of Reserved Instances (RIs) but the application of RIs to actual instances is not always clear. Using our [AWS cost tools](https://www.metricly.com/aws-cost-tool) will help you understand your bill at the end of the month, but there is a common pitfall of reserved instances which you must know about first.
 
 In AWS invoices purchased reservations are shown in hours. For example, consider the very simple scenario where a reservation has been purchased for 3 c4.xlarge instances. The invoice for May 2018 might look like this:
 
-Example AWS Reservation of (3) c4.xlarge Instances
+![word-img](https://www.metricly.com/wp-content/uploads/2018/07/word-image.png)
 Example AWS Reservation of (3) c4.xlarge Instances
 
 The 2,232 hours correspond to 3 instances x 24 hours x 31 days.
 
-From the invoice it is very tempting to infer that the reservation represents a block of hours to be called off at will throughout the month, but this is not the case. Reservations must be thought of in terms of a purchase of concurrent instance counts, not monthly instance hours.
+From the invoice it is very tempting to infer that the reservation represents a block of hours to be called off at will throughout the month, **but this is not the case**. Reservations must be thought of in terms of a purchase of concurrent instance counts, not monthly instance hours.
 
 As long exactly 3 concurrent c4.xlarge instances are running for the entire month the reservation will be utilized in full and no on-demand costs will be incurred.
 
 Consider the case where 6 concurrent instances are run for 12 hours per day with all 6 active during the same 12 hour period:
 
-ASG Graph Of (6) Concurrent EC2 Instances
+![word-img-1](https://www.metricly.com/wp-content/uploads/2018/07/word-image-1.png)
 ASG Graph Of (6) Concurrent EC2 Instances
 
 The total instance hours for the month is also 2,232 but the reservation will not apply to half of them and the invoice will look a little different:
 
 
+![word-img-2](https://www.metricly.com/wp-content/uploads/2018/07/word-image-2.png)
 Notice the 50% utilization of the reserved instances
 
 The most obvious change is that the total cost is 80% higher!
 
 This is because only the first 3 instances have been allocated reservations. The other 3 have been considered additional on-demand instances above the reservation. Notice that the reservation is now only 50% utilized since for 12 hours per day none of the reserved capacity is in use.
 
-Remember to Consider Auto-Scaling With AWS Reservations
+### Remember to Consider Auto-Scaling With AWS Reservations
+
 It is very uncommon to have a completely flat capacity requirement throughout the month.
 
 Consider the profile below where the capacity required ramps up and down across the day (for simplicity we’re assuming weekends have the same profile as weekdays):
 
-Basic ASG profile that scales to (6) instances in the weekdays
+![word-img-3](https://www.metricly.com/wp-content/uploads/2018/07/word-image-3.png)
 Basic ASG profile that scales to (6) instances in the weekdays
 
 In this example the total number of instance hours in a month is also 2,232 (take my word for it) – the same number of instance hours as 3 full time instances – but in this case there is anywhere between 1 and 6 instances running at once.
@@ -52,17 +54,20 @@ In this example, reserving 3 convertible instances for 1 year with no-upfront pa
 
 i.e., consider this (note the lower discount for convertible instances):
 
-Cost with (3) reserved convertible instances
+![word-img-4](https://www.metricly.com/wp-content/uploads/2018/07/word-image-4.png)
 Cost with (3) reserved convertible instances
 
 versus this:
 
-AWS bill lower if you simply paid on-demand costs
+![word-img-5](https://www.metricly.com/wp-content/uploads/2018/07/word-image-5.png)
 Bill is lower if you simply paid on-demand costs
 
-Final Words
+### Final Words
+
 Always view reservations in terms of the concurrent instance count. Don’t think of them as a batch of instance hours or you could get a nasty shock at the end of the month.
 
 For more AWS best practices:
-AWS Monitoring Best Practices Using Pre-Configured Dashboards
-Demystifying the Terminology of AWS Instances
+
+[AWS Monitoring Best Practices Using Pre-Configured Dashboards](https://www.metricly.com/aws-monitoring-best-practices)
+
+[Demystifying the Terminology of AWS Instances](https://www.metricly.com/demystifying-terminology-aws-instances)

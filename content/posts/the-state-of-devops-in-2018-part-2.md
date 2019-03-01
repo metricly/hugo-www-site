@@ -1,5 +1,6 @@
 +++
-author = "Robyn Weisman"
+#author = "Robyn Weisman"
+author = "Auhtor A"
 date = "2018-05-03T13:44:00+00:00"
 title = "The State of DevOps in 2018 (Part 2)"
 tags = ["DevOps", "DevOps Culture @ Metricly"]
@@ -37,6 +38,7 @@ Nathen says that people within a department, particularly those in technical one
 1.  You need to be intentional and explicit when discussing issues with people in other groups, particularly non-technical ones. "You have to remember there are other people in the room and [not to] use stupid, made-up words. Oftentimes, we'll make up a word and then use it for three disparate things," he says.
 2.  Ideally, any formal meeting you have should not be the first time you talk to that person. "Go find someone in marketing and take them to lunch. Ask them what they do every day. Like, 'What keeps you up? What do you love and hate about the work you do?' And then share with them, so that we start to gain that understanding together. That doesn't happen in meetings. It happens in [less formal situations], like here at the cafe," Nathen says.
 
+
 One thing we weren't able to discuss in detail is whether the onus is on core DevOps people to reach out to all of these other departments within an organization. From my perspective, it seems unfair that that would be the case---that ideally, everyone should want to reach out to one another. But because DevOps pros know the technologies that help or hinder these other departments, they're the ones who will most likely have to initiate the conversation. And this may be a good thing because let's face it, the [stereotype](https://www.bloomberg.com/news/features/2018-02-01/women-once-ruled-computers-when-did-the-valley-become-brotopia) of the engineer [who can't relate to people, only systems,](https://www.geekwire.com/2018/emily-chang-brotopia-silicon-valley-companies-can-tackle-toxic-culture/) isn't accurate and mostly leads to silos and misunderstandings that prevent DevOps success in the first place. If such a stereotype were true, I wouldn't have had this conversation with Nathen---and frankly, DevOps probably would never have developed as a movement to begin with.
 
 #### 3\. Practice failure and conversation with intention.
@@ -67,7 +69,7 @@ Eric Barker, author of [Barking Up the Wrong Tree: The Surprising Science Behin
 >
 > Ask questions. Listen. But don't judge. Nobody --- including you --- likes to feel judged.
 
-Practicing Failure: In an ideal world, we would learn quickly from any failure and anticipate anything in the future to prevent that failure from taking place again. However, we rarely find ourselves in identical situations, and even in situations that are very similar, we often will fail in some other way. So, while anticipation would be great, "It's also important and good to practice how we respond to failures as human beings. That's the thing that can fundamentally change your approach to it," says Nathen.
+**Practicing Failure:** In an ideal world, we would learn quickly from any failure and anticipate anything in the future to prevent that failure from taking place again. However, we rarely find ourselves in identical situations, and even in situations that are very similar, we often will fail in some other way. So, while anticipation would be great, "It's also important and good to practice how we respond to failures as human beings. That's the thing that can fundamentally change your approach to it," says Nathen.
 
 That's why breaking down silos are so important, Nathen says. "When you break down those walls and invite other people in, you are in essence inviting them to talk about how something broke. How there was a failure. That's really hard to do, but you have to do that," which is why you need to be intentional in practicing these things, he explains.
 

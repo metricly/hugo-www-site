@@ -19,6 +19,13 @@
         <div class="post-content">
           {{ .Content }}
         </div>
+        {{ if .Params.author }}
+        {{ if eq .Params.author "Auhtor A" }}
+        {{ partial "authors/author_a.html" . }}
+        {{ else if eq .Params.author "Auhtor B" }}
+        {{ partial "authors/author_b.html" . }}
+        {{ end }}
+        {{ end }}
       </div>
     </div>
   </section>

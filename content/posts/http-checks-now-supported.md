@@ -17,23 +17,18 @@ Checks for the Windows Agent can be found and maintained in `C:/Program Files (
 1.  Navigate to your `ReadSystemChecks.config` file found in your Windows Agent folder.
 2.  Insert something like this example check:
 
-    1 lines
-
-    <HttpCheck Name="MyTestHTTPCheck" Url="http://www.google.com" StatusMatches="^(?!4|5)" />
+    ```json
+        <HttpCheck Name="MyTestHTTPCheck" Url="http://www.google.com" StatusMatches="^(?!4|5)" />
+    ```
 
 3.  The file should then look something like this:
-
-    7 lines
-
-    <ReadSystemChecks EnableAgentHeartbeat="true" HeartbeatTTLMultiplier="2.5">
-
-      <Checks>
-
-      <HttpCheck Name="MyTestHTTPCheck" Url="http://www.google.com" StatusMatches="^(?!4|5)" />
-
-     </Checks>
-
-    </ReadSystemChecks>
+    ```json
+        <ReadSystemChecks EnableAgentHeartbeat="true" HeartbeatTTLMultiplier="2.5">
+            <Checks>
+                <HttpCheck Name="MyTestHTTPCheck" Url="http://www.google.com" StatusMatches="^(?!4|5)" />
+            </Checks>
+        </ReadSystemChecks>
+    ```
 
 4.  Save the file.
 
