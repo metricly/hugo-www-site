@@ -20,10 +20,12 @@
                     {{ range where $.Site.Pages "Section" "blog" }}
                     {{ if in .Params.category $categoryName }}
                       <li class="col-xl-4 col-md-4 col-sm-6">
-                          <a href="#"><img class="img-fluid" src="/assets/img6.jpg" alt="post image"></a>
-                          <a href="#" class="title-category">{{ .Params.category }}</a>
-                          <a href="#" class="title-h3">{{ .Title }}</a>
-                          <div class="name">{{ .Params.author }}&nbsp;|&nbsp;{{ .ReadingTime }} min read</div>
+                          <a href="{{ .Params.url }}">
+                            <!--<img class="img-fluid" src="/img/blog/small-version/{{ .Param "featured-image" }}" alt="post image">-->
+                            <div class="thumbnail-image shadow-sm" style="background: url(/img/blog/{{ if .Param "featured-image" }}{{ if .Param "thumbnail-image" }}small-version/{{ .Param "featured-image" }}{{ else }}{{ .Param "featured-image" }}{{ end }}{{ else }}small-version/default.svg{{ end }});"></div>
+                          </a>
+                          <a href="{{ .Params.url }}" class="title-h3">{{ .Title }}</a>
+                          <div class="name">{{ if .Params.author }}{{ .Params.author }}&nbsp;|&nbsp;{{ end }}{{ .ReadingTime }} min read</div>
                       </li>
                       {{ end }}
                       {{ end }}

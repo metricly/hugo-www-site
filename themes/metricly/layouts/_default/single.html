@@ -14,7 +14,7 @@
       </div>
       <h2 class="title">{{ .Title }}</h2>
       <div class="author-name">{{ if .Params.author }}{{ .Params.author }} - {{ end }}{{ .ReadingTime }} min read</div>
-      {{ if .Param "featured-image" }}<img class="image" src="{{ .Param "featured-image" }}" alt="post image">
+      {{ if .Param "featured-image" }}<img class="image shadow" src="/img/blog/{{ .Param "featured-image" }}" alt="post image">
       {{ else }}
       <!-- Insert Div as space for no image -->
       <div class="pb-5"></div>
@@ -62,15 +62,15 @@
               <p>The Elastic Block Storage (EBS) service provides storage space for your Elastic Cloud Compute account and viewing the EC2 Dashboard</p>
               <a href="#" class="btn">Try Metricly Free</a>
             </div>
-            {{ if .Params.author }}
-            {{- with $.Site.GetPage "taxonomyTerm" (printf "author" (urlize .)) }}
+            {{- with .Params.author }}
+            {{- with $.Site.GetPage "taxonomyTerm" (printf "author/%s" (urlize .)) }}
             <section class="about-author">
               <h2>About the Author</h2>
               <div class="post-content__author">
                 <img src="{{ .Params.photo }}" alt="author photo">
                 <div>
                   <h6>{{ .Params.name }}</h6>
-                  {{.Content}}
+                  {{ .Content }}
                 </div>
               </div>
             </section>
