@@ -5,6 +5,8 @@ title: "AWS Cost Analysis: Exploring Your Cost Deltas"
 category: "Cloud Cost Management"
 url: "/aws-cost-analysis/"
 layout: "single"
+featured-image: "cost-analysis.png"
+thumbnail-image: true
 ---
 
 ### Analyzing AWS Cost Deltas
@@ -25,7 +27,7 @@ Note: this article assumes you are already familiar with the AWS Services Cost r
 
 If just one service is showing a large delta and you want to learn more:
 
-![](https://www.metricly.com/wp-content/uploads/2019/01/word-image-3.png)
+![](https://www.metricly.com/wp-content/uploads/2019/01/word-image-3.png "post-image")
 
 AWS Cost Period Comparison Grouped by Service
 
