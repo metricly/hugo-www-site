@@ -12,12 +12,29 @@
           Blog
         </a>
       </div>
+      <div class="d-flex justify-content-center mt-3 mt-md-0">
+      {{- with .Params.category }}
+      {{- with $.Site.GetPage "taxonomyTerm" (printf "category/%s" (urlize .)) }}
+      <a href="{{ .Permalink }}" class="title-category">{{ .Params.name }}</a>
+      {{ end }}
+      {{ end }}
+      </div>
       <h2 class="title">{{ .Title }}</h2>
-      <div class="author-name">{{ if .Params.author }}{{ .Params.author }} - {{ end }}{{ .ReadingTime }} min read</div>
+      <div class="author d-flex justify-content-center mt-3">
+        {{- with .Params.author }}
+        {{- with $.Site.GetPage "taxonomyTerm" (printf "author/%s" (urlize .)) }}
+        <img class="author__photo img-fluid" src="{{ .Params.photo }}" alt="author">
+        {{ end }}
+        {{ end }}
+        <div>
+          <div class="author__name">{{ .Params.author }}</div>
+          <div class="author__time">{{ .ReadingTime }} min read</div>
+        </div>
+      </div>
       {{ if .Param "featured-image" }}<img class="image shadow" src="/img/blog/{{ .Param "featured-image" }}" alt="post image">
       {{ else }}
       <!-- Insert Div as space for no image -->
-      <div class="pb-5"></div>
+      <div class="pb-md-5"></div>
       {{ end }}
       <div class="row">
         <div class="col-lg-1 col-md-1 col-sm-1">
@@ -128,40 +145,14 @@
         </h2>
         <div class="multiple-slider__swiper swiper-multiple-three">
           <div class="swiper-wrapper">
+            {{ range first 5 (after 1 (where (where $.Site.Pages.ByPublishDate.Reverse "Section" "blog") ".Params.featured" "=" "true")) }}
             <div class="swiper-slide">
               <img class="img-fluid" src="/assets/img6.jpg" alt="post image">
-              <h2 class="title-category">Cloud Cost Management</h2>
+              <h2 class="title-category">{{ .Title }}</h2>
               <h3 class="title-h3">Want to Reduce Your AWS Bill? Here’s 7 Practical Ways to Do It</h3>
               <div class="name">Mike Mackrory&nbsp;|&nbsp;5 min read</div>
             </div>
-            <div class="swiper-slide">
-              <img class="img-fluid" src="/assets/img7.jpg" alt="post image">
-              <h2 class="title-category">PRODUCT UPDATE</h2>
-              <h3 class="title-h3">Integration Update: <br>
-                AWS EFS Metrics & Policies</h3>
-              <div class="name">Mike Mackrory&nbsp;|&nbsp;5 min read</div>
-            </div>
-            <div class="swiper-slide">
-              <img class="img-fluid" src="/assets/img8.jpg" alt="post image">
-              <h2 class="title-category">PRODUCT UPDATE</h2>
-              <h3 class="title-h3">Refresh:<br>
-                The AWS Services Cost Report</h3>
-              <div class="name">Mike Mackrory&nbsp;|&nbsp;5 min read</div>
-            </div>
-            <div class="swiper-slide">
-              <img class="img-fluid" src="/assets/img7.jpg" alt="post image">
-              <h2 class="title-category">PRODUCT UPDATE</h2>
-              <h3 class="title-h3">Integration Update: <br>
-                AWS EFS Metrics & Policies</h3>
-              <div class="name">Mike Mackrory&nbsp;|&nbsp;5 min read</div>
-            </div>
-            <div class="swiper-slide">
-              <a href="#"><img class="img-fluid" src="/assets/img8.jpg" alt="post image"></a>
-              <a href="#" class="title-category">PRODUCT UPDATE</a>
-              <a href="#" class="title-h3">Refresh:<br>
-                The AWS Services Cost Report</a>
-              <div class="name">Mike Mackrory&nbsp;|&nbsp;5 min read</div>
-            </div>
+            {{ end }}
           </div>
         </div>
       </div>
