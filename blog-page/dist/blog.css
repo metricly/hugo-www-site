@@ -310,6 +310,14 @@ body, html {
     @media (max-width: 575px) {
       .blog .main-wrapper {
         margin: 70px 0 0; } }
+    .blog .main-wrapper .thumbnail-image {
+      min-height: 220px;
+      height: calc(16 * 1vw);
+      background-repeat: no-repeat !important;
+      background-size: cover !important;
+      background-position: center !important;
+      margin: 0 0 30px;
+      border-radius: 4px; }
   .blog .post {
     margin: 0 0 80px; }
     @media (max-width: 992px) {
@@ -545,6 +553,20 @@ body, html {
       @media (max-width: 575px) {
         .blog.blog--post .post-content p {
           margin: 0 0 25px; } }
+    .blog.blog--post .post-content ul, .blog.blog--post .post-content ol {
+      margin-left: 1rem;
+      margin-bottom: 40px; }
+      @media (max-width: 575px) {
+        .blog.blog--post .post-content ul, .blog.blog--post .post-content ol {
+          margin-bottom: 25px; } }
+    .blog.blog--post .post-content ul {
+      list-style: disc; }
+    .blog.blog--post .post-content ol {
+      list-style: decimal; }
+    .blog.blog--post .post-content li {
+      margin-bottom: 1rem; }
+    .blog.blog--post .post-content img {
+      max-width: 100%; }
     .blog.blog--post .post-content .about-author {
       padding: 20px 0 0; }
       .blog.blog--post .post-content .about-author h2 {
