@@ -70,8 +70,7 @@ Fortunately, Nathen has several thoughts on how to get organizations to embrace 
 
 For next post, steps that will be addressed:
 
-  The need to embrace failure and, in particular change how leadership views failure.
-  Bringing everyone into the conversation—and making that a priority (with examples)
-  Automate more, not less (minimize human error, generate trust by focusing on what really matters, needs to change)
-  Generate trust in people and systems (through first three)
-Robyn Weisman lives in Los Angeles and is the founder and principal of WriteTech Content– a content marketing firm for companies in the enterprise tech space. Robyn has written about the enterprise since 2000, both as a reporter and copywriter.
+- The need to embrace failure and, in particular change how leadership views failure.
+- Bringing everyone into the conversation—and making that a priority (with examples)
+- Automate more, not less (minimize human error, generate trust by focusing on what really matters, needs to change)
+- Generate trust in people and systems (through first three)

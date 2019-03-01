@@ -5,6 +5,7 @@ title: "AWS Tagging Best Practices – The Ultimate Guide"
 category: "Cloud Cost Management"
 url: "/aws-tagging-best-practices/"
 layout: "single"
+featured: true
 ---
 
 In this article, I'll be sharing AWS tagging best practices, more information about why tagging is a process your organization needs and how to implement a strategy which meets the requirements of the organization without placing an undue burden on development teams.

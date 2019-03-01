@@ -9,8 +9,7 @@ layout: "single"
 
 Dollar change and percentage change conditions have been added under the **Matching Conditions** section of the [AWS Services Cost Report](https://docs.metricly.com/reports/reports-aws-services-cost/) configuration modal.
 
-Try these four new matching conditions to simplify bill monitoring
-------------------------------------------------------------------
+### Try these four new matching conditions to simplify bill monitoring
 
 -   **Any Group Comparison Cost:** set min/max dollar amount value of previous billing period's total cost
 -   **Any Group Current Cost**: set min/max current dollar amount values
@@ -19,8 +18,7 @@ Try these four new matching conditions to simplify bill monitoring
 
 ![](https://www.metricly.com/wp-content/uploads/2019/02/dollar-percent-filters-optimized.gif)
 
-Set a budget for one or all services
-------------------------------------
+### Set a budget for one or all services
 
 Use conditions to monitor spending amounts across groups that match any given cost criteria. You can then save these reports to create a budgeted view into targeted areas of your AWS bill.
 
@@ -41,8 +39,7 @@ This would allow your team to track any AWS service group that surpassed the $20
 
 You can also combined multiple conditions for full control over your AWS Services Cost report.
 
-Get emailed when cost exceeds threshold
----------------------------------------
+### Get emailed when cost exceeds threshold
 
 These conditions also apply to saved reports with **Send Daily Email** enabled; a saved report with matching conditions only sends a daily email if the conditions applied are true. This essentially operates as an email alert for your cost reports, allowing you to automate routine billing check-ins.
 

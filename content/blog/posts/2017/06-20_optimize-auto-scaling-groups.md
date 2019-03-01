@@ -17,8 +17,7 @@ I'd like to share some of the more common misconceptions, mistakes and less opti
 4.  Scaling reactively and not proactively
 5.  Engaging monitoring and analysis to optimize machine usage
 
-The Cloud is Volatile
----------------------
+### The Cloud is Volatile
 
 ![Optimize Auto Scaling Groups: Volatile Cloud](https://www.metricly.com/wp-content/uploads/2017/07/Asset-1.png)Before the advent of the cloud, applications were typically hosted on a long-lived physical server, either in a personal data center or a hosted data center. One could argue that AWS is simply another data center where apps are hosted, but the key difference is in the ephemeral nature of the virtual machines on which applications are deployed.
 
@@ -28,8 +27,7 @@ In the cloud, when additional capacity is needed, you can simply increase the nu
 
 Likewise, when new deployments are required, or updates to the underlying infrastructure are required, a new ASG can be created with updated instances, and as the new instances come online, the old instance can be disabled and destroyed, providing users with a seamless experience.
 
-The Pitfalls of Manually Managing Infrastructure
-------------------------------------------------
+### The Pitfalls of Manually Managing Infrastructure
 
 In most environments where I have worked, creating a new Auto Scaling Group has been accomplished by clicking around within either the AWS console or another cloud management solution. You select the name, choose the size, select the AMI to use, set the SSH key and security group...
 
@@ -37,8 +35,7 @@ I suspect I probably forgot something important on that list, and that is one of
 
 [AWS CloudFormation](https://aws.amazon.com/cloudformation/) provides a way for you to create and manage AWS resources by describing these resources, their provisioning, and security concerns in a single template. In addition to specifying all aspects of your deployment, you can also apply version control to your AWS infrastructure in the same manner in which you version your code. [Infrastructure as Code](https://martinfowler.com/bliki/InfrastructureAsCode.html) is a concept which will pay out dividends that will far exceed your initial investment.
 
-The Worth of a Superficial Health Check
----------------------------------------
+### The Worth of a Superficial Health Check
 
 *"Tis but a scratch!" **~ The Black Night*
 
@@ -54,8 +51,7 @@ A few notes before we continue:
 
 When you develop a new application, or you're updating an existing application, spare some time to look at the health check endpoint. The status returned should be more than just a hard-coded value. Add checks to validate that connections to dependent services and data sources are active and functioning as expected. If the health check is likely to exceed the time AWS will wait, consider implementing a pattern to periodically check these independently of the health check, and update a property which can be quickly validated.
 
-Proactive vs. Reactive Scaling in Your Auto Scaling Groups
-----------------------------------------------------------
+### Proactive vs. Reactive Scaling in Your Auto Scaling Groups
 
 Auto Scaling Groups don't scale dynamically unless they have been configured to do so. Typically a policy will need to be enabled which monitors [CloudWatch metrics from the server](https://www.metricly.com/introducing-aws-cloudwatch-custom-metrics-integration) and triggers a resize of the group based on certain thresholds.
 
@@ -67,8 +63,7 @@ When all's said and done, in the world of cloud computing, it makes sense to tak
 
 Netuitive provides an excellent [suite of monitoring reports](https://www.metricly.com/product/dashboards-and-reports) to help you better optimize your Auto Scaling Group. We'll discuss these in more depth in the next section.
 
-Comprehensive Monitoring of Auto Scaling Groups (and Analysis to Ensure You Have It Right)
-------------------------------------------------------------------------------------------
+### Comprehensive Monitoring of Auto Scaling Groups
 
 As I mentioned previously, you don't have to get your infrastructure configured perfectly up front. The cloud is a dynamic environment, much like the traffic patterns our applications might expect. For your cloud endeavors to be successful, it is important to make incremental improvements over time, monitor and evaluate those improvements, and then adjust further, or move on to the next improvement.
 

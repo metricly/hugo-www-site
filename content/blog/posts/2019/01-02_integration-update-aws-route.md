@@ -21,8 +21,7 @@ What you'll need to get started:
 -   **Health Check Status**: The Health Check failed. *HealthCheckStatus* is the status of the health check endpoint that CloudWatch is checking. 1 indicates healthy, and 0 indicates unhealthy.
 -   **Time of First Byte**: The time to first byte is higher than usual. *TimeToFirstByte* is the average time, in milliseconds, that it took Route 53 health checkers to receive the first byte of the response to an HTTP or HTTPS request.
 
-Metrics Included
-================
+### Metrics Included
 
 | FULLY QUALIFIED NAME (FQN) | DESCRIPTION | STATISTIC | UNITS | BASE | CORR |
 | aws.route53.healthcheckstatus | The status of the health check endpoint that CloudWatch is checking. 1 indicates healthy, and 0 indicates unhealthy. | min | none | no | no |
