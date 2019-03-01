@@ -5,6 +5,7 @@ title: "System Checks – The Implementation"
 category: "Cloud Monitoring"
 url: "/system-checks-implementation/"
 layout: "single"
+featured-image: "system-checks.png"
 ---
 
 ### Introduction to System Checks
