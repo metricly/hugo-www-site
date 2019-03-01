@@ -5,6 +5,8 @@ title: "New Sudden Change Algorithm From Metricly"
 category: "Cloud Monitoring"
 url: "/sudden-change-algorithm/"
 layout: "single"
+featured-image: "sudden-change.png"
+thumbnail-image: true
 ---
 
 ### How the Sudden Change Algorithm Works

@@ -5,26 +5,24 @@ title: "Introducing System Checks"
 category: "Product Updates"
 url: "/introducing-system-checks/"
 layout: "single"
+featured-image: "system-checks.png"
+thumbnail-image: true
 ---
-Introduction
-------------
-
 The new Metricly platform for system checks is finally here! This much anticipated addition adds a host of functionality around monitoring system health. In true Metricly fashion, this feature offers a wide range of practical uses, custom configuration, and powerful alerting. In this brief introduction we will explain what system checks are, how to enable them, and how to alert on them. We'll also be following up with another post that takes a closer look at configuring & customizing these checks.
 
 Want to check out Metricly, but don't have an account? Get started with a [free 21-day trial](https://www.metricly.com/signup) today!
 
-What are System Checks?
------------------------
+### What are System Checks?
 
 A Check is used to determine the binary state or availability of an infrastructure resource, service or application. Metricly monitors for the receipt of a named check message within a configurable interval; if the message is received within the time interval then the check is passed and the timer is reset. If it is not received in time it indicates that the source process is not reporting and the check has failed. You can then create a policy condition to receive a notification upon a check's failure. Checks are typically used to monitor server status, but the Metricly checks are flexible and can be customized to check anything that you can script.
 
-**Pre-Built Checks\
-**Heartbeat\
-Process/Service\
-TCP Port
+- Pre-Built Checks
+- Heartbeat
+- Process/Service
+- TCP Port
 
-**Custom Checks\
-**Our platform is flexible to support any custom checks, but you will need a mechanism to schedule the scripts to run.  Linux cron jobs or Window task scheduler will typically work for most cases.
+**Custom Checks**
+Our platform is flexible to support any custom checks, but you will need a mechanism to schedule the scripts to run.  Linux cron jobs or Window task scheduler will typically work for most cases.
 
 A key feature of the new Metricly system check is its simplicity. You can create a new check simply by posting a URL in the format shown below to the Metricly API REST endpoint without even requiring a JSON payload:
 
@@ -32,8 +30,7 @@ https://api.app.netuitive.com/check/{apiId}/{checkName}/{hostName}/{ttl}
 
 As long as you have a valid API ID, you can create any new check by simply naming it, associating it with a hostname, and giving it a time to live (TTL).
 
-Enabling The Checks
--------------------
+### Enabling The Checks
 
 **In Linux**
 
@@ -52,8 +49,7 @@ Note: Currently, Metricly comes with three pre-built checks; Heartbeat, Processe
 4.  Simply change the "enable" setting for the ReadSystemChecks from "false" to "true" in the CollectdWin.config file to enable the system checks.
 5.  To configure the checks edit the ReadSystemChecks.conf file.
 
-Alerting on System Checks
--------------------------
+### Alerting on System Checks
 
 Setting up an alert in Metricly requires the creation of a policy and the system checks are no exception.  Any check coming into the system can have a corresponding alert as well as a notification.
 
@@ -64,7 +60,3 @@ Setting up an alert in Metricly requires the creation of a policy and the system
 5.  To add notifications, click the tab, and select the notification type. For more detail, see [configuring notifications](https://www.metricly.com/support/events/notifications).
 
 We're very excited about this new addition to Metricly and look forward to seeing all the ways our clients will implement system checks as part of their [monitoring strategy](https://www.metricly.com/evaluate-monitoring-strategy). Tweet us your comments & feedback @Metricly or email support@metricly.com Be sure to stay tuned for future posts that will take a deep dive on the configuration & customization of system checks.
-
-* * * * *
-
-Start monitoring performance, capacity, and cost with Metricly today -- [sign up](https://www.metricly.com/signup) for a free no-credit-card-required trial.

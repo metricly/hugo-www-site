@@ -5,6 +5,8 @@ title: "Want to Reduce Your AWS Bill? Here’s 7 Practical Ways to Do It"
 category: "Cloud Cost Management"
 url: "/reduce-aws-bill/"
 layout: "single"
+featured-image: "reduce-bill.png"
+thumbnail-image: true
 ---
 
 Companies begin using Amazon Web Services (AWS) to provide their IT infrastructure because of the ability to grow and expand their capabilities without a substantial capital investment, and because they only pay for the resources they need and use.

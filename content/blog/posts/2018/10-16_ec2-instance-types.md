@@ -6,6 +6,8 @@ Description: "Trying to pick the right EC2 instance type? We wrote about 6 thing
 category: "Cloud Cost Management"
 url: "/ec2-instance-types/"
 layout: "single"
+featured-image: "ec2-instance-types.png"
+thumbnail-image: true
 ---
 
 When an organization and its engineers begin their first forays into Amazon’s Elastic Computing (EC2) solutions, the selection of the right EC2 instance type may appear to be an easy decision based on capability and cost. Early decisions might be made based on:

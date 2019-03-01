@@ -6,6 +6,8 @@ Description: "The AWS pricing API is used to determine the cost of AWS services,
 category: "Cloud Cost Management"
 url: "/aws-pricing-api/"
 layout: "single"
+featured-image: "pricing-api.png"
+thumbnail-image: true
 ---
 
 ### About The AWS Pricing API
