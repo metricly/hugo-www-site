@@ -5,6 +5,7 @@ title: "Mistakes To Avoid With AWS Reserved Instances"
 category: "Cloud Cost Management"
 url: "/aws-reserved-instances-mistake/"
 layout: "single"
+featured: true
 ---
 
 Know What Is Actually Being Reserved

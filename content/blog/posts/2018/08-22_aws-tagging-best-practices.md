@@ -7,6 +7,7 @@ url: "/aws-tagging-best-practices/"
 layout: "single"
 featured-image: "tagging-best-practices.png"
 thumbnail-image: true
+featured: true
 ---
 
 In this article, I'll be sharing AWS tagging best practices, more information about why tagging is a process your organization needs and how to implement a strategy which meets the requirements of the organization without placing an undue burden on development teams.

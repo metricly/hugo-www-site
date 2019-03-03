@@ -7,6 +7,7 @@ url: "/aws-cost-analysis/"
 layout: "single"
 featured-image: "cost-analysis.png"
 thumbnail-image: true
+featured: true
 ---
 
 ### Analyzing AWS Cost Deltas

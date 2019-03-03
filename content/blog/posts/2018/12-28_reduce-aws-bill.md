@@ -7,6 +7,7 @@ url: "/reduce-aws-bill/"
 layout: "single"
 featured-image: "reduce-bill.png"
 thumbnail-image: true
+featured: true
 ---
 
 Companies begin using Amazon Web Services (AWS) to provide their IT infrastructure because of the ability to grow and expand their capabilities without a substantial capital investment, and because they only pay for the resources they need and use.
