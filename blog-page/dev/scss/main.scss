@@ -32,56 +32,25 @@
 
 .btn {
     padding: 11px 0;
-    color: #fff;
     font-size: 16px;
     font-weight: 600;
     border-radius: 4px;
     width: 180px;
     text-align: center;
-    border: none;
     line-height: 1.4;
 
     &:hover,
     &:focus {
         box-shadow: 0 5px 15px 0 rgba(13, 35, 51, 0.36);
-        color: #fff;
     }
 
     &:focus {
         filter: grayscale(50%);
     }
-
-    &.btn--blue {
-        background: $blue-color;
-
-        &:hover,
-        &:focus {
-            background: #2794C5;
-        }
-    }
-
-    &.btn--green {
-        background: $green-color;
-
-        &:hover,
-        &:focus {
-            background: #019981;
-        }
-    }
-
-    &.btn--blue-dark {
-        background: $blue-color-dark;
-
-        &:hover,
-        &:focus {
-            background: #346081;
-        }
-    }
 }
 
 .btn-outline {
     padding: 11px 0;
-    background: #fff;
     font-size: 16px;
     font-weight: 600;
     border-radius: 4px;
@@ -93,42 +62,12 @@
     &:hover,
     &:focus {
         box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.27);
-        color: #fff;
     }
 
     &:focus {
         filter: grayscale(50%);
     }
 
-    &.btn-outline--blue {
-        color: $blue-color;
-
-        &:hover,
-        &:focus {
-            background: $blue-color;
-            color: #fff;
-        }
-    }
-
-    &.btn-outline--green {
-        color: $green-color;
-
-        &:hover,
-        &:focus {
-            background: $green-color;
-            color: #fff;
-        }
-    }
-
-    &.btn-outline--blue-dark {
-        color: $blue-color-dark;
-
-        &:hover,
-        &:focus {
-            background: $blue-color-dark;
-            color: #fff;
-        }
-    }
 }
 
 
@@ -311,7 +250,7 @@
     }
 
     .header-section {
-        background: url(assets/header-section.png) no-repeat;
+        background: url(/assets/header-section.png) no-repeat;
         background-size: cover;
         padding: 134px 0;
 
@@ -373,7 +312,7 @@
 
         &__image {
             text-align: center;
-            --right: calc((100vw - 1110px) / 2);
+            --right: calc((100vw - 1300px) / 2);
 
             @media (max-width: $xl) {
                 --right: calc((100vw - 930px) / 2);
@@ -750,6 +689,7 @@
             margin: 0 0 30px;
             cursor: pointer;
             min-height: 403px;
+            border-radius: 3px;
 
             &:hover {
                 box-shadow: 0 2px 9px 0 rgba(147, 147, 147, 0.5);

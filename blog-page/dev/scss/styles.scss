@@ -6489,11 +6489,6 @@ display: -webkit-box;
     flex:1 0 50%;
     max-width:600px
 }
-@media (min-width: 1500px){
-    .devops-join_image{
-        margin-left:60px
-    }
-}
 @media (max-width: 1079px){
     .devops-join_image{
         -webkit-box-flex:1;
@@ -6538,11 +6533,7 @@ display: -webkit-box;
     color:#2D516C;
     max-width:560px
 }
-@media (min-width: 1500px){
-    .devops-join_email{
-        margin-right:100px
-    }
-}
+
 @media (max-width: 1080px){
     .devops-join_email{
         max-width:450px;
@@ -9558,4 +9549,8 @@ max-width: 400px;
     max-width: 100%;
     font-size: 16px
   }
+}
+
+.list-disc {
+  list-style: disc;
 }
