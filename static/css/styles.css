@@ -231,10 +231,7 @@ body {
 a, a:hover {
   text-decoration: none;
 }
-ul,
-ol {
-  list-style: none;
-}
+
 .grid-container {
   margin: 0 auto;
   max-width: 1470px;

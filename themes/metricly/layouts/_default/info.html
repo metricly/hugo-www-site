@@ -1,8 +1,4 @@
-
-<html>
-{{ partial "headers/head.html" . }}
-<body{{ if .Params.body_class }} class="{{ .Params.body_class }}"{{ end }}>
-{{ partial "headers/header.html" . }}
+{{ define "main" }}
 <style>
 section p {
   color: #58595b;
@@ -34,21 +30,19 @@ section ul {
 }
 </style>
 <section class="info_hero bg-blue" style="background: url(/img/backgrounds/blue.png);">
-  <div class="grid-container info_hero-div">
+  <div class="container info_hero-div">
     <div class="mb-4 d-block d-sm-flex text-left align-items-center flex-row py-3">
 						<h1 class="mb-0 mr-4">{{.Title}}</h1>
             {{ if .Param "careers-department"}}
 						<h2 class="label label-light mb-0 mt-3 mt-sm-0" style="width: 150px;">{{ .Param "careers-department"}}</h2>
             {{end}}
 					</div>
-    <a href="/{{.Dir}}" style="color: white;"><i class="fal fa-long-arrow-left" style="margin-right: 10px;"></i>Back to <span id="parent-dir">{{ replace .Dir "/" "" }}</span></a>
+    <a class="back-link" href="/{{.Dir}}" style="color: white;"><i class="fal fa-long-arrow-left" style="margin-right: 10px;"></i>Back to <span id="parent-dir">{{ replace .Dir "/" "" }}</span></a>
 </div>
 </section>
 <section class="info_section py-md">
-  <div class="grid-container -thin">
+  <div class="container">
     {{.Content}}
   </div>
 </section>
-{{ partial "footer.html" . }}
-</body>
-</html>
+{{ end }}

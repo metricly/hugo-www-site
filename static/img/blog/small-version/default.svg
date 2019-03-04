@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 23.0.2, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 800.5 400.5" style="enable-background:new 0 0 800.5 400.5;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:#F2F2F2;}
+	
+		.st1{fill-rule:evenodd;clip-rule:evenodd;fill:#FFFFFF;stroke:#113B58;stroke-width:12;stroke-linecap:round;stroke-linejoin:round;}
+	.st2{fill-rule:evenodd;clip-rule:evenodd;fill:#113B58;}
+	.st3{fill-rule:evenodd;clip-rule:evenodd;fill:#74CAC8;}
+	.st4{fill:#FFFFFF;}
+</style>
+<title>default</title>
+<rect class="st0" width="800.5" height="400.5"/>
+<g id="Prodcut-interface">
+	<g id="Artboard">
+		<g id="Cloud_compass">
+			<path id="Path" class="st1" d="M485.8,195.6c-3.4-3.7-7.5-6.8-12-9c-4.8-2.1-10.2-3.9-15.9-3.9l0,0c-7.2-24-30.3-42.9-57.6-42.9
+				s-50.4,18.9-57.6,42.9l0,0c-21.3,0-38.4,18-38.4,39s17.1,39,38.4,39h115.2c21.3-0.1,38.5-17.5,38.4-38.9
+				C496.2,212.1,492.4,202.7,485.8,195.6z"/>
+			<g id="Group">
+				<polygon class="st2" points="373.3,233.7 386.8,193.2 413.8,220.2 				"/>
+				<polygon class="st3" points="386.8,193.2 427.3,179.7 413.8,220.2 				"/>
+				<circle id="Oval" class="st4" cx="400.3" cy="206.7" r="4.8"/>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>
