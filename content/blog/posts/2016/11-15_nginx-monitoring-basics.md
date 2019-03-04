@@ -1,6 +1,6 @@
 ---
 author: "Zachary Flower"
-date: "2017-11-15"
+date: "2016-11-15"
 title: "NGINX Monitoring Basics"
 description: "NGINX monitoring is as simple or as detailed as you need it to be, with built-in statistics tools as well as far more detailed logging."
 category: "Cloud Monitoring"

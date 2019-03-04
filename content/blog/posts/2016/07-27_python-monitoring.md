@@ -1,6 +1,6 @@
 ---
 author: "Christina DiSomma"
-date: "2017-07-27"
+date: "2016-07-27"
 title: "How to Monitor Python Applications"
 description: "Here’s the Metricly quick-and-easy guide to monitoring your Python applications, and how to get the most from your metrics!"
 category: "Cloud Monitoring"

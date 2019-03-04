@@ -1,6 +1,6 @@
 ---
 
-date: "2017-10-19"
+date: "2016-10-19"
 title: "The Benefits of Computed Metrics in Monitoring"
 description: "The dynamic nature of microservices speeds up deployment, but presents problems for monitoring. Here's how we added Metricly to our in-house microservices."
 category: "Cloud Monitoring"

@@ -1,6 +1,6 @@
 ---
 author: "Christina DiSomma"
-date: "2017-09-22"
+date: "2016-09-22"
 title: "3 Ways to Reduce Alert Noise in Monitoring"
 description: "Improving signal-to-noise ratio is likely to always be a work in progress, but here are three monitoring best practices to reduce alert noise."
 category: "Cloud Monitoring"

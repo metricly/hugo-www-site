@@ -1,6 +1,6 @@
 ---
 author: "Steve Tidwell"
-date: "2017-12-02"
+date: "2016-12-02"
 title: "Getting Started with Metricly and AWS"
 description: "Metricly gathers all of your AWS services into easy-to-use monitoring dashboards so you can have better insight into your application stack."
 category: "DevOps"

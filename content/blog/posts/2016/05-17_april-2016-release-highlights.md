@@ -1,6 +1,6 @@
 ---
 
-date: "2017-05-17"
+date: "2016-05-17"
 title: "April 2016 Release Highlights"
 description: "Our engineering team spent much of April 2016 focused on quality assurance and framework upgrades, but they still pushed some features we think you’ll love."
 category: "Product Updates"

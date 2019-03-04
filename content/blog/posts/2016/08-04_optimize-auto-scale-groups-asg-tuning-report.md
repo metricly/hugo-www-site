@@ -1,6 +1,6 @@
 ---
 author: "Andrew Paine"
-date: "2017-08-04"
+date: "2016-08-04"
 title: "Optimize Your Auto Scale Groups With ASG Tuning Report"
 description: "AWS auto scaling groups (ASGs) are a great way to automatically manage EC2 capacity to meet fluctuations in demand, but it is all too easy to over-provision capacity."
 category: "Cloud Monitoring"
