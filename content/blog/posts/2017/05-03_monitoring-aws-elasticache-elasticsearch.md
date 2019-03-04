@@ -54,30 +54,30 @@ Some Background on My Environment
 
 The environment I used for the examples shown here is provided by Amazon Web Services (AWS). I'm using the free account, and while most of the steps herein can be taken within the limits of that account, you should always be cognizant of the potential costs and security implications involved in all actions you take in the cloud.
 
-The service I'm monitoring is called Retwis. It's a demo application provided by Redis to show how their product works. I installed the product on an [EC2 instance](https://www.metricly.com/optimize-aws-instance-types) and configured it to use an AWS ElastiCache Redis node. I also set up a small Java application locally, which uses Webdriver to produce a load on the database.
+The service I'm monitoring is called Retwis. It's a demo application provided by Redis to show how their product works. I installed the product on an [EC2 instance](/optimize-aws-instance-types) and configured it to use an AWS ElastiCache Redis node. I also set up a small Java application locally, which uses Webdriver to produce a load on the database.
 
 Creating an AWS ElasticSearch Domain
 ------------------------------------
 
-The [monitoring plan](https://www.metricly.com/evaluate-monitoring-strategy) I'm going to present involves streaming log data from an AWS ElasticCache service via CloudWatch to an ElasticSearch (ES) domain, with some [AWS Lambda function](https://www.metricly.com/monitoring-aws-lambdas-with-netuitive) magic to connect it all. Before we begin, I'd like to reiterate a warning which Amazon includes in their documentation on the topic of streaming log data to ElasticSearch (ES).
+The [monitoring plan](/evaluate-monitoring-strategy) I'm going to present involves streaming log data from an AWS ElasticCache service via CloudWatch to an ElasticSearch (ES) domain, with some [AWS Lambda function](/monitoring-aws-lambdas-with-netuitive) magic to connect it all. Before we begin, I'd like to reiterate a warning which Amazon includes in their documentation on the topic of streaming log data to ElasticSearch (ES).
 
-**Note: **Streaming large amounts of CloudWatch Logs data to Amazon ES might result in high usage charges. We recommend that you [monitor your AWS bill](https://www.metricly.com/view-manage-individual-aws-ec2-costs) to help avoid higher-than-expected charges.
+**Note: **Streaming large amounts of CloudWatch Logs data to Amazon ES might result in high usage charges. We recommend that you [monitor your AWS bill](/view-manage-individual-aws-ec2-costs) to help avoid higher-than-expected charges.
 
 So, with the acceptance of the fact that we may incur high usage charges from AWS, let's set up an ElasticSearch (ES) domain. Navigate to the AWS ElasticSearch home page. If this is your first domain, click on the **Get Started** button; otherwise, click on the **Create a new domain** button.
 
 Select a name for your domain. For this example, I created an AWS ElastiCache instance using Redis, and so I called my domain *redis-logs*. The version dropdown defaulted to the latest version, which I decided to keep.
 
-![AWS Elasticache: Setting the Name and Elasticsearch Version for Your ES Domain](https://www.metricly.com/wp-content/uploads/2017/07/Set-Name-and-Version.png)
+![AWS Elasticache: Setting the Name and Elasticsearch Version for Your ES Domain](/wp-content/uploads/2017/07/Set-Name-and-Version.png)
 
 The next step is to configure the cluster. Here we'll set the number and type of instances to be used, and determine the type of storage which will be attached to the nodes. If you're just experimenting, you can't go wrong with a single *t2.small.elasticsearch* instance and 10GB of EBS. If your intention is monitoring of production metrics, you'll want to investigate what the needs of your particular situation require and configure your cluster accordingly.
 
-![AWS Elasticache Configuration 1](https://www.metricly.com/wp-content/uploads/2017/07/ES-Clusster-Configuration-1.png)
+![AWS Elasticache Configuration 1](/wp-content/uploads/2017/07/ES-Clusster-Configuration-1.png)
 
- ![AWS Elasticache Configuration 2](https://www.metricly.com/wp-content/uploads/2017/07/ES-Cluster-Configuration-2.png)
+ ![AWS Elasticache Configuration 2](/wp-content/uploads/2017/07/ES-Cluster-Configuration-2.png)
 
 The third step is to set up an access policy for the domain. AWS provides some templates which range from **Deny access to the domain** to **Allow open access to the domain**. As with the domain configuration, this step requires careful consideration of the type of data you're storing and how it will be used.
 
-![AWS Elasticache: Access Policy Template](https://www.metricly.com/wp-content/uploads/2017/07/Template-to-create-Access-Cluster.png)
+![AWS Elasticache: Access Policy Template](/wp-content/uploads/2017/07/Template-to-create-Access-Cluster.png)
 
 Finally, you'll have the option to confirm all the configurations for the domain. Click **Confirm and create** when you've validated all your entries, and your new domain should be ready to go in approximately 10 minutes.
 
@@ -86,7 +86,7 @@ Collecting ElasticSearch Metrics
 
 Navigate to the CloudWatch dashboard and click on the link to view **Metrics**. Depending on what you've been using in your account, you should see a collection of metric groups on the right of your screen, under the **All Metrics** tab. Click on the **ElastiCache** group, and then on **CacheClusterId**.
 
-![AWS Elasticache: Choose Metrics Group](https://www.metricly.com/wp-content/uploads/2017/07/Elasticache-Metrics-Group.png)
+![AWS Elasticache: Choose Metrics Group](/wp-content/uploads/2017/07/Elasticache-Metrics-Group.png)
 
 You'll now have a list of the available metrics for your AWS ElastiCache cluster. Clicking on them will add them to the graph above. This is a great tool if you want to quickly view metrics related to your cluster over two-week periods.
 
@@ -94,7 +94,7 @@ Let's see how we can get the data out of here, and stream it into ElasticSearch 
 
 **Metrics-extracting Lambda**
 
-AWS Lambda is the [serverless offering from AWS](https://www.metricly.com/best-practices-aws-lambda-monitoring). What we're going to do is set up a Lambda function that will be executed once a minute, and produce logs which detail the average metrics for the AWS ElastiCache cluster. These logs can then be streamed into ElasticSearch. I am certain other routes exist to accomplish this, but this is the path I chose.[ I've uploaded the code to a GitHub repository](https://github.com/echovue/elasticacheMetricExporter) if you would like to view or download the complete code base.
+AWS Lambda is the [serverless offering from AWS](/best-practices-aws-lambda-monitoring). What we're going to do is set up a Lambda function that will be executed once a minute, and produce logs which detail the average metrics for the AWS ElastiCache cluster. These logs can then be streamed into ElasticSearch. I am certain other routes exist to accomplish this, but this is the path I chose.[ I've uploaded the code to a GitHub repository](https://github.com/echovue/elasticacheMetricExporter) if you would like to view or download the complete code base.
 
 ESMetrics is a POJO with a collection of properties for storing the values, and from there we'll build a JSON log entry.
 
@@ -183,7 +183,7 @@ With that Lambda uploaded and set with a Cloudwatch trigger to run every minute,
 
 Navigate back to the CloudWatch dashboard, and this time, click on the **Logs** option. Locate the logs for the Lambda function. Mine was called *elasticacheMetricExporter.*
 
-![AWS Elasticache: Lambda Logs](https://www.metricly.com/wp-content/uploads/2017/07/Log-Group-New-Metrics-Lambda.png)
+![AWS Elasticache: Lambda Logs](/wp-content/uploads/2017/07/Log-Group-New-Metrics-Lambda.png)
 
 To stream the metrics, select the radio button to the left of the log group. Click on the **Actions** button, and select **Stream to Amazon Elasticsearch Service.** By now, our ES domain has had time to start, so it should be available in the dropdown. Ensure that *This Account* is selected, and then select your ES Cluster from the dropdown.
 
@@ -201,4 +201,4 @@ Information about the domain will be shown, including a link to a Kibana dashboa
 
 You can now navigate to the **Discover** tab to see what fields are available, and to the **Visualize** tab to build graphs and other visualizations from your data. Once you have some visualizations created and saved, you'll be able to add them to your dashboard. The Kibana documentation contains some excellent information on how to make the most of the tool they provide.
 
-This article touched on several offerings from AWS, and I learned a few lessons while putting it all together---First, even when there isn't a clearly documented method of created interactions between different AWS services, a little creativity can work around most obstacles. Second, and perhaps most importantly, you'll experience a phenomenal return on investment when you select an [AWS monitoring solution](https://www.metricly.com/getting-started-netuitive-aws) that can extract your metrics from Amazon and provide you with out-of-the-box analytics and reporting tools.
+This article touched on several offerings from AWS, and I learned a few lessons while putting it all together---First, even when there isn't a clearly documented method of created interactions between different AWS services, a little creativity can work around most obstacles. Second, and perhaps most importantly, you'll experience a phenomenal return on investment when you select an [AWS monitoring solution](/getting-started-netuitive-aws) that can extract your metrics from Amazon and provide you with out-of-the-box analytics and reporting tools.

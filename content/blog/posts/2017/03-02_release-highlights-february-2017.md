@@ -15,16 +15,16 @@ Netuitive's February 2017 release highlights include improved dashboard layouts,
 New Dashboard Builder Functionality
 -----------------------------------
 
-[![](https://www.metricly.com/wp-content/uploads/2017/07/Gif7.gif)](https://www.metricly.com/wp-content/uploads/2017/07/Gif7.gif)
+[![](/wp-content/uploads/2017/07/Gif7.gif)](/wp-content/uploads/2017/07/Gif7.gif)
 
-Managing dashboard layouts is a whole lot easier! [Dashboard layouts are now completely customizable](https://www.metricly.com/netuitive-dashboard-upgrades). Drag and drop widgets where you please or make your widgets whatever size you like using a familiar window-resizing dragging motion. Widgets can now be added to dashboards and placed anywhere you want using the new, easy-to-use UI.
+Managing dashboard layouts is a whole lot easier! [Dashboard layouts are now completely customizable](/netuitive-dashboard-upgrades). Drag and drop widgets where you please or make your widgets whatever size you like using a familiar window-resizing dragging motion. Widgets can now be added to dashboards and placed anywhere you want using the new, easy-to-use UI.
 
 Don't worry about the layouts of your existing dashboards: in converting all dashboards to the new custom grid interface, we preserved the layouts for the dashboards you've created already! Please play around with the updated functionality when you get a chance and share feedback with us.
 
 Additional Java Monitoring Options
 ----------------------------------
 
-[![](https://www.metricly.com/wp-content/uploads/2017/07/feb_rnh_java_int.png)](https://www.metricly.com/wp-content/uploads/2017/07/feb_rnh_java_int.png)
+[![](/wp-content/uploads/2017/07/feb_rnh_java_int.png)](/wp-content/uploads/2017/07/feb_rnh_java_int.png)
 
 Your Java code can be easily monitored with the use of our Java agent that is based on the [Zorka open source project](http://zorka.io/) and provides byte-code instrumentation. This approach is most helpful for operations teams who want to monitor Java code down the method call level but don't want to change the source code. Our agent can be installed as a JAR and can monitor your application via the byte-code.
 
@@ -37,9 +37,9 @@ We are now introducing new libraries that allow your developers to instrument th
 Existing Integration Enhancements
 ---------------------------------
 
-[![](https://www.metricly.com/wp-content/uploads/2017/07/feb_rnh_int_upd.png)](https://www.metricly.com/wp-content/uploads/2017/07/feb_rnh_int_upd.png)
+[![](/wp-content/uploads/2017/07/feb_rnh_int_upd.png)](/wp-content/uploads/2017/07/feb_rnh_int_upd.png)
 
-Netuitive's support and engineering teams improved several integrations with existing Quick Start monitoring packages. Read [this blog](https://www.metricly.com/aws-monitoring-best-practices-using-pre-configured-dashboards) to better understand the value and concepts behind our Quick Start monitoring package. They've also worked on several new integrations to expand our ability to monitor more technologies in your environment.
+Netuitive's support and engineering teams improved several integrations with existing Quick Start monitoring packages. Read [this blog](/aws-monitoring-best-practices-using-pre-configured-dashboards) to better understand the value and concepts behind our Quick Start monitoring package. They've also worked on several new integrations to expand our ability to monitor more technologies in your environment.
 
 1.  Cassandra and Kafka integrations were improved to pre-select the essential Key Performance Indicators (KPIs) that are most relevant to standard monitoring needs based on best practices. We still allow additional metrics to be collected by configuring the agent if desired. Existing dashboards and policies have also been updated, so you can focus more on the most important metrics.
 
@@ -49,4 +49,4 @@ Netuitive's support and engineering teams improved several integrations with exi
 
 * * * * *
 
-*These release highlights are just a small part of what makes Netuitive a top monitoring solution. See the rest of our outstanding features in your own environment with our [21-day free trial](https://www.metricly.com/signup).*
+*These release highlights are just a small part of what makes Netuitive a top monitoring solution. See the rest of our outstanding features in your own environment with our [21-day free trial](/signup).*

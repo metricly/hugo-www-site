@@ -39,17 +39,17 @@ Fortunately, there is an easy way to both analyze your current database usage, a
 Gaining Insight into Cost Factors
 ---------------------------------
 
-The RDS Cost Report is currently offered for Beta testing as part of the Metricly application. If you don't already have an account, they offer a 21-day free trial that you can sign up for [here](https://www.metricly.com/signup).
+The RDS Cost Report is currently offered for Beta testing as part of the Metricly application. If you don't already have an account, they offer a 21-day free trial that you can sign up for [here](/signup).
 
 Once you've logged into your account, you can navigate to the report by clicking on the reports tab and navigating to the RDS Reports Card.
 
-![RDS Costs: RDS Cost Card](https://www.metricly.com/wp-content/uploads/2017/08/Pasted-image-at-2017_08_15-03_40-PM.png)
+![RDS Costs: RDS Cost Card](/wp-content/uploads/2017/08/Pasted-image-at-2017_08_15-03_40-PM.png)
 
 Please note the warning that this is an experimental feature, and may evolve as the folks at Metricly receive feedback and refine and improve the report. Despite its being in development, there is still a wealth of information which can be gleaned from this report.
 
 The specific report we're going to look at is reporting on two PostgreSQL instances hosted on *db.m3.large* instances, named *rds01* and *rds02* respectively. Before we look at the report data itself, let's look at some of the options available to focus on the specific data you're looking at for the specific time and instances you're interested in.
 
-![RDS Costs: FilterBar](https://www.metricly.com/wp-content/uploads/2017/08/FilterBar.png)
+![RDS Costs: FilterBar](/wp-content/uploads/2017/08/FilterBar.png)
 
 At the top left-hand corner of the screen, you'll have access to the filters for the report itself. The first field is a simple element name filter. The next filter option is *Type*, which may provide additional options. The *More* option allows you to add additional filters, which you can use to segregate your data based on how your organization organizes its AWS resources.
 
@@ -58,11 +58,11 @@ At the top left-hand corner of the screen, you'll have access to the filters for
 -   Tag
 -   Collector
 
-![Manage RDS Costs: Date Selection Options](https://www.metricly.com/wp-content/uploads/2017/08/Date-Selection-Options.png)
+![Manage RDS Costs: Date Selection Options](/wp-content/uploads/2017/08/Date-Selection-Options.png)
 
 Moving to the top right-hand corner of the report, you'll see the date selector. This allows you to select from a couple of different date ranges. Depending on whether you are looking for data points over a specific period, or just over the last day, you can make that selection here.
 
-Once you've selected the appropriate group of resources to analyze and the right date range, you can tune the report to display appropriate metrics based on your specific needs. You can learn more about those metrics by visiting this introduction to the [RDS Cost Report](https://www.metricly.com/rds-cost-report).
+Once you've selected the appropriate group of resources to analyze and the right date range, you can tune the report to display appropriate metrics based on your specific needs. You can learn more about those metrics by visiting this introduction to the [RDS Cost Report](/rds-cost-report).
 
 For our example, we'll set the following options:
 
@@ -71,13 +71,13 @@ For our example, we'll set the following options:
 -   **Metric Statistic**: Maximum of Element 95th Percentiles
 -   **Sort**: By Total Cost in Ascending Order
 
-![Manage RDS Costs: Report Sorted By Cost](https://www.metricly.com/wp-content/uploads/2017/08/Report-Sorted-By-Cost-1024x539.png)
+![Manage RDS Costs: Report Sorted By Cost](/wp-content/uploads/2017/08/Report-Sorted-By-Cost-1024x539.png)
 
 By grouping our report by day, and sorting by total cost, we can see our daily RDS costs, with the most expensive days sorted to the right-hand side of our graph. Once we have this view, we can toggle cost elements on and off to see what the breakdown of each is.
 
 There seems to be a large proportion of RDS costs allocated to instance costs (both Reserved and On-Demand instance costs). Let's toggle off all costs except these two.
 
-![Manage RDS Costs: Report Sorted By Instance Cost](https://www.metricly.com/wp-content/uploads/2017/08/Report-Sorted-By-Instance-Cost-1024x575.png)
+![Manage RDS Costs: Report Sorted By Instance Cost](/wp-content/uploads/2017/08/Report-Sorted-By-Instance-Cost-1024x575.png)
 
 We now have an accurate picture of our instance costs for the past month, sorted by cost, and shown relative to the 95th Percentile of CPU Utilization. Let's look at ways in which we can use this information to optimize our RDS costs, while still maintaining a performant and reliable database solution.
 

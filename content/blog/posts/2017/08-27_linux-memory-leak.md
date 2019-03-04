@@ -13,7 +13,7 @@ Many of the tools and problems in this post will seem obvious to seasoned Python
 The Problem
 -----------
 
-Metricly's Linux agent is a packaged up version of our Diamond project fork as well as a couple other smaller libraries. This agent [sends performance data to Metricly](https://www.metricly.com/agent-based-monitoring) including CPU, network, disk, and memory usage. We also have a Dockerized agent which is the same agent in a Docker image, which is useful for [monitoring Docker containers](https://www.metricly.com/container-monitoring-netuitive) on the same host. A couple of months ago we started getting reports that this Docker agent had a slow memory leak leading to ~600MB growth over two weeks. Because the reports were only for the Dockerized agent we initially thought the issue was only with Dockerized environments.
+Metricly's Linux agent is a packaged up version of our Diamond project fork as well as a couple other smaller libraries. This agent [sends performance data to Metricly](/agent-based-monitoring) including CPU, network, disk, and memory usage. We also have a Dockerized agent which is the same agent in a Docker image, which is useful for [monitoring Docker containers](/container-monitoring-netuitive) on the same host. A couple of months ago we started getting reports that this Docker agent had a slow memory leak leading to ~600MB growth over two weeks. Because the reports were only for the Dockerized agent we initially thought the issue was only with Dockerized environments.
 
 Initial Tests
 -------------
@@ -61,7 +61,7 @@ Testing Linux Memory Leaks from the Outside
 
 My first attempts to replicate the memory leak were all from the outside looking in. I tried with little success to wire in Pympler (a Python memory profiler), but Diamond's scheduling aspect made it difficult to test memory usage at concrete points in time. I wasn't able to find a way to test a single collector or handler in isolation, so I paused on Pympler and decided to create as small a minified test case as I could.
 
-To facilitate this testing I built all these test cases inside [Docker containers](https://www.metricly.com/monitor-performance-docker-containers) and ran them with Docker Compose. [Full source can be found here](https://github.com/Netuitive/linux-agent-memory-leak-tests), if you'd like to follow along or replicate the memory leak issues yourself.
+To facilitate this testing I built all these test cases inside [Docker containers](/monitor-performance-docker-containers) and ran them with Docker Compose. [Full source can be found here](https://github.com/Netuitive/linux-agent-memory-leak-tests), if you'd like to follow along or replicate the memory leak issues yourself.
 
 My test cases (after many false starts) became:
 
@@ -75,7 +75,7 @@ I let these containers run over the weekend and when I came back I analyzed the 
 Client Library Breakthrough
 ---------------------------
 
-Through all this testing I was not working alone. Multiple other engineers and support engineers helped brainstorm theories about what could be happening. One engineer noted that the Metricly handler really doesn't do much except package up samples and send them to our Metricly [Python client library](https://www.metricly.com/python-monitoring). He mentioned that there had been issues with this library before, so we decided it was a good place to start digging into again.
+Through all this testing I was not working alone. Multiple other engineers and support engineers helped brainstorm theories about what could be happening. One engineer noted that the Metricly handler really doesn't do much except package up samples and send them to our Metricly [Python client library](/python-monitoring). He mentioned that there had been issues with this library before, so we decided it was a good place to start digging into again.
 
 Our Python client library has a handy example script for testing. The best part is that it's a small, terminating script which means we could break out Pympler again to track memory usage -- a far smaller test case than the entire Diamond project. I wrote a small test script from the example file and ran it to get the following output.
 
@@ -267,7 +267,7 @@ The sad fact is that our earlier test glazed over some subtle details which we o
 
 Once again, hindsight is 20/20. I made a branch removing the metric array and kicked off another two overnight tests: one with the modified-agent in the test repo, and another with the regular Docker agent in the test repo, to compare their performance. The test results were pretty clear.
 
-![Linux Memory Leak: Results](https://www.metricly.com/wp-content/uploads/2017/08/Results-1024x217.png)
+![Linux Memory Leak: Results](/wp-content/uploads/2017/08/Results-1024x217.png)
 
 I created a PR to the client library, built a release candidate agent, tested one more time overnight with the new agent (agent-rc/ in the test repo), and confirmed the same results. A patched Linux agent and Docker agent went out the next day. Memory leak solved.
 

@@ -9,11 +9,11 @@ layout: "single"
 
 ### About
 
-Metricly now supports integration with Consul! [Check out our official admin guide.](https://www.metricly.com/support/integrations/consul/) Consul is a service mesh solution that helps with service discovery, configuration, and segmentation functionality.
+Metricly now supports integration with Consul! [Check out our official admin guide.](/support/integrations/consul/) Consul is a service mesh solution that helps with service discovery, configuration, and segmentation functionality.
 
 **What you'll need to get started:**
 
--   The most up-to-date [Linux Agent](https://www.metricly.com/support/integrations/linux/)
+-   The most up-to-date [Linux Agent](/support/integrations/linux/)
 -   An existing [Consul](https://www.consul.io/) setup
 
 ### Packaged Policies
@@ -37,15 +37,15 @@ Search
 | --- | --- | --- | --- | --- | --- | --- |
 |
 
--   [«](https://www.metricly.com/consul-monitoring-now-supported/#)
--   [‹](https://www.metricly.com/consul-monitoring-now-supported/#)
--   [1](https://www.metricly.com/consul-monitoring-now-supported/#)
--   [2](https://www.metricly.com/consul-monitoring-now-supported/#)
--   [3](https://www.metricly.com/consul-monitoring-now-supported/#)
--   [4](https://www.metricly.com/consul-monitoring-now-supported/#)
--   [5](https://www.metricly.com/consul-monitoring-now-supported/#)
--   [›](https://www.metricly.com/consul-monitoring-now-supported/#)
--   [»](https://www.metricly.com/consul-monitoring-now-supported/#)
+-   [«](/consul-monitoring-now-supported/#)
+-   [‹](/consul-monitoring-now-supported/#)
+-   [1](/consul-monitoring-now-supported/#)
+-   [2](/consul-monitoring-now-supported/#)
+-   [3](/consul-monitoring-now-supported/#)
+-   [4](/consul-monitoring-now-supported/#)
+-   [5](/consul-monitoring-now-supported/#)
+-   [›](/consul-monitoring-now-supported/#)
+-   [»](/consul-monitoring-now-supported/#)
 
  |
 | consul.acl.blocked.(check|node|service).registration | avg | requests | TRUE | FALSE | gauge | no |

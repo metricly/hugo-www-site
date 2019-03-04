@@ -12,16 +12,16 @@ The DevOps movement is [almost a decade old](http://itrevolution.com/the-history
 DevOps in 2017: Serverless Computing
 ------------------------------------
 
-[![DevOps in 2017 Predictions: Serverless](https://www.metricly.com/wp-content/uploads/2017/07/Serverless.png)](https://www.metricly.com/wp-content/uploads/2017/07/Serverless.png)
+[![DevOps in 2017 Predictions: Serverless](/wp-content/uploads/2017/07/Serverless.png)](/wp-content/uploads/2017/07/Serverless.png)
 
-[AWS Lambda](https://www.metricly.com/best-practices-aws-lambda-monitoring), which was introduced in 2014, is old news by now. But other serverless computing technologies are taking off, too. [Azure Functions](https://www.metricly.com/introducing-microsoft-azure-integration) became generally available late last year. IBM began aggressively promoting [OpenWhisk](http://openwhisk.incubator.apache.org/) around the same time.
+[AWS Lambda](/best-practices-aws-lambda-monitoring), which was introduced in 2014, is old news by now. But other serverless computing technologies are taking off, too. [Azure Functions](/introducing-microsoft-azure-integration) became generally available late last year. IBM began aggressively promoting [OpenWhisk](http://openwhisk.incubator.apache.org/) around the same time.
 
 Expect the momentum of the serverless computing trend to continue in 2017. As Corne Kloppers [notes](https://www.planittesting.com/us/Insights/2016/DevOps-In-2017), serverless architectures are a key component of infrastructure modernization. Like microservices and next-generation cluster management tools, serverless computing functions help DevOps teams build modern infrastructures that are more agile and make more efficient use of resources.
 
 Containers and Virtual Machines Working Together
 ------------------------------------------------
 
-Since [Docker](https://www.metricly.com/monitor-performance-docker-containers)'s explosion onto the DevOps scene in 2013, discussion of containers and virtual machines has mostly focused on whether you should replace the latter with the former. (In other words, people have been thinking of containers and virtual machines as an either-or proposition.)
+Since [Docker](/monitor-performance-docker-containers)'s explosion onto the DevOps scene in 2013, discussion of containers and virtual machines has mostly focused on whether you should replace the latter with the former. (In other words, people have been thinking of containers and virtual machines as an either-or proposition.)
 
 Going into 2017, that is starting to change. DevOps teams are now realizing that containers and virtual machines can complement each other. That's especially true in cases where virtual machines can serve as the foundation for agile, containerized infrastructure.
 
@@ -34,13 +34,13 @@ The maturation of hypervisors as solutions for hosting Docker will make it easie
 Optimizing DevOps Communication
 -------------------------------
 
-[![DevOps in 2017 Predictions: DevOps Communication](https://www.metricly.com/wp-content/uploads/2017/07/ChatOps.png)](https://www.metricly.com/wp-content/uploads/2017/07/ChatOps.png)
+[![DevOps in 2017 Predictions: DevOps Communication](/wp-content/uploads/2017/07/ChatOps.png)](/wp-content/uploads/2017/07/ChatOps.png)
 
 In multiple ways, communication for DevOps teams is on its way to reaching a new level of efficiency in 2017.
 
 One of those ways is more ChatOps. ChatOps integrations have already been improving communication for DevOps teams for some time. But ChatOps has now transformed from a nice-to-have feature to one that is being embraced by enterprises, as George Hume [wrote](https://devops.com/4-essential-practices-succeeding-chatops/) on DevOps.com in November.
 
-Meanwhile, developers are finding new ways to insert communication optimizations into DevOps tools. Consider, for example, the latest version of [PagerDuty's monitoring](https://www.metricly.com/combining-netuitive-and-pagerduty-for-monitoring-alarms) and incident management platform, which offers communication features like "suppression." Suppression lets incident management teams monitor to collect information about an outage without being alerted about it immediately. This is just one example of the trend toward providing a more nuanced and flexible---or more agile---approach to communication.
+Meanwhile, developers are finding new ways to insert communication optimizations into DevOps tools. Consider, for example, the latest version of [PagerDuty's monitoring](/combining-netuitive-and-pagerduty-for-monitoring-alarms) and incident management platform, which offers communication features like "suppression." Suppression lets incident management teams monitor to collect information about an outage without being alerted about it immediately. This is just one example of the trend toward providing a more nuanced and flexible---or more agile---approach to communication.
 
 Expect these trends to continue in 2017 as the DevOps world seeks even leaner and meaner ways of sharing information.
 
@@ -56,7 +56,7 @@ The advent of DevOps-friendly next-generation security tools is making integrati
 Embrace of Open Standardization
 -------------------------------
 
-![](https://www.metricly.com/wp-content/uploads/2017/01/large_h-trans-1-1024x352.png)
+![](/wp-content/uploads/2017/01/large_h-trans-1-1024x352.png)
 
 2016 was a somewhat rocky year within the DevOps community when it came to defining open standards and assuring interoperability. Tensions came to a head toward the end of the summer, when talk emerged of forking Docker largely in response to worries that Docker was evolving  too fast to respect community-defined container standards. A fork never materialized, but some people [saw Red Hat's OCID project](http://www.infoworld.com/article/3123412/application-development/new-red-hat-project-looks-a-lot-like-a-docker-fork.html), essentially, as a Docker fork.
 

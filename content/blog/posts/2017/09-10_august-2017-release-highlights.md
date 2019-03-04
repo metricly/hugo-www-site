@@ -16,9 +16,9 @@ If you rely on AWS Relational Database Services (RDS) in your environment, then 
 
 When you want to know at glance whether you are using all of the CPU, Disk space, or IOPS that you are paying for, you can turn to our report to see aggregated capacity (ex. max, average, 95 percentile) and cost over time (ex. 1 day, 1 week or last month).
 
-To learn more, start with our high-level overview about [analyzing AWS RDS Costs](https://www.metricly.com/rds-cost-report) or read our article about [how to optimize AWS RDS Costs](https://www.metricly.com/optimize-aws-rds-costs).
+To learn more, start with our high-level overview about [analyzing AWS RDS Costs](/rds-cost-report) or read our article about [how to optimize AWS RDS Costs](/optimize-aws-rds-costs).
 
-![Manage RDS Costs: Report Sorted By Cost](https://www.metricly.com/wp-content/uploads/2017/08/Report-Sorted-By-Cost-1024x539.png)
+![Manage RDS Costs: Report Sorted By Cost](/wp-content/uploads/2017/08/Report-Sorted-By-Cost-1024x539.png)
 
 Filter Metrics Using Regular Expression
 ---------------------------------------
@@ -29,15 +29,15 @@ For example, [our Linux agent](https://help.netuitive.com/Content/Integrations/l
 
 You can then narrow down your selection further by using a tag for specific servers such as app:dbc (in this case dbc stands for database cluster). This tag may be appended in AWS, be part of the OS image, or appended by your configuration management tool such as Chef or Ansible. The screen shot below shows 24 metrics selected using the criteria above. Creating new dashboards has never been faster!
 
-![Regular Expression filters added to Metricly Dashboard Widgets](https://www.metricly.com/wp-content/uploads/2017/09/Dashboard-Widgets-Regular-Expression-1024x788.png)
+![Regular Expression filters added to Metricly Dashboard Widgets](/wp-content/uploads/2017/09/Dashboard-Widgets-Regular-Expression-1024x788.png)
 
 Interactive Demo Site Now Available
 -----------------------------------
 
-What is the fastest way to decide if a product can help your specific requirements? How about if you could click around the product without any delay whatsoever? We have made it easier for our prospects to independently assess the fit between [our product features](https://www.metricly.com/product) and their needs, without any delay from the time that they land on our web site.
+What is the fastest way to decide if a product can help your specific requirements? How about if you could click around the product without any delay whatsoever? We have made it easier for our prospects to independently assess the fit between [our product features](/product) and their needs, without any delay from the time that they land on our web site.
 
-We have created a demo version of our product that is populated with generic but realistic demo data so that the dashboards, alerts and reports have content, and we have made it available on our web site so that prospects can click around. Please visit our [public demo access page](https://www.metricly.com/demo) to start your assessment and share feedback with us.
+We have created a demo version of our product that is populated with generic but realistic demo data so that the dashboards, alerts and reports have content, and we have made it available on our web site so that prospects can click around. Please visit our [public demo access page](/demo) to start your assessment and share feedback with us.
 
-This interactive demo complements two other ways you can learn more about Metricly: you can also watch a [7min demo video](https://www.metricly.com/netuitive-overview) of our product, or start a [free 21-day trial evaluation](https://www.metricly.com/signup) which takes only 15min to activate.
+This interactive demo complements two other ways you can learn more about Metricly: you can also watch a [7min demo video](/netuitive-overview) of our product, or start a [free 21-day trial evaluation](/signup) which takes only 15min to activate.
 
-![Dashboard view of Metricly's Public Demo account](https://www.metricly.com/wp-content/uploads/2017/09/Public-Demo-Dashboard-1024x490.png)
+![Dashboard view of Metricly's Public Demo account](/wp-content/uploads/2017/09/Public-Demo-Dashboard-1024x490.png)

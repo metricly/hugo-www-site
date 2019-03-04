@@ -20,10 +20,13 @@
                     {{ range where $.Site.Pages "Section" "blog" }}
                     {{ if in .Params.category $categoryName }}
                       <li class="col-xl-4 col-md-4 col-sm-6">
+                        {{ if (eq .Params.category "Product Updates") }}
+                        {{ else }}
                           <a href="{{ .Params.url }}">
                             <!--<img class="img-fluid" src="/img/blog/small-version/{{ .Param "featured-image" }}" alt="post image">-->
                             <div class="thumbnail-image shadow-sm" style="background: url(/img/blog/{{ if .Param "featured-image" }}{{ if .Param "thumbnail-image" }}small-version/{{ .Param "featured-image" }}{{ else }}{{ .Param "featured-image" }}{{ end }}{{ else }}small-version/default.svg{{ end }});"></div>
                           </a>
+                          {{ end }}
                           <a href="{{ .Params.url }}" class="title-h3">{{ .Title }}</a>
                           <div class="name">{{ if .Params.author }}{{ .Params.author }}&nbsp;|&nbsp;{{ end }}{{ .ReadingTime }} min read</div>
                       </li>
@@ -32,70 +35,60 @@
                   </ul>
               </div>
           </section>
-          <section class="single-slider --bg-green">
-              <div class="container">
-                  <h3 class="title-h1 text-white">Recommended Blogs</h3>
-                  <div class="single-slider__swiper swiper-single-one">
-                      <div class="swiper-wrapper">
-                          <div class="swiper-slide">
-                              <div class="row">
-                                  <div class="col-lg-6 col-md-6 col-sm-6">
-                                      <a href="#"><img class="image img-fluid" src="/assets/img2.jpg" alt="image of blog"></a>
-                                  </div>
-                                  <div class="slider-content col-lg-5 col-md-5 col-sm-5 offset-lg-1 offset-md-1 offset-sm-1 d-flex flex-column justify-content-center">
-                                      <a href="#" class="title-category --light">DEV’OPS</a>
-                                      <a href="#" class="title-h1 --light">EC2 Instance Types — 6 Things You Need To
-                                          Know
-                                          Before Selecting</a>
-                                      <div class="author --light">
-                                          <img class="author__photo img-fluid" src="/assets/author.png" alt="author">
-                                          <div>
-                                              <div class="author__name">
-                                                  Mike Mackrory
-                                              </div>
-                                              <div class="author__time">
-                                                  5 min read
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
+          <section class="single-slider --bg-green" style="margin-bottom: 0px;">
+            <div class="container">
+              <h3 class="title-h2 --popular text-white text-center pb-4">featured posts</h3>
+              <div class="single-slider__swiper swiper-single-one">
+                <div class="swiper-wrapper">
+                  {{ $pages := .Site.Pages.ByPublishDate.Reverse }}
+                  {{ $popular := where $pages ".Params.featured" "=" true | first 3 }}
+                  {{ range $popular }}
+                  <div class="swiper-slide">
+                    <div class="row">
+                      <div class="col-lg-6 col-md-6 col-sm-6">
+                        <a href="{{ if .Params.url }}{{ .Params.url }}{{ else }}{{ .Permalink }}{{ end }}"><img class="image img-fluid" src="/img/blog/{{ if .Param "featured-image" }}{{ if .Param "thumbnail-image" }}small-version/{{ .Param "featured-image" }}{{ else }}small-version/default.svg{{ end }}{{ else }}small-version/default.svg{{ end }}" alt="image of blog"></a>
+                      </div>
+                      <div class="slider-content col-lg-5 col-md-5 col-sm-5 offset-lg-1 offset-md-1 offset-sm-1 d-flex flex-column justify-content-center">
+                        {{- with .Params.category }}
+                        {{- with $.Site.GetPage "taxonomyTerm" (printf "category/%s" (urlize .)) }}
+                        <a href="{{ if .Params.url }}{{ .Params.url }}{{ else }}{{ .Permalink }}{{ end }}" class="title-category --light">{{ .Params.name }}</a>
+                        {{ end }}
+                        {{ end }}
+                        <a href="{{ if .Params.url }}{{ .Params.url }}{{ else }}{{ .Permalink }}{{ end }}" class="title-h1 --light">{{ .Title }}</a>
+                        <div class="author --light">
+                          {{- with .Params.author }}
+                          {{- with $.Site.GetPage "taxonomyTerm" (printf "author/%s" (urlize .)) }}
+                          <img class="author__photo img-fluid" src="{{ .Params.photo }}" alt="author">
+                          {{ end }}
+                          {{ end }}
+                          <div>
+                            {{- with .Params.author }}
+                            {{- with $.Site.GetPage "taxonomyTerm" (printf "author/%s" (urlize .)) }}
+                            <div class="author__name">
+                              {{ .Params.name }}
+                            </div>
+                            {{ end }}
+                            {{ end }}
+                            <div class="author__time">{{ .ReadingTime }} min read</div>
                           </div>
-                          <div class="swiper-slide">
-                              <div class="row">
-                                  <div class="col-lg-6 col-md-6 col-sm-6">
-                                      <a href="#"><img class="img-fluid image" src="/assets/img2.jpg" alt="image of blog"></a>
-                                  </div>
-                                  <div class="slider-content col-lg-5 col-md-5 col-sm-5 offset-lg-1 offset-md-1  offset-sm-1 d-flex flex-column justify-content-center">
-                                      <a href="#" class="title-category --light">DEV’OPS</a>
-                                      <a href="#" class="title-h1 --light">EC2 Instance Types </a>
-                                      <div class="author --light">
-                                          <img class="author__photo img-fluid" src="/assets/author.png" alt="author">
-                                          <div>
-                                              <div class="author__name">
-                                                  Mike Mackrory
-                                              </div>
-                                              <div class="author__time">
-                                                  5 min read
-                                              </div>
-                                          </div>
-                                      </div>
-                                  </div>
-                              </div>
-                          </div>
+                        </div>
                       </div>
-                      <div class="swiper-button-next swiper-btn-s-one-next">
-                          <svg height="10" viewBox="0 0 19 10" width="19" xmlns="http://www.w3.org/2000/svg">
-                              <path d="m13.3735714.42624339c-.1838571-.18793651-.4898571-.18793651-.6801428 0-.1838572.1815873-.1838572.48380952 0 .66497354l3.4487143 3.40613757h-15.66600004c-.26528572.00042328-.47614286.20867725-.47614286.47068783s.21085714.47703704.47614286.47703704h15.66600004l-3.4487143 3.39978835c-.1838572.18793651-.1838572.49058202 0 .67174604.1902857.1879365.4967143.1879365.6801428 0l4.2651429-4.21248678c.1902857-.1815873.1902857-.48380952 0-.66497354z"
-                                  fill-rule="evenodd" stroke-width=".4" transform="matrix(-1 0 0 1 18 0)" /></svg>
-                      </div>
-                      <div class="swiper-button-prev swiper-btn-s-one-prev">
-                          <svg height="10" viewBox="0 0 19 10" width="19" xmlns="http://www.w3.org/2000/svg">
-                              <path d="m13.3735714.42624339c-.1838571-.18793651-.4898571-.18793651-.6801428 0-.1838572.1815873-.1838572.48380952 0 .66497354l3.4487143 3.40613757h-15.66600004c-.26528572.00042328-.47614286.20867725-.47614286.47068783s.21085714.47703704.47614286.47703704h15.66600004l-3.4487143 3.39978835c-.1838572.18793651-.1838572.49058202 0 .67174604.1902857.1879365.4967143.1879365.6801428 0l4.2651429-4.21248678c.1902857-.1815873.1902857-.48380952 0-.66497354z"
-                                  fill-rule="evenodd" stroke-width=".4" transform="matrix(-1 0 0 1 18 0)" /></svg>
-                      </div>
+                    </div>
                   </div>
+                  {{ end }}
+                </div>
+                <div class="swiper-button-next swiper-btn-s-one-next">
+                  <svg height="10" viewBox="0 0 19 10" width="19" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m13.3735714.42624339c-.1838571-.18793651-.4898571-.18793651-.6801428 0-.1838572.1815873-.1838572.48380952 0 .66497354l3.4487143 3.40613757h-15.66600004c-.26528572.00042328-.47614286.20867725-.47614286.47068783s.21085714.47703704.47614286.47703704h15.66600004l-3.4487143 3.39978835c-.1838572.18793651-.1838572.49058202 0 .67174604.1902857.1879365.4967143.1879365.6801428 0l4.2651429-4.21248678c.1902857-.1815873.1902857-.48380952 0-.66497354z"
+                      fill-rule="evenodd" stroke-width=".4" transform="matrix(-1 0 0 1 18 0)" /></svg>
+                </div>
+                <div class="swiper-button-prev swiper-btn-s-one-prev">
+                  <svg height="10" viewBox="0 0 19 10" width="19" xmlns="http://www.w3.org/2000/svg">
+                    <path d="m13.3735714.42624339c-.1838571-.18793651-.4898571-.18793651-.6801428 0-.1838572.1815873-.1838572.48380952 0 .66497354l3.4487143 3.40613757h-15.66600004c-.26528572.00042328-.47614286.20867725-.47614286.47068783s.21085714.47703704.47614286.47703704h15.66600004l-3.4487143 3.39978835c-.1838572.18793651-.1838572.49058202 0 .67174604.1902857.1879365.4967143.1879365.6801428 0l4.2651429-4.21248678c.1902857-.1815873.1902857-.48380952 0-.66497354z"
+                      fill-rule="evenodd" stroke-width=".4" transform="matrix(-1 0 0 1 18 0)" /></svg>
+                </div>
               </div>
+            </div>
           </section>
       </main>
   </div>

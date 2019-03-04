@@ -17,7 +17,7 @@ Fortunately, there is an easier way to figure out what instance type best fits y
 How to Get Set Up with Netuitive So You Can Use the Report
 ----------------------------------------------------------
 
-If you already have a Netuitive account, and your data is being read and analyzed by Netuitive, then you're ready to go. If this isn't the case, then you'll want to set up an account before proceeding through this article. Netuitive offers a 21-day free trial which you can sign up for from this link: (<https://www.metricly.com/signup>). As part of the signup process, you will have the opportunity to watch a video containing an overview of Netuitive from the co-founder, Bob Farzami. I would highly recommend watching the video to get a broad understanding of the environment and capabilities of the product. You can also watch the [Netuitive overview video here](https://www.metricly.com/netuitive-overview).
+If you already have a Netuitive account, and your data is being read and analyzed by Netuitive, then you're ready to go. If this isn't the case, then you'll want to set up an account before proceeding through this article. Netuitive offers a 21-day free trial which you can sign up for from this link: (</signup>). As part of the signup process, you will have the opportunity to watch a video containing an overview of Netuitive from the co-founder, Bob Farzami. I would highly recommend watching the video to get a broad understanding of the environment and capabilities of the product. You can also watch the [Netuitive overview video here](/netuitive-overview).
 
 An additional step is to install an agent on your instances in order to better report metadata and metrics. This isn't required, but will improve the accuracy of your reporting metrics, and thus the recommendations. Unfortunately the installation of agents is outside the scope of this article, but you can find more information the Linux agent [here](https://help.netuitive.com/Content/Datasources/Netuitive/linux.htm) and the Windows agent [here](https://help.netuitive.com/Content/Integrations/windows.htm).
 
@@ -26,14 +26,14 @@ Where Do I Find the Report, and How Does it Work?
 
 At the time of writing, the report was still in its beta phase, and could be accessed by logging into your Netuitive account, and clicking on your email address at the top right of the screen. On the dropdown menu which appeared, you would click on **Beta**, and then click on the EC2 Recommendation Report. Alternately, you could navigate to the report directly with this [link](https://app.netuitive.com/#/reports/ec2recommendation/latest).
 
-![Optimize AWS Instances - The EC2 Recommendation Report](https://www.metricly.com/wp-content/uploads/2017/07/Fig1-The-EC2-Recommendation-Report-1024x573-1024x573.png)
+![Optimize AWS Instances - The EC2 Recommendation Report](/wp-content/uploads/2017/07/Fig1-The-EC2-Recommendation-Report-1024x573-1024x573.png)
 
 How Much Money is the Report Going to Save Me?
 ----------------------------------------------
 
 Fortunately, the answer to this question is presented in bold, right at the top of the report.
 
-[![Optimize AWS Instances: Estimated Savings](https://www.metricly.com/wp-content/uploads/2017/07/Estimated-Savings.png)](https://www.metricly.com/wp-content/uploads/2017/07/Estimated-Savings.png)
+[![Optimize AWS Instances: Estimated Savings](/wp-content/uploads/2017/07/Estimated-Savings.png)](/wp-content/uploads/2017/07/Estimated-Savings.png)
 
 The actual amount being saved will vary based on your setup, and will change further based on what priorities you would like your particular deployment strategy to include.
 
@@ -50,13 +50,13 @@ The third section features a graph which shows solid symbols for existing instan
 
 The **Chart View** at the top of the report can be used to toggle between Cost vs. CPU Utilisation, Cost vs. Memory Utilisation, and CPU Utilisation vs. Memory Utilization. The two cost-related views show cost decreases by means of a downward line from the existing to the proposed state of the instance. An upward line represents a cost increase.
 
-[![Optimize AWS Instances: 5 Improvements](https://www.metricly.com/wp-content/uploads/2017/07/Five-Proposed-Improvements.png)](https://www.metricly.com/wp-content/uploads/2017/07/Five-Proposed-Improvements.png)
+[![Optimize AWS Instances: 5 Improvements](/wp-content/uploads/2017/07/Five-Proposed-Improvements.png)](/wp-content/uploads/2017/07/Five-Proposed-Improvements.png)
 
 In the above image, five instances are shown. The three instances identified by orange triangles show a decrease in cost based on a type change, with little or no change in processing ability. The two instances identified by blue dots show both a decrease in cost and an improvement in processing utilization by almost 25%.
 
 The fourth and final section of the report lists the instances included in the report. Elements are listed with the current type and cost, and their recommended change is provided with its associated cost and performance metrics. For further analysis, the report can also be downloaded into a csv file.
 
-[![Optimize AWS Instances: Proposed Changes](https://www.metricly.com/wp-content/uploads/2017/07/proposed-changes-1024x95.png)](https://www.metricly.com/wp-content/uploads/2017/07/proposed-changes.png)
+[![Optimize AWS Instances: Proposed Changes](/wp-content/uploads/2017/07/proposed-changes-1024x95.png)](/wp-content/uploads/2017/07/proposed-changes.png)
 
 Optimizing the Report Based on Needs and Risk Tolerance
 -------------------------------------------------------

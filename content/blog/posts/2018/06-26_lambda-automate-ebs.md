@@ -12,7 +12,7 @@ In a [previous article](/ebs-burst-balance-aws/), I introduced you to EBS Burst
 In this article, I'd like to explore the different ways in which you could respond to a decrease in the burst capacity balance of your EBS volumes. We'll discuss a few possible solutions to this issue, then dive into my preferred approach, which involves using Lambda functions to increase EBS volume capacity automatically.
 
 See also:\
-[Calculating IOPS Utilization For EBS Volumes](https://www.metricly.com/iops-calculator-for-ebs-volumes)
+[Calculating IOPS Utilization For EBS Volumes](/iops-calculator-for-ebs-volumes)
 
 ### The Problem With Using EBS Volumes
 
@@ -42,7 +42,7 @@ The following solution will modify the size of your EBS volume. It is provided a
 
 ### Solution to Automatically Increase EBS Volume Capacity
 
-Let's craft our solution. We're going to work backward from an AWS Lambda function---to the policy in your Metricly account. If you don't already have a Metricly account, you can sign up for a [21-day free trial here](https://app.netuitive.com/signup/). I'd also recommend you read my [previous article](https://www.metricly.com/ebs-burst-balance-aws) to begin tracking your EBS Burst Credit balance before you attempt an automated response.
+Let's craft our solution. We're going to work backward from an AWS Lambda function---to the policy in your Metricly account. If you don't already have a Metricly account, you can sign up for a [21-day free trial here](https://app.netuitive.com/signup/). I'd also recommend you read my [previous article](/ebs-burst-balance-aws) to begin tracking your EBS Burst Credit balance before you attempt an automated response.
 
 We'll complete the following steps in order:
 
@@ -163,25 +163,25 @@ Click the Create API button.
 
 Choose the New API option, and enter a name and description. I selected the "Edge optimized" Endpoint Type.
 
-![Creating the API](https://www.metricly.com/wp-content/uploads/2018/06/word-image-28.png)
+![Creating the API](/wp-content/uploads/2018/06/word-image-28.png)
 
 Creating the API
 
 Once you have created the API, click on Actions in the Resources column, and choose Create Method. Then, from the resultant drop-down, Select POST and click on the checkmark.
 
-![Adding a POST Endpoint to the API](https://www.metricly.com/wp-content/uploads/2018/06/word-image-35.png)
+![Adding a POST Endpoint to the API](/wp-content/uploads/2018/06/word-image-35.png)
 
 Adding a POST Endpoint to the API
 
 The Integration type for this endpoint is a Lambda Function. You'll need to select the Lambda Region, and then type in the name of your Lambda Function. The region into which your Lambda is deployed isn't readily identifiable when you're deploying your Lambda, so you might have to do a little hunting. Fortunately, you'll get a notification when you select a region that has no Lambda functions deployed in it.
 
-![POST Endpoint Configuration](https://www.metricly.com/wp-content/uploads/2018/06/word-image-40.png)
+![POST Endpoint Configuration](/wp-content/uploads/2018/06/word-image-40.png)
 
 POST Endpoint Configuration
 
 When you click on the Save button, you'll receive a notification asking you to confirm that this API will have permission to invoke your Lambda function. Click OK to grant the permission.
 
-![Graphical Display Showing the POST Endpoint Configuration](https://www.metricly.com/wp-content/uploads/2018/06/word-image-43.png)
+![Graphical Display Showing the POST Endpoint Configuration](/wp-content/uploads/2018/06/word-image-43.png)
 
 Graphical Display Showing the POST Endpoint Configuration
 
@@ -189,13 +189,13 @@ Your Lambda is now configured and can be tested, secured and deployed. To check 
 
 With your API secure, you can now deploy it. Click on the name of your API, and then selectDeploy API from the list of options. Select [New Stage] from Deployment stage, and then enter the details for the deployment.
 
-![Complete the Deployment Details for the API](https://www.metricly.com/wp-content/uploads/2018/06/word-image-46.png)
+![Complete the Deployment Details for the API](/wp-content/uploads/2018/06/word-image-46.png)
 
 Complete the Deployment Details for the API
 
 Clicking the Deploy button will deploy your API and provide you with a URL to use to invoke your API, as well as a host of other options for additional configuration and publishing of your API. For this example, all you will need is the URL.
 
-![Deployed and Ready](https://www.metricly.com/wp-content/uploads/2018/06/word-image-49.png)
+![Deployed and Ready](/wp-content/uploads/2018/06/word-image-49.png)
 
 Deployed and Ready
 
@@ -203,7 +203,7 @@ Deployed and Ready
 
 We're now going to connect the Lambda function to respond to the policy which is invoked when the burst credit buffer falls below 20%. Navigate to the [Policies](https://app.metricly.com/#/alerts) page. We're going to create our Webhook on the *AWS EBS -- Depleted Burst Balance and High IOPS Utilization*policy. Locate this policy and click on it.
 
-![Edit the AWS EBS - Depleted Burst Balance](https://www.metricly.com/wp-content/uploads/2018/06/word-image-52.png)
+![Edit the AWS EBS - Depleted Burst Balance](/wp-content/uploads/2018/06/word-image-52.png)
 
 Edit the AWS EBS -- Depleted Burst Balance
 
@@ -229,6 +229,6 @@ JSON
 
 }
 
-![Webhook Configuration](https://www.metricly.com/wp-content/uploads/2018/06/word-image-53.png)
+![Webhook Configuration](/wp-content/uploads/2018/06/word-image-53.png)
 
 Webhook Configuration

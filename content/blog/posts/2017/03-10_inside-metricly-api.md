@@ -21,7 +21,7 @@ So, how exactly do we plug a 21st century API into a 20th century codebase?
 
 Before we consume Netuitive's API, we first need to gather some necessary authentication information. Netuitive's API uses HTTP Basic Authentication, so the first two things we need to gather are our username and password (this should be pretty self explanatory). Next, we need to get an API key. To do this, head on over to Netuitive's [Integrations](https://app.netuitive.com/#/integrations) page and click on the "Custom Datasource" integration and take note of the "API Key" field. It is important to note that the "Data Collection" field should be enabled as well.
 
-[![](https://www.metricly.com/wp-content/uploads/2017/07/Netuitive-API-Key-1024x168.png)](https://www.metricly.com/wp-content/uploads/2017/07/Netuitive-API-Key.png)
+[![](/wp-content/uploads/2017/07/Netuitive-API-Key-1024x168.png)](/wp-content/uploads/2017/07/Netuitive-API-Key.png)
 
 Making The Call
 ---------------
@@ -34,11 +34,11 @@ To test API calls, I'm a big fan of [Postman](https://www.getpostman.com/), a cr
 
 First, the endpoint's URL takes the following format, replacing API_KEY with the API key copied above:
 
-[![Netuitive API: Postman Endpoint](https://www.metricly.com/wp-content/uploads/2017/07/Postman-Endpoint-1024x100.png)](https://www.metricly.com/wp-content/uploads/2017/07/Postman-Endpoint.png)
+[![Netuitive API: Postman Endpoint](/wp-content/uploads/2017/07/Postman-Endpoint-1024x100.png)](/wp-content/uploads/2017/07/Postman-Endpoint.png)
 
 Next, we need to add our login credentials to the Authorization tab:
 
-[![Netuitive API: Postman Authentication](https://www.metricly.com/wp-content/uploads/2017/07/Postman-Authentication-1024x250.png)](https://www.metricly.com/wp-content/uploads/2017/07/Postman-Authentication.png)
+[![Netuitive API: Postman Authentication](/wp-content/uploads/2017/07/Postman-Authentication-1024x250.png)](/wp-content/uploads/2017/07/Postman-Authentication.png)
 
 Then, we need to create a JSON string representing the event we are posting to the API. While there are a few choices listed in [Netuitive's documentation](https://help.netuitive.com/Content/Misc/API/Events/ingest_events_api-creating_events.htm), the majority of them are optional. That said, some of the optional fields provide some great value, so we will be including them where appropriate.
 
@@ -54,13 +54,13 @@ One important thing to be aware of is that, while Netuitive's event API endpoint
 
 > X-Netuitive-Api-Options: INJECT_TIMESTAMP
 
-[![Netuitive API: Postman Headers](https://www.metricly.com/wp-content/uploads/2017/07/Postman-Headers-1024x144.png)](https://www.metricly.com/wp-content/uploads/2017/07/Postman-Headers.png)
+[![Netuitive API: Postman Headers](/wp-content/uploads/2017/07/Postman-Headers-1024x144.png)](/wp-content/uploads/2017/07/Postman-Headers.png)
 
 If that header is not found, then the event will not show up in your Netuitive dashboard.
 
 Now that we've put our test request together, let's run it and take a peek at what shows up on the Netuitive dashboard:
 
-[![Netuitive API: Posted Netuitive Event](https://www.metricly.com/wp-content/uploads/2017/07/Posted-Netuitive-Event-1024x222.png)](https://www.metricly.com/wp-content/uploads/2017/07/Posted-Netuitive-Event.png)
+[![Netuitive API: Posted Netuitive Event](/wp-content/uploads/2017/07/Posted-Netuitive-Event-1024x222.png)](/wp-content/uploads/2017/07/Posted-Netuitive-Event.png)
 
 Success! As you can see, all the information we provided in our JSON object is available in the event details, and the timestamp has been auto-generated.
 
@@ -264,7 +264,7 @@ These two methods make up the bulk of the code necessary to send requests to the
 
 This call composes a request to the Netuitive API with "Player login" as the title, "INFO" as the level, and the player's username and hostname in the description. Taking a look at the Netuitive dashboard, we can see the event that gets posted whenever a player logs into the game:
 
-[![Netuitive API: Posted Netuitive Event](https://www.metricly.com/wp-content/uploads/2017/07/Login-Events-1024x195.png)](https://www.metricly.com/wp-content/uploads/2017/07/Login-Events.png)
+[![Netuitive API: Posted Netuitive Event](/wp-content/uploads/2017/07/Login-Events-1024x195.png)](/wp-content/uploads/2017/07/Login-Events.png)
 
 **Next Steps**
 

@@ -8,9 +8,9 @@ url: "/metricly-linux-monitoring-agent/"
 layout: "single"
 ---
 
-Software engineers can only solve problems they know about. And they can only know if their proposed solutions actually resolve problems by being able to see and measure the results. Timely access to data and the ability to analyze and understand that information is critical to success. The capacity to provide solutions which help in this is what makes the products offered by organizations like Metricly so valuable. In this article, we're going to take a deep dive into the Linux monitoring agent used by [Metricly](https://www.metricly.com/product) to gather key metrics.
+Software engineers can only solve problems they know about. And they can only know if their proposed solutions actually resolve problems by being able to see and measure the results. Timely access to data and the ability to analyze and understand that information is critical to success. The capacity to provide solutions which help in this is what makes the products offered by organizations like Metricly so valuable. In this article, we're going to take a deep dive into the Linux monitoring agent used by [Metricly](/product) to gather key metrics.
 
-We're going to look at the origins of the agent and discuss how to extend the agent and deploy it onto your Linux machines. We'll look at adding readily available collectors to gather metrics from a variety of applications, as well as [custom metrics](https://www.metricly.com/enable-aws-custom-metrics). Finally, we'll look at how Metricly compiles and organizes this data into preconfigured dashboards and provides you with the tools to debug, [detect anomalies](https://www.metricly.com/what-is-anomaly-detection), and ensure that your applications are running smoothly without needing to keep an eye on them constantly.
+We're going to look at the origins of the agent and discuss how to extend the agent and deploy it onto your Linux machines. We'll look at adding readily available collectors to gather metrics from a variety of applications, as well as [custom metrics](/enable-aws-custom-metrics). Finally, we'll look at how Metricly compiles and organizes this data into preconfigured dashboards and provides you with the tools to debug, [detect anomalies](/what-is-anomaly-detection), and ensure that your applications are running smoothly without needing to keep an eye on them constantly.
 
 History of the Metricly Linux Monitoring Agent
 ----------------------------------------------
@@ -35,14 +35,14 @@ Before we continue with the different deployment options, extensions, and explor
 
 Metricly is not only a comprehensive monitoring and analytics platform---They have also invested heavily in providing tools to leverage your data and provide you with dashboards, anomaly detection and policies designed to alert you to problems before they become critical.
 
-All of those tools are available for you to use the instant you set up an account on their system and configure an agent to import your metrics. If you don't already have an account, you can sign up for a [21-day free trial here](https://www.metricly.com/signup).
+All of those tools are available for you to use the instant you set up an account on their system and configure an agent to import your metrics. If you don't already have an account, you can sign up for a [21-day free trial here](/signup).
 
 With minimal effort, you'll be able to access recommendations to optimize cost, performance, and reliability, and make decisions based on easy-to-understand and actionable data.
 
 Linux Monitoring Agent Installation
 -----------------------------------
 
-Metricly provides detailed instructions for [installing the Metricly Linux monitoring agent](https://www.metricly.com/support/integrations/linux) on your server. They walk you through the process of downloading, installing, and configuring the agent with additional information about Docker container installation, troubleshooting, and upgrading.
+Metricly provides detailed instructions for [installing the Metricly Linux monitoring agent](/support/integrations/linux) on your server. They walk you through the process of downloading, installing, and configuring the agent with additional information about Docker container installation, troubleshooting, and upgrading.
 
 Installing the Linux monitoring agent on a couple of servers is the perfect way to see what the agent can do and let you experiment with what metrics are available. To fully appreciate the value of what the agent can do and how Metricly can analyze and report on data, however, you need to have the agent deployed on all machines in your deployment. In the past, the Diamond agent has been successfully installed across [a thousand worker nodes, reporting three million data points each minute](https://answers.launchpad.net/graphite/+question/178969), so it's very scalable if you have a system to handle it.
 
@@ -50,7 +50,7 @@ If you're going to deploy the agent at anything approaching that scale, you're g
 
 -   Ansible -- <https://github.com/Netuitive/ansible-netuitive-agent>
 -   Chef -- <https://github.com/Netuitive/chef-netuitive>
--   Salt -- <https://www.metricly.com/support/integrations/saltstack>
+-   Salt -- </support/integrations/saltstack>
 
 Extending the Agent to Gather Additional Metrics
 ------------------------------------------------
@@ -59,9 +59,9 @@ The Linux agent will collect a plethora of metrics from your system which can be
 
 If you want to gather additional metrics from your applications, there are two options available to collect those extra data points.
 
-Your first choice is to find one of the Integrations that Metricly has developed and provides on their site. An overwhelming benefit of this approach is that any configuration, including access keys, account IDs and the like are included as part of the scripts used in the installation. You can access a full listing of the Integrations available on the [Integrations page](https://www.metricly.com/support/integrations) in the Help Documentation.
+Your first choice is to find one of the Integrations that Metricly has developed and provides on their site. An overwhelming benefit of this approach is that any configuration, including access keys, account IDs and the like are included as part of the scripts used in the installation. You can access a full listing of the Integrations available on the [Integrations page](/support/integrations) in the Help Documentation.
 
-![](https://www.metricly.com/wp-content/uploads/2017/11/Screen-Shot-2017-11-08-at-2.43.24-PM-1024x642.png)
+![](/wp-content/uploads/2017/11/Screen-Shot-2017-11-08-at-2.43.24-PM-1024x642.png)
 
 Metricly Integrations Page
 
@@ -81,9 +81,9 @@ Collecting Custom Data
 
 If you've been involved in monitoring, DevOps, or development for the cloud, you've probably already heard about the StatsD daemon developed at Etsy. The Metricly Linux agent includes a StatsD server so that you can implement the StatsD client library in your application, and your custom metrics will be collected by the agent, together with all the system data.
 
-![](https://www.metricly.com/wp-content/uploads/2017/11/Screen-Shot-2017-11-08-at-3.01.17-PM.png)
+![](/wp-content/uploads/2017/11/Screen-Shot-2017-11-08-at-3.01.17-PM.png)
 
-The Metricly documentation explains how to [configure the StatsD integration](https://www.metricly.com/support/integrations/metricly-statsd) to report metrics into your account- if you would like to know more about the inclusion of StatsD within the Metricly Linux Agent, you can find that information, including examples in the support documentation.
+The Metricly documentation explains how to [configure the StatsD integration](/support/integrations/metricly-statsd) to report metrics into your account- if you would like to know more about the inclusion of StatsD within the Metricly Linux Agent, you can find that information, including examples in the support documentation.
 
 Leveraging the Power of Metricly
 --------------------------------
@@ -94,17 +94,17 @@ To illustrate the ease of setup, I have yet to include the Linux agent on any in
 
 I then [logged into my Metricly account](https://app.netuitive.com/#/login), navigated to [Integrations](https://app.netuitive.com/#/integrations), and clicked on the Linux integration. (Or you can view in our [public demo environment](https://public.netuitive.com/#/integrations).)
 
-![](https://www.metricly.com/wp-content/uploads/2017/11/linux-integration-e1510174373579-300x122.png)
+![](/wp-content/uploads/2017/11/linux-integration-e1510174373579-300x122.png)
 
 The Linux Integration displays my API KEY and provides me a command to run on the instance in question. The screen is shown below, without my private API KEY of course!
 
-![](https://www.metricly.com/wp-content/uploads/2017/11/installing-linux-agent.png)
+![](/wp-content/uploads/2017/11/installing-linux-agent.png)
 
 Install and Configuration Information for the Linux Agent
 
 If I navigate to the [Dashboards page](https://app.netuitive.com/#/dashboards/management) in the Metricly app ([view in public demo](https://public.netuitive.com/#/dashboards/management)), I have a dashboard available called ***Linux Summary***, created by <research@metricly.com>. Let's check it out and see what I get. Before looking at the dashboard, I generated a few calls to the web service. Below are the results, without any configuration other than that mentioned above.
 
-![](https://www.metricly.com/wp-content/uploads/2017/11/linux-dashboard.png)
+![](/wp-content/uploads/2017/11/linux-dashboard.png)
 
 Preconfigured Dashboard for Linux Servers
 
@@ -121,13 +121,13 @@ The default dashboard includes:
 
 Let's leave this dashboard and navigate to the [Policies page](https://app.netuitive.com/#/policies) to see what other preconfigured tools we have by default. ([View in public demo](https://public.netuitive.com/#/policies).) If you scroll down, you should see a list of Linux-related policies.
 
-![](https://www.metricly.com/wp-content/uploads/2017/11/automatic-linux-policies.png)
+![](/wp-content/uploads/2017/11/automatic-linux-policies.png)
 
 Policies Configured Automatically for Linux Instances
 
 If we click into one of these policies, we can learn more, and set up a notification to alert us when a critical error is encountered. Let's click on ***Linux -- CPU Threshold Exceeded***. This policy has a red dot indicating that it is a critical event, rather than an informational event.
 
-![](https://www.metricly.com/wp-content/uploads/2017/11/edit-policy-in-metricly.png)
+![](/wp-content/uploads/2017/11/edit-policy-in-metricly.png)
 
 View Details and Editing a Critical Event Policy
 
@@ -136,4 +136,4 @@ Clicking on the Notifications tab, you may **Add a Notification**. Notifications
 Organizing AWS Data
 -------------------
 
-Finally, if you host instances in the AWS Cloud, an additional benefit of Metricly is that the agent includes tag information in the metrics collected. By including these tags, you can filter your metrics by tags and by attributes such as region, availability zone, and state. If you would like to know more about tagging AWS instances, the following [Best Practices](https://www.metricly.com/best-practices-tagging-aws-instances) guide is an excellent place to start.
+Finally, if you host instances in the AWS Cloud, an additional benefit of Metricly is that the agent includes tag information in the metrics collected. By including these tags, you can filter your metrics by tags and by attributes such as region, availability zone, and state. If you would like to know more about tagging AWS instances, the following [Best Practices](/best-practices-tagging-aws-instances) guide is an excellent place to start.

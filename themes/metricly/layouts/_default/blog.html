@@ -73,7 +73,7 @@
             <div class="swiper-slide">
               <div class="row">
                 <div class="col-lg-6 col-md-6 col-sm-6">
-                  <a href="#"><img class="image img-fluid" src="/img/blog/{{ if .Param "featured-image" }}{{ if .Param "thumbnail-image" }}small-version/{{ .Param "featured-image" }}{{ else }}small-version/default.svg{{ end }}{{ else }}small-version/default.svg{{ end }}" alt="image of blog"></a>
+                  <a href="{{ if .Params.url }}{{ .Params.url }}{{ else }}{{ .Permalink }}{{ end }}"><img class="image img-fluid" src="/img/blog/{{ if .Param "featured-image" }}{{ if .Param "thumbnail-image" }}small-version/{{ .Param "featured-image" }}{{ else }}small-version/default.svg{{ end }}{{ else }}small-version/default.svg{{ end }}" alt="image of blog"></a>
                 </div>
                 <div class="slider-content col-lg-5 col-md-5 col-sm-5 offset-lg-1 offset-md-1 offset-sm-1 d-flex flex-column justify-content-center">
                   {{- with .Params.category }}
@@ -81,16 +81,22 @@
                   <a href="{{ if .Params.url }}{{ .Params.url }}{{ else }}{{ .Permalink }}{{ end }}" class="title-category --light">{{ .Params.name }}</a>
                   {{ end }}
                   {{ end }}
-                  <a href="#" class="title-h1 --light">{{ .Title }}</a>
+                  <a href="{{ if .Params.url }}{{ .Params.url }}{{ else }}{{ .Permalink }}{{ end }}" class="title-h1 --light">{{ .Title }}</a>
                   <div class="author --light">
-                    <img class="author__photo img-fluid" src="/assets/author.png" alt="author">
+                    {{- with .Params.author }}
+                    {{- with $.Site.GetPage "taxonomyTerm" (printf "author/%s" (urlize .)) }}
+                    <img class="author__photo img-fluid" src="{{ .Params.photo }}" alt="author">
+                    {{ end }}
+                    {{ end }}
                     <div>
+                      {{- with .Params.author }}
+                      {{- with $.Site.GetPage "taxonomyTerm" (printf "author/%s" (urlize .)) }}
                       <div class="author__name">
-                        Mike Mackrory
+                        {{ .Params.name }}
                       </div>
-                      <div class="author__time">
-                        5 min read
-                      </div>
+                      {{ end }}
+                      {{ end }}
+                      <div class="author__time">{{ .ReadingTime }} min read</div>
                     </div>
                   </div>
                 </div>
@@ -152,18 +158,18 @@
       <div class="container">
         <h2 class="title-h2 --popular pb-4">
           product updates from metricly
-          <div class="swiper-button-next swiper-btn-m-one-next">
+          <div class="swiper-button-next swiper-btn-m-two-next">
             <svg height="10" viewBox="0 0 19 10" width="19" xmlns="http://www.w3.org/2000/svg">
               <path d="m13.3735714.42624339c-.1838571-.18793651-.4898571-.18793651-.6801428 0-.1838572.1815873-.1838572.48380952 0 .66497354l3.4487143 3.40613757h-15.66600004c-.26528572.00042328-.47614286.20867725-.47614286.47068783s.21085714.47703704.47614286.47703704h15.66600004l-3.4487143 3.39978835c-.1838572.18793651-.1838572.49058202 0 .67174604.1902857.1879365.4967143.1879365.6801428 0l4.2651429-4.21248678c.1902857-.1815873.1902857-.48380952 0-.66497354z"
                 fill-rule="evenodd" stroke-width=".4" transform="matrix(-1 0 0 1 18 0)" /></svg>
           </div>
-          <div class="swiper-button-prev swiper-btn-m-one-prev">
+          <div class="swiper-button-prev swiper-btn-m-two-prev">
             <svg height="10" viewBox="0 0 19 10" width="19" xmlns="http://www.w3.org/2000/svg">
               <path d="m13.3735714.42624339c-.1838571-.18793651-.4898571-.18793651-.6801428 0-.1838572.1815873-.1838572.48380952 0 .66497354l3.4487143 3.40613757h-15.66600004c-.26528572.00042328-.47614286.20867725-.47614286.47068783s.21085714.47703704.47614286.47703704h15.66600004l-3.4487143 3.39978835c-.1838572.18793651-.1838572.49058202 0 .67174604.1902857.1879365.4967143.1879365.6801428 0l4.2651429-4.21248678c.1902857-.1815873.1902857-.48380952 0-.66497354z"
                 fill-rule="evenodd" stroke-width=".4" transform="matrix(-1 0 0 1 18 0)" /></svg>
           </div>
         </h2>
-        <div class="multiple-slider__swiper swiper-multiple-one">
+        <div class="multiple-slider__swiper swiper-multiple-two">
           <div class="swiper-wrapper">
             {{ range $updates }}
             <div class="swiper-slide">

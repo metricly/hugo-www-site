@@ -9,52 +9,52 @@ layout: "single"
 ---
 
 
-Amazon Web Services' Elastic Load Balancer (ELB) is scalable, fault tolerant, and an easy way to implement load balancing for your application stack. Load balancing allows you to distribute traffic from clients on the Web to multiple backend instances on AWS. Traffic can be distributed between EC2 instances, or [containers on Amazon's Elastic Container Service](https://www.metricly.com/container-monitoring-netuitive) (ECS).
+Amazon Web Services' Elastic Load Balancer (ELB) is scalable, fault tolerant, and an easy way to implement load balancing for your application stack. Load balancing allows you to distribute traffic from clients on the Web to multiple backend instances on AWS. Traffic can be distributed between EC2 instances, or [containers on Amazon's Elastic Container Service](/container-monitoring-netuitive) (ECS).
 
 Currently, there are two types of load balancing services that Amazon provides. The first is Classic Load Balancer which functions at Layer 4 of the OSI model, and distributes traffic based on IP address and TCP port. The second is [Application Load Balancer](https://aws.amazon.com/elasticloadbalancing/applicationloadbalancer/), which distributes traffic at Layer 7 of the OSI model, and can route traffic based on both TCP port and URL.
 
-[Netuitive](https://www.metricly.com/product) can help you monitor your ELB deployments by integrating with AWS and giving you insight into what's really happening with your [load balancers and application traffic](https://www.metricly.com/optimize-aws-route53-elb). In this blog post, we'll briefly cover what you'll need to get started with AWS and ELB monitoring, configure the Netuitive AWS integration, and take a deeper dive into what metrics Netuitive provides for monitoring your load balancers, and what those metrics mean.
+[Netuitive](/product) can help you monitor your ELB deployments by integrating with AWS and giving you insight into what's really happening with your [load balancers and application traffic](/optimize-aws-route53-elb). In this blog post, we'll briefly cover what you'll need to get started with AWS and ELB monitoring, configure the Netuitive AWS integration, and take a deeper dive into what metrics Netuitive provides for monitoring your load balancers, and what those metrics mean.
 
 Prerequisites
 -------------
 
 If you don't already have an AWS account with ELB set up, you'll want to take care of that first. You can find information to sign up for an Amazon account on the AWS home page. AWS provides a free tier that you can use to try out services such as EC2 and ELB.
 
-The next step is to set up a Netuitive account. [Netuitive's 21-day free trial](https://www.metricly.com/signup) will get you started.
+The next step is to set up a Netuitive account. [Netuitive's 21-day free trial](/signup) will get you started.
 
 Configuring AWS ELB
 -------------------
 
 Amazon provides excellent documentation to get you started with setting up ELB, so we won't go too much into that in this post. The first thing you'll want to do, though, is familiarize yourself a bit with Elastic Load Balancing in general, then decide whether you want to configure [Classic Load Balancer](https://aws.amazon.com/elasticloadbalancing/classicloadbalancer/getting-started/) or [Application Load Balancer](https://aws.amazon.com/elasticloadbalancing/applicationloadbalancer/).
 
-Once you've done that, you'll need to [set up an EC2 instance](https://www.metricly.com/pick-perfect-ec2-instance-type) or ECS container (with a web server installed) on the backend of the load balancer where you can route your application traffic. Netuitive's [monitoring integrates with a variety of platforms](https://www.metricly.com/integrations), so you can monitor your application stack and ELB all from the same interface.
+Once you've done that, you'll need to [set up an EC2 instance](/pick-perfect-ec2-instance-type) or ECS container (with a web server installed) on the backend of the load balancer where you can route your application traffic. Netuitive's [monitoring integrates with a variety of platforms](/integrations), so you can monitor your application stack and ELB all from the same interface.
 
 Configuring Netuitive's ELB Monitoring
 --------------------------------------
 
 Configuring Netuitive is simple, and Netuitive provides great documentation to [get you started](https://help.netuitive.com/Content/where_to_start.htm).
 
-Once you're up and running, you'll need to configure the AWS integration in order to see the metrics available for ELB monitoring. Instructions to do so can be found in the Netuitive documentation. Netuitive recommends using "Installation Via IAM Role," described in the documentation linked above when configuring the AWS integration. (Also, see [Getting Started with Netuitive and AWS](https://www.metricly.com/getting-started-netuitive-aws) for more information.)
+Once you're up and running, you'll need to configure the AWS integration in order to see the metrics available for ELB monitoring. Instructions to do so can be found in the Netuitive documentation. Netuitive recommends using "Installation Via IAM Role," described in the documentation linked above when configuring the AWS integration. (Also, see [Getting Started with Netuitive and AWS](/getting-started-netuitive-aws) for more information.)
 
 When configuring the integration, be sure the **ELB** box is checked on the *AWS Setup* page, as illustrated below. (Now would also be a good time to configure Netuitive for any other AWS services you wish to monitor by checking those boxes as well.)
 
-![ELB Monitoring: AWS Setup](https://www.metricly.com/wp-content/uploads/2017/07/AWS-Setup.png)
+![ELB Monitoring: AWS Setup](/wp-content/uploads/2017/07/AWS-Setup.png)
 
 Once you've configured the AWS integration, it will usually take a few minutes to show up in the dashboard list.
 
 **Netuitive and AWS**
 
-Dashboards are provided by Netuitive as a way to access and [visualize](https://help.netuitive.com/Content/Dashboards/dashboards.htm?Highlight=dashboards) ELB monitoring data (and any othe metrics) collected by Netuitive. You can find a high-level overview of what monitoring dashboards can do on the [Dashboards and Reports](https://www.metricly.com/product/dashboards-and-reports) page. For a deeper dive into using Netuitive dashboards, see [AWS Monitoring Best Practices Using Pre-Configured Dashboards](https://www.metricly.com/aws-monitoring-best-practices-using-pre-configured-dashboards).
+Dashboards are provided by Netuitive as a way to access and [visualize](https://help.netuitive.com/Content/Dashboards/dashboards.htm?Highlight=dashboards) ELB monitoring data (and any othe metrics) collected by Netuitive. You can find a high-level overview of what monitoring dashboards can do on the [Dashboards and Reports](/product/dashboards-and-reports) page. For a deeper dive into using Netuitive dashboards, see [AWS Monitoring Best Practices Using Pre-Configured Dashboards](/aws-monitoring-best-practices-using-pre-configured-dashboards).
 
 -   Installed dashboards can be accessed in the Netuitive interface by clicking **Dashboards**, then **Manage Dashboards**. The screenshot below shows both the *Dashboards* menu, and the *Manage Dashboards* screen.
 
-![ELB Monitoring: Manage Dashboards](https://www.metricly.com/wp-content/uploads/2017/07/Manage-Dashboards-1024x233.png)
+![ELB Monitoring: Manage Dashboards](/wp-content/uploads/2017/07/Manage-Dashboards-1024x233.png)
 
 -   "Starring" a given dashboard on the *Manage Dashboards* screen will cause it to appear in the *Dashboards* menu.
 
 -   On either the *Dashboards* menu, or the *Manage Dashboards* screen, click **AWS ELB Summary** to see a high-level overview of your ELB monitoring. The next screenshot shows an example of the *AWS ELB Summary* page.
 
-![ELB Monitoring: AWS ELB Summary](https://www.metricly.com/wp-content/uploads/2017/07/AWS-ELB-1024x296.png)
+![ELB Monitoring: AWS ELB Summary](/wp-content/uploads/2017/07/AWS-ELB-1024x296.png)
 
 -   In the example shown above, there are a number of bits of information that can be gleaned from the ELB monitoring summary page.
 
@@ -66,20 +66,20 @@ Dashboards are provided by Netuitive as a way to access and [visualize](https://
 
 -   In the case illustrated, clicking on the load balancer called "users" will pop up a context menu with two choices. Choosing **Metrics** will take us to a screen with all of the ELB monitoring metrics available, as shown below.
 
-![ELB Monitoring: Metrics](https://www.metricly.com/wp-content/uploads/2017/07/Metrics-1024x428.png)
+![ELB Monitoring: Metrics](/wp-content/uploads/2017/07/Metrics-1024x428.png)
 
-![ELB Monitoring: Metrics2](https://www.metricly.com/wp-content/uploads/2017/07/Metrics2-1024x496.png)
+![ELB Monitoring: Metrics2](/wp-content/uploads/2017/07/Metrics2-1024x496.png)
 
 -   As can be seen, there are a number of ELB HTTP 5xx errors, as well as an unhealthy host behind this load balancer. It's likely that the host is either not properly responding to application requests forwarded by the load balancer, or that the host itself is down.
 
 Each of the ELB monitoring metrics collected and presented by Netuitive will be briefly discussed in the next section.
 
-It's worth mentioning that Netuitive provides further articles and documentation to help you [write better cloud monitoring rules ](https://www.metricly.com/effective-monitoring-alert-rules)with Authoring Effective Cloud Monitoring Alert Rules. You can also take a look at Netuitive's [best practices for more readable dashboards](https://www.metricly.com/devops-dashboard-best-practices). These are suggested reading in order to better familiarize yourself with some of the best practices when using Netuitive.
+It's worth mentioning that Netuitive provides further articles and documentation to help you [write better cloud monitoring rules ](/effective-monitoring-alert-rules)with Authoring Effective Cloud Monitoring Alert Rules. You can also take a look at Netuitive's [best practices for more readable dashboards](/devops-dashboard-best-practices). These are suggested reading in order to better familiarize yourself with some of the best practices when using Netuitive.
 
 Collected vs. Computed Metrics
 ------------------------------
 
-Before diving into each of the individual metrics provided by Netuitive, a quick note on the difference between [collected metrics vs. computed metrics](https://www.metricly.com/computed-monitoring-metrics) is in order.
+Before diving into each of the individual metrics provided by Netuitive, a quick note on the difference between [collected metrics vs. computed metrics](/computed-monitoring-metrics) is in order.
 
 Collected metrics are just that---metrics collected by Netuitive from your infrastructure and application stack. Computed metrics are additional metrics provided by Netuitive and are calculated based on the aforementioned collected metrics. Computed metrics can give you greater monitoring insight by providing information not normally available with collected metrics alone.
 
@@ -155,8 +155,8 @@ The best way to familiarize yourself is to read the [Netuitive documentation](ht
 
 onclusion
 
-Hopefully this blog post helped you get started with Netuitive and monitoring your Elastic Load Balancer, as well as understanding what some of the metrics provided by Netuitive mean. For further help, see the [Netuitive Help](https://help.netuitive.com/Content/home.htm) documentation. There are a number of useful articles and blog posts on the [Netuitive Blog](https://www.metricly.com/blog) to help you gain more insight into using Netuitive with other platforms and integrations.
+Hopefully this blog post helped you get started with Netuitive and monitoring your Elastic Load Balancer, as well as understanding what some of the metrics provided by Netuitive mean. For further help, see the [Netuitive Help](https://help.netuitive.com/Content/home.htm) documentation. There are a number of useful articles and blog posts on the [Netuitive Blog](/blog) to help you gain more insight into using Netuitive with other platforms and integrations.
 
 You can also browse through the [Netuitive Community Packages](https://github.com/netuitive-community-packages) repository to see other packages and integrations available with Netuitive.
 
-Finally, if you are really starting to dig into Netuitive, and using your ELB with EC2 auto-scaling groups, you might also consider reading the [Optimize Your Auto Scale Groups With ASG Tuning Report](https://www.metricly.com/optimize-auto-scale-groups-asg-tuning-report).
+Finally, if you are really starting to dig into Netuitive, and using your ELB with EC2 auto-scaling groups, you might also consider reading the [Optimize Your Auto Scale Groups With ASG Tuning Report](/optimize-auto-scale-groups-asg-tuning-report).

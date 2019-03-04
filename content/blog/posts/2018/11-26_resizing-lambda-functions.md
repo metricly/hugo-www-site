@@ -7,7 +7,7 @@ url: "/resizing-lambda-functions-got-easier/"
 layout: "single"
 ---
 
-Metricly now ingests a combination of CloudWatch logs to compute the memory utilization for a given Lambda function, calculated off the max used and billable memory values. Check out the [Lambda Sizing Tool Admin Guide](https://www.metricly.com/support/integrations/lambda-sizing/) for a detailed breakdown of this tool.
+Metricly now ingests a combination of CloudWatch logs to compute the memory utilization for a given Lambda function, calculated off the max used and billable memory values. Check out the [Lambda Sizing Tool Admin Guide](/support/integrations/lambda-sizing/) for a detailed breakdown of this tool.
 
 ### How it Works
 
@@ -33,4 +33,4 @@ Here's a high-level workflow for discovering and resizing Lambda functions:
 7.  Monitor performance.
 8.  Refactor if/when necessary.
 
-[Click here to review the Lambda Sizing Tool and get started!](https://www.metricly.com/support/integrations/lambda-sizing/)
+[Click here to review the Lambda Sizing Tool and get started!](/support/integrations/lambda-sizing/)

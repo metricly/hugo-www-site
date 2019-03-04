@@ -16,7 +16,7 @@ Dollar change and percentage change conditions have been added under the **Match
 -   **Any Group Delta**: filter for dollar amount changes in cost compared to previous billing period
 -   **Any Group Delta %**: set min/max percentage change in cost compared to previous billing period
 
-![](https://www.metricly.com/wp-content/uploads/2019/02/dollar-percent-filters-optimized.gif)
+![](/wp-content/uploads/2019/02/dollar-percent-filters-optimized.gif)
 
 ### Set a budget for one or all services
 
@@ -43,4 +43,4 @@ You can also combined multiple conditions for full control over your AWS Service
 
 These conditions also apply to saved reports with **Send Daily Email** enabled; a saved report with matching conditions only sends a daily email if the conditions applied are true. This essentially operates as an email alert for your cost reports, allowing you to automate routine billing check-ins.
 
-Simplify monitoring cost changes today with these new matching conditions and manage your [cost deltas](https://www.metricly.com/aws-cost-analysis/) like a pro.
+Simplify monitoring cost changes today with these new matching conditions and manage your [cost deltas](/aws-cost-analysis/) like a pro.

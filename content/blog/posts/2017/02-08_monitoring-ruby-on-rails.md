@@ -12,7 +12,7 @@ Ruby on Rails is one of the most commonly used web application frameworks on the
 
 At a high level, Netuitive's Ruby on Rails agent is an extension of their Ruby agent that acts as a no-code solution to monitoring any existing Ruby on Rails application. To understand exactly how it works, though, let's take a look at integrating the agent to a pre-built Rails application.
 
-[![](https://www.metricly.com/wp-content/uploads/2017/07/rails-logotransparent.png)](https://www.metricly.com/wp-content/uploads/2017/07/rails-logotransparent.png)
+[![](/wp-content/uploads/2017/07/rails-logotransparent.png)](/wp-content/uploads/2017/07/rails-logotransparent.png)
 
 Introducing Discourse
 ---------------------
@@ -60,7 +60,7 @@ When the daemon is first run, it will ask for an element name and an API key. Th
 Putting It All Together
 -----------------------
 
-[![Ruby on Rails Agent: Dashboard](https://www.metricly.com/wp-content/uploads/2017/07/Ruby1-1024x588.png)](https://www.metricly.com/wp-content/uploads/2017/07/Ruby1.png)
+[![Ruby on Rails Agent: Dashboard](/wp-content/uploads/2017/07/Ruby1-1024x588.png)](/wp-content/uploads/2017/07/Ruby1.png)
 
 Now that we've got everything set up, let's start/restart our application and watch the metrics flood in. But what exactly are we looking at? For the most part, the metrics sent up to Netuitive by the Rails agent are things that can be tracked within Rails' controllers, views, and models. While it's not an all-inclusive monitoring solution, it will give you traffic data, request timing, errors, and database interactions, which is more than enough for the majority of use cases.
 

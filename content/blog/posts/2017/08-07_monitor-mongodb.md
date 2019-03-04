@@ -26,7 +26,7 @@ Beyond simply being able to deal with "dirty" data better than a relational data
 Behind the Scenes
 -----------------
 
-As with all things, understanding the ins-and-outs of MongoDB can be an invaluable step towards setting up an [effective monitoring solution](https://www.metricly.com/product). So...How exactly does it work?
+As with all things, understanding the ins-and-outs of MongoDB can be an invaluable step towards setting up an [effective monitoring solution](/product). So...How exactly does it work?
 
 To steal a little bit from the [official website](https://www.mongodb.com/mongodb-architecture), MongoDB stores JSON-like documents in a binary format called BSON (literally "Binary JSON"). Similar to how MySQL uses tables to collect like datasets together, MongoDB uses collections; the big difference is that the unstructured nature of MongoDB allows for data that is typically separated into multiple tables to be grouped into one individual record. This nearly eliminates the need to JOIN tables, increases performance, and reduces reads to single operations.
 
@@ -39,28 +39,28 @@ Before we get into how to establish effective MongoDB monitoring in a production
 
 At its core, mongostat aggregates the number of database operations by type on the current server. All insert, update, delete, and read queries are counted and returned to give an overview of the load distribution of a server. Here's an example of what mongostat looks like:
 
-![MongoDB Monitoring: mongostat](https://www.metricly.com/wp-content/uploads/2017/08/Mongostat-1024x38.png)
+![MongoDB Monitoring: mongostat](/wp-content/uploads/2017/08/Mongostat-1024x38.png)
 
 While the data above can look confusing at first, take note of the column names, and they should start to make sense. Insert, query, update, delete... These are all operations that can be run on the database are tracked.
 
 On the flip side, while mongostat can be used to view aggregate statistics, mongotop can be used to view *current* statistics across collections. Rather than aggregating the number of operations run on the database, mongotop instead tracks the read/write performance of the database and reports it every few seconds. Here's a quick example of what this looks like:
 
-![MongoDB Monitoring: Mongotop](https://www.metricly.com/wp-content/uploads/2017/08/Mongotop.png)
+![MongoDB Monitoring: Mongotop](/wp-content/uploads/2017/08/Mongotop.png)
 
 Monitoring MongoDB in Production
 --------------------------------
 
 While getting command-line statistics about a running MongoDB instance can be valuable, it isn't very practical in a production environment. To better facilitate production MongoDB monitoring, it is best to use an application monitoring service like Metricly to not only keep track of current data, but also aggregate and track it historically to help identify trends.
 
-Before we can start monitoring a MongoDB instance in Metricly, however, we must first install the Metricly Linux agent. This is a common theme across [Metricly integrations](https://www.metricly.com/integrations), as it allows you to very quickly and easily enable and disable metrics monitoring for a number of services within an individual server without very much overhead.
+Before we can start monitoring a MongoDB instance in Metricly, however, we must first install the Metricly Linux agent. This is a common theme across [Metricly integrations](/integrations), as it allows you to very quickly and easily enable and disable metrics monitoring for a number of services within an individual server without very much overhead.
 
-To accomplish this, head on over to the [Integrations page](https://www.metricly.com/integrations) in your Metricly dashboard and follow the instructions for setting up the Linux integration. Once you've done that, enabling MongoDB monitoring is a snap. To do this, open up the Metricly MongoDB Collector Configuration file in your favorite editor (found at /opt/netuitive-agent/conf/collectors/MongoDBCollector.conf), change the enabled value from False to True, and restart the Metricly agent.
+To accomplish this, head on over to the [Integrations page](/integrations) in your Metricly dashboard and follow the instructions for setting up the Linux integration. Once you've done that, enabling MongoDB monitoring is a snap. To do this, open up the Metricly MongoDB Collector Configuration file in your favorite editor (found at /opt/netuitive-agent/conf/collectors/MongoDBCollector.conf), change the enabled value from False to True, and restart the Metricly agent.
 
 After about five minutes, you should start seeing data trickle into your Metricly account.
 
-![MongoDB Monitoring: MongoDB metrics](https://www.metricly.com/wp-content/uploads/2017/08/MongoDB-metrics-1024x964.png)
+![MongoDB Monitoring: MongoDB metrics](/wp-content/uploads/2017/08/MongoDB-metrics-1024x964.png)
 
-At first glance, the [data collected by Metricly's](https://www.metricly.com/june-2017-release-highlights) MongoDB integration can be overwhelming. Clocking in at nearly 40 metrics, it can be tough to decide what stats to focus on, and what stats to ignore. At a high level, the metrics that are often most important to focus on are the number of connections available compared to the number of current connections, as this is an indicator of the current load on your server.
+At first glance, the [data collected by Metricly's](/june-2017-release-highlights) MongoDB integration can be overwhelming. Clocking in at nearly 40 metrics, it can be tough to decide what stats to focus on, and what stats to ignore. At a high level, the metrics that are often most important to focus on are the number of connections available compared to the number of current connections, as this is an indicator of the current load on your server.
 
 Additionally, keeping an eye on the number of page faults can be a good way to determine if there is enough physical memory on the server. Too many page faults might indicate too little memory, although it is important to note that page faults can also occur while accessing large datasets or scanning an entire collection.
 
@@ -71,32 +71,32 @@ Notify, Notify, Notify
 
 While there are a number of different MongoDB metrics that can be tracked, being notified of any of the issues mentioned above is one of the most important aspects of application monitoring. It's not enough to simply keep an eye on the graphs -- you have to also take steps to stay on top of issues as they arise (or sooner).
 
-With Metricly, any of the metrics above can be monitored, and your team can be notified if any of them matches certain predefined conditions. As an example, let's say that we wanted to send an alert whenever there are more than 100 page faults over the course of five minutes. To accomplish this, all that would need to be done is to create a new policy within Metricly that monitors the mongo.extra_info.page_faults metric, and compares it to a [static threshold](https://www.metricly.com/resources/whitepaper-static-thresholds) of more than 100.
+With Metricly, any of the metrics above can be monitored, and your team can be notified if any of them matches certain predefined conditions. As an example, let's say that we wanted to send an alert whenever there are more than 100 page faults over the course of five minutes. To accomplish this, all that would need to be done is to create a new policy within Metricly that monitors the mongo.extra_info.page_faults metric, and compares it to a [static threshold](/resources/whitepaper-static-thresholds) of more than 100.
 
-![MongoDB Monitoring: MongoDBPolicy](https://www.metricly.com/wp-content/uploads/2017/08/MongoDBPolicy.png)
+![MongoDB Monitoring: MongoDBPolicy](/wp-content/uploads/2017/08/MongoDBPolicy.png)
 
-When these conditions are met, an event will be created in the Metricly Events dashboard. Additionally, you can notify your team via a number of different methods in order to ensure transparency into the health of your application across your organization. These notifications can be configured within the Notifications tab of the New Policy panel, allowing you to [tie specific notifications to different policies](https://www.metricly.com/policy-page-upgrades).
+When these conditions are met, an event will be created in the Metricly Events dashboard. Additionally, you can notify your team via a number of different methods in order to ensure transparency into the health of your application across your organization. These notifications can be configured within the Notifications tab of the New Policy panel, allowing you to [tie specific notifications to different policies](/policy-page-upgrades).
 
-![MongoDB Monitoring: MongoDBNotification](https://www.metricly.com/wp-content/uploads/2017/08/MongoDBNotification.png)
+![MongoDB Monitoring: MongoDBNotification](/wp-content/uploads/2017/08/MongoDBNotification.png)
 
 Easy as Pie
 -----------
 
-There is a lot of information to sift through when it comes to MongoDB monitoring, but if you'd rather just hook it up, press "go," and tune it later then Metricly comes with some nifty MongoDB stuff right out of the gate. For starters, a high-level overview of the health of your MongoDB instance can be found under the MongoDB [Summary Dashboard](https://www.metricly.com/monitoring-dashboard-widget-layouts).
+There is a lot of information to sift through when it comes to MongoDB monitoring, but if you'd rather just hook it up, press "go," and tune it later then Metricly comes with some nifty MongoDB stuff right out of the gate. For starters, a high-level overview of the health of your MongoDB instance can be found under the MongoDB [Summary Dashboard](/monitoring-dashboard-widget-layouts).
 
-![MongoDB Monitoring: MongoDBDashboard](https://www.metricly.com/wp-content/uploads/2017/08/MongoDBDashboard-1024x593.png)
+![MongoDB Monitoring: MongoDBDashboard](/wp-content/uploads/2017/08/MongoDBDashboard-1024x593.png)
 
 Additionally, a handful of useful policies can be found as well. While they aren't all-encompassing, they cover the most common use cases you will need in a typical environment. It is important to note that these policies are enabled by default, which means that you will start receiving notifications on any of your default channels almost immediately.
 
-![MongoDB Monitoring: MongoDBListofPolicies](https://www.metricly.com/wp-content/uploads/2017/08/MongoDBListofPolicies.png)
+![MongoDB Monitoring: MongoDBListofPolicies](/wp-content/uploads/2017/08/MongoDBListofPolicies.png)
 
 Final Thoughts
 --------------
 
-MongoDB is a powerful NoSQL database, but as with all valuable platforms, transparency is key. No system is perfect, and as your application scales, so do your problems. By implementing a clearly defined [monitoring and alerting protocol](https://www.metricly.com/alert-noise-blog), you can ensure that you and your team are always up-to-date on issues *as they happen*, rather than playing catch-up.
+MongoDB is a powerful NoSQL database, but as with all valuable platforms, transparency is key. No system is perfect, and as your application scales, so do your problems. By implementing a clearly defined [monitoring and alerting protocol](/alert-noise-blog), you can ensure that you and your team are always up-to-date on issues *as they happen*, rather than playing catch-up.
 
 For more information on the inner workings of MongoDB and how to track down and diagnose specific issues, I highly recommend heading on over to their official documentation and taking it all in. There is a lot going on under the hood, and the more you understand about it, the more likely you will be able to solve problems effectively and efficiently.
 
 * * * * *
 
-Start monitoring your MongoDB databases today -- sign up for [Metricly's 21-day, no-obligation free trial](https://www.metricly.com/signup).
+Start monitoring your MongoDB databases today -- sign up for [Metricly's 21-day, no-obligation free trial](/signup).

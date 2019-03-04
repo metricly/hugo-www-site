@@ -8,14 +8,14 @@ url: "/agent-based-monitoring/"
 layout: "single"
 ---
 
-The IT world is changing fast. Containers, immutable infrastructure, and software-defined everything are reshaping the way we compute. The practices and technologies that are mainstream today may be thrown out the window tomorrow. Not everything is changing, however. Some best practices and core concepts will continue to carry forward and actually increase in value, even as everything else is reshaped. Agent-based [monitoring](https://www.metricly.com/inside-netuitive-api) is a prime example of one of these long-lasting trends. Even as your infrastructure changes, you can still expect to rely on agents to monitor it.
+The IT world is changing fast. Containers, immutable infrastructure, and software-defined everything are reshaping the way we compute. The practices and technologies that are mainstream today may be thrown out the window tomorrow. Not everything is changing, however. Some best practices and core concepts will continue to carry forward and actually increase in value, even as everything else is reshaped. Agent-based [monitoring](/inside-netuitive-api) is a prime example of one of these long-lasting trends. Even as your infrastructure changes, you can still expect to rely on agents to monitor it.
 
 In this post, I take a look at what makes agent-based monitoring so important, and explain why it will remain crucial even on next-generation infrastructure and technologies.
 
 I Already Use CloudWatch. Why Isn't That Enough?
 ------------------------------------------------
 
-[![Agent-Based Monitoring: Amazon CloudWatch](https://www.metricly.com/wp-content/uploads/2016/04/integrations-amazon-web-services.png)](https://www.metricly.com/wp-content/uploads/2016/04/integrations-amazon-web-services.png)
+[![Agent-Based Monitoring: Amazon CloudWatch](/wp-content/uploads/2016/04/integrations-amazon-web-services.png)](/wp-content/uploads/2016/04/integrations-amazon-web-services.png)
 
 CloudWatch is a useful tool, but on their own, built-in monitoring solutions are not enough.
 
@@ -24,7 +24,7 @@ The free CloudWatch tier polls once every five minutes, and the premium (paid) t
 But agent-based solutions go much further. They give you:
 
 -   Increased flexibility in creating notification alerts based on custom alarms. For example, Netuitive has a wide variety of [preset policies and alarms](https://help.netuitive.com/Content/Policies/DefaultPolicies/default_policies.htm).
--   Better [out-of-the-box dashboards](https://www.metricly.com/aws-monitoring-best-practices-using-pre-configured-dashboards), which are fed by [analytics](https://hlp.app.netuitive.com/Content/Metrics/Analytics/analytics.htm) based on trends around how the entire solution and infrastructure behave over time. CloudWatch doesn't provide in-depth analytics.
+-   Better [out-of-the-box dashboards](/aws-monitoring-best-practices-using-pre-configured-dashboards), which are fed by [analytics](https://hlp.app.netuitive.com/Content/Metrics/Analytics/analytics.htm) based on trends around how the entire solution and infrastructure behave over time. CloudWatch doesn't provide in-depth analytics.
 
 Agentless Monitoring Is More Complex Than It Seems
 --------------------------------------------------
@@ -48,23 +48,23 @@ Once per minute may seem quite frequent, and it's the default for almost every a
 
 **2\. System Statistics**
 
-[![Agent-Based Monitoring: CPU Utilization](https://www.metricly.com/wp-content/uploads/2017/07/Screen-Shot-2017-03-14-at-2.51.05-PM-1024x282.png)](https://www.metricly.com/wp-content/uploads/2017/07/Screen-Shot-2017-03-14-at-2.51.05-PM.png)
+[![Agent-Based Monitoring: CPU Utilization](/wp-content/uploads/2017/07/Screen-Shot-2017-03-14-at-2.51.05-PM-1024x282.png)](/wp-content/uploads/2017/07/Screen-Shot-2017-03-14-at-2.51.05-PM.png)
 
-As a result of its placement on the server, the agent has access to all of the system metrics, all the time. This allows the agent to report on all aspects of network I/O (in, out, and errors), [CPU utilization](https://www.metricly.com/subtleties-ec2-cpu-utilization), memory usage (free, committed, and reserved), and disk I/O (including I/O waits), and not just what can be easily queried every five minutes by a remote agent running a few commands and reporting back.
+As a result of its placement on the server, the agent has access to all of the system metrics, all the time. This allows the agent to report on all aspects of network I/O (in, out, and errors), [CPU utilization](/subtleties-ec2-cpu-utilization), memory usage (free, committed, and reserved), and disk I/O (including I/O waits), and not just what can be easily queried every five minutes by a remote agent running a few commands and reporting back.
 
 **3\. Add-ons for Application, Database, and Middleware Products**
 
-With the agent on the server and always running, vendors offer the ability to extend what the agents report back through pre-built add-ons for common third-party products that send the metrics their customers get the most value out of. There's also the ability to have [custom metrics](https://www.metricly.com/inside-netuitive-api) backed by bespoke scripts that you can use for lesser-known or proprietary technology that is specific to your company, or even your industry.
+With the agent on the server and always running, vendors offer the ability to extend what the agents report back through pre-built add-ons for common third-party products that send the metrics their customers get the most value out of. There's also the ability to have [custom metrics](/inside-netuitive-api) backed by bespoke scripts that you can use for lesser-known or proprietary technology that is specific to your company, or even your industry.
 
-For Netuitive, it offers out of the box add-ons ("integrations" in Netuitive's terms) for MySQL, RabbitMQ, Docker, and [an ever-growing list](https://www.metricly.com/integrations) of others.
+For Netuitive, it offers out of the box add-ons ("integrations" in Netuitive's terms) for MySQL, RabbitMQ, Docker, and [an ever-growing list](/integrations) of others.
 
-An additional nice feature of Netuitive's agent is that it can [collect data from any StatsD- compatible application or service](https://www.metricly.com/using-statsd-with-netuitive-for-advanced-monitoring) on the server. This can be easily leveraged by your in-house applications to directly report the metrics that matter the most to the monitoring service, without needing to write out to logs and then worry about parsing them later---from claims processed per minute at an insurance company to the average number of steps reported on a fitness tracking application.
+An additional nice feature of Netuitive's agent is that it can [collect data from any StatsD- compatible application or service](/using-statsd-with-netuitive-for-advanced-monitoring) on the server. This can be easily leveraged by your in-house applications to directly report the metrics that matter the most to the monitoring service, without needing to write out to logs and then worry about parsing them later---from claims processed per minute at an insurance company to the average number of steps reported on a fitness tracking application.
 
 **4\. Network and Security Model**
 
 Depending on the type of business, the solution you are supporting will have a wide range of regulatory and security requirements it has to satisfy. Agent-based monitoring has a very large advantage in this area.
 
-For example, agents on a server push data to the central monitoring server. One benefit of this push is that data is delivered in order and on time. Secondly, during the push of data, the agent will only send the data that is required and compress and encrypt it, providing an extra layer of security while reducing your overall traffic and bandwidth requirements for each monitored node. On a platform like [AWS](https://www.metricly.com/getting-started-netuitive-aws) or DigitalOcean, that can lead to actual money saved at the end of the month.
+For example, agents on a server push data to the central monitoring server. One benefit of this push is that data is delivered in order and on time. Secondly, during the push of data, the agent will only send the data that is required and compress and encrypt it, providing an extra layer of security while reducing your overall traffic and bandwidth requirements for each monitored node. On a platform like [AWS](/getting-started-netuitive-aws) or DigitalOcean, that can lead to actual money saved at the end of the month.
 
 The other benefit of having the server agent push data from a network security profile is that there are less open ports required on the server, and on the inbound network entry point and/or firewall. This may not seem like a big deal, but when your customers' personal information and your corporate secrets are on the line, every entrance (however small and "secure") that you can eliminate makes your solution that much more impenetrable.
 

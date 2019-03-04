@@ -12,21 +12,21 @@ featured: true
 
 In this article, I'll be sharing AWS tagging best practices, more information about why tagging is a process your organization needs and how to implement a strategy which meets the requirements of the organization without placing an undue burden on development teams.
 
-If you're part of an organization with a growing cloud environment, you probably already understand the challenges associated with managing an increasing number of resources. Tagging resources is the solution to understanding what assets are in play, and how they relate to each other. With that knowledge, you can calculate and allocate costs and develop strategies to [optimize your cloud expenditures](https://www.metricly.com/category/cloud-cost-management).
+If you're part of an organization with a growing cloud environment, you probably already understand the challenges associated with managing an increasing number of resources. Tagging resources is the solution to understanding what assets are in play, and how they relate to each other. With that knowledge, you can calculate and allocate costs and develop strategies to [optimize your cloud expenditures](/category/cloud-cost-management).
 
 That all sounds easy enough, but if you've attempted such an undertaking, you already know there's a precarious balance you have to find between adding all the data you can with resource tags and squelching the inevitable revolt from the engineers who will need to implement it.
 
-Read Also: [The Ultimate Guide to EC2 Instances](https://www.metricly.com/ec2-instances/)
+Read Also: [The Ultimate Guide to EC2 Instances](/ec2-instances/)
 
 ### Why You Need an AWS Tagging Strategy
 
 Organizations move their IT infrastructure to the AWS Cloud for many reasons. The Cloud offers reduced costs for infrastructure support, increased potential to scale your infrastructure out as you grow, and enhanced connectivity to other cloud-based services.
 
-Provisioning new infrastructure and deploying an application into service using a DevOps model is more accessible than it has ever been. Services like Elastic Load Balancers, SQS, SNS, [EBS](https://www.metricly.com/iops-calculator-for-ebs-volumes), Lambda and many others afford us the ability to include reliable functionality and redundancy into our applications.
+Provisioning new infrastructure and deploying an application into service using a DevOps model is more accessible than it has ever been. Services like Elastic Load Balancers, SQS, SNS, [EBS](/iops-calculator-for-ebs-volumes), Lambda and many others afford us the ability to include reliable functionality and redundancy into our applications.
 
 With all this technology at our fingertips, it's easy to lose track of what we're using, who owns it, and most importantly, how much it might cost and whose budget will be used to pay the invoice when it arrives.
 
-Effective management of cloud resources requires a tagging strategy which can be implemented uniformly across your organization. Implementing this strategy enables your organization to filter resources by type, application, owner or cost center, and any combination thereof. You will also be able to build reporting, [implement targeted alerting](https://www.metricly.com/alert-noise-blog), and expose all resources related to an application in dashboards.
+Effective management of cloud resources requires a tagging strategy which can be implemented uniformly across your organization. Implementing this strategy enables your organization to filter resources by type, application, owner or cost center, and any combination thereof. You will also be able to build reporting, [implement targeted alerting](/alert-noise-blog), and expose all resources related to an application in dashboards.
 
 ### Benefits and Use Cases for AWS Tagging
 

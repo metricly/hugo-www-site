@@ -25,30 +25,30 @@ The S3 Cost Report is currently offered for Beta testing as part of the Metricly
 
 Once you've logged into your account, you can navigate to the report by clicking on your account name/email address in the top right corner of the application, and selecting ***Beta* **from the list of options.
 
-![S3 Costs: S3 Cost Report Tab](https://www.metricly.com/wp-content/uploads/2017/08/Pasted-image-at-2017_08_15-03_40-PM-1.png)
+![S3 Costs: S3 Cost Report Tab](/wp-content/uploads/2017/08/Pasted-image-at-2017_08_15-03_40-PM-1.png)
 
 Please note that at time of writing, this report was tagged as a Beta report. This means that the report may change as additional features are added and feedback from initial users of the report is used to improve the usability of the report.
 
 Before we look at the report data itself, let's look at some of the options available to focus on the specific data you're looking at for the specific time and instances you're interested in.
 
-![Manage S3 Costs: Report FIlters](https://www.metricly.com/wp-content/uploads/2017/08/S3-Filtering.png)
+![Manage S3 Costs: Report FIlters](/wp-content/uploads/2017/08/S3-Filtering.png)
 
-At the top left-hand corner of the screen, you'll have access to the filters for the report itself. The first field is a simple element name filter. The next filter option is *Type*, which may provide additional options. The *More* option allows you to add additional filters, which you can use to segregate your data based on how your organization organizes its [AWS resources](https://www.metricly.com/aws-monitoring-best-practices-using-pre-configured-dashboards).
+At the top left-hand corner of the screen, you'll have access to the filters for the report itself. The first field is a simple element name filter. The next filter option is *Type*, which may provide additional options. The *More* option allows you to add additional filters, which you can use to segregate your data based on how your organization organizes its [AWS resources](/aws-monitoring-best-practices-using-pre-configured-dashboards).
 
 -   Element
 -   Attribute
 -   Tag
 -   Collector
 
-![Manage S3 Costs: Date Filters](https://www.metricly.com/wp-content/uploads/2017/08/S3-Date-Selection.png)
+![Manage S3 Costs: Date Filters](/wp-content/uploads/2017/08/S3-Date-Selection.png)
 
 Moving to the top right-hand corner of the report, you'll see the date selector. This allows you to select from a couple of different date ranges. Whether you are looking for data points over a specific period, or just over the last day, you can make that selection here.
 
-Once you've selected the appropriate group of resources to analyze and the right date range, you can tune the report to display appropriate metrics based on your specific needs. You can learn more about those metrics by visiting this introduction to the [S3 Cost Report](https://www.metricly.com/s3-cost-report).
+Once you've selected the appropriate group of resources to analyze and the right date range, you can tune the report to display appropriate metrics based on your specific needs. You can learn more about those metrics by visiting this introduction to the [S3 Cost Report](/s3-cost-report).
 
 ### Understand Your S3 Costs and What's Driving Them
 
-As I mentioned before, when you start using S3, the On-Demand cost model becomes increasingly complex as data objects are added to S3 and subsequently accessed by applications, sites and users. By exposing your data through the S3 Cost Report, you can [visualize each source of AWS costs individually](https://www.metricly.com/demystify-your-ec2-cost-analysis) and relative to each other.
+As I mentioned before, when you start using S3, the On-Demand cost model becomes increasingly complex as data objects are added to S3 and subsequently accessed by applications, sites and users. By exposing your data through the S3 Cost Report, you can [visualize each source of AWS costs individually](/demystify-your-ec2-cost-analysis) and relative to each other.
 
 The report allows you to view the costs associated with:
 
@@ -66,7 +66,7 @@ For this example, we'll set the report view to show results grouped by day. This
 
 The output from this might look similar to the report shown below.
 
-![Manage S3 Costs: Cost Report](https://www.metricly.com/wp-content/uploads/2017/08/Example-Cost-Report-1024x412.png)
+![Manage S3 Costs: Cost Report](/wp-content/uploads/2017/08/Example-Cost-Report-1024x412.png)
 
 Based on the graph above, it becomes apparent that the costs associated with storing images are currently higher than the costs of uploading those objects. It also appears that some optimizations may already be in place, evidenced by the decreasing cost of Standard Storage.
 

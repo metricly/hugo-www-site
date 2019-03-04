@@ -8,7 +8,7 @@ careers-department: "UI/UX"
 ---
 #### About Metricly
 
-Metricly is a SaaS-based adaptive monitoring solution that helps organizations monitor cloud services, applications, infrastructure, and public cloud costs. Metricly's advanced machine learning algorithms learn the behavior and workload patterns of your environment to optimize your resource allocation, reduce your cloud spending, and identify performance anomalies that matter to your business. To learn more and start a free trial, visit: [www.metricly.com](https://www.metricly.com/).
+Metricly is a SaaS-based adaptive monitoring solution that helps organizations monitor cloud services, applications, infrastructure, and public cloud costs. Metricly's advanced machine learning algorithms learn the behavior and workload patterns of your environment to optimize your resource allocation, reduce your cloud spending, and identify performance anomalies that matter to your business. To learn more and start a free trial, visit: [www.metricly.com](/).
 
 #### Our Stack
 
