@@ -1,6 +1,6 @@
 ---
 
-date: "2017-07-05"
+date: "2016-07-05"
 title: "Why We Love DevOpsDays"
 description: "DevOps conferences (especially DevOpsDays) are some of the most fun, informative events in the IT industry, and we couldn’t be happier to play a part!"
 category: "DevOps"

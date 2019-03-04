@@ -1,6 +1,6 @@
 ---
 author: "Christina DiSomma"
-date: "2017-11-01"
+date: "2016-11-01"
 title: "The Benefits of Computed Metrics in Monitoring"
 description: "In this blog, we’ll review some of Metricly’s computed metrics and discuss how these unique metrics improve DevOps monitoring."
 category: "Cloud Monitoring"

@@ -1,6 +1,6 @@
 ---
 author: "Zachary Flower"
-date: "2017-12-20"
+date: "2016-12-20"
 title: "MySQL Database Monitoring with Metricly"
 description: "To get started with Metricly for MySQL database monitoring, you need to install the Metricly agent on the server where your database is running."
 category: "DevOps"

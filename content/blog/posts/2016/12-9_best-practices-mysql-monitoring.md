@@ -1,6 +1,6 @@
 ---
 author: "Vince Power"
-date: "2017-12-09"
+date: "2016-12-09"
 title: "Best Practices: MySQL Monitoring"
 description: "This article provides an overview of best practices for MySQL monitoring to get a picture of overall health, and to help plan for future growth."
 category: "DevOps"

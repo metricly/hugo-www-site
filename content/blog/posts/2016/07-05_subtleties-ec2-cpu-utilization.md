@@ -1,6 +1,6 @@
 ---
 
-date: "2017-07-05"
+date: "2016-07-05"
 title: "The Subtleties of EC2 CPU Utilization"
 description: "How do you explain discrepancies in total CPU utilization? Is the data wrong? In a word, no. Here’s what was happening in this customer’s environment."
 category: "Cloud Monitoring"

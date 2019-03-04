@@ -1,6 +1,6 @@
 ---
 
-date: "2017-05-10"
+date: "2016-05-10"
 title: "DevOps Dashboard: Four Best Practices You Need to Know For More Readable Dashboards"
 description: "What makes a great DevOps dashboard? We asked Metricly’s resident UI/UX designer for pointers, and he gave us four essential elements."
 category: "Product Updates"

@@ -1,6 +1,6 @@
 ---
 author: "Zachary Flower"
-date: "2017-11-15"
+date: "2016-11-15"
 title: "Monitoring NGINX with Metricly"
 description: "Metricly is a full-stack monitoring and analytics platform that integrates fully with NGINX. Here's how to begin monitoring NGINX with Metricly."
 category: "Cloud Monitoring"

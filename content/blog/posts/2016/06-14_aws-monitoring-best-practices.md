@@ -1,6 +1,6 @@
 ---
 
-date: "2017-06-14"
+date: "2016-06-14"
 title: "AWS Monitoring Best Practices Using Pre-Configured Dashboards"
 description: "AWS monitoring is time-consuming, and it only gets worse as you scale up your cloud environment. Luckily, we have these best practices to make life easier."
 category: "Cloud Monitoring"

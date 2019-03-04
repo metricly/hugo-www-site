@@ -1,6 +1,6 @@
 ---
 
-date: "2017-05-25"
+date: "2016-05-25"
 title: "Metricly On The Road: 2016 DevOps Events"
 description: "Metricly is hitting the road this summer for conferences all over the country. If you're at any of these events, make sure to stop by and say hi!"
 category: "DevOps"

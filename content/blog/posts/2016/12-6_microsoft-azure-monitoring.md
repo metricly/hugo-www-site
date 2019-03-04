@@ -1,6 +1,6 @@
 ---
 
-date: "2017-12-06"
+date: "2016-12-06"
 title: "Microsoft Azure Monitoring"
 description: "Get world-class monitoring & anomaly detection in Microsoft Azure by using Metricly's integration. Learn how to quickly get started today!"
 category: "DevOps"

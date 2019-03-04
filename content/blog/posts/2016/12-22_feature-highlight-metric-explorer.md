@@ -1,6 +1,6 @@
 ---
 author: "Christina DiSomma"
-date: "2017-12-22"
+date: "2016-12-22"
 title: "Feature Highlight: Metric Explorer"
 description: "With Metric Explorer, you can dive into metrics across your environment with a few simple clicks - no dashboard required!"
 category: "Product Updates"

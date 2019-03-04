@@ -1,6 +1,6 @@
 ---
 
-date: "2017-10-12"
+date: "2016-10-12"
 title: "September 2016 Release Highlights"
 description: "In September, we focused on making Metricly easier to use and more customizable. This allows users to spend less time on configuration and maintenance."
 category: "Product Updates"

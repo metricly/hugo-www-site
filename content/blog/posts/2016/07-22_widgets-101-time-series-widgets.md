@@ -1,6 +1,6 @@
 ---
 author: "Christina DiSomma"
-date: "2017-07-22"
+date: "2016-07-22"
 title: "Widgets 101: The Time-Series Widgets"
 description: "The first installment in our series on widgets explores the time-series widgets: the Metric Time-Series and Multi-Metric Time-Series Widgets."
 category: "DevOps"

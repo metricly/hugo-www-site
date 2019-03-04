@@ -1,6 +1,6 @@
 ---
 
-date: "2017-07-20"
+date: "2016-07-20"
 title: "June 2016 Release Highlights"
 description: "Metricly’s June 2016 releases include updated AWS EMR and AWS ECS monitoring and improved external event ingestion, including Sensu and Nagios support."
 category: "Product Updates"

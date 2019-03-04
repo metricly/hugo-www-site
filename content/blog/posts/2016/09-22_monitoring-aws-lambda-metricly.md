@@ -1,6 +1,6 @@
 ---
 
-date: "2017-09-22"
+date: "2016-09-22"
 title: "Monitoring AWS Lambda with Metricly"
 description: "Monitoring AWS Lambda is as simple as clicking the AWS integration card in the Metricly UI, and checking the Lambda checkbox to enable data collection."
 category: "Cloud Monitoring"

@@ -1,6 +1,6 @@
 ---
 author: "Christina DiSomma"
-date: "2017-09-12"
+date: "2016-09-12"
 title: "How to Reduce Alert Noise with Multi-Criteria Policies"
 description: "Metricly's engineers have all suffered from alert fatigue – which is why our multi-condition alerting is so important! Read on:"
 category: "Cloud Monitoring"

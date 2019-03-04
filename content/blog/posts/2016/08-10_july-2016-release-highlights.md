@@ -1,6 +1,6 @@
 ---
 
-date: "2017-08-10"
+date: "2016-08-10"
 title: "July 2016 Release Highlights"
 description: "Monitoring your environment got your office heating up more than usual? Turn to this month’s set of highlights to keep you cool, calm, and collectd"
 category: "Product Updates"

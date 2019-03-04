@@ -1,6 +1,6 @@
 ---
 author: "Christina DiSomma"
-date: "2017-11-17"
+date: "2016-11-17"
 title: "How to Monitor AWS Utilization with Metricly"
 description: "The key to keeping costs in check while maintaining performance is utilization: specifically, the ability to identify over- and under-provisioned instances."
 category: "Cloud Monitoring"

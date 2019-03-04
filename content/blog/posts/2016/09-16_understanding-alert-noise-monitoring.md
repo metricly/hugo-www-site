@@ -1,6 +1,6 @@
 ---
 author: "Christina DiSomma"
-date: "2017-09-16"
+date: "2016-09-16"
 title: "Understanding Alert Noise in Performance Monitoring"
 description: "Alert noise isn't just annoying - false alarms pull time and resources away from issues that need to be addressed. Here's how to minimize their impact."
 category: "Cloud Monitoring"

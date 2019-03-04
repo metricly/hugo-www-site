@@ -1,6 +1,6 @@
 ---
 author: "Jason Simpson"
-date: "2017-10-03"
+date: "2016-10-03"
 title: "Understanding Metricly Monitoring Metrics and Elements"
 description: "At Metricly, we collect and group monitoring metrics into elements. What is an element and why do we group metrics into these units? Here’s a quick primer."
 category: "DevOps"

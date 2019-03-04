@@ -1,6 +1,6 @@
 ---
 
-date: "2017-11-07"
+date: "2016-11-07"
 title: "October 2016 Release Highlights"
 description: "Metricly’s October 2016 release highlights include improvements to Docker collection, our Ruby agent, the User Scripts Collector, and Cassandra collection."
 category: "Cloud Monitoring"

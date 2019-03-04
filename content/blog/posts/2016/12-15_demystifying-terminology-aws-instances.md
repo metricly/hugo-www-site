@@ -1,6 +1,6 @@
 ---
 author: "Twain Taylor"
-date: "2017-12-15"
+date: "2016-12-15"
 title: "Dedicated, On-Demand, Reserved and Spot— Demystifying the Terminology of AWS Instances"
 description: "This post highlights the various options you have with AWS instances, so you can make an informed decision about which should be part of your AWS stack."
 category: "DevOps"

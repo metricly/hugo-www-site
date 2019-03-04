@@ -1,6 +1,6 @@
 ---
 
-date: "2017-12-19"
+date: "2016-12-19"
 title: "November 2016 Release Highlights"
 description: "Our November 2016 release highlights include Metric & Inventory Explorer improvements, EC2 Recommendation Report, & Amazon Kinesis Monitoring updates."
 category: "Product Updates"

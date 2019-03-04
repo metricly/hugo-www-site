@@ -1,6 +1,6 @@
 ---
 
-date: "2017-06-16"
+date: "2016-06-16"
 title: "May 2016 Release Highlights"
 description: "Metricly’s engineers have been hard at work rolling out key features we think you’ll love. May release highlights coming at you below."
 category: "Product Updates"

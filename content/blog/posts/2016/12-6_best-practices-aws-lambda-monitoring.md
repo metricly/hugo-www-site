@@ -1,6 +1,6 @@
 ---
 author: "Mike Mackrory"
-date: "2017-12-06"
+date: "2016-12-06"
 title: "Best Practices for AWS Lambda Monitoring"
 description: "AWS Lambda functions are part of a new serverless paradigm. Here's which life cycle aspects and best practices are best to use for Lambda monitoring."
 category: "DevOps"

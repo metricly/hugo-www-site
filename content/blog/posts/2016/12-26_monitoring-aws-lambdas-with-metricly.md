@@ -1,6 +1,6 @@
 ---
 author: "Mike Mackrory"
-date: "2017-12-26"
+date: "2016-12-26"
 title: "Monitoring AWS Lambdas with Metricly"
 description: "We’ll walk step-by- step through the process of configuring Metricly for monitoring AWS Lambdas, including dashboards and alerting policies."
 category: "Cloud Monitoring"

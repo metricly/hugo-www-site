@@ -1,6 +1,6 @@
 ---
 
-date: "2017-09-08"
+date: "2016-09-08"
 title: "August 2016 Release Highlights"
 description: "Metricly’s August 2016 release highlights include ASG Tuning Report, AWS Lambda support, Alerting Policy Improvements, and more!"
 category: "Product Updates"

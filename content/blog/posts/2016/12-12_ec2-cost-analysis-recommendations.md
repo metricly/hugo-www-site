@@ -1,6 +1,6 @@
 ---
 author: "Andrew Paine"
-date: "2017-12-12"
+date: "2016-12-12"
 title: "EC2 Cost Analysis and Savings Recommendations"
 description: "The new EC2 Recommendation report takes EC2 cost analysis one step further by offering detailed cost-savings recommendations tailored to your environment."
 category: "Cloud Cost Management"

@@ -1,6 +1,6 @@
 ---
 
-date: "2017-09-29"
+date: "2016-09-29"
 title: "Authoring Effective Cloud Monitoring Alert Rules"
 description: "Follow these best practices to create solid, effective monitoring alert rules that catch meaningful issues while avoiding alarm and notification noise."
 category: "Cloud Monitoring"

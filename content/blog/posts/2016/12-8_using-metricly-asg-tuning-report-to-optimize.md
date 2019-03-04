@@ -1,6 +1,6 @@
 ---
 author: "Mike Mackrory"
-date: "2017-12-08"
+date: "2016-12-08"
 title: "Using the Metricly ASG Tuning Report to Optimize for Cost and Performance"
 description: "In this post, we’ll walk through the practical application of recommendations offered in the Auto Scale Group Tuning Report to achieve optimal ASG usage."
 category: "Cloud Monitoring"

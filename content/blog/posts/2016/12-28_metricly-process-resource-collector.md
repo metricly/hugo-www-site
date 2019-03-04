@@ -1,6 +1,6 @@
 ---
 author: "Casey Rogers"
-date: "2017-12-28"
+date: "2016-12-28"
 title: "Getting Started with Metricly Process Resource Collector"
 description: "Metricly’s Process Resource Collector monitors resource statistics on individual processes (determining which processes are using the most resources)."
 category: "DevOps"

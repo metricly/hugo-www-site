@@ -1,6 +1,6 @@
 ---
 author: "Bob Farzami"
-date: "2017-11-07"
+date: "2016-11-07"
 title: "Evaluate Your Monitoring Strategy"
 description: "We’ve devised a framework that can help teams compare their implementations against the complete set of available monitoring tools for DevOps."
 category: "Cloud Monitoring"
