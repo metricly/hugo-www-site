@@ -132,14 +132,3 @@ function mobileMenuHeight() {
 
     document.documentElement.style.setProperty('--vh', `${vh}px`);
 }
-
-// submit email address in blog subscribe
-$("#email-subscribe").submit(function(e) {
-  e.preventDefault();
-
-  var $form = $(this);
-  $.post($form.attr("action"), $form.serialize()).then(function() {
-    $("#email").blur();
-    alert("Thanks for subscribing!");
-  });
-});
