@@ -20,10 +20,19 @@
       {{ end }}
       </div>
       <h2 class="title">{{ .Title }}</h2>
-      <div class="author d-flex justify-content-center mt-3">
+      <div class="author d-flex justify-content-center mt-3 align-items-center">
         {{- with .Params.author }}
         {{- with $.Site.GetPage "taxonomyTerm" (printf "author/%s" (urlize .)) }}
         <img class="author__photo img-fluid" src="{{ .Params.photo }}" alt="author">
+        <style media="screen">
+          .blog .author__photo {
+            width: 50px;
+            height: 50px;
+          }
+          .devops-join {
+            display: none;
+          }
+        </style>
         {{ end }}
         {{ end }}
         <div>
@@ -96,15 +105,18 @@
           </div>
           <div class="aside-stories">
             <div class="similar-stories">
-              <div class="title-h3">Similar Stories</div>
+              <div class="title-h3">Similar Articles</div>
+              {{ $pages := .Site.Pages.ByPublishDate.Reverse }}
+              {{ $currentcategory := .Params.category }}
+              {{ $top1 := where $pages ".Params.category" "=" $currentcategory | first 2 }}
+              {{ $featured := where $pages ".Params.featured" "=" true | complement $top1 | first 5 }}
               <ul class="stories-list">
-                {{ range first 2 (where (where $.Site.Pages.ByPublishDate.Reverse "Section" "blog") ".Params.featured" "=" true) }}
+                {{ range $top1 }}
                 <li>
-                  <a href="#">
-                    <img src="/assets/img6.jpg" alt="post image">
+                  <a href="{{ if .Params.url }}{{ .Params.url }}{{ else }}{{ .Permalink }}{{ end }}">
                     <div>
+                      <div class="title-category">{{ .Params.category }}</div>
                       <div class="stories-list__title">{{ .Title }}</div>
-                      <div class="title-category">Dev’ops</div>
                     </div>
                   </a>
                 </li>
@@ -114,8 +126,8 @@
             <div class="learn-more">
               <div class="title-category">Learn more</div>
               <div class="learn-more__title">About Metricly</div>
-              <p>The Elastic Block Storage (EBS) service provides storage space for your Elastic Cloud Compute account and viewing the EC2 Dashboard</p>
-              <a href="#" class="btn">Try Metricly Free</a>
+              <p>Metricly coaches users throughout their cloud journey to organize, plan, analyze, and optimize their public cloud resources.</p>
+              <a href="/signup?utm_source=post&utm_campaign={{ .Params.url }}" class="btn">Try Metricly Free</a>
             </div>
           </div>
         </div>
@@ -138,7 +150,7 @@
         </h2>
         <div class="multiple-slider__swiper swiper-multiple-three">
           <div class="swiper-wrapper">
-            {{ range first 5 (after 2 (where (where $.Site.Pages.ByPublishDate.Reverse "Section" "blog") ".Params.featured" "=" true)) }}
+            {{ range $featured }}
             <div class="swiper-slide">
               <a href="{{ if .Params.url }}{{ .Params.url }}{{ else }}{{ .Permalink }}{{ end }}"><img class="img-fluid" src="/img/blog/{{ if .Param "featured-image" }}{{ if .Param "thumbnail-image" }}small-version/{{ .Param "featured-image" }}{{ else }}small-version/default.svg{{ end }}{{ else }}small-version/default.svg{{ end }}" alt="post image"></a>
               {{- with .Params.category }}
