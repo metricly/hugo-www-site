@@ -21,9 +21,11 @@ Over the last 4–5 years in particular, DevOps has become more widespread, gene
 In addition to the increased interest in DevOps, Nathen sees DevOps having evolved over the last five years in three key ways:
 
 1\. **Increasing Rates of Change and Levels of Innovation:** New and better tools are being launched faster and faster than they ever have before—and as a result, people are rethinking the way they manage these tools. “It’s kind of a trend. If you go back to the very beginning of DevOps, DevOps started to take hold right at the same time cloud started to take hold,” Nathen says. This ability to access cloud to handle processes previously relegated to a physical data center has enabled technologies like containers and serverless to rev up the rate of innovation. “Automation frameworks [mean that] we have more compute at our fingertips, and so how do we control that? It’s no longer the case that any of us can keep in our head the state of our systems. Whereas, 10 years ago maybe that was easier to do,” Nathen explains.
+
 In addition, technologies are more ephemeral today, which is a good thing for improving on the way things work. “In the past, maybe I was excited that I kept a server up for 400 days. Today, if a container lives for four minutes, maybe that’s too long,” for the process it’s been programmed to do. “Because how long does it take to add 1+1? It doesn’t need four seconds, let alone four minutes.”
 
 2\. **New Technologies Leading to Faster Rates of Change:** Many of the tools that have revolutionized DevOps were not available five years ago. Of the ones, Nathen and I discussed, only Platform-as-a-Service offering [Cloud Foundry](https://pivotal.io/platform/pivotal-application-service), whose initial release was in 2011, was around, but the open source [Cloud Foundry Foundation](https://www.cloudfoundry.org/) wasn’t founded until early 2015, nearly four years later.
+
 For his part, Nathen says Cloud Foundry has gained a lot of momentum because it enables developers to create a PaaS instance and eases the deployment and management of applications.
 
 Here is the timeline of some other technologies have had a fundamental impact on DevOps implementations:
@@ -35,6 +37,7 @@ Here is the timeline of some other technologies have had a fundamental impact on
 “If you’re talking about containers and trying to understand how we get to containers, Kubernetes is the thing,” Nathen says. I’ve talked to some other DevOps thought leaders over the last few weeks, and when I’ve asked them what tools and technologies have had a large impact on DevOps growth, every one of them has listed Kubernetes.
 
 3\. **The Need for People to More Quickly Adapt to New Technologies and Innovations:**
+
 Given the pace of technology change, humans need to adapt to these evolving and new technologies much faster. So, as this transformation accelerates, people need to focus less on learning these changing technologies, many of which will mutate out from under us, and start thinking on a different level.
 
 “We’re really changing the way we think about applications and how we manage all that. What’s starting to gain more momentum is this idea that … we really need to focus on: ‘How do I learn to learn? How do I learn to adapt?’” Nathen explains. “Because we’re not going to stop the innovation.”

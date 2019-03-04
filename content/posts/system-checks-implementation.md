@@ -6,73 +6,77 @@ tags = ["Adaptive Monitoring", "Alarms & Notifications", "Cloud Monitoring", "Pe
 #url = "/system-checks-implementation/"
 +++
 
-Introduction to System Checks
-We recently released System Checks as a new way to use Metricly. System checks track a binary state by setting a Time To Live (TTL) for a specific check and resetting the TTL every time the check checks in. If the check does not reset the TTL by the time it expires then the check fails.
+#### Introduction to System Checks
+We [recently released System Checks](https://www.metricly.com/introducing-system-checks) as a new way to use Metricly. System checks track a binary state by setting a Time To Live (TTL) for a specific check and resetting the TTL every time the check checks in. If the check does not reset the TTL by the time it expires then the check fails.
 
-The initial out-of-the-box use case for System Checks is a heartbeat check in our Linux and Windows agents. These checks fire when the agent is down or not able to reach Metricly, letting you know so you can restart the agent and avoid missing policies relevant to that host. This is only one use for checks and we are in the process of releasing more. In this post we will:
+The initial out-of-the-box use case for System Checks is a heartbeat check in our [Linux](https://www.metricly.com/support/integrations/linux) and [Windows agents](https://www.metricly.com/support/integrations/windows). These checks fire when the agent is down or not able to reach Metricly, letting you know so you can restart the agent and avoid missing policies relevant to that host. This is only one use for checks and we are in the process of releasing more. In this post we will:
 
-– Cover how System Checks are different from metric data
-– Dive into the API, implementation details, and tools
-– Explore how checks can be the building blocks behind a new approach to monitoring your system
+- – Cover how System Checks are different from metric data
+- – Dive into the API, implementation details, and tools
+- – Explore how checks can be the building blocks behind a new approach to monitoring your system
+
+![sys-img](https://www.metricly.com/wp-content/uploads/2018/01/Metricly_checks-1.png)
+<!-- System checks fire an alert when a response is not received -->
+
+#### System Checks vs Metric Data
+Long time users of Metricly know that the bread and butter of [our platform](https://www.metricly.com/product) is time series data. Our agents collect time series data, [our integrations](https://www.metricly.com/support/integrations) help you push application time series data to us, and our cloud collectors pull time series data from AWS or Azure for you. Once received, the metrics need to be tracked, the samples stored, and analytics run… it’s a fairly heavy operation. By nature, then, the cycle time of time series data (the interval we ingest data and run analytics) will be on the order of minutes. System Checks are far lighter weight. They track a binary state, so any given check doesn’t need to be persisted- just state transitions. This opens us up to some new opportunities:
+
+|Time Series               | System Checks                   |
+|--------------------------|---------------------------------|
+|All data is persisted     | Only state changes are persisted|
+|Batch analytics           | No analytics (yet…)             |
+|API payloads are rich     | Slim payloads                   |
+|High cycle time           | Low cycle time                  |
 
 
-System checks fire an alert when a response is not received
-
-System Checks vs Metric Data
-Long time users of Metricly know that the bread and butter of our platform is time series data. Our agents collect time series data, our integrations help you push application time series data to us, and our cloud collectors pull time series data from AWS or Azure for you. Once received, the metrics need to be tracked, the samples stored, and analytics run… it’s a fairly heavy operation. By nature, then, the cycle time of time series data (the interval we ingest data and run analytics) will be on the order of minutes. System Checks are far lighter weight. They track a binary state, so any given check doesn’t need to be persisted- just state transitions. This opens us up to some new opportunities:
-
- Time Series	 System Checks
-All data is persisted	Only state changes are persisted
-Batch analytics	No analytics (yet…)
-API payloads are rich	Slim payloads
-High cycle time	Low cycle time
 To recap, system checks are a distinct data stream from time series data. We needed to build a separate ingest path, but first let’s look at how checks will integrate with the existing Metricly models of policies, events, and integrations.
 
-Designing System Checks
-Modeling
-Metricly does more than just consume data. You can define policies to receive alerts on data and view events of past policy violations, too. So how do system checks integrate into the familiar Metricly models of policies, events, and integrations?
+#### Designing System Checks
+### Modeling
+Metricly does more than just consume data. You can [define policies](https://www.metricly.com/support/events/policies) to receive alerts on data and view [events](https://www.metricly.com/support/events) of past policy violations, too. So how do system checks integrate into the familiar Metricly models of policies, events, and integrations?
 
 System check state changes are a policy condition (similar to time series data deviations or static threshold violations), so wiring in checks to our backend system for alerting required fairly few changes. In Metricly, you will see this integration as another condition type in the same policy editor that is used for time series data. Events from checks are also the same events as they’re both generated by policies. Lastly, we can reuse API keys from pre-generated Metricly integrations. These are globally unique, so they always map to a specific customer, giving us the information we need to consume and process a check.
 
-This means that the evaluation of system checks is well covered by our existing models. For time series data, policies are evaluated every cycle to look for policy violations. This stimulus is what triggers notifications and events. For System Checks, state changes serve this same purpose, so once we have a state change the traditional policy evaluation workflow works well.
+This means that the _evaluation_ of system checks is well covered by our existing models. For time series data, policies are evaluated every cycle to look for policy violations. This stimulus is what triggers notifications and events. For System Checks, state changes serve this same purpose, so once we have a state change the traditional policy evaluation workflow works well.
 
 Now all we have to do is create those state changes.
 
-Defining the API
+### Defining the API
 There’s four critical pieces of information we need in order to know if a check changes state:
 
-– The customer who owns the check (uniquely determined by their API key)
-– The check name (e.g. heartbeat)
-– The element being checked
-– The TTL for the check
+- – The customer who owns the check (uniquely determined by their API key)
+- – The check name (e.g. heartbeat)
+- – The element being checked
+- – The TTL for the check
 
-…and that’s really all we need to know about a check. These four pieces of data allow us to reset the TTL for a unique check and provide us with enough info to match any policies for a customer, if the check changes state. If you look at our API documentation you’ll find the custom check API is exactly these four fields as path parameters (not even a POST body.)
+…and that’s really all we need to know about a check. These four pieces of data allow us to reset the TTL for a unique check and provide us with enough info to match any policies for a customer, if the check changes state. If you look at our [API documentation](https://www.metricly.com/support/events/checks) you’ll find the custom check API is exactly these four fields as path parameters (not even a POST body.)
 
 Keeping the API clean and simple was a decision from the beginning. We could have encoded additional data in the POST body or the URL, but we purposefully kept the API as basic as possible. An unopinionated API leaves interpretation of the check to the user, keeping it flexible allowed us to bake in logic to our Linux and Windows agents when building heartbeat, port, or process checks. It also allows users to build their own checks for SSL certificates, database backup scripts, or daily email checks.
 
 With a simple API defined and the clear goal of only propagating state changes to the backend system, we’re now ready to implement the check ingestion pipeline.
 
-Implementation
+#### Implementation
 Metricly uses Kafka internally as a message bus to decouple asynchronous processing between services. Buffering analysis results processing and notification export in Kafka reduces back pressure and lets each service consume work as quickly as it can, but not have work forced on it. This is great for time series data processing and analysis, but checks are by nature synchronous. State changes can be processed asynchronously, but we have to process checks in real time to accurately maintain their state. This means that the core check tracker has to be synchronous, and thus as thin and scalable as possible.
 
-The core piece of tech we used for this role was Redis. We can subscribe to Redis Keyspace Notifications which are published when a key expires, which is exactly what we need. The workflow for accepting a check payload is as follows:
+The core piece of tech we used for this role was Redis. We can subscribe to [Redis Keyspace Notifications](https://redis.io/topics/notifications) which are published when a key expires, which is exactly what we need. The workflow for accepting a check payload is as follows:
 
-Validate the API key and translate it into a customer identifier
-Construct a key encoding the customer identifier, check name, and element identifier
-Set (or reset) the Redis key with the given TTL
-Repeat, or;
-No check resets the Redis key and the key expires
-All application nodes receive the expiration event
-All nodes attempt to get a lock from Redis
-One node gets the lock and sends the state change downstream through Kafka
-All other nodes ignore the message
+1. Validate the API key and translate it into a customer identifier
+2. Construct a key encoding the customer identifier, check name, and element identifier
+3. Set (or reset) the Redis key with the given TTL
+4. Repeat, or;
+5. No check resets the Redis key and the key expires
+6. All application nodes receive the expiration event
+7. All nodes attempt to get a lock from Redis
+8. One node gets the lock and sends the state change downstream through Kafka
+9. All other nodes ignore the message
+
 This approach has a few benefits. First, it works with a cluster of application nodes allowing use to scale horizontally to accept more synchronous API traffic. This is a basic requirement. Second, the synchronous API layer is quite thin. There’s not much logic involved as we put the TTLing of keys on Redis. This keeps operational and development complexity low. Last, state changes are sent downstream through Kafka for asynchronous processing, and this is the only interaction with backend services. This means that backend processing load is proportional to the number of state changes, not the number of overall check API calls. This is a huge plus for scalability. We can scale the thin, synchronous portion of the checks API separately from downstream processing.
 
 And that’s it. The core of checks processing is based on a few core Redis principles and the overall implementation is kept thin and simple. The implementation is almost anticlimactic after discussing the workflow and integrating checks into downstream processing. Though it may seem that way, the simple implementation means we have more confidence in both its function and its scalability, which are two critical criteria to the project’s success.
 
-Conclusions
-A significant amount of time went into designing and integrating checks. It was requested and discussed internally for quite some time before being implemented. We knew how important it was to get checks right and patch them into Metricly in some way would not have satisfied our customer’s or our internal needs. Through careful and thorough design we were able to create an implementation which is both elegant and maintainable, which is the best of both worlds for development and operations. Extensive load testing went into building checks to make sure it stays performant and is scalable as customers use and rely on checks more and more.
+#### Conclusions
+A significant amount of time went into designing and integrating checks. It was requested and discussed internally for quite some time before being implemented. We knew how important it was to get checks right and patch them into [Metricly](https://www.metricly.com/) in some way would not have satisfied our customer’s or our internal needs. Through careful and thorough design we were able to create an implementation which is both elegant and maintainable, which is the best of both worlds for development and operations. Extensive load testing went into building checks to make sure it stays performant and is scalable as customers use and rely on checks more and more.
 
 We’re excited to release new out-of-the-box checks for use with our agents and integrations. We also look forward to seeing how you use checks in new and different ways to better monitor your systems.
 
-Want to try System Checks for yourself? Start a 21-day free trial with Metricly today!
+Want to try System Checks for yourself? Start a [21-day free trial](https://www.metricly.com/signup) with Metricly today!
