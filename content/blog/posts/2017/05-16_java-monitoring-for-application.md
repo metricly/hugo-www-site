@@ -8,7 +8,7 @@ url: "/java-monitoring-for-application/"
 layout: "single"
 ---
 
-When [implementing a monitoring solution](https://www.metricly.com/product) for your Java environment, choosing the correct integration option is an essential part of that decision. The integration option you choose will determine several important characteristics, including:
+When [implementing a monitoring solution](/product) for your Java environment, choosing the correct integration option is an essential part of that decision. The integration option you choose will determine several important characteristics, including:
 
 -   What metrics you are concerned about collecting and analyzing
 -   How metrics will be gathered from your application
@@ -18,7 +18,7 @@ When [implementing a monitoring solution](https://www.metricly.com/product) for 
 Which Java Monitoring Integration is Best?
 ------------------------------------------
 
-Netuitive provides five different [integrations for monitoring your Java applications](https://www.metricly.com/integrations). Of course, the one that is the "best" choice for you will depend on your needs and your environment.
+Netuitive provides five different [integrations for monitoring your Java applications](/integrations). Of course, the one that is the "best" choice for you will depend on your needs and your environment.
 
 To help you determine the best fit for your needs, this article explores each of the integrations available for use with Netuitive. For each, we'll explore what level of effort is involved in setting up the integration, any dependencies the integration relies on, and how to configure the integration and get metrics flowing into your Netuitive account.
 
@@ -63,9 +63,9 @@ Choosing Between StatsD and the Netuitive Rest API
 
 StatsD was originally developed by the engineers at Etsy, and is a simple NodeJS daemon that listens for messages, extracts metrics, and can then be used to push the data to a datastore, or a monitoring service like Netuitive.
 
-The original StatsD offering has been used as a reference implementation for some other projects, including [Netuitive StatsD](https://www.metricly.com/using-statsd-with-netuitive-for-advanced-monitoring). If you already have a StatsD server, you can configure it to push metrics to Netuitive. If you don't yet have a StatsD server, one is installed as part of the Netuitive [Linux Agent](https://help.app.netuitive.com/Content/Integrations/linux.htm).
+The original StatsD offering has been used as a reference implementation for some other projects, including [Netuitive StatsD](/using-statsd-with-netuitive-for-advanced-monitoring). If you already have a StatsD server, you can configure it to push metrics to Netuitive. If you don't yet have a StatsD server, one is installed as part of the Netuitive [Linux Agent](https://help.app.netuitive.com/Content/Integrations/linux.htm).
 
-The [Netuitive RESTful API](https://www.metricly.com/inside-netuitive-api) allows developers to interact with Netuitive, both to push metrics into the Netuitive system and to retrieve information programmatically. Metrics are received in the form of events, which are in turn digested by the Netuitive system, and are made available for use in Java [monitoring dashboards](https://www.metricly.com/devops-dashboard-best-practices) and Netuitive's other analytical offerings.
+The [Netuitive RESTful API](/inside-netuitive-api) allows developers to interact with Netuitive, both to push metrics into the Netuitive system and to retrieve information programmatically. Metrics are received in the form of events, which are in turn digested by the Netuitive system, and are made available for use in Java [monitoring dashboards](/devops-dashboard-best-practices) and Netuitive's other analytical offerings.
 
 Let's look at each of the integrations in more detail.
 

@@ -2,7 +2,7 @@
 author: "Lawrence Lane"
 date: "2018-08-31"
 title: "HTTP Checks Now Supported on Windows Agent"
-category: ["Product Updates"]
+category: "Product Updates"
 url: "/http-checks-now-supported-on-windows-agent/"
 layout: "single"
 ---
@@ -40,11 +40,11 @@ Checks for the Windows Agent can be found and maintained in `C:/Program Files (
 
 ##### More Settings
 
-For a full list of available settings you can configure for each HTTP Check, see our [Checks help article](https://www.metricly.com/support/events/checks). These settings include things such as authorization headers (HTTPS), status matches, and time-to-live multipliers.
+For a full list of available settings you can configure for each HTTP Check, see our [Checks help article](/support/events/checks). These settings include things such as authorization headers (HTTPS), status matches, and time-to-live multipliers.
 
 #### HTTP Checks & Policies
 
-Once you have created an HTTP Check, you can also create a policy to alert on its response using the [Policy Editor](https://www.metricly.com/support/events/policies/policy-editor-2). For example, a policy can be set up to alert when your HTTP Check is not receiving a 200 status code.
+Once you have created an HTTP Check, you can also create a policy to alert on its response using the [Policy Editor](/support/events/policies/policy-editor-2). For example, a policy can be set up to alert when your HTTP Check is not receiving a 200 status code.
 
 #### Updating the Windows Agent
 

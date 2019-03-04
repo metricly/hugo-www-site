@@ -15,7 +15,7 @@ Netuitive's January 2017 release highlights include a Riemann integration, suppo
 Riemann Integration
 -------------------
 
-[![](https://www.metricly.com/wp-content/uploads/2017/07/rnh_riemann.png)](https://www.metricly.com/wp-content/uploads/2017/07/rnh_riemann.png)
+[![](/wp-content/uploads/2017/07/rnh_riemann.png)](/wp-content/uploads/2017/07/rnh_riemann.png)
 
 In an effort to help consolidate your environment, Netuitive now offers an integration with [Riemann](http://riemann.io/). Riemann aggregates events from your environment and can now be easily configured to forward the certain event streams to Netuitive's API. This allows you to see key events from your environment alongside performance, capacity, and cost data in a single tool.
 
@@ -26,18 +26,18 @@ Check out the [help documentation](https://help.netuitive.com/Content/Integratio
 Custom AWS Metrics Support
 --------------------------
 
-[![January 2017 Release Highlights: AWS Custom CloudWatch Integration](https://www.metricly.com/wp-content/uploads/2017/07/rnh_custom_cloudwatch.png)](https://www.metricly.com/wp-content/uploads/2017/07/rnh_custom_cloudwatch.png)
+[![January 2017 Release Highlights: AWS Custom CloudWatch Integration](/wp-content/uploads/2017/07/rnh_custom_cloudwatch.png)](/wp-content/uploads/2017/07/rnh_custom_cloudwatch.png)
 
-If you are already sending custom metrics into AWS CloudWatch, you can now easily [ingest them in Netuitive](https://www.metricly.com/introducing-aws-cloudwatch-custom-metrics-integration) for further analysis via our AWS integration. You can simply check a box on the AWS integration configuration page to include all of the custom metrics that you are collecting inside CloudWatch, alongside other metrics that we collect from various AWS services such as EC2, ELB, RDS, etc. Additional settings allow you to filter the custom metrics coming in using regex on the Namespace name.
+If you are already sending custom metrics into AWS CloudWatch, you can now easily [ingest them in Netuitive](/introducing-aws-cloudwatch-custom-metrics-integration) for further analysis via our AWS integration. You can simply check a box on the AWS integration configuration page to include all of the custom metrics that you are collecting inside CloudWatch, alongside other metrics that we collect from various AWS services such as EC2, ELB, RDS, etc. Additional settings allow you to filter the custom metrics coming in using regex on the Namespace name.
 
 You can then view the metrics in dashboard and reports and also apply our unique behavior learning and anomaly detection technology to your metrics. You can also decide to send your custom metrics directly to our API or via other integration integrations such as StatsD.
 
 EC2 Recommendations Report General Release
 ------------------------------------------
 
-[![January 2017 Release Highlights: EC2 Recommendation Report](https://www.metricly.com/wp-content/uploads/2017/07/rnh_ec2_reco-1024x585.png)](https://www.metricly.com/wp-content/uploads/2017/07/rnh_ec2_reco.png)
+[![January 2017 Release Highlights: EC2 Recommendation Report](/wp-content/uploads/2017/07/rnh_ec2_reco-1024x585.png)](/wp-content/uploads/2017/07/rnh_ec2_reco.png)
 
-After 2 months in beta, Netuitive's [EC2 Recommendations Report](https://help.netuitive.com/Content/Reports/ec2_recommendation_report.htm?Highlight=ec2%20recommendation) is now available to all users. [Recent improvements](https://www.metricly.com/optimize-aws-instance-types) include:
+After 2 months in beta, Netuitive's [EC2 Recommendations Report](https://help.netuitive.com/Content/Reports/ec2_recommendation_report.htm?Highlight=ec2%20recommendation) is now available to all users. [Recent improvements](/optimize-aws-instance-types) include:
 
 -   Better handling of matching reserved and spot instances to their recommended instance counterparts.
 -   Actual costs are now used for recommendation calculations, so the report reconciles with the EC2 Cost Report and the recommendations take your current and specific discounts into account.

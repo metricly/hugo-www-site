@@ -10,7 +10,7 @@ thumbnail-image: true
 ---
 The new Metricly platform for system checks is finally here! This much anticipated addition adds a host of functionality around monitoring system health. In true Metricly fashion, this feature offers a wide range of practical uses, custom configuration, and powerful alerting. In this brief introduction we will explain what system checks are, how to enable them, and how to alert on them. We'll also be following up with another post that takes a closer look at configuring & customizing these checks.
 
-Want to check out Metricly, but don't have an account? Get started with a [free 21-day trial](https://www.metricly.com/signup) today!
+Want to check out Metricly, but don't have an account? Get started with a [free 21-day trial](/signup) today!
 
 ### What are System Checks?
 
@@ -39,7 +39,7 @@ As long as you have a valid API ID, you can create any new check by simply namin
 3.  All checks configuration files for the Linux agent can be found in /opt/netuitive-agent/conf/collectors
 4.  Some of the checks are "enabled" by default, while you would need to "enable" other checks
 
-Note: Currently, Metricly comes with three pre-built checks; Heartbeat, Processes, and Ports.  These are turnkey checks that do not require any scripting or coding, just simple configuration setting in the respective configuration files. Read our [help documentation for systems checks](https://www.metricly.com/support/events/checks) for detailed configuration instructions.
+Note: Currently, Metricly comes with three pre-built checks; Heartbeat, Processes, and Ports.  These are turnkey checks that do not require any scripting or coding, just simple configuration setting in the respective configuration files. Read our [help documentation for systems checks](/support/events/checks) for detailed configuration instructions.
 
 **In Windows**
 
@@ -57,6 +57,6 @@ Setting up an alert in Metricly requires the creation of a policy and the system
 2.  Name the policy and apply any scoping or filtering required (for example, narrowing the scope to WinServ in US-West region with Tag Environment:Production)
 3.  Next click "Conditions", "Add Condition", and from the drop down you will see "Add System Check Condition"
 4.  Now you just have to select the particular check. As long as the check has been posted at least once to the API, it would automatically show up on this menu. Then save, and you are done.
-5.  To add notifications, click the tab, and select the notification type. For more detail, see [configuring notifications](https://www.metricly.com/support/events/notifications).
+5.  To add notifications, click the tab, and select the notification type. For more detail, see [configuring notifications](/support/events/notifications).
 
-We're very excited about this new addition to Metricly and look forward to seeing all the ways our clients will implement system checks as part of their [monitoring strategy](https://www.metricly.com/evaluate-monitoring-strategy). Tweet us your comments & feedback @Metricly or email support@metricly.com Be sure to stay tuned for future posts that will take a deep dive on the configuration & customization of system checks.
+We're very excited about this new addition to Metricly and look forward to seeing all the ways our clients will implement system checks as part of their [monitoring strategy](/evaluate-monitoring-strategy). Tweet us your comments & feedback @Metricly or email support@metricly.com Be sure to stay tuned for future posts that will take a deep dive on the configuration & customization of system checks.

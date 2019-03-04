@@ -16,35 +16,35 @@ An unfortunate side effect of this approach is that small expenses often go unno
 
 Related Articles:
 
--   [EC2 Instance Types -- What To Know](https://www.metricly.com/ec2-instance-types/)
--   [Guide to AWS Lambda Cost](https://www.metricly.com/aws-lambda-cost/)
--   [Using AWS Pricing API to Predict and Control Costs](https://www.metricly.com/aws-pricing-api/)  
+-   [EC2 Instance Types -- What To Know](/ec2-instance-types/)
+-   [Guide to AWS Lambda Cost](/aws-lambda-cost/)
+-   [Using AWS Pricing API to Predict and Control Costs](/aws-pricing-api/)  
 
 ### 1\. Delete Unattached EBS Volumes
 
-The Elastic Block Storage (EBS) service provides storage space for your [Elastic Cloud Compute (EC2) instances](https://www.metricly.com/ec2-instances/). A notable advantage of separating the storage resource from the compute instance is that you can detach the storage volume and attach it to a new instance if the need arises. Because terminating an EC2 instance will not automatically delete associated EBS volumes, it is common for accounts to contain unattached volumes. Finding and deleting the volumes reduces spending.
+The Elastic Block Storage (EBS) service provides storage space for your [Elastic Cloud Compute (EC2) instances](/ec2-instances/). A notable advantage of separating the storage resource from the compute instance is that you can detach the storage volume and attach it to a new instance if the need arises. Because terminating an EC2 instance will not automatically delete associated EBS volumes, it is common for accounts to contain unattached volumes. Finding and deleting the volumes reduces spending.
 
 You can view the number of EBS volumes you have in use for each region by logging into your AWS account and viewing the [EC2 Dashboard](https://console.aws.amazon.com/ec2). If you're concerned that you may need access to the contents of the volume at a later time, you can create an EBS snapshot and quickly restore it as required.
 
-![EC2 Dashboard](https://www.metricly.com/wp-content/uploads/2018/12/Screenshot-70.png)
+![EC2 Dashboard](/wp-content/uploads/2018/12/Screenshot-70.png)
 
 Viewing Active Volumes from the EC2 Dashboard.
 
-Larger organizations can benefit from setting up automated processes to search for and [delete unattached volumes](https://www.metricly.com/support/reports/unattached-resources/). These processes can confirm that the volumes have had no activity for a determined period before they're deleted.  
+Larger organizations can benefit from setting up automated processes to search for and [delete unattached volumes](/support/reports/unattached-resources/). These processes can confirm that the volumes have had no activity for a determined period before they're deleted.  
 
 ### 2\. Eliminate Unused Capacity
 
 Just because you can run your application or service on a large and powerful instance type, it doesn't mean you should. You might be spending additional money on unused capacity, and the instance type might not be the best match for the performance profile of your application.
 
-AWS offers instances across a variety of [EC2 instance types](https://www.metricly.com/ec2-instance-types/), from general-purpose computing to compute, memory and storage-optimized instances. Within each family, different types and generations offer different configurations to meet the needs of your application.
+AWS offers instances across a variety of [EC2 instance types](/ec2-instance-types/), from general-purpose computing to compute, memory and storage-optimized instances. Within each family, different types and generations offer different configurations to meet the needs of your application.
 
-By understanding the performance needs of your application, you can match it with a more specialized instance type that is a better fit, which means you'll get better performance and more reliability at a lower cost per hour. I wrote an article (which you can read [here](https://www.metricly.com/ec2-instance-types/)) that discusses what factors you should consider when selecting the right instance type for your application, and it includes links to tools and utilities to help you right-size your instances.  
+By understanding the performance needs of your application, you can match it with a more specialized instance type that is a better fit, which means you'll get better performance and more reliability at a lower cost per hour. I wrote an article (which you can read [here](/ec2-instance-types/)) that discusses what factors you should consider when selecting the right instance type for your application, and it includes links to tools and utilities to help you right-size your instances.  
 
 ### 3\. Reserve the Right Instances
 
 AWS offers their customers the ability to prepay for EC2 Reserved Instances (RI) and offers significant discounts relative to their On-Demand pricing. Some discounts may be as much as 75% off regular price. RI purchases come with commitments and require research and planning before you commit. You'll want to avoid getting into a commitment that costs you more over the long term.
 
-Andrew Paine has written an excellent article about [common mistakes to avoid](https://www.metricly.com/aws-reserved-instances-mistake/) when purchasing Reserved Instances. Depending on how many RIs you need, how flexible you need the reservations to be, and whether your instances need to be available around the clock or only in specific time windows, AWS offers different RI types with varying discounts and terms.
+Andrew Paine has written an excellent article about [common mistakes to avoid](/aws-reserved-instances-mistake/) when purchasing Reserved Instances. Depending on how many RIs you need, how flexible you need the reservations to be, and whether your instances need to be available around the clock or only in specific time windows, AWS offers different RI types with varying discounts and terms.
 
 New RI requests can now apply to different-sized instance types within the same type, which helps offset some of the risks if your needs change. Reservations can also be made against Relational Database Services (RDS), data transfer bandwidth, and provisioned read and write capacity on DynamoDB tables.  
 
@@ -64,7 +64,7 @@ We've already talked about identifying unused capacity within instances, but wha
 
 Development infrastructure such as CI/CD resources and test environments are excellent candidates for automated scaling solutions.
 
-![AWS scaler](https://www.metricly.com/wp-content/uploads/2018/12/instance-scheduler-architecture.727e008ced5a4b1b656b5c22afb4a2dfc32d7c33.png)
+![AWS scaler](/wp-content/uploads/2018/12/instance-scheduler-architecture.727e008ced5a4b1b656b5c22afb4a2dfc32d7c33.png)
 
 Components of the AWS Instance Scaler Solution.
 
@@ -84,7 +84,7 @@ CloudFormation is AWS's solution for Infrastructure as code and provides users w
 
 A final way you can control and reduce your AWS bill has to do with visibility. Understanding what changes are happening in your environment and connecting those changes to those who are financially responsible helps you identify changes early and reduces the chances of a big surprise in the bill at the end of the month.
 
-The hardest part is identifying all deployed resources and identifying who is responsible for them. I wrote an article a few months ago which described [AWS tagging best practices](https://www.metricly.com/aws-tagging-best-practices/). I've personally implemented these practices on all my AWS projects: tagging resources by the associated application, sponsoring department and owner from the smallest project to large-scale interdepartmental project, and they've been well worth the effort.
+The hardest part is identifying all deployed resources and identifying who is responsible for them. I wrote an article a few months ago which described [AWS tagging best practices](/aws-tagging-best-practices/). I've personally implemented these practices on all my AWS projects: tagging resources by the associated application, sponsoring department and owner from the smallest project to large-scale interdepartmental project, and they've been well worth the effort.
 
 Once your infrastructure is tagged appropriately, you can use [AWS Cost Explorer](https://aws.amazon.com/aws-cost-management/aws-cost-explorer/) to view costs and arrange them from highest to lowest for each tagging group. Additional tools allow you to identify changes to the infrastructure relative to the previous month, and alerting thresholds allow you to configure when to receive notifications about changes which affect cost by a certain percentage or dollar amount.  
 

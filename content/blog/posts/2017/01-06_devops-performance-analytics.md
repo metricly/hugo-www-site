@@ -9,9 +9,9 @@ layout: "single"
 ---
 When you hear people talking about DevOps, terms like "continuous integration," "continuous delivery" and "agile" tend to dominate the conversation. "Performance analytics" is less likely to feature prominently.
 
-Yet to do DevOps effectively, performance analytics are a crucial part of the picture. Sure, you could theoretically build a continuous delivery pipeline without [performance monitoring](https://www.metricly.com/product). But it would be very difficult to keep your delivery chain running as smoothly and rapidly as possible.
+Yet to do DevOps effectively, performance analytics are a crucial part of the picture. Sure, you could theoretically build a continuous delivery pipeline without [performance monitoring](/product). But it would be very difficult to keep your delivery chain running as smoothly and rapidly as possible.
 
-Below, I explain why performance analytics are a key part of an effective [DevOps workflow](https://www.metricly.com/adding-analytics-to-devops-model), and where to fit them into your continuous delivery chain.
+Below, I explain why performance analytics are a key part of an effective [DevOps workflow](/adding-analytics-to-devops-model), and where to fit them into your continuous delivery chain.
 
 DevOps Goals
 ------------
@@ -35,15 +35,15 @@ How can performance analytics help you to achieve those goals? In lots of ways. 
 
 Continuously delivered software updates are only useful if the updates actually improve the performance of the software. To determine whether the changes you are making are helping, you need continuous, real-time performance analytics so you can track the impact of each change as soon as it is rolled out.
 
-Measuring the effectiveness of code changes would be important in any type of software workflow. But it's especially essential in DevOps, since part of the value of DevOps and continuous integration is that they let you [identify and correct problems early](https://www.metricly.com/product/anomaly-detection), when they are still easier to fix. Continuous integration servers and tests can help you identify development bugs. But when it comes to problems that affect application performance, the only way to detect and correct them quickly is to run performance analytics early and often on your application.
+Measuring the effectiveness of code changes would be important in any type of software workflow. But it's especially essential in DevOps, since part of the value of DevOps and continuous integration is that they let you [identify and correct problems early](/product/anomaly-detection), when they are still easier to fix. Continuous integration servers and tests can help you identify development bugs. But when it comes to problems that affect application performance, the only way to detect and correct them quickly is to run performance analytics early and often on your application.
 
 **Performance Analytics Increase Visibility**
 
-If you want all members of your software delivery team to be able to communicate well, you need to provide them all with the same insights into the delivery pipeline and the state of an application. Performance analytics tools help you do this by collecting and summarizing performance monitoring data on [dashboards](https://www.metricly.com/product/dashboards-and-reports) where any developer or admin can easily view it.  [![Increased Visibility with Performance Analytics](https://www.metricly.com/wp-content/uploads/2017/07/Visibility.png)](https://www.metricly.com/wp-content/uploads/2017/07/Visibility.png)
+If you want all members of your software delivery team to be able to communicate well, you need to provide them all with the same insights into the delivery pipeline and the state of an application. Performance analytics tools help you do this by collecting and summarizing performance monitoring data on [dashboards](/product/dashboards-and-reports) where any developer or admin can easily view it.  [![Increased Visibility with Performance Analytics](/wp-content/uploads/2017/07/Visibility.png)](/wp-content/uploads/2017/07/Visibility.png)
 
 This visibility and accessibility is important in a DevOps environment, because without it, only engineers who take the time to collect performance data and analyze it for themselves will know how the application in question is performing. Unless they explicitly discuss their findings with other members of the team, this information will go unnoticed, minimizing visibility.
 
-With a centralized performance analytics [dashboard](https://www.metricly.com/devops-dashboard-best-practices) that anyone can access, however, your DevOps team gets maximum visibility into this important part of application status.
+With a centralized performance analytics [dashboard](/devops-dashboard-best-practices) that anyone can access, however, your DevOps team gets maximum visibility into this important part of application status.
 
 **Performance Analytics Help Developers and IT Ops Communicate Better**
 
@@ -55,17 +55,17 @@ So, without performance analytics, you get a DevOps workflow where developers an
 
 **Performance Analytics Pinpoint the Root of Problems**
 
-[![Performance Analytics and Root Analysis](https://www.metricly.com/wp-content/uploads/2017/07/RootofProblem.png)](https://www.metricly.com/wp-content/uploads/2017/07/RootofProblem.png)
+[![Performance Analytics and Root Analysis](/wp-content/uploads/2017/07/RootofProblem.png)](/wp-content/uploads/2017/07/RootofProblem.png)
 
 One of the pitfalls of continuous delivery is this: Changes roll down the pipeline so quickly that it can be difficult to trace a new problem to an individual change. If developers are integrating hundreds of new pieces of code per day, and updates are being pushed into production at the same rapid pace, how do you quickly determine which individual code integration caused a particular problem experienced in production?
 
-That answer, at least when it comes to performance problems, is to use performance analytics to gain insights into exactly when a performance problem began to occur. With this information, tracing the issue back to a particular [integration](https://www.metricly.com/integrations) becomes much easier. Plus, performance analytics can help you to understand whether something other than code changes (for example, a change in the deployment environment) was responsible for a problem. Not every issue is Development's fault.
+That answer, at least when it comes to performance problems, is to use performance analytics to gain insights into exactly when a performance problem began to occur. With this information, tracing the issue back to a particular [integration](/integrations) becomes much easier. Plus, performance analytics can help you to understand whether something other than code changes (for example, a change in the deployment environment) was responsible for a problem. Not every issue is Development's fault.
 
 **Performance Analytics Help You Cope with Heterogenous Environments**
 
-In an ideal world, all development and deployment environments would be identical. Technologies like [Docker](https://www.metricly.com/monitor-performance-docker-containers) containers are helping to bring us closer to such a world, but we are not there yet.
+In an ideal world, all development and deployment environments would be identical. Technologies like [Docker](/monitor-performance-docker-containers) containers are helping to bring us closer to such a world, but we are not there yet.
 
-If you develop an application that can run on a server, you can test it, stage it and deploy it using [containers](https://www.metricly.com/how-to-monitor-microservices), which is great, because you have a consistent environment across your entire pipeline.
+If you develop an application that can run on a server, you can test it, stage it and deploy it using [containers](/how-to-monitor-microservices), which is great, because you have a consistent environment across your entire pipeline.
 
 But the reality is that not all applications can run in containers, and not everyone is using Docker. For this reason, performance analytics tools that can monitor application performance in different types of environments are essential for ensuring that the software you deliver continuously will work well in all of the environments to which it is being delivered. With performance analytics, and some virtual machines that mimic a diverse set of deployment environments, it's easy to know that the software you are writing will work well not only on your own platform, but also on all of the ones users will be running.
 

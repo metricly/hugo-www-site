@@ -14,21 +14,21 @@ featured: true
 
 Cost deltas are noticeable rises in resource cost discovered when comparing two distinct time periods in your AWS billing history. This might seem like an obvious place to start when analyzing your bill, however many people do not know their average application workload costs---especially not on a per-instance level. Being familiar with that information is step one. With Metricly, you can take that step and a few more by setting up a daily cost email update in the AWS Services Cost report.
 
-Don't have a Metricly account? Sign up for a [free 21-day trial.](https://www.metricly.com/signup)
+Don't have a Metricly account? Sign up for a [free 21-day trial.](/signup)
 
 ### Leveraging Metricly's Cost Reports
 
-Metricly's [AWS Services Cost report](https://www.metricly.com/support/reports/aws-services-cost-report-user-guide/) is a powerful cost and usage report that leverages data from the [AWS Cost Explorer API](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ce-api.html) to create a better cost-management experience. In this article, we'll show you how to use this report's Period Comparison functionality to expose unwanted (and surprising) cost deltas.
+Metricly's [AWS Services Cost report](/support/reports/aws-services-cost-report-user-guide/) is a powerful cost and usage report that leverages data from the [AWS Cost Explorer API](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ce-api.html) to create a better cost-management experience. In this article, we'll show you how to use this report's Period Comparison functionality to expose unwanted (and surprising) cost deltas.
 
 It's simple: to find the root cause of cost deltas, you have to analyze AWS cost and usage. You can try out several unique combinations of grouping and filtering, but we suggest you start with the scenarios listed below.
 
-Note: this article assumes you are already familiar with the AWS Services Cost report. For a thorough breakdown of all its features, see the [documentation](https://www.metricly.com/support/reports/aws-services-cost-report-user-guide/).
+Note: this article assumes you are already familiar with the AWS Services Cost report. For a thorough breakdown of all its features, see the [documentation](/support/reports/aws-services-cost-report-user-guide/).
 
 ### AWS Cost Analysis by Service
 
 If just one service is showing a large delta and you want to learn more:
 
-![](https://www.metricly.com/wp-content/uploads/2019/01/word-image-3.png "post-image")
+![](/wp-content/uploads/2019/01/word-image-3.png "post-image")
 
 AWS Cost Period Comparison Grouped by Service
 
@@ -50,7 +50,7 @@ If you have discovered a significant cost delta but don't know what the money wa
 -   Single-Region Prefix: USW2-EBS:VolumeUsage.gp2
 -   Multi-Region Prefix: USE1-CAN1-AWS-Out-Bytes
 
-![AWS Services Cost Report: Period Comparison Grouped by Usage Type](https://www.metricly.com/wp-content/uploads/2019/01/word-image-4.png)
+![AWS Services Cost Report: Period Comparison Grouped by Usage Type](/wp-content/uploads/2019/01/word-image-4.png)
 
 AWS Services Cost Report: Period Comparison Grouped by Usage Type
 
@@ -67,7 +67,7 @@ Operations are another granular dimension of cost that indicate the specific API
 |  |  | ListMetrics |
 |  |  | PutMetricData |
 
-![AWS Cost Analysis: Period Comparison Grouped by Operation](https://www.metricly.com/wp-content/uploads/2019/01/word-image-5.png)
+![AWS Cost Analysis: Period Comparison Grouped by Operation](/wp-content/uploads/2019/01/word-image-5.png)
 
 AWS Cost Analysis: Period Comparison Grouped by Operation
 

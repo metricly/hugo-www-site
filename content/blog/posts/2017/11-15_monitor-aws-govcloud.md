@@ -8,9 +8,9 @@ url: "/monitor-aws-govcloud/"
 layout: "single"
 ---
 
-When you're supporting computer systems, insights into what is happening within the system are crucial in the quest to ensure that everything is running efficiently---with warnings if conditions begin to degrade. If you're supporting Linux-based systems, you use CollectD or a similar metrics agent to monitor the machine and to report key metrics about the performance of the instance, the state of the system, and your applications themselves. But if you're trying to monitor Windows, Collectd isn't an option. There is, however, another solution: the [Metricly Windows monitoring agent](https://www.metricly.com/support/integrations/windows).
+When you're supporting computer systems, insights into what is happening within the system are crucial in the quest to ensure that everything is running efficiently---with warnings if conditions begin to degrade. If you're supporting Linux-based systems, you use CollectD or a similar metrics agent to monitor the machine and to report key metrics about the performance of the instance, the state of the system, and your applications themselves. But if you're trying to monitor Windows, Collectd isn't an option. There is, however, another solution: the [Metricly Windows monitoring agent](/support/integrations/windows).
 
-In this article, I'll introduce you to the Metricly Windows monitoring agent, and show you how to use the agent to push metric data into the [Metricly platform](https://www.metricly.com/product). I'm also going to walk you through why using the Metricly platform will make your jobs as an engineer significantly easier through Metricly's [preconfigured dashboards and policies](https://www.metricly.com/aws-monitoring-best-practices) to monitor Windows.
+In this article, I'll introduce you to the Metricly Windows monitoring agent, and show you how to use the agent to push metric data into the [Metricly platform](/product). I'm also going to walk you through why using the Metricly platform will make your jobs as an engineer significantly easier through Metricly's [preconfigured dashboards and policies](/aws-monitoring-best-practices) to monitor Windows.
 
 Finally, we'll talk about how you can customize each of those to provide a level of comfort with your support duties allowing you and your team to sleep peacefully at night, and focus on developing better applications during the day.
 
@@ -46,14 +46,14 @@ The agent can be installed and executed on the following editions of Windows.
 
 Older versions of Windows and Windows Server may also be compatible, provided you install version 3.5 or 4.5 of the .NET Framework.
 
-The agent allows for the [collection of custom metrics](https://www.metricly.com/support/api/metrics) in addition to those which are gathered natively. However, if you need additional customization, you can download the source code, and build a custom version of the agent to meet your needs.
+The agent allows for the [collection of custom metrics](/support/api/metrics) in addition to those which are gathered natively. However, if you need additional customization, you can download the source code, and build a custom version of the agent to meet your needs.
 
 Metrics Gathered by the Agent
 -----------------------------
 
 The Metricly agent supports the most common Windows services natively, including Microsoft SQL Server, IIS and .NET.
 
-The [metrics collected](https://www.metricly.com/support/integrations/windows-metrics) include a selection from each of the following key areas:
+The [metrics collected](/support/integrations/windows-metrics) include a selection from each of the following key areas:
 
 -   Logical Disk
 -   Memory
@@ -76,7 +76,7 @@ Let's start by talking about why you should consider Metricly as a tool to colle
 
 Metricly is not only a comprehensive monitoring and analytics platform---They have also invested heavily in providing tools to leverage your data and provide you with dashboards, anomaly detection and policies designed to alert you to problems before they become critical.
 
-All of those tools are available for you to use the instant you set up an account on their system and configure an agent to import your metrics. If you don't already have an account, you can sign up for a [21-day free trial here](https://www.metricly.com/signup).
+All of those tools are available for you to use the instant you set up an account on their system and configure an agent to import your metrics. If you don't already have an account, you can sign up for a [21-day free trial here](/signup).
 
 With minimal effort, you'll be able to access recommendations to optimize cost, performance, and reliability, and make decisions based on easy-to-understand and actionable data. To illustrate what I mean, let's spin up a new AWS EC2 Windows Instance, install the agent, and see what we get by default.
 
@@ -85,13 +85,13 @@ Installation and Configuration
 
 Before following the steps I've described below, I created a new t2.micro instance, using the Microsoft Windows Server 2016 Base AMI. Once the instance was initialized, I connected using RDP from my local workstation.
 
-![Starting with a Clean Slate: Microsoft Windows Server 2016](https://www.metricly.com/wp-content/uploads/2017/11/1-Microsoft-Windows-Server-Metricly.png)
+![Starting with a Clean Slate: Microsoft Windows Server 2016](/wp-content/uploads/2017/11/1-Microsoft-Windows-Server-Metricly.png)
 
 Starting with a Clean Slate: Microsoft Windows Server 2016
 
 With an active connection to a clean Windows instance, return to your local workstation and log into your Metricly account. Navigated to the **Integrations** page and select **Windows** from the list of available integrations.
 
-![](https://www.metricly.com/wp-content/uploads/2017/11/2-Metricly-Windows-Inetgration.png)
+![](/wp-content/uploads/2017/11/2-Metricly-Windows-Inetgration.png)
 
 Windows Integration
 
@@ -101,7 +101,7 @@ The first option, **Packages**, initiates the creation of preconfigured dashboar
 
 The second option, **API Key**, will become enabled once you have the integration successfully installed and running on your target machine.
 
-![Monitor windows with metricly](https://www.metricly.com/wp-content/uploads/2017/11/3-Metricly-Windows-Agent-Installation.png)
+![Monitor windows with metricly](/wp-content/uploads/2017/11/3-Metricly-Windows-Agent-Installation.png)
 
 Personalized Agent Installation Instructions
 
@@ -111,17 +111,17 @@ Copying the URL, return to your RDP session and open Internet Explorer. Paste th
 
 Once you have downloaded the file, open up a **Windows PowerShell** terminal, change to the Downloads folder, and run the command provided in step 3.
 
-![Executing the Install Command for windows the monitoring agent in PowerShell](https://www.metricly.com/wp-content/uploads/2017/11/4-Executing-the-Install-Command-in-PowerShell.png)
+![Executing the Install Command for windows the monitoring agent in PowerShell](/wp-content/uploads/2017/11/4-Executing-the-Install-Command-in-PowerShell.png)
 
 Executing the Install Command in PowerShell
 
-If you don't have a proxy enabled in your environment, you can skip step 4, but if your environment includes a web proxy, you can follow the instructions [here](https://www.metricly.com/support/integrations/windows#proxy-configuration) to configure the proxy.
+If you don't have a proxy enabled in your environment, you can skip step 4, but if your environment includes a web proxy, you can follow the instructions [here](/support/integrations/windows#proxy-configuration) to configure the proxy.
 
 Once the agent is installed and the optional step of configuring the proxy is completed, you just need to start the service.
 
 Open the **Windows Task Manager** and click on the **Services** tab. You'll be looking for a service called *CollectdWinService* or a variant depending on the version of the agent installed. Right-click the service and select **Start**. If you need to make additional changes to the configuration of the agent, you'll want to come back to the task manager and restart the service using the same steps.
 
-![Starting the windows monitoring agent in Task Manager](https://www.metricly.com/wp-content/uploads/2017/11/Starting-the-Agent-in-Task-Manager.png)
+![Starting the windows monitoring agent in Task Manager](/wp-content/uploads/2017/11/Starting-the-Agent-in-Task-Manager.png)
 
 Starting the Agent in Task Manager
 
@@ -130,25 +130,25 @@ Exploring the Preconfigured Dashboards and Policies
 
 It will take a few minutes before metrics will begin to flow from the instance to Metricly for analysis. Navigate to the **Metrics** page, and from the **Quick Filter** option for Windows, select **All Windows Metrics**.
 
-![Windows Quick Metrics Filter](https://www.metricly.com/wp-content/uploads/2017/11/Windows-Quick-Metrics-Filter.png)
+![Windows Quick Metrics Filter](/wp-content/uploads/2017/11/Windows-Quick-Metrics-Filter.png)
 
 Windows Quick Metrics Filter
 
 And just like that, you'll see statistics for memory and CPU usage already being collected and analyzed.
 
-![Monitor Windows WIth Basic Metrics for CPU and Memory Usage](https://www.metricly.com/wp-content/uploads/2017/11/Basic-Metrics-for-CPU-and-Memory-Usage.png)
+![Monitor Windows WIth Basic Metrics for CPU and Memory Usage](/wp-content/uploads/2017/11/Basic-Metrics-for-CPU-and-Memory-Usage.png)
 
 Basic Metrics for CPU and Memory Usage
 
 Let's navigate over to the Inventory page, and have a look at what other metrics are available. A list of all available sources will appear on the left of the screen. I had some other AWS resources visible on mine, but was able to identify my particular instance by its AWS name. Clicking on it, you'll be able to see a summary of the available metrics, and a link to ***View all Metrics for this Element****.*
 
-![Inventory Summary for a Windows Element](https://www.metricly.com/wp-content/uploads/2017/11/Inventory-Summary-for-a-Windows-Element-e1511792005524.png)
+![Inventory Summary for a Windows Element](/wp-content/uploads/2017/11/Inventory-Summary-for-a-Windows-Element-e1511792005524.png)
 
 Inventory Summary for a Windows Element
 
 For a different view of these metrics, let's navigate to the **Dashboards** page. You'll observe that you have a new dashboard available called ***Windows Summary***, created by research@metricly.com. Let's check it out and see what it displays.
 
-![Preconfigured Dashboard for Windows Servers](https://www.metricly.com/wp-content/uploads/2017/11/Preconfigured-Dashboard-for-Windows-Servers.png)
+![Preconfigured Dashboard for Windows Servers](/wp-content/uploads/2017/11/Preconfigured-Dashboard-for-Windows-Servers.png)
 
 Preconfigured Dashboard for Windows Servers
 
@@ -164,7 +164,7 @@ The default dashboard includes:
 
 Let's leave this dashboard and navigate to the **Policies** page to see what other preconfigured tools we have by default. If you scroll down, you should see a list of related policies to monitor Windows.
 
-![Policies Configured Automatically for Windows Instances](https://www.metricly.com/wp-content/uploads/2017/11/Policies-Configured-Automatically-for-Windows-Instances.png)
+![Policies Configured Automatically for Windows Instances](/wp-content/uploads/2017/11/Policies-Configured-Automatically-for-Windows-Instances.png)
 
 Policies Configured Automatically to monitor Windows Instances
 
@@ -176,9 +176,9 @@ This particular policy illustrates the power of Metricly very nicely. We all kno
 
 If you click on the Conditions tab, you can see how these conditions are configured for this particular policy.
 
-Clicking on the Notifications tab, you may **Add a Notification**. [Monitoring Notifications](https://www.metricly.com/support/events/notifications) can be sent via email, Slack, HipChat, SNS, and WebHook, among others. A notification can take the form of an actual notification to a real person, or you can use the Webhook option to invoke a call to an external service to automatically correct a specific situation.
+Clicking on the Notifications tab, you may **Add a Notification**. [Monitoring Notifications](/support/events/notifications) can be sent via email, Slack, HipChat, SNS, and WebHook, among others. A notification can take the form of an actual notification to a real person, or you can use the Webhook option to invoke a call to an external service to automatically correct a specific situation.
 
 Organizing AWS Data
 -------------------
 
-Finally, if you host instances in the AWS Cloud, an additional benefit of Metricly is that the agent includes tag information in the metrics collected. By including these tags, you can filter your metrics by tags and by attributes such as region, availability zone, and state. If you would like to know more about tagging AWS instances, the [Best Practices](https://www.metricly.com/best-practices-tagging-aws-instances) guide is an excellent place to start.
+Finally, if you host instances in the AWS Cloud, an additional benefit of Metricly is that the agent includes tag information in the metrics collected. By including these tags, you can filter your metrics by tags and by attributes such as region, availability zone, and state. If you would like to know more about tagging AWS instances, the [Best Practices](/best-practices-tagging-aws-instances) guide is an excellent place to start.

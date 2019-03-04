@@ -9,7 +9,7 @@ layout: "single"
 ---
 
 
-This post is Part 2 of a two part series on how to monitor AWS Kinesis Streams. In Part 1 of this series, [Best Practices for Kinesis Streams Monitoring](https://www.metricly.com/analyzing-aws-kinesis-streams-metrics), we discussed [Amazon Kinesis Streams](https://aws.amazon.com/kinesis/streams/), and how it is a managed service hosting by AWS. Kinesis provides a pipeline for continuous streaming of various types of data between data producers and data consumers. Also discussed were the various metrics provided by Kinesis and [Netuitive](https://www.metricly.com/product), and what they mean when monitoring Amazon Kinesis.
+This post is Part 2 of a two part series on how to monitor AWS Kinesis Streams. In Part 1 of this series, [Best Practices for Kinesis Streams Monitoring](/analyzing-aws-kinesis-streams-metrics), we discussed [Amazon Kinesis Streams](https://aws.amazon.com/kinesis/streams/), and how it is a managed service hosting by AWS. Kinesis provides a pipeline for continuous streaming of various types of data between data producers and data consumers. Also discussed were the various metrics provided by Kinesis and [Netuitive](/product), and what they mean when monitoring Amazon Kinesis.
 
 In this post, we're going to cover using Netuitive to monitor AWS Kinesis Streams; including how to configure Netuitive AWS integration; a few tips around that configuration; and what Kinesis metrics might look like on your Netuitive dashboard while running Kinesis Streams in your application stack.
 
@@ -22,18 +22,18 @@ First, you'll need an Amazon Web Services account. If you don't already have one
 
 Second, you should also consider taking a few minutes to familiarize yourself with Amazon Kinesis Streams, how it works, and what it can do for you. Amazon helpfully provides [Youtube videos](https://www.youtube.com/watch?v=7bhXafN9uNg) of various conferences where they discuss Kinesis Streams, and the [Amazon Kinesis Developer Guide](http://docs.aws.amazon.com/streams/latest/dev/introduction.html) covers the subject in great detail.
 
-Third, to try out Netuitive, you can sign up for a [21-day free trial](https://www.metricly.com/signup). To learn a little more about Netuitive and what it does, watch the [What is Netuitive](https://www.metricly.com/netuitive-overview) overview video. The [Netuitive Blog](https://www.metricly.com/blog) also provides helpful posts about monitoring with Netuitive.
+Third, to try out Netuitive, you can sign up for a [21-day free trial](/signup). To learn a little more about Netuitive and what it does, watch the [What is Netuitive](/netuitive-overview) overview video. The [Netuitive Blog](/blog) also provides helpful posts about monitoring with Netuitive.
 
 Netuitive AWS Integration
 -------------------------
 
-Now that you've created your Netuitive account, you'll need to create a [Netuitive integration](https://www.metricly.com/integrations) with your AWS account. One advantage of using Netuitive as your monitoring solution is that you can integrate it with other services you are using and see all of your metrics in a single place.
+Now that you've created your Netuitive account, you'll need to create a [Netuitive integration](/integrations) with your AWS account. One advantage of using Netuitive as your monitoring solution is that you can integrate it with other services you are using and see all of your metrics in a single place.
 
 The Netuitive help documentation provides [detailed instructions](https://help.app.netuitive.com/Content/Integrations/aws.htm) for creating an AWS integration. The recommended method for creating this integration is covered under "Installation Via IAM Role".
 
 Be sure you select **Kinesis Stream** as an option when you create your integration, as illustrated below.
 
-[![Monitor AWS Kinesis: Setup](https://www.metricly.com/wp-content/uploads/2017/07/Screen-Shot-2017-02-24-at-9.48.31-AM.png)](https://www.metricly.com/wp-content/uploads/2017/07/Screen-Shot-2017-02-24-at-9.48.31-AM.png)
+[![Monitor AWS Kinesis: Setup](/wp-content/uploads/2017/07/Screen-Shot-2017-02-24-at-9.48.31-AM.png)](/wp-content/uploads/2017/07/Screen-Shot-2017-02-24-at-9.48.31-AM.png)
 
 Kinesis Streams Setup
 ---------------------
@@ -44,7 +44,7 @@ Amazon helpfully provides detailed instructions for doing so in their [Tutorial:
 
 Once you've setup your Kinesis Stream using the tutorial referenced above, your data will be visualized via a URL pointing to the EC2 instance that was created when you initialized the Cloudformation template. Instructions for viewing the visualization are in the tutorial. It should look something like the illustration below.
 
-[![Monitor AWS Kinesis: Application Front End](https://www.metricly.com/wp-content/uploads/2017/07/Screen-Shot-2017-02-24-at-9.54.27-AM-1024x653.png)](https://www.metricly.com/wp-content/uploads/2017/07/Screen-Shot-2017-02-24-at-9.54.27-AM.png)
+[![Monitor AWS Kinesis: Application Front End](/wp-content/uploads/2017/07/Screen-Shot-2017-02-24-at-9.54.27-AM-1024x653.png)](/wp-content/uploads/2017/07/Screen-Shot-2017-02-24-at-9.54.27-AM.png)
 
 Now that you've seen what the data looks like on the front end of the application, it's time to take a look at what's happening behind the scenes using Netuitive.
 
@@ -55,7 +55,7 @@ Netuitive includes a number of packages that are automatically provisioned when 
 
 A default set of metrics is available in the Netuitive app when clicking **Metrics**, then **Kinesis**.
 
-[![Monitor AWS Kinesis: QuickStart Monitoring Package](https://www.metricly.com/wp-content/uploads/2017/07/Screen-Shot-2017-02-24-at-10.02.18-AM-1024x494.png)](https://www.metricly.com/wp-content/uploads/2017/07/Screen-Shot-2017-02-24-at-10.02.18-AM.png)
+[![Monitor AWS Kinesis: QuickStart Monitoring Package](/wp-content/uploads/2017/07/Screen-Shot-2017-02-24-at-10.02.18-AM-1024x494.png)](/wp-content/uploads/2017/07/Screen-Shot-2017-02-24-at-10.02.18-AM.png)
 
 You'll want to pay attention to a few things when monitoring your streams.
 
@@ -73,7 +73,7 @@ The Netuitive [Quick Start Package for Kinesis](https://github.com/netuitive-com
 
 -   Dashboards display the monitoring information in an easy to use format.
 
-These are covered in greater details in the Netuitive post [AWS Monitoring Best Practices Using Pre-Configured Dashboards](https://www.metricly.com/aws-monitoring-best-practices-using-pre-configured-dashboards).
+These are covered in greater details in the Netuitive post [AWS Monitoring Best Practices Using Pre-Configured Dashboards](/aws-monitoring-best-practices-using-pre-configured-dashboards).
 
 Tips
 ----
@@ -93,4 +93,4 @@ Conclusion
 
 In this post, we've covered configuring Netuitive to monitor AWS Kinesis Streams, setting up a demo Kinesis Streams application, viewing that information using Netuitive, and some key metrics to watch when monitoring Kinesis.
 
-If you'd like to give Netuitive a try, start with the [21-day free trial](https://www.metricly.com/signup).
+If you'd like to give Netuitive a try, start with the [21-day free trial](/signup).

@@ -7,7 +7,7 @@ category: "DevOps"
 url: "/alert-noise-blog/"
 layout: "single"
 ---
-Alert noise goes hand-in-hand with running software, so it's no surprise Metricly Engineering has run into the same [alert fatigue](https://www.metricly.com/understanding-alert-noise-monitoring) as many of our customers. We've built extra safeguards on top of many of the default Metricly policies for underlying infrastructure, but we also heavily instrumented our applications with [StatsD metrics](https://www.metricly.com/using-statsd-with-netuitive-for-advanced-monitoring) to monitor application performance. While these application metrics are helpful for debugging, as we've started wrapping our core application metrics in alerting policies, we've found that they can be, well, *a bit noisy*.
+Alert noise goes hand-in-hand with running software, so it's no surprise Metricly Engineering has run into the same [alert fatigue](/understanding-alert-noise-monitoring) as many of our customers. We've built extra safeguards on top of many of the default Metricly policies for underlying infrastructure, but we also heavily instrumented our applications with [StatsD metrics](/using-statsd-with-netuitive-for-advanced-monitoring) to monitor application performance. While these application metrics are helpful for debugging, as we've started wrapping our core application metrics in alerting policies, we've found that they can be, well, *a bit noisy*.
 
 Overall we identified a few issues with our current notifications:
 
@@ -15,14 +15,14 @@ Overall we identified a few issues with our current notifications:
 -   They aren't being escalated properly; and, most importantly,
 -   Many aren't *actionable*
 
-To top it all off, our recent Docker migration (for more on that, check out [Character Encodings: An Unfortunate Experience](https://www.metricly.com/character-encodings)) has drastically changed the profile of our underlying infrastructure. This means policies that previously worked well for static EC2s are now noisy and unhelpful. The overall EC2 utilization no longer reflects the utilization profile of the application running on top of it, as the instances are now a homogeneous pool of resources running containers.
+To top it all off, our recent Docker migration (for more on that, check out [Character Encodings: An Unfortunate Experience](/character-encodings)) has drastically changed the profile of our underlying infrastructure. This means policies that previously worked well for static EC2s are now noisy and unhelpful. The overall EC2 utilization no longer reflects the utilization profile of the application running on top of it, as the instances are now a homogeneous pool of resources running containers.
 
 The overwhelming alerts from the Docker migration put us over the edge. We had to find a way to cut the noise.
 
 Reducing Notification Overload
 ------------------------------
 
-![Alert Noise: Events](https://www.metricly.com/wp-content/uploads/2017/07/Events-1-1024x207.png)
+![Alert Noise: Events](/wp-content/uploads/2017/07/Events-1-1024x207.png)
 
 Our first step was to reevaluate our infrastructure-level policies. "Linux -- Heavy CPU Load" and "Docker Container -- Extensive CPU Throttling" were two of our worst policy offenders. During our Docker migration, we *wanted* our instances to be better utilized, so heavier instance load was not only expected, but also a sign that we were now running the platform more efficiently. Same goes for Docker container throttling -- we've added CPU limits to each Docker service to make sure each service is a good neighbor, so CPU throttling (within reason and not all the time) means we've set a good CPU thresholds.
 
@@ -53,7 +53,7 @@ Event Context and Alert Noise
 
 Event notifications contain useful data like current metric value and which policy conditions were violated, but often this isn't quite enough. Has the metric been close to deviating for a while? Has there been recent metric volatility? Did the metric baseline band tighten recently? All of these questions required following a link into the Metricly UI which is sometimes difficult on mobile or at 3AM when you're still half asleep. To remedy this we introduced a hotly requested feature: notification images.
 
-![Alert Noise: Images in Notifications](https://www.metricly.com/wp-content/uploads/2017/07/Images-in-Notifications-1.png)
+![Alert Noise: Images in Notifications](/wp-content/uploads/2017/07/Images-in-Notifications-1.png)
 
 These notification images provide at-a-glance context around the event. Formatted images (now available in all notification types) were just what we needed to quickly understand and respond to events regardless of time, notification medium, or who is on call.
 
