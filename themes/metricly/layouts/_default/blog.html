@@ -1,0 +1,186 @@
+{{ define "main" }}
+<div class="blog">
+
+  <!-- Insert Blog Header -->
+  {{ partial "header/blog-header.html" . }}
+  <!-- Blog page ranges -->
+  {{ $pages := .Site.Pages.ByPublishDate.Reverse }}
+  {{ $top1 := where $pages ".Params.category" "!=" "Product Updates" | first 1 }}
+  {{ $top2 := where $pages ".Params.category" "!=" "Product Updates" | complement $top1 | first 1 }}
+  {{ $popular := where $pages ".Params.featured" "=" true | complement $top1 $top2 | first 3 }}
+  {{ $recent := where $pages ".Params.category" "!=" "Product Updates" | complement $top1 $top2 $popular | first 5 }}
+  {{ $updates := where $pages ".Params.category" "=" "Product Updates" | first 6 }}
+
+  <main class="main-wrapper">
+    <section class="post">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 col-sm-7  post__item">
+            {{ range $top1 }}
+            <a href="{{ if .Params.url }}{{ .Params.url }}{{ else }}{{ .Permalink }}{{ end }}"><img class="image img-fluid" src="/img/blog/{{ if .Param "featured-image" }}{{ if .Param "thumbnail-image" }}small-version/{{ .Param "featured-image" }}{{ else }}small-version/default.svg{{ end }}{{ else }}small-version/default.svg{{ end }}" alt="blog image"></a>
+            {{- with .Params.category }}
+            {{- with $.Site.GetPage "taxonomyTerm" (printf "category/%s" (urlize .)) }}
+            <a href="{{ .Permalink }}" class="title-category">{{ .Params.name }}</a>
+            {{ end }}
+            {{ end }}
+            <a href="{{ if .Params.url }}{{ .Params.url }}{{ else }}{{ .Permalink }}{{ end }}" class="title-h2">{{ .Title }}</a>
+            <div class="author">
+              {{- with .Params.author }}
+              {{- with $.Site.GetPage "taxonomyTerm" (printf "author/%s" (urlize .)) }}
+              <img class="author__photo img-fluid" src="{{ .Params.photo }}" alt="author">
+              {{ end }}
+              {{ end }}
+              <div>
+                <div class="author__name">{{ .Params.author }}</div>
+                <div class="author__time">{{ .ReadingTime }} min read</div>
+              </div>
+            </div>
+
+            {{ end }}
+          </div>
+          <div class="col-lg-5 col-sm-5 d-flex flex-column  post__item --reverse">
+            {{ range $top2 }}
+            {{- with .Params.category }}
+            {{- with $.Site.GetPage "taxonomyTerm" (printf "category/%s" (urlize .)) }}
+            <a href="{{ .Permalink }}" class="title-category">{{ .Params.name }}</a>
+            {{ end }}
+            {{ end }}
+            <a href="{{ if .Params.url }}{{ .Params.url }}{{ else }}{{ .Permalink }}{{ end }}" class="title-h2">{{ .Title }}</a>
+
+            <div class="author">
+              {{- with .Params.author }}
+              {{- with $.Site.GetPage "taxonomyTerm" (printf "author/%s" (urlize .)) }}
+              <img class="author__photo img-fluid" src="{{ .Params.photo }}" alt="author">
+              {{ end }}
+              {{ end }}
+              <div>
+                <div class="author__name">{{ .Params.author }}</div>
+                <div class="author__time">{{ .ReadingTime }} min read</div>
+              </div>
+            </div>
+            <a href="{{ if .Params.url }}{{ .Params.url }}{{ else }}{{ .Permalink }}{{ end }}"><img class="image img-fluid" src="/img/blog/{{ if .Param "featured-image" }}{{ if .Param "thumbnail-image" }}small-version/{{ .Param "featured-image" }}{{ else }}small-version/default.svg{{ end }}{{ else }}small-version/default.svg{{ end }}" alt="blog image"></a>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="single-slider --bg-blue">
+      <div class="container">
+        <h3 class="title-h2 --popular text-white text-center pb-4">featured posts</h3>
+        <div class="single-slider__swiper swiper-single-one">
+          <div class="swiper-wrapper">
+            {{ range $popular }}
+            <div class="swiper-slide">
+              <div class="row">
+                <div class="col-lg-6 col-md-6 col-sm-6">
+                  <a href="{{ if .Params.url }}{{ .Params.url }}{{ else }}{{ .Permalink }}{{ end }}"><img class="image img-fluid" src="/img/blog/{{ if .Param "featured-image" }}{{ if .Param "thumbnail-image" }}small-version/{{ .Param "featured-image" }}{{ else }}small-version/default.svg{{ end }}{{ else }}small-version/default.svg{{ end }}" alt="image of blog"></a>
+                </div>
+                <div class="slider-content col-lg-5 col-md-5 col-sm-5 offset-lg-1 offset-md-1 offset-sm-1 d-flex flex-column justify-content-center">
+                  {{- with .Params.category }}
+                  {{- with $.Site.GetPage "taxonomyTerm" (printf "category/%s" (urlize .)) }}
+                  <a href="{{ if .Params.url }}{{ .Params.url }}{{ else }}{{ .Permalink }}{{ end }}" class="title-category --light">{{ .Params.name }}</a>
+                  {{ end }}
+                  {{ end }}
+                  <a href="{{ if .Params.url }}{{ .Params.url }}{{ else }}{{ .Permalink }}{{ end }}" class="title-h1 --light">{{ .Title }}</a>
+                  <div class="author --light">
+                    {{- with .Params.author }}
+                    {{- with $.Site.GetPage "taxonomyTerm" (printf "author/%s" (urlize .)) }}
+                    <img class="author__photo img-fluid" src="{{ .Params.photo }}" alt="author">
+                    {{ end }}
+                    {{ end }}
+                    <div>
+                      {{- with .Params.author }}
+                      {{- with $.Site.GetPage "taxonomyTerm" (printf "author/%s" (urlize .)) }}
+                      <div class="author__name">
+                        {{ .Params.name }}
+                      </div>
+                      {{ end }}
+                      {{ end }}
+                      <div class="author__time">{{ .ReadingTime }} min read</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            {{ end }}
+          </div>
+          <div class="swiper-button-next swiper-btn-s-one-next">
+            <svg height="10" viewBox="0 0 19 10" width="19" xmlns="http://www.w3.org/2000/svg">
+              <path d="m13.3735714.42624339c-.1838571-.18793651-.4898571-.18793651-.6801428 0-.1838572.1815873-.1838572.48380952 0 .66497354l3.4487143 3.40613757h-15.66600004c-.26528572.00042328-.47614286.20867725-.47614286.47068783s.21085714.47703704.47614286.47703704h15.66600004l-3.4487143 3.39978835c-.1838572.18793651-.1838572.49058202 0 .67174604.1902857.1879365.4967143.1879365.6801428 0l4.2651429-4.21248678c.1902857-.1815873.1902857-.48380952 0-.66497354z"
+                fill-rule="evenodd" stroke-width=".4" transform="matrix(-1 0 0 1 18 0)" /></svg>
+          </div>
+          <div class="swiper-button-prev swiper-btn-s-one-prev">
+            <svg height="10" viewBox="0 0 19 10" width="19" xmlns="http://www.w3.org/2000/svg">
+              <path d="m13.3735714.42624339c-.1838571-.18793651-.4898571-.18793651-.6801428 0-.1838572.1815873-.1838572.48380952 0 .66497354l3.4487143 3.40613757h-15.66600004c-.26528572.00042328-.47614286.20867725-.47614286.47068783s.21085714.47703704.47614286.47703704h15.66600004l-3.4487143 3.39978835c-.1838572.18793651-.1838572.49058202 0 .67174604.1902857.1879365.4967143.1879365.6801428 0l4.2651429-4.21248678c.1902857-.1815873.1902857-.48380952 0-.66497354z"
+                fill-rule="evenodd" stroke-width=".4" transform="matrix(-1 0 0 1 18 0)" /></svg>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="multiple-slider">
+      <div class="container">
+        <h2 class="title-h2 --popular">
+          recently published
+          <div class="swiper-button-next swiper-btn-m-one-next">
+            <svg height="10" viewBox="0 0 19 10" width="19" xmlns="http://www.w3.org/2000/svg">
+              <path d="m13.3735714.42624339c-.1838571-.18793651-.4898571-.18793651-.6801428 0-.1838572.1815873-.1838572.48380952 0 .66497354l3.4487143 3.40613757h-15.66600004c-.26528572.00042328-.47614286.20867725-.47614286.47068783s.21085714.47703704.47614286.47703704h15.66600004l-3.4487143 3.39978835c-.1838572.18793651-.1838572.49058202 0 .67174604.1902857.1879365.4967143.1879365.6801428 0l4.2651429-4.21248678c.1902857-.1815873.1902857-.48380952 0-.66497354z"
+                fill-rule="evenodd" stroke-width=".4" transform="matrix(-1 0 0 1 18 0)" /></svg>
+          </div>
+          <div class="swiper-button-prev swiper-btn-m-one-prev">
+            <svg height="10" viewBox="0 0 19 10" width="19" xmlns="http://www.w3.org/2000/svg">
+              <path d="m13.3735714.42624339c-.1838571-.18793651-.4898571-.18793651-.6801428 0-.1838572.1815873-.1838572.48380952 0 .66497354l3.4487143 3.40613757h-15.66600004c-.26528572.00042328-.47614286.20867725-.47614286.47068783s.21085714.47703704.47614286.47703704h15.66600004l-3.4487143 3.39978835c-.1838572.18793651-.1838572.49058202 0 .67174604.1902857.1879365.4967143.1879365.6801428 0l4.2651429-4.21248678c.1902857-.1815873.1902857-.48380952 0-.66497354z"
+                fill-rule="evenodd" stroke-width=".4" transform="matrix(-1 0 0 1 18 0)" /></svg>
+          </div>
+        </h2>
+        <div class="multiple-slider__swiper swiper-multiple-one">
+          <div class="swiper-wrapper">
+            <!-- @Yuriigr Add filter conditions here
+            - Range through blogs here, with same filters as above, starting with the third most recent
+            -->
+            {{ range $recent }}
+            <div class="swiper-slide">
+              <a href="{{ if .Params.url }}{{ .Params.url }}{{ else }}{{ .Permalink }}{{ end }}"><img class="img-fluid" src="/img/blog/{{ if .Param "featured-image" }}{{ if .Param "thumbnail-image" }}small-version/{{ .Param "featured-image" }}{{ else }}small-version/default.svg{{ end }}{{ else }}small-version/default.svg{{ end }}" alt="post image"></a>
+              {{- with .Params.category }}
+              {{- with $.Site.GetPage "taxonomyTerm" (printf "category/%s" (urlize .)) }}
+              <a href="{{ .Permalink }}" class="title-category">{{ .Params.name }}</a>
+              {{ end }}
+              {{ end }}
+              <a href="{{ if .Params.url }}{{ .Params.url }}{{ else }}{{ .Permalink }}{{ end }}" class="title-h3">{{ .Title }}</a>
+              <div class="name">{{ if .Params.author }}{{ .Params.author }}&nbsp;|&nbsp;{{ else }}{{ end }}{{ .ReadingTime }} min read</div>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="multiple-slider">
+      <div class="container">
+        <h2 class="title-h2 --popular pb-4">
+          product updates from metricly
+          <div class="swiper-button-next swiper-btn-m-two-next">
+            <svg height="10" viewBox="0 0 19 10" width="19" xmlns="http://www.w3.org/2000/svg">
+              <path d="m13.3735714.42624339c-.1838571-.18793651-.4898571-.18793651-.6801428 0-.1838572.1815873-.1838572.48380952 0 .66497354l3.4487143 3.40613757h-15.66600004c-.26528572.00042328-.47614286.20867725-.47614286.47068783s.21085714.47703704.47614286.47703704h15.66600004l-3.4487143 3.39978835c-.1838572.18793651-.1838572.49058202 0 .67174604.1902857.1879365.4967143.1879365.6801428 0l4.2651429-4.21248678c.1902857-.1815873.1902857-.48380952 0-.66497354z"
+                fill-rule="evenodd" stroke-width=".4" transform="matrix(-1 0 0 1 18 0)" /></svg>
+          </div>
+          <div class="swiper-button-prev swiper-btn-m-two-prev">
+            <svg height="10" viewBox="0 0 19 10" width="19" xmlns="http://www.w3.org/2000/svg">
+              <path d="m13.3735714.42624339c-.1838571-.18793651-.4898571-.18793651-.6801428 0-.1838572.1815873-.1838572.48380952 0 .66497354l3.4487143 3.40613757h-15.66600004c-.26528572.00042328-.47614286.20867725-.47614286.47068783s.21085714.47703704.47614286.47703704h15.66600004l-3.4487143 3.39978835c-.1838572.18793651-.1838572.49058202 0 .67174604.1902857.1879365.4967143.1879365.6801428 0l4.2651429-4.21248678c.1902857-.1815873.1902857-.48380952 0-.66497354z"
+                fill-rule="evenodd" stroke-width=".4" transform="matrix(-1 0 0 1 18 0)" /></svg>
+          </div>
+        </h2>
+        <div class="multiple-slider__swiper swiper-multiple-two">
+          <div class="swiper-wrapper">
+            {{ range $updates }}
+            <div class="swiper-slide">
+              <a href="{{ if .Params.url }}{{ .Params.url }}{{ else }}{{ .Permalink }}{{ end }}" class="title-h3">{{ .Title }}</a>
+              <div class="name">{{ if .Params.author }}{{ .Params.author }}&nbsp;|&nbsp;{{ else }}{{ end }}{{ .ReadingTime }} min read</div>
+            </div>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</div>
+{{ end }}

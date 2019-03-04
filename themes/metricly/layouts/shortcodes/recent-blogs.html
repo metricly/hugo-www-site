@@ -1,0 +1,16 @@
+{{ $pages := .Site.Pages.ByPublishDate.Reverse }}
+{{ $recent := where $pages ".Params.category" "!=" "Product Updates" | first 3 }}
+{{ range $recent }}
+<li class="col-lg-4 col-md-6">
+    <a href="{{ if .Params.url }}{{ .Params.url }}{{ else }}{{ .Permalink }}{{ end }}"><img class="img-fluid" src="/img/blog/small-version/{{ .Param "featured-image" }}" alt="post image"></a>
+    <div class="wrapper">
+      {{- with .Params.category }}
+      {{- with $.Site.GetPage "taxonomyTerm" (printf "category/%s" (urlize .)) }}
+        <a href="{{ .Permalink }}" class="title-category">{{ .Params.name }}</a>
+      {{ end }}
+      {{ end }}
+        <a href="{{ if .Params.url }}{{ .Params.url }}{{ else }}{{ .Permalink }}{{ end }}" class="title-h4">{{ .Title }}</a>
+        <div class="name">{{ .Params.author }}&nbsp;|&nbsp;{{ .ReadingTime }} min read</div>
+    </div>
+</li>
+{{ end }}
