@@ -1,0 +1,23 @@
+//blog
+$black: #333333;
+$green: #33CFB8;
+
+///main
+$blue-color: #00AAE4;
+$blue-color-dark: #2D516C;
+$green-color:  #00A98E;
+
+$blue-gradient: linear-gradient(47.85deg, #27587D 0%, #0F3D68 100%);
+$green-gradient: linear-gradient(41.79deg, #026C77 0, #33CFB8 100%);
+
+$sm: 575px;
+$md: 767px;
+$lg: 992px;
+$xl : 1200px;
+:root{
+    --breakpoint-xs: 0;
+    --breakpoint-sm: 575px;
+    --breakpoint-md: 768px;
+    --breakpoint-lg: 992px;
+    --breakpoint-xl: 1200px;
+}
