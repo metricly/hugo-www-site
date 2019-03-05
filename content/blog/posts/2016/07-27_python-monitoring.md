@@ -13,7 +13,7 @@ Application [monitoring](https://www.metricly.com/product) can be a tricky, time
 What is Python?
 ---------------
 
-[![Python](https://www.metricly.com/wp-content/uploads/2016/07/imageedit_1_7254343722.png)](https://www.metricly.com/wp-content/uploads/2016/07/imageedit_1_7254343722.png)
+[![Python](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/07/imageedit_1_7254343722.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/07/imageedit_1_7254343722.png)
 
 Python is a programming language that has almost infinite capabilities. It's easy to learn and use and scales effortlessly, making it the go-to language for many programmers. Python is the base for software used by companies of all sizes, from big banks and giant pharmaceutical companies to small startups.
 
@@ -29,7 +29,7 @@ Upon each influx of data, Netuitive will then provide visualizations for those m
 Which metrics are most important for monitoring Python Applications?
 --------------------------------------------------------------------
 
-[![Dashboard1](https://www.metricly.com/wp-content/uploads/2016/07/Dashboard1-1024x509.png)](https://www.metricly.com/wp-content/uploads/2016/07/Dashboard1.png)
+[![Dashboard1](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/07/Dashboard1-1024x509.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/07/Dashboard1.png)
 
 It depends heavily on your application, its functionality, and to a certain extent the infrastructure and middleware upon which it resides. Part of what makes StatsD so valuable is its configurability -- it's easily customized to fit the specific needs of your application. Because changes to your monitoring setup can occur with just a few simple code alterations, you can adjust your metrics to fit the changing needs of your application and users.
 
@@ -52,7 +52,7 @@ From a memory perspective, you not only want to ensure you have enough memory to
 Why use anomaly detection for performance monitoring for Python applications?
 -----------------------------------------------------------------------------
 
-[![timeserieswidget](https://www.metricly.com/wp-content/uploads/2016/07/timeserieswidget-1024x252.png)](https://www.metricly.com/wp-content/uploads/2016/07/timeserieswidget.png)
+[![timeserieswidget](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/07/timeserieswidget-1024x252.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/07/timeserieswidget.png)
 
 [Anomaly detection](https://www.metricly.com/category/anomaly-detection) improves upon [static thresholds](https://help.netuitive.com/Content/Performance/Analytics/statis_thresholds.htm), a basic tenet of traditional or manual monitoring often used in conjunction with basic free open source monitoring tools. Static thresholds are a line in the sand for your metrics. With this type of monitoring, you will receive an alert whenever that line is crossed, whether that is predictable behavior or a genuinely unusual event.
 
@@ -60,7 +60,7 @@ Netuitive's anomaly detection, by contrast, uses calculated "bands of normalcy" 
 
 Configuring your Python application to push data to the Netuitive agent through our StatsD server takes only a few minutes, and a few simple steps:
 
-[![application](https://www.metricly.com/wp-content/uploads/2016/07/application-1024x377.png)](https://www.metricly.com/wp-content/uploads/2016/07/application.png)
+[![application](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/07/application-1024x377.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/07/application.png)
 
 1.  Create a new datasource in Netuitive and generate an API key
 2.  Install the Netuitive agent via your command line

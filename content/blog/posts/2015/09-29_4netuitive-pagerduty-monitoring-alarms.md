@@ -21,7 +21,7 @@ Real Life Example
 
 While Netuitive is monitoring a website, it experienced some performance issues including a 9.2 second page load time at 469% above normal. Because this data spiked well above expected behavior, an event is triggered and Netuitive simultaneously opens an incident in PagerDuty.
 
-[![Real Example (PagerDuty)](https://www.metricly.com/wp-content/uploads/2016/03/real-example.jpg)](https://www.metricly.com/wp-content/uploads/2016/03/real-example.jpg)
+[![Real Example (PagerDuty)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/real-example.jpg)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/real-example.jpg)
 
 Setup
 
@@ -36,19 +36,19 @@ Here's a more detailed walk through:
 
 1\. In PagerDuty users can create an API service which generates the key required in Netuitive. This key will be used in the body of the JSON message. So you just simply need to copy this 32 bit string.
 
-[![ServicesKey (PagerDuty)](https://www.metricly.com/wp-content/uploads/2016/03/ServicesKey.jpg)](https://www.metricly.com/wp-content/uploads/2016/03/ServicesKey.jpg)
+[![ServicesKey (PagerDuty)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/ServicesKey.jpg)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/ServicesKey.jpg)
 
 2\. In Netuitive, now create the notification. The details for the custom JSON payload are in the product documentation.
 
-[![Step 2 (Pager Duty)](https://www.metricly.com/wp-content/uploads/2016/03/Step-2.jpg)](https://www.metricly.com/wp-content/uploads/2016/03/Step-2.jpg)
+[![Step 2 (Pager Duty)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/Step-2.jpg)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/Step-2.jpg)
 
 3\. Now add the notification to any policy in Netuitive.
 
-[![Step 3 (PagerDuty)](https://www.metricly.com/wp-content/uploads/2016/03/Step-3.jpg)](https://www.metricly.com/wp-content/uploads/2016/03/Step-3.jpg)
+[![Step 3 (PagerDuty)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/Step-3.jpg)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/Step-3.jpg)
 
 4\. When the policy is triggered, an incident is opened in PagerDuty and your team is alerted appropriately.
 
-[![Step 4 (PagerDuty)](https://www.metricly.com/wp-content/uploads/2016/03/Step-4.jpg)](https://www.metricly.com/wp-content/uploads/2016/03/Step-4.jpg)
+[![Step 4 (PagerDuty)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/Step-4.jpg)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/Step-4.jpg)
 
 While surprisingly quick to set up, the process offers much needed flexibility without creating longer implementation times. The entire process takes about 15 minutes to set up in a production environment.
 

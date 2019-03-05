@@ -267,7 +267,7 @@ The sad fact is that our earlier test glazed over some subtle details which we o
 
 Once again, hindsight is 20/20. I made a branch removing the metric array and kicked off another two overnight tests: one with the modified-agent in the test repo, and another with the regular Docker agent in the test repo, to compare their performance. The test results were pretty clear.
 
-![Linux Memory Leak: Results](/wp-content/uploads/2017/08/Results-1024x217.png)
+![Linux Memory Leak: Results](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/08/Results-1024x217.png)
 
 I created a PR to the client library, built a release candidate agent, tested one more time overnight with the new agent (agent-rc/ in the test repo), and confirmed the same results. A patched Linux agent and Docker agent went out the next day. Memory leak solved.
 

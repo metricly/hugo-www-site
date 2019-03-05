@@ -10,7 +10,7 @@ layout: "single"
 
 Amazon Kinesis Streams is [managed service hosting by AWS](https://aws.amazon.com/kinesis/streams/) that provides a pipeline for continuous streaming of various types of data between data producers and data consumers. Data producers emit message data that flows through Kinesis Streams and is then consumed by the data consumers.
 
-![Kinesis Streams](/wp-content/uploads/2017/02/kinesis.png)
+![Kinesis Streams](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/02/kinesis.png)
 
 The messages that flow through Kinesis can include logs, streaming metrics, notifications, or almost any other type of data. From there, Kinesis can expose that data for data consumers, which could ingest, store, or process that data for analysis with various data analytics tools.
 

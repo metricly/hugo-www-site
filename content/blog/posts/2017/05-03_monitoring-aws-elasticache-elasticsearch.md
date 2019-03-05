@@ -67,17 +67,17 @@ So, with the acceptance of the fact that we may incur high usage charges from AW
 
 Select a name for your domain. For this example, I created an AWS ElastiCache instance using Redis, and so I called my domain *redis-logs*. The version dropdown defaulted to the latest version, which I decided to keep.
 
-![AWS Elasticache: Setting the Name and Elasticsearch Version for Your ES Domain](/wp-content/uploads/2017/07/Set-Name-and-Version.png)
+![AWS Elasticache: Setting the Name and Elasticsearch Version for Your ES Domain](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Set-Name-and-Version.png)
 
 The next step is to configure the cluster. Here we'll set the number and type of instances to be used, and determine the type of storage which will be attached to the nodes. If you're just experimenting, you can't go wrong with a single *t2.small.elasticsearch* instance and 10GB of EBS. If your intention is monitoring of production metrics, you'll want to investigate what the needs of your particular situation require and configure your cluster accordingly.
 
-![AWS Elasticache Configuration 1](/wp-content/uploads/2017/07/ES-Clusster-Configuration-1.png)
+![AWS Elasticache Configuration 1](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/ES-Clusster-Configuration-1.png)
 
- ![AWS Elasticache Configuration 2](/wp-content/uploads/2017/07/ES-Cluster-Configuration-2.png)
+ ![AWS Elasticache Configuration 2](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/ES-Cluster-Configuration-2.png)
 
 The third step is to set up an access policy for the domain. AWS provides some templates which range from **Deny access to the domain** to **Allow open access to the domain**. As with the domain configuration, this step requires careful consideration of the type of data you're storing and how it will be used.
 
-![AWS Elasticache: Access Policy Template](/wp-content/uploads/2017/07/Template-to-create-Access-Cluster.png)
+![AWS Elasticache: Access Policy Template](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Template-to-create-Access-Cluster.png)
 
 Finally, you'll have the option to confirm all the configurations for the domain. Click **Confirm and create** when you've validated all your entries, and your new domain should be ready to go in approximately 10 minutes.
 
@@ -86,7 +86,7 @@ Collecting ElasticSearch Metrics
 
 Navigate to the CloudWatch dashboard and click on the link to view **Metrics**. Depending on what you've been using in your account, you should see a collection of metric groups on the right of your screen, under the **All Metrics** tab. Click on the **ElastiCache** group, and then on **CacheClusterId**.
 
-![AWS Elasticache: Choose Metrics Group](/wp-content/uploads/2017/07/Elasticache-Metrics-Group.png)
+![AWS Elasticache: Choose Metrics Group](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Elasticache-Metrics-Group.png)
 
 You'll now have a list of the available metrics for your AWS ElastiCache cluster. Clicking on them will add them to the graph above. This is a great tool if you want to quickly view metrics related to your cluster over two-week periods.
 
@@ -183,7 +183,7 @@ With that Lambda uploaded and set with a Cloudwatch trigger to run every minute,
 
 Navigate back to the CloudWatch dashboard, and this time, click on the **Logs** option. Locate the logs for the Lambda function. Mine was called *elasticacheMetricExporter.*
 
-![AWS Elasticache: Lambda Logs](/wp-content/uploads/2017/07/Log-Group-New-Metrics-Lambda.png)
+![AWS Elasticache: Lambda Logs](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Log-Group-New-Metrics-Lambda.png)
 
 To stream the metrics, select the radio button to the left of the log group. Click on the **Actions** button, and select **Stream to Amazon Elasticsearch Service.** By now, our ES domain has had time to start, so it should be available in the dropdown. Ensure that *This Account* is selected, and then select your ES Cluster from the dropdown.
 

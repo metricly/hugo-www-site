@@ -27,7 +27,7 @@ To get started with Netuitive for MySQL database monitoring, you need to install
 
 This command installs and runs the Netuitive Linux agent. This agent runs as a background process on your Linux server and monitors everything from CPU to disk and memory usage. After a few minutes, your Netuitive dashboard will populate with information about your server.
 
-[![MySQL Database Monitoring with Netuitive: Linux Metrics](https://www.metricly.com/wp-content/uploads/2017/07/LinuxMetrics-1024x231.png)](https://www.metricly.com/wp-content/uploads/2017/07/LinuxMetrics.png)
+[![MySQL Database Monitoring with Netuitive: Linux Metrics](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/LinuxMetrics-1024x231.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/LinuxMetrics.png)
 
 MySQL Database Monitoring
 -------------------------
@@ -42,7 +42,7 @@ Running this command in MySQL as root will grant all privileges to the defined *
 
 To accomplish this, open up: /opt/netuitive-agent/conf/collectors/MySQLCollector.conf in your favorite editor and change the enabled setting to True. You'll also want to update the hosts setting with the **username** and **password** you defined in the MySQL shell command above, which will give the Netuitive agent direct access to your MySQL process. As with the NGINX step, you'll want to be sure to restart the Netuitive agent before you start seeing data in your Netuitive dashboard.
 
-[![MySQL Database Monitoring with Netuitive: MySQL Metrics](https://www.metricly.com/wp-content/uploads/2017/07/MySQL-Metrics-1024x337.png)](https://www.metricly.com/wp-content/uploads/2017/07/MySQL-Metrics.png)
+[![MySQL Database Monitoring with Netuitive: MySQL Metrics](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/MySQL-Metrics-1024x337.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/MySQL-Metrics.png)
 
 Taking MySQL Database Monitoring Further
 ----------------------------------------

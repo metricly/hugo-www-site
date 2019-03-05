@@ -18,7 +18,7 @@ When you want to know at glance whether you are using all of the CPU, Disk space
 
 To learn more, start with our high-level overview about [analyzing AWS RDS Costs](/rds-cost-report) or read our article about [how to optimize AWS RDS Costs](/optimize-aws-rds-costs).
 
-![Manage RDS Costs: Report Sorted By Cost](/wp-content/uploads/2017/08/Report-Sorted-By-Cost-1024x539.png)
+![Manage RDS Costs: Report Sorted By Cost](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/08/Report-Sorted-By-Cost-1024x539.png)
 
 Filter Metrics Using Regular Expression
 ---------------------------------------
@@ -29,7 +29,7 @@ For example, [our Linux agent](https://help.netuitive.com/Content/Integrations/l
 
 You can then narrow down your selection further by using a tag for specific servers such as app:dbc (in this case dbc stands for database cluster). This tag may be appended in AWS, be part of the OS image, or appended by your configuration management tool such as Chef or Ansible. The screen shot below shows 24 metrics selected using the criteria above. Creating new dashboards has never been faster!
 
-![Regular Expression filters added to Metricly Dashboard Widgets](/wp-content/uploads/2017/09/Dashboard-Widgets-Regular-Expression-1024x788.png)
+![Regular Expression filters added to Metricly Dashboard Widgets](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/09/Dashboard-Widgets-Regular-Expression-1024x788.png)
 
 Interactive Demo Site Now Available
 -----------------------------------
@@ -40,4 +40,4 @@ We have created a demo version of our product that is populated with generic but
 
 This interactive demo complements two other ways you can learn more about Metricly: you can also watch a [7min demo video](/netuitive-overview) of our product, or start a [free 21-day trial evaluation](/signup) which takes only 15min to activate.
 
-![Dashboard view of Metricly's Public Demo account](/wp-content/uploads/2017/09/Public-Demo-Dashboard-1024x490.png)
+![Dashboard view of Metricly's Public Demo account](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/09/Public-Demo-Dashboard-1024x490.png)

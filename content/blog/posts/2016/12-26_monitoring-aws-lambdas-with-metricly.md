@@ -34,7 +34,7 @@ Determine and enter a name for your integration, ensure that the Data Collection
 
 If you're using the recommended IAM role approach, you should have an ARN to paste into the appropriate field on the page. The final step is to ensure that the Lambda type is included in the Integration. It is not checked by default, so you'll want to scroll down the list of types and ensure that it is checked. With that complete, your screen should look similar to the image below, and you can click on Save.
 
-[![Monitoring AWS Lambdas: Setup](https://www.metricly.com/wp-content/uploads/2017/07/AWS-Setup.png)](https://www.metricly.com/wp-content/uploads/2017/07/AWS-Setup.png)
+[![Monitoring AWS Lambdas: Setup](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/AWS-Setup.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/AWS-Setup.png)
 
 AWS Lambda Summary Dashboard
 ----------------------------
@@ -47,11 +47,11 @@ Netuitive automatically generates a simple Lambda dashboard for you named "AWS L
 
 Your dashboard may look similar to the one shown below. I have two Lambdas currently active in my account. From what I have observed, metrics are gathered from AWS every five minutes, and may take an additional minute or two for processing. (Also note that the graphs may not populate until two data points are available.)
 
-[![Monitoring AWS Lambdas: Summary Dashboard](https://www.metricly.com/wp-content/uploads/2017/07/Lambda-Summary-Dashboard.png)](https://www.metricly.com/wp-content/uploads/2017/07/Lambda-Summary-Dashboard.png)
+[![Monitoring AWS Lambdas: Summary Dashboard](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Lambda-Summary-Dashboard.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Lambda-Summary-Dashboard.png)
 
 In addition to the graph view, each of the widgets also has a "Table" view which will list the specific lambdas being shown with the corresponding values.
 
-[![Monitoring AWS Lambdas: Dashboard Table View](https://www.metricly.com/wp-content/uploads/2017/07/Lambda-Monitoring-Dashboard-Table-View.png)](https://www.metricly.com/wp-content/uploads/2017/07/Lambda-Monitoring-Dashboard-Table-View.png)
+[![Monitoring AWS Lambdas: Dashboard Table View](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Lambda-Monitoring-Dashboard-Table-View.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Lambda-Monitoring-Dashboard-Table-View.png)
 
 Element Detail Dashboard
 ------------------------
@@ -60,7 +60,7 @@ Netuitive also provides an Element Detail dashboard for each Lambda function whi
 
 By selecting a specific element from the list of elements, you will be taken to a detailed view of the Lambda function which shows both the current state of the function in terms of Invocations and Latency, and the state of each of those metrics over time.
 
-[![Monitoring AWS Lambdas: Detailed Element Dashboard](https://www.metricly.com/wp-content/uploads/2017/07/Detailed-Element-Dashboard.png)](https://www.metricly.com/wp-content/uploads/2017/07/Detailed-Element-Dashboard.png)
+[![Monitoring AWS Lambdas: Detailed Element Dashboard](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Detailed-Element-Dashboard.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Detailed-Element-Dashboard.png)
 
 The dashboard above shows the metrics for a simple Lambda, which I created to accept a request, wait for a random time period between 0 and 300ms, and return a true response. I call the Lambda by executing the aws invoke-async command on my local workstation. Two key metrics are shown in each graphic. The light grey/blue color indicates the average for the metric being displayed, but the darker and more distinct line indicates the current state of the Lambda, or at least the current state over the preceding five minutes.
 
@@ -71,7 +71,7 @@ Dashboards are great to look at, but not if you have to watch them continuously,
 
 While looking at the Detailed Element Report, you should notice a Policies link right above the graphics. You can also access these by clicking on the [Policies](https://help.netuitive.com/Content/Policies/policies.htm) option on the navigation panel at the top of the page.
 
-[![Monitoring AWS Lambdas: Lambda Policy](https://www.metricly.com/wp-content/uploads/2017/07/Element-Detail-Policies.png)](https://www.metricly.com/wp-content/uploads/2017/07/Element-Detail-Policies.png)
+[![Monitoring AWS Lambdas: Lambda Policy](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Element-Detail-Policies.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Element-Detail-Policies.png)
 
 Three policies are provided for you automatically by Netuitive. The descriptions are taken from the Policy summary for each, and provided for convenience here.
 
@@ -95,7 +95,7 @@ Each of the policies can be viewed in more detail by clicking on the policy name
     -   Slack
     -   Webhook
 
-[![Monitoring AWS Lambdas: Test Notification](https://www.metricly.com/wp-content/uploads/2017/07/Test-Notification.png)](https://www.metricly.com/wp-content/uploads/2017/07/Test-Notification.png)
+[![Monitoring AWS Lambdas: Test Notification](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Test-Notification.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Test-Notification.png)
 
 Going Beyond Monitoring AWS Lambdas
 -----------------------------------

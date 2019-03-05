@@ -41,7 +41,7 @@ For this article, I created a [Read Only Role (with full permissions)](https://h
 
 The initial setup is fairly straightforward and it took me about 10 minutes to create an AWS IAM role and connect Netuitive to our AWS infrastructure using the Netuitive AWS documentation. When creating the integration, I selected EC2, EBS, and ELB, as shown in the image below. Once all of the fields are filled out, click *Save*.
 
-[![aws-setup](https://www.metricly.com/wp-content/uploads/2017/07/AWS-Setup.jpg)](https://www.metricly.com/wp-content/uploads/2017/07/AWS-Setup.jpg)
+[![aws-setup](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/AWS-Setup.jpg)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/AWS-Setup.jpg)
 
 Dashboards
 ----------
@@ -52,7 +52,7 @@ You can favorite a particular dashboard you frequently access by clicking the st
 
 To start, we will be looking at the *AWS Overview* dashboard, as shown below.
 
-[![awsdashboards](https://www.metricly.com/wp-content/uploads/2017/07/awsdashboards-1024x517.png)](https://www.metricly.com/wp-content/uploads/2017/07/awsdashboards.png)
+[![awsdashboards](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/awsdashboards-1024x517.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/awsdashboards.png)
 
 ### EC2
 

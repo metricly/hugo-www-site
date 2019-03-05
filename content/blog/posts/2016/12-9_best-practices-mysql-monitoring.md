@@ -16,7 +16,7 @@ This article provides an overview of what you can monitor in MySQL in order to g
 MySQL Monitoring at its Most Basic Level: Am I Alive?
 -----------------------------------------------------
 
-[![MySQL Monitoring: MySQL Logo](https://www.metricly.com/wp-content/uploads/2017/07/MySQLlogo.png)](https://www.metricly.com/wp-content/uploads/2017/07/MySQLlogo.png)
+[![MySQL Monitoring: MySQL Logo](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/MySQLlogo.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/MySQLlogo.png)
 
 It's essential to monitor whether the MySQL process is running. This may seem like common sense, but I have seen more than one deployment that had all the fancy application performance monitoring tools running, but nothing told them the database didn't start after server patching.
 

@@ -28,7 +28,7 @@ While there are a handful of real-time communication platforms available, one of
 
 One of the most useful functions of Slack's API is the ability to define message buttons so you can easily and deliberately take action from messages within a channel. These actions include---to provide a quick example---two-way integration between Slack and your systems through the buttons that invoke complex workflows, like automated garbage collection.
 
-![ChatOps in Slack Explained](/wp-content/uploads/2017/10/ChatOps-in-Slack-Explainedpng-1.png)
+![ChatOps in Slack Explained](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/10/ChatOps-in-Slack-Explainedpng-1.png)
 
 Slack message actions
 
@@ -37,7 +37,7 @@ Metricly ![❤](https://s.w.org/images/core/emoji/11/svg/2764.svg) ChatOps
 
 Slack alerts can go beyond text, and vendors such as Metricly offer feature-rich notifications to convey more information. For example, a graph showing Java heap usage quickly outlines a problem as predefined thresholds are crossed, without having to read through the details. In this case, the graph shows just how urgent the situation is.
 
-![Chatops slack notifications in Metricly](/wp-content/uploads/2017/10/Chatops-slack-notifications-in-Metricly.png)
+![Chatops slack notifications in Metricly](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/10/Chatops-slack-notifications-in-Metricly.png)
 
 Metricly graphical alert in Slack
 
@@ -48,19 +48,19 @@ Amazon Web Service (AWS) Monitoring with ChatOps
 
 With Metricly and Slack, you can easily create and integrate Incoming WebHooks to support notifications from web-based applications such as those in AWS. To do this, we first must begin by [connecting Metricly with Slack](https://help.netuitive.com/Content/Misc/Notifications/slack_notification.htm), and then configure it to post events to the appropriate channels. Direct integration with AWS is enabled by adding a Metricly role in the *AWS Identity and Access Management (IAM) Roles* configuration.
 
-![ChatOps setup on AWS](/wp-content/uploads/2017/10/ChatOps-setup-on-AWS.png)
+![ChatOps setup on AWS](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/10/ChatOps-setup-on-AWS.png)
 
 AWS Metricly IAM role
 
 Setting up an AWS integration is a relatively straightforward process. First, you begin by choosing the pre-built AWS integration; next, you create an AWS read-only role (see above), and finally, you select the services you wish to monitor and control.
 
-![Metricly AWS Setup](/wp-content/uploads/2017/10/Metricly-AWS-Setup.png)
+![Metricly AWS Setup](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/10/Metricly-AWS-Setup.png)
 
 Metricly AWS setup
 
 While this integration will be enough for 90% of standard use cases, if needed, you can also create a custom integration using Metricly's API and JSON to perform application monitoring (such as the Java heap example above), or even CPU monitoring:
 
-![Metricly Chatops Custom Integration](/wp-content/uploads/2017/10/Metricly-Chatops-Custom-Integration.png)
+![Metricly Chatops Custom Integration](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/10/Metricly-Chatops-Custom-Integration.png)
 
 Metricly custom integration
 

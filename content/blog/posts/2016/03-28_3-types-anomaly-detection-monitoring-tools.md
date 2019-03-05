@@ -22,7 +22,7 @@ In the Beginning
 
 Dashboards
 
-[![Monitoring Tools: Dashboard](https://www.metricly.com/wp-content/uploads/2016/05/Dashboard-EC2EBSWorkload-Sanitized-1024x585.png)](https://www.metricly.com/wp-content/uploads/2016/05/Dashboard-EC2EBSWorkload-Sanitized.png)
+[![Monitoring Tools: Dashboard](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/Dashboard-EC2EBSWorkload-Sanitized-1024x585.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/Dashboard-EC2EBSWorkload-Sanitized.png)
 
 Humans are experts at pattern-matching and anomaly detection.  Most monitoring tools use dashboards to display graphs of ever-changing system and application performance metrics. The innate human ability to quickly detect patterns, combined with a developer or system administrator's learned domain experience, makes reviewing dashboards a very easy way to quickly gauge the overall health of an application or cloud infrastructure in a simple environment.  However, as the team adds more applications, and metrics to track their status, the complexity quickly exceeds human capacity for easy visual detection anomaly detection. Increased automation is needed.
 
@@ -41,7 +41,7 @@ Transformations are an additional data analysis option for anomaly detection.  F
 
 Advanced Analytics
 
-[![Monitoring Tools: Contextual Bands](https://www.metricly.com/wp-content/uploads/2016/05/context.png)](https://www.metricly.com/wp-content/uploads/2016/05/context.png)
+[![Monitoring Tools: Contextual Bands](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/context.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/context.png)
 
 Advanced analytics leverage many models and algorithms, both qualitative and quantitative.  Some quantitative techniques include statistical analysis and machine learning. Qualitative analytics include techniques such as incorporating a priori knowledge (human input) and semantic contextual models.
 

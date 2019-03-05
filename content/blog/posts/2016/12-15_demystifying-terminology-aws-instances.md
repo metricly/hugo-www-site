@@ -11,7 +11,7 @@ layout: "single"
 
 So you've got an app ready for launch, and unlike in the past where you simply ran it on-premises, this time you want to try the cloud. You know AWS is the leading cloud platform, and decide to give it a go. The first thing you'll bump into as you learn about AWS is the various options of cloud instances available with AWS EC2. This post highlights the various options you have with AWS instances, so you can make an informed decision about which of them should be part of [your first cloud stack with AWS](https://www.metricly.com/getting-started-netuitive-aws).
 
-[![AWS Instance Cost Graphic](https://www.metricly.com/wp-content/uploads/2017/07/Cloud-Graphictransparent.png)](https://www.metricly.com/wp-content/uploads/2017/07/Cloud-Graphictransparent.png)
+[![AWS Instance Cost Graphic](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Cloud-Graphictransparent.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Cloud-Graphictransparent.png)
 
 What Is An Instance?
 --------------------
@@ -21,7 +21,7 @@ An AWS EC2 Instance is nothing but a server in the cloud. Just like your physica
 Types of AWS Instances
 ----------------------
 
-[![AWS Instances: EC2 Types](https://www.metricly.com/wp-content/uploads/2017/07/ec2.png)](https://www.metricly.com/wp-content/uploads/2017/07/ec2.png)
+[![AWS Instances: EC2 Types](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/ec2.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/ec2.png)
 
 #### Regular EC2 Instances
 

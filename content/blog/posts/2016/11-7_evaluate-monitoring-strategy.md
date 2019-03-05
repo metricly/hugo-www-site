@@ -35,7 +35,7 @@ The expectations from monitoring tools for DevOps have evolved in recent years a
 
 Here's a generic set of functionalities that one or more of your tools might provide:
 
-[![Monitoring Tools for DevOps: Functionalities](https://www.metricly.com/wp-content/uploads/2017/07/Monitoring-Tools-and-Functionalities-1024x500.png)](https://www.metricly.com/wp-content/uploads/2017/07/Monitoring-Tools-and-Functionalities.png)
+[![Monitoring Tools for DevOps: Functionalities](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Monitoring-Tools-and-Functionalities-1024x500.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Monitoring-Tools-and-Functionalities.png)
 
 **Dashboards**: Preset [dashboards](https://www.metricly.com/product/dashboards-and-reports) that are easy to customize and share with peers.
 
@@ -60,7 +60,7 @@ Monitor Your Full Application Stack
 
 Specific functionality is available for each tier of your application stack. This list is not meant to be comprehensive but rather intended to capture the largest feature sets.
 
-[![Monitoring Tools for DevOps: Monitoring Domains](https://www.metricly.com/wp-content/uploads/2017/07/DevOps-Monitoring-Domains.png)](https://www.metricly.com/wp-content/uploads/2017/07/DevOps-Monitoring-Domains.png)
+[![Monitoring Tools for DevOps: Monitoring Domains](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/DevOps-Monitoring-Domains.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/DevOps-Monitoring-Domains.png)
 
 ### End-User
 

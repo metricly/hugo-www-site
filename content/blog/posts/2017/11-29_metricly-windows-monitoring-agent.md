@@ -85,13 +85,13 @@ Installation and Configuration
 
 Before following the steps I've described below, I created a new t2.micro instance, using the Microsoft Windows Server 2016 Base AMI. Once the instance was initialized, I connected using RDP from my local workstation.
 
-![Starting with a Clean Slate: Microsoft Windows Server 2016](/wp-content/uploads/2017/11/1-Microsoft-Windows-Server-Metricly.png)
+![Starting with a Clean Slate: Microsoft Windows Server 2016](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/11/1-Microsoft-Windows-Server-Metricly.png)
 
 Starting with a Clean Slate: Microsoft Windows Server 2016
 
 With an active connection to a clean Windows instance, return to your local workstation and log into your Metricly account. Navigated to the **Integrations** page and select **Windows** from the list of available integrations.
 
-![](/wp-content/uploads/2017/11/2-Metricly-Windows-Inetgration.png)
+![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/11/2-Metricly-Windows-Inetgration.png)
 
 Windows Integration
 
@@ -101,7 +101,7 @@ The first option, **Packages**, initiates the creation of preconfigured dashboar
 
 The second option, **API Key**, will become enabled once you have the integration successfully installed and running on your target machine.
 
-![Monitor windows with metricly](/wp-content/uploads/2017/11/3-Metricly-Windows-Agent-Installation.png)
+![Monitor windows with metricly](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/11/3-Metricly-Windows-Agent-Installation.png)
 
 Personalized Agent Installation Instructions
 
@@ -111,7 +111,7 @@ Copying the URL, return to your RDP session and open Internet Explorer. Paste th
 
 Once you have downloaded the file, open up a **Windows PowerShell** terminal, change to the Downloads folder, and run the command provided in step 3.
 
-![Executing the Install Command for windows the monitoring agent in PowerShell](/wp-content/uploads/2017/11/4-Executing-the-Install-Command-in-PowerShell.png)
+![Executing the Install Command for windows the monitoring agent in PowerShell](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/11/4-Executing-the-Install-Command-in-PowerShell.png)
 
 Executing the Install Command in PowerShell
 
@@ -121,7 +121,7 @@ Once the agent is installed and the optional step of configuring the proxy is co
 
 Open the **Windows Task Manager** and click on the **Services** tab. You'll be looking for a service called *CollectdWinService* or a variant depending on the version of the agent installed. Right-click the service and select **Start**. If you need to make additional changes to the configuration of the agent, you'll want to come back to the task manager and restart the service using the same steps.
 
-![Starting the windows monitoring agent in Task Manager](/wp-content/uploads/2017/11/Starting-the-Agent-in-Task-Manager.png)
+![Starting the windows monitoring agent in Task Manager](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/11/Starting-the-Agent-in-Task-Manager.png)
 
 Starting the Agent in Task Manager
 
@@ -130,25 +130,25 @@ Exploring the Preconfigured Dashboards and Policies
 
 It will take a few minutes before metrics will begin to flow from the instance to Metricly for analysis. Navigate to the **Metrics** page, and from the **Quick Filter** option for Windows, select **All Windows Metrics**.
 
-![Windows Quick Metrics Filter](/wp-content/uploads/2017/11/Windows-Quick-Metrics-Filter.png)
+![Windows Quick Metrics Filter](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/11/Windows-Quick-Metrics-Filter.png)
 
 Windows Quick Metrics Filter
 
 And just like that, you'll see statistics for memory and CPU usage already being collected and analyzed.
 
-![Monitor Windows WIth Basic Metrics for CPU and Memory Usage](/wp-content/uploads/2017/11/Basic-Metrics-for-CPU-and-Memory-Usage.png)
+![Monitor Windows WIth Basic Metrics for CPU and Memory Usage](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/11/Basic-Metrics-for-CPU-and-Memory-Usage.png)
 
 Basic Metrics for CPU and Memory Usage
 
 Let's navigate over to the Inventory page, and have a look at what other metrics are available. A list of all available sources will appear on the left of the screen. I had some other AWS resources visible on mine, but was able to identify my particular instance by its AWS name. Clicking on it, you'll be able to see a summary of the available metrics, and a link to ***View all Metrics for this Element****.*
 
-![Inventory Summary for a Windows Element](/wp-content/uploads/2017/11/Inventory-Summary-for-a-Windows-Element-e1511792005524.png)
+![Inventory Summary for a Windows Element](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/11/Inventory-Summary-for-a-Windows-Element-e1511792005524.png)
 
 Inventory Summary for a Windows Element
 
 For a different view of these metrics, let's navigate to the **Dashboards** page. You'll observe that you have a new dashboard available called ***Windows Summary***, created by research@metricly.com. Let's check it out and see what it displays.
 
-![Preconfigured Dashboard for Windows Servers](/wp-content/uploads/2017/11/Preconfigured-Dashboard-for-Windows-Servers.png)
+![Preconfigured Dashboard for Windows Servers](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/11/Preconfigured-Dashboard-for-Windows-Servers.png)
 
 Preconfigured Dashboard for Windows Servers
 
@@ -164,7 +164,7 @@ The default dashboard includes:
 
 Let's leave this dashboard and navigate to the **Policies** page to see what other preconfigured tools we have by default. If you scroll down, you should see a list of related policies to monitor Windows.
 
-![Policies Configured Automatically for Windows Instances](/wp-content/uploads/2017/11/Policies-Configured-Automatically-for-Windows-Instances.png)
+![Policies Configured Automatically for Windows Instances](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/11/Policies-Configured-Automatically-for-Windows-Instances.png)
 
 Policies Configured Automatically to monitor Windows Instances
 

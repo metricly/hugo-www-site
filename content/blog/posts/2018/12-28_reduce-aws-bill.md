@@ -26,7 +26,7 @@ The Elastic Block Storage (EBS) service provides storage space for your [Elasti
 
 You can view the number of EBS volumes you have in use for each region by logging into your AWS account and viewing the [EC2 Dashboard](https://console.aws.amazon.com/ec2). If you're concerned that you may need access to the contents of the volume at a later time, you can create an EBS snapshot and quickly restore it as required.
 
-![EC2 Dashboard](/wp-content/uploads/2018/12/Screenshot-70.png)
+![EC2 Dashboard](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2018/12/Screenshot-70.png)
 
 Viewing Active Volumes from the EC2 Dashboard.
 
@@ -64,7 +64,7 @@ We've already talked about identifying unused capacity within instances, but wha
 
 Development infrastructure such as CI/CD resources and test environments are excellent candidates for automated scaling solutions.
 
-![AWS scaler](/wp-content/uploads/2018/12/instance-scheduler-architecture.727e008ced5a4b1b656b5c22afb4a2dfc32d7c33.png)
+![AWS scaler](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2018/12/instance-scheduler-architecture.727e008ced5a4b1b656b5c22afb4a2dfc32d7c33.png)
 
 Components of the AWS Instance Scaler Solution.
 

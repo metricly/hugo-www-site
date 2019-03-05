@@ -14,20 +14,20 @@ Compare EC2 Cost and Performance Over Time
 
 AWS cost data is great -- but being able to compare cost and performance over time is even better. The old report updated weekly, but our new EC2 Cost Report is updated daily and can show aggregated cost and utilization performance data across any range from a single day to an entire month. Simply select the period you would like to view from the time controls at the top right:
 
-![EC2 Cost Report: Compare costs over time](/wp-content/uploads/2017/07/Compare-costs-over-time-1024x377.png)
+![EC2 Cost Report: Compare costs over time](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Compare-costs-over-time-1024x377.png)
 
 Once you've selected your timeframe, you can explore [cost differences between EC2 instances](/view-manage-individual-aws-ec2-costs) in the element or scatter plot views, or compare costs and performance day over day, week over week or month over month. These options are available depending upon how long data has been compiling, as well as the time period selected:
 
-![EC2 Cost Report: Compare over time Groups](/wp-content/uploads/2017/07/Compare-over-time-Groups-1024x390.png)
+![EC2 Cost Report: Compare over time Groups](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Compare-over-time-Groups-1024x390.png)
 
-You can even see how the cost and performance has changed for an individual EC2 instance over time by combining the view with element filters (in this example, cost is represented by the bars and the lefthand axis, while performance metrics are represented by the dots and the righthand axis):![EC2 Cost Report: Compare Over Time Element Filters](/wp-content/uploads/2017/07/Compare-Over-Time-Element-Filters-1024x470.png)
+You can even see how the cost and performance has changed for an individual EC2 instance over time by combining the view with element filters (in this example, cost is represented by the bars and the lefthand axis, while performance metrics are represented by the dots and the righthand axis):![EC2 Cost Report: Compare Over Time Element Filters](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Compare-Over-Time-Element-Filters-1024x470.png)
 
 Predict Monthly EC2 Costs
 -------------------------
 
 The new EC2 report takes your cost data one step further, allowing you to extrapolate current EC2 costs to the end of the month and see how they compare with the previous month. Like the old report, you can filter the selection to any subset of your EC2s, to see how certain parts of your environment will impact your overall monthly bill. Here it looks like we're tracking to spend 25% more on 'dkr' elements this month compared with last month:
 
-![EC2 Cost Report: Predict EC2 Costs](/wp-content/uploads/2017/07/Predict-Monthly-Costs-1024x476.png)
+![EC2 Cost Report: Predict EC2 Costs](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Predict-Monthly-Costs-1024x476.png)
 
 EBS Costs, Simplified
 ---------------------
@@ -41,7 +41,7 @@ Improved EC2 Cost Report Filters
 
 The report displays the top 20 most expensive elements by default, but you can expand or remove the filter altogether to show more elements. Sort and add further filters to find EC2s that meet more detailed cost criteria (if you wanted to see only spot EC2s costing more than $200, for example). All of this combines to give you more insight into your AWS bills than ever before.
 
-![EC2 Cost Report: Improve Cost Filters](/wp-content/uploads/2017/07/Improve-Cost-Filters-1024x569.png)
+![EC2 Cost Report: Improve Cost Filters](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Improve-Cost-Filters-1024x569.png)
 
 * * * * *
 

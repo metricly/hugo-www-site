@@ -58,12 +58,12 @@ Knowing how many tables you have is great, but it doesn't tell the full story. Y
 
 Read latency measures fulfillment time for read requests, beginning when the node receives a client request and ending when it responds. Read requests usually take longer than write requests -- visualize how much longer it might take you to find the answer to a question as opposed to writing an answer down, for example. Depending upon the SSTable count, certain databases may also require increased latency, but on the whole an increase in this metric can point to performance issues. The below diagram illustrates the read request process most Cassandra databases use:
 
-[![Read Requests Diagram](https://www.metricly.com/wp-content/uploads/2016/05/ReadRequests-Diagram.png)](https://www.metricly.com/wp-content/uploads/2016/05/ReadRequests-Diagram.png)
+[![Read Requests Diagram](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/ReadRequests-Diagram.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/ReadRequests-Diagram.png)
 
 **cassandra.cfstats.keyspaces...local_write_latency**\
 Write latency, as you might have guessed, measures fulfillment time for write requests. Like read latency, write latency starts when a node receives a client write request, and ends when the node responds. Writes tend to be much faster than reads, although sufficient latency depends heavily on the individual system. Sudden changes, however, are often a sign of serious performance problems.
 
-[![Write Requests Diagram](https://www.metricly.com/wp-content/uploads/2016/05/WriteRequestsDiagram.png)](https://www.metricly.com/wp-content/uploads/2016/05/WriteRequestsDiagram.png)
+[![Write Requests Diagram](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/WriteRequestsDiagram.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/WriteRequestsDiagram.png)
 
 **\
 cassandra.tpstas.hintedhandoff.active**\
@@ -79,7 +79,7 @@ Consolidating and merging data is a key piece of maintaining a healthy database.
 **cassandra.compaction.stats.pendingtasks**\
 Compaction should be run regularly, as this is the task that allows Cassandra to consolidate SSTables and remove old or outdated data. This metric measures the total number of pending compaction operations, or how many new SSTables Cassandra still needs to create, complete, and how many old ones it needs to delete. An upper deviation in this metric could indicate a performance or application issue, including iops limitations. The below diagram illustrates a usual compaction cycle. When too many tables need consolidation for the system to keep up, you may need to add more nodes to prevent a more serious issue.
 
-[![Cassandra Compaction Diagram](https://www.metricly.com/wp-content/uploads/2016/05/Cassandra-Compaction-Diagram.png)](https://www.metricly.com/wp-content/uploads/2016/05/Cassandra-Compaction-Diagram.png)
+[![Cassandra Compaction Diagram](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/Cassandra-Compaction-Diagram.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/Cassandra-Compaction-Diagram.png)
 
 How to monitor Cassandra performance metrics
 --------------------------------------------

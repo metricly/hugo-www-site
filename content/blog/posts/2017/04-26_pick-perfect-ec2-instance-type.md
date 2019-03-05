@@ -9,7 +9,7 @@ layout: "single"
 ---
 After much research and deliberation, you've decided to embrace Amazon Web Services as the provider of cloud services for your business or application. Everything seems to be going swimmingly. Your first project is ready to deploy, and you navigate to the EC2 home page and click on **Launch Instance**. The page appears, allowing you to choose an Amazon Machine Image (AMI)---So far so good! You pick the AMI required for your particular deployment and click **Select**.
 
-![Pick Perfect EC2 Instance: Choose Type](/wp-content/uploads/2017/07/Choose-Instance-Type.png)
+![Pick Perfect EC2 Instance: Choose Type](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Choose-Instance-Type.png)
 
 And now, all of a sudden, things get tricky. You have to make a choice about EC2 instance type, which has important ramifications for how your cloud environment will perform and how cost-efficient it will be. With so many [EC2 instance types available](https://aws.amazon.com/ec2/instance-types/), this may seem like a difficult choice to make.
 
@@ -85,7 +85,7 @@ Two Clicks to All the Information You Need!
 
 Once you have data flowing into your Netuitive account, it takes just two clicks to access all the information you need. We started this article off by looking at the costs associated with deploying your applications into AWS using EC2 instances. Log in to your account, navigate to **Reports**, and then select the **EC2 Cost** report.
 
-![Pick Perfect EC2 Instance: Select Cost Report](/wp-content/uploads/2017/07/Select-EC2-Cost.png)
+![Pick Perfect EC2 Instance: Select Cost Report](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Select-EC2-Cost.png)
 
 The EC2 cost report shows [total costs for all EC2 instances](/demystify-your-ec2-cost-analysis) that are reported to Netuitive. Filters and view options allow you to customize views to report the information you need. At the top right of the report is a **Report View** option. Click on the dropdown, and select ***Cost by Instance Type***. This view breaks down costs based on the type of instance. Stacked bars show the total cost for the instance itself, costs for data traffic transferred to and from the instance, and other costs like EBS optimization charges.
 
@@ -93,11 +93,11 @@ Change the **Report View** option to ***Cost by Tag***. This option assumes you 
 
 For additional analysis, a **Download** link is provided at the top right corner of the data section below the graphic. This downloads a CSV file to your workstation, with the cost breakdown, based on the current Report View. The report allows you to see at a glance the total cost for your EC2 instances, and extract detailed information on how those costs are derived.
 
-![Pick Perfect EC2 Instance: Cost By Tag](/wp-content/uploads/2017/07/Costs-By-Tag-1024x479.png)
+![Pick Perfect EC2 Instance: Cost By Tag](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Costs-By-Tag-1024x479.png)
 
 The second report we're going to look at is my personal favorite. Navigate to the Reports menu again, and select the **EC2 Recommendation** report.
 
-![Pick Perfect EC2 Instance: EC2 Recommendation](/wp-content/uploads/2017/07/EC2-Recommendation.png)
+![Pick Perfect EC2 Instance: EC2 Recommendation](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/EC2-Recommendation.png)
 
 This report was developed by the researchers at Netuitive as a means to display cost data, and offer [recommendations for AWS cost savings](/optimize-aws-instance-types). The report also answers the all-important question "What EC2 instance type should I pick?"
 
@@ -105,13 +105,13 @@ As I mentioned before, a complete picture of resource utilization for an EC2 ins
 
 The report provides the user with the opportunity to optimize based on allowable risk, preferred maximum use of CPU and Memory Utilization, and even lets you indicate if you would like instance type recommendations to be kept within the same family of instances. An example graph might look similar to the one shown below.
 
-![Pick Perfect EC2 Instance: Recommendation Graph](/wp-content/uploads/2017/07/EC2-Recommendation-Graph-1024x459.png)
+![Pick Perfect EC2 Instance: Recommendation Graph](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/EC2-Recommendation-Graph-1024x459.png)
 
 Before we look at the actual data in the report, look at the top right corner. (**Estimated weekly instance savings $682.41**.) By implementing the recommendations in this report, we can not only increase our resource utilization but also save a significant amount of money. Let's look at how.
 
 Considering the top-most point, a solid blue dot on the graph, we can hover over and see a basic summary of information. The instance is ***win01* **and is costing us $161.58 per week. You'll notice that the dot is joined to another open dot with a dotted line. This line represents the recommendation. The result is a decrease in cost and an increase in CPU utilization. Let's find the element in the data table below to see how this is possible.
 
-![Pick Perfect EC2 Instance: Recommendation Details](/wp-content/uploads/2017/07/EC2-Reocmmendation-Details-1024x169.png)
+![Pick Perfect EC2 Instance: Recommendation Details](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/EC2-Reocmmendation-Details-1024x169.png)
 
 The first entry in the table references the EC2 instance we were looking at in the graph. This instance is currently deployed as an m4.2xlarge. The cost is $161.58 per week, and hidden on the right-hand side is CPU utilization at 8.3% and Memory Utilization at 7%. The recommendation is to change this to a t2.medium instance type for a projected savings of 92% and improved CPU and Memory Utilization.
 

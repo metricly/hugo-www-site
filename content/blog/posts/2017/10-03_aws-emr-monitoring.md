@@ -23,7 +23,7 @@ Hadoop itself runs as a cluster of virtual servers and distributes processing ac
 
 Because of the hosted architecture behind EMR, it is also possible to resize clusters as needed. This scaling can even be scheduled to happen at certain times when high utilization rates occur. To give a better idea of how EMR is structured, let's take a look at Amazon's own graph:
 
-![Amazon EWR Sructure](/wp-content/uploads/2017/10/Amazon-EWR-Structure-300x280.png)\
+![Amazon EWR Sructure](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/10/Amazon-EWR-Structure-300x280.png)\
 *Source: [docs.aws.amazon.com](http://docs.aws.amazon.com/emr/latest/ManagementGuide/images/cluster-node-types.png)*
 
 The core node performs tasks and stores the data with the Hadoop Distributed File System (HDFS), and distributes the data to the servers in identical copies for protection against failures and losses. There is also a task node, which is considered optional---Its role is to execute tasks and send the results to the slave node that is managed by the master. All work processes are defined by EMR as steps, which may run on one or more Hadoop clusters.
@@ -39,7 +39,7 @@ This parameter tells the cluster to maintain a waiting state after the success o
 
 The tricky thing about EMR is that failures during any of the processes discussed above can also cause the cluster to shut down, often leaving you with no way to recover data. There are ways to safeguard against this, however. For example, you can enable termination protection, or you can provide an *ActionOnFailure* in the configuration step that allows a way to retrieve stored data. If this sounds complicated, it kind of is, but the flowchart below should clear things up a little bit:
 
-![Managing EMR Processes](/wp-content/uploads/2017/10/Managing-EMR-Processes.png)\
+![Managing EMR Processes](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/10/Managing-EMR-Processes.png)\
 *Source: [docs.aws.amazon.com](http://docs.aws.amazon.com/emr/latest/ManagementGuide/images/emr-cluster-lifecycle.png)*
 
 Configuring Metricly for Amazon EMR Monitoring
@@ -53,13 +53,13 @@ This is where a tool like Metricly comes into play. We make EMR monitoring easy 
 2.  If you haven't yet connected Metricly with your AWS account, follow the setup instructions presented on the [AWS Setup page](https://help.netuitive.com/Content/Integrations/aws.htm) before continuing.
 3.  Once we've successfully connected Metricly to AWS, we can then set up the EMR integration. The simplest way to do this is to check the EMR box on the same AWS Setup page:
 
-![Amazon EWS Monitoring with Metricly](/wp-content/uploads/2017/10/Amazon-EWS-Monitoring-with-Metricly.png)*Enable AWS EMR Monitoring in Metricly*
+![Amazon EWS Monitoring with Metricly](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/10/Amazon-EWS-Monitoring-with-Metricly.png)*Enable AWS EMR Monitoring in Metricly*
 
 Once Metricly starts pulling data in from EMR, the sheer number of items that are tracked can be overwhelming at first. There's application statuses, containers, HDFS, memory usage, nodes, S3 read/write tracking---Who knew Big Data created so much... data? Thankfully, Metricly helps cut through the clutter with their [pre-configured dashboards](/aws-monitoring-best-practices-using-pre-configured-dashboards).
 
 As an example, the default EMR Summary dashboard gives you an overview of the number of EMR cluster instances you are running, the top five instances based on HDFS utilization, and the top five instances based on concurrent data transfers. While this is a great start, I highly recommend browsing the "Add Widget" modal for more appropriate metrics and graphs for your particular EMR use case.
 
-![Amazon EMR Monitoring Dashboard on Metricly](/wp-content/uploads/2017/10/Amazon-EMR-Monitoring-Dashboard-on-Metricly.png)
+![Amazon EMR Monitoring Dashboard on Metricly](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/10/Amazon-EMR-Monitoring-Dashboard-on-Metricly.png)
 
 *EMR Summary in Metricly*
 
@@ -68,7 +68,7 @@ Automated Alerting
 
 As with all monitoring, one of the most important ways to stay on top of things is targeted alerting. While the details of Metricly's [alerting functionality](/how-to-leverage-machine-learning-for-proactive-monitoring-alerts) are outside the scope of this article, it is important to know where to configure this functionality.
 
-![Amazon EMR Alerting with Metricly](/wp-content/uploads/2017/10/Amazon-EMR-Alerting-with-Metricly.png)*Metricly Policies for EMR Alerting*
+![Amazon EMR Alerting with Metricly](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/10/Amazon-EMR-Alerting-with-Metricly.png)*Metricly Policies for EMR Alerting*
 
 In "Metricly-speak," [setting up alerts happens underneath the "Policies"](/effective-monitoring-alert-rules) section of your Metricly account. As with Metricly's dashboards, a few started policies are created whenever you add a new integration. As an example, one of the default policies created for EMR is the Idle Cluster Warning, which triggers a notification whenever an EMR cluster has been idle for at least the past hour.
 

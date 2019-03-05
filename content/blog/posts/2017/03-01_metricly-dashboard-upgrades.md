@@ -15,14 +15,14 @@ Easy Dashboard Widget Resizing
 
 Gone are the days of small, medium, and large [widgets](/widgets-101-time-series-widgets) -- your widgets can now be easily resized however you like! Simply grab the bottom-left or bottom-right corner of the widget you want to resize, and drag:
 
-[![Dashboard Improvements: Widget Resizing](/wp-content/uploads/2017/07/Gif7.gif)](/wp-content/uploads/2017/07/Gif7.gif)\
+[![Dashboard Improvements: Widget Resizing](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Gif7.gif)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Gif7.gif)\
 Being able to resize widgets easily brings much more flexibility to your dashboards. Make time-series graphs larger, and status checks smaller, or vice versa -- it's all up to you. Each dashboard row can contain up to six widgets of varying shapes and sizes. The possibilities are endless!
 
 **Drag and Drop Functionality**
 
 The drag-and-drop functionality also extends to widget location. If you want to move a widget, click that widget's header bar and drag it to the desired location.
 
-[![Dashboard Improvements: Drag and Drop](/wp-content/uploads/2017/07/Gif8.gif)](/wp-content/uploads/2017/07/Gif8.gif)
+[![Dashboard Improvements: Drag and Drop](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Gif8.gif)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Gif8.gif)
 
 The other widgets on your dashboard will bump up, down, or to one side to accommodate the new widget. If there isn't enough room for a new widget, it moves underneath to preserve screen resolution.
 
@@ -30,7 +30,7 @@ The other widgets on your dashboard will bump up, down, or to one side to accomm
 
 We've also made widget creation much easier. Just click the blue button at the top, create your widget, and drag and resize until it fits with your vision!
 
-[![Dashboard Improvements: Widget Creation](/wp-content/uploads/2017/07/Gif9.gif)](/wp-content/uploads/2017/07/Gif9.gif)
+[![Dashboard Improvements: Widget Creation](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Gif9.gif)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Gif9.gif)
 
 **Auto-Save Changes**
 

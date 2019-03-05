@@ -18,7 +18,7 @@ Docker Monitoring Improvements
 Docker is one of the hottest technologies on the market right now, so the ability to monitor your Docker hosts and containers is increasingly becoming a necessity. We've been fine tuning our Docker agent for several weeks now to create one of our signature Quick Start packages to help you get an even better day-one experience when you install our Docker agent.
 
 Our Docker QuickStart monitoring package now comes pre-configured with analytics (computed and collected metrics), summary dashboards, and alerting policies to quickly identify performance issues right out of the box. In addition, Docker containers are now separated from Docker hosts, so it's easier to organize your containerized infrastructure inside of our product.\
-[![October 2016: Docker Improvements](https://www.metricly.com/wp-content/uploads/2017/07/Docker-Improvments-1024x600.png)](https://www.metricly.com/wp-content/uploads/2017/07/Docker-Improvments.png)
+[![October 2016: Docker Improvements](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Docker-Improvments-1024x600.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Docker-Improvments.png)
 
 Ruby Monitoring Improvements
 ----------------------------
@@ -29,7 +29,7 @@ The Ruby agent can now silently track exceptions and record them as external eve
 
 Check out all the settings in our [Ruby agent setup documentation](https://help.netuitive.com/Content/Datasources/Netuitive/ruby.htm).
 
-[![ruby-improvements](https://www.metricly.com/wp-content/uploads/2017/07/Ruby-Improvements-1024x600.png)](https://www.metricly.com/wp-content/uploads/2017/07/Ruby-Improvements.png)
+[![ruby-improvements](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Ruby-Improvements-1024x600.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Ruby-Improvements.png)
 
 Cassandra Monitoring Improvements
 ---------------------------------
@@ -40,7 +40,7 @@ With the Quick Start package, collected metrics are pared down to only the most 
 
 For more information on Netuitive's Quick Start monitoring packages, visit [this blog](https://www.metricly.com/aws-monitoring-best-practices-using-pre-configured-dashboards).
 
-[![October 2016 - Cassandra Improvements](https://www.metricly.com/wp-content/uploads/2017/07/Cassandra-Improvements.png)](https://www.metricly.com/wp-content/uploads/2017/07/Cassandra-Improvements.png)
+[![October 2016 - Cassandra Improvements](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Cassandra-Improvements.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Cassandra-Improvements.png)
 
 User Scripts Collector
 ----------------------
@@ -49,6 +49,6 @@ We added the User Scripts Collector as a new collector supported by our Linux ag
 
 For more information on how to setup the collector, check out our [User Scripts Collector documentation](https://help.netuitive.com/Content/Integrations/user_scripts_collector.htm).
 
-[![October 2016- User Scripts Collector](https://www.metricly.com/wp-content/uploads/2017/07/User-Scripts-Collector-1024x600.png)](https://www.metricly.com/wp-content/uploads/2017/07/User-Scripts-Collector.png)
+[![October 2016- User Scripts Collector](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/User-Scripts-Collector-1024x600.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/User-Scripts-Collector.png)
 
 Ready to see these features live, in your own environment? Check out our [21-day free trial.](https://www.metricly.com/signup)

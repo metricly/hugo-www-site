@@ -8,7 +8,7 @@ url: "/metricly-cloud-now-live/"
 layout: "single"
 ---
 
-[![Netuitive Cloud](https://www.metricly.com/wp-content/uploads/2016/03/celebrate-e1457534034602.png)](https://www.metricly.com/wp-content/uploads/2016/03/celebrate-e1457534034602.png)
+[![Netuitive Cloud](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/celebrate-e1457534034602.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/celebrate-e1457534034602.png)
 
 Yesterday, February 18, 2015, Netuitive Cloud went live and out of beta!  We are so proud of our development team for hitting this critical milestone on time.
 

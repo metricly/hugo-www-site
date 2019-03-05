@@ -32,12 +32,12 @@ For example, an EC2 instance is one type of element, and a Linux server is anoth
 
 All these characteristics can be represented by various widgets, as shown in the [dashboard](https://www.metricly.com/product/dashboards-and-reports) below:
 
-[![Monitoring Metrics and Elements Dashboard](https://www.metricly.com/wp-content/uploads/2017/07/Dashboard-1024x507.png)](https://www.metricly.com/wp-content/uploads/2017/07/Dashboard.png)
+[![Monitoring Metrics and Elements Dashboard](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Dashboard-1024x507.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Dashboard.png)
 
 Among other out-of-the-box policies, Netuitive offers a policy for elevated network activity on EC2 servers that's based on CPU utilization as well as I/O:
 
 [\
-](https://www.metricly.com/wp-content/uploads/2017/07/Network-policy.png)[![Monitoring Metrics Into Elements: EC2 Network Policy](https://www.metricly.com/wp-content/uploads/2017/07/Network-policy-1024x543.png)](https://www.metricly.com/wp-content/uploads/2017/07/Network-policy.png)\
+](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Network-policy.png)[![Monitoring Metrics Into Elements: EC2 Network Policy](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Network-policy-1024x543.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Network-policy.png)\
 Linux servers have a policy for heavy disk load, based on the average disk queue length.
 
 Finally, the EC2 instance and the Linux server each have a tag, used to label elements. For example, a mix of both EC2 and Linux servers could have the "webserver" tag attached, so they could be monitored as part of a larger group of web servers.

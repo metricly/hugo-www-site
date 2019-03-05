@@ -50,7 +50,7 @@ Netuitive offers an in-depth utilization reporting structure across your entire 
 
 The first is a report showing utilization for each instance over a given time period. This report offers the minimum, maximum, and average utilization values for the time period, plus the 5^th^ and 95^th^ percentile values:
 
-![](https://www.metricly.com/wp-content/uploads/2016/11/UtilizationReport1Edited-1024x507.png)
+![](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/11/UtilizationReport1Edited-1024x507.png)
 
 This report offers a holistic view of the utilization of your entire environment, as well as allowing you to consider more than one utilization metric. Additionally, the metrics take into account the overall capacity of the instance in question by representing utilization as a percentage. Many of Netuitive's computed metrics are also represented in this report, providing valuable additional context.
 
@@ -58,7 +58,7 @@ This report offers a holistic view of the utilization of your entire environment
 
 The second report is a Utilization Boxplot which adds context to your data by offering a slightly different view of the data. Here's an example of the report:
 
-![](https://www.metricly.com/wp-content/uploads/2016/11/UtilizationReport2Edited-1024x529.png)
+![](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/11/UtilizationReport2Edited-1024x529.png)
 
 For more information on this report, [see our blog](https://www.metricly.com/capacity-utilization-with-box-and-whisker-plots-is-the-cats-meow).
 

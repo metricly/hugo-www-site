@@ -15,7 +15,7 @@ AWS GovCloud Monitoring
 
 For security reasons, GovCloud does not provide access to CloudWatch API for purposes of collecting performance metrics via an IAM Role, however access is supported via an IAM User.  The setup is as easy as creating an IAM User and entering it in the Metricly configuration page to start data collection and [behavior learning](/what-is-anomaly-detection), while [pre-configured dashboards and alerting policies](/aws-monitoring-best-practices-using-pre-configured-dashboards) avoid the need for any additional manual configuration on your part. Note that your performance data would leave GovCloud and be processed in the commercial AWS platform.
 
-![AWS GovCloud](/wp-content/uploads/2017/08/AWS-GovCloud-1024x565.jpg)
+![AWS GovCloud](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/08/AWS-GovCloud-1024x565.jpg)
 
 AWS Application Load Balancer (ALB) Support
 -------------------------------------------
@@ -24,7 +24,7 @@ An [Application Load Balancer](https://aws.amazon.com/elasticloadbalancing/appli
 
 The activation is as easy as checking an extra box on the AWS configuration page for the data to start flowing. All of the available native AWS metrics such as Request Count Per Target, and Target Response Time are collected, while we also calculate newly [computed metrics](/computed-monitoring-metrics) to provide additional insights such as Error Percent (number of errors divided by number of requests). Once the data collection begins, our [behavior learning](/what-is-anomaly-detection) starts and our [pre-configured dashboards and alerting policies](/aws-monitoring-best-practices-using-pre-configured-dashboards) avoid the need for any additional manual configuration.
 
-![AWS ALB Monitoring Dashboard](/wp-content/uploads/2017/08/Metricly-ALB-Dashboard-1024x273.png)
+![AWS ALB Monitoring Dashboard](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/08/Metricly-ALB-Dashboard-1024x273.png)
 
 Event Count Column Added on Inventory Page
 ------------------------------------------
@@ -33,6 +33,6 @@ Our inventory page groups all collected metrics by type (ex. AWS ELB, AWS Dynamo
 
 Now, this page also displays the number of events which represent breaches of pre-configured or custom alerting policies. You can drill down to see a list of the specific events and with one more click you can see the deviating metrics that have caused a breach of the alerting policies. This is designed to help you gain an at-a-glance status of your environment's health and offer drill-down troubleshooting capabilities.
 
-![Element Slider view on Click](/wp-content/uploads/2017/08/Metricly-Element-Slider-1024x333.png)
+![Element Slider view on Click](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/08/Metricly-Element-Slider-1024x333.png)
 
-![Event Count column allows for at-a-glance status of your environment's health](/wp-content/uploads/2017/08/Event-Count-Column-1024x299.png)
+![Event Count column allows for at-a-glance status of your environment's health](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/08/Event-Count-Column-1024x299.png)

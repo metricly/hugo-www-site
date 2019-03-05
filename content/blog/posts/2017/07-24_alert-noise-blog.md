@@ -22,7 +22,7 @@ The overwhelming alerts from the Docker migration put us over the edge. We had t
 Reducing Notification Overload
 ------------------------------
 
-![Alert Noise: Events](/wp-content/uploads/2017/07/Events-1-1024x207.png)
+![Alert Noise: Events](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Events-1-1024x207.png)
 
 Our first step was to reevaluate our infrastructure-level policies. "Linux -- Heavy CPU Load" and "Docker Container -- Extensive CPU Throttling" were two of our worst policy offenders. During our Docker migration, we *wanted* our instances to be better utilized, so heavier instance load was not only expected, but also a sign that we were now running the platform more efficiently. Same goes for Docker container throttling -- we've added CPU limits to each Docker service to make sure each service is a good neighbor, so CPU throttling (within reason and not all the time) means we've set a good CPU thresholds.
 
@@ -53,7 +53,7 @@ Event Context and Alert Noise
 
 Event notifications contain useful data like current metric value and which policy conditions were violated, but often this isn't quite enough. Has the metric been close to deviating for a while? Has there been recent metric volatility? Did the metric baseline band tighten recently? All of these questions required following a link into the Metricly UI which is sometimes difficult on mobile or at 3AM when you're still half asleep. To remedy this we introduced a hotly requested feature: notification images.
 
-![Alert Noise: Images in Notifications](/wp-content/uploads/2017/07/Images-in-Notifications-1.png)
+![Alert Noise: Images in Notifications](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Images-in-Notifications-1.png)
 
 These notification images provide at-a-glance context around the event. Formatted images (now available in all notification types) were just what we needed to quickly understand and respond to events regardless of time, notification medium, or who is on call.
 

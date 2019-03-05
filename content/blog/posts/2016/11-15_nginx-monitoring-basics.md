@@ -10,7 +10,7 @@ layout: "single"
 
 When building and maintaining a web application, being aware of the health of your architecture is critical. While application-level monitoring, like exception logging and browser analytics, is incredibly important for understanding the code-level health of your product, service-level monitoring is also critical to understanding the systemic health of your infrastructure. This is doubly true when building web applications because they often rely on a set of services to run properly.
 
-[![NGINX Monitoring: NGINX Logo](https://www.metricly.com/wp-content/uploads/2017/07/NGINXlogo.png)](https://www.metricly.com/wp-content/uploads/2017/07/NGINXlogo.png)
+[![NGINX Monitoring: NGINX Logo](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/NGINXlogo.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/NGINXlogo.png)
 
 Databases, data stores, and caches are all important, but the most important point of potential failure in a web application is the web server itself. [NGINX](https://www.nginx.com/) is one of the most popular web servers in the world (second to Apache across the entire Internet). One of its most useful features is the brevity of the statistical information made available about itself.
 

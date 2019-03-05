@@ -14,21 +14,21 @@ When we talk to DevOps teams, we hear a lot about time -- the limited time a sma
 New at Netuitive: Policy Page UpgradesTurn Policies On and Off with One Click
 -----------------------------------------------------------------------------
 
-![](/wp-content/uploads/2017/07/Enable-Policy-768x461.gif)
+![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Enable-Policy-768x461.gif)
 
 Need to deploy code that could spike an instance's CPU utilization, and want to turn off a specific policy to avoid alert noise during the deploy? The new "Enabled" column allows you to toggle policies on and off with a single click. This column also makes it simple to see which policies are active in your environment at any given time. Once the deploy is done, toggle the policy back on with a single click, and your monitoring is back online! This doesn't affect metrics, either; it just prevents the abnormal metric levels from creating an event.
 
 Easy Notification Identification
 --------------------------------
 
-![Policy Page Improvements: Notifications](/wp-content/uploads/2017/07/Screen-Shot-2017-04-18-at-1.15.53-PM-768x461-1.png)
+![Policy Page Improvements: Notifications](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Screen-Shot-2017-04-18-at-1.15.53-PM-768x461-1.png)
 
 In addition to the "Enabled" column, we've added a column listing the notifications attached to each policy. The icons indicate how you'll be notified when a given policy fires: email, HipChat, OpsGenie, or via a Webhook. Adding notifications is also much easier -- more on that in a moment!
 
 Find Noisy Policies Instantly
 -----------------------------
 
-![Policy Page Improvements: Events](/wp-content/uploads/2017/07/Event-Sorting-768x460-1.gif)
+![Policy Page Improvements: Events](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Event-Sorting-768x460-1.gif)
 
 All of the categories on the policy page are now sortable -- including the "Events" category. This makes [finding noisy policies](/understanding-alert-noise-monitoring) a snap -- just click and sort.
 

@@ -54,7 +54,7 @@ With this in place, you can go ahead and restart the Netuitive Linux agent so th
 
 Once the agent restarts, you can view the stats it is collecting by going to the "[Metrics](https://help.netuitive.com/Content/Metrics/metrics_page.htm)" tab in the Netuitive control panel and filtering for process stats. This can be done by clicking the "Metrics" dropdown next to search, and configuring a filter similar to the screenshot below.
 
-[![Netuitive Process Resource Collector - Configure Filter](https://www.metricly.com/wp-content/uploads/2017/07/Process-Resource-Collector-Configure-Filter-1024x512.png)](https://www.metricly.com/wp-content/uploads/2017/07/Process-Resource-Collector-Configure-Filter.png)
+[![Netuitive Process Resource Collector - Configure Filter](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Process-Resource-Collector-Configure-Filter-1024x512.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Process-Resource-Collector-Configure-Filter.png)
 
 It's as simple as that! You have now configured a simple process to be monitored. Keep in mind that it may take a few minutes to start seeing statistics appear in the dashboard from the newly monitored process.
 

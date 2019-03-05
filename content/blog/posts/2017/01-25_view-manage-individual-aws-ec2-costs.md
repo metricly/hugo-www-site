@@ -11,7 +11,7 @@ layout: "single"
 
 Individual EC2 costs are often very difficult to quantify -- but they also have a huge impact on overall AWS spend. Amazon offers a breakdown of EC2 costs, but the detailed report with resources and tags is so in-depth it's almost unusable.
 
-![](/wp-content/uploads/2017/01/EC2Billingreedited-1024x626.png)
+![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/01/EC2Billingreedited-1024x626.png)
 
 Even if you *could* look through all those rows, further metric data is needed to create actionable insights.
 
@@ -36,11 +36,11 @@ All of these reports use CPU Utilization Percentage data as a default metric. Yo
 
 ### Cost By Element
 
-[![Manage Individual AWS EC2 Costs: Cost By Element](/wp-content/uploads/2017/07/Cost-By-ElementGIF.gif)](/wp-content/uploads/2017/07/Cost-By-ElementGIF.gif)
+[![Manage Individual AWS EC2 Costs: Cost By Element](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Cost-By-ElementGIF.gif)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Cost-By-ElementGIF.gif)
 
 In this view, cost levels are plotted against the left axis, and [utilization](/subtleties-ec2-cpu-utilization) plotted against the right. In the default view, these instance are sorted according to highest cost, with utilization represented by the black dots. Each instance is represented by the shaded bars, and each color is used to represent a different cost source (on-demand instance, data costs, etc.)
 
-[![Manage Individual AWS EC2 Costs: Utilization Metric Highlight](/wp-content/uploads/2017/07/UtilizationRightSide.png)](/wp-content/uploads/2017/07/UtilizationRightSide.png)
+[![Manage Individual AWS EC2 Costs: Utilization Metric Highlight](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/UtilizationRightSide.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/UtilizationRightSide.png)
 
 If you hover over selected elements, the report displays more specific metric values. In this case, ele04 has spent $357.07 total in the last week, with $286.44 being spent on hourly on-demand instance fees.
 
@@ -50,13 +50,13 @@ This report is similar to the Cost by Element Report, except your elements are g
 
 Like the Cost by Element view, the Cost by Instance Type view offers a deeper dive when you hover over an element:
 
-[![Manage Individual AWS EC2 Costs: Cost by Instance Type](/wp-content/uploads/2017/07/Cost-by-InstanceGIF.gif)](/wp-content/uploads/2017/07/Cost-by-InstanceGIF.gif)
+[![Manage Individual AWS EC2 Costs: Cost by Instance Type](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Cost-by-InstanceGIF.gif)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Cost-by-InstanceGIF.gif)
 
 ### Cost By Tag
 
 The cost by tag view is very powerful. By using AWS tags on your EC2 instances or custom tags created in Netuitive you can create your own custom dimension by which to group the costs. For example, if you have a 'department' tag you can show costs allocated per department. Similarly, if you have an environment tag you can see how much you are spending in each environment.
 
-[![Manage Individual AWS EC2 Costs: Cost by Tag](/wp-content/uploads/2017/07/Cost-by-TagEdited-1024x455.gif)](/wp-content/uploads/2017/07/Cost-by-TagEdited.gif)
+[![Manage Individual AWS EC2 Costs: Cost by Tag](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Cost-by-TagEdited-1024x455.gif)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Cost-by-TagEdited.gif)
 
 In addition to the graph, the table above shows how many instances are included under a given tag as well cost and utilization metrics for all elements with that tag.
 
@@ -66,17 +66,17 @@ Here, the EC2s tagged as "UIUX" spend the most, but also utilize far more CPU th
 
 This view shows a Pareto chart of the costs. The bars show cumulative costs by category and the line shows the cumulative percentage. Pareto analysis is useful to find the most significant among a set of factors contributing to a whole -- in our case cost.
 
-[![Manage Individual AWS EC2 Costs: Total Cost Pareto](/wp-content/uploads/2017/07/Pareto1-1024x528.png)](/wp-content/uploads/2017/07/Pareto1.png)
+[![Manage Individual AWS EC2 Costs: Total Cost Pareto](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Pareto1-1024x528.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Pareto1.png)
 
 In the above report, for example, on-demand instances account for 41.72% of cumulative costs. We can also see that just the first three categories contribute nearly 60% of the overall costs. Here's a clearer picture:
 
-[![Manage Individual AWS EC2 Costs: Pareto View](/wp-content/uploads/2017/07/Pareto2-1024x294.png)](/wp-content/uploads/2017/07/Pareto2.png)
+[![Manage Individual AWS EC2 Costs: Pareto View](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Pareto2-1024x294.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Pareto2.png)
 
 ### Cost vs. Utilization Scatter
 
 Like several of the other reports in this group, cost is compared with utilization -- in this case, 95^th^ percentile CPU Utilization Percent.
 
-[![Manage Individual AWS EC2 Costs: Cost vs. Utilization](/wp-content/uploads/2017/07/costvsutilization.jpg)](/wp-content/uploads/2017/07/costvsutilization.jpg)
+[![Manage Individual AWS EC2 Costs: Cost vs. Utilization](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/costvsutilization.jpg)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/costvsutilization.jpg)
 
 Like the Cost By Tag view, in this view you can choose a tag to group the elements. Elements with the same tag are given the same shape (see the key above; aic is a blue diamond while analytics is a purple circle).
 

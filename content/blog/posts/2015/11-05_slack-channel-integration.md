@@ -15,19 +15,19 @@ DevOps teams are moving away from basic email alerts for issues or events and ar
 
 **Our Real Life Example:** We have a multiple web server cluster running the front end for a production application. Netuitive is monitoring all the KPIs for these NGINX servers. Netuitive monitoring is continuously learning and baselining those metrics. A dynamic policy is set in Netuitive to send a single event when *requests per second*, *server error rate*, and *request processing time* are increasing above the learned baselines. When these conditions are reached, Netuitive sends out a notification to Slack, which can then be viewed on the team's Slack Channel.
 
-[![Slack UI (Slack Integration)](https://www.metricly.com/wp-content/uploads/2016/03/SlackUI-1024x407.jpg)](https://www.metricly.com/wp-content/uploads/2016/03/SlackUI.jpg)
+[![Slack UI (Slack Integration)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/SlackUI-1024x407.jpg)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/SlackUI.jpg)
 
 It only takes 15 minutes to enable the integration to pass data between Netuitive and Slack in a production environment. The entire process is completed with two simple steps:
 
 1) Enable the webhook functionality on your Slack administration page.
 
-[![Step 1 (Slack Integration)](https://www.metricly.com/wp-content/uploads/2016/03/Step1.jpg)](https://www.metricly.com/wp-content/uploads/2016/03/Step1.jpg)
+[![Step 1 (Slack Integration)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/Step1.jpg)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/Step1.jpg)
 
 2) Add the sending webhook in Netuitive.
 
 Here you can add any static message or leverage Netutive's system variables to send more dynamic information about the events.
 
-[![Step 2 (Slack Integration)](https://www.metricly.com/wp-content/uploads/2016/03/Step2.jpg)](https://www.metricly.com/wp-content/uploads/2016/03/Step2.jpg)
+[![Step 2 (Slack Integration)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/Step2.jpg)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/Step2.jpg)
 
 While surprisingly quick to set up, the process offers much needed flexibility without creating longer implementation times.
 

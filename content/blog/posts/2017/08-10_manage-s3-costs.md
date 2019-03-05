@@ -25,13 +25,13 @@ The S3 Cost Report is currently offered for Beta testing as part of the Metricly
 
 Once you've logged into your account, you can navigate to the report by clicking on your account name/email address in the top right corner of the application, and selecting ***Beta* **from the list of options.
 
-![S3 Costs: S3 Cost Report Tab](/wp-content/uploads/2017/08/Pasted-image-at-2017_08_15-03_40-PM-1.png)
+![S3 Costs: S3 Cost Report Tab](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/08/Pasted-image-at-2017_08_15-03_40-PM-1.png)
 
 Please note that at time of writing, this report was tagged as a Beta report. This means that the report may change as additional features are added and feedback from initial users of the report is used to improve the usability of the report.
 
 Before we look at the report data itself, let's look at some of the options available to focus on the specific data you're looking at for the specific time and instances you're interested in.
 
-![Manage S3 Costs: Report FIlters](/wp-content/uploads/2017/08/S3-Filtering.png)
+![Manage S3 Costs: Report FIlters](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/08/S3-Filtering.png)
 
 At the top left-hand corner of the screen, you'll have access to the filters for the report itself. The first field is a simple element name filter. The next filter option is *Type*, which may provide additional options. The *More* option allows you to add additional filters, which you can use to segregate your data based on how your organization organizes its [AWS resources](/aws-monitoring-best-practices-using-pre-configured-dashboards).
 
@@ -40,7 +40,7 @@ At the top left-hand corner of the screen, you'll have access to the filters for
 -   Tag
 -   Collector
 
-![Manage S3 Costs: Date Filters](/wp-content/uploads/2017/08/S3-Date-Selection.png)
+![Manage S3 Costs: Date Filters](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/08/S3-Date-Selection.png)
 
 Moving to the top right-hand corner of the report, you'll see the date selector. This allows you to select from a couple of different date ranges. Whether you are looking for data points over a specific period, or just over the last day, you can make that selection here.
 
@@ -66,7 +66,7 @@ For this example, we'll set the report view to show results grouped by day. This
 
 The output from this might look similar to the report shown below.
 
-![Manage S3 Costs: Cost Report](/wp-content/uploads/2017/08/Example-Cost-Report-1024x412.png)
+![Manage S3 Costs: Cost Report](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/08/Example-Cost-Report-1024x412.png)
 
 Based on the graph above, it becomes apparent that the costs associated with storing images are currently higher than the costs of uploading those objects. It also appears that some optimizations may already be in place, evidenced by the decreasing cost of Standard Storage.
 

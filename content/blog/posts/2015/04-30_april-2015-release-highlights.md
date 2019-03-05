@@ -13,7 +13,7 @@ OpsGenie Support
 ----------------
 
 [\
-![OpsGenie Support (New Release)](https://www.metricly.com/wp-content/uploads/2016/03/opsGenie-1024x553.jpg)](https://www.metricly.com/wp-content/uploads/2016/03/opsGenie-1024x553.jpg)
+![OpsGenie Support (New Release)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/opsGenie-1024x553.jpg)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/opsGenie-1024x553.jpg)
 
 OpsGenie makes it easy to send proactive alerts from Netuitive to your team via email, text message, push notification, and voice calls. When you send Netuitive events directly to your team via OpsGenie, simply route the messages according to teams, recipients or tags.
 
@@ -23,7 +23,7 @@ Webhook Support For Automated Response Scripts
 ----------------------------------------------
 
 [\
-![Webhook Auto-Reponse Scripts (New Release)](https://www.metricly.com/wp-content/uploads/2016/03/webhooks-1024x515.jpg)](https://www.metricly.com/wp-content/uploads/2016/03/webhooks-1024x515.jpg)
+![Webhook Auto-Reponse Scripts (New Release)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/webhooks-1024x515.jpg)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/webhooks-1024x515.jpg)
 
 Our latest upgrade allows you to create and define an automated response to policy violations via webhooks. When a policy is violated, Netuitive can now automatically trigger predefined response scripts.
 
@@ -33,7 +33,7 @@ Multiple Metric Time Series Widget
 ----------------------------------
 
 [\
-![Multiple Metric Time Series (New Release)](https://www.metricly.com/wp-content/uploads/2016/03/MultipleMeticTimeSeries.jpg)](https://www.metricly.com/wp-content/uploads/2016/03/MultipleMeticTimeSeries.jpg)
+![Multiple Metric Time Series (New Release)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/MultipleMeticTimeSeries.jpg)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/MultipleMeticTimeSeries.jpg)
 
 Comparing managed elements with Netuitive just got easier. The new Multiple Metric Time Series widget lets you plot time series data for several elements on one graph for at-a-glance comparisons. For example, you could monitor CPU performance for multiple servers on one graph or cross compare CPUs versus network interfaces.
 

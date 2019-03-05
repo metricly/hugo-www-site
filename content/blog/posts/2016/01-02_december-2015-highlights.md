@@ -13,7 +13,7 @@ Netuitive's engineering team finished out 2015 by preparing our service platform
 Enhanced AWS Cost Savings Reports
 ---------------------------------
 
-[![December 2015: costReport](https://www.metricly.com/wp-content/uploads/2016/03/costReport.jpg)](https://www.metricly.com/wp-content/uploads/2016/03/costReport.jpg)
+[![December 2015: costReport](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/costReport.jpg)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/costReport.jpg)
 
 We added new capabilities to our AWS cost savings reports which are activated via our existing AWS Cost datasource at no extra charge. The new reports compare utilization against cost resources and allow you to quickly identify over- and under-provisioned resources and the AWS costs associated with them. For example, you can compare your average, maximum, or 95-percentile EC2 CPU utilization over time by type, size, and tag against the fees that you paid to AWS for the same period.
 
@@ -22,14 +22,14 @@ We added new capabilities to our AWS cost savings reports which are activated vi
 Windows Agent Updates
 ---------------------
 
-[![December 2015: windowsEventGraph (New Releases)](https://www.metricly.com/wp-content/uploads/2016/03/windowsEventGraph.jpg)](https://www.metricly.com/wp-content/uploads/2016/03/windowsEventGraph.jpg)
+[![December 2015: windowsEventGraph (New Releases)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/windowsEventGraph.jpg)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/windowsEventGraph.jpg)
 
 Our open source Windows agent now supports the collection of events available in Windows Event Viewer. The Windows events can be viewed alongside collected events and detected anomalies from other data sources supported by Netuitive. We also added support for Windows metrics in our CPU Usage and Memory Usage widgets that display stacked graphs of key performance indicators and the automated discovery of relationships between EC2s and Windows agents.
 
 API Documentation
 -----------------
 
-[![API Documentation (December 2015 New Releases)](https://www.metricly.com/wp-content/uploads/2016/03/APIDocs.jpg)](https://www.metricly.com/wp-content/uploads/2016/03/APIDocs.jpg)
+[![API Documentation (December 2015 New Releases)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/APIDocs.jpg)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/APIDocs.jpg)
 
 Netuitive's API is now accessible to all users. We just released our API documentation to guide users who are interested to take advantage of the wide range of available API calls. You can find the API documentation in the user guide, which is accessible via Netuitive product user interface or directly at [https://help.netuitive.com](https://help.netuitive.com/). Netuitive's API documentation comes complete with the following:
 
@@ -42,7 +42,7 @@ Each parameter is explained in plain English to de-mystify Netuitive's API for n
 Infrastructure Updates
 ----------------------
 
-[![Infrastructure Updates (December 2015 New Releases)](https://www.metricly.com/wp-content/uploads/2016/03/timeControl.jpg)](https://www.metricly.com/wp-content/uploads/2016/03/timeControl.jpg)
+[![Infrastructure Updates (December 2015 New Releases)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/timeControl.jpg)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/timeControl.jpg)
 
 To deliver more exciting features over the next few months, our engineering team made architectural updates to improve performance and usability include:
 

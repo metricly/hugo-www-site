@@ -45,7 +45,7 @@ Your service should now be running on port 8080, and you should be able to navig
 
 Dropwizard has also started an admin service for us, running on port 8081. You can view this by navigating to http://localhost:8081/ If you click on the Metrics link, you should observe a page similar to the one below.
 
-![Monitor Dropwizard Application: Metrics](/wp-content/uploads/2017/07/Dropwizard-Metrics.png)
+![Monitor Dropwizard Application: Metrics](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Dropwizard-Metrics.png)
 
 If you scroll down the page, you'll find hundreds of different metrics being generated from the JVM, jetty, and logback. It's a great deal of data, and if you knew what you were looking for, you might be able to find it, but it's not very useful in this format.
 
@@ -106,24 +106,24 @@ Monitor Dropwizard Applications In Netuitive
 
 Once your application has been running for a couple of minutes, and you've tried to calculate the endpoint a few more times, head back to your Netuitive account, and navigate to the **Metrics** page.
 
-![Dropwizard Metrics: metric-explorer](/wp-content/uploads/2017/06/Metric-Explorer-1-1024x535.png)
+![Dropwizard Metrics: metric-explorer](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/06/Metric-Explorer-1-1024x535.png)
 
 Let's start by finding our metrics. At the top left-hand side of the page, click on the **Element** dropdown. Search or scroll down the list for the Element Name you set in the configuration\
 file. If you're following this example exactly, it'll be ShippingService. Check the box next to it.
 
-![Monitor Dropwizard: Select Element](/wp-content/uploads/2017/07/Select-Element-1.png)
+![Monitor Dropwizard: Select Element](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Select-Element-1.png)
 
 Next, click on the **Types** dropdown and select *Dropwizard.*
 
- ![Monitor Dropwizard: Select Type](/wp-content/uploads/2017/07/Select-Type-1.png)
+ ![Monitor Dropwizard: Select Type](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Select-Type-1.png)
 
 Finally, click on the **Metrics** dropdown. There are hundreds of [metrics being pushed from the application](https://help.app.netuitive.com/Content/Metrics/metrics_page.htm) every minute, and you can view them all at once if you want. Let's just monitor Dropwizard metrics related to the *calculate* endpoint. Select *Tree* as the view, and then open the com Item by clicking on the plus sign next to it. The tree follows the naming convention in the application so that you can drill all the way down to the *calculateShipping* endpoint.
 
-![Monitor Dropwizard: Select Metrics](/wp-content/uploads/2017/07/Select-Metrics-1.png)
+![Monitor Dropwizard: Select Metrics](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Select-Metrics-1.png)
 
 Let's choose the 1MinuteRate, 99percentile and count. If the charts don't automatically appear, click on the **Render Charts** button.
 
-![Monitor Dropwizard: Metric Charts](/wp-content/uploads/2017/07/Metric-Charts-1.png)
+![Monitor Dropwizard: Metric Charts](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Metric-Charts-1.png)
 
 This metric view is significantly better than the JSON object we saw outputted to the screen earlier, but we still have to do a lot of clicking to get to this point. Let's get a little more organized.
 
@@ -139,11 +139,11 @@ Let's pull up the metrics we found before.
 
 Find the chart which shows the 99th percentile. You can do this by mousing over the title of the chart. Click on the three little dots on the top right corner.
 
-![Monitor Dropwizard: Metric Chart Settings](/wp-content/uploads/2017/07/Metric-Chart-Settings-1.png)
+![Monitor Dropwizard: Metric Chart Settings](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Metric-Chart-Settings-1.png)
 
 The 99th percentile is a measure of response time, and in our case is being measured in milliseconds. For the metric unit, click on the dropdown, and find **milliseconds**. Then, click on **Add To Dashboard**. Select the dashboard which we created in the last step, and choose a descriptive name for this chart. Finally, click on **Save.**
 
-![Monitor Dropwizard: Metrics Dashboard](/wp-content/uploads/2017/07/Metrics-Dashboard-1.png)
+![Monitor Dropwizard: Metrics Dashboard](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Metrics-Dashboard-1.png)
 
 This chart has now been added to your [monitoring dashboard](https://help.app.netuitive.com/Content/Dashboards/dashboards.htm). While we're in the metrics section, though, let's add a couple more metrics to monitor Dropwizard. First, add the count metrics for the calculateShipping endpoint while we have it on the screen.
 
@@ -170,7 +170,7 @@ Analyzing Your Metrics with Netuitive
 
 Once you've returned to your dashboard, you can move each widget around until you find a layout that works for you. From now on, all you need to do is navigate to this page, and you'll have an instant snapshot of how the application is performing.
 
-![Monitor Dropwizard: Dropwizard Dashboard](/wp-content/uploads/2017/07/Dropwizard-Dashboard-1.png)
+![Monitor Dropwizard: Dropwizard Dashboard](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Dropwizard-Dashboard-1.png)
 
 The final thing we're going to do with our data is set up a policy to monitor Dropwizard which will alert us when the count of 400 level responses is higher than 200 level responses. Navigate to the [monitoring Policies](/policy-page-upgrades)page, and click on the **New Policy** button.
 

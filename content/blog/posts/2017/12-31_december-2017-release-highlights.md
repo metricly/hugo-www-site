@@ -17,7 +17,7 @@ AWS Services Cost Report (beta)
 
 The best reports are designed based on user feedback. Our users described a report that would allow them to notice a sudden increase in spending for a given AWS service down to a particular cost allocation tag, before they are surprised to see it in the monthly bill. With this report, they can detect and stop any unnecessary spending as soon as it starts. This report provides both a bird's eye view across all of your services, or allows you to drill down into one service, group by a cost allocation tag, and compare period over period, whether the period is a day, a week or a month. Enjoy using it and please share feedback by opening a ticket under the top-right Help menu. While this report is in Beta, you can access it under the main menu when you click on "beta".
 
-[![AWS Total Cost Report](/wp-content/uploads/2018/02/TotalCost-1024x257.png)](/wp-content/uploads/2018/02/TotalCost.png)
+[![AWS Total Cost Report](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2018/02/TotalCost-1024x257.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2018/02/TotalCost.png)
 
 AWS Total Cost Report
 

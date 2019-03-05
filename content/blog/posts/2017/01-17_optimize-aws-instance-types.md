@@ -26,14 +26,14 @@ Where Do I Find the Report, and How Does it Work?
 
 At the time of writing, the report was still in its beta phase, and could be accessed by logging into your Netuitive account, and clicking on your email address at the top right of the screen. On the dropdown menu which appeared, you would click on **Beta**, and then click on the EC2 Recommendation Report. Alternately, you could navigate to the report directly with this [link](https://app.netuitive.com/#/reports/ec2recommendation/latest).
 
-![Optimize AWS Instances - The EC2 Recommendation Report](/wp-content/uploads/2017/07/Fig1-The-EC2-Recommendation-Report-1024x573-1024x573.png)
+![Optimize AWS Instances - The EC2 Recommendation Report](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Fig1-The-EC2-Recommendation-Report-1024x573-1024x573.png)
 
 How Much Money is the Report Going to Save Me?
 ----------------------------------------------
 
 Fortunately, the answer to this question is presented in bold, right at the top of the report.
 
-[![Optimize AWS Instances: Estimated Savings](/wp-content/uploads/2017/07/Estimated-Savings.png)](/wp-content/uploads/2017/07/Estimated-Savings.png)
+[![Optimize AWS Instances: Estimated Savings](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Estimated-Savings.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Estimated-Savings.png)
 
 The actual amount being saved will vary based on your setup, and will change further based on what priorities you would like your particular deployment strategy to include.
 
@@ -50,13 +50,13 @@ The third section features a graph which shows solid symbols for existing instan
 
 The **Chart View** at the top of the report can be used to toggle between Cost vs. CPU Utilisation, Cost vs. Memory Utilisation, and CPU Utilisation vs. Memory Utilization. The two cost-related views show cost decreases by means of a downward line from the existing to the proposed state of the instance. An upward line represents a cost increase.
 
-[![Optimize AWS Instances: 5 Improvements](/wp-content/uploads/2017/07/Five-Proposed-Improvements.png)](/wp-content/uploads/2017/07/Five-Proposed-Improvements.png)
+[![Optimize AWS Instances: 5 Improvements](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Five-Proposed-Improvements.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Five-Proposed-Improvements.png)
 
 In the above image, five instances are shown. The three instances identified by orange triangles show a decrease in cost based on a type change, with little or no change in processing ability. The two instances identified by blue dots show both a decrease in cost and an improvement in processing utilization by almost 25%.
 
 The fourth and final section of the report lists the instances included in the report. Elements are listed with the current type and cost, and their recommended change is provided with its associated cost and performance metrics. For further analysis, the report can also be downloaded into a csv file.
 
-[![Optimize AWS Instances: Proposed Changes](/wp-content/uploads/2017/07/proposed-changes-1024x95.png)](/wp-content/uploads/2017/07/proposed-changes.png)
+[![Optimize AWS Instances: Proposed Changes](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/proposed-changes-1024x95.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/proposed-changes.png)
 
 Optimizing the Report Based on Needs and Risk Tolerance
 -------------------------------------------------------

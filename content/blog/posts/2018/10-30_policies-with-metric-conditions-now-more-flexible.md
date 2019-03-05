@@ -17,7 +17,7 @@ When building a policy that contains multiple metric conditions, users can now u
 Note that this Match Conditions feature is only available with metric conditions, and is found in the conditions tab in the [Policy Editor](/support/events/policies/policy-editor-2/).
 
 
-![alt text](/wp-content/uploads/2018/10/Match-Conditions-on-Policies-2-768x304.png "post-image")
+![alt text](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2018/10/Match-Conditions-on-Policies-2-768x304.png "post-image")
 
 
 **Bundle Policies With Similar Goals**

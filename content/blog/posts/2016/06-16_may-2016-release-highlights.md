@@ -13,14 +13,14 @@ layout: "single"
 Node.js and PHP Monitoring
 --------------------------
 
-[![statsdsetup](https://www.metricly.com/wp-content/uploads/2016/06/statsdsetup-1024x313.png)](https://www.metricly.com/wp-content/uploads/2016/06/statsdsetup.png)
+[![statsdsetup](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/06/statsdsetup-1024x313.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/06/statsdsetup.png)
 
 Node.js and PHP monitoring can take a large amount of work to configure, with no support when things don't work as intended, while users are left with the burden to install and maintain graphing and alerting tools to derive value from the instrumentation. Good news! Netuitive is now able to monitor Node.js and PHP applications with our Linux agent's embedded StatsD server. Install any client library (we recommend the [node-statsd-client](https://github.com/msiebuhr/node-statsd-client) library for Node.js, and our own library for [PHP](https://github.com/Netuitive/Netuitive_PHP_Client)) along with our agent, and you're well on your way to instrumenting your code. Setup and instrumentation documentation is available on our help site for further research.
 
 Even More AWS Integrations
 --------------------------
 
-[![AWS Integrations](https://www.metricly.com/wp-content/uploads/2016/06/AWS-Integrations.png)](https://www.metricly.com/wp-content/uploads/2016/06/AWS-Integrations.png)
+[![AWS Integrations](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/06/AWS-Integrations.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/06/AWS-Integrations.png)
 
 Continuing with the trend of providing more coverage for your AWS environment, Netuitive rolled out support for four new services:
 
@@ -34,7 +34,7 @@ Our new AWS integrations not only give you robust performance metrics, you also 
 Vertically Resizing Widgets
 ---------------------------
 
-[![may-rnh-widget-height-resizeEDIT2](https://www.metricly.com/wp-content/uploads/2016/06/may-rnh-widget-height-resizeEDIT2-1024x603.png)](https://www.metricly.com/wp-content/uploads/2016/06/may-rnh-widget-height-resizeEDIT2.png)\
+[![may-rnh-widget-height-resizeEDIT2](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/06/may-rnh-widget-height-resizeEDIT2-1024x603.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/06/may-rnh-widget-height-resizeEDIT2.png)\
 We've updated our dashboards to give you more flexibility in displaying widgets. You're now able to vertically resize entire rows. Once you have your first few rows, access the row menu and set your preferred height. Voila, your widgets automatically resize to fit any of the following conditions:
 
 -   **S (Small):** The row will take up 25% of your dashboard's screen.
@@ -45,7 +45,7 @@ We've updated our dashboards to give you more flexibility in displaying widgets.
 New Status Checks
 -----------------
 
-[![may-rnh-http-code](https://www.metricly.com/wp-content/uploads/2016/06/may-rnh-http-code-1024x603.png)](https://www.metricly.com/wp-content/uploads/2016/06/may-rnh-http-code.png)
+[![may-rnh-http-code](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/06/may-rnh-http-code-1024x603.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/06/may-rnh-http-code.png)
 
 Netuitive added status checking support for Sensu and our HTTP Code Collector so instead of watching three or four apps at once, you can log into Netuitive for a consolidated look into the health of your environment.
 

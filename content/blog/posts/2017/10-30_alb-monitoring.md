@@ -28,7 +28,7 @@ ELBs operate at layer four of the OSI model. This layer handles the transportati
 
 ALBs operate at layer seven of the OSI model. By moving the routing logic to a higher layer, the load balancer can determine not only whether it has instances which can handle the request, but also analyze the path to further specify which instances should ultimately receive the request. The image below, taken from the AWS Load Balancer Type Selection page, illustrates this very well.
 
-![Application Load Balancer vs Elastic Load Balancer](/wp-content/uploads/2017/10/1-Application-Load-Balancer-vs-Elastic-Load-Balancer.png)\
+![Application Load Balancer vs Elastic Load Balancer](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/10/1-Application-Load-Balancer-vs-Elastic-Load-Balancer.png)\
 *Application Load Balancer vs Elastic Load Balancer*
 
 Let's look at how to set up an ALB and configure it to route to different instances based on the path in addition to the URL.
@@ -53,17 +53,17 @@ Before we set up the ALB itself, we need to define targets for each of the endpo
 
 A target group is how we are going to identify each ASG from the ALB. Begin by clicking on **Create target group**.
 
-![](/wp-content/uploads/2017/10/2-Create-a-target-group.png)
+![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/10/2-Create-a-target-group.png)
 
 The configuration for a target group is fairly straightforward. Select an appropriate name, and define the protocol, point, target type, and VPC. The Health Check Settings should point to an endpoint which can assess the health of the instance, and return an HTTP 200 OK response if all is well. The Advanced Health Check Settings can also be adjusted, although a discussion of such is beyond the scope of this article.
 
-![](/wp-content/uploads/2017/10/3-Target-Group-Configuration.png)*Target Group Configuration*
+![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/10/3-Target-Group-Configuration.png)*Target Group Configuration*
 
 With the target group set up, you can now associate that target group with the ASGs hosting your application. (I already have mine configured and just need to add the target group.) You can do this by navigating the Auto Scaling Groups page, and selecting the ASG you would like to update. Click on the **Details** section at the bottom of the page, and then click on the **Edit** button.
 
 The Target Groups field should auto-complete with available target groups. Select the appropriate target group for each of your ASGs, and click the **Save** button to update the ASG.
 
-![](/wp-content/uploads/2017/10/4-Assign-Target-Group-ASG.png)\
+![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/10/4-Assign-Target-Group-ASG.png)\
 *Assign Target Group to Each ASG*
 
 With our target groups defined and assigned to each of our ASGs, we can now create our ALB and let it handle logical routing to each group.
@@ -73,7 +73,7 @@ Creating and Configuring Your ALB
 
 From the AWS EC2 Dashboard, navigate to the Load Balancers page under the **LOAD BALANCING** section of the left-hand navigation menu. Click on **Create Load Balancer**.
 
-![](/wp-content/uploads/2017/10/5-Create-Load-Balancer.png)
+![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/10/5-Create-Load-Balancer.png)
 
 When prompted to select the load balance type, select **Application Load Balancer**, and click **Continue**.
 
@@ -83,7 +83,7 @@ If you would like to use SSL/HTTPS with your ALB, I would recommend following th
 
 Specifying that the ALB should use all AZs in your VPC will also make your application more fault-tolerant, which is recommended. Add any additional **tags** required by your organization, and click **Next: Configure Security Settings**.
 
-![](/wp-content/uploads/2017/10/6-Initial-ALB-Setup.png)\
+![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/10/6-Initial-ALB-Setup.png)\
 *Initial ALB Configuration*
 
 Step two of the configuration relates to security certificates and only needs to be configured if you're going to be accepting HTTPS requests. Additional information is available in the AWS Documentation.
@@ -105,7 +105,7 @@ I set up two additional rules for my ALB. The first was for a request using the 
 
 The default rule is always applied last and handles any request sent to the ALB which is not handled by any of the preceding rules. These rules can be edited, but not deleted.
 
-![](/wp-content/uploads/2017/10/7-ALB-Rule-configuration-for-Multiple-Targets.png)*ALB Rule Configuration for Multiple Targets*
+![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/10/7-ALB-Rule-configuration-for-Multiple-Targets.png)*ALB Rule Configuration for Multiple Targets*
 
 Optional Collection of Access Logs for Your ALB
 -----------------------------------------------
@@ -116,7 +116,7 @@ Check the box next to **Enable access logs**, and then enter either an existing 
 
 Completing this step is useful if you need to keep or would like to search your access logs, but is not required for the export of data to Metricly, as described in the next step.
 
-![](/wp-content/uploads/2017/10/8-Enable-Load-Balancer-Access-Log-Collection.png)*Enable Load Balancer Access Log Collection*
+![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/10/8-Enable-Load-Balancer-Access-Log-Collection.png)*Enable Load Balancer Access Log Collection*
 
 Pulling Your ALB Data into Metricly
 -----------------------------------
@@ -125,11 +125,11 @@ If you already have a Metricly account, and your data is being read and analyzed
 
 Once you've set up your integration to AWS, data will start to flow automatically from [AWS CloudWatch](/aws-cloudwatch-metrics-integration) to your Metricly account. Unfortunately, ALB data is not enabled by default, but it's easy to begin collection of this data. Navigate to the [Integrations](http://public.metricly.com/#/integrations) page from the top menu. Select the Amazon Web Services card, as shown below.
 
-![](/wp-content/uploads/2017/10/9-AWS-Metricly-Integration.png)
+![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/10/9-AWS-Metricly-Integration.png)
 
 Once you've entered the Integration Setup page, scan down until you get to the Include Types section. Application Load Balancer was the final item on the list when this article was written, so scroll all the way down the list, and check the box next to **Application Load Balancer.**
 
-![](/wp-content/uploads/2017/10/10-Metricly-Application-Load-Balancer-Integration.png)\
+![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/10/10-Metricly-Application-Load-Balancer-Integration.png)\
 *Check Application Load Balancer as an Included Type*
 
 Available Metrics and Preconfigured Dashboards
@@ -143,7 +143,7 @@ One of the overwhelming benefits of using a service like Metricly is that you do
 
 Navigate to the [Dashboards](http://public.metricly.com/#/dashboards/dashboard-01) page, and look for the AWS ALB Summary. This dashboard provides you with an instant window into the performance of your ALBs, and highlights those with unhealthy hosts, slow response times and high connection counts. (My dashboard is shown below, although, with just a single ALB, it's a little sparse.)
 
-![](/wp-content/uploads/2017/10/11-Preconfigured-AWS-ALB-Dashboard.png)*Preconfigured AWS ALB Summary Dashboard*
+![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/10/11-Preconfigured-AWS-ALB-Dashboard.png)*Preconfigured AWS ALB Summary Dashboard*
 
 Anomaly Detection and Alerts
 ----------------------------
@@ -155,6 +155,6 @@ Finally, Metricly has some preset policies in place which can be triggered if la
 
 To enable notifications for either of these, select one of them, and then click on the Notifications tab on the page which appears.
 
-![](/wp-content/uploads/2017/10/12-Metricly-Alert-Policies.png)*Adding Notifications to the ALB Elevated Error Rate Policy*
+![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/10/12-Metricly-Alert-Policies.png)*Adding Notifications to the ALB Elevated Error Rate Policy*
 
 Click on the **Add Notification** button, and select how you would like to be notified, and how often. Options include email, HipChat, PagerDuty, and Slack, among others.

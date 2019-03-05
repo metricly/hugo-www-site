@@ -34,7 +34,7 @@ This metric (*netuitive.aws.ebs.iopsutilization*) is extremely useful for determ
 
 For example, let's say you have an EBS volume for which Amazon is providing 600 IOPS capacity. Netuitive will add the read ops and write ops metric values to obtain the current total IOPS, and divide by 600 (the given capacity). In this scenario then, a volume with a current IOPS value of 400 and an IOPS capacity of 600 would have an IOPS utilization of 66%.
 
-[![Computed Metrics: IOPS Utilization](https://www.metricly.com/wp-content/uploads/2017/07/IOPSUtilizationPSD.png)](https://www.metricly.com/wp-content/uploads/2017/07/IOPSUtilizationPSD.png)
+[![Computed Metrics: IOPS Utilization](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/IOPSUtilizationPSD.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/IOPSUtilizationPSD.png)
 
 Dale V. Georg, our Principal Data Scientist, [wrote a wonderfully in-depth piece](https://www.metricly.com/iops-calculator-for-ebs-volumes) on EBS IOPS utilization and its usefulness in AWS monitoring. [Read it here](https://www.metricly.com/iops-calculator-for-ebs-volumes) for more detail.
 
@@ -46,7 +46,7 @@ Normalized load is important because different servers can have drastically diff
 
 The load can be averaged over one minute, five minutes, or fifteen minutes, depending upon your use case (the above metric is the five minute average.) Consider a scenario in which you have 32CPUs on a Linux server. A good rule of thumb is that your normalized load average should be no greater than 2 per CPU.  If your load average over 5 minutes in this example was 30, you would have a normalized load average of just under 1, well within the acceptable .
 
-[![normalizedloadlinux](https://www.metricly.com/wp-content/uploads/2017/07/NormalizedLoadLinux.png)](https://www.metricly.com/wp-content/uploads/2017/07/NormalizedLoadLinux.png)
+[![normalizedloadlinux](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/NormalizedLoadLinux.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/NormalizedLoadLinux.png)
 
 The Value of Computed Metrics
 -----------------------------
@@ -61,7 +61,7 @@ Computed metrics are extremely useful for figuring out which parts of your envir
 
 If you combine AWS EC2 utilization data with AWS EC2 cost data, you can map out a cost vs. utilization scatter plot like this:
 
-[![Computed Metrics: AWS Cost vs. Utilization](https://www.metricly.com/wp-content/uploads/2017/07/costvsutilization-1024x691.png)](https://www.metricly.com/wp-content/uploads/2017/07/costvsutilization.png)
+[![Computed Metrics: AWS Cost vs. Utilization](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/costvsutilization-1024x691.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/costvsutilization.png)
 
 As you can see, most of the high-cost EC2s also have high utilization metrics (which is likely good -- you're getting a lot of bang for your buck!) However, there is one all the way to the left which has lower-than-average utilization while spending about the same as the others on the graph. That instance could be an opportunity to save on your AWS without sacrificing performance or capacity.
 
@@ -73,7 +73,7 @@ For example, Netuitive creates a computed metric for the (*netuitive.aws.ebs.que
 
 Here is an example of a policy that uses this metric:
 
-[![Computed Metrics: EBS Queue Length Differential Policy](https://www.metricly.com/wp-content/uploads/2017/07/EBSPOlicy-1024x507.png)](https://www.metricly.com/wp-content/uploads/2017/07/EBSPOlicy.png)
+[![Computed Metrics: EBS Queue Length Differential Policy](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/EBSPOlicy-1024x507.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/EBSPOlicy.png)
 
 As you can see, this policy looks for above-normal values for the queue length differential, as well as above-normal values for average EBS latency (another computed metric!) Using standard monitoring, this type of monitoring policy would be impossible.
 

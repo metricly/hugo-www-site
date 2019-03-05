@@ -13,7 +13,7 @@ Docker has taken the DevOps world by storm, enabling developers and IT admins to
 What is a Docker container?
 ---------------------------
 
-[![small_v-trans](https://www.metricly.com/wp-content/uploads/2016/06/small_v-trans.png)](https://www.metricly.com/wp-content/uploads/2016/06/small_v-trans.png)
+[![small_v-trans](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/06/small_v-trans.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/06/small_v-trans.png)
 
 Docker is a packaging platform for software that relies on containers. Each container uses the Linux host's operating system kernel but self-contains the files that make up its configuration and environmental dependencies. Anything you could install on a server, can also be placed in a Docker container. This allows developers to push software to production environment while preserving the same exact run-time environment used during the development cycle.\
 These containers have become the standard for DevOps teams who need to produce software that is scalable, ships quickly, and can run on any environment.
@@ -23,7 +23,7 @@ What is the difference between a container and a more traditional VM?
 
 Containers are more lightweight and make much more efficient use of the always-limited memory. Because all containers are daemons that leverage the same OS kernel, they start up much faster than VMs, each of which would require its own guest OS. You can see in the graphic below how much "lighter" Docker containers are than traditional VMs:
 
-[![dockergraphic1](https://www.metricly.com/wp-content/uploads/2016/06/dockergraphic1.png)](https://www.metricly.com/wp-content/uploads/2016/06/dockergraphic1.png)
+[![dockergraphic1](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/06/dockergraphic1.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/06/dockergraphic1.png)
 
 What particular monitoring problems do Docker Containers pose?
 --------------------------------------------------------------

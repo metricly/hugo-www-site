@@ -17,7 +17,7 @@ It's important to know the difference between these components before we dive in
 
 This is an example of a basic capacity calculation:
 
-[![Capacity Utilization Metric](https://www.metricly.com/wp-content/uploads/2016/03/Capacity_Utilization_Example1.png)](https://www.metricly.com/wp-content/uploads/2016/03/Capacity_Utilization_Example1.png)
+[![Capacity Utilization Metric](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/Capacity_Utilization_Example1.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/Capacity_Utilization_Example1.png)
 
 It seems simple, but it's when you scale capacity calculations across elements, different units of metrics, and multiple environments, things start to get tricky.  Here are three ways to get capacity utilization wrong:
 

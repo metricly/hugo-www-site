@@ -28,7 +28,7 @@ Note: this article assumes you are already familiar with the AWS Services Cost r
 
 If just one service is showing a large delta and you want to learn more:
 
-![](/wp-content/uploads/2019/01/word-image-3.png "post-image")
+![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2019/01/word-image-3.png "post-image")
 
 AWS Cost Period Comparison Grouped by Service
 
@@ -50,7 +50,7 @@ If you have discovered a significant cost delta but don't know what the money wa
 -   Single-Region Prefix: USW2-EBS:VolumeUsage.gp2
 -   Multi-Region Prefix: USE1-CAN1-AWS-Out-Bytes
 
-![AWS Services Cost Report: Period Comparison Grouped by Usage Type](/wp-content/uploads/2019/01/word-image-4.png)
+![AWS Services Cost Report: Period Comparison Grouped by Usage Type](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2019/01/word-image-4.png)
 
 AWS Services Cost Report: Period Comparison Grouped by Usage Type
 
@@ -67,7 +67,7 @@ Operations are another granular dimension of cost that indicate the specific API
 |  |  | ListMetrics |
 |  |  | PutMetricData |
 
-![AWS Cost Analysis: Period Comparison Grouped by Operation](/wp-content/uploads/2019/01/word-image-5.png)
+![AWS Cost Analysis: Period Comparison Grouped by Operation](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2019/01/word-image-5.png)
 
 AWS Cost Analysis: Period Comparison Grouped by Operation
 

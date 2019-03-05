@@ -7,7 +7,7 @@ category: "Cloud Monitoring"
 url: "/easy-elasticache-monitoring/"
 layout: "single"
 ---
-Amazon ElastiCache was first released as a service of Amazon Web Services (AWS) in August of 2011. The service provides users with a managed in-memory data store that can provide applications with a highly performant data backend for their services. Currently provided using either Memcached or Redis, the service has been shown to help organizations reduce their [![Elasticache Monitoring: AWS Elasticache](/wp-content/uploads/2017/07/ElasticacheIcon.png)](/wp-content/uploads/2017/07/ElasticacheIcon.png)dependence on slower disk-based datastores, and can be leveraged during periods of high traffic to reduce load.
+Amazon ElastiCache was first released as a service of Amazon Web Services (AWS) in August of 2011. The service provides users with a managed in-memory data store that can provide applications with a highly performant data backend for their services. Currently provided using either Memcached or Redis, the service has been shown to help organizations reduce their [![Elasticache Monitoring: AWS Elasticache](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/ElasticacheIcon.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/ElasticacheIcon.png)dependence on slower disk-based datastores, and can be leveraged during periods of high traffic to reduce load.
 
 The configuration of ElastiCache clusters on AWS, and how to monitor their default functionality, has been written about a great deal. This article is going to go beyond that and explore the work the engineers and researchers at Netuitive have been doing. We'll look at Netuitive's Quick Start Package for AWS ElastiCache, and explore their configurations for dashboards, reports and [alert policies](/reduce-alert-multi-criteria-policies). These configurations have been designed to make it easier for engineers and operations support teams to implement industry best practices in Elasticache monitoring, and achieve the most from their organizations' investments in the Amazon ecosystem.
 
@@ -55,7 +55,7 @@ The package containing the metric configurations, policies and pre-defined dashb
 What is a Metric Configuration, and Why Do I Need It?
 -----------------------------------------------------
 
-![Elasticache: Metric Configuration](/wp-content/uploads/2017/07/MetricConfiguration.png)
+![Elasticache: Metric Configuration](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/MetricConfiguration.png)
 
 When you have a single cluster, or a whole army of ElastiCache clusters operating in your AWS account, each will be sending a whole slew of metrics to CloudWatch. The problem with data in CloudWatch isn't a lack of data, but rather knowing how to correlate, aggregate and transform the data into meaningful information which can be reported on and used to set up thresholds and limits for alerting.
 

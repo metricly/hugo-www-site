@@ -47,13 +47,13 @@ It is important to note here that once everything is configured, it is crucial t
 
 After a few minutes, you will start to see NGINX metrics trickle into your Netuitive dashboard. The current information shown in Netuitive will mirror the information on the status page we configured earlier, but the added benefit to Netuitive is that it will also retain the historical process statistics. This allows us to compare information server stats on an hour-by-hour to week-by-week basis.
 
-[![Monitor NGINX with Netuitive: Stats Dashboard](https://www.metricly.com/wp-content/uploads/2017/07/NGINX-Dashboard-1-1024x535.png)](https://www.metricly.com/wp-content/uploads/2017/07/NGINX-Dashboard-1.png)
+[![Monitor NGINX with Netuitive: Stats Dashboard](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/NGINX-Dashboard-1-1024x535.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/NGINX-Dashboard-1.png)
 
 NGINX Stats
 
 As you can see, my little demo site has some pretty low statistics, but as a demonstration I spun up a load test using loadimpact.com. Their free test sends 25 virtual users to a given URL in five  minutes, which we can see clearly and immediately on our Netuitive dashboard.
 
-[![Monitor NGINX with Netuitive: Connection Spike](https://www.metricly.com/wp-content/uploads/2017/07/NGINX-Dashboard-2.png)](https://www.metricly.com/wp-content/uploads/2017/07/NGINX-Dashboard-2.png)
+[![Monitor NGINX with Netuitive: Connection Spike](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/NGINX-Dashboard-2.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/NGINX-Dashboard-2.png)
 
 NGINX Connection Spike
 

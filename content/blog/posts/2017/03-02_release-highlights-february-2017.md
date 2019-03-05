@@ -15,7 +15,7 @@ Netuitive's February 2017 release highlights include improved dashboard layouts,
 New Dashboard Builder Functionality
 -----------------------------------
 
-[![](/wp-content/uploads/2017/07/Gif7.gif)](/wp-content/uploads/2017/07/Gif7.gif)
+[![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Gif7.gif)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Gif7.gif)
 
 Managing dashboard layouts is a whole lot easier! [Dashboard layouts are now completely customizable](/netuitive-dashboard-upgrades). Drag and drop widgets where you please or make your widgets whatever size you like using a familiar window-resizing dragging motion. Widgets can now be added to dashboards and placed anywhere you want using the new, easy-to-use UI.
 
@@ -24,7 +24,7 @@ Don't worry about the layouts of your existing dashboards: in converting all das
 Additional Java Monitoring Options
 ----------------------------------
 
-[![](/wp-content/uploads/2017/07/feb_rnh_java_int.png)](/wp-content/uploads/2017/07/feb_rnh_java_int.png)
+[![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/feb_rnh_java_int.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/feb_rnh_java_int.png)
 
 Your Java code can be easily monitored with the use of our Java agent that is based on the [Zorka open source project](http://zorka.io/) and provides byte-code instrumentation. This approach is most helpful for operations teams who want to monitor Java code down the method call level but don't want to change the source code. Our agent can be installed as a JAR and can monitor your application via the byte-code.
 
@@ -37,7 +37,7 @@ We are now introducing new libraries that allow your developers to instrument th
 Existing Integration Enhancements
 ---------------------------------
 
-[![](/wp-content/uploads/2017/07/feb_rnh_int_upd.png)](/wp-content/uploads/2017/07/feb_rnh_int_upd.png)
+[![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/feb_rnh_int_upd.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/feb_rnh_int_upd.png)
 
 Netuitive's support and engineering teams improved several integrations with existing Quick Start monitoring packages. Read [this blog](/aws-monitoring-best-practices-using-pre-configured-dashboards) to better understand the value and concepts behind our Quick Start monitoring package. They've also worked on several new integrations to expand our ability to monitor more technologies in your environment.
 

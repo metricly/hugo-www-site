@@ -28,7 +28,7 @@ For example, a capacity policy could be configured to activate a webhook that st
 Multiple Metric Time Series Widget
 ----------------------------------
 
-[![Multiple Metric Time Series (New Release)](https://www.metricly.com/wp-content/uploads/2016/03/MultipleMeticTimeSeries.jpg)](https://www.metricly.com/wp-content/uploads/2016/03/MultipleMeticTimeSeries.jpg)
+[![Multiple Metric Time Series (New Release)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/MultipleMeticTimeSeries.jpg)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/MultipleMeticTimeSeries.jpg)
 
 Comparing managed elements with Netuitive just got easier.
 

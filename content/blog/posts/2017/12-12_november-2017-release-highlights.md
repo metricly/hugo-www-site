@@ -18,7 +18,7 @@ Metricly now supports system checks for both the Linux and Windows platforms. Bo
 
 We also wanted to address the false positive or "flapping" issues that commonly plague system checks. The false positive issue is typically due to the frequency at which checks are sent into a system and their expected acknowledgement. Minor latency issues or other delays can cause the checks to fire when the system is operating normally. We introduced a buffer to resolve these issues. For example, if you are expecting a check every 60 seconds, Metricly could be configured to give the system an extra 10 seconds before firing. The buffer is completely customizable, and we have seen this technique work very well for our beta testers.
 
-[![Getting started with Checks](/wp-content/uploads/2017/12/checksScreenShot-1024x442.png)](/wp-content/uploads/2017/12/checksScreenShot.png)
+[![Getting started with Checks](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/12/checksScreenShot-1024x442.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/12/checksScreenShot.png)
 
 Getting started with Checks
 
@@ -29,7 +29,7 @@ Policy Page Improvements: Open and Closed Policies
 
 One of the keys to any good monitoring tool is its ability to help you [quickly locate issues within your system](/product/dashboards-and-reports). We're making it easier than ever for you to see what's happening by adding new "open" and "closed" conditions to the Policies page. If a policy is "open" that means it is firing right now. "Closed" polices are linked to the time control and will show any policy that fired during a selected time range. We added this distinction to help users troubleshoot when issues are happening, and to assist with retrospectives on past problems. You can also view more details on your policies by clicking on its name to see a slide out with information on which elements, metrics, and/or checks are causing issues in your systems. Our new graphs show the history of each element that violated a policy along with color-coded designation of when the policy violation opened (red) and closed (green). For more information on the [policy page improvement](/support/events/policies).
 
-[![View the policy slide out](/wp-content/uploads/2017/08/PolicyPageSlideOut-1024x534.png)](/wp-content/uploads/2017/08/PolicyPageSlideOut.png)
+[![View the policy slide out](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/08/PolicyPageSlideOut-1024x534.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/08/PolicyPageSlideOut.png)
 
 View the policy slide out
 
@@ -40,6 +40,6 @@ This month Metricly introduced usage data tracking in your tenant account. To se
 
 Metricly calculates your usage with hourly snap shots that roll up to daily averages, and finally to a monthly view. Remember that Metricly's billing is only based on the number of hosts (instance hours) being monitored regardless of whether agents are installed on the hosts, other AWS services are being monitored, or whether custom metrics are being collected. Also, Metricly does not double bill for data being collected from EC2s and hosts such as Server (Linux agent) or WinServ (Windows agent), so we've created a separate count called "related". The billing page will show the total usage and then subtract the related elements to give the final billing count.
 
-[![Metering page](/wp-content/uploads/2017/12/billingScreenShot-1024x572.png)](/wp-content/uploads/2017/12/billingScreenShot.png)
+[![Metering page](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/12/billingScreenShot-1024x572.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/12/billingScreenShot.png)
 
 Metering Page in Metricly

@@ -22,7 +22,7 @@ One of the easiest ways to address this is by leveraging AWS services to handle 
 Amazon Route 53
 ---------------
 
-[![Optimize AWS Apps: Route 53](/wp-content/uploads/2017/07/Route53.png)](/wp-content/uploads/2017/07/Route53.png)
+[![Optimize AWS Apps: Route 53](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Route53.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Route53.png)
 
 Using [Amazon Route 53](https://aws.amazon.com/route53/) for DNS can be a powerful tool for application optimization and availability. In the past, admins would set up a DNS server or two, add some records to the zone file to point to application endpoints, and that would be that.
 
@@ -45,7 +45,7 @@ Managing a global DNS infrastructure with multiple levels of indirection via rou
 Elastic Load Balancing
 ----------------------
 
-[![Optimize AWS Apps: Elastic Load Balancer](/wp-content/uploads/2017/07/ElasticLoadBalancer.png)](/wp-content/uploads/2017/07/ElasticLoadBalancer.png)
+[![Optimize AWS Apps: Elastic Load Balancer](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/ElasticLoadBalancer.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/ElasticLoadBalancer.png)
 
 At a more local level, another tool to leverage is the use of Amazon's [Elastic Load Balancing](https://aws.amazon.com/elasticloadbalancing/). ELB automatically scales based on demand, so you don't need to worry about sizing your load balancers to handle large amounts of traffic when it's unnecessary.
 

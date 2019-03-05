@@ -14,7 +14,7 @@ To avoid a deep post-turkey hibernation, Netuitive dug its heels in to finish No
 Metric Explorer Improvements
 ----------------------------
 
-[![November 2016 Releases: Metric Explorer](https://www.metricly.com/wp-content/uploads/2017/07/metric_ex.png)](https://www.metricly.com/wp-content/uploads/2017/07/metric_ex.png)
+[![November 2016 Releases: Metric Explorer](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/metric_ex.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/metric_ex.png)
 
 We made major improvements to our Metric Explorer page in November which have proven to be very popular:
 
@@ -25,7 +25,7 @@ We made major improvements to our Metric Explorer page in November which have pr
 Inventory Explorer Improvements
 -------------------------------
 
-[![November 2016 Releases: Inventory Explorer](https://www.metricly.com/wp-content/uploads/2017/07/inv_ex.png)](https://www.metricly.com/wp-content/uploads/2017/07/inv_ex.png)
+[![November 2016 Releases: Inventory Explorer](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/inv_ex.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/inv_ex.png)
 
 Being a typical landing page in our product, we decided to improve the Inventory Explorer's use and functionality. Improvements include:
 
@@ -37,7 +37,7 @@ Being a typical landing page in our product, we decided to improve the Inventory
 EC2 Recommendation Report Beta
 ------------------------------
 
-[![November 2016 Releases: EC2 Recommendation Report (Beta)](https://www.metricly.com/wp-content/uploads/2017/07/ec2_reco_report.png)](https://www.metricly.com/wp-content/uploads/2017/07/ec2_reco_report.png)
+[![November 2016 Releases: EC2 Recommendation Report (Beta)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/ec2_reco_report.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/ec2_reco_report.png)
 
 The EC2 Recommendation Report is designed to help you reduce EC2 instance running costs by suggesting alternative instance types that may provide a similar level of service at a lower cost. Using characteristics like memory, VCPUs, and hourly instance running costs, the report estimates the memory and number of VCPUs that are actually needed. The graph on the page displays the current state of your element and connects it to the projected state of the instance, allowing you to visualize how large of an improvement you would achieve by following the recommendations.
 
@@ -46,7 +46,7 @@ For additional information about the EC2 Recommendation Report, check out our [d
 Updated Amazon Kinesis Monitoring Package
 -----------------------------------------
 
-[![November 2016 Releases: AWS Kinesis](https://www.metricly.com/wp-content/uploads/2017/07/kinesis1.png)](https://www.metricly.com/wp-content/uploads/2017/07/kinesis1.png)
+[![November 2016 Releases: AWS Kinesis](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/kinesis1.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/kinesis1.png)
 
 Our Amazon Kinesis monitoring package was updated to match the full scope of Netuitive's other Quick Start packages. When you configure Netuitive's AWS integration and begin monitoring AWS Kinesis Streams, you'll now receive pre-configured collected metrics and dashboards to help visualize the performance of your streams along with Netuitive's [computed metrics](https://www.metricly.com/computed-monitoring-metrics) and best practice policy templates.
 

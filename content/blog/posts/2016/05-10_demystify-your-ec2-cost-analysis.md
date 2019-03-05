@@ -28,7 +28,7 @@ Decoding your EC2 Costs
 
 With an EC2 cost report, you can quickly and easily see which of your instances are costing you money -- and which are on the lower-cost end of the spectrum. Take a look at this sample report:
 
-[![EC2 Cost Analysis: DecodingEC2](https://www.metricly.com/wp-content/uploads/2016/05/DecodingEC2.png)](https://www.metricly.com/wp-content/uploads/2016/05/DecodingEC2.png)
+[![EC2 Cost Analysis: DecodingEC2](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/DecodingEC2.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/DecodingEC2.png)
 
 As you can see, one instance to the far left has a high cost -- but its CPU utilization is relatively low. The subsequent two, though, maintain a much higher utilization for the price. This is the tricky thing about EC2 costs -- high prices don't always indicate inefficiency. The EC2 instance you're spending all that money on may actually be extremely efficient, while a less-used instance could be a good place to look for cost savings. That's one reason detailed cost reports are so important to right-sizing your environment.
 
@@ -40,15 +40,15 @@ Here are some common use cases for detailed [AWS cost monitoring](https://www.me
 -   Cost monitoring can help you find instances that are always on, but not reserved. It's possible someone left the instance on -- but it's also possible you need to switch this instance over to a reservation because your environment needs the capacity. Comparing performance data to cost can help you make a well-informed decision.
 -   A Cost vs. Utilization scatter plot is a really easy way to find outliers. These outliers might be a sign that you've created an instance of the wrong type somewhere along the line. Regardless, it's an easy way to see at a glance which instances require immediate attention. See the two outliers below:
 
-[![EC2 Cost Analysis: Use cases](https://www.metricly.com/wp-content/uploads/2016/05/Use-cases.png)](https://www.metricly.com/wp-content/uploads/2016/05/Use-cases.png)
+[![EC2 Cost Analysis: Use cases](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/Use-cases.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/Use-cases.png)
 
 -   You can find costs for a subset of EC2 instances by name, tags or attributes using the Total Cost Pareto Chart.This is really helpful for comparing on-demand and reserve instances:
 
-[![EC2 Cost Analysis: Use Cases 2](https://www.metricly.com/wp-content/uploads/2016/05/Use-Cases-2.png)](https://www.metricly.com/wp-content/uploads/2016/05/Use-Cases-2.png)
+[![EC2 Cost Analysis: Use Cases 2](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/Use-Cases-2.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/Use-Cases-2.png)
 
 -   Need more unique data? Just add custom tags to your instances, and summarize your EC2 cost analysis by tag. For example, is one group spending too much?
 
-[![EC2 Cost Analysis: Use Cases 3](https://www.metricly.com/wp-content/uploads/2016/05/Use-Cases-3.png)](https://www.metricly.com/wp-content/uploads/2016/05/Use-Cases-3.png)
+[![EC2 Cost Analysis: Use Cases 3](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/Use-Cases-3.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/Use-Cases-3.png)
 
 No billing data? No Problem!
 ----------------------------

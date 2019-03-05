@@ -12,7 +12,7 @@ The DevOps movement is [almost a decade old](http://itrevolution.com/the-history
 DevOps in 2017: Serverless Computing
 ------------------------------------
 
-[![DevOps in 2017 Predictions: Serverless](/wp-content/uploads/2017/07/Serverless.png)](/wp-content/uploads/2017/07/Serverless.png)
+[![DevOps in 2017 Predictions: Serverless](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Serverless.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Serverless.png)
 
 [AWS Lambda](/best-practices-aws-lambda-monitoring), which was introduced in 2014, is old news by now. But other serverless computing technologies are taking off, too. [Azure Functions](/introducing-microsoft-azure-integration) became generally available late last year. IBM began aggressively promoting [OpenWhisk](http://openwhisk.incubator.apache.org/) around the same time.
 
@@ -34,7 +34,7 @@ The maturation of hypervisors as solutions for hosting Docker will make it easie
 Optimizing DevOps Communication
 -------------------------------
 
-[![DevOps in 2017 Predictions: DevOps Communication](/wp-content/uploads/2017/07/ChatOps.png)](/wp-content/uploads/2017/07/ChatOps.png)
+[![DevOps in 2017 Predictions: DevOps Communication](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/ChatOps.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/ChatOps.png)
 
 In multiple ways, communication for DevOps teams is on its way to reaching a new level of efficiency in 2017.
 
@@ -56,7 +56,7 @@ The advent of DevOps-friendly next-generation security tools is making integrati
 Embrace of Open Standardization
 -------------------------------
 
-![](/wp-content/uploads/2017/01/large_h-trans-1-1024x352.png)
+![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/01/large_h-trans-1-1024x352.png)
 
 2016 was a somewhat rocky year within the DevOps community when it came to defining open standards and assuring interoperability. Tensions came to a head toward the end of the summer, when talk emerged of forking Docker largely in response to worries that Docker was evolving  too fast to respect community-defined container standards. A fork never materialized, but some people [saw Red Hat's OCID project](http://www.infoworld.com/article/3123412/application-development/new-red-hat-project-looks-a-lot-like-a-docker-fork.html), essentially, as a Docker fork.
 

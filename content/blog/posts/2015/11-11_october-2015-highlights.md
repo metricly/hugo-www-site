@@ -14,7 +14,7 @@ Shared dashboards, maintenance mode, custom email templates, and Memory and CPU 
 Shared Dashboards
 -----------------
 
-[![Shared Dashboards (October Release)](https://www.metricly.com/wp-content/uploads/2016/03/SharedDashboards.jpg)](https://www.metricly.com/wp-content/uploads/2016/03/SharedDashboards.jpg)
+[![Shared Dashboards (October Release)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/SharedDashboards.jpg)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/SharedDashboards.jpg)
 
 Have you spent serious time working on an informative, useful dashboard that visualizes your environment? Only to realize your coworkers can't see it?
 
@@ -23,21 +23,21 @@ Dashboards are meant to be shared and Netuitive now supports private and public 
 Maintenance Mode
 ----------------
 
-[![Maintenance Mode (October Release)](https://www.metricly.com/wp-content/uploads/2016/03/MaintenanceMode.jpg)](https://www.metricly.com/wp-content/uploads/2016/03/MaintenanceMode.jpg)
+[![Maintenance Mode (October Release)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/MaintenanceMode.jpg)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/MaintenanceMode.jpg)
 
 Sometimes you may want to turn off Netuitive's learning engine. Putting an element in maintenance mode is as simple as adding a tag. You can either "turn on" maintenance mode via the Inventory Explorer or by passing a tag through our API. This feature is particularly helpful during maintenance windows or periods of expected volatile behavior (Cyber Monday comes to mind for our online retailers.)
 
 Custom Email Templates
 ----------------------
 
-[![Custom Email Templates (October Release)](https://www.metricly.com/wp-content/uploads/2016/03/CustomEmailTemplates.jpg)](https://www.metricly.com/wp-content/uploads/2016/03/CustomEmailTemplates.jpg)
+[![Custom Email Templates (October Release)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/CustomEmailTemplates.jpg)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/CustomEmailTemplates.jpg)
 
 Email notifications can now support custom templates. Just select Custom from the template drop-down menu, and start creating your own template. These templates are compatible with Freemarker, allowing you to use variables. The benefits of custom templates allow deeper integrations into third party tools. One example is opening JIRA tickets when a policy triggers an event and notification.
 
 Memory and CPU Usage Linux Widgets
 ----------------------------------
 
-[![CPUwidget](https://www.metricly.com/wp-content/uploads/2016/03/CPUwidget.jpg)](https://www.metricly.com/wp-content/uploads/2016/03/CPUwidget.jpg)
+[![CPUwidget](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/CPUwidget.jpg)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/CPUwidget.jpg)
 
 Two new widgets are now available: Memory Usage and CPU Usage. The Memory Usage widget visualizes an element's memory usage over time as a stacked area time series graph, with each color representing states of memory (e.g., free, available, cached, etc.). The CPU Usage widget visualizes an element's CPU usage over time as a stacked area time series graph, with each color representing CPU states (e.g., idle, nice, user, etc.).
 

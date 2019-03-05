@@ -14,7 +14,7 @@ layout: "single"
 What is Anomaly Detection?
 --------------------------
 
-[![Anomaly Detection: Performance Explorer-Bands of Normalcy](https://www.metricly.com/wp-content/uploads/2016/05/PerformanceExplorer-BandsofNormalcy-Sanitized-1024x571.png)](https://www.metricly.com/wp-content/uploads/2016/05/PerformanceExplorer-BandsofNormalcy-Sanitized.png)
+[![Anomaly Detection: Performance Explorer-Bands of Normalcy](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/PerformanceExplorer-BandsofNormalcy-Sanitized-1024x571.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/PerformanceExplorer-BandsofNormalcy-Sanitized.png)
 
 Anomaly detection is the process of identifying observations or patterns of observations in a data set that do not conform to expected behavior. "One of these things is not like the other" -- sounds easy, right? Of course, when you're working with tens of thousands of system and application metrics that change from minute to minute, the game becomes exponentially more difficult. At [Netuitive](https://www.metricly.com/), we tend to characterize this as, "humanly impossible."
 

@@ -27,4 +27,4 @@ It was great speaking with David and hearing his perspective as a cloud architec
 
 Here is a visual to summarize some of the concepts:
 
-[![Blog Visual (Best Practices)](https://www.metricly.com/wp-content/uploads/2016/03/visual.png)](https://www.metricly.com/wp-content/uploads/2016/03/visual.png)
+[![Blog Visual (Best Practices)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/visual.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/visual.png)

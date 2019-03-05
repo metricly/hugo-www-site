@@ -34,12 +34,12 @@ For your convenience, we added custom filters to our EC2 cost savings report. Yo
 
 Here's a common use case: apply the new filters to quickly identify the EC2s that had more than $100 in total weekly cost and less than a maximum (or 95-percentile, or average) utilization of 10% during the same period of a week. You can then export the list in CSV format.
 
-[![EC2 Report Custom Filters](https://www.metricly.com/wp-content/uploads/2017/07/EC2ReportCustomFilters-1024x485.png)](https://www.metricly.com/wp-content/uploads/2017/07/EC2ReportCustomFilters.png)
+[![EC2 Report Custom Filters](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/EC2ReportCustomFilters-1024x485.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/EC2ReportCustomFilters.png)
 
 Control Frequency of Subsequent Notifications
 ---------------------------------------------
 
-[![notifications](https://www.metricly.com/wp-content/uploads/2017/07/Notifications.png)](https://www.metricly.com/wp-content/uploads/2017/07/Notifications.png)
+[![notifications](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Notifications.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Notifications.png)
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 We added new controls that allow you to choose the frequency at which you would like to be renotified when an alerting policy is being violated. Choose from a variety of time frequencies (1 hour, 24 hours, etc.) and channels through which you wish to be notified (ex. email, PagerDuty, Slack, webhook, etc.).  In all, this feature allows you to avoid being flooded with notifications without forgetting about attending to a less critical performance issues.

@@ -32,11 +32,11 @@ In order to provide the optimal user experience, the key metrics to monitor are:
 
 Users, whether external or internal, actual human beings or services, expect your Lambda function to respond with accurate results in a reasonable amount of time. In order to measure this experience, your monitoring approach needs to take into consideration the error count in relation to the number of requests, and the execution time for the function.
 
-[![Lambda Monitoring: AWS Lambda Execution Time](https://www.metricly.com/wp-content/uploads/2017/07/MonitoringLambdaExecutionTime.jpg)](https://www.metricly.com/wp-content/uploads/2017/07/MonitoringLambdaExecutionTime.jpg)
+[![Lambda Monitoring: AWS Lambda Execution Time](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/MonitoringLambdaExecutionTime.jpg)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/MonitoringLambdaExecutionTime.jpg)
 
 In a perfect world, your error count should be at zero, so any increase in the error count should be investigated and rectified as soon as possible. Error cases which are outside the control of the function should be appropriately handled either through validation or by appropriate error handling to prevent an error from being passed back to the calling service.
 
-[![Lambda Monitoring: Error count and rate](https://www.metricly.com/wp-content/uploads/2017/07/MonitoringLambdaErrorCountandRate-1024x335.jpg)](https://www.metricly.com/wp-content/uploads/2017/07/MonitoringLambdaErrorCountandRate.jpg)
+[![Lambda Monitoring: Error count and rate](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/MonitoringLambdaErrorCountandRate-1024x335.jpg)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/MonitoringLambdaErrorCountandRate.jpg)
 
 In addition, you should also monitor whether requests to your Lambda are being throttled due to limits on the number of concurrent functions which can be executed. While these may trigger a retry attempt and succeed, it is important to be aware of this limit and the impact on the end user.
 

@@ -19,7 +19,7 @@ Introduction
 
 DevOps is a term rapidly growing in use by technology & SaaS companies to describe the way in which they work. In essence DevOps culture is used to describe the breaking of barriers between Development and Operations who traditionally have been two separate silos that did not communicate nearly enough. DevOps also combines tools, development practices, and cultural ideas that can increase the velocity of which companies deliver their product. This speed helps to better serve customers and compete more effectively in the market.
 
-![DevOps Culture](/wp-content/uploads/2017/12/Metricly_graphics-development-operations-1024x727.png)
+![DevOps Culture](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/12/Metricly_graphics-development-operations-1024x727.png)
 
 What is DevOps?
 
@@ -34,7 +34,7 @@ Making our Salesbot
 
 Recently, we've added more cloud monitoring consultants to our team who reach out and assist customers through their monitoring journey on our platform. These employees have the choice to work at the office, from home or completely remote. When Marketing alerted us that someone had started a trial with Metricly, this raised a fundamental problem of assigning a dedicated consultant to that signup. We would have to check a list of who was next in line to reach out, and then alert them through the appropriate Slack channel manually so that they could connect with the person trying our platform.
 
-![DevOps Culture at Metricly using slack](/wp-content/uploads/2017/12/Screen-Shot-2017-12-21-at-2.03.59-PM-1024x386.png)
+![DevOps Culture at Metricly using slack](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/12/Screen-Shot-2017-12-21-at-2.03.59-PM-1024x386.png)
 
 Manually alerting through slack
 
@@ -69,7 +69,7 @@ In The End
 
 The bot we created gave a more visible list of who was assigned to the user right within Slack so that everyone knew at a glance who was responsible for reaching out. This was a big win for our remote workers who communicated to the team through Slack almost 100% of the time. This also made Marketing and Sales less of individual silos with more collaboration between the two departments.
 
-![Salesbot DevOps Culture](/wp-content/uploads/2017/12/Screen-Shot-2017-12-21-at-2.09.56-PM.png)
+![Salesbot DevOps Culture](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/12/Screen-Shot-2017-12-21-at-2.09.56-PM.png)
 
 Salesbot in action
 

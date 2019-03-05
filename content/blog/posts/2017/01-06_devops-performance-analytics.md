@@ -39,7 +39,7 @@ Measuring the effectiveness of code changes would be important in any type of so
 
 **Performance Analytics Increase Visibility**
 
-If you want all members of your software delivery team to be able to communicate well, you need to provide them all with the same insights into the delivery pipeline and the state of an application. Performance analytics tools help you do this by collecting and summarizing performance monitoring data on [dashboards](/product/dashboards-and-reports) where any developer or admin can easily view it.  [![Increased Visibility with Performance Analytics](/wp-content/uploads/2017/07/Visibility.png)](/wp-content/uploads/2017/07/Visibility.png)
+If you want all members of your software delivery team to be able to communicate well, you need to provide them all with the same insights into the delivery pipeline and the state of an application. Performance analytics tools help you do this by collecting and summarizing performance monitoring data on [dashboards](/product/dashboards-and-reports) where any developer or admin can easily view it.  [![Increased Visibility with Performance Analytics](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Visibility.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Visibility.png)
 
 This visibility and accessibility is important in a DevOps environment, because without it, only engineers who take the time to collect performance data and analyze it for themselves will know how the application in question is performing. Unless they explicitly discuss their findings with other members of the team, this information will go unnoticed, minimizing visibility.
 
@@ -55,7 +55,7 @@ So, without performance analytics, you get a DevOps workflow where developers an
 
 **Performance Analytics Pinpoint the Root of Problems**
 
-[![Performance Analytics and Root Analysis](/wp-content/uploads/2017/07/RootofProblem.png)](/wp-content/uploads/2017/07/RootofProblem.png)
+[![Performance Analytics and Root Analysis](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/RootofProblem.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/RootofProblem.png)
 
 One of the pitfalls of continuous delivery is this: Changes roll down the pipeline so quickly that it can be difficult to trace a new problem to an individual change. If developers are integrating hundreds of new pieces of code per day, and updates are being pushed into production at the same rapid pace, how do you quickly determine which individual code integration caused a particular problem experienced in production?
 

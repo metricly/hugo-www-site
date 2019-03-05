@@ -61,7 +61,7 @@ If you want to gather additional metrics from your applications, there are two o
 
 Your first choice is to find one of the Integrations that Metricly has developed and provides on their site. An overwhelming benefit of this approach is that any configuration, including access keys, account IDs and the like are included as part of the scripts used in the installation. You can access a full listing of the Integrations available on the [Integrations page](/support/integrations) in the Help Documentation.
 
-![](/wp-content/uploads/2017/11/Screen-Shot-2017-11-08-at-2.43.24-PM-1024x642.png)
+![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/11/Screen-Shot-2017-11-08-at-2.43.24-PM-1024x642.png)
 
 Metricly Integrations Page
 
@@ -81,7 +81,7 @@ Collecting Custom Data
 
 If you've been involved in monitoring, DevOps, or development for the cloud, you've probably already heard about the StatsD daemon developed at Etsy. The Metricly Linux agent includes a StatsD server so that you can implement the StatsD client library in your application, and your custom metrics will be collected by the agent, together with all the system data.
 
-![](/wp-content/uploads/2017/11/Screen-Shot-2017-11-08-at-3.01.17-PM.png)
+![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/11/Screen-Shot-2017-11-08-at-3.01.17-PM.png)
 
 The Metricly documentation explains how to [configure the StatsD integration](/support/integrations/metricly-statsd) to report metrics into your account- if you would like to know more about the inclusion of StatsD within the Metricly Linux Agent, you can find that information, including examples in the support documentation.
 
@@ -94,17 +94,17 @@ To illustrate the ease of setup, I have yet to include the Linux agent on any in
 
 I then [logged into my Metricly account](https://app.netuitive.com/#/login), navigated to [Integrations](https://app.netuitive.com/#/integrations), and clicked on the Linux integration. (Or you can view in our [public demo environment](https://public.netuitive.com/#/integrations).)
 
-![](/wp-content/uploads/2017/11/linux-integration-e1510174373579-300x122.png)
+![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/11/linux-integration-e1510174373579-300x122.png)
 
 The Linux Integration displays my API KEY and provides me a command to run on the instance in question. The screen is shown below, without my private API KEY of course!
 
-![](/wp-content/uploads/2017/11/installing-linux-agent.png)
+![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/11/installing-linux-agent.png)
 
 Install and Configuration Information for the Linux Agent
 
 If I navigate to the [Dashboards page](https://app.netuitive.com/#/dashboards/management) in the Metricly app ([view in public demo](https://public.netuitive.com/#/dashboards/management)), I have a dashboard available called ***Linux Summary***, created by <research@metricly.com>. Let's check it out and see what I get. Before looking at the dashboard, I generated a few calls to the web service. Below are the results, without any configuration other than that mentioned above.
 
-![](/wp-content/uploads/2017/11/linux-dashboard.png)
+![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/11/linux-dashboard.png)
 
 Preconfigured Dashboard for Linux Servers
 
@@ -121,13 +121,13 @@ The default dashboard includes:
 
 Let's leave this dashboard and navigate to the [Policies page](https://app.netuitive.com/#/policies) to see what other preconfigured tools we have by default. ([View in public demo](https://public.netuitive.com/#/policies).) If you scroll down, you should see a list of Linux-related policies.
 
-![](/wp-content/uploads/2017/11/automatic-linux-policies.png)
+![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/11/automatic-linux-policies.png)
 
 Policies Configured Automatically for Linux Instances
 
 If we click into one of these policies, we can learn more, and set up a notification to alert us when a critical error is encountered. Let's click on ***Linux -- CPU Threshold Exceeded***. This policy has a red dot indicating that it is a critical event, rather than an informational event.
 
-![](/wp-content/uploads/2017/11/edit-policy-in-metricly.png)
+![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/11/edit-policy-in-metricly.png)
 
 View Details and Editing a Critical Event Policy
 

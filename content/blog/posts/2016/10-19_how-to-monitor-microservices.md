@@ -53,7 +53,7 @@ The team had to be very deliberate here, because any degradation could cause ups
 
 Once we had the inputs and outputs documented, we needed to work out the data collection and consolidation infrastructure. Because the Netuitive agent integrates so seamlessly with StatsD, we elected to use that to consolidate the data. (Netuitive's Linux agent is also able to act as a StatsD server, which helps if an organization wants to avoid the need for maintaining a dedicated StatsD server. In this case, we already had a dedicated StatsD server, so we used it.) Here's how the flow of data looks:
 
-[![microservices-monitoring-monitoring-flowpng](https://www.metricly.com/wp-content/uploads/2017/07/Microservices-Monitoring-Monitoring-FlowPNG-1024x275.png)](https://www.metricly.com/wp-content/uploads/2017/07/Microservices-Monitoring-Monitoring-FlowPNG.png)
+[![microservices-monitoring-monitoring-flowpng](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Microservices-Monitoring-Monitoring-FlowPNG-1024x275.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Microservices-Monitoring-Monitoring-FlowPNG.png)
 
 Monitoring Microservices with Netuitive
 ---------------------------------------

@@ -13,7 +13,7 @@ Cloud environments are significantly more dynamic than their predecessors and th
 
 To address this, Netuitive has created **dynamic policies** for cloud monitoring and advanced anomaly detection. The combination of industry best practices in systems administration and behavior learning technology helps automate common monitoring tasks, reduce noise, and provide earlier notification of performance issues.
 
-[![Dynamic Policies Chart](https://www.metricly.com/wp-content/uploads/2016/03/dynamic-policies-anomaly-detection.png)](https://www.metricly.com/wp-content/uploads/2016/03/dynamic-policies-anomaly-detection.png)
+[![Dynamic Policies Chart](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/dynamic-policies-anomaly-detection.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/dynamic-policies-anomaly-detection.png)
 
 Below we've answered common questions about Netuitive's dynamic policies and behavior learning technology.
 
