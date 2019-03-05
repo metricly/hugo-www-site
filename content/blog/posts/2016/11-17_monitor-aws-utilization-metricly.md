@@ -33,11 +33,11 @@ One metric can't explain an entire environment's utilization. Monitoring CPU uti
 
 For example, you could have one EC2 that averages 1.5MB/second received via the network. By itself, that metric doesn't tell the full story -- you need additional information on the capacity of the server's network connection, as well as the larger environment, to determine whether an adjustment is needed.
 
-Netuitive created a system of computed metrics designed to meet this need. These computed metrics offer an additional layer of context to commonly used monitoring metrics, to allow users to make more informed capacity decisions. For more on these unique metrics and the value they add to your monitoring, [read this blog](https://www.metricly.com/the-power-of-computed-metrics).
+Netuitive created a system of computed metrics designed to meet this need. These computed metrics offer an additional layer of context to commonly used monitoring metrics, to allow users to make more informed capacity decisions. For more on these unique metrics and the value they add to your monitoring, [read this blog](/the-power-of-computed-metrics).
 
 **3) Ignoring external factors**
 
-Monitoring utilization metrics without understanding the outside factors that impact utilization is like driving a car with blinders on.. You can see straight ahead, but are completely oblivious to other outside circumstances. In one case, a Netuitive user spent hours trying to reconcile discrepancies in utilization and performance. In the end, it wasn't a capacity or utilization issue at all, but an internal AWS feature that had been causing the problem the whole time. (We wrote a [short piece on the issue](https://www.metricly.com/subtleties-ec2-cpu-utilization) if you want to read more about it.) Ignoring small factors like these can have a huge impact on your system's performance.
+Monitoring utilization metrics without understanding the outside factors that impact utilization is like driving a car with blinders on.. You can see straight ahead, but are completely oblivious to other outside circumstances. In one case, a Netuitive user spent hours trying to reconcile discrepancies in utilization and performance. In the end, it wasn't a capacity or utilization issue at all, but an internal AWS feature that had been causing the problem the whole time. (We wrote a [short piece on the issue](/subtleties-ec2-cpu-utilization) if you want to read more about it.) Ignoring small factors like these can have a huge impact on your system's performance.
 
 Netuitive's AWS Utilization Reports
 -----------------------------------
@@ -50,7 +50,7 @@ Netuitive offers an in-depth utilization reporting structure across your entire 
 
 The first is a report showing utilization for each instance over a given time period. This report offers the minimum, maximum, and average utilization values for the time period, plus the 5^th^ and 95^th^ percentile values:
 
-![](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/11/UtilizationReport1Edited-1024x507.png)
+![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/11/UtilizationReport1Edited-1024x507.png)
 
 This report offers a holistic view of the utilization of your entire environment, as well as allowing you to consider more than one utilization metric. Additionally, the metrics take into account the overall capacity of the instance in question by representing utilization as a percentage. Many of Netuitive's computed metrics are also represented in this report, providing valuable additional context.
 
@@ -58,16 +58,16 @@ This report offers a holistic view of the utilization of your entire environment
 
 The second report is a Utilization Boxplot which adds context to your data by offering a slightly different view of the data. Here's an example of the report:
 
-![](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/11/UtilizationReport2Edited-1024x529.png)
+![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/11/UtilizationReport2Edited-1024x529.png)
 
-For more information on this report, [see our blog](https://www.metricly.com/capacity-utilization-with-box-and-whisker-plots-is-the-cats-meow).
+For more information on this report, [see our blog](/capacity-utilization-with-box-and-whisker-plots-is-the-cats-meow).
 
 Like the standard utilization report, the boxplot report provides utilization metrics within the broader context of each instance's overall capacity.
 
 AWS Utilization Policies and Alerts
 -----------------------------------
 
-Smart policies are the final step to optimizing your utilization monitoring. As we noted above, utilization monitoring will not be successful if you're relying on one metric alone. This is where Netuitive's [multi-criteria policies](https://www.metricly.com/reduce-alert-multi-criteria-policies) come in.
+Smart policies are the final step to optimizing your utilization monitoring. As we noted above, utilization monitoring will not be successful if you're relying on one metric alone. This is where Netuitive's [multi-criteria policies](/reduce-alert-multi-criteria-policies) come in.
 
 Netuitive has an out-of-the-box policy for when an EC2 is experiencing elevated CPU utilization, but normal network activity (reads and writes). Contrary to traditional monitoring, which alarms whenever CPU utilization breaches a certain threshold, this policy bases its thresholds on contextual bands that conform to the normal behavior of the instance. If your EC2 usually operates close to capacity (75% utilization), the policy may fire at 85% utilization or above, while an instance that usually operates at 20% utilization would cause it to fire at a much lower level.
 
@@ -76,4 +76,4 @@ Additionally, this policy only fires when CPU utilization is abnormal AND networ
 Netuitive Utilization Reports and Free Trial
 --------------------------------------------
 
-You can access these reports and others in a 21-day, fully-featured [free trial](https://www.metricly.com/signup) of Netuitive.
+You can access these reports and others in a 21-day, fully-featured [free trial](/signup) of Netuitive.

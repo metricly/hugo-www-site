@@ -17,7 +17,7 @@ It's important to know the difference between these components before we dive in
 
 This is an example of a basic capacity calculation:
 
-[![Capacity Utilization Metric](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/Capacity_Utilization_Example1.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/Capacity_Utilization_Example1.png)
+[![Capacity Utilization Metric](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/Capacity_Utilization_Example1.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/Capacity_Utilization_Example1.png)
 
 It seems simple, but it's when you scale capacity calculations across elements, different units of metrics, and multiple environments, things start to get tricky.  Here are three ways to get capacity utilization wrong:
 
@@ -45,7 +45,7 @@ Taking this a step further, you can create another computed metric to better und
 
 For example, seeing a processor run queue length more than double the number of CPUs indicates a pending capacity issue. While this is not the high watermark for the processor run queue, it is a good indicator you are running out of CPU.
 
-These are easy pitfalls to avoid when determining your systems capacity utilization, however, it's easy to fall into old habits of over-provisioning infrastructure, applications, and services; but this doesn't always protect us from issues. You can avoid this by creating a capacity plan, deploying some real-time monitoring solutions like [Netuitive](https://www.metricly.com/), and effectively right-sizing your environment.
+These are easy pitfalls to avoid when determining your systems capacity utilization, however, it's easy to fall into old habits of over-provisioning infrastructure, applications, and services; but this doesn't always protect us from issues. You can avoid this by creating a capacity plan, deploying some real-time monitoring solutions like [Netuitive](/), and effectively right-sizing your environment.
 
 * * * * *\
-*See how real-time monitoring with Netuitive can help you right-size your environment. [Try us free for 21 days.](https://www.metricly.com/signup)*
+*See how real-time monitoring with Netuitive can help you right-size your environment. [Try us free for 21 days.](/signup)*

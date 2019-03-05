@@ -14,14 +14,14 @@ In July, we are highlighting Netuitive's new Java agent, the revamped policy edi
 JVM Monitoring
 --------------
 
-[![Java Monitoring (July Release)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/JavaMonitoring.jpg)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/JavaMonitoring.jpg)
+[![Java Monitoring (July Release)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/JavaMonitoring.jpg)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/JavaMonitoring.jpg)
 
 Netuitive's Java agent is a programmable bytecode instrumentation utility designed to collect data from Java applications. The agent enables the collection of Java Virtual Machine (JVM) runtime system metrics such as CPU, heap, Garbage Collection, threads & classes count, and application component method performance statistics such as number of method calls and corresponding execution time. These metrics provide vital insight into performance levels, allowing monitoring of applications and system resources. The agent is designed for quick installation and configuration.
 
 Policy Editor
 -------------
 
-[![Policy Editor (July Release)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/policyEditor-1024x586.jpg)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/policyEditor-1024x586.jpg)
+[![Policy Editor (July Release)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/policyEditor-1024x586.jpg)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/policyEditor-1024x586.jpg)
 
 The new and improved policy editor features a fresh look and feel to allow intuitive policy creation. This editor can also update the Netuitive out-of-the-box policies that are based on best practices compiled over the years for various domains. The editor now has separate tabs for the four components of policies: scope, conditions, actions, and description. In addition to the usability improvements, three new features have been added:
 
@@ -32,7 +32,7 @@ The new and improved policy editor features a fresh look and feel to allow intui
 AWS Auto Scaling Group Support
 ------------------------------
 
-[![AutoScaling Group Support (July Release)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/AutoScaling-Group-Support-1024x518.jpg)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/AutoScaling-Group-Support-1024x518.jpg)
+[![AutoScaling Group Support (July Release)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/AutoScaling-Group-Support-1024x518.jpg)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/AutoScaling-Group-Support-1024x518.jpg)
 
 Auto Scaling groups (ASG) for AWS allow automatic scaling of computing needs according to specified conditions (policies, schedules, and health checks.) The user also sets a maximum and minimum number of EC2s that a group supports.
 
@@ -41,4 +41,4 @@ Netuitive collects measurements from EC2s that are members of an Auto Scale grou
 An ASG element will automatically show up in the inventory page if the user has an ASG in their AWS account. This new element can be added to a policy or as a group status widget, which provides a visual update on the size and condition of EC2s.
 
 * * * * *\
-Want to see these release highlights in action? We offer a 21-day, [free trial of Netuitive.](https://www.metricly.com/signup)
+Want to see these release highlights in action? We offer a 21-day, [free trial of Netuitive.](/signup)

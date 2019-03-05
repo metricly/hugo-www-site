@@ -8,7 +8,7 @@ url: "/metricly-cloud-now-live/"
 layout: "single"
 ---
 
-[![Netuitive Cloud](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/celebrate-e1457534034602.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/celebrate-e1457534034602.png)
+[![Netuitive Cloud](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/celebrate-e1457534034602.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/celebrate-e1457534034602.png)
 
 Yesterday, February 18, 2015, Netuitive Cloud went live and out of beta!  We are so proud of our development team for hitting this critical milestone on time.
 
@@ -46,4 +46,4 @@ A special thank you goes out to our beta users that helped us develop the produc
 
 Cheers to our team and welcome to our new customers and users!  We look forward to working with you as we continue to enhance the Netuitive Cloud adaptive monitoring solution.
 
-As part of our launch to general availability, we are now offering a 21-day free trial of Netuitive Cloud. **[Sign up today and see what we're all about.](https://www.metricly.com/signup "Sign Up for Netuitive Cloud")**
+As part of our launch to general availability, we are now offering a 21-day free trial of Netuitive Cloud. **[Sign up today and see what we're all about.](/signup "Sign Up for Netuitive Cloud")**

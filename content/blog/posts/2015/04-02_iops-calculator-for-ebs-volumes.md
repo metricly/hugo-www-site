@@ -9,13 +9,13 @@ layout: "single"
 ---
 When looking at an EBS volume in Metricly, you'll notice that in addition to the metrics we collect from AWS, we also create a number of computed metrics, one of which is *netuitive.aws.ebs.iopsutilization*.  Simply put, IOPS Utilization compares the current number of IOPS that the disk is performing against the total IOPS capacity, and expresses this as a percentage. Thus, if you are currently running 1050 IOPS against a volume whose capacity is 3000 IOPS, the IOPS Utilization would be 35%. Here's an example of a graph of IOPS Utilization Percent in Metricly.
 
-[![IOPS Utilization Blog 1](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/IOPSblog1.jpg)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/IOPSblog1.jpg)
+[![IOPS Utilization Blog 1](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/IOPSblog1.jpg)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/IOPSblog1.jpg)
 
 IOPS Utilization is an important metric, as it allows you to identify under- and over-utilized EBS volumes, which in turn can help you pinpoint cost-saving opportunities. We'll see how in a moment, but first let's look at how the percentage for IOPS Utilization is arrived at. This involves two components: 1) the current IOPS being processed by the volume, and 2) the IOPS capacity of the volume.
 
 See also:\
-[Introduction to EBS Burst Balance](https://www.metricly.com/ebs-burst-balance-aws)\
-[Using Lambda To Automate EBS Burst Balance](https://www.metricly.com/lambda-automate-ebs-burst-balance)
+[Introduction to EBS Burst Balance](/ebs-burst-balance-aws)\
+[Using Lambda To Automate EBS Burst Balance](/lambda-automate-ebs-burst-balance)
 
 Calculating Current IOPS from AWS
 ---------------------------------
@@ -26,7 +26,7 @@ The current number of IOPS being performed by the disk is fairly straightforward
 
 The result of this computation can be seen in the *netuitive.aws.ebs.iops* metric. The screenshot below shows Volume Read Ops, Volume Write Ops, and the resultant IOPS computation for a sample EBS volume.
 
-[![IOPS Utilization Blog 2](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/IOPSblog2.jpg)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/IOPSblog2.jpg)
+[![IOPS Utilization Blog 2](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/IOPSblog2.jpg)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/IOPSblog2.jpg)
 
 Determining IOPS Capacity of EBS Volume
 ---------------------------------------
@@ -50,7 +50,7 @@ Identifying Cost Saving Opportunities
 
 As mentioned earlier, understanding the utilization of your EBS volumes can lead to cost savings through identification of under-utilized volumes, specifically provisioned volumes. With provisioned volumes, you are paying for the number of provisioned IOPS, so not running at or close to 100% means that you are wasting money. Using Metricly's Utilization Report, you can filter to show EBS provisioned volumes and then sort by average utilization to quickly and easily identify cost-saving opportunities. Here's a sample Utilization Report sorted by average utilization:
 
-[![IOPS Utilization Blog 3](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/IOPSblog3.jpg)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/IOPSblog3.jpg)
+[![IOPS Utilization Blog 3](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/IOPSblog3.jpg)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/IOPSblog3.jpg)
 
 Once you've identified these under-utilized volumes, you may decide to re-configure them to reduce the number of provisioned IOPS, or to consolidate and decommission some of the under-utilized volumes, or even switch some of them to different volume types (general purpose or standard) that may be more appropriate and cost-efficient for your usage. All of these strategies will help you save money.
 
@@ -63,4 +63,4 @@ The queue length differential is a computed metric which compares the EBS volume
 
 * * * * *
 
-*Start using Metricly to monitor your EBS volumes today -- we offer a [21-day, no-obligation free trial.](https://www.metricly.com/signup)*
+*Start using Metricly to monitor your EBS volumes today -- we offer a [21-day, no-obligation free trial.](/signup)*

@@ -19,7 +19,7 @@ We agreed that the challenge then becomes how do you scale as your environment g
 
 The current practice seems to project graphs on the operations center walls, and configure sophisticated triage and escalation alert policies.
 
-Similar to a [blog ](https://www.metricly.com/devops-moving-advanced-analytics)that [Betsy Nichols](https://www.metricly.com/about-us), our chief data scientist, wrote based on a similar consultation with [Gene Kim](http://www.realgenekim.me/) --- to tackle these scaling challenges, the topic of analytics has been gradually bubbling up at conferences such as [Monitorama ](http://monitorama.com/)and pursued in open source projects such as [Skyline](https://github.com/etsy/skyline).
+Similar to a [blog ](/devops-moving-advanced-analytics)that [Betsy Nichols](/about-us), our chief data scientist, wrote based on a similar consultation with [Gene Kim](http://www.realgenekim.me/) --- to tackle these scaling challenges, the topic of analytics has been gradually bubbling up at conferences such as [Monitorama ](http://monitorama.com/)and pursued in open source projects such as [Skyline](https://github.com/etsy/skyline).
 
 After all, DevOps is about automation so why not automate the process of performance analysis and capacity management using algorithms?
 
@@ -27,4 +27,4 @@ It was great speaking with David and hearing his perspective as a cloud architec
 
 Here is a visual to summarize some of the concepts:
 
-[![Blog Visual (Best Practices)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/visual.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/visual.png)
+[![Blog Visual (Best Practices)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/visual.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/visual.png)

@@ -24,4 +24,4 @@ For more insight, check out this infographic illustrating survey results on what
 *(1) Gartner -- "Data Growth Demands a Single, Architected IT Operations Analytics Platform" -- published: 30 September 2013*
 
 [\
-![Big Data Infographic](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/infoGraphic-276x1024.jpg)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/infoGraphic-276x1024.jpg)
+![Big Data Infographic](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/infoGraphic-276x1024.jpg)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/infoGraphic-276x1024.jpg)

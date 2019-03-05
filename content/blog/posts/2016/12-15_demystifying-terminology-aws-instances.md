@@ -9,19 +9,19 @@ layout: "single"
 ---
 
 
-So you've got an app ready for launch, and unlike in the past where you simply ran it on-premises, this time you want to try the cloud. You know AWS is the leading cloud platform, and decide to give it a go. The first thing you'll bump into as you learn about AWS is the various options of cloud instances available with AWS EC2. This post highlights the various options you have with AWS instances, so you can make an informed decision about which of them should be part of [your first cloud stack with AWS](https://www.metricly.com/getting-started-netuitive-aws).
+So you've got an app ready for launch, and unlike in the past where you simply ran it on-premises, this time you want to try the cloud. You know AWS is the leading cloud platform, and decide to give it a go. The first thing you'll bump into as you learn about AWS is the various options of cloud instances available with AWS EC2. This post highlights the various options you have with AWS instances, so you can make an informed decision about which of them should be part of [your first cloud stack with AWS](/getting-started-netuitive-aws).
 
-[![AWS Instance Cost Graphic](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Cloud-Graphictransparent.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Cloud-Graphictransparent.png)
+[![AWS Instance Cost Graphic](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Cloud-Graphictransparent.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Cloud-Graphictransparent.png)
 
 What Is An Instance?
 --------------------
 
-An AWS EC2 Instance is nothing but a server in the cloud. Just like your physical server, it comes with varying specs for compute, memory, networking, and storage. There are a total of [11 instance types](https://aws.amazon.com/ec2/instance-types/) for all types of workloads. Choosing between these instance types is a topic for another post. Here, we'll cover something even more basic---understanding how to [strike the right balance between performance and price](https://www.metricly.com/webinars/aws-costs-application-performance) of AWS instances.
+An AWS EC2 Instance is nothing but a server in the cloud. Just like your physical server, it comes with varying specs for compute, memory, networking, and storage. There are a total of [11 instance types](https://aws.amazon.com/ec2/instance-types/) for all types of workloads. Choosing between these instance types is a topic for another post. Here, we'll cover something even more basic---understanding how to [strike the right balance between performance and price](/webinars/aws-costs-application-performance) of AWS instances.
 
 Types of AWS Instances
 ----------------------
 
-[![AWS Instances: EC2 Types](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/ec2.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/ec2.png)
+[![AWS Instances: EC2 Types](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/ec2.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/ec2.png)
 
 #### Regular EC2 Instances
 
@@ -35,7 +35,7 @@ These are virtual private cloud (VPC) instances that are blocked for use by a si
 
 Dedicated Hosts enable the same level of isolation as Dedicated Instances, but additionally, they give you visibility into the physical host. This is required if your applications use libraries and frameworks with licensing terms that restrict them to a single server. Or some applications may need to be hosted on a dedicated server for compliance purposes. In these cases, a Dedicated Instance is your only option.
 
-Dedicated Instances are billed by the number of instances, whereas Dedicated Hosts are billed by the host, irrespective of the number of instances you run on each host. With that in mind, we're ready to move to the next important section, understanding the various [pricing options](https://www.metricly.com/demystify-your-ec2-cost-analysis) for AWS instances.
+Dedicated Instances are billed by the number of instances, whereas Dedicated Hosts are billed by the host, irrespective of the number of instances you run on each host. With that in mind, we're ready to move to the next important section, understanding the various [pricing options](/demystify-your-ec2-cost-analysis) for AWS instances.
 
 AWS Instance Pricing
 --------------------
@@ -75,4 +75,4 @@ The next biggest reason to move to the cloud is to save on server costs. If this
 
 If you're affected by the "noisy neighbor" syndrome, Dedicated Instances are a great option for mature apps that need consistent performance. For large enterprises that need to comply with regulations or licensing terms, Dedicated Hosts are the way to go.
 
-The right place to start is to list your application's requirements. You can then [consider all the AWS options](https://www.metricly.com/aws-monitoring-best-practices-using-pre-configured-dashboards), and mix and match them to your liking. The best part is that you're never really locked in. Even if you don't need your Dedicated Hosts that are reserved, you can always sell them on the AWS marketplace. Unlike your on-prem servers, AWS gives you a lot of room to expand or shrink your cloud as your requirements change.
+The right place to start is to list your application's requirements. You can then [consider all the AWS options](/aws-monitoring-best-practices-using-pre-configured-dashboards), and mix and match them to your liking. The best part is that you're never really locked in. Even if you don't need your Dedicated Hosts that are reserved, you can always sell them on the AWS marketplace. Unlike your on-prem servers, AWS gives you a lot of room to expand or shrink your cloud as your requirements change.

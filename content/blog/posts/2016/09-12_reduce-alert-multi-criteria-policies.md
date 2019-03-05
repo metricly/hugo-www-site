@@ -18,11 +18,11 @@ In Netuitive, multi-criteria alerting policies contain sets of conditions that g
 
 For instance, Netuitive has a default policy to alert on elevated browser response time. This policy applies two conditions to a single metric, *netuitive.rum.totalresponsetime*. The two conditions are that the metric should not have an upper deviation from its baseline band of normalcy (defined as learned behavior based on historic values) or an upper deviation from its contextual band of normalcy (defined as learned behavior based multi-metric statistical analysis). These concepts are expanded upon further in this blog.
 
-[![Multi-Criteria Alerting: Browser Policy](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/09/Image1-1024x535.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/09/Image1.png)
+[![Multi-Criteria Alerting: Browser Policy](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/09/Image1-1024x535.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/09/Image1.png)
 
 Netuitive also has a default policy to alert on [elevated EC2 network activity.](https://help.netuitive.com/Content/Policies/GlobalPolicies/aws_global_policies.htm#ec2) This policy consists of two metrics (read operations, and write operations), each with two conditions: values outside the baseline and contextual bands.
 
-[![Multi-Criteria Alerting: EC2 Policy](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/09/Image2-1024x531.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/09/Image2.png)
+[![Multi-Criteria Alerting: EC2 Policy](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/09/Image2-1024x531.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/09/Image2.png)
 
 Each of these are multi-criteria alerting policies.
 
@@ -37,7 +37,7 @@ If you have 3 metric conditions in one policy, then you receive a third of the n
 
 You can have much more control when you evaluate multiple conditions at the same time. Let's say you have a policy set to alert when the backend error rate is [elevated on an ELB instance](https://help.netuitive.com/Content/Policies/GlobalPolicies/aws_global_policies.htm#elbGlobalPolicies). With a traditional policy, you could set a single condition -- for example, that the error rate is more than 2%. Depending upon the instance in question (as well as time of day, expected load, etc.), an error rate of 2% may or may not be worrisome, but you'll receive an alert every time it occurs regardless. With multi-condition alerting, you can add in other factors that could affect the error rate, such as total request count:
 
-[![Multi-Criteria Alerting: Elevated Error Rate Policy](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/09/Image3-1024x531.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/09/Image3.png)
+[![Multi-Criteria Alerting: Elevated Error Rate Policy](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/09/Image3-1024x531.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/09/Image3.png)
 
 Multi-criteria policies by themselves greatly improve alarm quality and cut noise, but they're still not entirely perfect. Let's look at a few ways to make them even better.
 
@@ -54,20 +54,20 @@ Where anomaly detection really shines, however, is in combination with static th
 
 **2) Create new, computed metrics to bring additional insight to your environment.**
 
-By applying mathematical expressions to multiple metrics, you can create a new [computed metric that is insightful for anomaly detection](https://www.metricly.com/the-power-of-computed-metrics).
+By applying mathematical expressions to multiple metrics, you can create a new [computed metric that is insightful for anomaly detection](/the-power-of-computed-metrics).
 
 For example, Netuitive provides a pre-configured policy for Linux servers, "[Heavy CPU Load](https://help.netuitive.com/Content/Policies/GlobalPolicies/diamond_linux_global_policies.htm)," that includes two conditions: the first looks for an upper deviation from learned behavior on CPU utilization, while the second condition looks for normalized load average (defined as load average/# of CPUs) greater than 2.  The combination of the two conditions detects a condition definitely worthy of operational attention.
 
-[![Multi-Criteria Alerting: Heavy CPU Policy](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/09/Image4-1024x531.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/09/Image4.png)
+[![Multi-Criteria Alerting: Heavy CPU Policy](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/09/Image4-1024x531.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/09/Image4.png)
 
-Another example of this is the queue length differential, which we discuss in context with [detecting performance issues on EBS volumes](https://www.metricly.com/detecting-performance-issues-on-ebs-volumes).
+Another example of this is the queue length differential, which we discuss in context with [detecting performance issues on EBS volumes](/detecting-performance-issues-on-ebs-volumes).
 
 **3) Employ Webhooks when a policy is triggered for automated action taking.**
 
 When a policy is violated, you can send a notification to a member of the operations team, but you can also use a [Webhook](https://en.wikipedia.org/wiki/Webhook) to trigger an automated script.  For example, you could use a webhook to restart a service that is having latency issues or automatically add another EC2 to expand server capacity temporarily.
 
-Alarm noise and alert fatigue is a major problem for IT Ops and DevOps, but multi-criteria alerting policies can help curb the noise. Netuitive's alerting policies are based on industry best practices, helping you aggregate your alerts and improve alarm accuracy. Adding [anomaly detection](https://www.metricly.com/product/anomaly-detection) and advanced analytics (including computed metrics) further refines your alerts, and with the implementation of Webhooks for automatically firing scripted response, you might just get that extra hour a day you've been hoping for.
+Alarm noise and alert fatigue is a major problem for IT Ops and DevOps, but multi-criteria alerting policies can help curb the noise. Netuitive's alerting policies are based on industry best practices, helping you aggregate your alerts and improve alarm accuracy. Adding [anomaly detection](/product/anomaly-detection) and advanced analytics (including computed metrics) further refines your alerts, and with the implementation of Webhooks for automatically firing scripted response, you might just get that extra hour a day you've been hoping for.
 
 * * * * *
 
-*Ready to free yourself from overwhelming alarm noise? See the difference multi-criteria alerting can make in your own environment with Netuitive's [21-day, no-obligation free trial.](https://www.metricly.com/signup)*
+*Ready to free yourself from overwhelming alarm noise? See the difference multi-criteria alerting can make in your own environment with Netuitive's [21-day, no-obligation free trial.](/signup)*

@@ -7,7 +7,7 @@ category: "Cloud Monitoring"
 url: "/computed-monitoring-metrics/"
 layout: "single"
 ---
-Netuitive divides metrics for each monitored element into two categories: collected metrics and computed metrics. In this blog, we'll review some of [Netuitive's](https://www.metricly.com/) unique computed metrics and discuss the value of computed metrics in regards to monitoring.
+Netuitive divides metrics for each monitored element into two categories: collected metrics and computed metrics. In this blog, we'll review some of [Netuitive's](/) unique computed metrics and discuss the value of computed metrics in regards to monitoring.
 
 What are collected monitoring metrics?
 --------------------------------------
@@ -34,9 +34,9 @@ This metric (*netuitive.aws.ebs.iopsutilization*) is extremely useful for determ
 
 For example, let's say you have an EBS volume for which Amazon is providing 600 IOPS capacity. Netuitive will add the read ops and write ops metric values to obtain the current total IOPS, and divide by 600 (the given capacity). In this scenario then, a volume with a current IOPS value of 400 and an IOPS capacity of 600 would have an IOPS utilization of 66%.
 
-[![Computed Metrics: IOPS Utilization](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/IOPSUtilizationPSD.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/IOPSUtilizationPSD.png)
+[![Computed Metrics: IOPS Utilization](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/IOPSUtilizationPSD.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/IOPSUtilizationPSD.png)
 
-Dale V. Georg, our Principal Data Scientist, [wrote a wonderfully in-depth piece](https://www.metricly.com/iops-calculator-for-ebs-volumes) on EBS IOPS utilization and its usefulness in AWS monitoring. [Read it here](https://www.metricly.com/iops-calculator-for-ebs-volumes) for more detail.
+Dale V. Georg, our Principal Data Scientist, [wrote a wonderfully in-depth piece](/iops-calculator-for-ebs-volumes) on EBS IOPS utilization and its usefulness in AWS monitoring. [Read it here](/iops-calculator-for-ebs-volumes) for more detail.
 
 **Linux Load Average Normalized**
 
@@ -46,7 +46,7 @@ Normalized load is important because different servers can have drastically diff
 
 The load can be averaged over one minute, five minutes, or fifteen minutes, depending upon your use case (the above metric is the five minute average.) Consider a scenario in which you have 32CPUs on a Linux server. A good rule of thumb is that your normalized load average should be no greater than 2 per CPU.  If your load average over 5 minutes in this example was 30, you would have a normalized load average of just under 1, well within the acceptable .
 
-[![normalizedloadlinux](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/NormalizedLoadLinux.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/NormalizedLoadLinux.png)
+[![normalizedloadlinux](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/NormalizedLoadLinux.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/NormalizedLoadLinux.png)
 
 The Value of Computed Metrics
 -----------------------------
@@ -61,19 +61,19 @@ Computed metrics are extremely useful for figuring out which parts of your envir
 
 If you combine AWS EC2 utilization data with AWS EC2 cost data, you can map out a cost vs. utilization scatter plot like this:
 
-[![Computed Metrics: AWS Cost vs. Utilization](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/costvsutilization-1024x691.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/costvsutilization.png)
+[![Computed Metrics: AWS Cost vs. Utilization](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/costvsutilization-1024x691.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/costvsutilization.png)
 
 As you can see, most of the high-cost EC2s also have high utilization metrics (which is likely good -- you're getting a lot of bang for your buck!) However, there is one all the way to the left which has lower-than-average utilization while spending about the same as the others on the graph. That instance could be an opportunity to save on your AWS without sacrificing performance or capacity.
 
 **Accurate Alerting Policies**
 
-Computed metrics also add immeasurable value to Netuitive monitoring policies. We've written previously on [multi-criteria alerting policies](https://www.metricly.com/reduce-alert-multi-criteria-policies) and the impact they have on reducing alert noise; the addition of computed metrics to those policies makes them even more precise.
+Computed metrics also add immeasurable value to Netuitive monitoring policies. We've written previously on [multi-criteria alerting policies](/reduce-alert-multi-criteria-policies) and the impact they have on reducing alert noise; the addition of computed metrics to those policies makes them even more precise.
 
-For example, Netuitive creates a computed metric for the (*netuitive.aws.ebs.queuelengthdifferential*). Instead of looking simply at disk queue length, this computed metric calculates the difference between actual queue length and the ideal queue length for the volume based on Amazon best practices for EBS volumes (read about this in greater detail in [this blog](https://www.metricly.com/detecting-performance-issues-on-ebs-volumes).)
+For example, Netuitive creates a computed metric for the (*netuitive.aws.ebs.queuelengthdifferential*). Instead of looking simply at disk queue length, this computed metric calculates the difference between actual queue length and the ideal queue length for the volume based on Amazon best practices for EBS volumes (read about this in greater detail in [this blog](/detecting-performance-issues-on-ebs-volumes).)
 
 Here is an example of a policy that uses this metric:
 
-[![Computed Metrics: EBS Queue Length Differential Policy](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/EBSPOlicy-1024x507.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/EBSPOlicy.png)
+[![Computed Metrics: EBS Queue Length Differential Policy](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/EBSPOlicy-1024x507.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/EBSPOlicy.png)
 
 As you can see, this policy looks for above-normal values for the queue length differential, as well as above-normal values for average EBS latency (another computed metric!) Using standard monitoring, this type of monitoring policy would be impossible.
 
@@ -84,4 +84,4 @@ Final Notes
 
 Computed metrics are the backbone of what makes quality, functional monitoring by helping to transform raw data into useful and actionable data points. However, they are often a key missing ingredient in comprehensive monitoring solutions in many operational environments.  Perhaps you're computing them manually or relying on static thresholds on multiple metrics to try and get the same results?
 
-If you're ready to gain further insights into your environment while reducing alarm noise, there's just no substitute. You can see these computed metrics, and others, in action with your own environmental data using Netuitive. We offer a [21-day free trial](https://www.metricly.com/signup) here.
+If you're ready to gain further insights into your environment while reducing alarm noise, there's just no substitute. You can see these computed metrics, and others, in action with your own environmental data using Netuitive. We offer a [21-day free trial](/signup) here.

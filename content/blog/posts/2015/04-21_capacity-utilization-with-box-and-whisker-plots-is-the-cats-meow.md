@@ -15,11 +15,11 @@ It's time to see the boxplot (or "box and whisker plot," as you might remember i
 
 Within the Utilization Boxplot Report, you can customize your view by setting the max number of elements  you want to see, sorting by any one of the values in the boxplots (minimum, lower quartile, median, upper quartile, or maximum), and placing the boxplots in ascending or descending order.  Here is what the Utilization Boxplot Report looks like in Netuitive:
 
-[![Box Plot Report (Capacity Utilization)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/utilizationboxplotreport.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/utilizationboxplotreport.png)
+[![Box Plot Report (Capacity Utilization)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/utilizationboxplotreport.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/utilizationboxplotreport.png)
 
 For those of you who have successfully blocked the awkward middle school years from your memory, here's a quick rundown of the parts to a standard boxplot.
 
-[![Box Plot Rundown (Capacity Utilization)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/box-plot-rundown.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/box-plot-rundown.png)
+[![Box Plot Rundown (Capacity Utilization)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/box-plot-rundown.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/box-plot-rundown.png)
 
 Boxplots are used to graphically represent the range of data within a dataset. The *min*, or the end of the "whisker" to the left of the box, is the lowest value in the set. The *lower quartile* is the value at the 25^th^ percentile, meaning 25% of all other values are less than or equal to it. The *median* is the central-most value---half the values are higher and half the values are lower. The *upper quartile* lies at the 75^th^ percentile, and, finally, the *max* (the end of the other whisker) is the highest value in the set.
 
@@ -48,4 +48,4 @@ The median, and where it lies in the box, tells you a lot about the range of dat
 Visualizing your monitoring data allows for quick review of mass quantities of information.  Netuitive's Utilization Boxplot Report allows you to quickly identify capacity optimization opportunities at-a-glance.  Rather than staring at a wall of numbers that need to be broken down and interpreted, why not let Netuitive do the work for you?
 
 * * * * *
-*See this report for your environment -- [try Netuitive free for 21 days.](https://www.metricly.com/signup)*
+*See this report for your environment -- [try Netuitive free for 21 days.](/signup)*

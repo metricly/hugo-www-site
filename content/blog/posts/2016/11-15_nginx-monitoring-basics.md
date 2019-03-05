@@ -10,11 +10,11 @@ layout: "single"
 
 When building and maintaining a web application, being aware of the health of your architecture is critical. While application-level monitoring, like exception logging and browser analytics, is incredibly important for understanding the code-level health of your product, service-level monitoring is also critical to understanding the systemic health of your infrastructure. This is doubly true when building web applications because they often rely on a set of services to run properly.
 
-[![NGINX Monitoring: NGINX Logo](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/NGINXlogo.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/NGINXlogo.png)
+[![NGINX Monitoring: NGINX Logo](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/NGINXlogo.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/NGINXlogo.png)
 
 Databases, data stores, and caches are all important, but the most important point of potential failure in a web application is the web server itself. [NGINX](https://www.nginx.com/) is one of the most popular web servers in the world (second to Apache across the entire Internet). One of its most useful features is the brevity of the statistical information made available about itself.
 
-[Monitoring](https://www.metricly.com/product) the health of an NGINX daemon can be broken down into two categories: self-reported and inferred.
+[Monitoring](/product) the health of an NGINX daemon can be broken down into two categories: self-reported and inferred.
 
 Self-Reported NGINX Monitoring
 ------------------------------
@@ -71,4 +71,4 @@ Now, all we have to do is update the access_log line and replace the combined lo
 > 50.183.254.196 -- -- [26/Oct/2016:06:18:57 +0000] "GET / HTTP/1.1" 200 552 0.000 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36"\
 > 50.183.254.196 -- -- [26/Oct/2016:06:19:04 +0000] "GET /awoefij HTTP/1.1" 404 209 0.000 "-" "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.71 Safari/537.36"
 
-[NGINX monitoring](https://www.metricly.com/monitoring-nginx-netuitive) is ultimately as simple or as detailed as you need it to be. While utilizing the built-in statistics tools might be enough for most use cases, far more detailed logging can be accommodated easily using a custom log format and NGINX's own variable index. In the end, application monitoring is about managing the overall health of your infrastructure, and understanding how and where to collect the proper data is half the battle.
+[NGINX monitoring](/monitoring-nginx-netuitive) is ultimately as simple or as detailed as you need it to be. While utilizing the built-in statistics tools might be enough for most use cases, far more detailed logging can be accommodated easily using a custom log format and NGINX's own variable index. In the end, application monitoring is about managing the overall health of your infrastructure, and understanding how and where to collect the proper data is half the battle.

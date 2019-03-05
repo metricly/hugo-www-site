@@ -10,7 +10,7 @@ layout: "single"
 
 Cassandra is a database management system that improves upon traditional master-slave databases, distributing the data across a ring or a cluster. Every node in a Cassandra cluster plays the same role and can respond to any request, meaning there is no single point of failure. Additionally, Cassandra databases are extremely scalable, since new nodes can be added without needing to build in downtime.
 
-*If you already know how to monitor Cassandra, and you'd like to see firsthand how Netuitive can be used to monitor your Cassandra cluster, [contact us](https://www.metricly.com/contact) for a custom demo, or [sign up for a free trial](https://www.metricly.com/signup).*
+*If you already know how to monitor Cassandra, and you'd like to see firsthand how Netuitive can be used to monitor your Cassandra cluster, [contact us](/contact) for a custom demo, or [sign up for a free trial](/signup).*
 
 How do you collect Cassandra metrics?
 -------------------------------------
@@ -28,7 +28,7 @@ For more detailed instruction, visit the [Netuitive product documentation.](http
 What are the most important Cassandra metrics for monitoring?
 -------------------------------------------------------------
 
-Even with a good [performance monitoring tool](https://www.metricly.com/), it can be difficult to tell which metrics are absolutely crucial and which can be relegated to a secondary dashboard. Ignoring a key metric or focusing on the wrong data can have a serious impact on the health of your environment. Ideally, when monitoring Cassandra, you'll want to understand the following 3 aspects:
+Even with a good [performance monitoring tool](/), it can be difficult to tell which metrics are absolutely crucial and which can be relegated to a secondary dashboard. Ignoring a key metric or focusing on the wrong data can have a serious impact on the health of your environment. Ideally, when monitoring Cassandra, you'll want to understand the following 3 aspects:
 
 1.  How much the cluster is being used
 2.  How fast and effectively nodes are able to respond to requests
@@ -58,12 +58,12 @@ Knowing how many tables you have is great, but it doesn't tell the full story. Y
 
 Read latency measures fulfillment time for read requests, beginning when the node receives a client request and ending when it responds. Read requests usually take longer than write requests -- visualize how much longer it might take you to find the answer to a question as opposed to writing an answer down, for example. Depending upon the SSTable count, certain databases may also require increased latency, but on the whole an increase in this metric can point to performance issues. The below diagram illustrates the read request process most Cassandra databases use:
 
-[![Read Requests Diagram](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/ReadRequests-Diagram.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/ReadRequests-Diagram.png)
+[![Read Requests Diagram](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/ReadRequests-Diagram.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/ReadRequests-Diagram.png)
 
 **cassandra.cfstats.keyspaces...local_write_latency**\
 Write latency, as you might have guessed, measures fulfillment time for write requests. Like read latency, write latency starts when a node receives a client write request, and ends when the node responds. Writes tend to be much faster than reads, although sufficient latency depends heavily on the individual system. Sudden changes, however, are often a sign of serious performance problems.
 
-[![Write Requests Diagram](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/WriteRequestsDiagram.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/WriteRequestsDiagram.png)
+[![Write Requests Diagram](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/WriteRequestsDiagram.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/WriteRequestsDiagram.png)
 
 **\
 cassandra.tpstas.hintedhandoff.active**\
@@ -79,13 +79,13 @@ Consolidating and merging data is a key piece of maintaining a healthy database.
 **cassandra.compaction.stats.pendingtasks**\
 Compaction should be run regularly, as this is the task that allows Cassandra to consolidate SSTables and remove old or outdated data. This metric measures the total number of pending compaction operations, or how many new SSTables Cassandra still needs to create, complete, and how many old ones it needs to delete. An upper deviation in this metric could indicate a performance or application issue, including iops limitations. The below diagram illustrates a usual compaction cycle. When too many tables need consolidation for the system to keep up, you may need to add more nodes to prevent a more serious issue.
 
-[![Cassandra Compaction Diagram](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/Cassandra-Compaction-Diagram.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/Cassandra-Compaction-Diagram.png)
+[![Cassandra Compaction Diagram](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/Cassandra-Compaction-Diagram.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/Cassandra-Compaction-Diagram.png)
 
 How to monitor Cassandra performance metrics
 --------------------------------------------
 
 Monitoring Cassandra can be tricky if you have a large cluster or one that responds to a large number of queries. Graphs are helpful, but no DevOps team can keep an eye on their dashboards 24/7. Thresholds can be difficult to set and often create false alarms that waste time and resources.
 
-Netuitive makes monitoring a Cassandra cluster simple. Once setup is complete, you've got full access to Netuitive's advanced analytics platform, including [anomaly detection using machine learning.](https://www.metricly.com/how-to-leverage-machine-learning-for-proactive-monitoring-alerts) Using these best practices as guidelines, Netuitive makes it easy to customize Cassandra monitoring dashboards with an intuitive UI and extensive widget library.
+Netuitive makes monitoring a Cassandra cluster simple. Once setup is complete, you've got full access to Netuitive's advanced analytics platform, including [anomaly detection using machine learning.](/how-to-leverage-machine-learning-for-proactive-monitoring-alerts) Using these best practices as guidelines, Netuitive makes it easy to customize Cassandra monitoring dashboards with an intuitive UI and extensive widget library.
 
-Ready to start monitoring Cassandra? Netuitive offers a [no-obligation, free trial.](https://www.metricly.com/signup)
+Ready to start monitoring Cassandra? Netuitive offers a [no-obligation, free trial.](/signup)

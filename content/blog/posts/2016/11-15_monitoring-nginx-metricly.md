@@ -9,9 +9,9 @@ layout: "single"
 ---
 
 
-According to the most recent figures from [W3Techs](https://w3techs.com/technologies/cross/web_server/ranking), NGINX powers just over 30% of the websites on the Internet. That's a *lot* of websites, and thanks to the growing popularity of NGINX, that number is sure to continue increasing. Because of this popularity, it is highly likely that you are using (or are considering using) NGINX to run your own web applications. Regardless of whether it's a new or existing installation, [monitoring the health of your infrastructure](https://www.metricly.com/nginx-monitoring-basics) is more important than ever.
+According to the most recent figures from [W3Techs](https://w3techs.com/technologies/cross/web_server/ranking), NGINX powers just over 30% of the websites on the Internet. That's a *lot* of websites, and thanks to the growing popularity of NGINX, that number is sure to continue increasing. Because of this popularity, it is highly likely that you are using (or are considering using) NGINX to run your own web applications. Regardless of whether it's a new or existing installation, [monitoring the health of your infrastructure](/nginx-monitoring-basics) is more important than ever.
 
-This is where [Netuitive](https://www.metricly.com/product) comes in.
+This is where [Netuitive](/product) comes in.
 
 Netuitive is a full-stack performance monitoring and analytics platform that integrates with just about any process or platform you are likely to use, NGINX included. The beauty of Netuitive is that setting up monitors for each integration is incredibly straightforward.
 
@@ -47,16 +47,16 @@ It is important to note here that once everything is configured, it is crucial t
 
 After a few minutes, you will start to see NGINX metrics trickle into your Netuitive dashboard. The current information shown in Netuitive will mirror the information on the status page we configured earlier, but the added benefit to Netuitive is that it will also retain the historical process statistics. This allows us to compare information server stats on an hour-by-hour to week-by-week basis.
 
-[![Monitor NGINX with Netuitive: Stats Dashboard](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/NGINX-Dashboard-1-1024x535.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/NGINX-Dashboard-1.png)
+[![Monitor NGINX with Netuitive: Stats Dashboard](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/NGINX-Dashboard-1-1024x535.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/NGINX-Dashboard-1.png)
 
 NGINX Stats
 
 As you can see, my little demo site has some pretty low statistics, but as a demonstration I spun up a load test using loadimpact.com. Their free test sends 25 virtual users to a given URL in five  minutes, which we can see clearly and immediately on our Netuitive dashboard.
 
-[![Monitor NGINX with Netuitive: Connection Spike](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/NGINX-Dashboard-2.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/NGINX-Dashboard-2.png)
+[![Monitor NGINX with Netuitive: Connection Spike](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/NGINX-Dashboard-2.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/NGINX-Dashboard-2.png)
 
 NGINX Connection Spike
 
-Sending your NGINX data up to Netuitive is a big part of the monitoring puzzle. What you do next is dependent on the needs of your organization. However, Netuitive itself offers [some great reporting tools](https://www.metricly.com/product/dashboards-and-reports) that can be configured to alert you and your team of any critical issues.
+Sending your NGINX data up to Netuitive is a big part of the monitoring puzzle. What you do next is dependent on the needs of your organization. However, Netuitive itself offers [some great reporting tools](/product/dashboards-and-reports) that can be configured to alert you and your team of any critical issues.
 
 Ultimately, the most important thing to remember is that monitoring your DevOps infrastructure isn't optional. Understanding the health of your architecture is critical to supporting the growing needs of your application.

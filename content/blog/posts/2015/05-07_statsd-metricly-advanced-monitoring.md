@@ -28,7 +28,7 @@ You can do this with any monitoring tool that integrates with StatsD. Your favor
 How to Integrate StatsD and Netuitive in 10 Minutes
 ---------------------------------------------------
 
-[![StatsD and Netuitive](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/StatsD.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/StatsD.png)
+[![StatsD and Netuitive](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/StatsD.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/StatsD.png)
 
 Ready to get started? Enabling advanced analytics and proactive anomaly detection takes as little as 10 minutes.
 
@@ -40,4 +40,4 @@ After downloading the file, all you'll need to do is make a few changes to your 
 
 * * * * *
 
-*Want to see the integration in action?  Sign up for our [free 21-day trial](https://www.metricly.com/signup) and activate some data sources through StatsD to see the true power of our Self-Learning Correlation Engine.*
+*Want to see the integration in action?  Sign up for our [free 21-day trial](/signup) and activate some data sources through StatsD to see the true power of our Self-Learning Correlation Engine.*

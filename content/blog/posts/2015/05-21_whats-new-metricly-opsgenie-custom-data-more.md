@@ -28,7 +28,7 @@ For example, a capacity policy could be configured to activate a webhook that st
 Multiple Metric Time Series Widget
 ----------------------------------
 
-[![Multiple Metric Time Series (New Release)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/MultipleMeticTimeSeries.jpg)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/MultipleMeticTimeSeries.jpg)
+[![Multiple Metric Time Series (New Release)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/MultipleMeticTimeSeries.jpg)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/MultipleMeticTimeSeries.jpg)
 
 Comparing managed elements with Netuitive just got easier.
 
@@ -36,4 +36,4 @@ The new Multiple Metric Time Series widget lets you plot time series data for se
 
 This widget can be added to your custom dashboards along with our other custom reporting features.
 
-*Want to see these features in action? They are currently available to test drive in our [free trial.](https://www.metricly.com/signup)*
+*Want to see these features in action? They are currently available to test drive in our [free trial.](/signup)*

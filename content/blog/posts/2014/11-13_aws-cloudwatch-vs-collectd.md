@@ -54,9 +54,9 @@ Netuitive's API is ready to receive metrics directly from the http_write plugin.
 >
 > /Plugin
 
-Collectd's simplicity combined with [Netuitive's analytics](https://www.metricly.com/) enables a much richer set of metrics at a higher frequency, at the same (or in some cases lower) cost.
+Collectd's simplicity combined with [Netuitive's analytics](/) enables a much richer set of metrics at a higher frequency, at the same (or in some cases lower) cost.
 
 CloudWatch™ is a trademark of Amazon Web Services.
 
 * * * * *
-*Want to see Netuitive at work in your own environment? We offer a [21-day, no-obligation free trial.](https://www.metricly.com/signup)*
+*Want to see Netuitive at work in your own environment? We offer a [21-day, no-obligation free trial.](/signup)*

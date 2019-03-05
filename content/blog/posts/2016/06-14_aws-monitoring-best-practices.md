@@ -12,7 +12,7 @@ AWS monitoring is time-consuming, and it only gets worse as you scale up your cl
 
 When you first create a [Metricly datasource](https://www.metricly.com) to bring in metrics for Linux, AWS monitoring, or one of many other supported systems, a number of other features and configuration settings are activated as well. Brought in by pre-configured monitoring packages, these additional components create best practice monitoring dashboards and suggested alerting policies that ensure that you can start getting value from Metricly right away.
 
-*If you want to see these Linux or AWS monitoring packages in action, [try our free demo](https://www.metricly.com/signup).*
+*If you want to see these Linux or AWS monitoring packages in action, [try our free demo](/signup).*
 
 Inside Our AWS Monitoring and Other Packages
 --------------------------------------------
@@ -27,7 +27,7 @@ Let's take a look at each of these in turn.
 
 Metric Configurations
 
-Metric configurations define the behavior of the metrics being collected and how [Metricly's analytics](https://www.metricly.com/support/metrics/analytics) should be applied. They also define the formulas for any computed metrics; for example, an error rate might be computed from the number of calls and an error count.
+Metric configurations define the behavior of the metrics being collected and how [Metricly's analytics](/support/metrics/analytics) should be applied. They also define the formulas for any computed metrics; for example, an error rate might be computed from the number of calls and an error count.
 
 Some of the key properties that can be defined for each metric are:
 
@@ -41,11 +41,11 @@ Some of the key properties that can be defined for each metric are:
 
 In the Metricly UI, when you click on a metric name, you get a pop-up showing meta-data details about the metric, including most of the information provided by the configurations.
 
-[![Collected Metric Popup](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/06/Collected-Metric-Popup.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/06/Collected-Metric-Popup.png)
+[![Collected Metric Popup](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/06/Collected-Metric-Popup.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/06/Collected-Metric-Popup.png)
 
 Policies
 
-[Policies](https://www.metricly.com/support/events/policies) define the criteria by which Metricly will decide to generate an event. Each Metricly package comes with multiple pre-defined policies based on industry best practices, designed specifically to detect meaningful events from the metrics in that package. The policies look for a combination of deviations and best practices that together identify a particular type of performance problem.
+[Policies](/support/events/policies) define the criteria by which Metricly will decide to generate an event. Each Metricly package comes with multiple pre-defined policies based on industry best practices, designed specifically to detect meaningful events from the metrics in that package. The policies look for a combination of deviations and best practices that together identify a particular type of performance problem.
 
 For example, the Linux package comes with the following policies:
 
@@ -61,11 +61,11 @@ Dashboards
 
 The final component of a package is a set of one or more dashboards. These dashboards present you with an overall summary view of a set of elements in your environment. For example, when you activate a datasource for AWS monitoring, one of the several pre-configured dashboards is the EC2 Summary, which shows how many EC2s are in the environment, what types they are, which ones have the highest CPU utilization, and which have the highest network activity.
 
-[![EC2 Summary Dashboard](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/06/EC2-Summary-Dashboard-1024x471.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/06/EC2-Summary-Dashboard.png)
+[![EC2 Summary Dashboard](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/06/EC2-Summary-Dashboard-1024x471.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/06/EC2-Summary-Dashboard.png)
 
-Our monitoring packages also contain a special type of dashboard, the "[element detail summary](https://www.metricly.com/support/inventory#element-detail-panel)." These do not show up under the "Dashboards" menu. Rather, when you select an element from your inventory, you can choose to view "Element Details"; this will bring up a dashboard like the one below, showing a summary of the particular element you have selected. This summary will include key performance metrics, tags, attributes, and any recent events associated with the element.
+Our monitoring packages also contain a special type of dashboard, the "[element detail summary](/support/inventory#element-detail-panel)." These do not show up under the "Dashboards" menu. Rather, when you select an element from your inventory, you can choose to view "Element Details"; this will bring up a dashboard like the one below, showing a summary of the particular element you have selected. This summary will include key performance metrics, tags, attributes, and any recent events associated with the element.
 
-[![Linux Server Element Detail Policy](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/06/Linux-Server-Element-Detail-Policy-1024x481.jpg)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/06/Linux-Server-Element-Detail-Policy.jpg)
+[![Linux Server Element Detail Policy](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/06/Linux-Server-Element-Detail-Policy-1024x481.jpg)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/06/Linux-Server-Element-Detail-Policy.jpg)
 
 Easy Monitoring Setup with Packages
 -----------------------------------
@@ -74,4 +74,4 @@ You don't have to do anything special to install the Metricly packages. The firs
 
 * * * * *
 
-Want to see these packages in action, within your own environment? Metricly offers a [no-obligation free trial](https://www.metricly.com/signup) for 21 days.
+Want to see these packages in action, within your own environment? Metricly offers a [no-obligation free trial](/signup) for 21 days.

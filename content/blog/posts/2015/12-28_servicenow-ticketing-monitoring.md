@@ -16,28 +16,28 @@ So how is this set up? Both Netuitive and Service Now support a robust REST base
 Netuitive and ServiceNow Integration Setup
 ------------------------------------------
 
-Your operations team has Netuitive dynamic policies deployed to monitor the mission critical web application. An event has fired in Netuitive when the KPIs deviate above the learned baseline. You can learn more about our [anomaly detection](https://www.metricly.com/product) from the website.
+Your operations team has Netuitive dynamic policies deployed to monitor the mission critical web application. An event has fired in Netuitive when the KPIs deviate above the learned baseline. You can learn more about our [anomaly detection](/product) from the website.
 
-[![Service Now Ticketing 1](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/ServiceNowBlog_1.jpg)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/ServiceNowBlog_1.jpg)
+[![Service Now Ticketing 1](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/ServiceNowBlog_1.jpg)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/ServiceNowBlog_1.jpg)
 
 In Netuitive, events can be configured to send out notifications. In this example we send a REST message via a Webhook to the ServiceNow API. ServiceNow has the ability to receive inbound REST messages and send outbound REST messages. For this example we set it to open up an Incident ticket in ServiceNow. You could also open a ticket by sending a formatted email to ServiceNow. Here is an example of how easy it is to send these messages from Netuitive.
 
-[![ServiceNow Ticketing 2](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/ServiceNowBlog_2.jpg)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/ServiceNowBlog_2.jpg)
+[![ServiceNow Ticketing 2](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/ServiceNowBlog_2.jpg)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/ServiceNowBlog_2.jpg)
 
 Now when an event fires in Netuitive (e.g. a slow webpage response time) a ticket is opened in ServiceNow.
 
-[![Service Now Ticketing 3](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/ServiceNowBlog_3.jpg)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/ServiceNowBlog_3.jpg)
+[![Service Now Ticketing 3](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/ServiceNowBlog_3.jpg)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/ServiceNowBlog_3.jpg)
 
 ServiceNow also lets you send outbound REST calls. To publish data back into Netuitive we needed to create an outbound REST API call into Netuitive. ServiceNow makes this easy as well. All these calls are made from inside the product, so no need to create and maintain complex scripts or integrations.
 
-[![ServiceNow Ticketing 4](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/ServiceNowBlog_4.jpg)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/ServiceNowBlog_4.jpg)
+[![ServiceNow Ticketing 4](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/ServiceNowBlog_4.jpg)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/ServiceNowBlog_4.jpg)
 
 Now we have the outbound REST call configured so any action on the ticket can put data back into Netuitive. Once the ticket is updated or changed that data will show up on the Netuitive events timeline.
 
-[![ServiceNow Ticketing 5 width=](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/ServiceNowBlog_5.jpg)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/ServiceNowBlog_5.jpg)
+[![ServiceNow Ticketing 5 width=](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/ServiceNowBlog_5.jpg)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/ServiceNowBlog_5.jpg)
 
 By integrating ServiceNow and Netuitive, the operations team can see all the work being done in one central location.
 
 * * * * *
 
-If you're already using ServiceNow, try this for yourself by taking advantage of our 21-day [free trial](https://www.metricly.com/signup).
+If you're already using ServiceNow, try this for yourself by taking advantage of our 21-day [free trial](/signup).

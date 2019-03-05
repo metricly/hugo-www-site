@@ -28,4 +28,4 @@ IOPS Utilization
 For monitoring disk volume performance, Netuitive's IOPS Utilization computed metric expresses the actual observed operations per second against the volume's IOPS capacity. This enables users to define policies that issue events when utilization is abnormal. It also enables reports that help identify over- and under-utilized instances or instances that have highly unpredictable workload. For Amazon customers, this metric can be combined with AWS pricing data to help identify cost savings.
 
 * * * * *\
-*Want to see computed metrics at work in your own environment? We offer a 21-day, no-obligation [free trial of Netuitive.](https://www.metricly.com/signup)*
+*Want to see computed metrics at work in your own environment? We offer a 21-day, no-obligation [free trial of Netuitive.](/signup)*

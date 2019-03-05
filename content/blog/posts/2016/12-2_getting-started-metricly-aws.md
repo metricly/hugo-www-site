@@ -22,9 +22,9 @@ In this case, we're going to focus on using the Amazon Web Services integration 
 Getting Started
 ---------------
 
-To get started, first and foremost read the [Netuitive Overview page](https://www.metricly.com/netuitive-overview) and watch the introductory video. It's only about six minutes and will give a high-level review of what's possible with Netuitive.
+To get started, first and foremost read the [Netuitive Overview page](/netuitive-overview) and watch the introductory video. It's only about six minutes and will give a high-level review of what's possible with Netuitive.
 
-Next, you'll want to sign up for a 21 day free [trial account](https://www.metricly.com/signup). Once the required fields are filled out and you click "Sign Up," you will receive a verification email.After you have your trial account created, review the introductory "[Where to Start" slideshow](https://hlp.app.netuitive.com/Content/where_to_start.htm) to get going.
+Next, you'll want to sign up for a 21 day free [trial account](/signup). Once the required fields are filled out and you click "Sign Up," you will receive a verification email.After you have your trial account created, review the introductory "[Where to Start" slideshow](https://hlp.app.netuitive.com/Content/where_to_start.htm) to get going.
 
 Then, after activating your Netuitive account and logging in via <https://app.netuitive.com>, you will be presented with a helpful tutorial explaining the steps needed to set up a new datasource. Each of the Netuitive menu options presents a similar tutorial outlining how each feature works.
 
@@ -41,7 +41,7 @@ For this article, I created a [Read Only Role (with full permissions)](https://h
 
 The initial setup is fairly straightforward and it took me about 10 minutes to create an AWS IAM role and connect Netuitive to our AWS infrastructure using the Netuitive AWS documentation. When creating the integration, I selected EC2, EBS, and ELB, as shown in the image below. Once all of the fields are filled out, click *Save*.
 
-[![aws-setup](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/AWS-Setup.jpg)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/AWS-Setup.jpg)
+[![aws-setup](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/AWS-Setup.jpg)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/AWS-Setup.jpg)
 
 Dashboards
 ----------
@@ -52,7 +52,7 @@ You can favorite a particular dashboard you frequently access by clicking the st
 
 To start, we will be looking at the *AWS Overview* dashboard, as shown below.
 
-[![awsdashboards](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/awsdashboards-1024x517.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/awsdashboards.png)
+[![awsdashboards](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/awsdashboards-1024x517.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/awsdashboards.png)
 
 ### EC2
 
@@ -91,7 +91,7 @@ For more information about configuring your AWS integration, and how to interpre
 Pricing
 -------
 
-Pricing for Netuitive is simple and straightforward. Currently, it is priced at $15 per host for all services or applications monitored on a host on an annual contract. The cost is $18 per host for a month-to-month commitment. A detailed explanation with FAQ can be found on the [Netuitive pricing page](https://www.metricly.com/pricing).
+Pricing for Netuitive is simple and straightforward. Currently, it is priced at $15 per host for all services or applications monitored on a host on an annual contract. The cost is $18 per host for a month-to-month commitment. A detailed explanation with FAQ can be found on the [Netuitive pricing page](/pricing).
 
 Conclusion
 ----------

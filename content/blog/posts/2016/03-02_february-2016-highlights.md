@@ -12,35 +12,35 @@ Valentine's Day has come and gone, but Netuitive's love for new features has onl
 Default Dashboards
 ------------------
 
-[![default_dashboards (February 2016)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/Default_Dashboards-1024x509.jpg)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/Default_Dashboards-1024x509.jpg)
+[![default_dashboards (February 2016)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/Default_Dashboards-1024x509.jpg)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/Default_Dashboards-1024x509.jpg)
 
 Our default dashboards are pre-defined and populated automatically upon the activation of a new data source such as AWS, Linux, Windows, Java, Ruby or Browser. The widgets included on the default dashboards provide insights such as a summary view into your environment, or a display of key metrics for your most utilized resources. Just activate a new data source and let us do the rest. You can always edit them or create new ones.
 
 Highest/Lowest Metric Value Widget
 ----------------------------------
 
-[![Highest-Lowest Metric Value Widget (February 2016)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/Highest_Lowest_Metric_Value_Widget-1024x717.jpg)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/Highest_Lowest_Metric_Value_Widget-1024x717.jpg)
+[![Highest-Lowest Metric Value Widget (February 2016)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/Highest_Lowest_Metric_Value_Widget-1024x717.jpg)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/Highest_Lowest_Metric_Value_Widget-1024x717.jpg)
 
 The Highest/Lowest Metric Value Widget provides a quick glance at the best (or worst) performing elements in a group. After choosing a set of elements, pick the metric you want to track. The widget displays up to 30 elements that reach the highest or lowest value in the set time frame.
 
 Metric Aggregation Widget
 -------------------------
 
-[![Metric Aggregation Widget (February 2016)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/MetricAggregationWidget.jpg)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/MetricAggregationWidget.jpg)
+[![Metric Aggregation Widget (February 2016)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/MetricAggregationWidget.jpg)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/MetricAggregationWidget.jpg)
 
 The Metric Aggregation Widget aggregates the values for a chosen metric (or metrics) across a selected set of elements. Simply choose the element and element type you want to track as well as key metrics and Netuitive will aggregate the values and display them as a list on the widget.
 
 Multiple Selection for Dashboard Widget Scope
 ---------------------------------------------
 
-[![Multiple Element Selection (February 2016)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/MultipleElementSelection-1.jpg)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/MultipleElementSelection-1.jpg)
+[![Multiple Element Selection (February 2016)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/MultipleElementSelection-1.jpg)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/MultipleElementSelection-1.jpg)
 
 For all widgets that require setting a scope, you can now select multiple elements. The old option to include all items whose name contains the string you typed is still available; you'll be able to freely swap between each option for the Elements field. The ability to select multiple items, however, is now the only option available for the Element Types, Element Attributes, and Element Tags fields. Now your widget scope is fully customizable!
 
 New Beta Features
 -----------------
 
-[![Beta Features (February 2016)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/Dynamic_Features-1024x463.jpg)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/Dynamic_Features-1024x463.jpg)
+[![Beta Features (February 2016)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/Dynamic_Features-1024x463.jpg)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/Dynamic_Features-1024x463.jpg)
 
 Netuitive now provides early access to beta features in the top Beta menu in product. We welcome your feedback as we develop and improve the functionality before general release.
 

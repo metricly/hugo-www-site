@@ -20,28 +20,28 @@ Early Detection
 
 Netuitive recently detected a disk issue before the Windows system reported the problem in the form of exception events indicating "disk volume errors." The one-hour advanced notification let the team proactively address these issues before an outage occurred.
 
-[![Proactive Monitoring: Pic1](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/Pic1-1024x410.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/Pic1.png)
+[![Proactive Monitoring: Pic1](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/Pic1-1024x410.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/Pic1.png)
 
 Understanding KPIs for Proactive Monitoring Success
 ---------------------------------------------------
 
 One of the keys to success is also understanding the metrics. Here we know the disk queue length is a good leading indicator of an issue which is the reason behind including it in a default alerting policy. At Netuitive, we research best practices for monitoring and have created a number of [out-of-the-box policies](https://help.netuitive.com/Content/Policies/policies.htm) that leverage these KPIs. It helps get our users up and running as soon as they set up a data source.
 
-[![Proactive Monitoring: Pic2](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/Pic2-1024x413.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/Pic2.png)
+[![Proactive Monitoring: Pic2](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/Pic2-1024x413.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/Pic2.png)
 
 Proactively Detecting Performance Issues with Machine Learning
 --------------------------------------------------------------
 
 In this example, Netuitive detected a performance issue on the disk a full hour before the operating system reported seeing disk volume errors.
 
-[![Proactive Monitoring: Pic3](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/Pic3-1024x419.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/Pic3.png)
+[![Proactive Monitoring: Pic3](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/Pic3-1024x419.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/Pic3.png)
 
-In the screenshot, you can Netuitive's machine learning in action. Netuitive automatically learns the behaviors of this environment over time and creates [bands of normalcy](https://www.metricly.com/product) (purple and green highlights.) These bands act like dynamic thresholds -- they indicate where expected values for this metric should be at the given point in time. In Netuitive, you can create policies that alert off of these ranges instead of just setting static threshold alerts.
+In the screenshot, you can Netuitive's machine learning in action. Netuitive automatically learns the behaviors of this environment over time and creates [bands of normalcy](/product) (purple and green highlights.) These bands act like dynamic thresholds -- they indicate where expected values for this metric should be at the given point in time. In Netuitive, you can create policies that alert off of these ranges instead of just setting static threshold alerts.
 
 In our example, when the metric values went out of the expected range, alerts in Netuitive fired immediately. However, you can see the event generated in Windows Event Viewer on the right side came an hour later than Netuitive's alert.
 
 A few minutes later, we saw multiple issues on the disk from the Windows subsystem. Netuitive can surface all the errors coming from the operating system as events. This is very helpful because now you can see on a single view the OS error messages along with the performance alerts.
 
-[![Proactive Monitoring: Pic4](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/Pic4-1024x450.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/Pic4.png)
+[![Proactive Monitoring: Pic4](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/Pic4-1024x450.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/Pic4.png)
 
 Note that the above screen shot also illustrates the adaptive and self-learning capability of the Netuitive machine learning engine. It is designed to alarm upon detection of a deviation that is operationally-relevant --- but only for for a period of time, after which the algorithms proceed to learn the new behavior. This is designed to avoid excessive alarming, and also to avoid alarming every day or every week in a case the behavior is caused by a daily or weekly backup for example.

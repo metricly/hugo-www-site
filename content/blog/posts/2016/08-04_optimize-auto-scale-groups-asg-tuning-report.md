@@ -33,7 +33,7 @@ Observing actual ASG usage in *Netuitive* over several months we have seen some 
 -   Over half of all ASGs are of fixed size at 1 or 2 EC2 instances
 -   The remaining 13% are of a fixed size of 3 or more instances, with 3% of all ASGs fixed at 5 or more EC2s
 
-[![AutoScaleGroups1](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/08/AutoScaleGroups1.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/08/AutoScaleGroups1.png)
+[![AutoScaleGroups1](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/08/AutoScaleGroups1.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/08/AutoScaleGroups1.png)
 
 The first two examples fit well with the most common uses cases. However, many of the larger sized ASGs we have observed have highly variable load. Significant cost savings could be made if only they scaled-in during periods of light usage. Many of the ASGs that adjust size by just 1 or 2 instances are over-provisioned too.
 
@@ -48,7 +48,7 @@ The report provides the tools needed for AWS customers to effectively monitor th
 
 **Visualize Past Performance**
 
-[![Visualize Past Auto Scale Group Performance](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/08/Visualize-Past-Performance.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/08/Visualize-Past-Performance.png)
+[![Visualize Past Auto Scale Group Performance](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/08/Visualize-Past-Performance.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/08/Visualize-Past-Performance.png)
 
 -   Identify over/under provisioned ASGs
 -   Visualize Regular load patterns
@@ -58,7 +58,7 @@ The report provides the tools needed for AWS customers to effectively monitor th
 
 **Tune and optimize**
 
-[![Tune and Optimize Auto Scale Groups](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/08/Tune-and-Optimize.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/08/Tune-and-Optimize.png)
+[![Tune and Optimize Auto Scale Groups](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/08/Tune-and-Optimize.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/08/Tune-and-Optimize.png)
 
 -   Optimize for regular or irregular load
 -   Model for different target utilizations
@@ -69,4 +69,4 @@ The Netuitive [ASG Tuning report](https://help.netuitive.com/Content/Reports/asg
 
 * * * * *
 
-*Ready to see if you're over-provisioning your ASGs? Netuitive offers a [21-day, no-obligation free trial.](https://www.metricly.com/signup)*
+*Ready to see if you're over-provisioning your ASGs? Netuitive offers a [21-day, no-obligation free trial.](/signup)*

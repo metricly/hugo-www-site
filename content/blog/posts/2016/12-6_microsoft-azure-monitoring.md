@@ -8,12 +8,12 @@ url: "/microsoft-azure-monitoring/"
 layout: "single"
 ---
 
-Microsoft Azure is the second-largest cloud computing platform in the world -- and now, Azure users have access to world-class monitoring too. [Netuitive](https://www.metricly.com/product) is proud to announce a new integration with Azure VMs and Application Gateway.
+Microsoft Azure is the second-largest cloud computing platform in the world -- and now, Azure users have access to world-class monitoring too. [Netuitive](/product) is proud to announce a new integration with Azure VMs and Application Gateway.
 
 Set Up Azure Monitoring
 -----------------------
 
-[![Netuitive Azure Integration](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Azure-Integration-1024x213.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Azure-Integration.png)
+[![Netuitive Azure Integration](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Azure-Integration-1024x213.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Azure-Integration.png)
 
 Netuitive's Azure integration is entirely plug-and-play: installation is configured automatically. Three steps and you're done:
 
@@ -34,13 +34,13 @@ These configurations are based a decade+ of in-house data science focused entire
 Anomaly Detection for Azure
 ---------------------------
 
-[![azure-metrics](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Azure-Metrics-1024x256.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Azure-Metrics.png)
+[![azure-metrics](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Azure-Metrics-1024x256.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Azure-Metrics.png)
 
 Like all of Netuitive's integrations, Azure metrics appear with "contextual bands of normalcy" that conform to the behavior of your environment. Where traditional static monitoring thresholds create an "on/off" trigger that generates an alert when crossed, Netuitive can also learn the normal behavior of your environment to identify anomalies, providing additional context and reducing unnecessary noise.
 
-Netuitive's [anomaly detection](https://www.metricly.com/product/anomaly-detection) fuels the out-of-the-box and custom policies that keep you apprised of critical events in your Azure environment. One policy included in the Quick Start package for Azure VMs measures elevated CPU activity in situations where the activity cannot be explained by an increase in network traffic alone:
+Netuitive's [anomaly detection](/product/anomaly-detection) fuels the out-of-the-box and custom policies that keep you apprised of critical events in your Azure environment. One policy included in the Quick Start package for Azure VMs measures elevated CPU activity in situations where the activity cannot be explained by an increase in network traffic alone:
 
-[![Azure Monitoring Policy](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Policy-1024x509.png)](https://www.metricly.comhttps://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Policy.png)
+[![Azure Monitoring Policy](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Policy-1024x509.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Policy.png)
 
 To see the other policies included in the Azure Quick-Start Monitoring package, [read our documentation](https://help.netuitive.com/Content/Policies/GlobalPolicies/global_policies.htm?Highlight=azure#microsoft-azure). As always, you have the freedom to add or edit policies as well to fit your system's monitoring needs.
 
@@ -48,4 +48,4 @@ Finally, the Azure Quick-Start Monitoring package includes access to utilization
 
 * * * * *
 
-*Ready to monitor your Azure instances with Netuitive? Try our [21-day, no-obligation free trial](https://www.metricly.com/signup).*
+*Ready to monitor your Azure instances with Netuitive? Try our [21-day, no-obligation free trial](/signup).*
