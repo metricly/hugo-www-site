@@ -935,7 +935,7 @@ ol {
 
 body {
   font-family: "Open Sans", sans-serif;
-  color: #34587a; }
+  color: #333333; }
 
 a {
   color: inherit; }
@@ -1059,7 +1059,7 @@ input {
   cursor: pointer;
   font-size: 16px;
   line-height: 22px;
-  font-weight: 400;
+  font-weight: 600;
   letter-spacing: 0.42px; }
 
 .header_nav_list_item > a:hover {
@@ -1182,7 +1182,8 @@ input {
   margin-top: 6px;
   font-size: 12px;
   letter-spacing: 0.12px;
-  line-height: 18px; }
+  line-height: 18px;
+  font-weight: 600; }
 
 .header_nav_access_link {
   color: #00A98F;
@@ -1191,7 +1192,6 @@ input {
   transition: filter 0.3s;
   transition: filter 0.3s, -webkit-filter 0.3s;
   cursor: pointer;
-  font-size: 14px;
   font-weight: 600;
   line-height: 19px;
   letter-spacing: 0.37px; }
@@ -2041,11 +2041,9 @@ input {
   margin-top: 17px;
   margin-bottom: 56px;
   font-size: 18px;
-  font-weight: 300;
   letter-spacing: 0.02px;
   line-height: 30px;
-  max-width: 592px;
-  color: #34587a; }
+  max-width: 592px; }
 
 .customer-page_share {
   padding-bottom: 94px;
@@ -2958,7 +2956,7 @@ input {
 
 #use-cases_helps {
   padding-bottom: 50px;
-  background-image: url(/wp-content/uploads/2018/09/metricly_aws_cost_landing_header2-2.png);
+  background-image: url(https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2018/09/metricly_aws_cost_landing_header2-2.png);
   background-position: center;
   background-size: cover; }
 
@@ -3630,7 +3628,7 @@ input {
   height: 15px;
   width: 15px;
   background: white;
-  background-image: url(/wp-content/uploads/2018/05/checkmark.png);
+  background-image: url(https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2018/05/checkmark.png);
   background-repeat: no-repeat;
   background-size: cover; }
 
@@ -4856,16 +4854,11 @@ input {
   width: 100%; }
 
 .demo_head {
-  padding-top: 142px;
   padding-bottom: 70px;
   background-color: #f9fbfc;
   position: relative;
-  background-image: url(/wp-content/uploads/2018/10/metricly_aws_cost_landing_header2-2.png);
-  background-size: contain;
-  background-position: bottom;
-  background-repeat: no-repeat;
-  background-size: 1500px;
-  min-height: 800px; }
+  background: url(/assets/header-section.png) no-repeat;
+  background-size: cover; }
 
 @media (max-width: 1080px) {
   .demo_head {
@@ -4941,7 +4934,6 @@ input {
 
 .demo_head_content {
   max-width: 600px;
-  color: #fff;
   position: relative;
   z-index: 1; }
 
@@ -4964,10 +4956,8 @@ input {
 .demo_head_content p {
   line-height: 26px;
   font-size: 18px;
-  font-weight: 300;
   letter-spacing: 0.02px;
-  font-size: 18px;
-  color: #34587A; }
+  font-size: 18px; }
 
 @media (min-width: 375px) and (max-width: 1440px) {
   .demo_head_content p {
@@ -5110,24 +5100,6 @@ input {
     -ms-flex-pack: justify;
     justify-content: space-between; } }
 
-.demo_head_content_suggestions_item {
-  max-width: 240px; }
-
-.demo_head_content_suggestions_item:nth-child(1) {
-  margin-right: 58px; }
-
-@media (max-width: 1079px) {
-  .demo_head_content_suggestions_item {
-    margin-bottom: 60px; }
-  .demo_head_content_suggestions_item:nth-child(1) {
-    margin-right: 0; } }
-
-@media (max-width: 540px) {
-  .demo_head_content_suggestions_item {
-    padding: 0; }
-  .demo_head_content_suggestions_item:nth-child(2) {
-    margin-bottom: 26px; } }
-
 .demo_head_content_suggestions_item:nth-child(2) h2:before {
   content: url(/wp-content/uploads/assets/demo/icon_monitoring.svg); }
 
@@ -5151,8 +5123,7 @@ input {
   font-size: 16px;
   line-height: 24px;
   margin-bottom: 24px;
-  letter-spacing: 0.16px;
-  color: #34587A; }
+  letter-spacing: 0.16px; }
 
 .demo_wistia_button {
   background: transparent;
@@ -5176,33 +5147,6 @@ input {
 .demo_wistia_button:hover {
   color: #51BFF1; }
 
-.demo_head_form {
-  max-width: 423px;
-  -webkit-box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.13);
-  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.13);
-  background-color: #fff;
-  border-radius: 4px;
-  padding: 38px 35px 50px 50px;
-  margin-left: 90px; }
-
-@media (max-width: 1080px) {
-  .demo_head_form {
-    padding: 30px 42px 36px 42px;
-    margin-left: 44px;
-    border-radius: 0; } }
-
-@media (max-width: 1079px) {
-  .demo_head_form {
-    padding: 24px 20px 32px 20px; } }
-
-@media (max-width: 720px) {
-  .demo_head_form {
-    max-width: 332px; } }
-
-@media (max-width: 670px) {
-  .demo_head_form {
-    margin-left: 0; } }
-
 .demo_head_form h3 {
   color: #39A4D5;
   font-weight: 600;
@@ -5221,7 +5165,6 @@ input {
 .demo_head_form > p {
   line-height: 24px;
   font-size: 16px;
-  color: #34587A;
   margin-bottom: 20px;
   letter-spacing: 0.16px; }
 
@@ -6156,13 +6099,12 @@ input {
     font-size: 11px; } }
 
 .aws .desc {
-  color: #2D516B;
   font-size: 14px;
   line-height: 22px; }
 
 .aws-head {
   padding: 224px 0 170px;
-  background: #F2F8FB;
+  background: url(/assets/bg-light.png) no-repeat;
   background-size: cover;
   position: relative; }
 
@@ -7043,7 +6985,6 @@ input {
   font-size: 16px;
   max-width: 490px;
   line-height: 22px;
-  color: #113B58;
   margin-bottom: 36px; }
 
 .monitoring .integrate-block .content-block .all-integration {
@@ -7255,7 +7196,8 @@ input {
   border-radius: 3px;
   padding: 12px 12px 14px !important;
   font-size: 16px;
-  line-height: 20px; }
+  line-height: 20px;
+  width: 100%; }
 
 .cb-field input:focus {
   border-color: #a8afb4 !important;

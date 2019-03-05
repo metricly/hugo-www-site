@@ -3232,7 +3232,7 @@ display: -webkit-box;
 }
 #use-cases_helps {
   padding-bottom: 50px;
-  background-image: url(/wp-content/uploads/2018/09/metricly_aws_cost_landing_header2-2.png);
+  background-image: url(https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2018/09/metricly_aws_cost_landing_header2-2.png);
   background-position: center;
   background-size: cover;
 }
@@ -4024,7 +4024,7 @@ display: -webkit-box;
     height: 15px;
     width: 15px;
     background: white;
-    background-image: url(/wp-content/uploads/2018/05/checkmark.png);
+    background-image: url(https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2018/05/checkmark.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
@@ -5415,7 +5415,7 @@ display: -webkit-box;
     padding-bottom: 70px;
     background-color: #f9fbfc;
     position: relative;
-    background-image: url(/wp-content/uploads/2018/10/metricly_aws_cost_landing_header2-2.png);
+    background-image: url(https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2018/10/metricly_aws_cost_landing_header2-2.png);
     background-size: contain;
     background-position: bottom;
     background-repeat: no-repeat;

@@ -136,7 +136,7 @@ p.checkmark {
 
 p.checkmark:before {
     content: "";
-    background: url(/wp-content/uploads/2018/05/checkmark.png);
+    background: url(https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2018/05/checkmark.png);
     display: inline-block;
     width: 15px;
     height: 15px;
@@ -16388,7 +16388,7 @@ a.copy-red {
 
 .background-point {
     position: absolute !important;
-    background: url("/wp-content/uploads/2016/04/bkgrnd-point-white.png") transparent;
+    background: url("https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/04/bkgrnd-point-white.png") transparent;
     background-repeat: no-repeat;
     background-position: center top;
     background-size: 200px 28px;
@@ -17202,7 +17202,7 @@ button[type='submit'] {
 }
 
 #green-half-trial {
-    background-image: url("/wp-content/uploads/2016/04/icon-larglink.png");
+    background-image: url("https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/04/icon-larglink.png");
     background-position: right bottom;
     background-repeat: no-repeat;
     background-size: 125px 144px
@@ -17450,7 +17450,7 @@ button[type='submit'] {
 }
 .blog-hero{
     height: 500px !important;
-    background: url('/wp-content/uploads/2016/04/blog-bg.png') no-repeat;
+    background: url('https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/04/blog-bg.png') no-repeat;
     background-position: center;
     background-size: cover;
     display: -webkit-box;
