@@ -1077,8 +1077,8 @@ input {
 .header_nav_list_item_sublist {
   position: absolute;
   top: 100%;
-  left: calc(50% - 205px/ 2);
-  width: 205px;
+  left: calc(50% - 255px/ 2);
+  width: 255px;
   padding-top: 13px;
   opacity: 0;
   pointer-events: none;
@@ -1095,7 +1095,7 @@ input {
   display: grid;
   grid-template-columns: 1fr;
   grid-row-gap: 20px;
-  padding: 39px 20px 27px;
+  padding: 27px 20px 27px;
   background-color: white;
   -webkit-box-shadow: 0 5px 20px 0 rgba(84, 84, 84, 0.5);
   box-shadow: 0 5px 20px 0 rgba(84, 84, 84, 0.5); }
