@@ -1,3 +1,10 @@
+<style>
+.header.scrolled {
+    background: {{ if.Param "header-light" }}#00A98F !important{{ else }}white{{ end }};
+    -webkit-box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.15);
+}
+</style>
 <header class="header{{ if .Param "header-light" }} -light{{ else }}{{ end }} align-items-start" id="header">
           <div class="header_wrap">
             <div class="container">
