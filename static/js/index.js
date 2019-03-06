@@ -1689,7 +1689,7 @@
           try {
             for (var o, r = a[Symbol.iterator](); !(e = (o = r.next()).done); e = !0) {
               var s = o.value;
-              t !== s && s.classList.add("")
+              t !== s && s.classList.add("fakeClass")
             }
           } catch (t) {
             n = !0, i = t
@@ -1709,7 +1709,7 @@
           try {
             for (var o, r = a[Symbol.iterator](); !(e = (o = r.next()).done); e = !0) {
               var s = o.value;
-              s.classList.remove("")
+              s.classList.remove("fakeClass")
             }
           } catch (t) {
             n = !0, i = t
