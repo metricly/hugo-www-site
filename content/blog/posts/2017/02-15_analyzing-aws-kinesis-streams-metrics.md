@@ -10,11 +10,11 @@ layout: "single"
 
 Amazon Kinesis Streams is [managed service hosting by AWS](https://aws.amazon.com/kinesis/streams/) that provides a pipeline for continuous streaming of various types of data between data producers and data consumers. Data producers emit message data that flows through Kinesis Streams and is then consumed by the data consumers.
 
-![Kinesis Streams](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/02/kinesis.png)
+![Kinesis Streams](/wp-content/uploads/2017/02/kinesis.png)
 
 The messages that flow through Kinesis can include logs, streaming metrics, notifications, or almost any other type of data. From there, Kinesis can expose that data for data consumers, which could ingest, store, or process that data for analysis with various data analytics tools.
 
-This is Part 1 of a two-part post. In this post, we're going to dive into the metrics provided by Amazon when using Kinesis; give a brief description of what each means; and try to cover some of the best practices surrounding the metrics provided by Kinesis and [Netuitive](/product).
+This is Part 1 of a two-part post. In this post, we're going to dive into the metrics provided by Amazon when using Kinesis; give a brief description of what each means; and try to cover some of the best practices surrounding the metrics provided by Kinesis and [Metricly](/product).
 
 Kinesis Streams Monitoring Metrics
 
@@ -22,12 +22,12 @@ Kinesis Streams Monitoring Metrics
 
 Simply put, collected metrics are those provided by your infrastructure, middleware, and applications. These are the standard metrics with which most technical teams are familiar, such as CPU, disk, or network usage, as well as service-specific metrics like those that will be discussed in this post.
 
-In November of 2016, Netuitive [announced](/november-2016-release-highlights) an updated [Quick Start Package for Kinesis](https://github.com/netuitive-community-packages/netuitive-packages-aws-kinesis). AWS and Netuitive provide several different metrics to help monitor your message pipeline and the application stack that utilizes it. Each of these are covered briefly below.
+In November of 2016, Metricly [announced](/november-2016-release-highlights) an updated [Quick Start Package for Kinesis](https://github.com/netuitive-community-packages/netuitive-packages-aws-kinesis). AWS and Metricly provide several different metrics to help monitor your message pipeline and the application stack that utilizes it. Each of these are covered briefly below.
 
 Kinesis Streams Collected Metrics
 ---------------------------------
 
-The metrics provided by Amazon and Netuitive for Kinesis are listed below. Key metrics to watch are specifically mentioned in the list.
+The metrics provided by Amazon and Metricly for Kinesis are listed below. Key metrics to watch are specifically mentioned in the list.
 
 -   **GetRecords.Bytes** is the number of bytes retrieved from a Kinesis stream over a given time period by a single GetRecords request.\
 -   **GetRecords.IteratorAgeMilliseconds** is the age in milliseconds of the last record retrieved from a stream by all GetRecords requests. The lower this metric the better, as a zero value indicates that records read by consumers are current with the stream.\
@@ -50,11 +50,11 @@ The metrics provided by Amazon and Netuitive for Kinesis are listed below. Key m
 
 In general, when working with Kinesis, watch for higher latency on both sides of your stream. Watch the amount of data going into and out of the stream for sudden changes. Failures with producers emitting data to the stream, and consumers retrieving data from the stream are likely indicators of problems with your stack.
 
-You can also find additional information about the metrics provided by referring to Amazon [documentation](http://docs.aws.amazon.com/streams/latest/dev/monitoring-with-cloudwatch.html), as well as the [Netuitive AWS Integration Metrics](https://help.netuitive.com/Content/Integrations/aws_metrics.htm#kinesis-1) documentation.
+You can also find additional information about the metrics provided by referring to Amazon [documentation](http://docs.aws.amazon.com/streams/latest/dev/monitoring-with-cloudwatch.html), as well as the [Metricly AWS Integration Metrics](https://help.netuitive.com/Content/Integrations/aws_metrics.htm#kinesis-1) documentation.
 
 Conclusion
 ----------
 
-In this post, we talked about Amazon Kinesis Streams, what Amazon Kinesis Streams does, and what metrics are provided by both AWS and Netuitive for Kinesis Streams. In addition, we've also covered some best practices when using these metrics.
+In this post, we talked about Amazon Kinesis Streams, what Amazon Kinesis Streams does, and what metrics are provided by both AWS and Metricly for Kinesis Streams. In addition, we've also covered some best practices when using these metrics.
 
-If you're interested in using Metricly to monitor your Kinesis Streams,check out Part 2 of this series, ["Monitor AWS Kinesis Streams with Metricly"] (/monitor-aws-kinesis/). 
+If you're interested in using Metricly to monitor your Kinesis Streams,check out Part 2 of this series, ["Monitor AWS Kinesis Streams with Metricly"] (/monitor-aws-kinesis/).

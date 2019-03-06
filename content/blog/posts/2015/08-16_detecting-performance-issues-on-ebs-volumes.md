@@ -7,7 +7,7 @@ category: "DevOps"
 url: "/detecting-performance-issues-on-ebs-volumes/"
 layout: "single"
 ---
-In a previous [blog](/iops-calculator-for-ebs-volumes) entry, we looked at how Netuitive calculates IOPS for an EBS (Elastic Block Storage) volume, and how the IOPS utilization rate can be used to help identify under-utilized volumes.  Today, we'll look at how we can use some additional metrics, including a computed metric created based on Amazon best practices, to allow us to detect EBS volumes that are having performance issues due to *over*-utilization.
+In a previous [blog](/iops-calculator-for-ebs-volumes) entry, we looked at how Metricly calculates IOPS for an EBS (Elastic Block Storage) volume, and how the IOPS utilization rate can be used to help identify under-utilized volumes.  Today, we'll look at how we can use some additional metrics, including a computed metric created based on Amazon best practices, to allow us to detect EBS volumes that are having performance issues due to *over*-utilization.
 
 Two of the key metrics for detecting potential performance issues are *disk queue length*, which indicates the number of requests waiting to be processed by the disk, and *latency*, which indicates the average amount of time that it takes the disk to process a request.  These two metrics are well-correlated.  If latency increases, the queue length will grow as more requests build up waiting for their turn to be executed; conversely, an increase in the number of concurrent requests will eventually cause latency to increase as the disk has more work to perform.
 
@@ -25,7 +25,7 @@ A second thought would be to look for increases in latency as well as in the que
 
 [![Latency increases (EBS Volumes)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/Latency-increases.jpg)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/Latency-increases.jpg)
 
-Therefore, to help avoid the false positives that can come from looking solely at these two metrics, Netuitive has introduced a computed metric called the *queue length differential*.
+Therefore, to help avoid the false positives that can come from looking solely at these two metrics, Metricly has introduced a computed metric called the *queue length differential*.
 
 Queue Length Differential
 -------------------------
@@ -40,8 +40,8 @@ To carry the example further, let's say that there is an additional increase in 
 
 [![Unexpected QLD](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2015/08/Unexpected-QLD.jpg)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2015/08/Unexpected-QLD.jpg)
 
-Netuitive provides an out-of-the-box policy that raises an event when these conditions are detected on an EBS instance.  This policy is a simple, effective way to be alerted to problems on your EBS volumes without being inundated with false positives.
+Metricly provides an out-of-the-box policy that raises an event when these conditions are detected on an EBS instance.  This policy is a simple, effective way to be alerted to problems on your EBS volumes without being inundated with false positives.
 
 * * * * *
 
-*Ready to monitor your EBS volumes with Netuitive? We offer a [21-day, no-obligation free trial.](/signup)*
+*Ready to monitor your EBS volumes with Metricly? We offer a [21-day, no-obligation free trial.](/signup)*

@@ -14,7 +14,7 @@ This framework provides a good starting point to evaluating your monitoring need
 Determine Your Monitoring Goals
 -------------------------------
 
-The end goal for your monitoring is to consolidate tools, reduce the total cost of ownership, and automate the configuration via [machine learning](/product/anomaly-detection).
+The end goal for your monitoring is to consolidate tools, reduce the total cost of ownership, and automate the configuration via [machine learning](https://www.metricly.com/product/anomaly-detection).
 
 | Monitoring Goals | Benefits |
 | --- | --- |
@@ -24,7 +24,7 @@ The end goal for your monitoring is to consolidate tools, reduce the total cost 
 | Adopt machine learning technology | Automate manual configuration tasks |
 | Use hosted services when cost effective | Eliminate administration cost and distraction |
 | Integrate public cloud monitoring | Manage cloud performance and cost |
-| Integrate with instant messaging and paging services like [PagerDuty](/combining-netuitive-and-pagerduty-for-monitoring-alarms) or [Slack](/slack-channel-integration) | Specialized reporting for measuring capacity and analyzing cloud costs |
+| Integrate with instant messaging and paging services like [PagerDuty](https://www.metricly.com/combining-netuitive-and-pagerduty-for-monitoring-alarms) or [Slack](https://www.metricly.com/slack-channel-integration) | Specialized reporting for measuring capacity and analyzing cloud costs |
 
 Once you've set your goals, take a look at your monitoring tools.
 
@@ -35,9 +35,9 @@ The expectations from monitoring tools for DevOps have evolved in recent years a
 
 Here's a generic set of functionalities that one or more of your tools might provide:
 
-[![Monitoring Tools for DevOps: Functionalities](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Monitoring-Tools-and-Functionalities-1024x500.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Monitoring-Tools-and-Functionalities.png)
+[![Monitoring Tools for DevOps: Functionalities](https://www.metricly.com/wp-content/uploads/2017/07/Monitoring-Tools-and-Functionalities-1024x500.png)](https://www.metricly.com/wp-content/uploads/2017/07/Monitoring-Tools-and-Functionalities.png)
 
-**Dashboards**: Preset [dashboards](/product/dashboards-and-reports) that are easy to customize and share with peers.
+**Dashboards**: Preset [dashboards](https://www.metricly.com/product/dashboards-and-reports) that are easy to customize and share with peers.
 
 **Reports**: Out of the box reports to help capacity planning and identify performance hotspots.
 
@@ -60,7 +60,7 @@ Monitor Your Full Application Stack
 
 Specific functionality is available for each tier of your application stack. This list is not meant to be comprehensive but rather intended to capture the largest feature sets.
 
-[![Monitoring Tools for DevOps: Monitoring Domains](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/DevOps-Monitoring-Domains.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/DevOps-Monitoring-Domains.png)
+[![Monitoring Tools for DevOps: Monitoring Domains](https://www.metricly.com/wp-content/uploads/2017/07/DevOps-Monitoring-Domains.png)](https://www.metricly.com/wp-content/uploads/2017/07/DevOps-Monitoring-Domains.png)
 
 ### End-User
 
@@ -111,4 +111,4 @@ While each environment is unique, the outlined framework here can be used as a s
 
 * * * * *
 
-*To learn more about how Netuitive can help you take your monitoring to the next level with machine learning technology and integrations to open source agents, check out our [product page](/product) or sign up for a [free trial](/signup).*
+*To learn more about how Metricly can help you take your monitoring to the next level with machine learning technology and integrations to open source agents, check out our [product page](https://www.metricly.com/product) or sign up for a [free trial](https://www.metricly.com/signup).*

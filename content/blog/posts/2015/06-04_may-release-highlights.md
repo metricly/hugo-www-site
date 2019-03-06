@@ -16,7 +16,7 @@ Add multiple users per account
 
 [![New User (May Release)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/NewUser.jpg)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/NewUser.jpg)
 
-You can now add your entire team to the same Netuitive account. Account admins are able to create multiple user logins designated by email address for easier access management.
+You can now add your entire team to the same Metricly account. Account admins are able to create multiple user logins designated by email address for easier access management.
 
 The process is easy---click the New User button located at the top of the User page, input a name and email address, and a new account is created. An email will be sent to the new user with instructions on how to login. Each user account has a separate username and password connected to the email address given.
 
@@ -37,4 +37,4 @@ Additional computed metrics for Diamond and collectd
 **Group metrics** compute values for related sets of metrics. For example, collectd provides 8 performance metrics for each disk being monitored, including read and write operations per second. Group metrics provide a general way to create a new computed metric for each disk without knowing ahead of time what the disks are; for example, summing read and write operations per second to get the total IOPS.
 
 * * * * *\
-Want to see these release highlights in action?  [We offer a fully-functional, 21-day free trial of Netuitive here.](/signup)
+Want to see these release highlights in action?  [We offer a fully-functional, 21-day free trial of Metricly here.](/signup)

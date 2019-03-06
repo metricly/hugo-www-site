@@ -9,19 +9,19 @@ layout: "single"
 ---
 
 
-The development team has been hard at work making Netuitive better than ever.  Thank you so much to all the beta users and customers who have generously shared their feedback and support.  Here are some highlights of the new features that launched in April:
+The development team has been hard at work making Metricly better than ever.  Thank you so much to all the beta users and customers who have generously shared their feedback and support.  Here are some highlights of the new features that launched in April:
 
 OpsGenie Support
 ----------------
 
-[OpsGenie](https://www.opsgenie.com/) makes it easy to send proactive alerts from Netuitive to your team via email, text message, push notification, and voice calls. When you send Netuitive events directly to your team via OpsGenie, simply route the messages according to teams, recipients or tags.
+[OpsGenie](https://www.opsgenie.com/) makes it easy to send proactive alerts from Metricly to your team via email, text message, push notification, and voice calls. When you send Metricly events directly to your team via OpsGenie, simply route the messages according to teams, recipients or tags.
 
-These rich notifications enhanced with your Netuitive analytics data deliver the supporting information needed to quickly assess each incident and take appropriate action right away.
+These rich notifications enhanced with your Metricly analytics data deliver the supporting information needed to quickly assess each incident and take appropriate action right away.
 
 Webhook Support for Automated Response Scripts
 ----------------------------------------------
 
-Our latest upgrade allows you to create and define an automated response to policy violations via [webhooks](https://en.wikipedia.org/wiki/Webhook).  When a policy is violated, Netuitive can now automatically trigger predefined response scripts.
+Our latest upgrade allows you to create and define an automated response to policy violations via [webhooks](https://en.wikipedia.org/wiki/Webhook).  When a policy is violated, Metricly can now automatically trigger predefined response scripts.
 
 For example, a capacity policy could be configured to activate a webhook that starts a script to spin up additional servers.  Or, a latency policy could be configured to trigger a restart as a first response step for your team if an application or server is not responding properly.
 
@@ -30,7 +30,7 @@ Multiple Metric Time Series Widget
 
 [![Multiple Metric Time Series (New Release)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/MultipleMeticTimeSeries.jpg)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/MultipleMeticTimeSeries.jpg)
 
-Comparing managed elements with Netuitive just got easier.
+Comparing managed elements with Metricly just got easier.
 
 The new Multiple Metric Time Series widget lets you plot time series data for several elements on one graph for at-a-glance comparisons.  For example, you could monitor CPU performance for multiple servers on one graph or cross compare CPUs versus network interfaces.
 

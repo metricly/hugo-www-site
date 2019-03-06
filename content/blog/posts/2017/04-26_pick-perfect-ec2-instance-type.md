@@ -9,13 +9,13 @@ layout: "single"
 ---
 After much research and deliberation, you've decided to embrace Amazon Web Services as the provider of cloud services for your business or application. Everything seems to be going swimmingly. Your first project is ready to deploy, and you navigate to the EC2 home page and click on **Launch Instance**. The page appears, allowing you to choose an Amazon Machine Image (AMI)---So far so good! You pick the AMI required for your particular deployment and click **Select**.
 
-![Pick Perfect EC2 Instance: Choose Type](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Choose-Instance-Type.png)
+![Pick Perfect EC2 Instance: Choose Type](/wp-content/uploads/2017/07/Choose-Instance-Type.png)
 
 And now, all of a sudden, things get tricky. You have to make a choice about EC2 instance type, which has important ramifications for how your cloud environment will perform and how cost-efficient it will be. With so many [EC2 instance types available](https://aws.amazon.com/ec2/instance-types/), this may seem like a difficult choice to make.
 
 Naturally, you want to ensure that you select the right type of instance to support your application, and allow it to be both performant and cost effective. But with so many options, which instance type is the right choice?
 
-[Netuitive can help you](/product) make that decision. We'll show how in this article, which discusses the considerations that you need to take into account with EC2 instance type selection, as well as how to measure those aspects and the impact those choices have on cost. We'll use Netuitive's AWS monitoring metrics to assist in measuring these factors. I'll also show you how to leverage a couple of [automated EC2 cost reports](/ec2-cost-analysis-recommendations) the researchers at Netuitive developed to give you access to all of this with a few clicks of your mouse.
+[Metricly can help you](/product) make that decision. We'll show how in this article, which discusses the considerations that you need to take into account with EC2 instance type selection, as well as how to measure those aspects and the impact those choices have on cost. We'll use Metricly's AWS monitoring metrics to assist in measuring these factors. I'll also show you how to leverage a couple of [automated EC2 cost reports](/ec2-cost-analysis-recommendations) the researchers at Metricly developed to give you access to all of this with a few clicks of your mouse.
 
 The Source of EC2 Instance Costs
 --------------------------------
@@ -74,47 +74,47 @@ It was a very labor-intensive project, and unfortunately, within a few months of
 Choose the Better Path for Resource Utilization Monitoring
 ----------------------------------------------------------
 
-Measurement of capacity resource utilization over time is necessary for selection of the correct instance type and size for your application. While my approach above contained all the right elements, necessity requires a better and more efficient method. Let's begin by looking at Netuitive as an [AWS monitoring solution](/getting-started-netuitive-aws), and taking the initial step in the process of gathering the required data.
+Measurement of capacity resource utilization over time is necessary for selection of the correct instance type and size for your application. While my approach above contained all the right elements, necessity requires a better and more efficient method. Let's begin by looking at Metricly as an [AWS monitoring solution](/getting-started-netuitive-aws), and taking the initial step in the process of gathering the required data.
 
-I won't spend too much time on the setup and configuration of your Netuitive account, as that information is freely available in other articles on this site. If you are in need of an account, they offer a 21-day free trial that you can sign up for [here](/signup). Additionally, you'll want to ensure that you [install the appropriate agent](/integrations) on your instances depending on your operating system. Detailed installation instructions are provided for each respectively.
+I won't spend too much time on the setup and configuration of your Metricly account, as that information is freely available in other articles on this site. If you are in need of an account, they offer a 21-day free trial that you can sign up for [here](/signup). Additionally, you'll want to ensure that you [install the appropriate agent](/integrations) on your instances depending on your operating system. Detailed installation instructions are provided for each respectively.
 
-If you want to follow along in the next section with your data, you'll need to set up the appropriate integrations and get your EC2 instance data flowing into Netuitive. It is a relatively simple process, and it opens the doors to all the analysis you need to make cost-effective decisions regarding your AWS account.
+If you want to follow along in the next section with your data, you'll need to set up the appropriate integrations and get your EC2 instance data flowing into Metricly. It is a relatively simple process, and it opens the doors to all the analysis you need to make cost-effective decisions regarding your AWS account.
 
 Two Clicks to All the Information You Need!
 -------------------------------------------
 
-Once you have data flowing into your Netuitive account, it takes just two clicks to access all the information you need. We started this article off by looking at the costs associated with deploying your applications into AWS using EC2 instances. Log in to your account, navigate to **Reports**, and then select the **EC2 Cost** report.
+Once you have data flowing into your Metricly account, it takes just two clicks to access all the information you need. We started this article off by looking at the costs associated with deploying your applications into AWS using EC2 instances. Log in to your account, navigate to **Reports**, and then select the **EC2 Cost** report.
 
-![Pick Perfect EC2 Instance: Select Cost Report](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Select-EC2-Cost.png)
+![Pick Perfect EC2 Instance: Select Cost Report](/wp-content/uploads/2017/07/Select-EC2-Cost.png)
 
-The EC2 cost report shows [total costs for all EC2 instances](/demystify-your-ec2-cost-analysis) that are reported to Netuitive. Filters and view options allow you to customize views to report the information you need. At the top right of the report is a **Report View** option. Click on the dropdown, and select ***Cost by Instance Type***. This view breaks down costs based on the type of instance. Stacked bars show the total cost for the instance itself, costs for data traffic transferred to and from the instance, and other costs like EBS optimization charges.
+The EC2 cost report shows [total costs for all EC2 instances](/demystify-your-ec2-cost-analysis) that are reported to Metricly. Filters and view options allow you to customize views to report the information you need. At the top right of the report is a **Report View** option. Click on the dropdown, and select ***Cost by Instance Type***. This view breaks down costs based on the type of instance. Stacked bars show the total cost for the instance itself, costs for data traffic transferred to and from the instance, and other costs like EBS optimization charges.
 
 Change the **Report View** option to ***Cost by Tag***. This option assumes you have tagged each of your instances to denote the application deployed, or other discerning property. The result is a report showing the costs across your environment based on application or another tag.
 
 For additional analysis, a **Download** link is provided at the top right corner of the data section below the graphic. This downloads a CSV file to your workstation, with the cost breakdown, based on the current Report View. The report allows you to see at a glance the total cost for your EC2 instances, and extract detailed information on how those costs are derived.
 
-![Pick Perfect EC2 Instance: Cost By Tag](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Costs-By-Tag-1024x479.png)
+![Pick Perfect EC2 Instance: Cost By Tag](/wp-content/uploads/2017/07/Costs-By-Tag-1024x479.png)
 
 The second report we're going to look at is my personal favorite. Navigate to the Reports menu again, and select the **EC2 Recommendation** report.
 
-![Pick Perfect EC2 Instance: EC2 Recommendation](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/EC2-Recommendation.png)
+![Pick Perfect EC2 Instance: EC2 Recommendation](/wp-content/uploads/2017/07/EC2-Recommendation.png)
 
-This report was developed by the researchers at Netuitive as a means to display cost data, and offer [recommendations for AWS cost savings](/optimize-aws-instance-types). The report also answers the all-important question "What EC2 instance type should I pick?"
+This report was developed by the researchers at Metricly as a means to display cost data, and offer [recommendations for AWS cost savings](/optimize-aws-instance-types). The report also answers the all-important question "What EC2 instance type should I pick?"
 
 As I mentioned before, a complete picture of resource utilization for an EC2 instance requires measurement of metrics over time. Because of this, you may not be able to make immediate use of this report, but once a week or more of data has been gathered, it will prove to be invaluable.
 
 The report provides the user with the opportunity to optimize based on allowable risk, preferred maximum use of CPU and Memory Utilization, and even lets you indicate if you would like instance type recommendations to be kept within the same family of instances. An example graph might look similar to the one shown below.
 
-![Pick Perfect EC2 Instance: Recommendation Graph](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/EC2-Recommendation-Graph-1024x459.png)
+![Pick Perfect EC2 Instance: Recommendation Graph](/wp-content/uploads/2017/07/EC2-Recommendation-Graph-1024x459.png)
 
 Before we look at the actual data in the report, look at the top right corner. (**Estimated weekly instance savings $682.41**.) By implementing the recommendations in this report, we can not only increase our resource utilization but also save a significant amount of money. Let's look at how.
 
 Considering the top-most point, a solid blue dot on the graph, we can hover over and see a basic summary of information. The instance is ***win01* **and is costing us $161.58 per week. You'll notice that the dot is joined to another open dot with a dotted line. This line represents the recommendation. The result is a decrease in cost and an increase in CPU utilization. Let's find the element in the data table below to see how this is possible.
 
-![Pick Perfect EC2 Instance: Recommendation Details](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/EC2-Reocmmendation-Details-1024x169.png)
+![Pick Perfect EC2 Instance: Recommendation Details](/wp-content/uploads/2017/07/EC2-Reocmmendation-Details-1024x169.png)
 
 The first entry in the table references the EC2 instance we were looking at in the graph. This instance is currently deployed as an m4.2xlarge. The cost is $161.58 per week, and hidden on the right-hand side is CPU utilization at 8.3% and Memory Utilization at 7%. The recommendation is to change this to a t2.medium instance type for a projected savings of 92% and improved CPU and Memory Utilization.
 
 After gathering as little as one week of data, this report accomplished an almost impossible task of identifying resource usage and recommended EC2 instance types for your applications. Even better, as your applications evolve and traffic into your applications increases, you can open the report at any time to get an instant view into your costs, and validate that your configuration is as optimized as possible.
 
-You can learn more about these reports by reading the documentation provided by Netuitive, including instructions on customizing the reports to better meet your needs.
+You can learn more about these reports by reading the documentation provided by Metricly, including instructions on customizing the reports to better meet your needs.

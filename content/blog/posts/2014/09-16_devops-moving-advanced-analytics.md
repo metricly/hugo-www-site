@@ -11,7 +11,7 @@ layout: "single"
 
 I had the honor of speaking with [Gene Kim](http://www.realgenekim.me/) last week. Gene is co-author (along with Kevin Behr and George Spafford) of the renowned book titled *[The Phoenix Project](http://itrevolution.com/book/the-phoenix-project/)*, and is one of DevOps' foremost thought leaders.
 
-As Netuitive's Chief Data Scientist, I am increasingly speaking with DevOps leaders interested in learning about advanced analytics solutions, as our company is leveraging a decade of advanced analytics to accelerate delivery of a cloud-based solution to the DevOps community. Gene was gracious enough to discuss strategies for cloud-based analytics and algorithms --- particularly in the AWS environment.
+As Metricly's Chief Data Scientist, I am increasingly speaking with DevOps leaders interested in learning about advanced analytics solutions, as our company is leveraging a decade of advanced analytics to accelerate delivery of a cloud-based solution to the DevOps community. Gene was gracious enough to discuss strategies for cloud-based analytics and algorithms --- particularly in the AWS environment.
 
 He confirmed that while DevOps leaders continue to be interested in basic monitoring, their interest has evolved in recent months beyond basic alerting to include anomaly detection and behavior learning technologies.
 

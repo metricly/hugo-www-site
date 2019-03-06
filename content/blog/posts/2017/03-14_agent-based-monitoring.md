@@ -15,7 +15,7 @@ In this post, I take a look at what makes agent-based monitoring so important, a
 I Already Use CloudWatch. Why Isn't That Enough?
 ------------------------------------------------
 
-[![Agent-Based Monitoring: Amazon CloudWatch](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/04/integrations-amazon-web-services.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/04/integrations-amazon-web-services.png)
+[![Agent-Based Monitoring: Amazon CloudWatch](/wp-content/uploads/2016/04/integrations-amazon-web-services.png)](/wp-content/uploads/2016/04/integrations-amazon-web-services.png)
 
 CloudWatch is a useful tool, but on their own, built-in monitoring solutions are not enough.
 
@@ -23,7 +23,7 @@ The free CloudWatch tier polls once every five minutes, and the premium (paid) t
 
 But agent-based solutions go much further. They give you:
 
--   Increased flexibility in creating notification alerts based on custom alarms. For example, Netuitive has a wide variety of [preset policies and alarms](https://help.netuitive.com/Content/Policies/DefaultPolicies/default_policies.htm).
+-   Increased flexibility in creating notification alerts based on custom alarms. For example, Metricly has a wide variety of [preset policies and alarms](https://help.netuitive.com/Content/Policies/DefaultPolicies/default_policies.htm).
 -   Better [out-of-the-box dashboards](/aws-monitoring-best-practices-using-pre-configured-dashboards), which are fed by [analytics](https://hlp.app.netuitive.com/Content/Metrics/Analytics/analytics.htm) based on trends around how the entire solution and infrastructure behave over time. CloudWatch doesn't provide in-depth analytics.
 
 Agentless Monitoring Is More Complex Than It Seems
@@ -44,11 +44,11 @@ Now that we've dispelled some common objections to agent-based monitoring, let's
 
 Many services that offer remote monitoring, like CloudWatch, have preset intervals---often defaulting to five minutes, with options to increase that frequency to as often as once per minute. This is to reduce network congestion and make it manageable from a platform point of view.
 
-Once per minute may seem quite frequent, and it's the default for almost every agent I have ever worked with (from OpenView to Netuitive), but depending on your use case, you may not be catching all the peaks in your CPU and I/O metrics without going to sub-minute intervals (perhaps as often as every 10 seconds). This does add one or two percent to the base load on the server. It is more than worth it if you start to catch 30-second spikes that were previously missed on high-volume systems, especially ones dealing with IoT devices.
+Once per minute may seem quite frequent, and it's the default for almost every agent I have ever worked with (from OpenView to Metricly), but depending on your use case, you may not be catching all the peaks in your CPU and I/O metrics without going to sub-minute intervals (perhaps as often as every 10 seconds). This does add one or two percent to the base load on the server. It is more than worth it if you start to catch 30-second spikes that were previously missed on high-volume systems, especially ones dealing with IoT devices.
 
 **2\. System Statistics**
 
-[![Agent-Based Monitoring: CPU Utilization](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Screen-Shot-2017-03-14-at-2.51.05-PM-1024x282.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Screen-Shot-2017-03-14-at-2.51.05-PM.png)
+[![Agent-Based Monitoring: CPU Utilization](/wp-content/uploads/2017/07/Screen-Shot-2017-03-14-at-2.51.05-PM-1024x282.png)](/wp-content/uploads/2017/07/Screen-Shot-2017-03-14-at-2.51.05-PM.png)
 
 As a result of its placement on the server, the agent has access to all of the system metrics, all the time. This allows the agent to report on all aspects of network I/O (in, out, and errors), [CPU utilization](/subtleties-ec2-cpu-utilization), memory usage (free, committed, and reserved), and disk I/O (including I/O waits), and not just what can be easily queried every five minutes by a remote agent running a few commands and reporting back.
 
@@ -56,9 +56,9 @@ As a result of its placement on the server, the agent has access to all of the s
 
 With the agent on the server and always running, vendors offer the ability to extend what the agents report back through pre-built add-ons for common third-party products that send the metrics their customers get the most value out of. There's also the ability to have [custom metrics](/inside-netuitive-api) backed by bespoke scripts that you can use for lesser-known or proprietary technology that is specific to your company, or even your industry.
 
-For Netuitive, it offers out of the box add-ons ("integrations" in Netuitive's terms) for MySQL, RabbitMQ, Docker, and [an ever-growing list](/integrations) of others.
+For Metricly, it offers out of the box add-ons ("integrations" in Metricly's terms) for MySQL, RabbitMQ, Docker, and [an ever-growing list](/integrations) of others.
 
-An additional nice feature of Netuitive's agent is that it can [collect data from any StatsD- compatible application or service](/using-statsd-with-netuitive-for-advanced-monitoring) on the server. This can be easily leveraged by your in-house applications to directly report the metrics that matter the most to the monitoring service, without needing to write out to logs and then worry about parsing them later---from claims processed per minute at an insurance company to the average number of steps reported on a fitness tracking application.
+An additional nice feature of Metricly's agent is that it can [collect data from any StatsD- compatible application or service](/using-statsd-with-netuitive-for-advanced-monitoring) on the server. This can be easily leveraged by your in-house applications to directly report the metrics that matter the most to the monitoring service, without needing to write out to logs and then worry about parsing them later---from claims processed per minute at an insurance company to the average number of steps reported on a fitness tracking application.
 
 **4\. Network and Security Model**
 

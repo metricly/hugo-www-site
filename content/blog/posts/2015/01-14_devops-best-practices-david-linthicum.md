@@ -23,7 +23,7 @@ Similar to a [blog ](/devops-moving-advanced-analytics)that [Betsy Nichols](/abo
 
 After all, DevOps is about automation so why not automate the process of performance analysis and capacity management using algorithms?
 
-It was great speaking with David and hearing his perspective as a cloud architect.  I also shared with him what Netuitive is doing with delivery of analytics in the cloud as well as a free Beta program to invite DevOps community feedback on new ideas.
+It was great speaking with David and hearing his perspective as a cloud architect.  I also shared with him what Metricly is doing with delivery of analytics in the cloud as well as a free Beta program to invite DevOps community feedback on new ideas.
 
 Here is a visual to summarize some of the concepts:
 

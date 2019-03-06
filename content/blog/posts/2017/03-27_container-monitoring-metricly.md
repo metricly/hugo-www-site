@@ -14,7 +14,7 @@ In order to provide organizations with an environment in which to deploy their D
 Anatomy of Amazon EC2 Container Service
 ---------------------------------------
 
-[![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/ECSIcon.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/ECSIcon.png)Amazon ECS is essentially just a platform to support Docker instances, with added support to manage those instances and simplify implementation for the user. With that said, it is important to note that Amazon has introduced slightly different terms to describe aspects of the Docker environment, and it is worth examining these before we continue.
+[![](/wp-content/uploads/2017/07/ECSIcon.png)](/wp-content/uploads/2017/07/ECSIcon.png)Amazon ECS is essentially just a platform to support Docker instances, with added support to manage those instances and simplify implementation for the user. With that said, it is important to note that Amazon has introduced slightly different terms to describe aspects of the Docker environment, and it is worth examining these before we continue.
 
 **Cluster:** This refers to the group of EC2 instances which will be used to host your Docker containers.
 
@@ -29,7 +29,7 @@ A benefit of using ECS is that you can leave the decision about which instance t
 Which Container Metrics Should You Monitor?
 -------------------------------------------
 
-[![EC2 Container Service Utilization Metrics](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/ECSUtilizationMetrics-1024x320.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/ECSUtilizationMetrics.png)
+[![EC2 Container Service Utilization Metrics](/wp-content/uploads/2017/07/ECSUtilizationMetrics-1024x320.png)](/wp-content/uploads/2017/07/ECSUtilizationMetrics.png)
 
 While AWS ECS manages the environment on your behalf, it is still imperative that an effective [monitoring strategy](/evaluate-monitoring-strategy) be developed and put in place to ensure that the system continues to operate in an optimal way, and enables rapid identification of problem areas.
 
@@ -39,16 +39,16 @@ Another of the potential headaches involved in monitoring a container-based solu
 
 The key metrics that you should be concerned with monitoring are CPU reservation and usage, and memory reservation and usage.
 
-Enabling Docker Integration with Netuitive
+Enabling Docker Integration with Metricly
 ------------------------------------------
 
-[![Monitoring EC2 Container Service: Netuitive Docker Integration](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/04/integrations-docker.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/04/integrations-docker.png)
+[![Monitoring EC2 Container Service: Metricly Docker Integration](/wp-content/uploads/2016/04/integrations-docker.png)](/wp-content/uploads/2016/04/integrations-docker.png)
 
-Netuitive has supported ECS monitoring since June of 2016, and provides basic monitoring out of the box through CloudWatch. If you are already a Netuitive customer, you should be able to view metrics related to your ECS clusters shortly after deployment.
+Metricly has supported ECS monitoring since June of 2016, and provides basic monitoring out of the box through CloudWatch. If you are already a Metricly customer, you should be able to view metrics related to your ECS clusters shortly after deployment.
 
-The following steps assume you already have a Netuitive account. If you don't yet have a Netuitive account, then you'll want to set up an account before proceeding through this article. Netuitive offers a 21-day free trial which you can sign up for [here](/signup).
+The following steps assume you already have a Metricly account. If you don't yet have a Metricly account, then you'll want to set up an account before proceeding through this article. Metricly offers a 21-day free trial which you can sign up for [here](/signup).
 
-Log in to your Netuitive account, and click on the Integrations option at the top of the page. We're going to include two integrations in our container---First, the Linux agent itself, and then we'll enable Docker metrics collection on the agent. There are two approaches to adding these to your containers.
+Log in to your Metricly account, and click on the Integrations option at the top of the page. We're going to include two integrations in our container---First, the Linux agent itself, and then we'll enable Docker metrics collection on the agent. There are two approaches to adding these to your containers.
 
 The first is by installing the Linux agent manually on a base image, enabling the Docker collector, and then saving the resulting image as a new Docker image for your projects. This is the process I followed, and is detailed on the [Linux Agent](https://hlp.app.netuitive.com/Content/Integrations/linux.htm) and [Docker Integration](https://hlp.app.netuitive.com/Content/Integrations/docker.htm) pages.
 

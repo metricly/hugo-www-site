@@ -9,7 +9,7 @@ layout: "single"
 ---
 
 
-Netuitive is hitting the road in 2016 to attend DevOps events all across the country! Here's a list of where we'll be -- come chat with us, see a demo, and of course collect some awesome swag. Check back regularly, since we'll be updating this page as we confirm more events.
+Metricly is hitting the road in 2016 to attend DevOps events all across the country! Here's a list of where we'll be -- come chat with us, see a demo, and of course collect some awesome swag. Check back regularly, since we'll be updating this page as we confirm more events.
 
 -   [DevOpsDays Austin](http://www.devopsdaysaustin.com/), May 2-3, 2016
 

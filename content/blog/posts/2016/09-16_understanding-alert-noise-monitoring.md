@@ -13,7 +13,7 @@ False monitoring alarms are costly any way you shake it. When you react to alert
 What is signal-to-noise ratio?
 ------------------------------
 
-First, it is important to understand that monitoring alerts come in [four distinct types](/product/anomaly-detection):
+First, it is important to understand that monitoring alerts come in [four distinct types](https://www.metricly.com/product/anomaly-detection):
 
 -   True Positive -- You have a performance problem and your monitoring tool alerts you to the issue. This is the ideal scenario: only receiving alerts for actual problems.
 -   True Negative -- Essentially, there are no issues present and your monitoring tool does not send you an alert. This is also a good thing; your monitoring is effectively reporting the current state of your environment and not creating a false alarm.
@@ -22,7 +22,7 @@ First, it is important to understand that monitoring alerts come in [four distin
 
 Signal- to-noise ratio refers to the number of true positives a system receives as compared to the number of false positives.
 
-[![Alert Noise: Image 1](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/09/SignaltoNoise.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/09/SignaltoNoise.png)
+[![Alert Noise: Image 1](https://www.metricly.com/wp-content/uploads/2016/09/SignaltoNoise.png)](https://www.metricly.com/wp-content/uploads/2016/09/SignaltoNoise.png)
 
 Essentially, it's a measure of how many false alarms you're forced to endure for every quality alert.
 
@@ -37,7 +37,7 @@ Alert noise is often listed as one of the biggest issues faced by DevOps teams. 
 
 False alarms aren't just annoying -- they pull time and resources away from problems that truly need to be addressed. This is compounded if you're receiving alert noise at the same time as quality alerts -- are those false alarms *really* false in this instance, or do they have something to do with your very real performance problem?
 
-[![Alert Noise: Alarm Clocks](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/09/alarmclocks.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/09/alarmclocks.png)
+[![Alert Noise: Alarm Clocks](https://www.metricly.com/wp-content/uploads/2016/09/alarmclocks.png)](https://www.metricly.com/wp-content/uploads/2016/09/alarmclocks.png)
 
 One of these alerts is real -- but which one?
 
@@ -47,4 +47,4 @@ The next blog in this series details 3 Ways to Reduce Monitoring Alert Noise. St
 
 * * * * *
 
-*If you want to see the impact alert noise is having on your environment, Netuitive offers a [21-day, no-obligation free trial.](/signup)*
+*If you want to see the impact alert noise is having on your environment, Metricly offers a [21-day, no-obligation free trial.](https://www.metricly.com/signup)*
