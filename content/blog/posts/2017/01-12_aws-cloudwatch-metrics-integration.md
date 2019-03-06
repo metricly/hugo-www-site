@@ -20,7 +20,7 @@ To start collecting custom metrics, users simply need to start sending custom da
 
 [![netuitive-custom-cloudwatch-elements1](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Netuitive-Custom-CloudWatch-Elements1-1024x297.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Netuitive-Custom-CloudWatch-Elements1.png)
 
-Custom CloudWatch elements appear in the [Inventory Explorer](https://help.netuitive.com/Content/Inventory/inventory_explorer.htm) just as any other element would, and the corresponding metrics appear in the Metric Explorer. As with all of our metrics, Netuitive [learns the normal behavior](/product/anomaly-detection) of custom CloudWatch metrics and creates bands of normalcy to help identify true anomalies.
+Custom CloudWatch elements appear in the [Inventory Explorer](https://help.netuitive.com/Content/Inventory/inventory_explorer.htm) just as any other element would, and the corresponding metrics appear in the Metric Explorer. As with all of our metrics, Netuitive [learns the normal behavior](/monitoring/) of custom CloudWatch metrics and creates bands of normalcy to help identify true anomalies.
 
 [![Custom CloudWatch Metrics: Anomaly Detection](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Pasted-image-at-2017_01_11-02_40-PM-1024x348.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Pasted-image-at-2017_01_11-02_40-PM.png)
 

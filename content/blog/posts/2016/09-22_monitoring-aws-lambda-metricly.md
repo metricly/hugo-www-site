@@ -27,7 +27,7 @@ Once data collection for Lambda has been enabled, performance metrics from Cloud
 
 Each Lambda function will be represented as a separate element within Netuitive, containing the above four metrics.
 
-Additionally, the Netuitive package for monitoring AWS Lambda will be auto-provisioned upon activation of Lambda data collection.  As we discussed in [a previous blog](/aws-monitoring-best-practices-using-pre-configured-dashboards), a Netuitive package contains pre-configured dashboards, computed metrics, policies, and analytics configurations, all based on industry best practices.
+Additionally, the Netuitive package for monitoring AWS Lambda will be auto-provisioned upon activation of Lambda data collection.  As we discussed in [a previous blog](/aws-monitoring-best-practices/), a Netuitive package contains pre-configured dashboards, computed metrics, policies, and analytics configurations, all based on industry best practices.
 
 Let's take a look at some of what's included in the Lambda package.
 
@@ -49,7 +49,7 @@ Identifying AWS Lambda Issues and Triggering Alerts with Netuitive Policies
 
 While dashboards are a quick way to help you visualize and summarize your data and its behavior across your environment, they are also a commodity feature in monitoring tools these days. Netuitive's packages go beyond this to create a number of other important artifacts, most notably alerting policies.
 
-A policy in Netuitive defines the condition under which events or alarms will be raised. Typically, these policies look for metrics which are behaving in ways that are [out of the norm](/product/anomaly-detection), based upon their historical behavior and/or behavior with respect to other, related metrics.  The events which are raised can be Informational, Warning, or Critical.  By auto-provisioning policies that detect the most common scenarios plaguing DevOps teams, users immediately have access to the dashboards they need to provide visibility and the policies they need to detect problems.
+A policy in Netuitive defines the condition under which events or alarms will be raised. Typically, these policies look for metrics which are behaving in ways that are [out of the norm](/monitoring/), based upon their historical behavior and/or behavior with respect to other, related metrics.  The events which are raised can be Informational, Warning, or Critical.  By auto-provisioning policies that detect the most common scenarios plaguing DevOps teams, users immediately have access to the dashboards they need to provide visibility and the policies they need to detect problems.
 
 For AWS Lambda, Netuitive currently has two out-of-the-box policies:
 

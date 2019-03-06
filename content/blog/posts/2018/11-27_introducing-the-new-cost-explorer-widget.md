@@ -7,7 +7,7 @@ category: "Product Updates"
 url: "/introducing-the-new-cost-explorer-widget/"
 layout: "single"
 ---
-Quickly explore your AWS Bill with our new widget! This widget uses the [AWS Services Cost report](/support/reports/aws-services-cost-report-user-guide/) to present cost data on your favorite dashboard. There are three main views for the Cost Explorer Widget: **period comparison**, **service total**, and **doughnut**.
+Quickly explore your AWS Bill with our new widget! This widget uses the [AWS Services Cost report](https://docs.metricly.com/reports/reports-aws-services-cost/) to present cost data on your favorite dashboard. There are three main views for the Cost Explorer Widget: **period comparison**, **service total**, and **doughnut**.
 
 **To Add a Cost Explorer Widget to Your Dashboard:**
 
@@ -44,4 +44,4 @@ Metricly believes that a culture built on communication, routine, and best pract
 
 ### Curious About Our Other Beta Features?
 
-We've created a new [Beta Feature page](/support/beta-features/) to make it easier for you to keep track of upcoming features. Whenever we push a new feature into beta, you'll find it there with a link to any supplementary documentation.
+We now [tag beta features](https://docs.metricly.com/tags/beta) in our help docs to make it easier for you to keep track of upcoming features. Whenever we push a new feature into beta, you'll find it there with a link to any supplementary documentation.

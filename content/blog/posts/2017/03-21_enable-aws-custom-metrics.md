@@ -26,7 +26,7 @@ Some examples of AWS custom metrics you might want to consider including in your
 How Do I Include These Custom Metrics?
 --------------------------------------
 
-When publishing AWS custom metrics, you can do so either [through an API](/inside-netuitive-api) or the AWS Command Line Interface (CLI) with the put-metric-data command. A custom metric is defined with a metricname, a namespace, and then dimensions.
+When publishing AWS custom metrics, you can do so either [through an API](/inside-metricly-api/) or the AWS Command Line Interface (CLI) with the put-metric-data command. A custom metric is defined with a metricname, a namespace, and then dimensions.
 
 Selecting a relevant and meaningful name will make it easier to find the metric, and more importantly, make it self-explanatory when others are looking for it.
 
@@ -57,13 +57,13 @@ If you already have a Netuitive account, and your data is being read and analyze
 Integrating Your Custom Metrics into Netuitive
 ----------------------------------------------
 
-If you log into your Netuitive account, you'll want to navigate to the [Integrations](/integrations) page and select the **Amazon Web Services** integration.
+If you log into your Netuitive account, you'll want to navigate to the [Integrations](https://docs.metricly.com/integrations/) page and select the **Amazon Web Services** integration.
 
 [![AWS Custom Metrics: Integration](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/AWS-Integration.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/AWS-Integration.png)
 
 Unless you already have it set up, you'll need to configure AWS integration on your account. This will allow metrics data to be read from your AWS account and make it viewable in Netuitive. I prefer the IAM role integration, but you can also integrate via an AWS Access Key. Both are explained with step-by-step directions [here](https://help.app.netuitive.com/Content/Integrations/aws.htm).
 
-Once your access is set up, you'll need to scroll down on the AWS Setup page to include the [Custom CloudWatch Metric](/introducing-aws-cloudwatch-custom-metrics-integration) Type. Additional options are available if you click the plus sign to the right of the metric, such as filtering by namespace.
+Once your access is set up, you'll need to scroll down on the AWS Setup page to include the [Custom CloudWatch Metric](/aws-cloudwatch-metrics-integration/) Type. Additional options are available if you click the plus sign to the right of the metric, such as filtering by namespace.
 
 [![Enable AWS Custom Metrics](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/AWS-Custom-Metrics.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/AWS-Custom-Metrics.png)
 

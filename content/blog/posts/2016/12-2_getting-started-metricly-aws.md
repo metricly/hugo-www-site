@@ -22,7 +22,7 @@ In this case, we're going to focus on using the Amazon Web Services integration 
 Getting Started
 ---------------
 
-To get started, first and foremost read the [Netuitive Overview page](/netuitive-overview) and watch the introductory video. It's only about six minutes and will give a high-level review of what's possible with Netuitive.
+To get started, first and foremost read the [Netuitive Overview page](/) and watch the introductory video. It's only about six minutes and will give a high-level review of what's possible with Netuitive.
 
 Next, you'll want to sign up for a 21 day free [trial account](/signup). Once the required fields are filled out and you click "Sign Up," you will receive a verification email.After you have your trial account created, review the introductory "[Where to Start" slideshow](https://hlp.app.netuitive.com/Content/where_to_start.htm) to get going.
 

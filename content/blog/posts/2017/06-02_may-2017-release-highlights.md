@@ -13,7 +13,7 @@ Metric Chart Images in Notifications
 
 Getting an event notification means something in your system is deviating or a threshold has been reached, but sometimes it's tough to tell by how much without having to read all the details in the notification message. For example, is the deviating metric just outside the band of normalcy or is it ten times higher than normal? We've made it easier than ever to discover that context by placing an image of the metric's recent values right inside the notification, giving you a quick glimpse into the metric's current behavior.
 
-Working with custom templates? No problem. In addition to supporting the metric charts by default, we added an image variable for the custom templates. This allows you to control the presence of images in addition to plain text in the custom notification templates. Starting now, email and [Slack monitoring notifications](/slack-channel-integration) have embedded images of relevant metrics with support coming soon for the other notification types.
+Working with custom templates? No problem. In addition to supporting the metric charts by default, we added an image variable for the custom templates. This allows you to control the presence of images in addition to plain text in the custom notification templates. Starting now, email and [Slack monitoring notifications](https://docs.metricly.com/alerts-notifications/notifications/notifications-slack/) have embedded images of relevant metrics with support coming soon for the other notification types.
 
 ![May 2017 Highlights: Images in Notifications](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Images-in-Notifications.png)
 
@@ -33,7 +33,7 @@ Improved Notifications from Ingested Text-based Events
 
 Currently, you can use our API to send any text-based events into our application. Those external events are added to the event graph to provide more context when troubleshooting performance issues. Often, a user might want to set an alert by parsing the text in those external events.
 
-For example, every time you deploy code an external event might get posted to our API. Now you could set up a policy to raise an alert every time the code deployment has a failure message, with a notification to relay all the details in that external event to your [notification end-point](/combining-netuitive-and-pagerduty-for-monitoring-alarms) (e.g.: email, Slack or PagerDuty). We also included additional variables so you can customize the content of the notification message based on selective information in the external event.
+For example, every time you deploy code an external event might get posted to our API. Now you could set up a policy to raise an alert every time the code deployment has a failure message, with a notification to relay all the details in that external event to your [notification end-point](/combining-metricly-and-pagerduty-for-monitoring-alarms/) (e.g.: email, Slack or PagerDuty). We also included additional variables so you can customize the content of the notification message based on selective information in the external event.
 
 ![May 2017 Highlights: External Events Notifications](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/External-Events-Notifications-1024x598.png)
 

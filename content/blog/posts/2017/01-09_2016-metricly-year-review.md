@@ -10,7 +10,7 @@ layout: "single"
 
 2016 was a banner year for Netuitive. Our hardworking engineering team shipped an incredible number of new features, functionality improvements, and integrations. We've been humbled by the incredible feedback from our users, and look forward to an even more extraordinary 2017.
 
-If you've been following our [release highlights](/category/release-highlights), you've already seen the rapid pace of these changes first-hand. Here are just a few of our favorite new releases from the past year:
+If you've been following our [release highlights](/blog/category/product-updates/), you've already seen the rapid pace of these changes first-hand. Here are just a few of our favorite new releases from the past year:
 
 AWS EC2 Cost Reporting
 ----------------------
@@ -31,12 +31,12 @@ Microsoft Azure Integration
 
 [![axure](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Axure.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Axure.png)
 
-We launched a new product offering for Microsoft Azure, with support for VMs and the Application Gateway. Read more about this integration [here](/introducing-microsoft-azure-integration).
+We launched a new product offering for Microsoft Azure, with support for VMs and the Application Gateway. Read more about this integration [here](/microsoft-azure-monitoring/).
 
 Quick Start Monitoring Packages
 -------------------------------
 
-This past year, we introduced exclusive Netuitive [Quick Start Monitoring Packages](/aws-monitoring-best-practices-using-pre-configured-dashboards). These packages automatically deploy when you configure an integration for popular technologies such as AWS, Azure, Linux, Java, Ruby, and several others. Quick Start Monitoring Packages include preconfigured dashboards and alerting policies tailored to each integration, so you can monitor your environment immediately with minimal setup.
+This past year, we introduced exclusive Netuitive [Quick Start Monitoring Packages](/aws-monitoring-best-practices/). These packages automatically deploy when you configure an integration for popular technologies such as AWS, Azure, Linux, Java, Ruby, and several others. Quick Start Monitoring Packages include preconfigured dashboards and alerting policies tailored to each integration, so you can monitor your environment immediately with minimal setup.
 
 Inventory and Metric Explorer Improvements
 ------------------------------------------
@@ -48,7 +48,7 @@ We listened to your feedback, and turned your biggest feature requests into hund
 Bring on 2017!
 --------------
 
-As if all of that wasn't enough, our team also deployed several updates to existing [integrations](/integrations), made countless UI/UX improvements, debuted new [dashboard widgets](https://help.netuitive.com/Content/Dashboards/Widgets/widget_library.htm), and more.
+As if all of that wasn't enough, our team also deployed several updates to existing [integrations](https://docs.metricly.com/integrations/), made countless UI/UX improvements, debuted new [dashboard widgets](https://help.netuitive.com/Content/Dashboards/Widgets/widget_library.htm), and more.
 
 We couldn't be more excited to build on the incredible strides our team has made in the coming months. We hope you'll join us for our weekly product demos to stay informed on new features, integrations, and more -- and make sure to keep an eye out for our release highlights as well!
 

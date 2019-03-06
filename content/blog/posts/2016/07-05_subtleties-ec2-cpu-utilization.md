@@ -67,9 +67,9 @@ Figure 5 -- Effect of CPU Credit Depletion on CPU Utilization
 Final Thoughts
 --------------
 
-Monitoring CPU usage is more complex than looking at a single utilization number.  As we've seen from real-world customer experience, [metrics can be misleading](/whitepaper-fallacy-real-time-analytics).  It is important to look at usage from different perspectives (hypervisor versus EC2 instance), to consider multiple breakdowns of CPU (such as the user, system, and steal metrics), and to be aware of AWS features (such as CPU credits) which may impact your performance. Context is everything!
+Monitoring CPU usage is more complex than looking at a single utilization number.  As we've seen from real-world customer experience. It is important to look at usage from different perspectives (hypervisor versus EC2 instance), to consider multiple breakdowns of CPU (such as the user, system, and steal metrics), and to be aware of AWS features (such as CPU credits) which may impact your performance. Context is everything!
 
-Netuitive can help you with all of this.  Our [monitoring platform](/product) is built with an analytics-first approach, designed to help you do more than look at metrics. With a wide-ranging scope of [out-of-the-box dashboards](/aws-monitoring-best-practices-using-pre-configured-dashboards), anomaly detection, and alert policies, Netuitive can help you quickly zero in on the issues affecting your environment -- and fix them before they have a serious impact on performance.
+Netuitive can help you with all of this.  Our [monitoring platform](/product) is built with an analytics-first approach, designed to help you do more than look at metrics. With a wide-ranging scope of [out-of-the-box dashboards](/aws-monitoring-best-practices/), anomaly detection, and alert policies, Netuitive can help you quickly zero in on the issues affecting your environment -- and fix them before they have a serious impact on performance.
 
 * * * * *
 

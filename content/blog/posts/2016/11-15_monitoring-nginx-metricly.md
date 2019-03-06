@@ -17,27 +17,27 @@ Netuitive is a full-stack performance monitoring and analytics platform that int
 
 At its core, monitoring server processes with Netuitive are an extension of the core Linux agent. While the details of getting the server agent set up are outside the scope of this article, the command itself is so straightforward that it's worth mentioning. (For more details on how to set up the Linux integration, Netuitive has some [good documentation](https://help.netuitive.com/Content/Datasources/Netuitive/linux.htm) to get you started):
 
-> sudo N_APIKEY=YOUR_API_KEY bash -c "$(curl -Ls http://repos.app.netuitive.com/linux.sh)"
+    sudo N_APIKEY=YOUR_API_KEY bash -c "$(curl -Ls http://repos.app.netuitive.com/linux.sh)"
 
 Once you've set up the Linux agent, getting NGINX monitoring up and running is a snap. The first step to accomplishing this is to configure an internal NGINX status page. To do this, open up the default NGINX site config file (this is usually one of the files in /etc/nginx/sites-enabled/), and add the following block to the server section:
 
-> location /nginx_status {\
-> # turns on nginx stats #\
-> stub_status on;\
-> # turns off logging #\
-> access_log off;\
-> allow 127.0.0.1;\
-> # sends rest of world to /dev/null #\
-> deny all;\
-> }
+    location /nginx_status {\
+    # turns on nginx stats #\
+    stub_status on;\
+    # turns off logging #\
+    access_log off;\
+    allow 127.0.0.1;\
+    # sends rest of world to /dev/null #\
+    deny all;\
+    }
 
 Basically, what this block does is create a page at http://localhost/nginx_status that is only accessible locally. If you're curious about the information this page contains, it is easily accessible by curling the URL from the command line on your server.
 
-> root@netuitive-demo:~# curl http://localhost/nginx_status\
-> Active connections: 1\
-> server accepts handled requests\
-> 110228 110228 23126\
-> Reading: 0 Writing: 1 Waiting: 0
+    root@netuitive-demo:~# curl http://localhost/nginx_status\
+    Active connections: 1\
+    server accepts handled requests\
+    110228 110228 23126\
+    Reading: 0 Writing: 1 Waiting: 0
 
 When configured, the Netuitive agent pushes the information on this page up to your Netuitive account, but before that happens, we need to tell the agent about NGINX first. Enabling NGINX monitoring in the Linux agent is as simple as updating one line in one file. To do this, open up the NGINX collector file (found at: **/opt/netuitive-agent/conf/collectors/NginxCollector.conf**) and change the enabled setting to True.
 

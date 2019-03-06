@@ -42,7 +42,7 @@ Custom Datasource Integration
 POST Request with Data
 POST Request with Data
 
-I’ll be using Postman to submit my metrics to the API, but you could use any tool capable of sending POST requests. The URL is https://api.app.metricly.com/ingest/{apiId}  with your unique API Key replacing {apiId}.
+I’ll be using Postman to submit my metrics to the API, but you could use any tool capable of sending POST requests. The URL is `https://api.app.metricly.com/ingest/{apiId}`  with your unique API Key replacing {apiId}.
 
 POST Request with Data
 POST Request with Data

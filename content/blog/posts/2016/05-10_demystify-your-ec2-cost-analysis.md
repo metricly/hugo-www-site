@@ -9,7 +9,7 @@ layout: "single"
 ---
 Making sense of EC2 costs can be tricky, even with [AWS Cloud monitoring tools](https://www.metricly.com). Questions like "which EC2 instances are costing me the most?", "are there any instances I can switch off" and "am I using the right instance types?" are difficult to answer using Amazon's built-in cost management tools. Let's take a look at why EC2 cost analysis is so difficult -- and what you can do to demystify your AWS bills:
 
-*To see how Netuitive's [behavior learning engine](/behavior-learning-engine) can show you exactly which elements are driving costs and provide meaningful EC2 cost analysis, [try a demo today](/signup).*
+*To see how Netuitive's behavior learning engine can show you exactly which elements are driving costs and provide meaningful EC2 cost analysis, [try a demo today](/signup/).*
 
 Amazon's built-in Billing & Cost Management provide an overview of your total spend. You can track totals by time and break them down by different dimensions (such as account, region, or instance type.) These tools are great for financial control and budgeting but do not help if you want to delve deeper and see how much each individual EC2 instance is costing you.
 

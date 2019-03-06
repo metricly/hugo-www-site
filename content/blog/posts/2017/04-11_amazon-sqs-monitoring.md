@@ -28,7 +28,7 @@ Stuck queues aren't the only problem to watch out for. Slow queues can be just a
 
 These are just a few examples of how any standard message queuing system can go wrong. But when something bad happens, what can we do about it? Better yet, how do we identify and resolve problems before they have a significant impact?
 
-With Netuitive's Amazon SQS monitoring integration, staying on top of the health of your SQS queues is incredibly easy. Netuitive's [integrations](/integrations) are easy to install and use, and they pack a powerful punch, giving you incredible transparency into your application architecture.
+With Netuitive's Amazon SQS monitoring integration, staying on top of the health of your SQS queues is incredibly easy. Netuitive's [integrations](https://docs.metricly.com/integrations/) are easy to install and use, and they pack a powerful punch, giving you incredible transparency into your application architecture.
 
 But, before we get into what we can [monitor with Netuitive](/product), let's first touch on how to set up Netuitive's Amazon SQS monitoring integration.
 
@@ -38,7 +38,7 @@ To get started with Netuitive's SQS integration, the first thing we need to do i
 
 ![SQS Monitoring: Setup AWS Integration](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/SetUpAWSIntegration2.png)
 
-Integrating[ AWS with Netuitive](/getting-started-netuitive-aws) is a relatively straightforward process, but we first need to configure the appropriate IAM role in AWS. Before moving forward, however, take note of the "Account ID" and "External ID" settings. They will be needed.
+Integrating[ AWS with Netuitive](/getting-started-metricly-aws/) is a relatively straightforward process, but we first need to configure the appropriate IAM role in AWS. Before moving forward, however, take note of the "Account ID" and "External ID" settings. They will be needed.
 
 Configuring SQS Permissions
 ---------------------------
@@ -59,7 +59,7 @@ Creating a role for 3rd-party cross-account access requires the Account ID and E
 
 ![SQS Monitoring: Attach Policy](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/AttachPolicy-1024x585.png)
 
-The final step in creating an IAM role is attaching a policy. Netuitive's [AWS integration](/aws-monitoring-best-practices-using-pre-configured-dashboards) only requires read-only access, which is named "ReadOnlyAccess" (obviously) in this case.
+The final step in creating an IAM role is attaching a policy. Netuitive's [AWS integration](/aws-monitoring-best-practices/) only requires read-only access, which is named "ReadOnlyAccess" (obviously) in this case.
 
 ![SQS Monitoring: Review](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Review.png)
 

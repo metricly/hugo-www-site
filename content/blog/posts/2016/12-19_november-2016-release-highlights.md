@@ -52,7 +52,7 @@ Our Amazon Kinesis monitoring package was updated to match the full scope of Net
 
 Netuitive's computed metrics are calculated using collected metrics and add another layer of analytics and value to your monitoring. Our alerting policies are based on industry best practices and pre-configured to detect performance issues with your Kinesis Streams. After the package is provisioned, take a look and activate notifications to alert your team on the enabled policies.
 
-For more information on Netuitive's Quick Start monitoring packages, visit [this blog](/aws-monitoring-best-practices-using-pre-configured-dashboards).
+For more information on Netuitive's Quick Start monitoring packages, visit [this blog](/aws-monitoring-best-practices/).
 
 * * * * *
 

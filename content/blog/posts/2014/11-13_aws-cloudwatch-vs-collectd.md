@@ -44,15 +44,15 @@ Collectd comes out-of-the-box with the http_write plugin.
 
 Netuitive's API is ready to receive metrics directly from the http_write plugin. To get your Collectd metrics into Netuitive, all you need to do is add a few lines to your existing Collectd configuration file.
 
-> Plugin write_http
->
-> URL "https://api.uat.netuitive.com/ingest/collectd/{customer API key}"
->
-> Format "JSON"
->
-> /URL
->
-> /Plugin
+    Plugin write_http
+
+    URL "https://api.uat.netuitive.com/ingest/collectd/{customer API key}"
+
+    Format "JSON"
+
+    /URL
+
+    /Plugin
 
 Collectd's simplicity combined with [Netuitive's analytics](/) enables a much richer set of metrics at a higher frequency, at the same (or in some cases lower) cost.
 

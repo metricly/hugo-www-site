@@ -24,7 +24,7 @@ Collecting metrics for your Python application through Netuitive requires the Ne
 
 The StatsD daemon is intended to instrument method calls associated with the classes used in your application code. Each time an object is spawned, StatsD measures the behavior of each invocation. It's also important here to note that StatsD metrics need to be configured through one of three entities -- counters, gauges, or timers. Each is self-explanatory; counters measure the number of times a given metric is triggered, gauges tell you the percentage or amount of a particular attribute, and timers are used to quantify the time it takes to perform an action.
 
-Upon each influx of data, Netuitive will then provide visualizations for those metrics and start automatically machine learning the time-series data to provide [anomaly detection](/product/anomaly-detection) -- we'll talk about that more at the end of the blog.
+Upon each influx of data, Netuitive will then provide visualizations for those metrics and start automatically machine learning the time-series data to provide [anomaly detection](/monitoring/) -- we'll talk about that more at the end of the blog.
 
 Which metrics are most important for monitoring Python Applications?
 --------------------------------------------------------------------
@@ -54,7 +54,7 @@ Why use anomaly detection for performance monitoring for Python applications?
 
 [![timeserieswidget](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/07/timeserieswidget-1024x252.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/07/timeserieswidget.png)
 
-[Anomaly detection](/category/anomaly-detection) improves upon [static thresholds](https://help.netuitive.com/Content/Performance/Analytics/statis_thresholds.htm), a basic tenet of traditional or manual monitoring often used in conjunction with basic free open source monitoring tools. Static thresholds are a line in the sand for your metrics. With this type of monitoring, you will receive an alert whenever that line is crossed, whether that is predictable behavior or a genuinely unusual event.
+[Anomaly detection](/blog/category/cloud-monitoring/) improves upon [static thresholds](https://help.netuitive.com/Content/Performance/Analytics/statis_thresholds.htm), a basic tenet of traditional or manual monitoring often used in conjunction with basic free open source monitoring tools. Static thresholds are a line in the sand for your metrics. With this type of monitoring, you will receive an alert whenever that line is crossed, whether that is predictable behavior or a genuinely unusual event.
 
 Netuitive's anomaly detection, by contrast, uses calculated "bands of normalcy" that automatically learn and conform to the expected behavior of your application metrics at a given time. For example, if a code deploy causes a spike your load metrics every Thursday morning at 4 a.m., Netuitive's machine learning engine will recognize that and factor it into those bands of normalcy. On the other hand, if you're using static thresholds, you'll be forced into an impossible choice -- raise the threshold to perhaps dangerous levels to account for the expected spike or get used to receiving and ignoring an alert every Thursday at 4 a.m.
 

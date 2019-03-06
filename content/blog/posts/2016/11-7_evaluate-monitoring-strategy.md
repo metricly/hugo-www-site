@@ -14,7 +14,7 @@ This framework provides a good starting point to evaluating your monitoring need
 Determine Your Monitoring Goals
 -------------------------------
 
-The end goal for your monitoring is to consolidate tools, reduce the total cost of ownership, and automate the configuration via [machine learning](/product/anomaly-detection).
+The end goal for your monitoring is to consolidate tools, reduce the total cost of ownership, and automate the configuration via [machine learning](/monitoring/).
 
 | Monitoring Goals | Benefits |
 | --- | --- |
@@ -24,7 +24,7 @@ The end goal for your monitoring is to consolidate tools, reduce the total cost 
 | Adopt machine learning technology | Automate manual configuration tasks |
 | Use hosted services when cost effective | Eliminate administration cost and distraction |
 | Integrate public cloud monitoring | Manage cloud performance and cost |
-| Integrate with instant messaging and paging services like [PagerDuty](/combining-netuitive-and-pagerduty-for-monitoring-alarms) or [Slack](/slack-channel-integration) | Specialized reporting for measuring capacity and analyzing cloud costs |
+| Integrate with instant messaging and paging services like [PagerDuty](/combining-metricly-and-pagerduty-for-monitoring-alarms/) or [Slack](https://docs.metricly.com/alerts-notifications/notifications/notifications-slack/) | Specialized reporting for measuring capacity and analyzing cloud costs |
 
 Once you've set your goals, take a look at your monitoring tools.
 

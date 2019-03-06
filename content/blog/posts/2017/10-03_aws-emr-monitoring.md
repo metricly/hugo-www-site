@@ -55,7 +55,7 @@ This is where a tool like Metricly comes into play. We make EMR monitoring easy 
 
 ![Amazon EWS Monitoring with Metricly](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/10/Amazon-EWS-Monitoring-with-Metricly.png)*Enable AWS EMR Monitoring in Metricly*
 
-Once Metricly starts pulling data in from EMR, the sheer number of items that are tracked can be overwhelming at first. There's application statuses, containers, HDFS, memory usage, nodes, S3 read/write tracking---Who knew Big Data created so much... data? Thankfully, Metricly helps cut through the clutter with their [pre-configured dashboards](/aws-monitoring-best-practices-using-pre-configured-dashboards).
+Once Metricly starts pulling data in from EMR, the sheer number of items that are tracked can be overwhelming at first. There's application statuses, containers, HDFS, memory usage, nodes, S3 read/write tracking---Who knew Big Data created so much... data? Thankfully, Metricly helps cut through the clutter with their [pre-configured dashboards](/aws-monitoring-best-practices/).
 
 As an example, the default EMR Summary dashboard gives you an overview of the number of EMR cluster instances you are running, the top five instances based on HDFS utilization, and the top five instances based on concurrent data transfers. While this is a great start, I highly recommend browsing the "Add Widget" modal for more appropriate metrics and graphs for your particular EMR use case.
 
@@ -66,7 +66,7 @@ As an example, the default EMR Summary dashboard gives you an overview of the nu
 Automated Alerting
 ------------------
 
-As with all monitoring, one of the most important ways to stay on top of things is targeted alerting. While the details of Metricly's [alerting functionality](/how-to-leverage-machine-learning-for-proactive-monitoring-alerts) are outside the scope of this article, it is important to know where to configure this functionality.
+As with all monitoring, one of the most important ways to stay on top of things is targeted alerting. While the details of Metricly's [alerting functionality](/machine-learning-monitoring-alerts/) are outside the scope of this article, it is important to know where to configure this functionality.
 
 ![Amazon EMR Alerting with Metricly](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/10/Amazon-EMR-Alerting-with-Metricly.png)*Metricly Policies for EMR Alerting*
 
@@ -75,4 +75,4 @@ In "Metricly-speak," [setting up alerts happens underneath the "Policies"](/effe
 Conclusion
 ----------
 
-EMR is a painfully complex tool, with enough metrics to run a second Big Data cluster, but with Metricly, the process of monitoring and analyzing the health of your EMR clusters is massively simplified. While Metricly provides enough tooling out of the box to get you up and running in a matter of minutes, its true power is just how customizable it is. With the ability to define dynamic dashboards and advanced alerting policies, Metricly is a robust tool that is up to the task of [monitoring anything you throw at it](/inside-netuitive-api).
+EMR is a painfully complex tool, with enough metrics to run a second Big Data cluster, but with Metricly, the process of monitoring and analyzing the health of your EMR clusters is massively simplified. While Metricly provides enough tooling out of the box to get you up and running in a matter of minutes, its true power is just how customizable it is. With the ability to define dynamic dashboards and advanced alerting policies, Metricly is a robust tool that is up to the task of [monitoring anything you throw at it](/inside-metricly-api/).

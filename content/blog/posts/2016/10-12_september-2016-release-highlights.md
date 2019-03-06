@@ -23,7 +23,7 @@ This report does more than help you with deriving your cost savings; it also all
 Package Auto-Provisioning
 -------------------------
 
-When you activate a data integration that has an accompanying monitoring [monitoring package](/aws-monitoring-best-practices-using-pre-configured-dashboards) (preset dashboards, policies, and analytics), the package is automatically enabled and provisioned to your account as soon as Netuitive receives data. The provisioning will save you time by auto-configuring the best practices inside your account for each integration type, such as AWS ELB, Linux, or MySQL. This can save you precious time in getting started with monitoring.
+When you activate a data integration that has an accompanying monitoring [monitoring package](/aws-monitoring-best-practices/) (preset dashboards, policies, and analytics), the package is automatically enabled and provisioned to your account as soon as Netuitive receives data. The provisioning will save you time by auto-configuring the best practices inside your account for each integration type, such as AWS ELB, Linux, or MySQL. This can save you precious time in getting started with monitoring.
 
 Once a package is provisioned, it can be enabled and disabled as necessary, so that you can add or remove the package materials at the click of a button! A full list of Netuitive monitoring packages, defined as a set of JSON configuration files, is available in our [GitHub project](https://github.com/netuitive-community-packages).
 

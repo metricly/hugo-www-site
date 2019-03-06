@@ -74,7 +74,7 @@ This context is key to making a decision about the capacity of your environment.
 
 Context is also important with regard to alerts and alarms. Part of what makes traditional monitoring so noisy is a reliance on [static thresholds](https://help.netuitive.com/Content/Performance/Analytics/statis_thresholds.htm), which essentially draw a line in the sand for your metrics. Once that line is crossed, you're sent an alert, whether the metric values present are normal for your environment or not. These thresholds completely ignore the context of your data, which results in your being sent unnecessary alarms while still running the risk of a having a problem fly under the radar.
 
-This is why Netuitive implemented [behavior learning](/product/anomaly-detection) -- to minimize both alarm noise and the risk of unforeseen problems. Unlike static thresholds, Netuitive's bands of normalcy conform to the "normal" behavior of your environment as determined by our behavior learning engine. Let's go back to those green and blue bands we saw previously:
+This is why Netuitive implemented [behavior learning](/monitoring/) -- to minimize both alarm noise and the risk of unforeseen problems. Unlike static thresholds, Netuitive's bands of normalcy conform to the "normal" behavior of your environment as determined by our behavior learning engine. Let's go back to those green and blue bands we saw previously:
 
 [![Widget 9 - Bands of Normalcy](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/07/Widget9.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/07/Widget9.png)
 

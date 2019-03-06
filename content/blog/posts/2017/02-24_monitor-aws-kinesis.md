@@ -22,12 +22,12 @@ First, you'll need an Amazon Web Services account. If you don't already have one
 
 Second, you should also consider taking a few minutes to familiarize yourself with Amazon Kinesis Streams, how it works, and what it can do for you. Amazon helpfully provides [Youtube videos](https://www.youtube.com/watch?v=7bhXafN9uNg) of various conferences where they discuss Kinesis Streams, and the [Amazon Kinesis Developer Guide](http://docs.aws.amazon.com/streams/latest/dev/introduction.html) covers the subject in great detail.
 
-Third, to try out Netuitive, you can sign up for a [21-day free trial](/signup). To learn a little more about Netuitive and what it does, watch the [What is Netuitive](/netuitive-overview) overview video. The [Netuitive Blog](/blog) also provides helpful posts about monitoring with Netuitive.
+Third, to try out Netuitive, you can sign up for a [21-day free trial](/signup). To learn a little more about Netuitive and what it does, watch the [What is Netuitive](/) overview video. The [Netuitive Blog](/blog) also provides helpful posts about monitoring with Netuitive.
 
 Netuitive AWS Integration
 -------------------------
 
-Now that you've created your Netuitive account, you'll need to create a [Netuitive integration](/integrations) with your AWS account. One advantage of using Netuitive as your monitoring solution is that you can integrate it with other services you are using and see all of your metrics in a single place.
+Now that you've created your Netuitive account, you'll need to create a [Netuitive integration](https://docs.metricly.com/integrations/) with your AWS account. One advantage of using Netuitive as your monitoring solution is that you can integrate it with other services you are using and see all of your metrics in a single place.
 
 The Netuitive help documentation provides [detailed instructions](https://help.app.netuitive.com/Content/Integrations/aws.htm) for creating an AWS integration. The recommended method for creating this integration is covered under "Installation Via IAM Role".
 
@@ -73,7 +73,7 @@ The Netuitive [Quick Start Package for Kinesis](https://github.com/netuitive-com
 
 -   Dashboards display the monitoring information in an easy to use format.
 
-These are covered in greater details in the Netuitive post [AWS Monitoring Best Practices Using Pre-Configured Dashboards](/aws-monitoring-best-practices-using-pre-configured-dashboards).
+These are covered in greater details in the Netuitive post [AWS Monitoring Best Practices Using Pre-Configured Dashboards](/aws-monitoring-best-practices/).
 
 Tips
 ----

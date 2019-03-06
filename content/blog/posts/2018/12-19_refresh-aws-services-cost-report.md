@@ -9,7 +9,7 @@ layout: "single"
 
 *Refresh is a Metricly blog series that showcases special product updates to existing features. Keep an eye out for future articles as we continue to roll out exciting updates to your cost platform.*
 
-The [AWS Services Cost Report](/support/reports/aws-services-cost-report-user-guide/) is a key player in your cost-reduction strategy. With just a few clicks, you can cut through the data by your preferred dimension and add filters to find exactly what you need.
+The [AWS Services Cost Report](https://docs.metricly.com/reports/reports-aws-services-cost/) is a key player in your cost-reduction strategy. With just a few clicks, you can cut through the data by your preferred dimension and add filters to find exactly what you need.
 
 **Common Uses**
 
@@ -48,4 +48,4 @@ What's New
 
 Configuration now comes with a **live preview** report of your data! As you update your visualization, filtering, and other report options, the preview updates *before* you hit apply.
 
-Check out the [updated user guide](/support/reports/aws-services-cost-report-user-guide/) to learn more.
+Check out the [updated user guide](https://docs.metricly.com/reports/reports-aws-services-cost/) to learn more.

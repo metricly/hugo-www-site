@@ -32,7 +32,7 @@ To best explain how NGINX workers actually work, I'll borrow an analogy from the
 Gathering NGINX Metrics
 -----------------------
 
-So, with all that in mind, let's take a look at how to [gather information from a running NGINX server](/monitoring-nginx-netuitive). One of the easiest ways to gather stats from NGINX is the built-in NGINX status page. This page gives real-time data about a running NGINX server, providing you up-to-date information about the health of your application, and is a great way to gather simple information about the current status of your application.
+So, with all that in mind, let's take a look at how to [gather information from a running NGINX server](/monitoring-nginx-metricly/). One of the easiest ways to gather stats from NGINX is the built-in NGINX status page. This page gives real-time data about a running NGINX server, providing you up-to-date information about the health of your application, and is a great way to gather simple information about the current status of your application.
 
 To set up the NGINX status page, the first thing that must be done is to define the path where it can be accessed. To do this, open up your server's config file (generally found at /etc/nginx/sites-enabled/default) in your favorite editor, and inside the server block, add the following code:
 
@@ -50,7 +50,7 @@ To set up the NGINX status page, the first thing that must be done is to define 
 
 [view raw](https://gist.github.com/cdisomma1/11f685f63bbddefdad48fc8ad3832e2e/raw/2880ae65b1fb7bb49d5e60e15df29cb1b9197926/Monitoring%20NGINX%201) [Monitoring NGINX 1](https://gist.github.com/cdisomma1/11f685f63bbddefdad48fc8ad3832e2e#file-monitoring-nginx-1) hosted with ![❤](https://s.w.org/images/core/emoji/11/svg/2764.svg) by [GitHub](https://github.com)
 
-Take special note of the allow and deny directives, as this makes the status page inaccessible to every IP except the one that is explicitly allowed. In this particular case, allowing from 127.0.0.1 means that only the server that NGINX is running on can access the status page. Once that code is added, and NGINX is restarted, you can visit your website (for example, http://example.com/nginx_status), and get a text-based output that looks something like this:
+Take special note of the allow and deny directives, as this makes the status page inaccessible to every IP except the one that is explicitly allowed. In this particular case, allowing from 127.0.0.1 means that only the server that NGINX is running on can access the status page. Once that code is added, and NGINX is restarted, you can visit your website (for example, `http://example.com/nginx_status`), and get a text-based output that looks something like this:
 
 | Active connections: 16 |
 
@@ -73,7 +73,7 @@ Monitoring NGINX in Production
 
 While the above information is interesting, monitoring a basic NGINX status page and parsing logfiles isn't really all that valuable in a production environment. With the potential for thousands of requests a second, it is important to establish an [effective monitoring solution](/product) that can keep you informed and aware of the health of your infrastructure.
 
-To accomplish this, let's take a look at how to monitor an NGINX server using Metricly, and dig into what statistics we can actually monitor. The first thing we need to do to set up NGINX monitoring in Metricly is to set up the Metricly Linux agent. To do this, head on over to the [Integrations page in your Metricly](/integrations) account, click on the Linux Integration, and follow the installation instructions.
+To accomplish this, let's take a look at how to monitor an NGINX server using Metricly, and dig into what statistics we can actually monitor. The first thing we need to do to set up NGINX monitoring in Metricly is to set up the Metricly Linux agent. To do this, head on over to the [Integrations page in your Metricly](https://docs.metricly.com/integrations/) account, click on the Linux Integration, and follow the installation instructions.
 
 Next, open up the Metricly NGINX collector config file at /opt/netuitive-agent/conf/collectors/NginxCollector.conf in your favorite editor and change the enabled value from False to True.
 
@@ -100,7 +100,7 @@ While viewing information on a dashboard is beneficial, the true value of a moni
 
 When this condition is met, a notification can be sent to one or more channels, allowing you and your team to be up-to-date on any potential issues as they happen. While you have to be careful to [avoid notification apathy](/alert-noise-blog), when your alerting system is properly tuned, you enable your team to more effectively and efficiently solve small problems before they become big ones.
 
-It is important to note that more than one notification channel can be enabled, allowing you to notify team members of issues via [Slack](/slack-channel-integration), [PagerDuty](/combining-netuitive-and-pagerduty-for-monitoring-alarms), email, and more, with minimal configuration. This gives you the ability to communicate with your team in the most effective way possible, and even programmatically react to problems as they arise through the use of Metricly's [webhook notification method](/automate-alert-response-aws-lambda).
+It is important to note that more than one notification channel can be enabled, allowing you to notify team members of issues via [Slack](https://docs.metricly.com/alerts-notifications/notifications/notifications-slack/), [PagerDuty](/combining-metricly-and-pagerduty-for-monitoring-alarms/), email, and more, with minimal configuration. This gives you the ability to communicate with your team in the most effective way possible, and even programmatically react to problems as they arise through the use of Metricly's [webhook notification method](/automate-alert-response-aws-lambda).
 
 Final Thoughts
 --------------

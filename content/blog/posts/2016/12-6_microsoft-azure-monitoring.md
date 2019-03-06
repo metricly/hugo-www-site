@@ -38,7 +38,7 @@ Anomaly Detection for Azure
 
 Like all of Netuitive's integrations, Azure metrics appear with "contextual bands of normalcy" that conform to the behavior of your environment. Where traditional static monitoring thresholds create an "on/off" trigger that generates an alert when crossed, Netuitive can also learn the normal behavior of your environment to identify anomalies, providing additional context and reducing unnecessary noise.
 
-Netuitive's [anomaly detection](/product/anomaly-detection) fuels the out-of-the-box and custom policies that keep you apprised of critical events in your Azure environment. One policy included in the Quick Start package for Azure VMs measures elevated CPU activity in situations where the activity cannot be explained by an increase in network traffic alone:
+Netuitive's [anomaly detection](/monitoring/) fuels the out-of-the-box and custom policies that keep you apprised of critical events in your Azure environment. One policy included in the Quick Start package for Azure VMs measures elevated CPU activity in situations where the activity cannot be explained by an increase in network traffic alone:
 
 [![Azure Monitoring Policy](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Policy-1024x509.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Policy.png)
 

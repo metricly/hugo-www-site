@@ -35,7 +35,7 @@ How can performance analytics help you to achieve those goals? In lots of ways. 
 
 Continuously delivered software updates are only useful if the updates actually improve the performance of the software. To determine whether the changes you are making are helping, you need continuous, real-time performance analytics so you can track the impact of each change as soon as it is rolled out.
 
-Measuring the effectiveness of code changes would be important in any type of software workflow. But it's especially essential in DevOps, since part of the value of DevOps and continuous integration is that they let you [identify and correct problems early](/product/anomaly-detection), when they are still easier to fix. Continuous integration servers and tests can help you identify development bugs. But when it comes to problems that affect application performance, the only way to detect and correct them quickly is to run performance analytics early and often on your application.
+Measuring the effectiveness of code changes would be important in any type of software workflow. But it's especially essential in DevOps, since part of the value of DevOps and continuous integration is that they let you [identify and correct problems early](/monitoring/), when they are still easier to fix. Continuous integration servers and tests can help you identify development bugs. But when it comes to problems that affect application performance, the only way to detect and correct them quickly is to run performance analytics early and often on your application.
 
 **Performance Analytics Increase Visibility**
 
@@ -59,7 +59,7 @@ So, without performance analytics, you get a DevOps workflow where developers an
 
 One of the pitfalls of continuous delivery is this: Changes roll down the pipeline so quickly that it can be difficult to trace a new problem to an individual change. If developers are integrating hundreds of new pieces of code per day, and updates are being pushed into production at the same rapid pace, how do you quickly determine which individual code integration caused a particular problem experienced in production?
 
-That answer, at least when it comes to performance problems, is to use performance analytics to gain insights into exactly when a performance problem began to occur. With this information, tracing the issue back to a particular [integration](/integrations) becomes much easier. Plus, performance analytics can help you to understand whether something other than code changes (for example, a change in the deployment environment) was responsible for a problem. Not every issue is Development's fault.
+That answer, at least when it comes to performance problems, is to use performance analytics to gain insights into exactly when a performance problem began to occur. With this information, tracing the issue back to a particular [integration](https://docs.metricly.com/integrations/) becomes much easier. Plus, performance analytics can help you to understand whether something other than code changes (for example, a change in the deployment environment) was responsible for a problem. Not every issue is Development's fault.
 
 **Performance Analytics Help You Cope with Heterogenous Environments**
 

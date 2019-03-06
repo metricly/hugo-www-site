@@ -34,10 +34,10 @@ You can then narrow down your selection further by using a tag for specific serv
 Interactive Demo Site Now Available
 -----------------------------------
 
-What is the fastest way to decide if a product can help your specific requirements? How about if you could click around the product without any delay whatsoever? We have made it easier for our prospects to independently assess the fit between [our product features](/product) and their needs, without any delay from the time that they land on our web site.
+What is the fastest way to decide if a product can help your specific requirements? How about if you could click around the product without any delay whatsoever? We have made it easier for our prospects to independently assess the fit between [our product features](/product/) and their needs, without any delay from the time that they land on our web site.
 
-We have created a demo version of our product that is populated with generic but realistic demo data so that the dashboards, alerts and reports have content, and we have made it available on our web site so that prospects can click around. Please visit our [public demo access page](/demo) to start your assessment and share feedback with us.
+We have created a demo version of our product that is populated with generic but realistic demo data so that the dashboards, alerts and reports have content, and we have made it available on our web site so that prospects can click around. Please visit our [public demo access page](/demo/) to start your assessment and share feedback with us.
 
-This interactive demo complements two other ways you can learn more about Metricly: you can also watch a [7min demo video](/netuitive-overview) of our product, or start a [free 21-day trial evaluation](/signup) which takes only 15min to activate.
+This interactive demo complements two other ways you can learn more about Metricly: you can also watch a [7min demo video](/demo/) of our product, or start a [free 21-day trial evaluation](/signup/) which takes only 15min to activate.
 
 ![Dashboard view of Metricly's Public Demo account](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/09/Public-Demo-Dashboard-1024x490.png)

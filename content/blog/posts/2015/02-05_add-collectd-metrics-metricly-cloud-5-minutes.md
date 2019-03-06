@@ -28,7 +28,7 @@ Netuitive's API is ready to receive metrics directly from the collectd http_writ
 
 Currently, Netuitive enables you to ingest data from AWS CloudWatch, Diamond, StatsD, and collectd via standardized integrations that take only minutes to setup.  These integrations allow you to collect metrics from your entire stack. We also allow you to push your custom data into our REST API by following our format convention.
 
-On a weekly basis, our Netuitive engineering team is adding new data sources.  [Visit our integration page to learn about our latest additions](/integrations).
+On a weekly basis, our Netuitive engineering team is adding new data sources.  [Visit our integration page to learn about our latest additions](https://docs.metricly.com/integrations/).
 
 * * * * *
 

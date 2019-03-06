@@ -52,11 +52,11 @@ Collecting raw data at the metric level for performance indicators like CPU and 
 Advanced Analytics Make All the Difference
 ------------------------------------------
 
-Netuitive uses multivariate regression analysis as well as other mathematical techniques to [predict the normal value of a given monitoring metric](/product/anomaly-detection) based on the behavior of other related metrics. This behavior learning process creates a "band of normalcy" that accounts for statistical norms as well as a margin of error which is then calculated for each metric.
+Netuitive uses multivariate regression analysis as well as other mathematical techniques to [predict the normal value of a given monitoring metric](/monitoring/) based on the behavior of other related metrics. This behavior learning process creates a "band of normalcy" that accounts for statistical norms as well as a margin of error which is then calculated for each metric.
 
 The raw data for each metric is still collected and compared to the normal range; the ranges don't replace raw data, they simply add context to the metric values. These bands represent a huge improvement over static thresholds, pulling the human guesswork out of monitoring and replacing it with proven statistical analysis.
 
-Correlating metrics into elements also allows you to proactively monitor your environment. This can help you pick up on anomalies that could have a broader impact on your environment earlier. For example, we recently had a use case in which an anomaly was detected in the disk space metrics a full hour before the Windows system began reporting issues. By monitoring these metrics together, the team was able to recognize the source of the problem and solve it with minimal downtime. ([For more details, check out this blog](/how-to-leverage-machine-learning-for-proactive-monitoring-alerts).)
+Correlating metrics into elements also allows you to proactively monitor your environment. This can help you pick up on anomalies that could have a broader impact on your environment earlier. For example, we recently had a use case in which an anomaly was detected in the disk space metrics a full hour before the Windows system began reporting issues. By monitoring these metrics together, the team was able to recognize the source of the problem and solve it with minimal downtime. ([For more details, check out this blog](/machine-learning-monitoring-alerts/).)
 
 Event Policies
 --------------

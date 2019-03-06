@@ -14,7 +14,7 @@ DevOps in 2017: Serverless Computing
 
 [![DevOps in 2017 Predictions: Serverless](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Serverless.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Serverless.png)
 
-[AWS Lambda](/best-practices-aws-lambda-monitoring), which was introduced in 2014, is old news by now. But other serverless computing technologies are taking off, too. [Azure Functions](/introducing-microsoft-azure-integration) became generally available late last year. IBM began aggressively promoting [OpenWhisk](http://openwhisk.incubator.apache.org/) around the same time.
+[AWS Lambda](/best-practices-aws-lambda-monitoring), which was introduced in 2014, is old news by now. But other serverless computing technologies are taking off, too. [Azure Functions](/microsoft-azure-monitoring/) became generally available late last year. IBM began aggressively promoting [OpenWhisk](http://openwhisk.incubator.apache.org/) around the same time.
 
 Expect the momentum of the serverless computing trend to continue in 2017. As Corne Kloppers [notes](https://www.planittesting.com/us/Insights/2016/DevOps-In-2017), serverless architectures are a key component of infrastructure modernization. Like microservices and next-generation cluster management tools, serverless computing functions help DevOps teams build modern infrastructures that are more agile and make more efficient use of resources.
 
@@ -40,7 +40,7 @@ In multiple ways, communication for DevOps teams is on its way to reaching a new
 
 One of those ways is more ChatOps. ChatOps integrations have already been improving communication for DevOps teams for some time. But ChatOps has now transformed from a nice-to-have feature to one that is being embraced by enterprises, as George Hume [wrote](https://devops.com/4-essential-practices-succeeding-chatops/) on DevOps.com in November.
 
-Meanwhile, developers are finding new ways to insert communication optimizations into DevOps tools. Consider, for example, the latest version of [PagerDuty's monitoring](/combining-netuitive-and-pagerduty-for-monitoring-alarms) and incident management platform, which offers communication features like "suppression." Suppression lets incident management teams monitor to collect information about an outage without being alerted about it immediately. This is just one example of the trend toward providing a more nuanced and flexible---or more agile---approach to communication.
+Meanwhile, developers are finding new ways to insert communication optimizations into DevOps tools. Consider, for example, the latest version of [PagerDuty's monitoring](/combining-metricly-and-pagerduty-for-monitoring-alarms/) and incident management platform, which offers communication features like "suppression." Suppression lets incident management teams monitor to collect information about an outage without being alerted about it immediately. This is just one example of the trend toward providing a more nuanced and flexible---or more agile---approach to communication.
 
 Expect these trends to continue in 2017 as the DevOps world seeks even leaner and meaner ways of sharing information.
 

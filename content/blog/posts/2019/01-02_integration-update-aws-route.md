@@ -13,7 +13,7 @@ layout: "single"
 
 What you'll need to get started:
 
--   [AWS Integration](/support/integrations/aws/)
+-   [AWS Integration](https://docs.metricly.com/integrations/aws/)
 
 ### Packaged Policies
 

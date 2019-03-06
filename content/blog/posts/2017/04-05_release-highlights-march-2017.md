@@ -7,7 +7,7 @@ category: "Product Update"
 url: "/release-highlights-march-2017/"
 layout: "single"
 ---
-As members of the DevOps community, we know that luck has no place in saving your environment from disaster. With these fresh new features, you won't need luck anymore. Netuitive's March 2017 release highlights include beta [EC2 Cost Report](/ec2-cost-analysis-recommendations) features, deployment of our application platform in a new AWS region, and Netuitive API / Dropwizard [integration](/integrations).
+As members of the DevOps community, we know that luck has no place in saving your environment from disaster. With these fresh new features, you won't need luck anymore. Netuitive's March 2017 release highlights include beta [EC2 Cost Report](/ec2-cost-analysis-recommendations) features, deployment of our application platform in a new AWS region, and Netuitive API / Dropwizard [integration](https://docs.metricly.com/integrations/).
 
 Beta EC2 Cost Report Features
 -----------------------------

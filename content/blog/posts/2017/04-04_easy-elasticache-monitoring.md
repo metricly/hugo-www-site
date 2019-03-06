@@ -50,7 +50,7 @@ Specifically, there are three configurations which Netuitive includes:
 Exploring the ElastiCache Community Package
 -------------------------------------------
 
-The package containing the metric configurations, policies and pre-defined dashboards for ElastiCache monitoring is located on the Netuitive Github. A couple of things you may notice are a well-documented history of updates and improvements. At time of writing, the last commit to the repository had been within a few days. You can find more information about the packages, including an in-depth description of what is included (and why) in this [article](/aws-monitoring-best-practices-using-pre-configured-dashboards), but I'll provide a high-level overview below.
+The package containing the metric configurations, policies and pre-defined dashboards for ElastiCache monitoring is located on the Netuitive Github. A couple of things you may notice are a well-documented history of updates and improvements. At time of writing, the last commit to the repository had been within a few days. You can find more information about the packages, including an in-depth description of what is included (and why) in this [article](/aws-monitoring-best-practices/), but I'll provide a high-level overview below.
 
 What is a Metric Configuration, and Why Do I Need It?
 -----------------------------------------------------
@@ -79,7 +79,7 @@ The **scope** defines the purview of the policy. The scope can be inclusive, or 
 
 **Conditions** specify the criteria which define the limits or restrictions of the policy. In the case of CPU monitoring policies on ElasticCache nodes, this might be, for instance, the condition where the utilization of the CPU exceeds 90% usage, where the node types are defined as Memcached. It may also leverage Netuitive's [behavior learning technology](/3-ways-reduce-alert-noise) to detect a deviation from an expected range of values as established by the baseline band of normalcy (derived from historic behavior for a given day and time) of the contextual band of normalcy (derived from correlating time series data).
 
-**Duration** defines a period during which the policy conditions will need to be violated. It might be possible for CPU utilization to spike above 90% for a few seconds given a combination of events, but if it settles back down to within the normal range, we need to respond to a [PagerDuty alert](/combining-netuitive-and-pagerduty-for-monitoring-alarms), only to find out everything is fine. Perhaps for our policy, we could set this to 30 minutes, thus ensuring that a potentially dangerous condition exists before alerts are triggered.
+**Duration** defines a period during which the policy conditions will need to be violated. It might be possible for CPU utilization to spike above 90% for a few seconds given a combination of events, but if it settles back down to within the normal range, we need to respond to a [PagerDuty alert](/combining-metricly-and-pagerduty-for-monitoring-alarms/), only to find out everything is fine. Perhaps for our policy, we could set this to 30 minutes, thus ensuring that a potentially dangerous condition exists before alerts are triggered.
 
 **Notifications** are the reason why we have policies. We want to be notified when things go awry. A violated policy will trigger an event, and an event can be tied to a specific notification type. Netuitive supports a variety of integrations with third-party notifications, as evidenced below.
 
@@ -91,4 +91,4 @@ The configurations take the complexity away from importing your data, and the pr
 Saving the Best for Last
 ------------------------
 
-We've talked about all the amazing benefits provided by the community package available for ElastiCache monitoring, and I mentioned it above, but it bears repeating as we conclude this discussion. The hard work has been done, and the calculations, configurations, and dashboards are all there, ready for you to use. You only need to [integrate your metrics](/integrations) into Netuitive, and they'll be ready and waiting for you as soon as the data starts to flow.
+We've talked about all the amazing benefits provided by the community package available for ElastiCache monitoring, and I mentioned it above, but it bears repeating as we conclude this discussion. The hard work has been done, and the calculations, configurations, and dashboards are all there, ready for you to use. You only need to [integrate your metrics](https://docs.metricly.com/integrations/) into Netuitive, and they'll be ready and waiting for you as soon as the data starts to flow.

@@ -13,7 +13,7 @@ Many of the tools and problems in this post will seem obvious to seasoned Python
 The Problem
 -----------
 
-Metricly's Linux agent is a packaged up version of our Diamond project fork as well as a couple other smaller libraries. This agent [sends performance data to Metricly](/agent-based-monitoring) including CPU, network, disk, and memory usage. We also have a Dockerized agent which is the same agent in a Docker image, which is useful for [monitoring Docker containers](/container-monitoring-netuitive) on the same host. A couple of months ago we started getting reports that this Docker agent had a slow memory leak leading to ~600MB growth over two weeks. Because the reports were only for the Dockerized agent we initially thought the issue was only with Dockerized environments.
+Metricly's Linux agent is a packaged up version of our Diamond project fork as well as a couple other smaller libraries. This agent [sends performance data to Metricly](/agent-based-monitoring) including CPU, network, disk, and memory usage. We also have a Dockerized agent which is the same agent in a Docker image, which is useful for [monitoring Docker containers](/container-monitoring-metricly/) on the same host. A couple of months ago we started getting reports that this Docker agent had a slow memory leak leading to ~600MB growth over two weeks. Because the reports were only for the Dockerized agent we initially thought the issue was only with Dockerized environments.
 
 Initial Tests
 -------------

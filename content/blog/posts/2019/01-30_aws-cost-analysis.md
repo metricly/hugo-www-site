@@ -18,11 +18,11 @@ Don't have a Metricly account? Sign up for a [free 21-day trial.](/signup)
 
 ### Leveraging Metricly's Cost Reports
 
-Metricly's [AWS Services Cost report](/support/reports/aws-services-cost-report-user-guide/) is a powerful cost and usage report that leverages data from the [AWS Cost Explorer API](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ce-api.html) to create a better cost-management experience. In this article, we'll show you how to use this report's Period Comparison functionality to expose unwanted (and surprising) cost deltas.
+Metricly's [AWS Services Cost report](https://docs.metricly.com/reports/reports-aws-services-cost/) is a powerful cost and usage report that leverages data from the [AWS Cost Explorer API](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/ce-api.html) to create a better cost-management experience. In this article, we'll show you how to use this report's Period Comparison functionality to expose unwanted (and surprising) cost deltas.
 
 It's simple: to find the root cause of cost deltas, you have to analyze AWS cost and usage. You can try out several unique combinations of grouping and filtering, but we suggest you start with the scenarios listed below.
 
-Note: this article assumes you are already familiar with the AWS Services Cost report. For a thorough breakdown of all its features, see the [documentation](/support/reports/aws-services-cost-report-user-guide/).
+Note: this article assumes you are already familiar with the AWS Services Cost report. For a thorough breakdown of all its features, see the [documentation](https://docs.metricly.com/reports/reports-aws-services-cost/).
 
 ### AWS Cost Analysis by Service
 

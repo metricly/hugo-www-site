@@ -9,11 +9,11 @@ layout: "single"
 
 ### About
 
-Metricly now supports integration with Consul! [Check out our official admin guide.](/support/integrations/consul/) Consul is a service mesh solution that helps with service discovery, configuration, and segmentation functionality.
+Metricly now supports integration with Consul! [Check out our official admin guide.](https://docs.metricly.com/integrations/consul/) Consul is a service mesh solution that helps with service discovery, configuration, and segmentation functionality.
 
 **What you'll need to get started:**
 
--   The most up-to-date [Linux Agent](/support/integrations/linux/)
+-   The most up-to-date [Linux Agent](https://docs.metricly.com/integrations/linux/)
 -   An existing [Consul](https://www.consul.io/) setup
 
 ### Packaged Policies

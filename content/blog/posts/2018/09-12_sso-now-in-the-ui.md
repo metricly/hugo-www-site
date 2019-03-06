@@ -21,4 +21,4 @@ Now you can setup (and update) SSO from the UI! It's easy and takes only minutes
 6.  Done! You can repeat this process and overwrite your SSO configuration at any time.\
     ![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2018/09/sso-finished.png)
 
-See our [SSO Guide](/support/getting-started/managing-users/sso-login/) to see an example of full setup using Okta.
+See our [SSO Guide](https://docs.metricly.com/integrations/sso/) to see an example of full setup using Okta.

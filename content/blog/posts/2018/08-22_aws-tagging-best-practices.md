@@ -12,7 +12,7 @@ featured: true
 
 In this article, I'll be sharing AWS tagging best practices, more information about why tagging is a process your organization needs and how to implement a strategy which meets the requirements of the organization without placing an undue burden on development teams.
 
-If you're part of an organization with a growing cloud environment, you probably already understand the challenges associated with managing an increasing number of resources. Tagging resources is the solution to understanding what assets are in play, and how they relate to each other. With that knowledge, you can calculate and allocate costs and develop strategies to [optimize your cloud expenditures](/category/cloud-cost-management).
+If you're part of an organization with a growing cloud environment, you probably already understand the challenges associated with managing an increasing number of resources. Tagging resources is the solution to understanding what assets are in play, and how they relate to each other. With that knowledge, you can calculate and allocate costs and develop strategies to [optimize your cloud expenditures](/blog/category/cloud-cost-management).
 
 That all sounds easy enough, but if you've attempted such an undertaking, you already know there's a precarious balance you have to find between adding all the data you can with resource tags and squelching the inevitable revolt from the engineers who will need to implement it.
 

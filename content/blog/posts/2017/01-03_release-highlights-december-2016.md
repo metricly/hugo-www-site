@@ -17,9 +17,9 @@ Microsoft Azure Monitoring
 
 [![December 2016 Release Highlights: Azure Integration](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/dec_rnh_azure.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/dec_rnh_azure.png)
 
-We intend to provide the same breadth (and depth) of our performance and capacity monitoring and analytics for the various Microsoft Azure services. We have launched our Azure integration with Quick Start [monitoring packages](/aws-monitoring-best-practices-using-pre-configured-dashboards) for Azure Virtual Machines and Azure Application Gateways which take a few minutes to activate. We're planning to roll out even more support for varying Azure services in the coming months, so stay tuned!
+We intend to provide the same breadth (and depth) of our performance and capacity monitoring and analytics for the various Microsoft Azure services. We have launched our Azure integration with Quick Start [monitoring packages](/aws-monitoring-best-practices/) for Azure Virtual Machines and Azure Application Gateways which take a few minutes to activate. We're planning to roll out even more support for varying Azure services in the coming months, so stay tuned!
 
-To read more about our Azure integration, check out our [blog](/introducing-microsoft-azure-integration) and the [help docs](https://help.netuitive.com/Content/Datasources/Netuitive/microsoft_azure.htm).
+To read more about our Azure integration, check out our [blog](/microsoft-azure-monitoring/) and the [help docs](https://help.netuitive.com/Content/Datasources/Netuitive/microsoft_azure.htm).
 
 Updated Chef, Salt, and Ansible Integrations
 --------------------------------------------

@@ -30,7 +30,7 @@ You can view the number of EBS volumes you have in use for each region by loggin
 
 Viewing Active Volumes from the EC2 Dashboard.
 
-Larger organizations can benefit from setting up automated processes to search for and [delete unattached volumes](/support/reports/unattached-resources/). These processes can confirm that the volumes have had no activity for a determined period before they're deleted.  
+Larger organizations can benefit from setting up automated processes to search for and [delete unattached volumes](https://docs.metricly.com/reports/idle-resources/). These processes can confirm that the volumes have had no activity for a determined period before they're deleted.  
 
 ### 2\. Eliminate Unused Capacity
 

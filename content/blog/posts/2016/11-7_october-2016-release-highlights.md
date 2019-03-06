@@ -38,7 +38,7 @@ Cassandra can be a difficult tool to monitor; particularly due to the amount of 
 
 With the Quick Start package, collected metrics are pared down to only the most significant to your environment, computed metrics are calculated using the collected metrics, dashboards are created to help visualize performance of your nodes, and alerting policies are pre-configured to detect a performance degradation of your nodes.
 
-For more information on Netuitive's Quick Start monitoring packages, visit [this blog](/aws-monitoring-best-practices-using-pre-configured-dashboards).
+For more information on Netuitive's Quick Start monitoring packages, visit [this blog](/aws-monitoring-best-practices/).
 
 [![October 2016 - Cassandra Improvements](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Cassandra-Improvements.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Cassandra-Improvements.png)
 

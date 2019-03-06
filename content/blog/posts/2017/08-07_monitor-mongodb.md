@@ -52,9 +52,9 @@ Monitoring MongoDB in Production
 
 While getting command-line statistics about a running MongoDB instance can be valuable, it isn't very practical in a production environment. To better facilitate production MongoDB monitoring, it is best to use an application monitoring service like Metricly to not only keep track of current data, but also aggregate and track it historically to help identify trends.
 
-Before we can start monitoring a MongoDB instance in Metricly, however, we must first install the Metricly Linux agent. This is a common theme across [Metricly integrations](/integrations), as it allows you to very quickly and easily enable and disable metrics monitoring for a number of services within an individual server without very much overhead.
+Before we can start monitoring a MongoDB instance in Metricly, however, we must first install the Metricly Linux agent. This is a common theme across [Metricly integrations](https://docs.metricly.com/integrations/), as it allows you to very quickly and easily enable and disable metrics monitoring for a number of services within an individual server without very much overhead.
 
-To accomplish this, head on over to the [Integrations page](/integrations) in your Metricly dashboard and follow the instructions for setting up the Linux integration. Once you've done that, enabling MongoDB monitoring is a snap. To do this, open up the Metricly MongoDB Collector Configuration file in your favorite editor (found at /opt/netuitive-agent/conf/collectors/MongoDBCollector.conf), change the enabled value from False to True, and restart the Metricly agent.
+To accomplish this, head on over to the [Integrations page](https://docs.metricly.com/integrations/) in your Metricly dashboard and follow the instructions for setting up the Linux integration. Once you've done that, enabling MongoDB monitoring is a snap. To do this, open up the Metricly MongoDB Collector Configuration file in your favorite editor (found at /opt/netuitive-agent/conf/collectors/MongoDBCollector.conf), change the enabled value from False to True, and restart the Metricly agent.
 
 After about five minutes, you should start seeing data trickle into your Metricly account.
 

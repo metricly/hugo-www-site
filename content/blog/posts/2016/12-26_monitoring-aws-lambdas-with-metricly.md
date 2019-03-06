@@ -13,7 +13,7 @@ In a previous article, I discussed the key metrics and best practices that shoul
 Before You Start
 ----------------
 
-If you don't have a Netuitive account already, you'll want to set up an account before proceeding through this article. Netuitive offers a 21-day free trial which you can sign up for from [this link](/signup). As part of the signup process, you will have the opportunity to watch a video containing an overview of Netuitive from the co-founder, Bob Farzami. I would highly recommend watching this to get a broad understanding of the environment and capabilities of the product. You can also watch the [Netuitive overview video here](/netuitive-overview).
+If you don't have a Netuitive account already, you'll want to set up an account before proceeding through this article. Netuitive offers a 21-day free trial which you can sign up for from [this link](/signup). As part of the signup process, you will have the opportunity to watch a video containing an overview of Netuitive from the co-founder, Bob Farzami. I would highly recommend watching this to get a broad understanding of the environment and capabilities of the product. You can also watch the [Netuitive overview video here](/).
 
 You will also want to have an AWS environment configured which includes the Lambda functions that you would like to monitor. AWS currently offers new users a year of access to the AWS free tier, which includes the ability to create and execute Lambda functions. Configuration of this environment and the creation of Lambda functions is well beyond the scope of this post, but excellent documentation is available from AWS which will assist with both.
 

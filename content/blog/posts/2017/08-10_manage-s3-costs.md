@@ -33,7 +33,7 @@ Before we look at the report data itself, let's look at some of the options avai
 
 ![Manage S3 Costs: Report FIlters](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/08/S3-Filtering.png)
 
-At the top left-hand corner of the screen, you'll have access to the filters for the report itself. The first field is a simple element name filter. The next filter option is *Type*, which may provide additional options. The *More* option allows you to add additional filters, which you can use to segregate your data based on how your organization organizes its [AWS resources](/aws-monitoring-best-practices-using-pre-configured-dashboards).
+At the top left-hand corner of the screen, you'll have access to the filters for the report itself. The first field is a simple element name filter. The next filter option is *Type*, which may provide additional options. The *More* option allows you to add additional filters, which you can use to segregate your data based on how your organization organizes its [AWS resources](/aws-monitoring-best-practices/).
 
 -   Element
 -   Attribute

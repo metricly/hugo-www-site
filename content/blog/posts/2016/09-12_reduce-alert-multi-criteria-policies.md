@@ -66,7 +66,7 @@ Another example of this is the queue length differential, which we discuss in co
 
 When a policy is violated, you can send a notification to a member of the operations team, but you can also use a [Webhook](https://en.wikipedia.org/wiki/Webhook) to trigger an automated script.  For example, you could use a webhook to restart a service that is having latency issues or automatically add another EC2 to expand server capacity temporarily.
 
-Alarm noise and alert fatigue is a major problem for IT Ops and DevOps, but multi-criteria alerting policies can help curb the noise. Netuitive's alerting policies are based on industry best practices, helping you aggregate your alerts and improve alarm accuracy. Adding [anomaly detection](/product/anomaly-detection) and advanced analytics (including computed metrics) further refines your alerts, and with the implementation of Webhooks for automatically firing scripted response, you might just get that extra hour a day you've been hoping for.
+Alarm noise and alert fatigue is a major problem for IT Ops and DevOps, but multi-criteria alerting policies can help curb the noise. Netuitive's alerting policies are based on industry best practices, helping you aggregate your alerts and improve alarm accuracy. Adding [anomaly detection](/monitoring/) and advanced analytics (including computed metrics) further refines your alerts, and with the implementation of Webhooks for automatically firing scripted response, you might just get that extra hour a day you've been hoping for.
 
 * * * * *
 

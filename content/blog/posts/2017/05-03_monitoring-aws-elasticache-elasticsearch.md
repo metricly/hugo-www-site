@@ -59,7 +59,7 @@ The service I'm monitoring is called Retwis. It's a demo application provided by
 Creating an AWS ElasticSearch Domain
 ------------------------------------
 
-The [monitoring plan](/evaluate-monitoring-strategy) I'm going to present involves streaming log data from an AWS ElasticCache service via CloudWatch to an ElasticSearch (ES) domain, with some [AWS Lambda function](/monitoring-aws-lambdas-with-netuitive) magic to connect it all. Before we begin, I'd like to reiterate a warning which Amazon includes in their documentation on the topic of streaming log data to ElasticSearch (ES).
+The [monitoring plan](/evaluate-monitoring-strategy) I'm going to present involves streaming log data from an AWS ElasticCache service via CloudWatch to an ElasticSearch (ES) domain, with some [AWS Lambda function](/monitoring-aws-lambdas-with-metricly/) magic to connect it all. Before we begin, I'd like to reiterate a warning which Amazon includes in their documentation on the topic of streaming log data to ElasticSearch (ES).
 
 **Note: **Streaming large amounts of CloudWatch Logs data to Amazon ES might result in high usage charges. We recommend that you [monitor your AWS bill](/view-manage-individual-aws-ec2-costs) to help avoid higher-than-expected charges.
 
@@ -201,4 +201,4 @@ Information about the domain will be shown, including a link to a Kibana dashboa
 
 You can now navigate to the **Discover** tab to see what fields are available, and to the **Visualize** tab to build graphs and other visualizations from your data. Once you have some visualizations created and saved, you'll be able to add them to your dashboard. The Kibana documentation contains some excellent information on how to make the most of the tool they provide.
 
-This article touched on several offerings from AWS, and I learned a few lessons while putting it all together---First, even when there isn't a clearly documented method of created interactions between different AWS services, a little creativity can work around most obstacles. Second, and perhaps most importantly, you'll experience a phenomenal return on investment when you select an [AWS monitoring solution](/getting-started-netuitive-aws) that can extract your metrics from Amazon and provide you with out-of-the-box analytics and reporting tools.
+This article touched on several offerings from AWS, and I learned a few lessons while putting it all together---First, even when there isn't a clearly documented method of created interactions between different AWS services, a little creativity can work around most obstacles. Second, and perhaps most importantly, you'll experience a phenomenal return on investment when you select an [AWS monitoring solution](/getting-started-metricly-aws/) that can extract your metrics from Amazon and provide you with out-of-the-box analytics and reporting tools.

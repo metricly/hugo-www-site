@@ -8,7 +8,7 @@ url: "/metricly-windows-monitoring-agent/"
 layout: "single"
 ---
 
-When you're supporting computer systems, insights into what is happening within the system are crucial in the quest to ensure that everything is running efficiently---with warnings if conditions begin to degrade. If you're supporting Linux-based systems, you use CollectD or a similar metrics agent to monitor the machine and to report key metrics about the performance of the instance, the state of the system, and your applications themselves. But if you're trying to monitor Windows, Collectd isn't an option. There is, however, another solution: the [Metricly Windows monitoring agent](/support/integrations/windows).
+When you're supporting computer systems, insights into what is happening within the system are crucial in the quest to ensure that everything is running efficiently---with warnings if conditions begin to degrade. If you're supporting Linux-based systems, you use CollectD or a similar metrics agent to monitor the machine and to report key metrics about the performance of the instance, the state of the system, and your applications themselves. But if you're trying to monitor Windows, Collectd isn't an option. There is, however, another solution: the [Metricly Windows monitoring agent](https://docs.metricly.com/integrations/windows).
 
 In this article, I'll introduce you to the Metricly Windows monitoring agent, and show you how to use the agent to push metric data into the [Metricly platform](/product). I'm also going to walk you through why using the Metricly platform will make your jobs as an engineer significantly easier through Metricly's [preconfigured dashboards and policies](/aws-monitoring-best-practices) to monitor Windows.
 
@@ -46,14 +46,14 @@ The agent can be installed and executed on the following editions of Windows.
 
 Older versions of Windows and Windows Server may also be compatible, provided you install version 3.5 or 4.5 of the .NET Framework.
 
-The agent allows for the [collection of custom metrics](/support/api/metrics) in addition to those which are gathered natively. However, if you need additional customization, you can download the source code, and build a custom version of the agent to meet your needs.
+The agent allows for the [collection of custom metrics](https://docs.metricly.com/api/api-metrics/) in addition to those which are gathered natively. However, if you need additional customization, you can download the source code, and build a custom version of the agent to meet your needs.
 
 Metrics Gathered by the Agent
 -----------------------------
 
 The Metricly agent supports the most common Windows services natively, including Microsoft SQL Server, IIS and .NET.
 
-The [metrics collected](/support/integrations/windows-metrics) include a selection from each of the following key areas:
+The [metrics collected](https://docs.metricly.com/integrations/windows-metrics) include a selection from each of the following key areas:
 
 -   Logical Disk
 -   Memory
@@ -115,7 +115,7 @@ Once you have downloaded the file, open up a **Windows PowerShell** terminal, ch
 
 Executing the Install Command in PowerShell
 
-If you don't have a proxy enabled in your environment, you can skip step 4, but if your environment includes a web proxy, you can follow the instructions [here](/support/integrations/windows#proxy-configuration) to configure the proxy.
+If you don't have a proxy enabled in your environment, you can skip step 4, but if your environment includes a web proxy, you can follow the instructions [here](https://docs.metricly.com/integrations/windows#proxy-configuration) to configure the proxy.
 
 Once the agent is installed and the optional step of configuring the proxy is completed, you just need to start the service.
 
@@ -181,4 +181,4 @@ Clicking on the Notifications tab, you may **Add a Notification**. [Monitoring N
 Organizing AWS Data
 -------------------
 
-Finally, if you host instances in the AWS Cloud, an additional benefit of Metricly is that the agent includes tag information in the metrics collected. By including these tags, you can filter your metrics by tags and by attributes such as region, availability zone, and state. If you would like to know more about tagging AWS instances, the [Best Practices](/best-practices-tagging-aws-instances) guide is an excellent place to start.
+Finally, if you host instances in the AWS Cloud, an additional benefit of Metricly is that the agent includes tag information in the metrics collected. By including these tags, you can filter your metrics by tags and by attributes such as region, availability zone, and state. If you would like to know more about tagging AWS instances, the [Best Practices](/aws-tagging-best-practices/) guide is an excellent place to start.

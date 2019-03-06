@@ -14,12 +14,12 @@ Think about it. Today, networks can transfer gigabytes in seconds. Multi-core CP
 
 This is why wringing all of the performance you can out of your databases and minimizing errors is so important. To obtain that performance, you need to be able to monitor your databases continuously by collecting metrics about data throughput and errors.
 
-Below, I explain how to use [Netuitive](/product) to monitor the performance of one type of database, MySQL, which you are very likely to be using. And even if you run a different type of database, the lessons below will still apply to you, since [Netuitive provides integrations](/integrations) for all of the other major databases (including the NoSQL options) in addition to MySQL.
+Below, I explain how to use [Netuitive](/product) to monitor the performance of one type of database, MySQL, which you are very likely to be using. And even if you run a different type of database, the lessons below will still apply to you, since [Netuitive provides integrations](https://docs.metricly.com/integrations/) for all of the other major databases (including the NoSQL options) in addition to MySQL.
 
 Getting Started
 ---------------
 
-This is where Netuitive comes in. Netuitive is a full-stack [performance monitoring and analytics tool](/product/anomaly-detection) that integrates with over 65 services and tools to help keep you on top of the health of your application. While Netuitive has some incredibly useful integrations with SaaS tools like GitHub, PagerDuty, and Slack, its true power comes from its server-based monitoring integrations.
+This is where Netuitive comes in. Netuitive is a full-stack [performance monitoring and analytics tool](/monitoring/) that integrates with over 65 services and tools to help keep you on top of the health of your application. While Netuitive has some incredibly useful integrations with SaaS tools like GitHub, PagerDuty, and Slack, its true power comes from its server-based monitoring integrations.
 
 To get started with Netuitive for MySQL database monitoring, you need to install the Netuitive agent on the server where your database is running. Part of the beauty of Netuitive's monitoring solution is that installing the agent is a one-command deal. All you need is a server with root access and an API key:
 
@@ -47,4 +47,4 @@ To accomplish this, open up: /opt/netuitive-agent/conf/collectors/MySQLCollector
 Taking MySQL Database Monitoring Further
 ----------------------------------------
 
-Thanks to the flexibility of the Netuitive Linux agent, monitoring new processes is often as simple as running a couple of commands. Everything from Apache to Zookeeper is supported by Netuitive, and if this is something you are considering integrating into your application monitoring system, I recommend (again) browsing through [Netuitive's Integrations](/integrations) directory. Understanding what is happening in your infrastructure from the ground up is crucial to staying ahead of the curve on application development and support.
+Thanks to the flexibility of the Netuitive Linux agent, monitoring new processes is often as simple as running a couple of commands. Everything from Apache to Zookeeper is supported by Netuitive, and if this is something you are considering integrating into your application monitoring system, I recommend (again) browsing through [Netuitive's Integrations](https://docs.metricly.com/integrations/) directory. Understanding what is happening in your infrastructure from the ground up is crucial to staying ahead of the curve on application development and support.

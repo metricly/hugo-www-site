@@ -86,6 +86,6 @@ How to monitor Cassandra performance metrics
 
 Monitoring Cassandra can be tricky if you have a large cluster or one that responds to a large number of queries. Graphs are helpful, but no DevOps team can keep an eye on their dashboards 24/7. Thresholds can be difficult to set and often create false alarms that waste time and resources.
 
-Netuitive makes monitoring a Cassandra cluster simple. Once setup is complete, you've got full access to Netuitive's advanced analytics platform, including [anomaly detection using machine learning.](/how-to-leverage-machine-learning-for-proactive-monitoring-alerts) Using these best practices as guidelines, Netuitive makes it easy to customize Cassandra monitoring dashboards with an intuitive UI and extensive widget library.
+Netuitive makes monitoring a Cassandra cluster simple. Once setup is complete, you've got full access to Netuitive's advanced analytics platform, including [anomaly detection using machine learning.](/machine-learning-monitoring-alerts/) Using these best practices as guidelines, Netuitive makes it easy to customize Cassandra monitoring dashboards with an intuitive UI and extensive widget library.
 
 Ready to start monitoring Cassandra? Netuitive offers a [no-obligation, free trial.](/signup)

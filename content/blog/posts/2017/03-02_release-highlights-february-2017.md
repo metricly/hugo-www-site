@@ -17,7 +17,7 @@ New Dashboard Builder Functionality
 
 [![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Gif7.gif)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Gif7.gif)
 
-Managing dashboard layouts is a whole lot easier! [Dashboard layouts are now completely customizable](/netuitive-dashboard-upgrades). Drag and drop widgets where you please or make your widgets whatever size you like using a familiar window-resizing dragging motion. Widgets can now be added to dashboards and placed anywhere you want using the new, easy-to-use UI.
+Managing dashboard layouts is a whole lot easier! [Dashboard layouts are now completely customizable](/netuitive-dashboard-upgrades/). Drag and drop widgets where you please or make your widgets whatever size you like using a familiar window-resizing dragging motion. Widgets can now be added to dashboards and placed anywhere you want using the new, easy-to-use UI.
 
 Don't worry about the layouts of your existing dashboards: in converting all dashboards to the new custom grid interface, we preserved the layouts for the dashboards you've created already! Please play around with the updated functionality when you get a chance and share feedback with us.
 
@@ -39,7 +39,7 @@ Existing Integration Enhancements
 
 [![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/feb_rnh_int_upd.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/feb_rnh_int_upd.png)
 
-Netuitive's support and engineering teams improved several integrations with existing Quick Start monitoring packages. Read [this blog](/aws-monitoring-best-practices-using-pre-configured-dashboards) to better understand the value and concepts behind our Quick Start monitoring package. They've also worked on several new integrations to expand our ability to monitor more technologies in your environment.
+Netuitive's support and engineering teams improved several integrations with existing Quick Start monitoring packages. Read [this blog](/aws-monitoring-best-practices/) to better understand the value and concepts behind our Quick Start monitoring package. They've also worked on several new integrations to expand our ability to monitor more technologies in your environment.
 
 1.  Cassandra and Kafka integrations were improved to pre-select the essential Key Performance Indicators (KPIs) that are most relevant to standard monitoring needs based on best practices. We still allow additional metrics to be collected by configuring the agent if desired. Existing dashboards and policies have also been updated, so you can focus more on the most important metrics.
 

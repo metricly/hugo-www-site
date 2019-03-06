@@ -13,7 +13,7 @@ False monitoring alarms are costly any way you shake it. When you react to alert
 What is signal-to-noise ratio?
 ------------------------------
 
-First, it is important to understand that monitoring alerts come in [four distinct types](/product/anomaly-detection):
+First, it is important to understand that monitoring alerts come in [four distinct types](/monitoring/):
 
 -   True Positive -- You have a performance problem and your monitoring tool alerts you to the issue. This is the ideal scenario: only receiving alerts for actual problems.
 -   True Negative -- Essentially, there are no issues present and your monitoring tool does not send you an alert. This is also a good thing; your monitoring is effectively reporting the current state of your environment and not creating a false alarm.

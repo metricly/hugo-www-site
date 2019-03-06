@@ -11,7 +11,7 @@ If you've noticed some changes in the Netuitive UI over the past couple of month
 Monitoring Dashboard Changes We've Made So Far
 ----------------------------------------------
 
-The most obvious alteration to our dashboards and widgets is allowing each widget to be [moved and resized via simple dragging of the edges](/netuitive-dashboard-upgrades). This provided a lot more flexibility in dashboard creation, letting users size down simpler widgets and expand more detailed charts and graphs.
+The most obvious alteration to our dashboards and widgets is allowing each widget to be [moved and resized via simple dragging of the edges](/netuitive-dashboard-upgrades/). This provided a lot more flexibility in dashboard creation, letting users size down simpler widgets and expand more detailed charts and graphs.
 
 Our configuration settings, which used to be a separate page, have been reconfigured to fit a modal format ("pop-up"), so you can see the dashboard in the background as you're configuring it (and avoid navigating to another page!)
 

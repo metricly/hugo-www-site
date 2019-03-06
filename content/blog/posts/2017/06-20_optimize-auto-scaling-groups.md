@@ -53,7 +53,7 @@ When you develop a new application, or you're updating an existing application, 
 
 ### Proactive vs. Reactive Scaling in Your Auto Scaling Groups
 
-Auto Scaling Groups don't scale dynamically unless they have been configured to do so. Typically a policy will need to be enabled which monitors [CloudWatch metrics from the server](/introducing-aws-cloudwatch-custom-metrics-integration) and triggers a resize of the group based on certain thresholds.
+Auto Scaling Groups don't scale dynamically unless they have been configured to do so. Typically a policy will need to be enabled which monitors [CloudWatch metrics from the server](/aws-cloudwatch-metrics-integration/) and triggers a resize of the group based on certain thresholds.
 
 As an example, an ASG may have a policy which increases the size or desired number of instances in the ASG by 20% if CPU usage exceeds 80% for more than one minute. Once an ASG has been notified of a change in the desired number of instances, the process of adding instances will begin, and within a few minutes, those extra instances will be available.
 

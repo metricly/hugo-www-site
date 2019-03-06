@@ -8,11 +8,11 @@ url: "/effective-monitoring-alert-rules/"
 layout: "single"
 ---
 
-To provide the optimal experience in alert notifications, Netuitive starts from the concept of a *policy*. A policy contains a set of *conditions* (or alert rules), which, if violated for a specified duration, will generate an *event* (or alert). These alerts are always available to be viewed in the Netuitive UI. Optionally, a policy may define one or more *notifications* for a policy, which allow the alerts to be sent via email, [PagerDuty](/combining-netuitive-and-pagerduty-for-monitoring-alarms), [Slack](/slack-channel-integration), etc. This process is illustrated below:
+To provide the optimal experience in alert notifications, Netuitive starts from the concept of a *policy*. A policy contains a set of *conditions* (or alert rules), which, if violated for a specified duration, will generate an *event* (or alert). These alerts are always available to be viewed in the Netuitive UI. Optionally, a policy may define one or more *notifications* for a policy, which allow the alerts to be sent via email, [PagerDuty](/combining-metricly-and-pagerduty-for-monitoring-alarms/), [Slack](https://docs.metricly.com/alerts-notifications/notifications/notifications-slack/), etc. This process is illustrated below:
 
 ![monitoring-alert-rules-policy-process](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/06/Monitoring-Alert-Rules-Policy-Process-1.jpg)
 
-Netuitive provides a wide array of [out-of-the-box policies and dashboards](/aws-monitoring-best-practices-using-pre-configured-dashboards) for a many of our integrations (AWS, Linux OS, Windows, Cassandra, MySQL, etc.) to help users get started as soon as a data source is activated. For example, the *AWS ELB -- Elevated Latency* policy will fire an event if, for a period of 30 minutes or longer, the following two conditions are met:
+Netuitive provides a wide array of [out-of-the-box policies and dashboards](/aws-monitoring-best-practices/) for a many of our integrations (AWS, Linux OS, Windows, Cassandra, MySQL, etc.) to help users get started as soon as a data source is activated. For example, the *AWS ELB -- Elevated Latency* policy will fire an event if, for a period of 30 minutes or longer, the following two conditions are met:
 
 1.  The *elb.latency* metric is deviating from the norm; and
 2.  The *elb.requestcount* metric is greater than 1000.

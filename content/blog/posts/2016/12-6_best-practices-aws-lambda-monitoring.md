@@ -7,7 +7,7 @@ category: "DevOps"
 url: "/best-practices-aws-lambda-monitoring/"
 layout: "single"
 ---
-Serverless architectures represent a new frontier in the age of cloud computing, and as such, require a different model for monitoring than traditional server-based architectures. [Lambda functions](/monitoring-aws-lambda-netuitive) from Amazon Web Services (AWS) are part of this new paradigm, and this article will discuss what aspects of a Lambda's lifecycle should be monitored and what Lambda monitoring best practices can be employed to ensure optimal performance.
+Serverless architectures represent a new frontier in the age of cloud computing, and as such, require a different model for monitoring than traditional server-based architectures. [Lambda functions](/monitoring-aws-lambda-metricly/) from Amazon Web Services (AWS) are part of this new paradigm, and this article will discuss what aspects of a Lambda's lifecycle should be monitored and what Lambda monitoring best practices can be employed to ensure optimal performance.
 
 What Metrics Can We Gather From a Lambda?
 -----------------------------------------

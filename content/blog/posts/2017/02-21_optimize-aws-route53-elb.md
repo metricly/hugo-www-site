@@ -55,7 +55,7 @@ Furthermore, you can reduce compute overhead on your EC2 instances by [terminati
 
 It's also easier to deploy your SSL certs to your Elastic Load Balancers using [AWS Certificate Manager](https://aws.amazon.com/certificate-manager/). This lowers SSL administration overhead by allowing you to centrally manage your SSL certs, and deploy them to integrated services such as ELB.
 
-Netuitive provides metrics on ELBs, and these can all be seen [alongside](/getting-started-netuitive-aws) other AWS metrics such as EC2 and EBS.
+Netuitive provides metrics on ELBs, and these can all be seen [alongside](/getting-started-metricly-aws/) other AWS metrics such as EC2 and EBS.
 
 *Editor's note: In addition to ELB, EC2, and EBS, Netuitive offers support for a number of other AWS products. For more information, see* [*our documentation*](https://help.netuitive.com/Content/Integrations/aws.htm)*.*
 

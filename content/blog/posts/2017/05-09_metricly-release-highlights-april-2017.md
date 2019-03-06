@@ -35,7 +35,7 @@ A small enhancement that has been a popular demand recently. Our email notificat
 Support for Newly Introduced Lambda Tags
 ----------------------------------------
 
-In April, AWS introduced [support for tags on Lambda functions](/monitoring-aws-lambdas-with-netuitive). Without incurring any delay, we also added support for including the new tags throughout our product so that you can use them to collect only a subset of the Lambda functions, or filter them on various pages for graphing, viewing, alerting, reporting and dashboards.
+In April, AWS introduced [support for tags on Lambda functions](/monitoring-aws-lambdas-with-metricly/). Without incurring any delay, we also added support for including the new tags throughout our product so that you can use them to collect only a subset of the Lambda functions, or filter them on various pages for graphing, viewing, alerting, reporting and dashboards.
 
 ![April Release Highlights: AWS Lambda Tags](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/LambdaUpdate.png)
 

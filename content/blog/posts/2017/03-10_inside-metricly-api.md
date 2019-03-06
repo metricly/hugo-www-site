@@ -232,7 +232,7 @@ The next method to be aware of is log_event, which is what we will call to compo
 |\
  |
 
-| sprintf(url, "https://api.app.netuitive.com/ingest/events/%s", NETUITIVE_API_KEY); |
+| `sprintf(url, "https://api.app.netuitive.com/ingest/events/%s", NETUITIVE_API_KEY);` |
 
 | payload = json_dumps(obj, 0); |
 

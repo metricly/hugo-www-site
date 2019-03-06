@@ -42,7 +42,7 @@ With minimal effort, you'll be able to access recommendations to optimize cost, 
 Linux Monitoring Agent Installation
 -----------------------------------
 
-Metricly provides detailed instructions for [installing the Metricly Linux monitoring agent](/support/integrations/linux) on your server. They walk you through the process of downloading, installing, and configuring the agent with additional information about Docker container installation, troubleshooting, and upgrading.
+Metricly provides detailed instructions for [installing the Metricly Linux monitoring agent](https://docs.metricly.com/integrations/linux) on your server. They walk you through the process of downloading, installing, and configuring the agent with additional information about Docker container installation, troubleshooting, and upgrading.
 
 Installing the Linux monitoring agent on a couple of servers is the perfect way to see what the agent can do and let you experiment with what metrics are available. To fully appreciate the value of what the agent can do and how Metricly can analyze and report on data, however, you need to have the agent deployed on all machines in your deployment. In the past, the Diamond agent has been successfully installed across [a thousand worker nodes, reporting three million data points each minute](https://answers.launchpad.net/graphite/+question/178969), so it's very scalable if you have a system to handle it.
 
@@ -50,7 +50,7 @@ If you're going to deploy the agent at anything approaching that scale, you're g
 
 -   Ansible -- <https://github.com/Netuitive/ansible-netuitive-agent>
 -   Chef -- <https://github.com/Netuitive/chef-netuitive>
--   Salt -- </support/integrations/saltstack>
+-   Salt -- <https://docs.metricly.com/integrations/saltstack>
 
 Extending the Agent to Gather Additional Metrics
 ------------------------------------------------
@@ -59,7 +59,7 @@ The Linux agent will collect a plethora of metrics from your system which can be
 
 If you want to gather additional metrics from your applications, there are two options available to collect those extra data points.
 
-Your first choice is to find one of the Integrations that Metricly has developed and provides on their site. An overwhelming benefit of this approach is that any configuration, including access keys, account IDs and the like are included as part of the scripts used in the installation. You can access a full listing of the Integrations available on the [Integrations page](/support/integrations) in the Help Documentation.
+Your first choice is to find one of the Integrations that Metricly has developed and provides on their site. An overwhelming benefit of this approach is that any configuration, including access keys, account IDs and the like are included as part of the scripts used in the installation. You can access a full listing of the Integrations available on the [Integrations page](https://docs.metricly.com/integrations/) in the Help Documentation.
 
 ![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/11/Screen-Shot-2017-11-08-at-2.43.24-PM-1024x642.png)
 
@@ -83,7 +83,7 @@ If you've been involved in monitoring, DevOps, or development for the cloud, you
 
 ![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/11/Screen-Shot-2017-11-08-at-3.01.17-PM.png)
 
-The Metricly documentation explains how to [configure the StatsD integration](/support/integrations/metricly-statsd) to report metrics into your account- if you would like to know more about the inclusion of StatsD within the Metricly Linux Agent, you can find that information, including examples in the support documentation.
+The Metricly documentation explains how to [configure the StatsD integration](https://docs.metricly.com/integrations/metricly-statsd) to report metrics into your account- if you would like to know more about the inclusion of StatsD within the Metricly Linux Agent, you can find that information, including examples in the support documentation.
 
 Leveraging the Power of Metricly
 --------------------------------
@@ -136,4 +136,4 @@ Clicking on the Notifications tab, you may **Add a Notification**. Notifications
 Organizing AWS Data
 -------------------
 
-Finally, if you host instances in the AWS Cloud, an additional benefit of Metricly is that the agent includes tag information in the metrics collected. By including these tags, you can filter your metrics by tags and by attributes such as region, availability zone, and state. If you would like to know more about tagging AWS instances, the following [Best Practices](/best-practices-tagging-aws-instances) guide is an excellent place to start.
+Finally, if you host instances in the AWS Cloud, an additional benefit of Metricly is that the agent includes tag information in the metrics collected. By including these tags, you can filter your metrics by tags and by attributes such as region, availability zone, and state. If you would like to know more about tagging AWS instances, the following [Best Practices](/aws-tagging-best-practices/) guide is an excellent place to start.

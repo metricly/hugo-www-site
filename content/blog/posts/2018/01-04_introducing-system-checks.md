@@ -26,7 +26,7 @@ Our platform is flexible to support any custom checks, but you will need a mecha
 
 A key feature of the new Metricly system check is its simplicity. You can create a new check simply by posting a URL in the format shown below to the Metricly API REST endpoint without even requiring a JSON payload:
 
-https://api.app.netuitive.com/check/{apiId}/{checkName}/{hostName}/{ttl}
+    https://api.app.netuitive.com/check/{apiId}/{checkName}/{hostName}/{ttl}
 
 As long as you have a valid API ID, you can create any new check by simply naming it, associating it with a hostname, and giving it a time to live (TTL).
 

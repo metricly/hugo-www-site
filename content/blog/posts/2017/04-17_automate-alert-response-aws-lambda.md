@@ -31,9 +31,9 @@ What Are We Going to Accomplish?
 We can use AWS Lambda to affect change in the AWS environment. Some of these changes could include:
 
 -   Fluctuating numbers of requests to your application, requiring the scaling up or scaling down of EC2 instances.
--   Throttling of [DynamoDB  reads and writes](/dynamodb-monitoring-plan) due to traffic which exceeds the provisioned capacity
+-   Throttling of DynamoDB reads and writes due to traffic which exceeds the provisioned capacity
 
-The second situation is the one we'll explore as an example in this article. We're going to start by setting up a simple AWS [Lambda function](/monitoring-aws-lambda-netuitive) which will increase the provisioned capacity for a DynamoDB table. With a Lambda in place, we're going to work backward. We'll cover how to trigger the action, and how to activate that trigger through a Netuitive alert.
+The second situation is the one we'll explore as an example in this article. We're going to start by setting up a simple AWS [Lambda function](/monitoring-aws-lambda-metricly/) which will increase the provisioned capacity for a DynamoDB table. With a Lambda in place, we're going to work backward. We'll cover how to trigger the action, and how to activate that trigger through a Netuitive alert.
 
 There is one limitation which is important to note before we embark on this particular project. AWS allows the capacity of a DynamoDB table to increase multiple times during a single day. Unfortunately, decreases in capacity are limited to four times in a 24-hour period. Our Lambda today is only going to focus on increasing capacity. It would be prudent to pair this with a Lambda that examines usage every six hours and decreases capacity accordingly, but that is outside the scope of this article.
 

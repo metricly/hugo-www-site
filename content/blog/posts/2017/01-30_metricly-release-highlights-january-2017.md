@@ -28,7 +28,7 @@ Custom AWS Metrics Support
 
 [![January 2017 Release Highlights: AWS Custom CloudWatch Integration](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/rnh_custom_cloudwatch.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/rnh_custom_cloudwatch.png)
 
-If you are already sending custom metrics into AWS CloudWatch, you can now easily [ingest them in Netuitive](/introducing-aws-cloudwatch-custom-metrics-integration) for further analysis via our AWS integration. You can simply check a box on the AWS integration configuration page to include all of the custom metrics that you are collecting inside CloudWatch, alongside other metrics that we collect from various AWS services such as EC2, ELB, RDS, etc. Additional settings allow you to filter the custom metrics coming in using regex on the Namespace name.
+If you are already sending custom metrics into AWS CloudWatch, you can now easily [ingest them in Netuitive](/aws-cloudwatch-metrics-integration/) for further analysis via our AWS integration. You can simply check a box on the AWS integration configuration page to include all of the custom metrics that you are collecting inside CloudWatch, alongside other metrics that we collect from various AWS services such as EC2, ELB, RDS, etc. Additional settings allow you to filter the custom metrics coming in using regex on the Namespace name.
 
 You can then view the metrics in dashboard and reports and also apply our unique behavior learning and anomaly detection technology to your metrics. You can also decide to send your custom metrics directly to our API or via other integration integrations such as StatsD.
 

@@ -18,7 +18,7 @@ For the purpose of this article, I will assume that you have a base-build CentOS
 
 I also assume you are already [signed up](/signup) with Netuitive.
 
-With those prerequisites out of the way, the first thing we need to do is log in to the Netuitive control panel, go to the "[Integrations](/integrations)" tab, and select Linux. Netuitive will then display a command for you to run on your Linux box, similar to the one below:
+With those prerequisites out of the way, the first thing we need to do is log in to the Netuitive control panel, go to the "[Integrations](https://docs.metricly.com/integrations/)" tab, and select Linux. Netuitive will then display a command for you to run on your Linux box, similar to the one below:
 
 > # sudo N_APIKEY=***REDACTED*** bash -c "$(curl -Ls http://repos.app.netuitive.com/linux.sh)"
 

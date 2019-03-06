@@ -13,7 +13,7 @@ The [Amazon Elastic File System (EFS)](https://aws.amazon.com/efs/) is a scala
 
 What you'll need to get started:
 
--   [AWS Integration](/support/integrations/aws/)
+-   [AWS Integration](https://docs.metricly.com/integrations/aws/)
 
 Packaged Policies
 =================

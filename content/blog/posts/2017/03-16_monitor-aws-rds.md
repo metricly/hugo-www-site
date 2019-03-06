@@ -21,7 +21,7 @@ It's assumed you already have an Amazon Web Services account where you have set 
 
 If you're unfamiliar with RDS, it's advisable that you take some time to review the [Amazon RDS documentation](https://aws.amazon.com/rds/getting-started/) and learn a little more about how it works and the features provided. Once you've done this, configuring RDS is relatively painless and shouldn't take more than a few minutes.
 
-Finally, you should also have a Netuitive account to configure your monitoring for RDS. Netuitive provides a [21-day free trial](/signup) to get you started. You can learn more about Netuitive by watching the [What is Netuitive](/netuitive-overview) overview video, and the [Netuitive Blog](/blog) provides helpful posts about monitoring with Netuitive.
+Finally, you should also have a Netuitive account to configure your monitoring for RDS. Netuitive provides a [21-day free trial](/signup) to get you started. You can learn more about Netuitive by watching the [What is Netuitive](/) overview video, and the [Netuitive Blog](/blog) provides helpful posts about monitoring with Netuitive.
 
 Netuitive's Integration
 -----------------------
@@ -35,11 +35,11 @@ One additional step you'll need to perform is checking **RDS** box on the *AWS S
 RDS Quick Start Monitoring Package
 ----------------------------------
 
-The Netuitive [Quick Start Package](/getting-started-netuitive-aws) will be automatically configured when you create or modify your existing integration to monitor AWS RDS. This package uses Netuitive best practices to install pre-configured analytics, event and alerting policies, dashboards and reports for monitoring RDS, and helps you to get up and running quickly with your monitoring.
+The Netuitive [Quick Start Package](/getting-started-metricly-aws/) will be automatically configured when you create or modify your existing integration to monitor AWS RDS. This package uses Netuitive best practices to install pre-configured analytics, event and alerting policies, dashboards and reports for monitoring RDS, and helps you to get up and running quickly with your monitoring.
 
 Metric configurations define how metrics are collected and analyzed by Netuitive. Policies are the criteria upon which Netuitive will generate an event, while Dashboards display the monitoring information in an easy-to-use format.
 
-You can learn more about pre-configured dashboards in the Netuitive blog post [AWS Monitoring Best Practices Using Pre-Configured Dashboards](/aws-monitoring-best-practices-using-pre-configured-dashboards).
+You can learn more about pre-configured dashboards in the Netuitive blog post [AWS Monitoring Best Practices Using Pre-Configured Dashboards](/aws-monitoring-best-practices/).
 
 Using the Netuitive Dashboard
 -----------------------------
@@ -55,7 +55,7 @@ To view the dashboard, do the following:
 3.  Click the **AWS RDS Summary** link to be taken to an overview of your RDS monitoring.\
     [![Monitor AWS RDS: RDS Summary Dashboard](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/RDS-Monitoring-Summary-1024x562.png)\
     ](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/RDS-Monitoring-Summary.png)
-4.  As can be seen above, data is presented in the form of *Widgets*, which come pre-configured with the Quick Start package. This page displays summary information about all of your RDS installations. Included information covers the number of RDS instances you have running, as well as aggregated metrics. Metric information for the top five elements with the [highest utilization](/monitor-aws-utilization-netuitive) will be shown. In the pre-configured dashboard, this includes *Highest IOPS Utilization*, *Highest Overall Utilization*, *Highest Throughput*, and *Highest Total IOPS*. It's worth noting that if you have less than five RDS instances running, you will only see metrics for the number you actually have configured. You will not be able to edit the widgets in the pre-configured dashboard, but it is possible to copy the dashboard and then edit the copy. The Copy option is presented when you click the blue and white pencil icon to the left of the widgets.[![Monitor AWS RDS: RDS Metrics 1](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/RDS-Metrics-1024x528.png)\
+4.  As can be seen above, data is presented in the form of *Widgets*, which come pre-configured with the Quick Start package. This page displays summary information about all of your RDS installations. Included information covers the number of RDS instances you have running, as well as aggregated metrics. Metric information for the top five elements with the [highest utilization](/monitor-aws-utilization-metricly) will be shown. In the pre-configured dashboard, this includes *Highest IOPS Utilization*, *Highest Overall Utilization*, *Highest Throughput*, and *Highest Total IOPS*. It's worth noting that if you have less than five RDS instances running, you will only see metrics for the number you actually have configured. You will not be able to edit the widgets in the pre-configured dashboard, but it is possible to copy the dashboard and then edit the copy. The Copy option is presented when you click the blue and white pencil icon to the left of the widgets.[![Monitor AWS RDS: RDS Metrics 1](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/RDS-Metrics-1024x528.png)\
     ](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/RDS-Metrics.png)\
     [![Monitor AWS RDS: Metrics 2](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/RDS-Metrics-2-1024x395.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/RDS-Metrics-2.png)
 5.  Click the **Back** button of your browser, and you will be taken back to the *AWS RDS Summary* page.

@@ -9,7 +9,7 @@ layout: "single"
 ---
 
 
-Amazon Web Services' Elastic Load Balancer (ELB) is scalable, fault tolerant, and an easy way to implement load balancing for your application stack. Load balancing allows you to distribute traffic from clients on the Web to multiple backend instances on AWS. Traffic can be distributed between EC2 instances, or [containers on Amazon's Elastic Container Service](/container-monitoring-netuitive) (ECS).
+Amazon Web Services' Elastic Load Balancer (ELB) is scalable, fault tolerant, and an easy way to implement load balancing for your application stack. Load balancing allows you to distribute traffic from clients on the Web to multiple backend instances on AWS. Traffic can be distributed between EC2 instances, or [containers on Amazon's Elastic Container Service](/container-monitoring-metricly/) (ECS).
 
 Currently, there are two types of load balancing services that Amazon provides. The first is Classic Load Balancer which functions at Layer 4 of the OSI model, and distributes traffic based on IP address and TCP port. The second is [Application Load Balancer](https://aws.amazon.com/elasticloadbalancing/applicationloadbalancer/), which distributes traffic at Layer 7 of the OSI model, and can route traffic based on both TCP port and URL.
 
@@ -27,14 +27,14 @@ Configuring AWS ELB
 
 Amazon provides excellent documentation to get you started with setting up ELB, so we won't go too much into that in this post. The first thing you'll want to do, though, is familiarize yourself a bit with Elastic Load Balancing in general, then decide whether you want to configure [Classic Load Balancer](https://aws.amazon.com/elasticloadbalancing/classicloadbalancer/getting-started/) or [Application Load Balancer](https://aws.amazon.com/elasticloadbalancing/applicationloadbalancer/).
 
-Once you've done that, you'll need to [set up an EC2 instance](/pick-perfect-ec2-instance-type) or ECS container (with a web server installed) on the backend of the load balancer where you can route your application traffic. Netuitive's [monitoring integrates with a variety of platforms](/integrations), so you can monitor your application stack and ELB all from the same interface.
+Once you've done that, you'll need to [set up an EC2 instance](/pick-perfect-ec2-instance-type) or ECS container (with a web server installed) on the backend of the load balancer where you can route your application traffic. Netuitive's [monitoring integrates with a variety of platforms](https://docs.metricly.com/integrations/), so you can monitor your application stack and ELB all from the same interface.
 
 Configuring Netuitive's ELB Monitoring
 --------------------------------------
 
 Configuring Netuitive is simple, and Netuitive provides great documentation to [get you started](https://help.netuitive.com/Content/where_to_start.htm).
 
-Once you're up and running, you'll need to configure the AWS integration in order to see the metrics available for ELB monitoring. Instructions to do so can be found in the Netuitive documentation. Netuitive recommends using "Installation Via IAM Role," described in the documentation linked above when configuring the AWS integration. (Also, see [Getting Started with Netuitive and AWS](/getting-started-netuitive-aws) for more information.)
+Once you're up and running, you'll need to configure the AWS integration in order to see the metrics available for ELB monitoring. Instructions to do so can be found in the Netuitive documentation. Netuitive recommends using "Installation Via IAM Role," described in the documentation linked above when configuring the AWS integration. (Also, see [Getting Started with Netuitive and AWS](/getting-started-metricly-aws/) for more information.)
 
 When configuring the integration, be sure the **ELB** box is checked on the *AWS Setup* page, as illustrated below. (Now would also be a good time to configure Netuitive for any other AWS services you wish to monitor by checking those boxes as well.)
 
@@ -44,7 +44,7 @@ Once you've configured the AWS integration, it will usually take a few minutes t
 
 **Netuitive and AWS**
 
-Dashboards are provided by Netuitive as a way to access and [visualize](https://help.netuitive.com/Content/Dashboards/dashboards.htm?Highlight=dashboards) ELB monitoring data (and any othe metrics) collected by Netuitive. You can find a high-level overview of what monitoring dashboards can do on the [Dashboards and Reports](/product/dashboards-and-reports) page. For a deeper dive into using Netuitive dashboards, see [AWS Monitoring Best Practices Using Pre-Configured Dashboards](/aws-monitoring-best-practices-using-pre-configured-dashboards).
+Dashboards are provided by Netuitive as a way to access and [visualize](https://help.netuitive.com/Content/Dashboards/dashboards.htm?Highlight=dashboards) ELB monitoring data (and any othe metrics) collected by Netuitive. You can find a high-level overview of what monitoring dashboards can do on the [Dashboards and Reports](/product/dashboards-and-reports) page. For a deeper dive into using Netuitive dashboards, see [AWS Monitoring Best Practices Using Pre-Configured Dashboards](/aws-monitoring-best-practices/).
 
 -   Installed dashboards can be accessed in the Netuitive interface by clicking **Dashboards**, then **Manage Dashboards**. The screenshot below shows both the *Dashboards* menu, and the *Manage Dashboards* screen.
 

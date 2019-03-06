@@ -11,7 +11,7 @@ Amazon Web Services (AWS) offers dozens of services --- which is great if you li
 
 Elastic Beanstalk does this by providing an orchestration service that manages the configuration and instantiation of various AWS services, such as Elastic Compute Cloud, Elastic Load Balancers, and the Relational Database Service. By automating the configuration of these services, individuals and teams can easily spin up a new application on AWS without losing their minds in complicated permissions policies and individual service configuration.
 
-But, as with any online service, things can go wrong. And while Amazon does offer its own basic monitoring, the built-in [AWS monitoring](/aws-monitoring-best-practices-using-pre-configured-dashboards) is just that: basic. For this reason, it's helpful to have a more robust, [centralized platform for monitoring](/product) that can support every product you use, both within and beyond AWS.
+But, as with any online service, things can go wrong. And while Amazon does offer its own basic monitoring, the built-in [AWS monitoring](/aws-monitoring-best-practices/) is just that: basic. For this reason, it's helpful to have a more robust, [centralized platform for monitoring](/product) that can support every product you use, both within and beyond AWS.
 
 That's where Netuitive comes in. Netuitive provides an easy way to monitor Elastic Beanstalk along with everything else you have running in your infrastructure.
 
