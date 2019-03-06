@@ -1679,6 +1679,53 @@
   }), window.addEventListener("resize", function() {
     r.classList.remove("is-active"), o.classList.remove("-mob-open"), i.default.off()
   });
+  var a = document.getElementsByClassName("header_nav_list_item_sublist_item"),
+    s = function(t) {
+      t.addEventListener("mouseenter", function() {
+        ! function(t) {
+          var e = !0,
+            n = !1,
+            i = void 0;
+          try {
+            for (var o, r = a[Symbol.iterator](); !(e = (o = r.next()).done); e = !0) {
+              var s = o.value;
+              t !== s && s.classList.add("")
+            }
+          } catch (t) {
+            n = !0, i = t
+          } finally {
+            try {
+              !e && r.return && r.return()
+            } finally {
+              if (n) throw i
+            }
+          }
+        }(t)
+      }), t.addEventListener("mouseleave", function() {
+        ! function(t) {
+          var e = !0,
+            n = !1,
+            i = void 0;
+          try {
+            for (var o, r = a[Symbol.iterator](); !(e = (o = r.next()).done); e = !0) {
+              var s = o.value;
+              s.classList.remove("")
+            }
+          } catch (t) {
+            n = !0, i = t
+          } finally {
+            try {
+              !e && r.return && r.return()
+            } finally {
+              if (n) throw i
+            }
+          }
+        }()
+      })
+    },
+    c = !0,
+    u = !1,
+    l = void 0;
   try {
     for (var d, f = a[Symbol.iterator](); !(c = (d = f.next()).done); c = !0) {
       s(d.value)
