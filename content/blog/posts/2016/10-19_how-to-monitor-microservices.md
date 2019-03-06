@@ -10,7 +10,7 @@ layout: "single"
 
 Microservices have become a huge part of cloud computing and the DevOps community. By "doing one thing and doing it well," microservice architecture allows teams to focus on individual areas of improvement. The laser-focused nature of microservices speeds up testing and deployment, but presents some challenges for monitoring.
 
-The Netuitive engineering team knows these problems all too well, as we recently embarked on a mission to add Netutive monitoring to our in-house microservices. Here are the problems we discovered, and the approach we took to solve them.
+The Metricly engineering team knows these problems all too well, as we recently embarked on a mission to add Netutive monitoring to our in-house microservices. Here are the problems we discovered, and the approach we took to solve them.
 
 3 Requirements when Monitoring Microservices
 --------------------------------------------
@@ -31,9 +31,9 @@ Monitoring must have low overhead -- meaning it has low footprint in terms of CP
 
 A monitoring solution also needs to be embedded in each new microservice without requiring manual configuration beyond an initial generic setup that would apply to all microservices.
 
-All in all, this is a tall order. Luckily, Netuitive's engineering team was up to the task.
+All in all, this is a tall order. Luckily, Metricly's engineering team was up to the task.
 
-Configuring Netuitive to Monitor Microservices
+Configuring Metricly to Monitor Microservices
 ----------------------------------------------
 
 Our engineering team started at the core of the microservices monitoring -- with the microservices themselves. We examined the counts, latency and errors (telemetry data) at the inputs and outputs (our points of instrumentation) for each microservice to determine the data we'd need to collect.  Let's quickly define these for reference:
@@ -51,13 +51,13 @@ We explored the inputs for each microservice and asked the following questions:
 
 The team had to be very deliberate here, because any degradation could cause upstream / downstream issues. Likewise, we researched the outputs for each service. A microservice may persist something into a database or send information downstream on a queue somewhere for further processing.  Again, we had to be very thorough, since mistakes here will cause serious problems later.
 
-Once we had the inputs and outputs documented, we needed to work out the data collection and consolidation infrastructure. Because the Netuitive agent integrates so seamlessly with StatsD, we elected to use that to consolidate the data. (Netuitive's Linux agent is also able to act as a StatsD server, which helps if an organization wants to avoid the need for maintaining a dedicated StatsD server. In this case, we already had a dedicated StatsD server, so we used it.) Here's how the flow of data looks:
+Once we had the inputs and outputs documented, we needed to work out the data collection and consolidation infrastructure. Because the Metricly agent integrates so seamlessly with StatsD, we elected to use that to consolidate the data. (Metricly's Linux agent is also able to act as a StatsD server, which helps if an organization wants to avoid the need for maintaining a dedicated StatsD server. In this case, we already had a dedicated StatsD server, so we used it.) Here's how the flow of data looks:
 
-[![microservices-monitoring-monitoring-flowpng](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Microservices-Monitoring-Monitoring-FlowPNG-1024x275.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Microservices-Monitoring-Monitoring-FlowPNG.png)
+[![microservices-monitoring-monitoring-flowpng](https://www.metricly.com/wp-content/uploads/2017/07/Microservices-Monitoring-Monitoring-FlowPNG-1024x275.png)](https://www.metricly.com/wp-content/uploads/2017/07/Microservices-Monitoring-Monitoring-FlowPNG.png)
 
-Monitoring Microservices with Netuitive
+Monitoring Microservices with Metricly
 ---------------------------------------
 
-Once the team had the nuts and bolts of monitoring an individual microservice sorted, they configured a [Netuitive monitoring package](/aws-monitoring-best-practices/) to make future setup effortless. Each package contains a specialized set of dashboards, alerting policies, and analytics configuration necessary to monitor a particular microservice. All future points of instrumentation / integration then can leverage the same package to avoid the need for additional manual configuration.
+Once the team had the nuts and bolts of monitoring an individual microservice sorted, they configured a [Metricly monitoring package](/aws-monitoring-best-practices/) to make future setup effortless. Each package contains a specialized set of dashboards, alerting policies, and analytics configuration necessary to monitor a particular microservice. All future points of instrumentation / integration then can leverage the same package to avoid the need for additional manual configuration.
 
-Monitoring microservices is no easy feat -- but with Netuitive's lightweight nature and customizable StatsD integration, it's absolutely achievable. There is a lot of value in monitoring your micro services in the context of your overall stack which include the performance, capacity and cost of your infrastructure. If you're looking to monitor your own microservices, take Netuitive for a spin.  [We offer a free trial](/signup) which includes this functionality [and more](/product).
+Monitoring microservices is no easy feat -- but with Metricly's lightweight nature and customizable StatsD integration, it's absolutely achievable. There is a lot of value in monitoring your micro services in the context of your overall stack which include the performance, capacity and cost of your infrastructure. If you're looking to monitor your own microservices, take Metricly for a spin.  [We offer a free trial](https://www.metricly.com/signup) which includes this functionality [and more](https://www.metricly.com/product).

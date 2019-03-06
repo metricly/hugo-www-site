@@ -9,7 +9,7 @@ layout: "single"
 ---
 *Summer is almost here and with it conference season! We asked our Senior Director of Marketing, Tiffany Diehl, to share a few tips and tricks to getting the most out of live events.*
 
-[Industry events and gatherings](/2016-devops-events) are an invaluable way to learn about emerging technology, network with like-minded professionals, and of course, score some cool swag. If it's your first time attending an event (large or small), here are five tips to help you make the most of the experience.
+[Industry events and gatherings](https://www.metricly.com/2016-devops-events) are an invaluable way to learn about emerging technology, network with like-minded professionals, and of course, score some cool swag. If it's your first time attending an event (large or small), here are five tips to help you make the most of the experience.
 
 1) Get Involved
 ---------------
@@ -60,4 +60,4 @@ Many conferences subsidize attendance costs by inviting vendors to sponsor and p
 
 * * * * *
 
-Netuitive is traveling the country this summer attending conferences -- come chat with us! We'll be at DevOpsDays in [Austin](http://www.devopsdaysaustin.com/) and [Washington DC](https://www.devopsdays.org/events/2016-washington-dc/) as well as [Monitorama](http://monitorama.com/), and we'll update [our events page](/2016-devops-events) with future appearances. Hope to see you soon!
+Metricly is traveling the country this summer attending conferences -- come chat with us! We'll be at DevOpsDays in [Austin](http://www.devopsdaysaustin.com/) and [Washington DC](https://www.devopsdays.org/events/2016-washington-dc/) as well as [Monitorama](http://monitorama.com/), and we'll update [our events page](https://www.metricly.com/2016-devops-events) with future appearances. Hope to see you soon!

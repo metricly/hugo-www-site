@@ -1,7 +1,7 @@
 ---
 author: "Mike Mackrory"
 date: "2017-06-20"
-title: "Optimize AWS Auto Scaling Groups with Netuitive"
+title: "Optimize AWS Auto Scaling Groups with Metricly"
 description: "Are you making these common mistakes with your AWS Auto Scaling Groups? Read on to see some best practices for optimizing."
 category: "DevOps"
 url: "/optimize-auto-scaling-groups/"
@@ -19,7 +19,7 @@ I'd like to share some of the more common misconceptions, mistakes and less opti
 
 ### The Cloud is Volatile
 
-![Optimize Auto Scaling Groups: Volatile Cloud](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Asset-1.png)Before the advent of the cloud, applications were typically hosted on a long-lived physical server, either in a personal data center or a hosted data center. One could argue that AWS is simply another data center where apps are hosted, but the key difference is in the ephemeral nature of the virtual machines on which applications are deployed.
+![Optimize Auto Scaling Groups: Volatile Cloud](/wp-content/uploads/2017/07/Asset-1.png)Before the advent of the cloud, applications were typically hosted on a long-lived physical server, either in a personal data center or a hosted data center. One could argue that AWS is simply another data center where apps are hosted, but the key difference is in the ephemeral nature of the virtual machines on which applications are deployed.
 
 While this may seem like an argument against cloud computing, it is in fact what makes cloud computing so valuable. In the past, you would need to account for a sudden increase in traffic by incorporating additional hardware, and server upgrades would typically require the server to be taken offline for the upgrade.
 
@@ -61,23 +61,23 @@ If your web application receives a sudden influx of traffic, there is a good cha
 
 When all's said and done, in the world of cloud computing, it makes sense to take a proactive approach to scaling cloud infrastructure in anticipation of sudden spikes in traffic, rather than being purely reactive.
 
-Netuitive provides an excellent [suite of monitoring reports](/product/dashboards-and-reports) to help you better optimize your Auto Scaling Group. We'll discuss these in more depth in the next section.
+Metricly provides an excellent [suite of monitoring reports](/product/dashboards-and-reports) to help you better optimize your Auto Scaling Group. We'll discuss these in more depth in the next section.
 
 ### Comprehensive Monitoring of Auto Scaling Groups
 
 As I mentioned previously, you don't have to get your infrastructure configured perfectly up front. The cloud is a dynamic environment, much like the traffic patterns our applications might expect. For your cloud endeavors to be successful, it is important to make incremental improvements over time, monitor and evaluate those improvements, and then adjust further, or move on to the next improvement.
 
-As a service, Netuitive is the gold standard for [monitoring your cloud services and applications](/product). As useful as that is, however, the real power lies in the analysis and reporting provided. I've written about some of the available reports in the past, but they bear mentioning again because of their relevance to this discussion.
+As a service, Metricly is the gold standard for [monitoring your cloud services and applications](/product). As useful as that is, however, the real power lies in the analysis and reporting provided. I've written about some of the available reports in the past, but they bear mentioning again because of their relevance to this discussion.
 
 **EC2 Cost and EC2 Recommendation Reports**
 
-![Optimize Auto Scaling Groups: EC2 Recommendation](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/EC2-Recommendation-1024x576.png)
+![Optimize Auto Scaling Groups: EC2 Recommendation](/wp-content/uploads/2017/07/EC2-Recommendation-1024x576.png)
 
-Some time ago, I wrote some articles about Netuitive's [EC2 Cost and EC2 Recommendation Reports](/pick-perfect-ec2-instance-type), and how they can be used to optimize costs and ensure you've used the correct instance types for your deployments. One of the primary benefits of these reports that I particularly like is the ability to [set a risk tolerance level](/optimize-aws-instance-types). I can determine how much optimization I want, and how much risk I'm willing to assume as far as sufficient capacity.
+Some time ago, I wrote some articles about Metricly's [EC2 Cost and EC2 Recommendation Reports](/pick-perfect-ec2-instance-type), and how they can be used to optimize costs and ensure you've used the correct instance types for your deployments. One of the primary benefits of these reports that I particularly like is the ability to [set a risk tolerance level](/optimize-aws-instance-types). I can determine how much optimization I want, and how much risk I'm willing to assume as far as sufficient capacity.
 
 **The ASG Tuning Report**
 
-![Optimize Auto Scaling Groups: Auto Scale Group Tuning](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Auto-Scale-Group-1024x597.png)
+![Optimize Auto Scaling Groups: Auto Scale Group Tuning](/wp-content/uploads/2017/07/Auto-Scale-Group-1024x597.png)
 
 This report presents the user with historical data based on past usage of the service, and then allows the user to [create policies to automatically resize ASGs](/optimize-auto-scale-groups-asg-tuning-report) based on those traffic patterns.
 

@@ -7,11 +7,11 @@ category: "DevOps"
 url: "/big-data-takes-management-2/"
 layout: "single"
 ---
-Netuitive was recently interviewed for a story in the latest issue of Modern Infrastructure.
+Metricly was recently interviewed for a story in the latest issue of Modern Infrastructure.
 
 In the article entitled "Modern-Infrastructure-Big-Data-in-IT-Mar-2014" the author makes the point of increasingly complex, cloud-based applications and infrastructure creating a need for "Big Data" IT operations analytics in the enterprise.
 
-The article also cites that big data analytic tools are now being utilized to solve and even anticipate IT infrastructure performance problems. At Netuitive we don't see this as a new phenomenon. Some of our largest customers have been dealing with the challenge of "Big Data" volumes in application performance management for some time.
+The article also cites that big data analytic tools are now being utilized to solve and even anticipate IT infrastructure performance problems. At Metricly we don't see this as a new phenomenon. Some of our largest customers have been dealing with the challenge of "Big Data" volumes in application performance management for some time.
 
 One point that is also perhaps not elaborated upon in the article is how big data analytics can be used not only to improve IT infrastructure performance but to also to understand how IT infrastructure performance impacts critical, customer facing applications. Advanced IT analytics are now being used to correlate business metrics as well as IT infrastructure and application data.
 

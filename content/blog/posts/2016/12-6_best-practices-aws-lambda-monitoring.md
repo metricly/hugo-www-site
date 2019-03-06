@@ -32,11 +32,11 @@ In order to provide the optimal user experience, the key metrics to monitor are:
 
 Users, whether external or internal, actual human beings or services, expect your Lambda function to respond with accurate results in a reasonable amount of time. In order to measure this experience, your monitoring approach needs to take into consideration the error count in relation to the number of requests, and the execution time for the function.
 
-[![Lambda Monitoring: AWS Lambda Execution Time](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/MonitoringLambdaExecutionTime.jpg)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/MonitoringLambdaExecutionTime.jpg)
+[![Lambda Monitoring: AWS Lambda Execution Time](https://www.metricly.com/wp-content/uploads/2017/07/MonitoringLambdaExecutionTime.jpg)](https://www.metricly.com/wp-content/uploads/2017/07/MonitoringLambdaExecutionTime.jpg)
 
 In a perfect world, your error count should be at zero, so any increase in the error count should be investigated and rectified as soon as possible. Error cases which are outside the control of the function should be appropriately handled either through validation or by appropriate error handling to prevent an error from being passed back to the calling service.
 
-[![Lambda Monitoring: Error count and rate](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/MonitoringLambdaErrorCountandRate-1024x335.jpg)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/MonitoringLambdaErrorCountandRate.jpg)
+[![Lambda Monitoring: Error count and rate](https://www.metricly.com/wp-content/uploads/2017/07/MonitoringLambdaErrorCountandRate-1024x335.jpg)](https://www.metricly.com/wp-content/uploads/2017/07/MonitoringLambdaErrorCountandRate.jpg)
 
 In addition, you should also monitor whether requests to your Lambda are being throttled due to limits on the number of concurrent functions which can be executed. While these may trigger a retry attempt and succeed, it is important to be aware of this limit and the impact on the end user.
 
@@ -52,9 +52,9 @@ Costs for Lambda functions are charged on a per-request basis. The cost is a pro
 Getting Started
 ---------------
 
-The first step in any Lambda monitoring project is to determine how you are going to track the required metrics and establish a connection between your monitoring solution and your AWS environment. In a subsequent article, I'll focus on establishing this connection and configuring a monitoring solution for your Lambdas using [Netuitive's monitoring solution](/product).
+The first step in any Lambda monitoring project is to determine how you are going to track the required metrics and establish a connection between your monitoring solution and your AWS environment. In a subsequent article, I'll focus on establishing this connection and configuring a monitoring solution for your Lambdas using [Metricly's monitoring solution](https://www.metricly.com/product).
 
-With the connection to AWS enabled, the next step is to put together a method of monitoring each of the key metrics. In the case of Netuitive you'll want to set up the [dashboard](/product/dashboards-and-reports) to display each of the key metrics previously identified. These are:
+With the connection to AWS enabled, the next step is to put together a method of monitoring each of the key metrics. In the case of Metricly you'll want to set up the [dashboard](https://www.metricly.com/product/dashboards-and-reports) to display each of the key metrics previously identified. These are:
 
 -   Request count vs error count over time
 -   Error count
@@ -66,7 +66,7 @@ The next step is to determine a baseline for each of these metrics, and then con
 Best Practices for Lambda Monitoring
 ------------------------------------
 
-To wrap this discussion up, here is what I would recommend for a successful [monitoring solution](/) for your Lambda functions.
+To wrap this discussion up, here is what I would recommend for a successful [monitoring solution](https://www.metricly.com/) for your Lambda functions.
 
 -   Determine a monitoring solution for your Lambda functions which assesses and reports each of the key metrics:
     -   Invocations or count of requests

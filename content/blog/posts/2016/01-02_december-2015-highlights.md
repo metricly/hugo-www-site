@@ -8,7 +8,7 @@ url: "/december-2015-highlights/"
 layout: "single"
 ---
 
-Netuitive's engineering team finished out 2015 by preparing our service platform for new releases of a number of large features in Q1 2016. We also made several enhancements to the Windows agent, cost reports, and greatly expanding product documentation. Here are the last release highlights of 2015:
+Metricly's engineering team finished out 2015 by preparing our service platform for new releases of a number of large features in Q1 2016. We also made several enhancements to the Windows agent, cost reports, and greatly expanding product documentation. Here are the last release highlights of 2015:
 
 Enhanced AWS Cost Savings Reports
 ---------------------------------
@@ -24,20 +24,20 @@ Windows Agent Updates
 
 [![December 2015: windowsEventGraph (New Releases)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/windowsEventGraph.jpg)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/windowsEventGraph.jpg)
 
-Our open source Windows agent now supports the collection of events available in Windows Event Viewer. The Windows events can be viewed alongside collected events and detected anomalies from other data sources supported by Netuitive. We also added support for Windows metrics in our CPU Usage and Memory Usage widgets that display stacked graphs of key performance indicators and the automated discovery of relationships between EC2s and Windows agents.
+Our open source Windows agent now supports the collection of events available in Windows Event Viewer. The Windows events can be viewed alongside collected events and detected anomalies from other data sources supported by Metricly. We also added support for Windows metrics in our CPU Usage and Memory Usage widgets that display stacked graphs of key performance indicators and the automated discovery of relationships between EC2s and Windows agents.
 
 API Documentation
 -----------------
 
 [![API Documentation (December 2015 New Releases)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/APIDocs.jpg)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/APIDocs.jpg)
 
-Netuitive's API is now accessible to all users. We just released our API documentation to guide users who are interested to take advantage of the wide range of available API calls. You can find the API documentation in the user guide, which is accessible via Netuitive product user interface or directly at [https://help.netuitive.com](https://help.netuitive.com/). Netuitive's API documentation comes complete with the following:
+Metricly's API is now accessible to all users. We just released our API documentation to guide users who are interested to take advantage of the wide range of available API calls. You can find the API documentation in the user guide, which is accessible via Metricly product user interface or directly at [https://www.metricly.com/support](https://www.metricly.com/support). Metricly's API documentation comes complete with the following:
 
 -   Available Method calls
 -   Available parameters and headers where applicable
 -   Example of requests and responses for each method call
 
-Each parameter is explained in plain English to de-mystify Netuitive's API for newbies, so get in there and let us know how we can improve!
+Each parameter is explained in plain English to de-mystify Metricly's API for newbies, so get in there and let us know how we can improve!
 
 Infrastructure Updates
 ----------------------
@@ -61,4 +61,4 @@ On behalf of all of our employees, we wish you a happy holiday season, and we lo
 
 * * * * *
 
-Want to see these release highlights in action? We offer a 21-day, [free trial of Netuitive.](/signup)
+Want to see these release highlights in action? We offer a 21-day, [free trial of Metricly.](/signup)

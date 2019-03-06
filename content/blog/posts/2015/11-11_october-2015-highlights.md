@@ -9,7 +9,7 @@ layout: "single"
 ---
 
 
-Shared dashboards, maintenance mode, custom email templates, and Memory and CPU Usage widgets are just the tip of the iceberg's worth of features that Netuitive released in October. Fear not: even though it's cooling off outside, our dev team is heating up!
+Shared dashboards, maintenance mode, custom email templates, and Memory and CPU Usage widgets are just the tip of the iceberg's worth of features that Metricly released in October. Fear not: even though it's cooling off outside, our dev team is heating up!
 
 Shared Dashboards
 -----------------
@@ -18,14 +18,14 @@ Shared Dashboards
 
 Have you spent serious time working on an informative, useful dashboard that visualizes your environment? Only to realize your coworkers can't see it?
 
-Dashboards are meant to be shared and Netuitive now supports private and public dashboards. Navigate to the dashboard you want to share, set its privacy setting to "Public", and the dashboard is now available for every user in your account. However, this creates a copy of the dashboard for each user, so they can edit it to their preference without changing the original. Also, new dashboard filtering and dashboard management pages allow you to quickly access and maintain all of your dashboards.
+Dashboards are meant to be shared and Metricly now supports private and public dashboards. Navigate to the dashboard you want to share, set its privacy setting to "Public", and the dashboard is now available for every user in your account. However, this creates a copy of the dashboard for each user, so they can edit it to their preference without changing the original. Also, new dashboard filtering and dashboard management pages allow you to quickly access and maintain all of your dashboards.
 
 Maintenance Mode
 ----------------
 
 [![Maintenance Mode (October Release)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/MaintenanceMode.jpg)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/MaintenanceMode.jpg)
 
-Sometimes you may want to turn off Netuitive's learning engine. Putting an element in maintenance mode is as simple as adding a tag. You can either "turn on" maintenance mode via the Inventory Explorer or by passing a tag through our API. This feature is particularly helpful during maintenance windows or periods of expected volatile behavior (Cyber Monday comes to mind for our online retailers.)
+Sometimes you may want to turn off Metricly's learning engine. Putting an element in maintenance mode is as simple as adding a tag. You can either "turn on" maintenance mode via the Inventory Explorer or by passing a tag through our API. This feature is particularly helpful during maintenance windows or periods of expected volatile behavior (Cyber Monday comes to mind for our online retailers.)
 
 Custom Email Templates
 ----------------------
@@ -42,4 +42,4 @@ Memory and CPU Usage Linux Widgets
 Two new widgets are now available: Memory Usage and CPU Usage. The Memory Usage widget visualizes an element's memory usage over time as a stacked area time series graph, with each color representing states of memory (e.g., free, available, cached, etc.). The CPU Usage widget visualizes an element's CPU usage over time as a stacked area time series graph, with each color representing CPU states (e.g., idle, nice, user, etc.).
 
 * * * * *\
-Want to see these release highlights in action? We offer a 21-day, no obligation [free trial of Netuitive.](/signup)
+Want to see these release highlights in action? We offer a 21-day, no obligation [free trial of Metricly.](/signup)

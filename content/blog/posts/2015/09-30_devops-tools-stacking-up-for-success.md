@@ -60,4 +60,4 @@ At the end of the day, you should expect nothing less from DevOps monitoring too
 
 * * * * *
 
-Try it for yourself -- take advantage of our 21-day [free trial](/signup) and start monitoring with [Netuitive](/) today!
+Try it for yourself -- take advantage of our 21-day [free trial](/signup) and start monitoring with [Metricly](/) today!

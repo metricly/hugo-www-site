@@ -9,14 +9,14 @@ layout: "single"
 ---
 
 
-*Ed. Note: We've put together this three-part series to discuss what you need to know about anomaly detection, the typical adoption cycle of analytics to DevOps monitoring, and how anomaly detection adds value to cloud monitoring for DevOps teams. This is part 1; [Part 2](/3-types-anomaly-detection-monitoring-tools) explores the three types of monitoring tools used by DevOps teams. [Part 3](/adding-analytics-to-devops-model) discusses how to fit anomaly detection into a DevOps workflow.*
+*Ed. Note: We've put together this three-part series to discuss what you need to know about anomaly detection, the typical adoption cycle of analytics to DevOps monitoring, and how anomaly detection adds value to cloud monitoring for DevOps teams. This is part 1; [Part 2](https://www.metricly.com/3-types-anomaly-detection-monitoring-tools) explores the three types of monitoring tools used by DevOps teams. [Part 3](https://www.metricly.com/adding-analytics-to-devops-model) discusses how to fit anomaly detection into a DevOps workflow.*
 
 What is Anomaly Detection?
 --------------------------
 
-[![Anomaly Detection: Performance Explorer-Bands of Normalcy](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/PerformanceExplorer-BandsofNormalcy-Sanitized-1024x571.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/PerformanceExplorer-BandsofNormalcy-Sanitized.png)
+[![Anomaly Detection: Performance Explorer-Bands of Normalcy](https://www.metricly.com/wp-content/uploads/2016/05/PerformanceExplorer-BandsofNormalcy-Sanitized-1024x571.png)](https://www.metricly.com/wp-content/uploads/2016/05/PerformanceExplorer-BandsofNormalcy-Sanitized.png)
 
-Anomaly detection is the process of identifying observations or patterns of observations in a data set that do not conform to expected behavior. "One of these things is not like the other" -- sounds easy, right? Of course, when you're working with tens of thousands of system and application metrics that change from minute to minute, the game becomes exponentially more difficult. At [Netuitive](/), we tend to characterize this as, "humanly impossible."
+Anomaly detection is the process of identifying observations or patterns of observations in a data set that do not conform to expected behavior. "One of these things is not like the other" -- sounds easy, right? Of course, when you're working with tens of thousands of system and application metrics that change from minute to minute, the game becomes exponentially more difficult. At [Metricly](https://www.metricly.com/), we tend to characterize this as, "humanly impossible."
 
 Four Possible Outcomes of Anomaly Detection
 -------------------------------------------
@@ -42,10 +42,10 @@ This is the *worst*. A problem is occurring that could lead to a serious outage 
 
 Luckily, plenty of tools exist to ensure you see every true positive, and aren't bothered by false positives or false negatives.
 
-Check out [Part 2](/3-types-anomaly-detection-monitoring-tools), which explores the three types of monitoring tools!
+Check out [Part 2](https://www.metricly.com/3-types-anomaly-detection-monitoring-tools), which explores the three types of monitoring tools!
 
 * * * * *
 
-About Netuitive Monitoring and Analytics
+About Metricly Monitoring and Analytics
 
-See how machine learning and anomaly detection impact your alarm quality and inform mission-critical decisions in dynamic environments. Netuitive is available as a [21-day free trial.](http://app.netuitive.com/signup)
+See how machine learning and anomaly detection impact your alarm quality and inform mission-critical decisions in dynamic environments. Metricly is available as a [21-day free trial.](/signup)

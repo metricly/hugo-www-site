@@ -13,7 +13,7 @@ By most common definitions, the DevOps movement is about more agile, responsive 
 
 In order for DevOps philosophies to take root, Engineering and IT Operations staff are usually asked to work together in a more unified, less siloed fashion. But does that go far enough? What about the business stakeholders?
 
-In a project last year to improve service levels for the retail Point of Sales system for a major enterprise, Netuitive's professional services staff wanted to bring together ALL the stakeholders. The goal was not just to improve the service levels for the PoS system, but also to help the company finally understand how the performance of the retail applications and underlying infrastructure impacted key business metrics like items sold, transaction volumes, and sales dollars by store or region (Business Activity Monitoring). We were surprised that when the first planning meeting took place, it was the first time that the developers had met the business analyts tracking those key BAM metrics.
+In a project last year to improve service levels for the retail Point of Sales system for a major enterprise, Metricly's professional services staff wanted to bring together ALL the stakeholders. The goal was not just to improve the service levels for the PoS system, but also to help the company finally understand how the performance of the retail applications and underlying infrastructure impacted key business metrics like items sold, transaction volumes, and sales dollars by store or region (Business Activity Monitoring). We were surprised that when the first planning meeting took place, it was the first time that the developers had met the business analyts tracking those key BAM metrics.
 
 **Why was this an important development?**
 

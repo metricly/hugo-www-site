@@ -7,7 +7,7 @@ category: "Product Updates"
 url: "/february-2016-highlights/"
 layout: "single"
 ---
-Valentine's Day has come and gone, but Netuitive's love for new features has only grown. Our engineers put a large focus in February on new widgets and dashboard improvements, and our expanding widget library is a testament to our ongoing commitment to increased dashboard customization. Check out our brand-new improvements!
+Valentine's Day has come and gone, but Metricly's love for new features has only grown. Our engineers put a large focus in February on new widgets and dashboard improvements, and our expanding widget library is a testament to our ongoing commitment to increased dashboard customization. Check out our brand-new improvements!
 
 Default Dashboards
 ------------------
@@ -28,7 +28,7 @@ Metric Aggregation Widget
 
 [![Metric Aggregation Widget (February 2016)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/MetricAggregationWidget.jpg)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/MetricAggregationWidget.jpg)
 
-The Metric Aggregation Widget aggregates the values for a chosen metric (or metrics) across a selected set of elements. Simply choose the element and element type you want to track as well as key metrics and Netuitive will aggregate the values and display them as a list on the widget.
+The Metric Aggregation Widget aggregates the values for a chosen metric (or metrics) across a selected set of elements. Simply choose the element and element type you want to track as well as key metrics and Metricly will aggregate the values and display them as a list on the widget.
 
 Multiple Selection for Dashboard Widget Scope
 ---------------------------------------------
@@ -42,7 +42,7 @@ New Beta Features
 
 [![Beta Features (February 2016)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/Dynamic_Features-1024x463.jpg)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/Dynamic_Features-1024x463.jpg)
 
-Netuitive now provides early access to beta features in the top Beta menu in product. We welcome your feedback as we develop and improve the functionality before general release.
+Metricly now provides early access to beta features in the top Beta menu in product. We welcome your feedback as we develop and improve the functionality before general release.
 
 Dynamic Dashboard
 

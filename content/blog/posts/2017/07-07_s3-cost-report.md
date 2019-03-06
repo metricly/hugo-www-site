@@ -1,7 +1,7 @@
 ---
 date: "2017-07-07"
-title: "Explore S3 Costs with Netuitive’s S3 Cost Report"
-description: "Find out where your AWS S3 spend is going, rethink your storage needs, and consider how you use your buckets with Netuitive's new S3 Cost Report."
+title: "Explore S3 Costs with Metricly’s S3 Cost Report"
+description: "Find out where your AWS S3 spend is going, rethink your storage needs, and consider how you use your buckets with Metricly's new S3 Cost Report."
 category: "Cloud Cost Management"
 url: "/s3-cost-report/"
 layout: "single"
@@ -16,15 +16,15 @@ This report also allows users to organize their S3 costs by AWS accounts or tag 
 
 Here's a look at the report:
 
-![S3 Cost Report: Report View](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/S3-Report.png)
+![S3 Cost Report: Report View](/wp-content/uploads/2017/07/S3-Report.png)
 
-You only need to share read-only access to your AWS billing data with Netuitive, and our analytics take it from there. The report shown above breaks down your S3 cost, and allows you to filter and sort by utilization, spend and time.
+You only need to share read-only access to your AWS billing data with Metricly, and our analytics take it from there. The report shown above breaks down your S3 cost, and allows you to filter and sort by utilization, spend and time.
 
-![S3 Cost Report: Filters](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/S3Filters.png)
+![S3 Cost Report: Filters](/wp-content/uploads/2017/07/S3Filters.png)
 
 You can also view your S3 cost and utilization aggregated by tag, attribute (all S3s in a certain region, for instance), day, week, or month. A daily view is shown below:
 
-![S3 Cost Report: Daily View](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/DailyS3Costs-1024x412.png)
+![S3 Cost Report: Daily View](/wp-content/uploads/2017/07/DailyS3Costs-1024x412.png)
 
 With this report, you gain key insights into your S3 spend, and can take action to lower your AWS bill.
 

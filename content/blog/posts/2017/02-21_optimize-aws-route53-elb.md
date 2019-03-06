@@ -9,7 +9,7 @@ layout: "single"
 ---
 
 
-In this post, we're going to talk about using Amazon Web Services (AWS), specifically Route 53 and ELB (Elastic Load Balancing) to optimize AWS performance and availability. In addition, we'll touch upon how using [Netuitive](/) can help you achieve your performance goals.
+In this post, we're going to talk about using Amazon Web Services (AWS), specifically Route 53 and ELB (Elastic Load Balancing) to optimize AWS performance and availability. In addition, we'll touch upon how using [Metricly](/) can help you achieve your performance goals.
 
 Optimizing AWS performance and availability can be time-consuming and difficult---especially with the rapid growth and adoption many DevOps teams experience.
 
@@ -22,7 +22,7 @@ One of the easiest ways to address this is by leveraging AWS services to handle 
 Amazon Route 53
 ---------------
 
-[![Optimize AWS Apps: Route 53](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Route53.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Route53.png)
+[![Optimize AWS Apps: Route 53](/wp-content/uploads/2017/07/Route53.png)](/wp-content/uploads/2017/07/Route53.png)
 
 Using [Amazon Route 53](https://aws.amazon.com/route53/) for DNS can be a powerful tool for application optimization and availability. In the past, admins would set up a DNS server or two, add some records to the zone file to point to application endpoints, and that would be that.
 
@@ -45,7 +45,7 @@ Managing a global DNS infrastructure with multiple levels of indirection via rou
 Elastic Load Balancing
 ----------------------
 
-[![Optimize AWS Apps: Elastic Load Balancer](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/ElasticLoadBalancer.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/ElasticLoadBalancer.png)
+[![Optimize AWS Apps: Elastic Load Balancer](/wp-content/uploads/2017/07/ElasticLoadBalancer.png)](/wp-content/uploads/2017/07/ElasticLoadBalancer.png)
 
 At a more local level, another tool to leverage is the use of Amazon's [Elastic Load Balancing](https://aws.amazon.com/elasticloadbalancing/). ELB automatically scales based on demand, so you don't need to worry about sizing your load balancers to handle large amounts of traffic when it's unnecessary.
 
@@ -55,9 +55,9 @@ Furthermore, you can reduce compute overhead on your EC2 instances by [terminati
 
 It's also easier to deploy your SSL certs to your Elastic Load Balancers using [AWS Certificate Manager](https://aws.amazon.com/certificate-manager/). This lowers SSL administration overhead by allowing you to centrally manage your SSL certs, and deploy them to integrated services such as ELB.
 
-Netuitive provides metrics on ELBs, and these can all be seen [alongside](/getting-started-metricly-aws/) other AWS metrics such as EC2 and EBS.
+Metricly provides metrics on ELBs, and these can all be seen [alongside](/getting-started-metricly-aws/) other AWS metrics such as EC2 and EBS.
 
-*Editor's note: In addition to ELB, EC2, and EBS, Netuitive offers support for a number of other AWS products. For more information, see* [*our documentation*](https://help.netuitive.com/Content/Integrations/aws.htm)*.*
+*Editor's note: In addition to ELB, EC2, and EBS, Metricly offers support for a number of other AWS products. For more information, see* [*our documentation*](https://help.netuitive.com/Content/Integrations/aws.htm)*.*
 
 Optimize AWS Availability and Performance
 -----------------------------------------

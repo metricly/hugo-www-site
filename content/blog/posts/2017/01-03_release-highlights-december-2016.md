@@ -8,9 +8,9 @@ url: "/release-highlights-december-2016/"
 layout: "single"
 ---
 
-As the year comes to a close and most begin to think about New Year's resolutions, Netuitive buckled down and released several new features!
+As the year comes to a close and most begin to think about New Year's resolutions, Metricly buckled down and released several new features!
 
-Netuitive's December 2016 release highlights include Microsoft Azure monitoring; updated Chef, Salt, and Ansible integrations; and the Idle EC2 Daily Report card. Read more...
+Metricly's December 2016 release highlights include Microsoft Azure monitoring; updated Chef, Salt, and Ansible integrations; and the Idle EC2 Daily Report card. Read more...
 
 Microsoft Azure Monitoring
 --------------------------

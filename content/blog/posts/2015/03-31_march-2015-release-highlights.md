@@ -15,7 +15,7 @@ Integrated Help Content
 
 [![Integrated Help Documents (March Release)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/Integrated-Help-Documents.jpg)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/Integrated-Help-Documents.jpg)
 
-Netuitive Cloud now offers integrated Getting Started pages that provide core information, so you can jump right in. These pages are a quick look at core aspects of Netuitive, such as the Dashboard, Inventory Explorer, and the Policy Editor.
+Metricly Cloud now offers integrated Getting Started pages that provide core information, so you can jump right in. These pages are a quick look at core aspects of Metricly, such as the Dashboard, Inventory Explorer, and the Policy Editor.
 
 These integrated pages serve as a starting point and contain links to the user guide for more detailed information. Each time you access a page with the integrated help, a pop-up window appears with the help information. If you already know your way around, you also have the option to turn off the pop-up help pages.
 
@@ -38,4 +38,4 @@ You now have the option of viewing your utilization report as a boxplot. All of 
 You also have the ability to display as many elements as necessary, sort results by statistic, and filter results by element, type, tag, or attribute. These choices further personalize your analysis.
 
 * * * * *
-Want to see these release highlights in action? [We offer a fully-functional, 21-day free trial of Netuitive here.](/signup)
+Want to see these release highlights in action? [We offer a fully-functional, 21-day free trial of Metricly here.](/signup)

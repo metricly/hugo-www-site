@@ -27,13 +27,13 @@ Another common use case is to create an ASG with no scaling policies but instead
 Auto Scaling in the Real World
 ------------------------------
 
-Observing actual ASG usage in *Netuitive* over several months we have seen some interesting patterns:
+Observing actual ASG usage in *Metricly* over several months we have seen some interesting patterns:
 
 -   Only a third of ASGs have been observed to scale in or out at all
 -   Over half of all ASGs are of fixed size at 1 or 2 EC2 instances
 -   The remaining 13% are of a fixed size of 3 or more instances, with 3% of all ASGs fixed at 5 or more EC2s
 
-[![AutoScaleGroups1](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/08/AutoScaleGroups1.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/08/AutoScaleGroups1.png)
+[![AutoScaleGroups1](https://www.metricly.com/wp-content/uploads/2016/08/AutoScaleGroups1.png)](https://www.metricly.com/wp-content/uploads/2016/08/AutoScaleGroups1.png)
 
 The first two examples fit well with the most common uses cases. However, many of the larger sized ASGs we have observed have highly variable load. Significant cost savings could be made if only they scaled-in during periods of light usage. Many of the ASGs that adjust size by just 1 or 2 instances are over-provisioned too.
 
@@ -42,13 +42,13 @@ In many cases ASGs are misconfigured simply because the scaling policies have ne
 Introducing the ASG Tuning Report
 ---------------------------------
 
-The new [*Netuitive ASG Tuning Report*](https://help.netuitive.com/Content/Reports/asg_tuning_report.htm) offers a new approach to meet the problems of visualizing and configuring auto scaling rules.
+The new [*Metricly ASG Tuning Report*](https://help.netuitive.com/Content/Reports/asg_tuning_report.htm) offers a new approach to meet the problems of visualizing and configuring auto scaling rules.
 
 The report provides the tools needed for AWS customers to effectively monitor their overall ASG estate, identify over (and under) provisioned ASGs, trial 'what-if' configuration settings to see how different scaling strategies will affect projected utilization, and model potential cost savings.
 
 **Visualize Past Performance**
 
-[![Visualize Past Auto Scale Group Performance](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/08/Visualize-Past-Performance.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/08/Visualize-Past-Performance.png)
+[![Visualize Past Auto Scale Group Performance](https://www.metricly.com/wp-content/uploads/2016/08/Visualize-Past-Performance.png)](https://www.metricly.com/wp-content/uploads/2016/08/Visualize-Past-Performance.png)
 
 -   Identify over/under provisioned ASGs
 -   Visualize Regular load patterns
@@ -58,15 +58,15 @@ The report provides the tools needed for AWS customers to effectively monitor th
 
 **Tune and optimize**
 
-[![Tune and Optimize Auto Scale Groups](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/08/Tune-and-Optimize.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/08/Tune-and-Optimize.png)
+[![Tune and Optimize Auto Scale Groups](https://www.metricly.com/wp-content/uploads/2016/08/Tune-and-Optimize.png)](https://www.metricly.com/wp-content/uploads/2016/08/Tune-and-Optimize.png)
 
 -   Optimize for regular or irregular load
 -   Model for different target utilizations
 -   Choose scale-in/scale-out rates according to load
 -   Choose more aggressive or conservative scaling rules to balance utilization vs cost savings
 
-The Netuitive [ASG Tuning report](https://help.netuitive.com/Content/Reports/asg_tuning_report.htm) generates continually-adjusted recommendations for sizing the ASG. Recommended instance counts, based on your tuning strategies and historical ASG performance, can be combined with advanced policies to leverage real-time changes in utilization and other metrics. This allows you to generate [notifications](https://help.netuitive.com/Content/Misc/notifications.htm) or [webhooks](https://help.netuitive.com/Content/Misc/API/webhook_endpoint.htm) for automating workload-driven adjustments to the number of EC2s (up or down) in the ASG.
+The Metricly [ASG Tuning report](https://help.netuitive.com/Content/Reports/asg_tuning_report.htm) generates continually-adjusted recommendations for sizing the ASG. Recommended instance counts, based on your tuning strategies and historical ASG performance, can be combined with advanced policies to leverage real-time changes in utilization and other metrics. This allows you to generate [notifications](https://help.netuitive.com/Content/Misc/notifications.htm) or [webhooks](https://help.netuitive.com/Content/Misc/API/webhook_endpoint.htm) for automating workload-driven adjustments to the number of EC2s (up or down) in the ASG.
 
 * * * * *
 
-*Ready to see if you're over-provisioning your ASGs? Netuitive offers a [21-day, no-obligation free trial.](/signup)*
+*Ready to see if you're over-provisioning your ASGs? Metricly offers a [21-day, no-obligation free trial.](https://www.metricly.com/signup)*

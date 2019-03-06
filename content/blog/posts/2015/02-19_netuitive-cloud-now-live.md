@@ -1,18 +1,18 @@
 ---
 
 date: "2015-02-19"
-title: "Netuitive Cloud Is Now Live!"
-description: "Yesterday, February 18, 2015, Metricly Cloud went live and out of beta! Here’s a look at what it took to launch the Netuitive 7.x platform in the cloud."
+title: "Metricly Cloud Is Now Live!"
+description: "Yesterday, February 18, 2015, Metricly Cloud went live and out of beta! Here’s a look at what it took to launch the Metricly 7.x platform in the cloud."
 category: "Product Updates"
 url: "/metricly-cloud-now-live/"
 layout: "single"
 ---
 
-[![Netuitive Cloud](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/celebrate-e1457534034602.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/celebrate-e1457534034602.png)
+[![Metricly Cloud](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/celebrate-e1457534034602.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/celebrate-e1457534034602.png)
 
-Yesterday, February 18, 2015, Netuitive Cloud went live and out of beta!  We are so proud of our development team for hitting this critical milestone on time.
+Yesterday, February 18, 2015, Metricly Cloud went live and out of beta!  We are so proud of our development team for hitting this critical milestone on time.
 
-Here's the at-a-glance stats of what it took to launch the Netuitive 7.x platform in the cloud:
+Here's the at-a-glance stats of what it took to launch the Metricly 7.x platform in the cloud:
 
 > **Beta Program Duration**:  6 months
 >
@@ -44,6 +44,6 @@ A special thank you goes out to our beta users that helped us develop the produc
 -   Feed data natively from AWS CloudWatch, collectd, Diamond, or StatsD
 -   Push your custom data to our REST API
 
-Cheers to our team and welcome to our new customers and users!  We look forward to working with you as we continue to enhance the Netuitive Cloud adaptive monitoring solution.
+Cheers to our team and welcome to our new customers and users!  We look forward to working with you as we continue to enhance the Metricly Cloud adaptive monitoring solution.
 
-As part of our launch to general availability, we are now offering a 21-day free trial of Netuitive Cloud. **[Sign up today and see what we're all about.](/signup "Sign Up for Netuitive Cloud")**
+As part of our launch to general availability, we are now offering a 21-day free trial of Metricly Cloud. **[Sign up today and see what we're all about.](/signup "Sign Up for Metricly Cloud")**
