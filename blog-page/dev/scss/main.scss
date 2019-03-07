@@ -576,20 +576,6 @@
                     }
                 }
 
-                &:after {
-                    content: "";
-                    position: absolute;
-                    bottom: 10px;
-                    left: 0;
-                    width: 24px;
-                    height: 1px;
-                    transition: all .2s ease-in-out;
-                    background: currentColor;
-
-                    @media (max-width: 392px) {
-                        bottom: -2px;
-                    }
-                }
 
                 &:hover {
                     &:after {
@@ -665,7 +651,6 @@
         }
 
         .title-h3 {
-            margin: 0 0 30px;
 
             .blue {
                 color: $blue-color;
@@ -682,12 +667,11 @@
         //     align-items: center;
         // }
         .item {
-            padding: 67px 64px;
             background: #fff;
-            margin: 0 0 30px;
-            cursor: pointer;
-            min-height: 403px;
             border-radius: 3px;
+            display: flex;
+            flex-direction: column;
+            height: 100%;
 
             &:hover {
                 box-shadow: 0 2px 9px 0 rgba(147, 147, 147, 0.5);
@@ -705,15 +689,6 @@
 
             .title-h4 {
                 margin: 30px 0 8px;
-            }
-
-            p {
-                opacity: .8;
-                margin: 0 0 18px;
-                font-weight: 400;
-                font-size: 16px;
-                line-height: 28px;
-                @include multiLineEllipsis($lineHeight: 28px, $lineCount: 4, $bgColor: white);
             }
 
             .learn-more {

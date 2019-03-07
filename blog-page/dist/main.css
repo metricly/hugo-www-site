@@ -424,19 +424,6 @@
           .main .blog-section .blog-section__header .read-more span svg {
             fill: #fff;
             stroke: #fff; }
-        .main .blog-section .blog-section__header .read-more:after {
-          content: "";
-          position: absolute;
-          bottom: 10px;
-          left: 0;
-          width: 24px;
-          height: 1px;
-          -webkit-transition: all .2s ease-in-out;
-          transition: all .2s ease-in-out;
-          background: currentColor; }
-          @media (max-width: 392px) {
-            .main .blog-section .blog-section__header .read-more:after {
-              bottom: -2px; } }
         .main .blog-section .blog-section__header .read-more:hover:after {
           width: 100%; }
     .main .blog-section__posts img {
@@ -487,20 +474,22 @@
     @media (max-width: 575px) {
       .main .help-section {
         padding: 66px 0; } }
-    .main .help-section .title-h3 {
-      margin: 0 0 30px; }
-      .main .help-section .title-h3 .blue {
-        color: #00AAE4; }
-      @media (max-width: 767px) {
-        .main .help-section .title-h3 {
-          text-align: center; } }
+    .main .help-section .title-h3 .blue {
+      color: #00AAE4; }
+    @media (max-width: 767px) {
+      .main .help-section .title-h3 {
+        text-align: center; } }
     .main .help-section .item {
-      padding: 67px 64px;
       background: #fff;
-      margin: 0 0 30px;
-      cursor: pointer;
-      min-height: 403px;
-      border-radius: 3px; }
+      border-radius: 3px;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-orient: vertical;
+      -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+      flex-direction: column;
+      height: 100%; }
       .main .help-section .item:hover {
         -webkit-box-shadow: 0 2px 9px 0 rgba(147, 147, 147, 0.5);
         box-shadow: 0 2px 9px 0 rgba(147, 147, 147, 0.5); }
@@ -514,32 +503,6 @@
           margin: 0 auto 20px; } }
       .main .help-section .item .title-h4 {
         margin: 30px 0 8px; }
-      .main .help-section .item p {
-        opacity: .8;
-        margin: 0 0 18px;
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 28px;
-        overflow: hidden;
-        position: relative;
-        line-height: 28px;
-        max-height: 112px;
-        text-align: justify;
-        margin-right: -1em;
-        padding-right: 1em; }
-        .main .help-section .item p:before {
-          content: '...';
-          position: absolute;
-          right: 0;
-          bottom: 0; }
-        .main .help-section .item p:after {
-          content: '';
-          position: absolute;
-          right: 0;
-          width: 1em;
-          height: 1em;
-          margin-top: 0.3em;
-          background: white; }
       .main .help-section .item .learn-more {
         color: #00A98E;
         font-weight: 600;

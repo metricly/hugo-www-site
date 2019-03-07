@@ -3,110 +3,65 @@ description: "Sign-up for Metricly. Free 21-day trial. Easy setup. No credit car
 header-light: true
 title: "Signup"
 layout: "page"
+hide-cta: true
 ---
-<section class="slice p-xl pt-sm bg-darkblue">
-  <div class="d-flex align-items-center">
-
-  </div>
-  <div class="container pt-lg">
-    <div class="row justify-content-center">
-      <div class="col-md-8 col-lg-6">
-
-        <div class="card shadow zindex-100">
-          <div class="card-body px-md-5 py-5">
-            <div class="text-center mb-5">
-              <h6 class="h3">21-Day Free Trial</h6>
-              <p class="text-muted mb-0">Full access. No credit card required.</p>
+<style>
+  footer, .header {
+    display: none;
+  }
+</style>
+<section>
+  <div class="row" style="height: 100vh;">
+    <div class="d-md-flex justify-content-center w-100">
+      <div class="col-12 col-md-5 d-flex pl-5 pt-md text-center" style="background: url(/assets/header-section.png) no-repeat; background-size: cover;">
+        <div class="w-100">
+          <img src="/img/brand/logo-dark.svg" alt="Metricly" style="width: 200px;" class="mb-sm">
+        </div>
+      </div>
+      <div class="col-12 col-md-7 p-md pb-3">
+        <div style="height: fit-content;">
+          <div class="text-center mb-5">
+            <h6 class="h5 font-weight-bold text-darkblue">Create your free account</h6>
+            <p class="text-muted mb-0">Full access. No credit card required.</p>
+          </div>
+          <div style="display: block;" id="clearbit-form-id" class="clearbit-form">
+            <div id="loader-spin"></div>
+            <div id="success" class="cb-response" style="display: none;">
+              <p>You're all set! A cloud specialist will reach out shortly. 👋</p>
             </div>
-            <span class="clearfix"></span>
-
-
-
-            <form role="form">
-              <div class="form-group">
-                <label class="form-control-label">Work Email</label>
-                <div class="input-group input-group-transparent">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text"><i class="far fa-user"></i></span>
-                  </div>
-                  <input type="email" class="form-control" id="input-email" placeholder="name@example.com">
+            <div id="demo_form" class="forms-theme-none">
+              <div class="cb-submission cb-loaded">
+                <div class="cb-form">
+                  <form name="Demo Request" method="POST" accept-charset="UTF-8" _lpchecked="1"><input type="hidden" name="form-name" value="Demo Request">
+                    <div class="cb-field mb-4">
+                      <label for="name">Full Name</label>
+                      <div class="d-flex justify-content-between"><input type="text" id="name" name="name" required="" autocomplete="off" value="" placeholder="First" style="width: 49%; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAkCAYAAADo6zjiAAAAAXNSR0IArs4c6QAAAbNJREFUWAntV8FqwkAQnaymUkpChB7tKSfxWCie/Yb+gbdeCqGf0YsQ+hU95QNyDoWCF/HkqdeiIaEUqyZ1ArvodrOHxanQOiCzO28y781skKwFW3scPV1/febP69XqarNeNTB2KGs07U3Ttt/Ozp3bh/u7V7muheQf6ftLUWyYDB5yz1ijuPAub2QRDDunJsdGkAO55KYYjl0OUu1VXOzQZ64Tr+IiPXedGI79bQHdbheCIAD0dUY6gV6vB67rAvo6IxVgWVbFy71KBKkAFaEc2xPQarXA931ot9tyHphiPwpJgSbfe54Hw+EQHMfZ/msVEEURjMfjCjbFeG2dFxPo9/sVOSYzxmAwGIjnTDFRQLMQAjQ5pJAQkCQJ5HlekeERxHEsiE0xUUCzEO9AmqYQhiF0Oh2Yz+ewWCzEY6aYKKBZCAGYs1wuYTabKdNNMWWxnaA4gp3Yry5JBZRlWTXDvaozUgGTyQSyLAP0dbb3DtQlmcan0yngT2ekE9ARc+z4AvC7nauh9iouhpcGamJeX8XF8MaClwaeROWRA7nk+tUnyzGvZrKg0/40gdME/t8EvgG0/NOS6v9NHQAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;"><input type="text" id="name" name="name" required="" autocomplete="on" value="" style="
+    width: 49%;" placeholder="Last"></div>
+                    </div>
+                    <div class="cb-field mb-4">
+                      <label for="email">Work Email *</label>
+                      <input type="email" id="email" name="email" required="" autocomplete="email" value="">
+                      <label style="font-weight: 400;" class="font-weight-normal mt-2">User your work email if you're using Metricly for business.</label></div>
+                    <div class="cb-field">
+                      <label for="password">Password *</label>
+                      <div class="cb-company-name">
+                        <input id="password" name="password" required="" autocomplete="off" value="" type="password" style="letter-spacing: 3px; font-weight: bold; background-image: url(&quot;data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAkCAYAAADo6zjiAAAAAXNSR0IArs4c6QAAAbNJREFUWAntV8FqwkAQnaymUkpChB7tKSfxWCie/Yb+gbdeCqGf0YsQ+hU95QNyDoWCF/HkqdeiIaEUqyZ1ArvodrOHxanQOiCzO28y781skKwFW3scPV1/febP69XqarNeNTB2KGs07U3Ttt/Ozp3bh/u7V7muheQf6ftLUWyYDB5yz1ijuPAub2QRDDunJsdGkAO55KYYjl0OUu1VXOzQZ64Tr+IiPXedGI79bQHdbheCIAD0dUY6gV6vB67rAvo6IxVgWVbFy71KBKkAFaEc2xPQarXA931ot9tyHphiPwpJgSbfe54Hw+EQHMfZ/msVEEURjMfjCjbFeG2dFxPo9/sVOSYzxmAwGIjnTDFRQLMQAjQ5pJAQkCQJ5HlekeERxHEsiE0xUUCzEO9AmqYQhiF0Oh2Yz+ewWCzEY6aYKKBZCAGYs1wuYTabKdNNMWWxnaA4gp3Yry5JBZRlWTXDvaozUgGTyQSyLAP0dbb3DtQlmcan0yngT2ekE9ARc+z4AvC7nauh9iouhpcGamJeX8XF8MaClwaeROWRA7nk+tUnyzGvZrKg0/40gdME/t8EvgG0/NOS6v9NHQAAAABJRU5ErkJggg==&quot;); background-repeat: no-repeat; background-attachment: scroll; background-size: 16px 18px; background-position: 98% 50%; cursor: auto;">
+                        <input type="hidden" name="_gotcha">
+                      </div>
+                    </div>
+                    <div class="mt-4">
+                      <button type="submit" class="btn btn-green" style="width: 100%;">Try Metricly Free</button>
+                    </div>
+                  </form>
                 </div>
               </div>
-              <div class="form-group mb-4">
-                <label class="form-control-label">Password</label>
-                <div class="input-group input-group-transparent">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text"><i class="far fa-key"></i></span>
-                  </div>
-                  <input type="password" class="form-control" id="input-password" placeholder="********">
-                  <div class="input-group-append">
-                    <span class="input-group-text">
-                      <i class="far fa-eye"></i>
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group mb-4">
-                <label class="form-control-label">Full Name</label>
-                <div class="input-group input-group-transparent">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text"><i class="far fa-key"></i></span>
-                  </div>
-                  <input type="password" class="form-control" id="input-password" placeholder="********">
-                  <div class="input-group-append">
-                    <span class="input-group-text">
-                      <i class="far fa-eye"></i>
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group mb-4">
-                <label class="form-control-label">Password</label>
-                <div class="input-group input-group-transparent">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text"><i class="far fa-key"></i></span>
-                  </div>
-                  <input type="password" class="form-control" id="input-password" placeholder="********">
-                  <div class="input-group-append">
-                    <span class="input-group-text">
-                      <i class="far fa-eye"></i>
-                    </span>
-                  </div>
-                </div>
-              </div>
-              <div class="form-group">
-                <label class="form-control-label">Confirm password</label>
-                <div class="input-group input-group-transparent">
-                  <div class="input-group-prepend">
-                    <span class="input-group-text"><i class="far fa-key"></i></span>
-                  </div>
-                  <input type="password" class="form-control" id="input-password-confirm" placeholder="********">
-                </div>
-              </div>
-              <div class="my-4">
-                <div class="custom-control custom-checkbox">
-                  <input class="custom-control-input" id="customCheckRegister" type="checkbox">
-                  <label class="custom-control-label" for="customCheckRegister">
-                    <span>I agree to the <a href="#">Terms and Conditions</a> and <a href="#">Privacy Policy</a>.</span>
-                  </label>
-                </div>
-              </div>
-              <div class="row align-items-center">
-                <div class="col-sm-7">
-                  <button type="submit" class="btn btn-primary mb-3 mb-sm-0">Create account</button>
-                </div>
-                <div class="col-sm-5 text-sm-right">
-                  <span class="small d-sm-block d-md-inline">Already a user?</span>
-                  <a href="https://app.metricly.com/#/login" class="small font-weight-bold">Log in</a>
-                </div>
-              </div>
-            </form>
-
+            </div>
           </div>
         </div>
-
-
-
+<div class="mt-sm text-center"><p class="small" style="
+    max-width: 300px;
+    margin: 0 auto;
+">By creating a Metricly account you are agreeing to the terms and conditions.</p><hr><p class="small"><a class="mr-3">Privacy Policy</a></p></div>
       </div>
     </div>
   </div>
