@@ -31,7 +31,7 @@ API Documentation
 
 [![API Documentation (December 2015 New Releases)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/APIDocs.jpg)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/APIDocs.jpg)
 
-Metricly's API is now accessible to all users. We just released our API documentation to guide users who are interested to take advantage of the wide range of available API calls. You can find the API documentation in the user guide, which is accessible via Metricly product user interface or directly at [https://www.metricly.com/support](https://www.metricly.com/support). Metricly's API documentation comes complete with the following:
+Metricly's API is now accessible to all users. We just released our API documentation to guide users who are interested to take advantage of the wide range of available API calls. You can find the API documentation in the user guide, which is accessible via Metricly product user interface or directly at [/support](/support). Metricly's API documentation comes complete with the following:
 
 -   Available Method calls
 -   Available parameters and headers where applicable

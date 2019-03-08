@@ -63,7 +63,7 @@ Choosing Between StatsD and the Metricly Rest API
 
 StatsD was originally developed by the engineers at Etsy, and is a simple NodeJS daemon that listens for messages, extracts metrics, and can then be used to push the data to a datastore, or a monitoring service like Metricly.
 
-The original StatsD offering has been used as a reference implementation for some other projects, including [Netuitive StatsD](/using-statsd-with-metricly-for-advanced-monitoring). If you already have a StatsD server, you can configure it to push metrics to Netuitive. If you don't yet have a StatsD server, one is installed as part of the Netuitive [Linux Agent](https://help.app.netuitive.com/Content/Integrations/linux.htm).
+The original StatsD offering has been used as a reference implementation for some other projects, including [Netuitive StatsD](/statsd-metricly-advanced-monitoring/). If you already have a StatsD server, you can configure it to push metrics to Netuitive. If you don't yet have a StatsD server, one is installed as part of the Netuitive [Linux Agent](https://help.app.netuitive.com/Content/Integrations/linux.htm).
 
 The [Netuitive RESTful API](/inside-metricly-api/) allows developers to interact with Netuitive, both to push metrics into the Netuitive system and to retrieve information programmatically. Metrics are received in the form of events, which are in turn digested by the Netuitive system, and are made available for use in Java [monitoring dashboards](/devops-dashboard-best-practices) and Netuitive's other analytical offerings.
 

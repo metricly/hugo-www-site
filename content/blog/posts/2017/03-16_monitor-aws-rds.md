@@ -30,7 +30,7 @@ At this point, we'll assume you have all of the prerequisites out of the way. Th
 
 One additional step you'll need to perform is checking **RDS** box on the *AWS Setup* page when configuring your integration, as shown below.
 
-[![Monitor AWS RDS: Integration Setup](/wp-content/uploads/2017/07/RDSSetup.png)](/wp-content/uploads/2017/07/RDSSetup.png)
+[![Monitor AWS RDS: Integration Setup](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/RDSSetup.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/RDSSetup.png)
 
 RDS Quick Start Monitoring Package
 ----------------------------------
@@ -51,7 +51,7 @@ To view the dashboard, do the following:
 1.  While logged into your account, click **Dashboards** at the top left of the screen, then **Manage Dashboards**.
 
 2.  At the *Manage Dashboards* screen, "**Star**" the dashboards you want to appear in the Dashboards dropdown menu, as illustrated in the screenshot below.\
-    [![Monitor AWS RDS: RDS Dashboard Favorites](/wp-content/uploads/2017/07/RDS-Dashboard-Star-1024x230.png)](/wp-content/uploads/2017/07/RDS-Dashboard-Star.png)
+    [![Monitor AWS RDS: RDS Dashboard Favorites](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/RDS-Dashboard-Star-1024x230.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/RDS-Dashboard-Star.png)
 3.  Click the **AWS RDS Summary** link to be taken to an overview of your RDS monitoring.\
     [![Monitor AWS RDS: RDS Summary Dashboard](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/RDS-Monitoring-Summary-1024x562.png)\
     ](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/RDS-Monitoring-Summary.png)
@@ -60,16 +60,16 @@ To view the dashboard, do the following:
     [![Monitor AWS RDS: Metrics 2](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/RDS-Metrics-2-1024x395.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/RDS-Metrics-2.png)
 5.  Click the **Back** button of your browser, and you will be taken back to the *AWS RDS Summary* page.
 
-6.  From there, in the *RDS Summary Data* widget, click the instance you wish to view, but this time select **View Element Details**. You will be shown a high-level view of what was displayed on the detailed metrics page. This can be useful for quickly assessing the state of your RDS instance, and gleaning important attribute information about it.[![Monitor AWS RDS: Element Details](/wp-content/uploads/2017/07/RDS-Element-Details-1024x584.png)\
-    ](/wp-content/uploads/2017/07/RDS-Element-Details.png)\
+6.  From there, in the *RDS Summary Data* widget, click the instance you wish to view, but this time select **View Element Details**. You will be shown a high-level view of what was displayed on the detailed metrics page. This can be useful for quickly assessing the state of your RDS instance, and gleaning important attribute information about it.[![Monitor AWS RDS: Element Details](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/RDS-Element-Details-1024x584.png)\
+    ](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/RDS-Element-Details.png)\
     For a deeper explanation of metrics and attributes, see the Metricly Blog post [Understanding Metricly Monitoring Metrics and Elements](/monitoring-metrics-elements).
 
 7.  Clicking the **Policies** link near the at the top of the *View Element Details* will take you to policies specific to the RDS instance you are monitoring.
 
-    [![How to Monitor AWS RDS: Policies](/wp-content/uploads/2017/07/RDS-policies-1024x442.png)](/wp-content/uploads/2017/07/RDS-policies.png)
+    [![How to Monitor AWS RDS: Policies](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/RDS-policies-1024x442.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/RDS-policies.png)
 8.  Click a policy link and you will be taken to the *Edit Policy* screen for the selected policy. Notifications for that policy can be configured by clicking **Add Notification**. Fill out the fields appropriately to set up your notifications.\
-    [![Hpw to Monitor AWS RDS: Notifications](/wp-content/uploads/2017/07/RDS-Notifications-1024x294.png)\
-    ](/wp-content/uploads/2017/07/RDS-Notifications.png)
+    [![Hpw to Monitor AWS RDS: Notifications](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/RDS-Notifications-1024x294.png)\
+    ](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/RDS-Notifications.png)
 
 Monitor AWS RDS with Metricly
 ------------------------------

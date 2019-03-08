@@ -420,7 +420,7 @@
     color:#429EE2
 }
 .guide-skill-level .skills-list__item .link:hover::before{
-    content:url(/wp-content/uploads/assets/guide/arrow.svg);
+    content:url(https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/assets/guide/arrow.svg);
     position:absolute;
     top:50%;
     right:-20px;
@@ -818,7 +818,7 @@
     width:13px
 }
 .guide .main-content .content .large-section--news:after{
-    background-image:url(/wp-content/uploads/assets/guide/speech-bubble.svg);
+    background-image:url(https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/assets/guide/speech-bubble.svg);
     background-repeat:no-repeat;
     background-size:90px 90px;
     background-position:20px 40%
@@ -1173,7 +1173,7 @@
     }
 }
 .guide .main-content .content .blockquote p::before{
-    content:url(/wp-content/uploads/assets/guide/quote.svg);
+    content:url(https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/assets/guide/quote.svg);
     position:absolute;
     top:-2px;
     left:-34px
@@ -1185,7 +1185,7 @@
     }
 }
 .guide .main-content .content .blockquote p::after{
-    content:url(/wp-content/uploads/assets/guide/quote.svg);
+    content:url(https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/assets/guide/quote.svg);
     position:absolute;
     bottom:-2px;
     right:0;
@@ -1284,7 +1284,7 @@
     }
 }
 .guide .main-content .content .note-block h6:before{
-    content:url(/wp-content/uploads/assets/guide/info.svg);
+    content:url(https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/assets/guide/info.svg);
     position:absolute;
     left:-30px;
     top:3px

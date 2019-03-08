@@ -15,7 +15,7 @@ Metricly's January 2017 release highlights include a Riemann integration, suppor
 Riemann Integration
 -------------------
 
-[![](/wp-content/uploads/2017/07/rnh_riemann.png)](/wp-content/uploads/2017/07/rnh_riemann.png)
+[![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/rnh_riemann.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/rnh_riemann.png)
 
 In an effort to help consolidate your environment, Metricly now offers an integration with [Riemann](http://riemann.io/). Riemann aggregates events from your environment and can now be easily configured to forward the certain event streams to Metricly's API. This allows you to see key events from your environment alongside performance, capacity, and cost data in a single tool.
 
@@ -26,7 +26,7 @@ Check out the [help documentation](https://help.netuitive.com/Content/Integratio
 Custom AWS Metrics Support
 --------------------------
 
-[![January 2017 Release Highlights: AWS Custom CloudWatch Integration](/wp-content/uploads/2017/07/rnh_custom_cloudwatch.png)](/wp-content/uploads/2017/07/rnh_custom_cloudwatch.png)
+[![January 2017 Release Highlights: AWS Custom CloudWatch Integration](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/rnh_custom_cloudwatch.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/rnh_custom_cloudwatch.png)
 
 If you are already sending custom metrics into AWS CloudWatch, you can now easily [ingest them in Metricly](/aws-cloudwatch-metrics-integration/) for further analysis via our AWS integration. You can simply check a box on the AWS integration configuration page to include all of the custom metrics that you are collecting inside CloudWatch, alongside other metrics that we collect from various AWS services such as EC2, ELB, RDS, etc. Additional settings allow you to filter the custom metrics coming in using regex on the Namespace name.
 
@@ -35,7 +35,7 @@ You can then view the metrics in dashboard and reports and also apply our unique
 EC2 Recommendations Report General Release
 ------------------------------------------
 
-[![January 2017 Release Highlights: EC2 Recommendation Report](/wp-content/uploads/2017/07/rnh_ec2_reco-1024x585.png)](/wp-content/uploads/2017/07/rnh_ec2_reco.png)
+[![January 2017 Release Highlights: EC2 Recommendation Report](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/rnh_ec2_reco-1024x585.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/rnh_ec2_reco.png)
 
 After 2 months in beta, Metricly's [EC2 Recommendations Report](https://help.netuitive.com/Content/Reports/ec2_recommendation_report.htm?Highlight=ec2%20recommendation) is now available to all users. [Recent improvements](/optimize-aws-instance-types) include:
 

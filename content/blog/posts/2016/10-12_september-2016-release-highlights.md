@@ -14,7 +14,7 @@ In September, we focused on making Metricly easier to use and more customizable,
 ASG Tuning Report Improvements
 ------------------------------
 
-Even though it's still in beta, we cooked up improvements to help you fine tune your [Auto Scale Groups (ASGs.)](https://www.metricly.com/optimize-auto-scale-groups-asg-tuning-report)  First, we improved the tuning parameters that allow you to customize your unique ASG optimization strategy. Second and most importantly, is the addition of an estimated cost associated with your current model as well as your simulated model.
+Even though it's still in beta, we cooked up improvements to help you fine tune your [Auto Scale Groups (ASGs.)](/optimize-auto-scale-groups-asg-tuning-report)  First, we improved the tuning parameters that allow you to customize your unique ASG optimization strategy. Second and most importantly, is the addition of an estimated cost associated with your current model as well as your simulated model.
 
 As you adjust the tuning settings, you'll now see your projected savings change on the report in real time. Whether you customize the settings or use preset strategies, the cost savings will vary depending on how aggressive or conservative you set your strategy.
 
@@ -34,12 +34,12 @@ For your convenience, we added custom filters to our EC2 cost savings report. Yo
 
 Here's a common use case: apply the new filters to quickly identify the EC2s that had more than $100 in total weekly cost and less than a maximum (or 95-percentile, or average) utilization of 10% during the same period of a week. You can then export the list in CSV format.
 
-[![EC2 Report Custom Filters](https://www.metricly.com/wp-content/uploads/2017/07/EC2ReportCustomFilters-1024x485.png)](https://www.metricly.com/wp-content/uploads/2017/07/EC2ReportCustomFilters.png)
+[![EC2 Report Custom Filters](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/EC2ReportCustomFilters-1024x485.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/EC2ReportCustomFilters.png)
 
 Control Frequency of Subsequent Notifications
 ---------------------------------------------
 
-[![notifications](https://www.metricly.com/wp-content/uploads/2017/07/Notifications.png)](https://www.metricly.com/wp-content/uploads/2017/07/Notifications.png)
+[![notifications](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Notifications.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Notifications.png)
 ----------------------------------------------------------------------------------------------------------------------------------------------------------------
 
 We added new controls that allow you to choose the frequency at which you would like to be renotified when an alerting policy is being violated. Choose from a variety of time frequencies (1 hour, 24 hours, etc.) and channels through which you wish to be notified (ex. email, PagerDuty, Slack, webhook, etc.).  In all, this feature allows you to avoid being flooded with notifications without forgetting about attending to a less critical performance issues.

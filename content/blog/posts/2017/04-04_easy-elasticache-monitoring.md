@@ -7,7 +7,7 @@ category: "Cloud Monitoring"
 url: "/easy-elasticache-monitoring/"
 layout: "single"
 ---
-Amazon ElastiCache was first released as a service of Amazon Web Services (AWS) in August of 2011. The service provides users with a managed in-memory data store that can provide applications with a highly performant data backend for their services. Currently provided using either Memcached or Redis, the service has been shown to help organizations reduce their [![Elasticache Monitoring: AWS Elasticache](/wp-content/uploads/2017/07/ElasticacheIcon.png)](/wp-content/uploads/2017/07/ElasticacheIcon.png)dependence on slower disk-based datastores, and can be leveraged during periods of high traffic to reduce load.
+Amazon ElastiCache was first released as a service of Amazon Web Services (AWS) in August of 2011. The service provides users with a managed in-memory data store that can provide applications with a highly performant data backend for their services. Currently provided using either Memcached or Redis, the service has been shown to help organizations reduce their [![Elasticache Monitoring: AWS Elasticache](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/ElasticacheIcon.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/ElasticacheIcon.png)dependence on slower disk-based datastores, and can be leveraged during periods of high traffic to reduce load.
 
 The configuration of ElastiCache clusters on AWS, and how to monitor their default functionality, has been written about a great deal. This article is going to go beyond that and explore the work the engineers and researchers at Metricly have been doing. We'll look at Metricly's Quick Start Package for AWS ElastiCache, and explore their configurations for dashboards, reports and [alert policies](/reduce-alert-multi-criteria-policies). These configurations have been designed to make it easier for engineers and operations support teams to implement industry best practices in Elasticache monitoring, and achieve the most from their organizations' investments in the Amazon ecosystem.
 
@@ -55,7 +55,7 @@ The package containing the metric configurations, policies and pre-defined dashb
 What is a Metric Configuration, and Why Do I Need It?
 -----------------------------------------------------
 
-![Elasticache: Metric Configuration](/wp-content/uploads/2017/07/MetricConfiguration.png)
+![Elasticache: Metric Configuration](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/MetricConfiguration.png)
 
 When you have a single cluster, or a whole army of ElastiCache clusters operating in your AWS account, each will be sending a whole slew of metrics to CloudWatch. The problem with data in CloudWatch isn't a lack of data, but rather knowing how to correlate, aggregate and transform the data into meaningful information which can be reported on and used to set up thresholds and limits for alerting.
 
@@ -79,7 +79,7 @@ The **scope** defines the purview of the policy. The scope can be inclusive, or 
 
 **Conditions** specify the criteria which define the limits or restrictions of the policy. In the case of CPU monitoring policies on ElasticCache nodes, this might be, for instance, the condition where the utilization of the CPU exceeds 90% usage, where the node types are defined as Memcached. It may also leverage Metricly's [behavior learning technology](/3-ways-reduce-alert-noise) to detect a deviation from an expected range of values as established by the baseline band of normalcy (derived from historic behavior for a given day and time) of the contextual band of normalcy (derived from correlating time series data).
 
-**Duration** defines a period during which the policy conditions will need to be violated. It might be possible for CPU utilization to spike above 90% for a few seconds given a combination of events, but if it settles back down to within the normal range, we need to respond to a [PagerDuty alert](/combining-metricly-and-pagerduty-for-monitoring-alarms/), only to find out everything is fine. Perhaps for our policy, we could set this to 30 minutes, thus ensuring that a potentially dangerous condition exists before alerts are triggered.
+**Duration** defines a period during which the policy conditions will need to be violated. It might be possible for CPU utilization to spike above 90% for a few seconds given a combination of events, but if it settles back down to within the normal range, we need to respond to a [PagerDuty alert](/metricly-pagerduty-monitoring-alarms/), only to find out everything is fine. Perhaps for our policy, we could set this to 30 minutes, thus ensuring that a potentially dangerous condition exists before alerts are triggered.
 
 **Notifications** are the reason why we have policies. We want to be notified when things go awry. A violated policy will trigger an event, and an event can be tied to a specific notification type. Metricly supports a variety of integrations with third-party notifications, as evidenced below.
 

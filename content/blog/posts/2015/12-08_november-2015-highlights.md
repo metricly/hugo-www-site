@@ -30,7 +30,7 @@ Ruby Agent Beta
 
 [![Ruby Agent Beta (November Release)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/RubyAgent.jpg)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/RubyAgent.jpg)
 
-Monitoring your Ruby applications has never been easier with Metricly's Ruby agent. The Ruby agent collects and displays important metrics--such as Response time, throughput, and error rate---in the Metricly Performance Explorer, similar to how our Java agent collects JVM metrics. Setting up the agent is as easy as deploying the agent in your environment, check out our [help system](https://www.metricly.com/support) for more details.
+Monitoring your Ruby applications has never been easier with Metricly's Ruby agent. The Ruby agent collects and displays important metrics--such as Response time, throughput, and error rate---in the Metricly Performance Explorer, similar to how our Java agent collects JVM metrics. Setting up the agent is as easy as deploying the agent in your environment, check out our [help system](/support) for more details.
 
 Wild Card (*) Support for Policies
 ----------------------------------

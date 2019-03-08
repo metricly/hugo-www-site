@@ -100,7 +100,7 @@ While viewing information on a dashboard is beneficial, the true value of a moni
 
 When this condition is met, a notification can be sent to one or more channels, allowing you and your team to be up-to-date on any potential issues as they happen. While you have to be careful to [avoid notification apathy](/alert-noise-blog), when your alerting system is properly tuned, you enable your team to more effectively and efficiently solve small problems before they become big ones.
 
-It is important to note that more than one notification channel can be enabled, allowing you to notify team members of issues via [Slack](https://docs.metricly.com/alerts-notifications/notifications/notifications-slack/), [PagerDuty](/combining-metricly-and-pagerduty-for-monitoring-alarms/), email, and more, with minimal configuration. This gives you the ability to communicate with your team in the most effective way possible, and even programmatically react to problems as they arise through the use of Metricly's [webhook notification method](/automate-alert-response-aws-lambda).
+It is important to note that more than one notification channel can be enabled, allowing you to notify team members of issues via [Slack](https://docs.metricly.com/alerts-notifications/notifications/notifications-slack/), [PagerDuty](/metricly-pagerduty-monitoring-alarms/), email, and more, with minimal configuration. This gives you the ability to communicate with your team in the most effective way possible, and even programmatically react to problems as they arise through the use of Metricly's [webhook notification method](/automate-alert-response-aws-lambda).
 
 Final Thoughts
 --------------

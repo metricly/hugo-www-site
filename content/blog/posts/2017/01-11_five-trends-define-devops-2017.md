@@ -40,7 +40,7 @@ In multiple ways, communication for DevOps teams is on its way to reaching a new
 
 One of those ways is more ChatOps. ChatOps integrations have already been improving communication for DevOps teams for some time. But ChatOps has now transformed from a nice-to-have feature to one that is being embraced by enterprises, as George Hume [wrote](https://devops.com/4-essential-practices-succeeding-chatops/) on DevOps.com in November.
 
-Meanwhile, developers are finding new ways to insert communication optimizations into DevOps tools. Consider, for example, the latest version of [PagerDuty's monitoring](/combining-metricly-and-pagerduty-for-monitoring-alarms/) and incident management platform, which offers communication features like "suppression." Suppression lets incident management teams monitor to collect information about an outage without being alerted about it immediately. This is just one example of the trend toward providing a more nuanced and flexible---or more agile---approach to communication.
+Meanwhile, developers are finding new ways to insert communication optimizations into DevOps tools. Consider, for example, the latest version of [PagerDuty's monitoring](/metricly-pagerduty-monitoring-alarms/) and incident management platform, which offers communication features like "suppression." Suppression lets incident management teams monitor to collect information about an outage without being alerted about it immediately. This is just one example of the trend toward providing a more nuanced and flexible---or more agile---approach to communication.
 
 Expect these trends to continue in 2017 as the DevOps world seeks even leaner and meaner ways of sharing information.
 

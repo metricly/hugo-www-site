@@ -114,19 +114,19 @@ Click the **Create API** button.
 
 Choose the New API option, and enter a name and description.
 
- ![AWS Lambda Automated Response: Create API](/wp-content/uploads/2017/07/Create-New-API.png)
+ ![AWS Lambda Automated Response: Create API](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Create-New-API.png)
 
 Once the API is created, click on **Actions** in the Resources column, and choose **Create Method**. Then, from the resultant dropdown, Select **POST** and click on the checkmark.
 
-![AWS Lambda Automate Response: Add Endpoint 1](/wp-content/uploads/2017/07/Post-endpoint-1.png) ![AWS Lambda Automate Response: Add Endpoint 2](/wp-content/uploads/2017/07/Post-endpoint-2.png)
+![AWS Lambda Automate Response: Add Endpoint 1](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Post-endpoint-1.png) ![AWS Lambda Automate Response: Add Endpoint 2](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Post-endpoint-2.png)
 
 The Integration type for this endpoint is a Lambda Function. You'll need to select the Lambda Region, and then type in the name of your Lambda Function. The region into which your Lambda is deployed isn't easily identifiable when you're deploying your Lambda, so you might have to do a little hunting. Fortunately, you'll get a notification when you select a region that has no Lambda functions deployed in it.
 
-![AWS Lambda Automate Response: Endpoint Configuration](/wp-content/uploads/2017/07/Post-Endpoint-Configuration.png)
+![AWS Lambda Automate Response: Endpoint Configuration](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Post-Endpoint-Configuration.png)
 
 When you click on the **Save** button, you'll receive a notification asking you to confirm that this API will be granted permission to invoke your Lambda function. Click OK to grant the permission.
 
-![AWS Lambda Automate Response: Endpoint Graphical Display](/wp-content/uploads/2017/07/Post-Endpoint-Graphical-Display.png)
+![AWS Lambda Automate Response: Endpoint Graphical Display](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Post-Endpoint-Graphical-Display.png)
 
 Your Lambda is now configured and can be tested, secured and deployed. To test your API, click on the **Test** box, and then enter a test payload for the API. I used the following JSON object to test both my Lambda function and this API.
 
@@ -140,7 +140,7 @@ Once your API is tested and working, you'll want to secure it. You have some opt
 
 With your API secure, you can now deploy it. Click on the name of your API, and then select **Deploy API** from the list of options. Select **[New Stage]** from Deployment stage, and then enter the details for the deployment.
 
-![Automate AWS Lambda: Complete Deployment Detail](/wp-content/uploads/2017/07/Complete-Deployment-Details.png)
+![Automate AWS Lambda: Complete Deployment Detail](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Complete-Deployment-Details.png)
 
 Clicking the **Deploy** button will deploy your API and provide you with a URL to use to invoke your API, a host of other options for additional configuration, and publishing of your API. For this example, all you will need is the URL.
 
@@ -151,7 +151,7 @@ If you already have a Metricly account, and your data is being read and analyzed
 
 One of the many benefits of choosing Metricly as your AWS monitoring provider is that they possess a great collection of [multi-criteria policies](/reduce-alert-multi-criteria-policies) for you to work with. Navigate to the Policies page. We're going to create our Webhook on the AWS DynamoDB -- Elevated Read Capacity Utilization policy. Locate this policy and click on it.
 
-![AWS Lambda Automate Responses: Edit DynamoDB policy](/wp-content/uploads/2017/07/Edit-DynamoDB-policy.png)
+![AWS Lambda Automate Responses: Edit DynamoDB policy](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Edit-DynamoDB-policy.png)
 
 Click on the **Notifications** option, and then click the **Add Notification** button. For **Notification Type**, select **Webhook**, and then select **New Webhook**.
 
@@ -163,7 +163,7 @@ The configuration of the Webhook is fairly straightforward. You'll need a name a
 > "writeCapacityUnits": 1\
 > }
 
-![AWS Lambda Automate Response: Configure Webhook](/wp-content/uploads/2017/07/Webhook-Configuration-768x448.png)
+![AWS Lambda Automate Response: Configure Webhook](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Webhook-Configuration-768x448.png)
 
 Click **Test and Save** and your webhook will be configured and ready for action.
 

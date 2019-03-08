@@ -7,7 +7,7 @@ category: "DevOps"
 url: "/alert-noise-blog/"
 layout: "single"
 ---
-Alert noise goes hand-in-hand with running software, so it's no surprise Metricly Engineering has run into the same [alert fatigue](/understanding-alert-noise-monitoring) as many of our customers. We've built extra safeguards on top of many of the default Metricly policies for underlying infrastructure, but we also heavily instrumented our applications with [StatsD metrics](/using-statsd-with-metricly-for-advanced-monitoring) to monitor application performance. While these application metrics are helpful for debugging, as we've started wrapping our core application metrics in alerting policies, we've found that they can be, well, *a bit noisy*.
+Alert noise goes hand-in-hand with running software, so it's no surprise Metricly Engineering has run into the same [alert fatigue](/understanding-alert-noise-monitoring) as many of our customers. We've built extra safeguards on top of many of the default Metricly policies for underlying infrastructure, but we also heavily instrumented our applications with [StatsD metrics](/statsd-metricly-advanced-monitoring/) to monitor application performance. While these application metrics are helpful for debugging, as we've started wrapping our core application metrics in alerting policies, we've found that they can be, well, *a bit noisy*.
 
 Overall we identified a few issues with our current notifications:
 

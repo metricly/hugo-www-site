@@ -15,21 +15,21 @@ If you've been following our [release highlights](/blog/category/product-updates
 AWS EC2 Cost Reporting
 ----------------------
 
-[![aws-cost](/wp-content/uploads/2017/07/AWS-Cost.png)](/wp-content/uploads/2017/07/AWS-Cost.png)
+[![aws-cost](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/AWS-Cost.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/AWS-Cost.png)
 
 Our groundbreaking [AWS EC2 Cost Report](/demystify-your-ec2-cost-analysis) debuted in May, providing users with insights into the relationship between EC2 performance data and AWS costs. The report not only breaks down billing data on a per-instance basis, but also allows users to compare their EC2 utilization metrics alongside AWS billing data.
 
 AWS EC2 Recommendation Report (Beta)
 ------------------------------------
 
-[![aws-ec2](/wp-content/uploads/2017/07/AWS-EC2.jpg)](/wp-content/uploads/2017/07/AWS-EC2.jpg)
+[![aws-ec2](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/AWS-EC2.jpg)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/AWS-EC2.jpg)
 
 The newest addition to our AWS reports, the [EC2 Recommendation Report](/ec2-cost-analysis-recommendations), takes EC2 cost reporting one step further. It offers suggestions for alternative EC2 instance configurations to help reduce monthly costs, based on variables like location, instance type, size, and more. This report is currently still in beta, but is easy to enable for your own environment.
 
 Microsoft Azure Integration
 ---------------------------
 
-[![axure](/wp-content/uploads/2017/07/Axure.png)](/wp-content/uploads/2017/07/Axure.png)
+[![axure](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Axure.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Axure.png)
 
 We launched a new product offering for Microsoft Azure, with support for VMs and the Application Gateway. Read more about this integration [here](/microsoft-azure-monitoring/).
 
@@ -41,7 +41,7 @@ This past year, we introduced exclusive Metricly [Quick Start Monitoring Package
 Inventory and Metric Explorer Improvements
 ------------------------------------------
 
-![metric-explorer](/wp-content/uploads/2017/07/Metric-Explorer-1024x535.png)
+![metric-explorer](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Metric-Explorer-1024x535.png)
 
 We listened to your feedback, and turned your biggest feature requests into hundreds of new improvements to the [Metric Explorer](/feature-highlight-metric-explorer) and [Inventory Explorer](https://help.app.netuitive.com/Content/Inventory/inventory_explorer.htm). If you haven't seen these changes, check out our blog on the new Metric Explorer or sign up for a demo!
 

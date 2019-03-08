@@ -19,16 +19,16 @@ Traditional monitoring tools set a [static threshold](https://help.netuitive.com
 
 A better approach is to generate one alert for a group of metrics associated with a system or application -- like a host or a database.
 
-With traditional alerting, if a particular host is running out of memory and has unusually high I/O and a high CPU, you'll receive three alerts -- one for each metric. Monitoring with [multi-criteria alerting](https://www.metricly.com/understanding-alert-noise-monitoring), by contrast, will generate one alert describing the unusual values for all three metrics.. Receiving one alert instead of three by grouping them by system or application is more effective and more efficient.
+With traditional alerting, if a particular host is running out of memory and has unusually high I/O and a high CPU, you'll receive three alerts -- one for each metric. Monitoring with [multi-criteria alerting](/understanding-alert-noise-monitoring), by contrast, will generate one alert describing the unusual values for all three metrics.. Receiving one alert instead of three by grouping them by system or application is more effective and more efficient.
 
 This concept is at the core of Metricly's approach to alert generation -- by alerting on a per-system basis, you get all the same information, but alarm noise is reduced and there's additional context to help you troubleshoot.
 
 Use Analytics to Learn Normal Behavior
 --------------------------------------
 
-Machine learning techniques can be applied to your monitoring data to offer you an idea of how your environment normally performs, making it easier to separate true alerts from false ones. Metricly's [advanced analytics](https://www.metricly.com/adding-analytics-to-devops-model) are built on more of a decade of experience in IT statistical analysis and monitoring, with proven success at improving your metrics and signal-to-noise ratio. Our [computed metrics](https://help.netuitive.com/Content/Metrics/computed_metrics.htm) combine two or more metrics (like memory usage, CPU utilization, or latency) in functions that provide valuable data on the utilization and performance of your elements. An example of a computed metric is IOPS Utilization, which compares the current number of IOPS a disk is performing to the total IOPS capacity, yielding a percent representation of an EBS volume's utilization.
+Machine learning techniques can be applied to your monitoring data to offer you an idea of how your environment normally performs, making it easier to separate true alerts from false ones. Metricly's [advanced analytics](/adding-analytics-to-devops-model) are built on more of a decade of experience in IT statistical analysis and monitoring, with proven success at improving your metrics and signal-to-noise ratio. Our [computed metrics](https://help.netuitive.com/Content/Metrics/computed_metrics.htm) combine two or more metrics (like memory usage, CPU utilization, or latency) in functions that provide valuable data on the utilization and performance of your elements. An example of a computed metric is IOPS Utilization, which compares the current number of IOPS a disk is performing to the total IOPS capacity, yielding a percent representation of an EBS volume's utilization.
 
-[![Reduce Alert Noise: EBS IOPS 5](https://www.metricly.com/wp-content/uploads/2016/09/EBS05IOPS.png)](https://www.metricly.com/wp-content/uploads/2016/09/EBS05IOPS.png)
+[![Reduce Alert Noise: EBS IOPS 5](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/09/EBS05IOPS.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/09/EBS05IOPS.png)
 
 For example, in the image above, we're running 1050 IOPS against a volume whose capacity is 3000 IOPS, so the IOPS Utilization for this instance is 35%. IOPS Utilization values help you identify over- and under-utilized EBS volumes, thereby identifying either cost-saving opportunities in over-utilized volumes and preventing future performance problems in under-provisioned volumes.
 
@@ -39,7 +39,7 @@ The final step to improving your signal-to-noise ratio is utilizing multi-criter
 
 For example, you might want to set an alerting policy for CPU utilization to tell you any time utilization falls outside of the norm. This seems like a great idea, until you're swarmed with alarms every time you scale your environment (because utilization for some elements is above or below previous levels!)
 
-[![Reduce Alert Noise: Multi-Criteria Policy](https://www.metricly.com/wp-content/uploads/2016/09/Policy-1024x560.png)](https://www.metricly.com/wp-content/uploads/2016/09/Policy.png)
+[![Reduce Alert Noise: Multi-Criteria Policy](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/09/Policy-1024x560.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/09/Policy.png)
 
 However, if you set a multi-criteria alerting policy to only trigger you *IF* CPU is outside the norm *AND* total CPU is above 50%, you'll receive significantly fewer false alarms while maintaining those alerts that could indicate a significant issue. If you wanted to make sure that the alert is definitely actionable, you could add a third condition that looks for normalized average load (number of processes waiting to run divided by the number of CPUs) to be more than 2. If all three conditions are breached then the alert is most definitely actionable. This type of multi-criteria alerting, combined with advanced analytics, is key to improving your signal-to-noise ratio and reducing alert noise.
 
@@ -47,4 +47,4 @@ Success in monitoring relies heavily on adding context and conditions to existin
 
 * * * * *
 
-*Ready to be free of alert noise? Check out Metricly's [21-day, no-obligation free trial](https://www.metricly.com/signup).*
+*Ready to be free of alert noise? Check out Metricly's [21-day, no-obligation free trial](/signup).*

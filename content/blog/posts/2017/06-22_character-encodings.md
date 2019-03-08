@@ -65,7 +65,7 @@ The answer to the second question required bringing in even more tech from our s
 
 I pulled down the base image, wrote a small Java class to output the default charset, and ran it.
 
-![Character Encoding: Charset-Test](/wp-content/uploads/2017/07/Charset-Test.png)
+![Character Encoding: Charset-Test](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Charset-Test.png)
 
 There you have it.
 

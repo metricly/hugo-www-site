@@ -33,7 +33,7 @@ The Metricly help documentation provides [detailed instructions](https://help.ap
 
 Be sure you select **Kinesis Stream** as an option when you create your integration, as illustrated below.
 
-[![Monitor AWS Kinesis: Setup](/wp-content/uploads/2017/07/Screen-Shot-2017-02-24-at-9.48.31-AM.png)](/wp-content/uploads/2017/07/Screen-Shot-2017-02-24-at-9.48.31-AM.png)
+[![Monitor AWS Kinesis: Setup](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Screen-Shot-2017-02-24-at-9.48.31-AM.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Screen-Shot-2017-02-24-at-9.48.31-AM.png)
 
 Kinesis Streams Setup
 ---------------------
@@ -44,7 +44,7 @@ Amazon helpfully provides detailed instructions for doing so in their [Tutorial:
 
 Once you've setup your Kinesis Stream using the tutorial referenced above, your data will be visualized via a URL pointing to the EC2 instance that was created when you initialized the Cloudformation template. Instructions for viewing the visualization are in the tutorial. It should look something like the illustration below.
 
-[![Monitor AWS Kinesis: Application Front End](/wp-content/uploads/2017/07/Screen-Shot-2017-02-24-at-9.54.27-AM-1024x653.png)](/wp-content/uploads/2017/07/Screen-Shot-2017-02-24-at-9.54.27-AM.png)
+[![Monitor AWS Kinesis: Application Front End](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Screen-Shot-2017-02-24-at-9.54.27-AM-1024x653.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Screen-Shot-2017-02-24-at-9.54.27-AM.png)
 
 Now that you've seen what the data looks like on the front end of the application, it's time to take a look at what's happening behind the scenes using Metricly.
 
@@ -55,7 +55,7 @@ Metricly includes a number of packages that are automatically provisioned when y
 
 A default set of metrics is available in the Metricly app when clicking **Metrics**, then **Kinesis**.
 
-[![Monitor AWS Kinesis: QuickStart Monitoring Package](/wp-content/uploads/2017/07/Screen-Shot-2017-02-24-at-10.02.18-AM-1024x494.png)](/wp-content/uploads/2017/07/Screen-Shot-2017-02-24-at-10.02.18-AM.png)
+[![Monitor AWS Kinesis: QuickStart Monitoring Package](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Screen-Shot-2017-02-24-at-10.02.18-AM-1024x494.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Screen-Shot-2017-02-24-at-10.02.18-AM.png)
 
 You'll want to pay attention to a few things when monitoring your streams.
 

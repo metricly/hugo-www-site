@@ -32,11 +32,11 @@ With Metricly's Amazon SQS monitoring integration, staying on top of the health 
 
 But, before we get into what we can [monitor with Metricly](/product), let's first touch on how to set up Metricly's Amazon SQS monitoring integration.
 
-![SQS Monitoring: AWS Integration](/wp-content/uploads/2017/07/SetUpAWSIntegration-1024x304.png)
+![SQS Monitoring: AWS Integration](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/SetUpAWSIntegration-1024x304.png)
 
 To get started with Metricly's SQS integration, the first thing we need to do is head on over to the "Integrations" tab and click on the "Amazon Web Services" integration.
 
-![SQS Monitoring: Setup AWS Integration](/wp-content/uploads/2017/07/SetUpAWSIntegration2.png)
+![SQS Monitoring: Setup AWS Integration](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/SetUpAWSIntegration2.png)
 
 Integrating[ AWS with Metricly](/getting-started-metricly-aws/) is a relatively straightforward process, but we first need to configure the appropriate IAM role in AWS. Before moving forward, however, take note of the "Account ID" and "External ID" settings. They will be needed.
 
@@ -45,30 +45,30 @@ Configuring SQS Permissions
 
 IAM stands for Identity and Access Management, and an IAM role is what Metricly needs to communicate with an AWS account. To set this up, head on over to the Identity and Access Management dashboard within your Amazon Web Services account and click on "Roles" in the sidebar.
 
-![SQS Monitoring: Set IAM Roles](/wp-content/uploads/2017/07/IAMRoles-1024x156.png)
+![SQS Monitoring: Set IAM Roles](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/IAMRoles-1024x156.png)
 
 If you haven't set up any IAM roles before, you should see a screen that looks pretty similar to the one above. From here, click on the "Create New Role" button.
 
-![SQS Monitoring: Role Name](/wp-content/uploads/2017/07/Role-Name.png)
+![SQS Monitoring: Role Name](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Role-Name.png)
 
 Next, we need to select a role type. This part can be confusing, as there is a pretty big list of role types. Metricly's AWS integration requires a cross-account access role. To select this, drop- down the "Role for Cross-Account Access" section, and select "Provide access between your AWS account and a 3rd party AWS account."
 
-![SQS Monitoring: Establish Trust](/wp-content/uploads/2017/07/Establish-Trust-1024x171.png)
+![SQS Monitoring: Establish Trust](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Establish-Trust-1024x171.png)
 
 Creating a role for 3rd-party cross-account access requires the Account ID and External ID we took note of above. This setting gives Metricly's AWS account access to the Metricly role in our account.
 
-![SQS Monitoring: Attach Policy](/wp-content/uploads/2017/07/AttachPolicy-1024x585.png)
+![SQS Monitoring: Attach Policy](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/AttachPolicy-1024x585.png)
 
 The final step in creating an IAM role is attaching a policy. Metricly's [AWS integration](/aws-monitoring-best-practices/) only requires read-only access, which is named "ReadOnlyAccess" (obviously) in this case.
 
-![SQS Monitoring: Review](/wp-content/uploads/2017/07/Review.png)
+![SQS Monitoring: Review](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Review.png)
 
 Integrating SQS with Metricly
 ------------------------------
 
 Once our new IAM role is ready to go, the role creation wizard will give us a final confirmation page before creating it. It is important here to copy the contents of the "Role ARN" field, as we will need that information to complete the SQS-Metricly integration.
 
-![SQS Monitoring: Setup AWS Integration](/wp-content/uploads/2017/07/SetUpAWSIntegration2.png)
+![SQS Monitoring: Setup AWS Integration](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/SetUpAWSIntegration2.png)
 
 Going back to the AWS Setup form in Metricly, take the "Role ARN" we copied above and paste it into the "IAM Role ARN" field. This is essentially the reverse step of putting the Account ID and External ID in the IAM Role field; it tells Metricly which IAM role it has access to. Finally, we need to select which services we want to monitor using Metricly. (For the purposes of this demo, I've only checked the "SQS" monitoring type.)
 
@@ -77,14 +77,14 @@ SQS Metrics
 
 Now that we've set up Amazon SQS monitoring with Metricly, let's take a look at exactly what metrics we receive from it. If you're new to Metricly, you can find all of your available AWS metrics under the "Metrics" tab.
 
-![SQS Monitoring Metrics](/wp-content/uploads/2017/07/SQS-Metrics-1024x717.png)
+![SQS Monitoring Metrics](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/SQS-Metrics-1024x717.png)
 
 In the case of Amazon SQS monitoring, there are 13 different metrics that can be gathered with Metricly. I won't go into the details of each one, but let's take a look at the arrival rate and completion rate metrics, and evaluate how they can be used to identify slow queue workers.
 
 SQS Policies
 ------------
 
-![SQS Monitoring: Queue Falling Behind](/wp-content/uploads/2017/07/SQS-Queue-Falling-Behind.png)
+![SQS Monitoring: Queue Falling Behind](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/SQS-Queue-Falling-Behind.png)
 
 The true power of Metricly's monitoring solution is [policies](/reduce-alert-multi-criteria-policies). To demonstrate how useful policies are, Metricly automatically creates an SQS policy for detecting when a queue is falling behind. The gist of this policy---If the queue's arrival rate is more than the completion rate for a sustained period of two hours, then the queue is considered to be falling behind.
 
@@ -92,7 +92,7 @@ While this is just a basic example, you can easily see how those 13 metrics can 
 
 **Default SQS Dashboard**
 
-![SQS Monitoring Dashboard](/wp-content/uploads/2017/07/SQS-Dashboard-1024x537.png)
+![SQS Monitoring Dashboard](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/SQS-Dashboard-1024x537.png)
 
 In addition to an example policy, Metricly also creates a [summary dashboard](/devops-dashboard-best-practices) for a high-level view of your SQS queue. This default dashboard shows basic information like metric aggregates, peak message arrival and completion rates, and some basic queue data, but can be updated to provide any information you need based off of the available metrics data.
 

@@ -30,14 +30,14 @@ All elements have one or more of the following characteristics:
 
 For example, an EC2 instance is one type of element, and a Linux server is another. Each has its own name like (AWS1 and LNX1) as well as various attributes. For example, the EC2 instance you can see which EBS instances are attached; while the Linux server might have an attribute for the number of CPU running on it. Additionally, each element has detailed events based on policies.
 
-All these characteristics can be represented by various widgets, as shown in the [dashboard](https://www.metricly.com/product/dashboards-and-reports) below:
+All these characteristics can be represented by various widgets, as shown in the [dashboard](/) below:
 
-[![Monitoring Metrics and Elements Dashboard](https://www.metricly.com/wp-content/uploads/2017/07/Dashboard-1024x507.png)](https://www.metricly.com/wp-content/uploads/2017/07/Dashboard.png)
+[![Monitoring Metrics and Elements Dashboard](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Dashboard-1024x507.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Dashboard.png)
 
 Among other out-of-the-box policies, Metricly offers a policy for elevated network activity on EC2 servers that's based on CPU utilization as well as I/O:
 
 [\
-](https://www.metricly.com/wp-content/uploads/2017/07/Network-policy.png)[![Monitoring Metrics Into Elements: EC2 Network Policy](https://www.metricly.com/wp-content/uploads/2017/07/Network-policy-1024x543.png)](https://www.metricly.com/wp-content/uploads/2017/07/Network-policy.png)\
+](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Network-policy.png)[![Monitoring Metrics Into Elements: EC2 Network Policy](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Network-policy-1024x543.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Network-policy.png)\
 Linux servers have a policy for heavy disk load, based on the average disk queue length.
 
 Finally, the EC2 instance and the Linux server each have a tag, used to label elements. For example, a mix of both EC2 and Linux servers could have the "webserver" tag attached, so they could be monitored as part of a larger group of web servers.
@@ -47,7 +47,7 @@ Why Group Monitoring Metrics into Elements?
 
 Tagging and labeling servers is one thing, but why does Metricly group monitoring metrics together under elements? The answer is correlation. Monitoring groups of metrics together allows you to see correlations you wouldn't be likely to spot in a single-metric monitoring format.
 
-Collecting raw data at the metric level for performance indicators like CPU and memory utilization provides some insight as to the behavior of your environment, but the real value is in context. Knowing how a given metric behaves in context of the others is essential for gaining a holistic picture of your environment. (For instance, in a recent blog, my colleague Dale V. Georg covered a use case in which CPU metrics were not what they appeared -- [read it here](https://www.metricly.com/subtleties-ec2-cpu-utilization) to see what we found!)
+Collecting raw data at the metric level for performance indicators like CPU and memory utilization provides some insight as to the behavior of your environment, but the real value is in context. Knowing how a given metric behaves in context of the others is essential for gaining a holistic picture of your environment. (For instance, in a recent blog, my colleague Dale V. Georg covered a use case in which CPU metrics were not what they appeared -- [read it here](/subtleties-ec2-cpu-utilization) to see what we found!)
 
 Advanced Analytics Make All the Difference
 ------------------------------------------

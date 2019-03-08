@@ -71,7 +71,7 @@ Notify, Notify, Notify
 
 While there are a number of different MongoDB metrics that can be tracked, being notified of any of the issues mentioned above is one of the most important aspects of application monitoring. It's not enough to simply keep an eye on the graphs -- you have to also take steps to stay on top of issues as they arise (or sooner).
 
-With Metricly, any of the metrics above can be monitored, and your team can be notified if any of them matches certain predefined conditions. As an example, let's say that we wanted to send an alert whenever there are more than 100 page faults over the course of five minutes. To accomplish this, all that would need to be done is to create a new policy within Metricly that monitors the mongo.extra_info.page_faults metric, and compares it to a [static threshold](/resources/whitepaper-static-thresholds) of more than 100.
+With Metricly, any of the metrics above can be monitored, and your team can be notified if any of them matches certain predefined conditions. As an example, let's say that we wanted to send an alert whenever there are more than 100 page faults over the course of five minutes. To accomplish this, all that would need to be done is to create a new policy within Metricly that monitors the mongo.extra_info.page_faults metric, and compares it to a static threshold of more than 100.
 
 ![MongoDB Monitoring: MongoDBPolicy](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/08/MongoDBPolicy.png)
 

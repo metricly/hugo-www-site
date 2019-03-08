@@ -8,16 +8,16 @@ url: "/effective-monitoring-alert-rules/"
 layout: "single"
 ---
 
-To provide the optimal experience in alert notifications, Metricly starts from the concept of a *policy*. A policy contains a set of *conditions* (or alert rules), which, if violated for a specified duration, will generate an *event* (or alert). These alerts are always available to be viewed in the Metricly UI. Optionally, a policy may define one or more *notifications* for a policy, which allow the alerts to be sent via email, [PagerDuty](/combining-metricly-and-pagerduty-for-monitoring-alarms/), [Slack](https://docs.metricly.com/alerts-notifications/notifications/notifications-slack/), etc. This process is illustrated below:
+To provide the optimal experience in alert notifications, Metricly starts from the concept of a *policy*. A policy contains a set of *conditions* (or alert rules), which, if violated for a specified duration, will generate an *event* (or alert). These alerts are always available to be viewed in the Metricly UI. Optionally, a policy may define one or more *notifications* for a policy, which allow the alerts to be sent via email, [PagerDuty](/metricly-pagerduty-monitoring-alarms/), [Slack](https://docs.metricly.com/alerts-notifications/notifications/notifications-slack/), etc. This process is illustrated below:
 
-![monitoring-alert-rules-policy-process](https://www.metricly.com/wp-content/uploads/2017/06/Monitoring-Alert-Rules-Policy-Process-1.jpg)
+![monitoring-alert-rules-policy-process](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/06/Monitoring-Alert-Rules-Policy-Process-1.jpg)
 
 Metricly provides a wide array of [out-of-the-box policies and dashboards](/aws-monitoring-best-practices/) for a many of our integrations (AWS, Linux OS, Windows, Cassandra, MySQL, etc.) to help users get started as soon as a data source is activated. For example, the *AWS ELB -- Elevated Latency* policy will fire an event if, for a period of 30 minutes or longer, the following two conditions are met:
 
 1.  The *elb.latency* metric is deviating from the norm; and
 2.  The *elb.requestcount* metric is greater than 1000.
 
-![Monitoring Alerts: policy conditions](https://www.metricly.com/wp-content/uploads/2017/06/Policy-Conditions-1-1024x539.jpg)
+![Monitoring Alerts: policy conditions](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/06/Policy-Conditions-1-1024x539.jpg)
 
 Metricly's packaged policies are based on industry best practices and years of experience. In any organization, though, there is always a need for custom policies or alert rules that meet your specific needs. In this blog, we'll take a look at what you need to know to build an effective cloud monitoring policy in Metricly.
 
@@ -44,7 +44,7 @@ However, there are some scenarios in which alert rules based on static threshold
     **Example 2:** Alert when the error rate is deviating, but only if request count is greater than 1000 and error rate is greater than 2%.
 3.  When a metric's behavior is expected to be very erratic, and thus baselining is not reliable. For example, on some systems, disk and/or network usage metrics don't always lend themselves well to baselining, so you may opt to set a static threshold instead.  This is illustrated nicely in the screenshot below:
 
-![Monitoring Alert: Static Threshold](https://www.metricly.com/wp-content/uploads/2017/06/Static-Threshold-1-1024x364.jpg)
+![Monitoring Alert: Static Threshold](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/06/Static-Threshold-1-1024x364.jpg)
 
 ### Baseline and Contextual Deviations
 
@@ -60,7 +60,7 @@ Conditions that check for baseline or contextual deviations (or both) are the ty
 
 ### Multiple Conditions
 
-An effective policy will typically have multiple conditions against multiple metrics.  This helps to refine the definition of the problem being detected, and also helps with the reduction of alert noise.  My colleague Christina DiSomma recently wrote about [how to reduce alert noise with multi-criteria policies](https://www.metricly.com/reduce-alert-multi-criteria-policies), which covers this aspect of policy authoring in detail.
+An effective policy will typically have multiple conditions against multiple metrics.  This helps to refine the definition of the problem being detected, and also helps with the reduction of alert noise.  My colleague Christina DiSomma recently wrote about [how to reduce alert noise with multi-criteria policies](/reduce-alert-multi-criteria-policies), which covers this aspect of policy authoring in detail.
 
 What Duration Should You Choose?
 --------------------------------
@@ -97,10 +97,10 @@ Selecting the *Notifications* tab in the *Policy Editor* allows you to easily ad
 
 The following screenshot shows an email notification, configured to send to the <research@netuitive.com> email address:
 
-![Alert Rules: Notifications](https://www.metricly.com/wp-content/uploads/2017/06/Notifications-1.jpg)
+![Alert Rules: Notifications](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/06/Notifications-1.jpg)
 
 Notice that by default, the notification is set to re-notify every 5 minutes; in other words, for as long as the policy is firing, you will get an email every 5 minutes. During a typical production outage, this is likely to result in a flood of emails. Just as we want to reduce alert noise, we similarly want to reduce notification noise.  For example:\
-![Monitoring Alerts: Notifications 2](https://www.metricly.com/wp-content/uploads/2017/06/Notifications-2-1.jpg)
+![Monitoring Alerts: Notifications 2](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/06/Notifications-2-1.jpg)
 
 In the above screenshot, the notification has been tuned to:
 

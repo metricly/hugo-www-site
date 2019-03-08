@@ -14,7 +14,7 @@ In order to provide organizations with an environment in which to deploy their D
 Anatomy of Amazon EC2 Container Service
 ---------------------------------------
 
-[![](/wp-content/uploads/2017/07/ECSIcon.png)](/wp-content/uploads/2017/07/ECSIcon.png)Amazon ECS is essentially just a platform to support Docker instances, with added support to manage those instances and simplify implementation for the user. With that said, it is important to note that Amazon has introduced slightly different terms to describe aspects of the Docker environment, and it is worth examining these before we continue.
+[![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/ECSIcon.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/ECSIcon.png)Amazon ECS is essentially just a platform to support Docker instances, with added support to manage those instances and simplify implementation for the user. With that said, it is important to note that Amazon has introduced slightly different terms to describe aspects of the Docker environment, and it is worth examining these before we continue.
 
 **Cluster:** This refers to the group of EC2 instances which will be used to host your Docker containers.
 
@@ -29,7 +29,7 @@ A benefit of using ECS is that you can leave the decision about which instance t
 Which Container Metrics Should You Monitor?
 -------------------------------------------
 
-[![EC2 Container Service Utilization Metrics](/wp-content/uploads/2017/07/ECSUtilizationMetrics-1024x320.png)](/wp-content/uploads/2017/07/ECSUtilizationMetrics.png)
+[![EC2 Container Service Utilization Metrics](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/ECSUtilizationMetrics-1024x320.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/ECSUtilizationMetrics.png)
 
 While AWS ECS manages the environment on your behalf, it is still imperative that an effective [monitoring strategy](/evaluate-monitoring-strategy) be developed and put in place to ensure that the system continues to operate in an optimal way, and enables rapid identification of problem areas.
 
@@ -42,7 +42,7 @@ The key metrics that you should be concerned with monitoring are CPU reservation
 Enabling Docker Integration with Metricly
 ------------------------------------------
 
-[![Monitoring EC2 Container Service: Metricly Docker Integration](/wp-content/uploads/2016/04/integrations-docker.png)](/wp-content/uploads/2016/04/integrations-docker.png)
+[![Monitoring EC2 Container Service: Metricly Docker Integration](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/04/integrations-docker.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/04/integrations-docker.png)
 
 Metricly has supported ECS monitoring since June of 2016, and provides basic monitoring out of the box through CloudWatch. If you are already a Metricly customer, you should be able to view metrics related to your ECS clusters shortly after deployment.
 

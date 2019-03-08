@@ -38,23 +38,23 @@ Once you're up and running, you'll need to configure the AWS integration in orde
 
 When configuring the integration, be sure the **ELB** box is checked on the *AWS Setup* page, as illustrated below. (Now would also be a good time to configure Metricly for any other AWS services you wish to monitor by checking those boxes as well.)
 
-![ELB Monitoring: AWS Setup](/wp-content/uploads/2017/07/AWS-Setup.png)
+![ELB Monitoring: AWS Setup](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/AWS-Setup.png)
 
 Once you've configured the AWS integration, it will usually take a few minutes to show up in the dashboard list.
 
 **Metricly and AWS**
 
-Dashboards are provided by Netuitive as a way to access and [visualize](https://help.netuitive.com/Content/Dashboards/dashboards.htm?Highlight=dashboards) ELB monitoring data (and any othe metrics) collected by Netuitive. You can find a high-level overview of what monitoring dashboards can do on the [Dashboards and Reports](/product/dashboards-and-reports) page. For a deeper dive into using Netuitive dashboards, see [AWS Monitoring Best Practices Using Pre-Configured Dashboards](/aws-monitoring-best-practices/).
+Dashboards are provided by Netuitive as a way to access and [visualize](https://help.netuitive.com/Content/Dashboards/dashboards.htm?Highlight=dashboards) ELB monitoring data (and any othe metrics) collected by Netuitive. You can find a high-level overview of what monitoring dashboards can do on the [Dashboards and Reports](/) page. For a deeper dive into using Netuitive dashboards, see [AWS Monitoring Best Practices Using Pre-Configured Dashboards](/aws-monitoring-best-practices/).
 
 -   Installed dashboards can be accessed in the Metricly interface by clicking **Dashboards**, then **Manage Dashboards**. The screenshot below shows both the *Dashboards* menu, and the *Manage Dashboards* screen.
 
-![ELB Monitoring: Manage Dashboards](/wp-content/uploads/2017/07/Manage-Dashboards-1024x233.png)
+![ELB Monitoring: Manage Dashboards](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Manage-Dashboards-1024x233.png)
 
 -   "Starring" a given dashboard on the *Manage Dashboards* screen will cause it to appear in the *Dashboards* menu.
 
 -   On either the *Dashboards* menu, or the *Manage Dashboards* screen, click **AWS ELB Summary** to see a high-level overview of your ELB monitoring. The next screenshot shows an example of the *AWS ELB Summary* page.
 
-![ELB Monitoring: AWS ELB Summary](/wp-content/uploads/2017/07/AWS-ELB-1024x296.png)
+![ELB Monitoring: AWS ELB Summary](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/AWS-ELB-1024x296.png)
 
 -   In the example shown above, there are a number of bits of information that can be gleaned from the ELB monitoring summary page.
 
@@ -66,9 +66,9 @@ Dashboards are provided by Netuitive as a way to access and [visualize](https://
 
 -   In the case illustrated, clicking on the load balancer called "users" will pop up a context menu with two choices. Choosing **Metrics** will take us to a screen with all of the ELB monitoring metrics available, as shown below.
 
-![ELB Monitoring: Metrics](/wp-content/uploads/2017/07/Metrics-1024x428.png)
+![ELB Monitoring: Metrics](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Metrics-1024x428.png)
 
-![ELB Monitoring: Metrics2](/wp-content/uploads/2017/07/Metrics2-1024x496.png)
+![ELB Monitoring: Metrics2](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Metrics2-1024x496.png)
 
 -   As can be seen, there are a number of ELB HTTP 5xx errors, as well as an unhealthy host behind this load balancer. It's likely that the host is either not properly responding to application requests forwarded by the load balancer, or that the host itself is down.
 

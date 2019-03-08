@@ -15,7 +15,7 @@ In this post, I take a look at what makes agent-based monitoring so important, a
 I Already Use CloudWatch. Why Isn't That Enough?
 ------------------------------------------------
 
-[![Agent-Based Monitoring: Amazon CloudWatch](/wp-content/uploads/2016/04/integrations-amazon-web-services.png)](/wp-content/uploads/2016/04/integrations-amazon-web-services.png)
+[![Agent-Based Monitoring: Amazon CloudWatch](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/04/integrations-amazon-web-services.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/04/integrations-amazon-web-services.png)
 
 CloudWatch is a useful tool, but on their own, built-in monitoring solutions are not enough.
 
@@ -48,7 +48,7 @@ Once per minute may seem quite frequent, and it's the default for almost every a
 
 **2\. System Statistics**
 
-[![Agent-Based Monitoring: CPU Utilization](/wp-content/uploads/2017/07/Screen-Shot-2017-03-14-at-2.51.05-PM-1024x282.png)](/wp-content/uploads/2017/07/Screen-Shot-2017-03-14-at-2.51.05-PM.png)
+[![Agent-Based Monitoring: CPU Utilization](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Screen-Shot-2017-03-14-at-2.51.05-PM-1024x282.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Screen-Shot-2017-03-14-at-2.51.05-PM.png)
 
 As a result of its placement on the server, the agent has access to all of the system metrics, all the time. This allows the agent to report on all aspects of network I/O (in, out, and errors), [CPU utilization](/subtleties-ec2-cpu-utilization), memory usage (free, committed, and reserved), and disk I/O (including I/O waits), and not just what can be easily queried every five minutes by a remote agent running a few commands and reporting back.
 
@@ -58,7 +58,7 @@ With the agent on the server and always running, vendors offer the ability to ex
 
 For Metricly, it offers out of the box add-ons ("integrations" in Metricly's terms) for MySQL, RabbitMQ, Docker, and [an ever-growing list](https://docs.metricly.com/integrations/) of others.
 
-An additional nice feature of Metricly's agent is that it can [collect data from any StatsD- compatible application or service](/using-statsd-with-metricly-for-advanced-monitoring) on the server. This can be easily leveraged by your in-house applications to directly report the metrics that matter the most to the monitoring service, without needing to write out to logs and then worry about parsing them later---from claims processed per minute at an insurance company to the average number of steps reported on a fitness tracking application.
+An additional nice feature of Metricly's agent is that it can [collect data from any StatsD- compatible application or service](/statsd-metricly-advanced-monitoring/) on the server. This can be easily leveraged by your in-house applications to directly report the metrics that matter the most to the monitoring service, without needing to write out to logs and then worry about parsing them later---from claims processed per minute at an insurance company to the average number of steps reported on a fitness tracking application.
 
 **4\. Network and Security Model**
 

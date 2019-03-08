@@ -8,12 +8,12 @@ url: "/python-monitoring/"
 layout: "single"
 ---
 
-Application [monitoring](https://www.metricly.com/product) can be a tricky, time-consuming business with the potential to cause major headaches if not configured properly. Recognizing that, we put our team to work [configuring our StatsD server to integrate with Python](https://help.netuitive.com/Content/Misc/Datasources/Netuitive/integrations/python.htm) so you can bring the power of anomaly detection to your applications. Here's our quick-and-easy guide to monitoring with Python and how to get the most from your metrics!
+Application [monitoring](/product) can be a tricky, time-consuming business with the potential to cause major headaches if not configured properly. Recognizing that, we put our team to work [configuring our StatsD server to integrate with Python](https://help.netuitive.com/Content/Misc/Datasources/Netuitive/integrations/python.htm) so you can bring the power of anomaly detection to your applications. Here's our quick-and-easy guide to monitoring with Python and how to get the most from your metrics!
 
 What is Python?
 ---------------
 
-[![Python](https://www.metricly.com/wp-content/uploads/2016/07/imageedit_1_7254343722.png)](https://www.metricly.com/wp-content/uploads/2016/07/imageedit_1_7254343722.png)
+[![Python](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/07/imageedit_1_7254343722.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/07/imageedit_1_7254343722.png)
 
 Python is a programming language that has almost infinite capabilities. It's easy to learn and use and scales effortlessly, making it the go-to language for many programmers. Python is the base for software used by companies of all sizes, from big banks and giant pharmaceutical companies to small startups.
 
@@ -29,7 +29,7 @@ Upon each influx of data, Metricly will then provide visualizations for those me
 Which metrics are most important for monitoring Python Applications?
 --------------------------------------------------------------------
 
-[![Dashboard1](https://www.metricly.com/wp-content/uploads/2016/07/Dashboard1-1024x509.png)](https://www.metricly.com/wp-content/uploads/2016/07/Dashboard1.png)
+[![Dashboard1](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/07/Dashboard1-1024x509.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/07/Dashboard1.png)
 
 It depends heavily on your application, its functionality, and to a certain extent the infrastructure and middleware upon which it resides. Part of what makes StatsD so valuable is its configurability -- it's easily customized to fit the specific needs of your application. Because changes to your monitoring setup can occur with just a few simple code alterations, you can adjust your metrics to fit the changing needs of your application and users.
 
@@ -52,7 +52,7 @@ From a memory perspective, you not only want to ensure you have enough memory to
 Why use anomaly detection for performance monitoring for Python applications?
 -----------------------------------------------------------------------------
 
-[![timeserieswidget](https://www.metricly.com/wp-content/uploads/2016/07/timeserieswidget-1024x252.png)](https://www.metricly.com/wp-content/uploads/2016/07/timeserieswidget.png)
+[![timeserieswidget](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/07/timeserieswidget-1024x252.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/07/timeserieswidget.png)
 
 [Anomaly detection](/blog/category/cloud-monitoring/) improves upon [static thresholds](https://help.netuitive.com/Content/Performance/Analytics/statis_thresholds.htm), a basic tenet of traditional or manual monitoring often used in conjunction with basic free open source monitoring tools. Static thresholds are a line in the sand for your metrics. With this type of monitoring, you will receive an alert whenever that line is crossed, whether that is predictable behavior or a genuinely unusual event.
 
@@ -60,7 +60,7 @@ Metricly's anomaly detection, by contrast, uses calculated "bands of normalcy" t
 
 Configuring your Python application to push data to the Metricly agent through our StatsD server takes only a few minutes, and a few simple steps:
 
-[![application](https://www.metricly.com/wp-content/uploads/2016/07/application-1024x377.png)](https://www.metricly.com/wp-content/uploads/2016/07/application.png)
+[![application](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/07/application-1024x377.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/07/application.png)
 
 1.  Create a new datasource in Metricly and generate an API key
 2.  Install the Metricly agent via your command line
@@ -71,4 +71,4 @@ For more detailed instruction, check out [our documentation](https://help.netuit
 
 * * * * *
 
-*Ready to start monitoring your Python applications with Metricly? We offer a [21-day, no-obligation free trial](https://www.metricly.com/signup).*
+*Ready to start monitoring your Python applications with Metricly? We offer a [21-day, no-obligation free trial](/signup).*

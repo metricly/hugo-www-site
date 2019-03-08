@@ -14,7 +14,7 @@ How to Collect AWS Lambda Metrics
 
 Enabling data collection for AWS Lambda is as simple as clicking the AWS integration card in the Metricly UI, and then checking the Lambda checkbox.  If you don't wish to monitor all of your Lambda functions, you can use a regular expression to specify which ones should be included or which ones should be excluded.
 
-[![Monitoring AWS Lambda: Enabling Data Collection](https://www.metricly.com/wp-content/uploads/2016/09/Lambda1.jpg)](https://www.metricly.com/wp-content/uploads/2016/09/Lambda1.jpg)
+[![Monitoring AWS Lambda: Enabling Data Collection](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/09/Lambda1.jpg)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/09/Lambda1.jpg)
 
 Figure 1: Enabling Data Collection for AWS Lambda in Metricly
 
@@ -34,15 +34,15 @@ Let's take a look at some of what's included in the Lambda package.
 AWS Lambda Dashboards and Visualizations
 ----------------------------------------
 
-[Dashboards](https://www.metricly.com/product/dashboards-and-reports) provide a high-level view of the operation of the components in your infrastructure.  While you can always create your own, Metricly provides default dashboards that can serve as a starting point. This enables you to start monitoring your infrastructure immediately.
+[Dashboards](/) provide a high-level view of the operation of the components in your infrastructure.  While you can always create your own, Metricly provides default dashboards that can serve as a starting point. This enables you to start monitoring your infrastructure immediately.
 
 Metricly provides two dashboards for monitoring AWS Lambda.  The first is a Summary Dashboard, which shows the top 5 Lambda functions from both an invocation perspective as well as a latency perspective:
 
-[![Monitoring AWS Lambda: Summary Dashboard](https://www.metricly.com/wp-content/uploads/2016/09/Lambda2.jpg)](https://www.metricly.com/wp-content/uploads/2016/09/Lambda2.jpg)
+[![Monitoring AWS Lambda: Summary Dashboard](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/09/Lambda2.jpg)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/09/Lambda2.jpg)
 
 The second type of dashboard is the Element Detail Dashboard.  Clicking on an element in the Inventory list will give you the option to view the element details, the first of which is the detail dashboard.  This view gives you immediate insights into the behavior of any specific Lambda function over a period of time.
 
-[![Monitoring AWS Lambda: Element Detail Dashboard](https://www.metricly.com/wp-content/uploads/2016/09/Lambda3-1024x507.jpg)](https://www.metricly.com/wp-content/uploads/2016/09/Lambda3.jpg)
+[![Monitoring AWS Lambda: Element Detail Dashboard](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/09/Lambda3-1024x507.jpg)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/09/Lambda3.jpg)
 
 Identifying AWS Lambda Issues and Triggering Alerts with Metricly Policies
 ---------------------------------------------------------------------------
@@ -60,7 +60,7 @@ These policies look for deviations from the norm in their respective metrics.
 
 As an example, here is a Lambda function from one of our customers. The red points on the graph indicate where the data deviates from the expected values, represented by the colored bands of learned behavior.  Over the course of several days, invocations were pretty constant, but then they experienced a sudden jump, with many deviations occurring on the right-hand side of the graph.
 
-[![Monitoring AWS Lambda: Unusually High Lambda Invocation Count](https://www.metricly.com/wp-content/uploads/2016/09/Lambda4-1024x338.jpg)](https://www.metricly.com/wp-content/uploads/2016/09/Lambda4.jpg)
+[![Monitoring AWS Lambda: Unusually High Lambda Invocation Count](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/09/Lambda4-1024x338.jpg)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/09/Lambda4.jpg)
 
 A couple of points are worth mentioning here:
 
@@ -69,7 +69,7 @@ A couple of points are worth mentioning here:
 
 As a final example, here is a case where the *AWS Lambda -- Elevated* *Latency* policy was firing:
 
-[![Lambda AWS Monitoring: High Latency](https://www.metricly.com/wp-content/uploads/2016/09/Lambda5-1024x347.jpg)](https://www.metricly.com/wp-content/uploads/2016/09/Lambda5.jpg)
+[![Lambda AWS Monitoring: High Latency](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/09/Lambda5-1024x347.jpg)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/09/Lambda5.jpg)
 
 As with the other policy, the user need do nothing to set up this monitoring -- it happens automatically when they start bringing Lambda metrics into Metricly.
 

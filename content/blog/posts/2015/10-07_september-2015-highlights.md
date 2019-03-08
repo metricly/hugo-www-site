@@ -20,7 +20,7 @@ Webhooks can now take custom content and POST information to the application usi
 
 [![PagerDuty Integration (September Release)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/pagerDuty1.jpg)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/pagerDuty1.jpg)
 
-Netuitive partnered with PagerDuty to seamlessly integrate and trigger alerts in PagerDuty from events created in Netuitive. You can set it up with [these four easy steps](/combining-metricly-and-pagerduty-for-monitoring-alarms/), and start seeing the integration work within minutes.
+Netuitive partnered with PagerDuty to seamlessly integrate and trigger alerts in PagerDuty from events created in Netuitive. You can set it up with [these four easy steps](/metricly-pagerduty-monitoring-alarms/), and start seeing the integration work within minutes.
 
 Seamlessly connecting your DevOps tools is a high priority -- look for more popular stack integrations from Metricly in future releases.
 
