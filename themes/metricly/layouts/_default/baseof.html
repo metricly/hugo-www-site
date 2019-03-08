@@ -48,7 +48,7 @@
   </head>
   <body>
 
-    {{if or (eq .Params.layout "blog") (eq .Params.layout "single") (eq .Params.layout "category")}}
+    {{if or (eq .Params.layout "blog") (eq .Params.layout "single") (eq .Params.layout "category") (eq .Params.layout "signup")}}
     <!-- Don't insert normal header -->
     {{ else }}
     <!-- Normal Header -->
@@ -60,8 +60,10 @@
     {{ end }}
 
     <!-- Footer -->
+    {{ if eq .Params.layout "signup" }}
+    {{ else }}
     {{ partial "footer/footer.html" . }}
-
+    {{ end }}
     {{if or (eq .Params.layout "blog") (eq .Params.layout "single") (eq .Params.layout "category")}}
     <!-- Blog Footer Scripts -->
     {{ partial "footer/blog-scripts.html" . }}
