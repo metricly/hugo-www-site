@@ -8133,3 +8133,8 @@ a.header_logo {
 
 .list-disc {
   list-style: disc; }
+
+.customer-background {
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat; }
