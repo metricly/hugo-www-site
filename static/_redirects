@@ -225,3 +225,5 @@
 
 /product /
 /product/ /
+
+http://metricly.netlify.com/* http://www.metricly.com/:splat 301!
