@@ -7,6 +7,7 @@ category: "Cloud Monitoring"
 url: "/subtleties-ec2-cpu-utilization/"
 layout: "single"
 ---
+***PLEASE NOTE THIS IS AN ARCHIVED POST*** - Netuitive has since become Metricly, and the tool has matured greatly since the time this was written!
 
 Recently, a customer came to us with an odd scenario that highlighted the importance of full-stack visibility and correlated metrics. This concept is at the core of Metricly's analytics, and is often necessary to fully understand your environment and optimize performance.  This customer was using AWS, and as many Metricly customers do, was monitoring their EC2s with the [Metricly Linux Agent](https://help.netuitive.com/Content/Misc/Datasources/Netuitive/new_netuitive_datasource.htm?Highlight=linux) in addition to CloudWatch.  On one particular EC2, the Linux Agent was reporting the CPU utilization pegged at 100%.  When the customer investigated, however, they found two unusual things:
 
@@ -19,8 +20,7 @@ Figure 1 -- Apparent CPU Discrepancy
 
 So, how to explain these apparent discrepancies?  Was the Linux Agent's view of total CPU utilization wrong? In a word, no. Here's what was happening in this customer's environment.
 
-How CPU Utilization Works on Virtual Machines
----------------------------------------------
+### How CPU Utilization Works on Virtual Machines
 
 The first thing to remember about EC2s is that they are virtual machines.  Countless physical machines are floating in the Amazon cloud, and each one is running a variety of different services, including EC2s. When any given EC2 needs access to system resources (such as memory or CPU), it doesn't have exclusive access to those resources; rather, it is sharing them with some number of other EC2s, all of which are vying for those same resources.  This applies even if you are running dedicated EC2s -- with dedicated EC2s, your company's EC2s won't be run on the same physical hardware as those from another AWS customer, but you're not getting a dedicated physical box for each EC2 either.
 
@@ -32,8 +32,7 @@ Figure 2 -- Hypervisor Managing Multiple EC2s
 
 So if the above is an ideal scenario, what happens if one EC2 goes haywire and starts churning on the CPU?  You might expect to see overall CPU utilization go up to 100% as measured by both AWS and Metricly.  And in fact, you do -- At first.  Later, though, the AWS measurement of CPU drops to 10% while Metricly's measurement stays at 100%.  What's up with that?
 
-The Case of the Stolen CPU
---------------------------
+### The Case of the Stolen CPU
 
 Earlier, we said that the *cpu.total.user* and *cpu.total.system* metrics normally account for almost all of the overall CPU utilization.  However, there are other classifications of CPU usage as well, and the relevant one here is a metric called [*cpu.total.steal*](https://help.netuitive.com/Content/Misc/Datasources/Netuitive/new_netuitive_datasource.htm#cpu-2).  This metric tells us the percentage of requested CPU resources that were stolen by the hypervisor for use by other EC2s.  In the diagram below, we can see that the stolen CPU jumps to around 90%, which, when coupled with the 10% from user and system processes, gives us the total usage of 100%.
 
@@ -53,8 +52,7 @@ In part, this decision is based on the behavior and resource requirements of the
 
 However, this wasn't the behavior that our customer was seeing.  Rather, AWS was throttling their CPU usage due to a lack of *CPU credits*.
 
-Keep an Eye on Your EC2 CPU Credits
------------------------------------
+### Keep an Eye on Your EC2 CPU Credits
 
 Not all EC2 instances operate [on the concept of CPU credits](https://help.netuitive.com/Content/Misc/Datasources/AWS/new_aws_datasource.htm#ec2); in fact, only T2 instances do so.  A T2 instance accumulates CPU credits continuously, at a rate per hour which is determined by the exact instance type.  Whenever the CPU is in use, CPU credits are consumed, at a rate based upon how heavily the CPU is being utilized.  Each CPU credit gives you the ability to run at 100% CPU capacity for roughly one minute.  Amazon recommends that T2 instances be used for running applications that typically consume low amounts of CPU, but occasionally need to burst; bursting effectively burns CPU credits at an accelerated rate.
 
@@ -64,8 +62,7 @@ This, in fact, is what was happening with our customer.  Looking at CPU utilizat
 
 Figure 5 -- Effect of CPU Credit Depletion on CPU Utilization
 
-Final Thoughts
---------------
+### Final Thoughts
 
 Monitoring CPU usage is more complex than looking at a single utilization number.  As we've seen from real-world customer experience. It is important to look at usage from different perspectives (hypervisor versus EC2 instance), to consider multiple breakdowns of CPU (such as the user, system, and steal metrics), and to be aware of AWS features (such as CPU credits) which may impact your performance. Context is everything!
 

@@ -7,7 +7,7 @@ category: "DevOps"
 url: "/devops-best-practices-david-linthicum/"
 layout: "single"
 ---
-
+***PLEASE NOTE THIS IS AN ARCHIVED POST*** - Netuitive has since become Metricly, and the tool has matured greatly since the time this was written!
 
 I had an interesting conversation recently with [David Linthicum](https://www.cloudtp.com/who-we-are/our-people/) of [Cloud Technology Partners](https://www.cloudtp.com/). He has been helping enterprise customers design auto-provisioned, self-healing, and auto-scaling cloud solutions for many years, and also helping software development organizations write applications that leverage cloud services.
 

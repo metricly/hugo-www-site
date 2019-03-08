@@ -7,7 +7,7 @@ category: "Product Updates"
 url: "/june-2015-release-highlights/"
 layout: "single"
 ---
-
+***PLEASE NOTE THIS IS AN ARCHIVED POST*** - Netuitive has since become Metricly, and the tool has matured greatly since the time this was written!
 
 In June we focused on bringing more agents and reports into the product. This month we released a browser agent, the Metricly host agent, an Estimated EBS cost report, and a daily emailed report.
 

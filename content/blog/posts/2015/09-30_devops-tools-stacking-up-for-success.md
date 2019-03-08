@@ -7,6 +7,7 @@ category: "DevOps"
 url: "/devops-tools-stacking-up-for-success/"
 layout: "single"
 ---
+***PLEASE NOTE THIS IS AN ARCHIVED POST*** - Netuitive has since become Metricly, and the tool has matured greatly since the time this was written!
 
 The number of tools targeting the DevOps community is expanding quickly, as evidenced by [The Period Table of DevOps Tools](https://xebialabs.com/periodic-table-of-devops-tools/).   One would think this is good news, right?
 

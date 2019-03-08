@@ -7,6 +7,7 @@ category: "Product Updates"
 url: "/march-2015-release-highlights/"
 layout: "single"
 ---
+***PLEASE NOTE THIS IS AN ARCHIVED POST*** - Netuitive has since become Metricly, and the tool has matured greatly since the time this was written!
 
 This March, the Development Team rolled out many new features. This month we are highlighting the integrated help content, multiple element metric comparison, and utilization boxplot report.
 

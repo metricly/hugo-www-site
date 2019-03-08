@@ -7,6 +7,7 @@ category: "Product Updates"
 url: "/metricly-cloud-now-live/"
 layout: "single"
 ---
+***PLEASE NOTE THIS IS AN ARCHIVED POST*** - Netuitive has since become Metricly, and the tool has matured greatly since the time this was written!
 
 [![Metricly Cloud](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/celebrate-e1457534034602.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/celebrate-e1457534034602.png)
 

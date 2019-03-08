@@ -15,10 +15,9 @@ And now, all of a sudden, things get tricky. You have to make a choice about EC2
 
 Naturally, you want to ensure that you select the right type of instance to support your application, and allow it to be both performant and cost effective. But with so many options, which instance type is the right choice?
 
-[Metricly can help you](/product) make that decision. We'll show how in this article, which discusses the considerations that you need to take into account with EC2 instance type selection, as well as how to measure those aspects and the impact those choices have on cost. We'll use Metricly's AWS monitoring metrics to assist in measuring these factors. I'll also show you how to leverage a couple of [automated EC2 cost reports](/ec2-cost-analysis-recommendations) the researchers at Metricly developed to give you access to all of this with a few clicks of your mouse.
+[Metricly can help you](/) make that decision. We'll show how in this article, which discusses the considerations that you need to take into account with EC2 instance type selection, as well as how to measure those aspects and the impact those choices have on cost. We'll use Metricly's AWS monitoring metrics to assist in measuring these factors. I'll also show you how to leverage a couple of [automated EC2 cost reports](/ec2-cost-analysis-recommendations/) the researchers at Metricly developed to give you access to all of this with a few clicks of your mouse.
 
-The Source of EC2 Instance Costs
---------------------------------
+### The Source of EC2 Instance Costs
 
 The overwhelming benefit of using a cloud-based service is that you only pay for the capacity you use. Additionally, that [capacity can be expanded and contracted](/3-ways-to-get-capacity-plans-wrong) to meet demand on your application. Properly managed, the effect on the bottom line can be exceedingly positive; conversely, improper management can lead to an expensive bottom line. To fully understand the costs associated with AWS instances, let's itemize the costs you might incur.
 
@@ -71,23 +70,21 @@ Following each test, I would create a new ASG with a different instance type, an
 
 It was a very labor-intensive project, and unfortunately, within a few months of continued development, the recommendations were rendered all but useless. Determining resource utilization over time is critical in the appropriate instance type selection and overall AWS configuration for your applications. My experience in this area served only to confirm the fact that what is required for a manual effort is incredibly expensive at first, and simply not sustainable over time.
 
-Choose the Better Path for Resource Utilization Monitoring
-----------------------------------------------------------
+### Choose the Better Path for Resource Utilization Monitoring
 
 Measurement of capacity resource utilization over time is necessary for selection of the correct instance type and size for your application. While my approach above contained all the right elements, necessity requires a better and more efficient method. Let's begin by looking at Netuitive as an [AWS monitoring solution](/getting-started-metricly-aws/), and taking the initial step in the process of gathering the required data.
 
-I won't spend too much time on the setup and configuration of your Netuitive account, as that information is freely available in other articles on this site. If you are in need of an account, they offer a 21-day free trial that you can sign up for [here](/signup). Additionally, you'll want to ensure that you [install the appropriate agent](https://docs.metricly.com/integrations/) on your instances depending on your operating system. Detailed installation instructions are provided for each respectively.
+I won't spend too much time on the setup and configuration of your Netuitive account, as that information is freely available in other articles on this site. If you are in need of an account, they offer a 21-day free trial that you can sign up for [here](/signup/). Additionally, you'll want to ensure that you [install the appropriate agent](https://docs.metricly.com/integrations/) on your instances depending on your operating system. Detailed installation instructions are provided for each respectively.
 
 If you want to follow along in the next section with your data, you'll need to set up the appropriate integrations and get your EC2 instance data flowing into Metricly. It is a relatively simple process, and it opens the doors to all the analysis you need to make cost-effective decisions regarding your AWS account.
 
-Two Clicks to All the Information You Need!
--------------------------------------------
+### Two Clicks to All the Information You Need!
 
 Once you have data flowing into your Metricly account, it takes just two clicks to access all the information you need. We started this article off by looking at the costs associated with deploying your applications into AWS using EC2 instances. Log in to your account, navigate to **Reports**, and then select the **EC2 Cost** report.
 
 ![Pick Perfect EC2 Instance: Select Cost Report](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Select-EC2-Cost.png)
 
-The EC2 cost report shows [total costs for all EC2 instances](/demystify-your-ec2-cost-analysis) that are reported to Metricly. Filters and view options allow you to customize views to report the information you need. At the top right of the report is a **Report View** option. Click on the dropdown, and select ***Cost by Instance Type***. This view breaks down costs based on the type of instance. Stacked bars show the total cost for the instance itself, costs for data traffic transferred to and from the instance, and other costs like EBS optimization charges.
+The EC2 cost report shows [total costs for all EC2 instances](/demystify-your-ec2-cost-analysis/) that are reported to Metricly. Filters and view options allow you to customize views to report the information you need. At the top right of the report is a **Report View** option. Click on the dropdown, and select ***Cost by Instance Type***. This view breaks down costs based on the type of instance. Stacked bars show the total cost for the instance itself, costs for data traffic transferred to and from the instance, and other costs like EBS optimization charges.
 
 Change the **Report View** option to ***Cost by Tag***. This option assumes you have tagged each of your instances to denote the application deployed, or other discerning property. The result is a report showing the costs across your environment based on application or another tag.
 
@@ -109,7 +106,7 @@ The report provides the user with the opportunity to optimize based on allowable
 
 Before we look at the actual data in the report, look at the top right corner. (**Estimated weekly instance savings $682.41**.) By implementing the recommendations in this report, we can not only increase our resource utilization but also save a significant amount of money. Let's look at how.
 
-Considering the top-most point, a solid blue dot on the graph, we can hover over and see a basic summary of information. The instance is ***win01* **and is costing us $161.58 per week. You'll notice that the dot is joined to another open dot with a dotted line. This line represents the recommendation. The result is a decrease in cost and an increase in CPU utilization. Let's find the element in the data table below to see how this is possible.
+Considering the top-most point, a solid blue dot on the graph, we can hover over and see a basic summary of information. The instance is ***win01*** and is costing us $161.58 per week. You'll notice that the dot is joined to another open dot with a dotted line. This line represents the recommendation. The result is a decrease in cost and an increase in CPU utilization. Let's find the element in the data table below to see how this is possible.
 
 ![Pick Perfect EC2 Instance: Recommendation Details](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/EC2-Reocmmendation-Details-1024x169.png)
 

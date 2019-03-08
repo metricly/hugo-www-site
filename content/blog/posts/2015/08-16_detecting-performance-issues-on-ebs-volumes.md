@@ -7,6 +7,8 @@ category: "DevOps"
 url: "/detecting-performance-issues-on-ebs-volumes/"
 layout: "single"
 ---
+***PLEASE NOTE THIS IS AN ARCHIVED POST*** - Netuitive has since become Metricly, and the tool has matured greatly since the time this was written!
+
 In a previous [blog](/iops-calculator-for-ebs-volumes) entry, we looked at how Metricly calculates IOPS for an EBS (Elastic Block Storage) volume, and how the IOPS utilization rate can be used to help identify under-utilized volumes.  Today, we'll look at how we can use some additional metrics, including a computed metric created based on Amazon best practices, to allow us to detect EBS volumes that are having performance issues due to *over*-utilization.
 
 Two of the key metrics for detecting potential performance issues are *disk queue length*, which indicates the number of requests waiting to be processed by the disk, and *latency*, which indicates the average amount of time that it takes the disk to process a request.  These two metrics are well-correlated.  If latency increases, the queue length will grow as more requests build up waiting for their turn to be executed; conversely, an increase in the number of concurrent requests will eventually cause latency to increase as the disk has more work to perform.

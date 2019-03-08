@@ -7,7 +7,7 @@ category: "DevOps"
 url: "/improving-delivery-itoa/"
 layout: "single"
 ---
-
+***PLEASE NOTE THIS IS AN ARCHIVED POST*** - Netuitive has since become Metricly, and the tool has matured greatly since the time this was written!
 
 Focus on Strategy, Implementation and Adoption..and don't forget the executive sponsor!
 ---------------------------------------------------------------------------------------

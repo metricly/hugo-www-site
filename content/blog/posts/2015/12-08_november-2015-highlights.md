@@ -7,7 +7,7 @@ category: "Product Updates"
 url: "/november-2015-highlights/"
 layout: "single"
 ---
-
+***PLEASE NOTE THIS IS AN ARCHIVED POST*** - Netuitive has since become Metricly, and the tool has matured greatly since the time this was written!
 
 Here's what we're thankful for this holiday season -- in November, Metricly delivered more utilization metrics, packages, a Ruby agent, and wild card policies!
 

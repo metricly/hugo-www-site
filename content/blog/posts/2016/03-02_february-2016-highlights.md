@@ -7,6 +7,7 @@ category: "Product Updates"
 url: "/february-2016-highlights/"
 layout: "single"
 ---
+
 Valentine's Day has come and gone, but Metricly's love for new features has only grown. Our engineers put a large focus in February on new widgets and dashboard improvements, and our expanding widget library is a testament to our ongoing commitment to increased dashboard customization. Check out our brand-new improvements!
 
 Default Dashboards

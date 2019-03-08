@@ -7,7 +7,7 @@ category: "DevOps"
 url: "/follow-devops-thought-leaders-part-2/"
 layout: "single"
 ---
-
+***PLEASE NOTE THIS IS AN ARCHIVED POST*** - Netuitive has since become Metricly, and the tool has matured greatly since the time this was written!
 
 As an [analytics pioneer](/), it's been interesting to watch the evolution of the DevOps movement. At the same time, we continue to see the next generation of IT following the best practices of the past when it comes to monitoring. Many DevOps shops seem content with eyeball-driven dashboard monitoring.  Some like Etsy have initiated open source projects to develop and promote more advanced monitoring analytics with [Skyline](https://github.com/etsy/skyline), but it remains a blind spot for most of the industry -- especially in larger, more dynamic environments.
 

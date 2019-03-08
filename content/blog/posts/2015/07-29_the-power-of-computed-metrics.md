@@ -7,7 +7,7 @@ category: "DevOps"
 url: "/the-power-of-computed-metrics/"
 layout: "single"
 ---
-
+***PLEASE NOTE THIS IS AN ARCHIVED POST*** - Netuitive has since become Metricly, and the tool has matured greatly since the time this was written!
 
 A computed metric is a value derived via streaming calculations performed on collections of other pre-existing data. By creating new metrics from existing metrics, we can learn more about the relationships between them. Computed metrics can be used for simply converting units of measure, such as converting a count to a percentage, or for more complex calculations that implement sophisticated models.
 

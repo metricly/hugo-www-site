@@ -7,7 +7,7 @@ category: "DevOps"
 url: "/analytics-moving-beyond-early-adoption/"
 layout: "single"
 ---
-
+***PLEASE NOTE THIS IS AN ARCHIVED POST*** - Netuitive has since become Metricly, and the tool has matured greatly since the time this was written!
 
 After several months getting settled into my role as Chief Data Scientist for Metricly, I have focused on learning the product's capabilities and limits and have been struck by the depth of intelligence and automation that have been built during nearly 20 years of cumulative R&D.
 

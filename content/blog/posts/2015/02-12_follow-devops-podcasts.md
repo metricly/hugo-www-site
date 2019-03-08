@@ -7,6 +7,7 @@ category: "DevOps"
 url: "/follow-devops-podcasts/"
 layout: "single"
 ---
+***PLEASE NOTE THIS IS AN ARCHIVED POST*** - Netuitive has since become Metricly, and the tool has matured greatly since the time this was written!
 
 Don't miss these podcasts --  and feel free to comment and let us know if you have other favorites so we can add them to our list!
 

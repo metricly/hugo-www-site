@@ -7,7 +7,7 @@ category: "Product Updates"
 url: "/october-2015-highlights/"
 layout: "single"
 ---
-
+***PLEASE NOTE THIS IS AN ARCHIVED POST*** - Netuitive has since become Metricly, and the tool has matured greatly since the time this was written!
 
 Shared dashboards, maintenance mode, custom email templates, and Memory and CPU Usage widgets are just the tip of the iceberg's worth of features that Metricly released in October. Fear not: even though it's cooling off outside, our dev team is heating up!
 

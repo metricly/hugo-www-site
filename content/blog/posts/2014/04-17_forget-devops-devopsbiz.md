@@ -7,7 +7,7 @@ category: "DevOps"
 url: "/forget-devops-devopsbiz/"
 layout: "single"
 ---
-
+***PLEASE NOTE THIS IS AN ARCHIVED POST*** - Netuitive has since become Metricly, and the tool has matured greatly since the time this was written!
 
 By most common definitions, the DevOps movement is about more agile, responsive software development and deployment while not sacrificing the quality of service levels. But I think this ambition falls short of the ultimate possible goal I'll call DevOpsBiz.
 

@@ -7,7 +7,7 @@ category: "DevOps"
 url: "/capacity-utilization-with-box-and-whisker-plots-is-the-cats-meow/"
 layout: "single"
 ---
-
+***PLEASE NOTE THIS IS AN ARCHIVED POST*** - Netuitive has since become Metricly, and the tool has matured greatly since the time this was written!
 
 Remember boxplots from middle school math class? The smell of teen angst, B.O., and cafeteria pizza in the air as you calculate upper and lower quartiles?
 

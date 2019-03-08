@@ -7,6 +7,7 @@ category: "Product Updates"
 url: "/february-2015-release-highlights/"
 layout: "single"
 ---
+***PLEASE NOTE THIS IS AN ARCHIVED POST*** - Netuitive has since become Metricly, and the tool has matured greatly since the time this was written!
 
 We are very excited about the launch of our new Metricly SaaS product. Our Development Team has already added many features for your benefit this February! Several new releases are highlighted below like customizable metric and event charts, specialized widgets, and more integrations.
 

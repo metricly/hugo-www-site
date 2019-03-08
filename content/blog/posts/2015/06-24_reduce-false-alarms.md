@@ -7,7 +7,7 @@ category: "DevOps"
 url: "/reduce-false-alarms/"
 layout: "single"
 ---
-
+***PLEASE NOTE THIS IS AN ARCHIVED POST*** - Netuitive has since become Metricly, and the tool has matured greatly since the time this was written!
 
 Cloud environments are significantly more dynamic than their predecessors and the application of static thresholds to monitor and trigger alerts doesn't cut it. They result in a lot of alarm noise and your team spending time chasing false alarms.  Even worse, you may not see performance problems that are flying under the radar until they spike and cause system downtime.
 

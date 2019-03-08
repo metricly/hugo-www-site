@@ -7,7 +7,7 @@ category: "Product Updates"
 url: "/whats-new-metricly-opsgenie-custom-data-more/"
 layout: "single"
 ---
-
+***PLEASE NOTE THIS IS AN ARCHIVED POST*** - Netuitive has since become Metricly, and the tool has matured greatly since the time this was written!
 
 The development team has been hard at work making Metricly better than ever.  Thank you so much to all the beta users and customers who have generously shared their feedback and support.  Here are some highlights of the new features that launched in April:
 

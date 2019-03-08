@@ -5,6 +5,8 @@ title: "Using Lambda To Automate EBS Burst Balance"
 category: "DevOps"
 url: "/lambda-automate-ebs-burst-balance/"
 layout: "single"
+featured-image: "ebs-alerts.png"
+thumbnail-image: true
 ---
 
 In a [previous article](/ebs-burst-balance-aws/), I introduced you to EBS Burst Balance and the tools available from Metricly to monitor your EBS Burst Balance, and how to set up alerts when the balance falls below a specified threshold.

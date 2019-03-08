@@ -7,7 +7,7 @@ category: "Product Updates"
 url: "/october-2015-highlights/"
 layout: "single"
 ---
-
+***PLEASE NOTE THIS IS AN ARCHIVED POST*** - Netuitive has since become Metricly, and the tool has matured greatly since the time this was written!
 
 DevOps teams are moving away from basic email alerts for issues or events and are instead using chat tools like [Slack](https://slack.com/) for notifications to allow greater flexibility in response and communication. [Slack](https://slack.com/) offers several ways to send data to a Slack Channel, and Metricly has provided an easy way to integrate the services. In this blog, we will walk-through how to use webhooks to send Metricly monitoring events into Slack.
 

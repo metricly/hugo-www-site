@@ -7,6 +7,7 @@ category: "DevOps"
 url: "/metricly-amasol-partnership/"
 layout: "single"
 ---
+***PLEASE NOTE THIS IS AN ARCHIVED POST*** - Netuitive has since become Metricly, and the tool has matured greatly since the time this was written!
 
 IT Operations Analytics (ITOA) is seeing traction in Germany and the EU.
 

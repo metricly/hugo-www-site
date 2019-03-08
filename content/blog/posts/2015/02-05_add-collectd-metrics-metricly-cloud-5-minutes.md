@@ -6,6 +6,7 @@ category: "DevOps"
 url: "/add-collectd-metrics-metricly-cloud-5-minutes/"
 layout: "single"
 ---
+***PLEASE NOTE THIS IS AN ARCHIVED POST*** - Netuitive has since become Metricly, and the tool has matured greatly since the time this was written!
 
 Adding your [Collectd](https://collectd.org/) metrics to Metricly's analytics enables a much richer set of metrics for your performance monitoring. To activate a collectd data source in Metricly Cloud, you only need to add a few lines to your existing configuration file. Our video walkthrough shows the simple process to setup and have data populate in 5 minutes.\
 In our video example, you need to have collectd installed and running on a Unix machine. If you don't already have it running, this one-time setup can take an additional 5-10 minutes.  You can find instructions [here](https://collectd.org/wiki/index.php/First_steps).

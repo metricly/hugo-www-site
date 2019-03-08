@@ -7,8 +7,7 @@ category: "DevOps"
 url: "/aws-cloudwatch-vs-collectd/"
 layout: "single"
 ---
-
-
+***PLEASE NOTE THIS IS AN ARCHIVED POST*** - Netuitive has since become Metricly, and the tool has matured greatly since the time this was written!
 
 Collectd -- a metrics collection daemon!
 ---------------------------------------

@@ -7,6 +7,8 @@ category: "DevOps"
 url: "/follow-thought-leaders-devops/"
 layout: "single"
 ---
+***PLEASE NOTE THIS IS AN ARCHIVED POST*** - Netuitive has since become Metricly, and the tool has matured greatly since the time this was written!
+
 Development & Operations -- Strange bedfellows shaping the future of business critical applications and services
 ---------------------------------------------------------------------------------------------------------------
 

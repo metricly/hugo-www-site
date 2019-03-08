@@ -7,6 +7,7 @@ category: "Product Updates"
 url: "/september-2015-highlights/"
 layout: "single"
 ---
+***PLEASE NOTE THIS IS AN ARCHIVED POST*** - Netuitive has since become Metricly, and the tool has matured greatly since the time this was written!
 
 September was a hot month for us here at Metricly, and you're set to reap all the benefits! Custom Webhooks, PagerDuty integration, and External Events are the hallmarks for this past month. The focus has been on implementing new integrations for use cases other than just data ingestion, such as leveraging third party alerting systems, viewing events from other tools, and opening up custom scripting via webhooks.
 

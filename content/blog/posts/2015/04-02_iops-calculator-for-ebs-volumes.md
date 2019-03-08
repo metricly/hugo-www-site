@@ -7,6 +7,8 @@ category: "DevOps"
 url: "/iops-calculator-for-ebs-volumes/"
 layout: "single"
 ---
+***PLEASE NOTE THIS IS AN ARCHIVED POST*** - Netuitive has since become Metricly, and the tool has matured greatly since the time this was written!
+
 When looking at an EBS volume in Metricly, you'll notice that in addition to the metrics we collect from AWS, we also create a number of computed metrics, one of which is *netuitive.aws.ebs.iopsutilization*.  Simply put, IOPS Utilization compares the current number of IOPS that the disk is performing against the total IOPS capacity, and expresses this as a percentage. Thus, if you are currently running 1050 IOPS against a volume whose capacity is 3000 IOPS, the IOPS Utilization would be 35%. Here's an example of a graph of IOPS Utilization Percent in Metricly.
 
 [![IOPS Utilization Blog 1](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/IOPSblog1.jpg)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/IOPSblog1.jpg)

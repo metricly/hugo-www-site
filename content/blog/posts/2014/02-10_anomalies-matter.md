@@ -7,6 +7,7 @@ category: "DevOps"
 url: "/anomalies-matter/"
 layout: "single"
 ---
+***PLEASE NOTE THIS IS AN ARCHIVED POST*** - Netuitive has since become Metricly, and the tool has matured greatly since the time this was written!
 
 As Metricly's Chief Data Scientist, I am fortunate to work closely with some of the worlds' largest banks, telcos, and eCommerce companies. Increasingly the executives that I speak with at these companies are no longer focused on just detecting application performance anomalies -- they want to understand the impact this has on the business.
 

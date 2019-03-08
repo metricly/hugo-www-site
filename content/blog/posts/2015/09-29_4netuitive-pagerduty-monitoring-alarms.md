@@ -7,6 +7,8 @@ category: "Product Updates"
 url: "/metricly-pagerduty-monitoring-alarms/"
 layout: "single"
 ---
+***PLEASE NOTE THIS IS AN ARCHIVED POST*** - Netuitive has since become Metricly, and the tool has matured greatly since the time this was written!
+
 Metricly is excited to announce a new integration with [PagerDuty](https://www.pagerduty.com/).
 
 This blog demonstrates how easy it is to send Metricly monitoring alarms to PagerDuty. Metricly provides an intuitive web UI that sends event details to any external system for alerting. By using this to send information through PagerDuty's API, users can easily enable a seamless connection of the two services.

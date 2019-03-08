@@ -7,6 +7,7 @@ category: "Product Updates"
 url: "/august-2015-release-highlights/"
 layout: "single"
 ---
+***PLEASE NOTE THIS IS AN ARCHIVED POST*** - Netuitive has since become Metricly, and the tool has matured greatly since the time this was written!
 
 Metricly has some great things primed in August: a new Windows agent, a redesigned Multiple Metric Time Series widget, and Docker support.
 

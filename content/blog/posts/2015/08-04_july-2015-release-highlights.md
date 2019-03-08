@@ -7,7 +7,7 @@ category: "Product Updates"
 url: "/july-2015-release-highlights/"
 layout: "single"
 ---
-
+***PLEASE NOTE THIS IS AN ARCHIVED POST*** - Netuitive has since become Metricly, and the tool has matured greatly since the time this was written!
 
 In July, we are highlighting Metricly's new Java agent, the revamped policy editor, support for AWS Auto Scaling groups, and Docker support for the Metricly host agent.
 

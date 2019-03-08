@@ -19,8 +19,7 @@ The AWS ALB offers the capability to:
 -   Retrieve better metrics from your microservices
 -   Support WebSocket and HTTP/2 protocols
 
-So is an ALB Different from an ELB?
------------------------------------
+### So is an ALB Different from an ELB?
 
 Both the [Elastic Load Balancer (ELB)](/elb-monitoring-alerting) and the Application Load Balancer (ALB) perform load balancing, but they accomplish this task in slightly different ways. First, let's look briefly at how communication takes place between devices. Network communication uses the conceptual [OSI model](https://en.wikipedia.org/wiki/OSI_model) to standardize communication. This model is divided into seven layers, which range from layer one, which represents the physical medium used for transportation, all the way up to layer seven representing the parts of the communication closest to the application initiating communication.
 
@@ -33,8 +32,7 @@ ALBs operate at layer seven of the OSI model. By moving the routing logic to a h
 
 Let's look at how to set up an ALB and configure it to route to different instances based on the path in addition to the URL.
 
-Setting the Scene
------------------
+### Setting the Scene
 
 As we walk through setting up an ALB and analyzing the metrics it produces, I'll be using a simple application with a couple of endpoints to illustrate how it all works. The application has the following endpoints, all listening to specific paths on port 8080 of the target instance:
 
@@ -46,8 +44,7 @@ What I want to do is set up two Auto Scaling Groups (ASG) each with the same app
 
 If you would like more information on setting up EC2 instances and defining Auto Scaling Groups, the AWS documentation is an excellent starting point.
 
-Basic Setup Before You Create Your ALB
---------------------------------------
+### Basic Setup Before You Create Your ALB
 
 Before we set up the ALB itself, we need to define targets for each of the endpoints that we want our ALB to apply logic on. Log in to the AWS Console and navigate to the [EC2 Dashboard](https://console.aws.amazon.com/ec2). Find the **LOAD BALANCING** section in the navigation menu on the left-hand side of the dashboard, and click on the [Target Groups](https://console.aws.amazon.com/ec2#TargetGroups:) link.
 
@@ -68,8 +65,7 @@ The Target Groups field should auto-complete with available target groups. Selec
 
 With our target groups defined and assigned to each of our ASGs, we can now create our ALB and let it handle logical routing to each group.
 
-Creating and Configuring Your ALB
----------------------------------
+### Creating and Configuring Your ALB
 
 From the AWS EC2 Dashboard, navigate to the Load Balancers page under the **LOAD BALANCING** section of the left-hand navigation menu. Click on **Create Load Balancer**.
 
@@ -94,8 +90,7 @@ Step four is where we start defining the routing for our ALB. Note that each of 
 
 The Health Check information is identical to that which we entered previously within the Target Groups field. Once you have all the fields completed, click on **Next: Register Targets**. Review the information entered so far, and then click on **Create** to create the load balancer.
 
-Modifying ALB Rules
--------------------
+### Modifying ALB Rules
 
 With our ALB set up, we can add rules to route requests based on their content. From the AWS EC2 Dashboard, navigate to the Load Balancers page under **LOAD BALANCING**. Click on the ALB you would configure. Click on **Listeners** in the details section at the bottom of the page. You should already have a Listener defined, based on values you entered when creating the ALB. Find that listener, and click on **View/edit rules >** in the Rules column.
 
@@ -107,8 +102,7 @@ The default rule is always applied last and handles any request sent to the ALB 
 
 ![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/10/7-ALB-Rule-configuration-for-Multiple-Targets.png)*ALB Rule Configuration for Multiple Targets*
 
-Optional Collection of Access Logs for Your ALB
------------------------------------------------
+### Optional Collection of Access Logs for Your ALB
 
 By default, access logs are disabled on ALBs. If you would like to use them for troubleshooting, you can enable them by navigating to the Load Balancers page under **LOAD BALANCING**. Click on the ALB which you would enable logs for. Click on the **Description** tab, and scroll down to the **Attributes** section. Click on the **Edit Attributes** button.
 
@@ -118,8 +112,7 @@ Completing this step is useful if you need to keep or would like to search your 
 
 ![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/10/8-Enable-Load-Balancer-Access-Log-Collection.png)*Enable Load Balancer Access Log Collection*
 
-Pulling Your ALB Data into Metricly
------------------------------------
+### Pulling Your ALB Data into Metricly
 
 If you already have a Metricly account, and your data is being read and analyzed by Metricly, then you're almost ready to go. If this isn't the case, then you'll want to set up an account before proceeding through this article. Metricly offers a [21-day free trial](/signup) -once you have your account, you'll need to configure AWS integration on your account. This will allow metrics data to be read from your AWS account and make it viewable in Metricly. The IAM role integration is my personal preference, but you can also integrate via an AWS Access Key. View our [AWS documentation](https://docs.metricly.com/integrations/aws) for step-by-step directions.
 
@@ -132,8 +125,7 @@ Once you've entered the Integration Setup page, scan down until you get to the I
 ![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/10/10-Metricly-Application-Load-Balancer-Integration.png)\
 *Check Application Load Balancer as an Included Type*
 
-Available Metrics and Preconfigured Dashboards
-----------------------------------------------
+### Available Metrics and Preconfigured Dashboards
 
 Metricly gathers 22 metrics for ALBs at this time. If you would like to view them, you can log in to your account, and navigate to the [Inventory](http://public.metricly.com/#/inventory) page. Once there, you can filter by Name or Type, and find the name of your ALB.
 
@@ -145,8 +137,7 @@ Navigate to the [Dashboards](http://public.metricly.com/#/dashboards/dashboard-0
 
 ![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/10/11-Preconfigured-AWS-ALB-Dashboard.png)*Preconfigured AWS ALB Summary Dashboard*
 
-Anomaly Detection and Alerts
-----------------------------
+### Anomaly Detection and Alerts
 
 Finally, Metricly has some preset policies in place which can be triggered if latency or error rates increase related to your ALB. Navigate to the [Policies](http://public.metricly.com/#/policies) page, and you should see them at the top of the list.
 

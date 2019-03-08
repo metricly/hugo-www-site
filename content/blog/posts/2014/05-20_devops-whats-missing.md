@@ -7,7 +7,7 @@ category: "DevOps"
 url: "/devops-whats-missing/"
 layout: "single"
 ---
-
+***PLEASE NOTE THIS IS AN ARCHIVED POST*** - Netuitive has since become Metricly, and the tool has matured greatly since the time this was written!
 
 DevOps thought leaders such as John Willis and Gene Kim have published frameworks for how to describe, define and measure the effectiveness of DevOps. Willis proposed a taxonomy to identify certain patterns that characterize DevOps: [Culture, Automation, Measurement, and Sharing, aka CAMS](https://blog.chef.io/2010/07/16/what-devops-means-to-me/). Gene Kim has identified three "ways" that define DevOps: [Flow, Feedback, and Learning](http://itrevolution.com/the-three-ways-principles-underpinning-devops/).
 

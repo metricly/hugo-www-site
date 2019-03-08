@@ -7,6 +7,8 @@ category: "Product Updates"
 url: "/april-2015-release-highlights/"
 layout: "single"
 ---
+***PLEASE NOTE THIS IS AN ARCHIVED POST*** - Netuitive has since become Metricly, and the tool has matured greatly since the time this was written!
+
 April showers brought May flowers -- and  new notification methods, dashboard widgets, and usability improvements. This month we are highlighting the addition of OpsGenie support, webhook support for automated response scripts, and multiple metric time series widget. Check out our new releases!
 
 OpsGenie Support

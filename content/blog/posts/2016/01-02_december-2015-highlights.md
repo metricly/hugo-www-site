@@ -7,6 +7,7 @@ category: "Product Updates"
 url: "/december-2015-highlights/"
 layout: "single"
 ---
+***PLEASE NOTE THIS IS AN ARCHIVED POST*** - Netuitive has since become Metricly, and the tool has matured greatly since the time this was written!
 
 Metricly's engineering team finished out 2015 by preparing our service platform for new releases of a number of large features in Q1 2016. We also made several enhancements to the Windows agent, cost reports, and greatly expanding product documentation. Here are the last release highlights of 2015:
 

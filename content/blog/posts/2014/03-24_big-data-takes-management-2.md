@@ -7,6 +7,8 @@ category: "DevOps"
 url: "/big-data-takes-management-2/"
 layout: "single"
 ---
+***PLEASE NOTE THIS IS AN ARCHIVED POST*** - Netuitive has since become Metricly, and the tool has matured greatly since the time this was written!
+
 Metricly was recently interviewed for a story in the latest issue of Modern Infrastructure.
 
 In the article entitled "Modern-Infrastructure-Big-Data-in-IT-Mar-2014" the author makes the point of increasingly complex, cloud-based applications and infrastructure creating a need for "Big Data" IT operations analytics in the enterprise.

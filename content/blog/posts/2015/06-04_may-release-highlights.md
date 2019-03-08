@@ -7,7 +7,7 @@ category: "Product Updates"
 url: "/may-release-highlights/"
 layout: "single"
 ---
-
+***PLEASE NOTE THIS IS AN ARCHIVED POST*** - Netuitive has since become Metricly, and the tool has matured greatly since the time this was written!
 
 The May release has new features focused on administration and data collection. This month we are highlighting adding multiple users per account, inventory cleanup options, and additional computed metrics for Diamond and collectd.
 

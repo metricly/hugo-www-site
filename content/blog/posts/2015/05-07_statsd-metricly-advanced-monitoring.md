@@ -7,7 +7,7 @@ category: "DevOps"
 url: "/statsd-metricly-advanced-monitoring/"
 layout: "single"
 ---
-
+***PLEASE NOTE THIS IS AN ARCHIVED POST*** - Netuitive has since become Metricly, and the tool has matured greatly since the time this was written!
 
 When we launched Metricly as a SaaS offering, one of the first integrations early beta testers requested was StatsD. It's easy to see why this has become one of the most popular tools for DevOps teams. The Etsy team decided to [create a simple NodeJS daemon](https://codeascraft.com/2011/02/15/measure-anything-measure-everything/) and "make it ridiculously simple for any engineer to get anything they can count or time into a graph with almost no effort." They succeeded and the StatsD user community has grown quickly with thousands of users and a wide variety of plug-ins and services that support it.
 

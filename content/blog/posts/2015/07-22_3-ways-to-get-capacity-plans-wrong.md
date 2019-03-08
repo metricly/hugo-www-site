@@ -7,6 +7,8 @@ category: "DevOps"
 url: "/3-ways-to-get-capacity-plans-wrong/"
 layout: "single"
 ---
+***PLEASE NOTE THIS IS AN ARCHIVED POST*** - Netuitive has since become Metricly, and the tool has matured greatly since the time this was written!
+
 How could anyone get capacity utilization wrong with dynamic environments, auto-provisioning, auto-scaling, etc.?  The short answer is: easily. Today, systems are not leveraging analytics; "automation" is done by setting static thresholds; and capacity utilization calculations are inaccurate.
 
 It's important to know the difference between these components before we dive in:

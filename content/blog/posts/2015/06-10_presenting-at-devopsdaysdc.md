@@ -7,7 +7,7 @@ category: "DevOps"
 url: "/presenting-at-devopsdaysdc/"
 layout: "single"
 ---
-
+***PLEASE NOTE THIS IS AN ARCHIVED POST*** - Netuitive has since become Metricly, and the tool has matured greatly since the time this was written!
 
 I'm getting ready to present at [DevOpsDaysDC](https://www.devopsdays.org/events/2015-washington-dc/) on Friday morning, June 12.  Very exciting!  The title of the talk is "The Fallacy of Analytics" and it's based off a whitepaper we published this year. (No longer available)
 

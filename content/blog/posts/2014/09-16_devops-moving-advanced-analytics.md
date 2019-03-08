@@ -7,7 +7,7 @@ category: "DevOps"
 url: "/devops-moving-advanced-analytics/"
 layout: "single"
 ---
-
+***PLEASE NOTE THIS IS AN ARCHIVED POST*** - Netuitive has since become Metricly, and the tool has matured greatly since the time this was written!
 
 I had the honor of speaking with [Gene Kim](http://www.realgenekim.me/) last week. Gene is co-author (along with Kevin Behr and George Spafford) of the renowned book titled *[The Phoenix Project](http://itrevolution.com/book/the-phoenix-project/)*, and is one of DevOps' foremost thought leaders.
 

@@ -7,7 +7,7 @@ category: "Product Updates"
 url: "/servicenow-ticketing-monitoring/"
 layout: "single"
 ---
-
+***PLEASE NOTE THIS IS AN ARCHIVED POST*** - Netuitive has since become Metricly, and the tool has matured greatly since the time this was written!
 
 Recently, a customer asked us how they could integrate their [ServiceNow](https://www.servicenow.com/) ticketing system with Metricly. They wanted to open tickets in ServiceNow when events fired in Metricly and also show what was going on in ServiceNow on their Metricly timeline. This was a cool request for two reasons: it was easy to implement due to the maturity of the two technologies and it demonstrates how an organization can improve the collaboration between Development and Operations (DevOps) teams with automation.
 
