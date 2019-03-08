@@ -881,3 +881,13 @@ body,html {
   border: none;
   padding: 00px 25px;
 }
+
+.post-content a {
+    color: #275A7D;
+    font-weight: 700;
+}
+
+.post-content a:hover {
+    color: #27AAE1;
+    transition: all 0.3s;
+}
