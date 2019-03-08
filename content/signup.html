@@ -118,7 +118,7 @@ if (params.error) {
  document.getElementById("captchaError").innerHTML = "Complete the captcha below. Disable ad-blocking if you aren't able to see it!";
  }
  if (params.error == 5) {
- document.getElementById("otherError").innerHTML = "There was an error, please <a onclick="Intercom('show')" href="#">chat with us</a> if it persists.";
+ alert("There was an error submitting the form. If it persists, please chat with us.");
  }
 }
 
