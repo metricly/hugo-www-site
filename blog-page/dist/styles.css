@@ -6232,7 +6232,7 @@ a.header_logo {
 .aws-head .request-demo:after {
   content: url(https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/assets/aws/icons/arrow-green.svg);
   position: absolute;
-  top: 6px;
+  top: 0px;
   right: -34px;
   -webkit-transition: all .3s ease-in-out;
   transition: all .3s ease-in-out; }
