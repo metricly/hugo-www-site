@@ -1089,6 +1089,9 @@ a.header_logo {
 .header_nav_list_item.-with-sublist {
   position: relative; }
 
+.-with-sublist a {
+  cursor: default; }
+
 .header_nav_list_item_sublist {
   position: absolute;
   top: 100%;
