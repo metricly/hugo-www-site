@@ -310,20 +310,19 @@
 
         &__image {
             text-align: center;
-            --right: calc((100vw - 1300px) / 2);
+            //--right: calc((100vw - 1300px) / 2);
 
             @media (max-width: $xl) {
-                --right: calc((100vw - 930px) / 2);
+                //--right: calc((100vw - 930px) / 2);
             }
 
             @media (max-width: $lg) {
-                --right: 0;
+                //--right: 0;
             }
 
             img {
                 transform: translateX(var(--right));
                 width: 100%;
-                box-shadow: 0 5px 20px 0 rgba(0,0,0,0.08);
             }
 
             @media (max-width: $lg) {
