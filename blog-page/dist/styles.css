@@ -202,7 +202,8 @@ body {
   padding: 0;
   overflow-x: hidden;
   -webkit-box-sizing: border-box;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased; }
 
 *,
 *::after,
@@ -1089,9 +1090,6 @@ a.header_logo {
 .header_nav_list_item.-with-sublist {
   position: relative; }
 
-.-with-sublist a {
-  cursor: default; }
-
 .header_nav_list_item_sublist {
   position: absolute;
   top: 100%;
@@ -1220,6 +1218,9 @@ a.header_logo {
   color: white;
   background-color: #00A98F;
   border-radius: 4px; }
+
+a.default-cursor {
+  cursor: default; }
 
 .header_ham {
   margin-left: auto;
