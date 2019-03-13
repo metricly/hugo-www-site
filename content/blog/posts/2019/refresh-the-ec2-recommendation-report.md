@@ -35,7 +35,7 @@ The Nav Bar has been streamlined to house all of your major actions. Let’s go 
 * **Download**: Get a .CSV file of the report for your records.
 * **Save**: Save a new report.
 * **Save As..**: Overwrite a currently loaded, existing report save.
-* **Clear**: Restart your data exploration from scratch. (Does not delete saved reports).
+* **Clear All**: Restart your data exploration from scratch. (Does not delete saved reports).
 
 ## Configuration
 
@@ -46,7 +46,7 @@ All configuration options have been centralized in the modal shown below.
 * **Scope of Analysis**: Find and select elements based on name, attributes, tags, or use exclusions.
 * **Utilization Preferences**: Set target utilization percentages for CPU and memory and select your preferred data aggregation method.
 * **Instance Type Preferences**: Add recommendation constraints based on instance series, generation, and size.
-* **Display options**: Customize your table of results.
+* **Display Options**: Customize your table of results.
 
 ## What's New
 
