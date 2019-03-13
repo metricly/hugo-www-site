@@ -62,5 +62,3 @@ fields:
   config:
     required: true
   default: single
-pages:
-- content/blog/posts/2019/this-is-a-test.md
