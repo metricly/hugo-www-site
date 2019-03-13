@@ -4,7 +4,7 @@ date: ADD DATE
 description: Understand the basics of what an EC2 reserved instance is, and the types
   available. Learn Reserved Instance use cases that can lead to real cost benefits,
   as well as ones that are a poor use of Reserved Instances.
-title: EC2 Reserved Instances—How to Prepare Before a Purchase
+title: EC2 Reserved Instances—What You First Need to Know
 category: Cloud Cost Management
 url: "/ec2-reserved-instance-basics/"
 layout: single
