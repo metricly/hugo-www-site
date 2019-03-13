@@ -11,3 +11,4 @@ title = "this is a test"
 url = "/my-blog-url/"
 
 +++
+this is a blog
