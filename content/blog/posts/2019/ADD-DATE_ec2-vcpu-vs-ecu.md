@@ -1,28 +1,27 @@
 ---
 author: "Mike Mackrory"
-date: "2019-03-01"
-title: "How to Right Size EC2s and Maximize Your AWS Budget"
-category: "Cloud Cost Management"
-url: "/new/"
+date: "ADD DATE"
+description: "Understand an AWS vCPU vs ECU, and how they can help overcome the challenges presented by using virtual machines."
+title: "EC2 vCPU vs ECU—Everything You Need to Know"
+category: "DevOps"
+url: "/ec2-vcpu-vs-ecu/"
 layout: "single"
-featured-image: "tagging-best-practices.png"
+featured-image: ""
 thumbnail-image: true
-featured: true
+featured: false
 ---
 
-If you've deployed an application or service to the Amazon Web Service (AWS) cloud, you've probably made use of an EC2 instance. One of the decisions that you had to make before you could start a new instance was which instance type to use. Choosing an instance type can be a complicated process. AWS organizes their instance types into instance families, and within an instance family, there are varying sizes from micro to 32xlarge.
+If you've deployed an application or service to the Amazon Web Service (AWS) cloud, you've probably made use of an [EC2 instance](/ec2-instances/). One of the decisions that you had to make before you could start a new instance, was which instance type to use. [Choosing an instance type](/ec2-instance-types/) can be a complicated process. AWS organizes their instance types into instance families, and within an instance family, there are varying sizes from micro to 32xlarge.
 
 Availability of instance types also varies from region to region, but the primary factor differentiating each instance type is a combination of:
 
 -   Compute power or CPU
-
 -   Memory
-
 -   Storage capacity and type of storage
-
 -   Network connectivity and performance
 
 In this article, we're going to be looking at compute power. We're going to talk about the challenges of measuring and comparing compute power in a virtual environment, and we'll look at different ways in which AWS has tried to make it easier for consumers to make informed decisions about their instance types.
+
 
 ### The Challenge Presented by the Virtual Environment
 
@@ -34,7 +33,7 @@ The issue presented by this is that it can be challenging to compare instance ty
 
 Amazon came up with the concept of an ECU because they wanted a way to provide a consistent CPU capacity for their instances, regardless of the underlying hardware. One EC2 compute unit is similar in power to a 1.0 - 1.2 GHz 2007 Intel Xeon or AMD Opteron processor.
 
-From 2006 until 2014, the ECU was the standard measurement of processing power on all EC2 instances. For the most part, this resolved the problems with comparisons between different instance types and allowed AWS to configure instances on newer infrastructure and still provide the equivalent capacity of instances on older infrastructure.
+From 2006 until 2014, the AWS ECU was the standard measurement of processing power on all EC2 instances. For the most part, this resolved the problems with comparisons between different instance types and allowed AWS to configure instances on newer infrastructure and still provide the equivalent capacity of instances on older infrastructure.
 
 Benchmarks conducted at the time found that the ECU measurement was generally equivalent, but they did notice an improvement in performance in direct correlation to an increase in the number of ECUs. One hypothesis is that this improvement was due to a decrease in the number of instances which were hosted concurrently on a host server. You can view the results of one of these benchmark studies [here](http://blog.cloudharmony.com/2010/05/what-is-ecu-cpu-benchmarking-in-cloud.html).
 
@@ -48,30 +47,18 @@ One of the benefits of using the ECU to measure processing power was that it est
 
 The most significant factor which affects the processing power of an instance is how the vCPUs are configured on the instance type. If we compare the general-purpose M4 instance types with the compute-optimized C4 instance types, you'll notice that the processor specifications are different.
 
-|
+**M4 General-Purpose**
+- Up to 3.1 GHz Intel Xeon Platinum Processor
+- Intel AVX†, Intel AVX2†, Intel Turbo
+- EBS-optimized
+- Enhanced Networking
 
-M4 General-Purpose
+**C4 Compute-Optimized**
+- 2.9 GHz Intel Xeon E5-2666 v3 Processor
+- Intel AVX†, Intel AVX2†, Intel Turbo
+- EBS-optimized
+- Enhanced Networking
 
- |
-
-C4 Compute-Optimized
-
- |
-|
-
--   Up to 3.1 GHz Intel Xeon Platinum Processor
--   [Intel AVX†, Intel AVX2†, Intel Turbo](https://www.google.com/url?q=https://aws.amazon.com/ec2/instance-types/%23Intel&sa=D&ust=1552479354055000)
--   [EBS-optimized](https://www.google.com/url?q=https://aws.amazon.com/ec2/instance-types/%23EBS&sa=D&ust=1552479354055000)
--   [Enhanced Networking†](https://www.google.com/url?q=https://aws.amazon.com/ec2/details/%23enhanced-networking&sa=D&ust=1552479354056000)
-
- |
-
--   2.9 GHz Intel Xeon E5-2666 v3 Processor
--   [Intel AVX†, Intel AVX2†, Intel Turbo](https://www.google.com/url?q=https://aws.amazon.com/ec2/instance-types/%23Intel&sa=D&ust=1552479354057000)
--   [EBS-optimized](https://www.google.com/url?q=https://aws.amazon.com/ec2/instance-types/%23EBS&sa=D&ust=1552479354057000)
--   [Enhanced Networking†](https://www.google.com/url?q=https://aws.amazon.com/ec2/details/%23enhanced-networking&sa=D&ust=1552479354058000)
-
- |
 
 One of the other factors which can affect processing performance is the underlying hardware. If you are on a Linux instance, you can run the following command to find out the exact CPU running on the host machine.
 
