@@ -1,16 +1,16 @@
 ---
-author: "Mike Mackrory"
-date: "ADD DATE"
-description: "TBD"
-title: "The New EC2 Pricing Tool from Metricly and How It Stacks Up"
-category: "DevOps"
-url: "/ec2-pricing-calculator/"
-layout: "single"
-featured-image: ""
+author: Mike Mackrory
+date: ADD DATE
+description: TBD
+title: The New EC2 Pricing Tool from Metricly and How It Stacks Up
+category: DevOps
+url: "/ec2-instance-pricing/"
+layout: single
+featured-image: ''
 thumbnail-image: true
 featured: false
----
 
+---
 Amazon's Elastic Cloud Computing (EC2) has revolutionized our industry. Distilled down to its most basic components, provisioning a new server is as simple as selecting an instance configuration and then waiting for a minute or two while AWS creates and deploys a new instance for you.
 
 It is in the determination of the right configuration for your EC2 instance that the process becomes complicated. Between processing power, memory, storage, deployed region, and other options, your instance configuration is one of over 24,000 possible configurations, each with varying costs.
