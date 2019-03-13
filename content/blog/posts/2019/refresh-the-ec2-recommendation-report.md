@@ -1,6 +1,6 @@
 +++
 category = "Product Updates"
-date = ""
+date = "2019-03-13T19:00:00+00:00"
 description = "Compare EC2 utilization data against ideal AWS instance configurations"
 draft = true
 featured = false
