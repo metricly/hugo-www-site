@@ -2,6 +2,7 @@
 author: "Lawrence Lane"
 date: "2019-03-01"
 title: "How to Right Size EC2s and Maximize Your AWS Budget"
+description: "Learn exactly how to measure the efficiency of your infrastructure and plan an AWS EC2 right-sizing project. This step-by-step guide will clearly outline how to match your infrastructure workload, to AWS capacity."
 category: "Cloud Cost Management"
 url: "/right-size-aws-ec2/"
 layout: "single"
