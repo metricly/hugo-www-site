@@ -1,0 +1,64 @@
+---
+label: Blog Post
+hide_body: false
+fields:
+- type: text
+  name: title
+  label: Title
+  config:
+    required: true
+- type: text
+  name: url
+  label: URL
+  description: 'MUST be in this format: /url-here/'
+  config:
+    required: true
+  default: "/my-blog-url/"
+- type: select
+  name: category
+  config:
+    source:
+      type: simple
+    required: true
+    options:
+    - DevOps
+    - Cloud Cost Management
+    - Product Updates
+    - Cloud Monitoring
+  label: Category
+  default: Cloud Cost Management
+- type: textarea
+  name: description
+  label: SEO Meta Description
+  description: Anything over 155 characters is cut off by Google
+  config:
+    required: true
+    wysiwyg: false
+    schema:
+      format: markdown
+- type: datetime
+  name: date
+  label: Publish Date
+  config:
+    required: false
+- type: file
+  name: featured-image
+  label: Hero Image
+- type: file
+  name: thumbnail-image
+  label: Thumbnail Image
+- type: boolean
+  name: featured
+  label: Feature this blog
+  description: Use sparingly, as it will put it in the currently featured category
+    on every post
+- type: boolean
+  name: nofollow
+  label: SEO No Follow
+- type: text
+  name: layout
+  label: Layout
+  hidden: true
+  config:
+    required: true
+  default: single
