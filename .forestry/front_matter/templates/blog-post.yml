@@ -62,3 +62,5 @@ fields:
   config:
     required: true
   default: single
+pages:
+- content/blog/posts/2019/test-title.md
