@@ -1213,7 +1213,8 @@ a.header_logo {
     padding:27px 20px 27px;
     background-color:white;
     -webkit-box-shadow:0 5px 20px 0 rgba(84,84,84,0.5);
-    box-shadow:0 5px 20px 0 rgba(84,84,84,0.5)
+    box-shadow:0 5px 20px 0 rgba(84,84,84,0.5);
+    border-radius: 3px;
 }
 .header_nav_list_item_sublist_subwrap:before{
     content:"";
