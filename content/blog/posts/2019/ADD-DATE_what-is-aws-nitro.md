@@ -1,6 +1,6 @@
 ---
 author: Mike Mackrory
-date: ADD DATE
+date: ''
 description: Understand the advantages that AWS Nitro offers users of EC2, and what
   you need to know before you deploy your AMI on an instance with Nitro Hypervisor.
 title: What Are AWS Nitro Instances, and Why Use Them?
