@@ -1,19 +1,17 @@
 ---
-author: Mike Mackrory
-date: ADD DATE
-description: Understand the basics of what an EC2 reserved instance is, and the types
-  available. Learn Reserved Instance use cases that can lead to real cost benefits,
-  as well as ones that are a poor use of Reserved Instances.
-title: EC2 Reserved Instances—What You First Need to Know
-category: Cloud Cost Management
-url: "/ec2-reserved-instances/"
-layout: single
-featured-image: ''
+author: "Mike Mackrory"
+date: "ADD DATE"
+description: "Understand the basics of what an EC2 reserved instance is, and the types available. Learn Reserved Instance use cases that can lead to real cost benefits, as well as ones that are a poor use of Reserved Instances."
+title: "EC2 Reserved Instances—Understanding The Basics"
+category: "Cloud Cost Management"
+url: "/ec2-reserved-instance-basics/"
+layout: "single"
+featured-image: ""
 thumbnail-image: true
 featured: false
 draft: true
-
 ---
+
 Amazon EC2 Reserved Instances, which offer a discount of up to 75% over regular On-Demand Instances, are an attractive option for AWS users. However, to make the most of Reserved Instances, it's critical to understand the terms, conditions, and restrictions that impact the discounted price of Reserved Instances.
 
 We're going to tackle that topic in this article. We'll look at the different types of Reserved Instances which are available, and then talk about Reserved Instance use cases that can lead to real cost benefits, as well as ones that are a poor use of Reserved Instances.

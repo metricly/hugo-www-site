@@ -1,18 +1,17 @@
 ---
-author: Mike Mackrory
-date: ''
-description: Understand the advantages that AWS Nitro offers users of EC2, and what
-  you need to know before you deploy your AMI on an instance with Nitro Hypervisor.
-title: What Are AWS Nitro Instances, and Why Use Them?
-category: DevOps
+author: "Mike Mackrory"
+date: "ADD DATE"
+description: "Understand the advantages that AWS Nitro offers users of EC2, and what you need to know before you deploy your AMI on an instance with Nitro Hypervisor."
+title: "What Are AWS Nitro Instances, and Why Use Them?"
+category: "DevOps"
 url: "/what-is-aws-nitro/"
-layout: single
-featured-image: ''
+layout: "single"
+featured-image: ""
 thumbnail-image: true
 featured: false
 draft: true
-
 ---
+
 At Re:Invent 2017, Anthony Liguori, a senior principal engineer within the EC2 space, introduced the Nitro Hypervisor. In his [presentation](https://www.youtube.com/watch?v=LabltEXk0VQ), he walked the audience through the Nitro Hypervisor's development and the advantages it offered AWS and AWS customers, both in terms of performance and cost.
 
 In this article, we're going to discuss the advantages that Nitro offers users of EC2, and we'll cover what you need to know before you deploy your AMI on an instance with Nitro Hypervisor. Before we get to the Nitro Hypervisor, let's talk about hypervisors and virtual machines in general. We'll start from the basics, and then jump right into the technical implementation for Nitro.

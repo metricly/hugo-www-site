@@ -1,7 +1,7 @@
 ---
 author: "Mike Mackrory"
 date: "2019-03-14"
-description: "Metrcily just released its free EC2 instance pricing tool—here's how it stacks up against other EC2 pricing tools available."
+description: "Metricly just released its free EC2 instance pricing tool—here's how it stacks up against other EC2 pricing tools available."
 title: "EC2 Instance Pricing—4 Ways to Find The Instance You Need"
 category: "DevOps"
 url: "/ec2-instance-pricing/"
@@ -9,6 +9,7 @@ layout: "single"
 featured-image: "calculator.png"
 thumbnail-image: true
 featured: false
+draft: false
 ---
 
 Amazon's Elastic Cloud Computing (EC2) has revolutionized our industry. Distilled down to its most basic components, provisioning a new server is as simple as selecting an instance configuration and then waiting for a minute or two while AWS creates and deploys a new instance for you.
