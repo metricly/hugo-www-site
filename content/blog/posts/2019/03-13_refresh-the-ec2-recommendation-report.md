@@ -1,17 +1,15 @@
-+++
-category = "Product Updates"
-date = "2019-03-13T19:00:00+00:00"
-description = "Compare EC2 utilization data against ideal AWS instance configurations"
-draft = true
-featured = false
-featured-image = ""
-layout = "single"
-nofollow = false
-thumbnail-image = ""
-title = "Refresh: The EC2 Recommendation Report "
-url = "/refresh-ec2-recommendation-report/"
+---
+category: "Product Updates"
+date: "2019-03-13T19:00:00+00:00"
+description: "Compare EC2 utilization data against ideal AWS instance configurations"
+draft: false
+featured: false
+layout: "single"
+nofollow: false
+title: "Refresh: The EC2 Recommendation Report"
+url: "/refresh-ec2-recommendation-report/"
+---
 
-+++
 The [EC2 Recommendation report](https://docs.metricly.com/reports/reports-ec2-recommendations/ "EC2 Recommendation report") simplifies the task of sizing your instances. In this article, we're going to take a quick tour through its new UI. But first, let's go over some common uses for the EC2 Recommendation report.
 
 **Common Uses**
@@ -23,7 +21,7 @@ The [EC2 Recommendation report](https://docs.metricly.com/reports/reports-ec2-re
 
 Want to see this report in action? See [How to Right Size EC2s and Maximize Your AWS Budget](https://www.metricly.com/right-size-aws-ec2/ "How to Right Size EC2s and Maximize Your AWS Budget").
 
-## What's Changed
+### What's Changed
 
 The Nav Bar has been streamlined to house all of your major actions. Let’s go through them left to right.
 
@@ -37,7 +35,7 @@ The Nav Bar has been streamlined to house all of your major actions. Let’s go 
 * **Save As..**: Overwrite a currently loaded, existing report save.
 * **Clear All**: Restart your data exploration from scratch. (Does not delete saved reports).
 
-## Configuration
+### Configuration
 
 All configuration options have been centralized in the modal shown below.
 
@@ -48,7 +46,7 @@ All configuration options have been centralized in the modal shown below.
 * **Instance Type Preferences**: Add recommendation constraints based on instance series, generation, and size.
 * **Display Options**: Customize your table of results.
 
-## What's New
+### What's New
 
 Like the refreshed [AWS Services Cost report](https://docs.metricly.com/reports/reports-aws-services-cost/ "AWS Services Cost report"), configuration now comes with a **live preview** report of your data! As you update your visualization, filtering, and other report options, the preview updates _before_ you hit apply.
 
