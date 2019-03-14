@@ -10,6 +10,7 @@ layout: single
 featured-image: ''
 thumbnail-image: true
 featured: false
+draft: true
 
 ---
 At Re:Invent 2017, Anthony Liguori, a senior principal engineer within the EC2 space, introduced the Nitro Hypervisor. In his [presentation](https://www.youtube.com/watch?v=LabltEXk0VQ), he walked the audience through the Nitro Hypervisor's development and the advantages it offered AWS and AWS customers, both in terms of performance and cost.
