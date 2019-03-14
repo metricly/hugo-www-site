@@ -216,20 +216,11 @@
         -ms-flex-align: center;
         align-items: center; } }
     .main .header-section__image {
-      text-align: center;
-      --right: calc((100vw - 1300px) / 2); }
-      @media (max-width: 1200px) {
-        .main .header-section__image {
-          --right: calc((100vw - 930px) / 2); } }
-      @media (max-width: 992px) {
-        .main .header-section__image {
-          --right: 0; } }
+      text-align: center; }
       .main .header-section__image img {
         -webkit-transform: translateX(var(--right));
         transform: translateX(var(--right));
-        width: 100%;
-        -webkit-box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.08);
-        box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.08); }
+        width: 100%; }
       @media (max-width: 992px) {
         .main .header-section__image {
           -webkit-box-ordinal-group: 0;
