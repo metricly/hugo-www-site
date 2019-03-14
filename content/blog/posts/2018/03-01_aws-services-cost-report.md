@@ -79,4 +79,4 @@ Step 2: Click “Try It”
 
 We hope you enjoy our new report and eagerly await feedback to continue improving our cost tools.
 
-Not using Metricly yet? Create an account and try it out!
+Not using Metricly yet? [Create an account](/signup) and try it out!

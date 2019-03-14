@@ -19,7 +19,6 @@ The migration to public cloud is justified by lower total cost of ownership, whi
 
 Ranked number one on the list of “Best Cloud Management Tools of 2018” by Computer World, Metricly’s self-service offering can be activated in minutes, and is unique in its ability to cross-analyze performance, capacity and cost together using machine learning algorithms, and deliver real-time dashboards, recommendation reports, and dynamic notifications for automated action taking to reduce cloud spending and avoid performance problems.
 
-
 Metricly gives deep insights into cloud costs by cross-analyzing performance, capacity, and cost.
 
 The company also announced that Mark Roberge and Vik Duggal have joined its advisory board as consultants to help strengthen and scale the company’s sales, marketing and customer success management processes to prepare the company for its next phase of growth. Mark was the fourth employee at HubSpot and served as SVP of Global Sales and Services and then Chief Revenue Office through the company’s IPO (NYSE:HUBS) and also serves on Bowery Capital’s revenue council. Vik is the founder and CEO of a revenue acceleration agency that operates out of Santa Barbara, California. He has led rapid revenue and operational growth at multiple startups in San Francisco and Seattle with meaningful exits.

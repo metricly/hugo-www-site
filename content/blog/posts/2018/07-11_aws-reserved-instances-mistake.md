@@ -16,8 +16,6 @@ In AWS invoices purchased reservations are shown in hours. For example, consider
 
 ![Example AWS Reservation of (3) c4.xlarge Instances](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2018/07/word-image.png)
 
-Example AWS Reservation of (3) c4.xlarge Instances
-
 The 2,232 hours correspond to 3 instances x 24 hours x 31 days.
 
 From the invoice it is very tempting to infer that the reservation represents a block of hours to be called off at will throughout the month, but this is not the case. Reservations must be thought of in terms of a purchase of concurrent instance counts, not monthly instance hours.
@@ -28,11 +26,9 @@ Consider the case where 6 concurrent instances are run for 12 hours per day with
 
 ![ASG Graph Of (6) Concurrent EC2 Instances](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2018/07/word-image-1.png)
 
-ASG Graph Of (6) Concurrent EC2 Instances
-
 The total instance hours for the month is also 2,232 but the reservation will not apply to half of them and the invoice will look a little different:
 
-![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2018/07/word-image-2.png)
+![Invoice](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2018/07/word-image-2.png)
 
 Notice the 50% utilization of the reserved instances
 
@@ -48,8 +44,6 @@ Consider the profile below where the capacity required ramps up and down across 
 
 ![Basic ASG profile that scales to (6) instances in the weekdays](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2018/07/word-image-3.png)
 
-Basic ASG profile that scales to (6) instances in the weekdays
-
 In this example the total number of instance hours in a month is also 2,232 (take my word for it) -- the same number of instance hours as 3 full time instances -- but in this case there is anywhere between 1 and 6 instances running at once.
 
 If we want to reduce the cost by purchasing reservations, how many should we choose in this case?
@@ -62,13 +56,11 @@ i.e., consider this (note the lower discount for convertible instances):
 
 ![Cost with (3) reserved convertible instances](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2018/07/word-image-4.png)
 
-Cost with (3) reserved convertible instances
 
 versus this:
 
 ![AWS bill lower if you simply paid on-demand costs](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2018/07/word-image-5.png)
 
-Bill is lower if you simply paid on-demand costs
 
 ### Final Words
 

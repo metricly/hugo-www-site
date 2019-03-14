@@ -34,7 +34,7 @@ The designers of Metricly have invested significant time in developing complex a
 
 ### Configuring Metricly to Monitor Your EBS Volumes
 
-Configuring Metricly to monitor your EBS volumes and assist you in optimizing them is as simple as setting up a connection to your AWS account. If you don't already have an account, you can sign up for a [21-day free trial here](https://app.netuitive.com/signup/).
+Configuring Metricly to monitor your EBS volumes and assist you in optimizing them is as simple as setting up a connection to your AWS account. If you don't already have an account, you can sign up for a [21-day free trial here](/signup/).
 
 Log into your Metricly account and navigate to the [Integrations](https://app.metricly.com/#/integrations) page. We're going to be adding the Amazon Web Services integration. Locate the AWS button and click it.
 

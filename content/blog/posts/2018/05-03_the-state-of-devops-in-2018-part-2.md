@@ -92,7 +92,3 @@ He explains:
 > A lot of people in the DevOps movement take a leap of faith. They may be a sys admin whose work it is to put servers into a data center or manage them in the cloud. But their *job* really is to make their customers happy---and the way they do that is by making sure the technology runs smoothly and is nimble, and they can update it fast and keep it secure. And that doesn't mean only becoming a better engineer but getting more connected with your business and your customers. Their job is to make that customer successful and happy, and make my business successful and drive those outcomes, right?
 
 I would say so.
-
-* * * * *
-
-Robyn Weisman lives in Los Angeles and is the founder and principal of [WriteTech Content](https://writetechcontent.com/)-- a content marketing firm for companies in the enterprise tech space. Robyn has written about the enterprise since 2000, both as a reporter and copywriter.

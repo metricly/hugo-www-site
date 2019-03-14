@@ -7,7 +7,7 @@ url: "/ec2-recommendations-report-product-update/"
 layout: "single"
 ---
 
-Welcome to 2018, in our journey to be [the best monitoring platform](/product), we've added a couple features to the EC2 recommendation cost report.
+Welcome to 2018, in our journey to be [the best monitoring platform](/monitoring), we've added a couple features to the EC2 recommendation cost report.
 
  Not yet setup with Metricly? [Start a free 21-day trial](/signup) to see all the latest features in action!
 

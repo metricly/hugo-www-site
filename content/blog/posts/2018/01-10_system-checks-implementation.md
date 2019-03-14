@@ -84,4 +84,4 @@ A significant amount of time went into designing and integrating checks. It was 
 
 We’re excited to release new out-of-the-box checks for use with our agents and integrations. We also look forward to seeing how you use checks in new and different ways to better monitor your systems.
 
-Want to try System Checks for yourself? Start a 21-day free trial with Metricly today!
+Want to try System Checks for yourself? Start a [21-day free trial](/signup) with Metricly today!

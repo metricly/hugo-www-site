@@ -24,19 +24,19 @@ Quickly explore your AWS Bill with our new widget! This widget uses the [AWS Se
 
 The Period Comparison view enables you to select a current timeframe (day, month, 6 months, etc) and compare its previous time frame interval. For example, the below screenshot shows a **current 6 month period **of *May 16, 2018 -- November 15, 2018 *and a **previous 6 month interval** of *November 16, 2017 -- May 15, 2018***.**
 
-![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2018/11/cost-explorer-widget.png)
+![Period Comparison](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2018/11/cost-explorer-widget.png)
 
 ### Service Total
 
 The Service Total view displays a traditional bar graph that contains spend data corresponding with the designated time range.
 
-![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2018/11/CE-service-total.png)
+![Service total](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2018/11/CE-service-total.png)
 
 ### Doughnut
 
 The Doughnut view is great for comparing the spend of each service in relation to your overall AWS bill.
 
-![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2018/11/CE-doughnut.png)
+![Doughnut](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2018/11/CE-doughnut.png)
 
 ### Promoting a Culture of Savings
 

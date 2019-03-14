@@ -24,7 +24,7 @@ Navigation
 
 The Nav Bar has been streamlined to house all of your major actions. Let's go through them left to right. 
 
-![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2018/12/refresh-aws-service-cost-report-nav-bar.png)
+![Navigation Bar](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2018/12/refresh-aws-service-cost-report-nav-bar.png)
 
 -   **Report Title & Saved Reports**: Access any saved reports.
 -   **Time Frame**: Adjust report's examination period of your services with several intervals from *Latest Day* to *Year to Date*.
@@ -39,7 +39,7 @@ Configuration
 
 All configuration options have been centralized in the modal shown below.
 
-![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2018/12/refresh-aws-services-blog-configure.png)
+![Configuration options](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2018/12/refresh-aws-services-blog-configure.png)
 
 You can access this modal by clicking **CONFIGURE** in the navigation bar.
 

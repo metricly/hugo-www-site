@@ -25,7 +25,7 @@ Related articles:
 Lambda configuration appears to be very simple. The configuration for a Lambda function consists of specific memory allocation and a timeout value. The allocation of CPU capacity for the function is done proportionally to the amount of memory allocated. Thus, increased memory allocation also means increased CPU allocation, which can improve the performance of a processing-intensive Lambda function.
 
 
-![alt text](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2018/11/image4-300x288.png "post-image")
+!Lambda configuration](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2018/11/image4-300x288.png "post-image")
 
 
 The cost of a Lambda invocation is calculated based on the allocated memory multiplied by execution time. Execution time is measured in 100ms blocks and is always rounded up to the next full block. Therefore, a function which completes its execution in 102ms and a function which completes its execution in 189ms incur the same costs.
@@ -60,7 +60,7 @@ CloudWatch Logs for Process-Intensive Lambda Invocation
 
 This function illustrates the relationship between memory allocation and CPU allocation for a Lambda function. As I increased the memory allocation for the Lambda, I could see the processing time for the Lambda decrease significantly. When increasing the memory in incremental steps I could see the duration of the function decrease, while the memory used by the function remained consistently between 24 MB and 35 MB. It wasn’t until I allocated 3008 MB of memory that the function was able to execute in less than 100 ms.
 
-![alt text](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2018/11/image2.png "post-image")
+![Duration vs Memory allocation graph](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2018/11/image2.png "post-image")
 
 By maximizing memory allocation — and through it, the CPU allocation for the Lambda function — I was able to increase the speed of the function, which improves the user experience, but it has significant implications on the cost of each invocation.
 
@@ -68,7 +68,7 @@ There is a linear relationship between memory allocation and cost. On the AWS fr
 
 Let’s look at the same data contrasted with the cost for 100,000,000 invocations of the function to see the relationship between price and the memory allocated. The duration on this graph is the actual duration of the function to execute — while billing is done, rounded up to the next 100ms block — which results in some unusual costs relative to time and memory allocation.
 
-![alt text](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2018/11/image5.png "post-image")
+![Duration and Cost per 100m graph](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2018/11/image5.png "post-image")
 
 For this particular function, if we were to optimize for costs, we would see the function consistently taking more than a second per invocation — whereas if we were to optimize for speed, we could receive our results in less than 100ms, but it would cost almost twice as much.
 
@@ -79,7 +79,7 @@ What you should optimize for in a situation like this would depend on your busin
 ### Optimizing a Network-Intensive Lambda Function
 For this use case, we’re going to consider the following scenario. We have a Lambda function which performs an address validation function. The Lambda is invoked by a trigger that is activated whenever a new address record is added to a DynamoDB table. The Lambda validates aspects of the address updated in the original DynamoDB table, and the Lambda concludes its invocation by confirming successful processing of the update request.
 
-![alt text](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2018/11/image3.png "post-image")
+![Validation process](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2018/11/image3.png "post-image")
 
 As part of the validation process, the AddressValidator validates the Zip Code to ensure that it matches the standard 5-number or 5+4 number pattern required for US addresses. Once the Zip Code is validated, a call is made to a third-party service with the Zip Code to retrieve time zone and latitude and longitude coordinates for the Zip Code.
 
@@ -87,13 +87,13 @@ There are some critical differences between this Lambda and the one we used prev
 
 With a significant amount of the invocation duration of the Lambda being used to wait for external calls, this “wait time” limits the effect which increases the allocated memory and the related CPU power. This lack of effect is apparent when we view a sample of the duration vs. allocated memory for this Lambda function.
 
-![alt text](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2018/11/image7.png "post-image")
+![Duration vs Memory allocation 2nd graph](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2018/11/image7.png "post-image")
 
 When viewing logging statements generated within the Lambda function, the primary driver behind the variability shown in the chart above was due to differences in the response time from the third-party API.
 
 The relationship between memory allocation, duration, and cost further contrasts the differences between these two Lambda examples and the strategies that should be employed to optimize them. In this second example, a cost increase of up to 750% of the baseline invocation due to increase memory allocation results in negligible improvements to the duration of the Lambda.
 
-![alt text](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2018/11/image1.png "post-image")
+![Duration and Cost per 100m 2nd graph](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2018/11/image1.png "post-image")
 
 For a Lambda function (such as the second example), maintaining the baseline memory allocation is preferable, as optimizations need to be found by reducing the latency of network calls, or pursuing an asynchronous approach to performing the calls.
 
