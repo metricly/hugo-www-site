@@ -1,16 +1,17 @@
 ---
-author: "Mike Mackrory"
-date: "ADD DATE"
-description: "Understand an AWS vCPU vs ECU, and how they can help overcome the challenges presented by using virtual machines."
-title: "EC2 vCPU vs ECU—Everything You Need to Know"
-category: "DevOps"
+author: Mike Mackrory
+date: ADD DATE
+description: Understand an AWS vCPU vs ECU, and how they can help overcome the challenges
+  presented by using virtual machines.
+title: EC2 vCPU vs ECU—Everything You Need to Know
+category: DevOps
 url: "/ec2-vcpu-vs-ecu/"
-layout: "single"
-featured-image: ""
+layout: single
+featured-image: ''
 thumbnail-image: true
 featured: false
----
 
+---
 If you've deployed an application or service to the Amazon Web Service (AWS) cloud, you've probably made use of an [EC2 instance](/ec2-instances/). One of the decisions that you had to make before you could start a new instance, was which instance type to use. [Choosing an instance type](/ec2-instance-types/) can be a complicated process. AWS organizes their instance types into instance families, and within an instance family, there are varying sizes from micro to 32xlarge.
 
 Availability of instance types also varies from region to region, but the primary factor differentiating each instance type is a combination of:
