@@ -33,7 +33,7 @@ Reserved Instances allow users to reserve capacity ahead of time at a discounted
 
 You can determine the hourly price of an instance without using a tool if you visit the [AWS EC2 Pricing](https://aws.amazon.com/ec2/pricing/on-demand/) page. Selecting the Operating System and AWS Region will provide you with a list of matching instance types, organized by instance family and type. The hourly price is shown in the right-most column for each instance configuration.
 
-![](https://lh6.googleusercontent.com/2UEuT0YtGB6KkQKfyngsOpTzFbKrh1rqub9vLfv7qE4RjEnGOwlk1pPpixrQDD3tscvQF8jVTKqcN6sS_U1XJs02YspxKxUvU2MIHYUkfUV-glzFXghn_iF7iFWPlgajZtf3tnQK)
+![](/img/blog/uploads/aws-pricing-page.png)
 
 Fig. 1 Using the AWS EC2 Pricing Page
 
@@ -47,7 +47,7 @@ From the [AWS Pricing Calculator home page](https://calculator.aws/#/), I clicke
 
 A Quick estimate process and an Advanced estimate process are available. Then, the user is prompted to select an operating system, instance count and instance characteristics. What I liked about this tool was the functionality which allowed me to see different pricing options, and the ability to create a comprehensive estimate with different AWS services. I would have liked to have the ability to compare different instance types within a comparable price range and with similar capabilities.
 
-![](https://lh4.googleusercontent.com/omm9W0DcDuHaTbOhwoCkhy4219cV80WidQ16yIalO07FBhzNyqk8ux_LIwIKztSpRnRIDuckveTBuRiwnsf9gR3bPwxPPdKrG1ORWsXamlSYhdxvVVcsRl7-Gu3r8jw7tKAPBNAt)
+![](/img/blog/uploads/aws-calculator.png)
 
 Fig. 2 An Estimate with the New AWS Pricing Calculator
 
@@ -59,7 +59,7 @@ Moving from the AWS Pricing Calculator to the[ Pricing Tool available from Promp
 
 Sliders allow the user to select the number of days for the estimate, and the number of hours the instance will be in use each day. The tool is designed to compare On-Demand pricing with Reserved Instance pricing, and it accomplished this goal very well. Selecting similar criteria as the AWS calculator, I was able to build the comparison below, with significantly more ease than the AWS tool.
 
-![](https://lh3.googleusercontent.com/TgaYharpI_oyQFlCwHuQjUaeGyp22CM-oJ9BxIwplXQLOm8fMIkIVqyJKzwtlaoPqs9a1uAd0Ls1cF5KOJ1SgktPWfqopyHsip7VFXQBcsHRntA9fYwyOeJKMh0ZdbmzcgsuGUZa)
+![](/img/blog/uploads/prompt-cloud.png)
 
 Fig. 3 A Comparison of On-Demand vs. Reserved Pricing for a t2.large instance.
 
@@ -77,7 +77,7 @@ The search results are updated as options are selected, and the user can customi
 
 A search for a General Purpose Linux instance type in US-East-1 with 1-2 vCPUs and 4-8 GB of memory displayed 10 results which I could compare and contrast.
 
-![](https://lh3.googleusercontent.com/aEXoh-uPyJYH49JH7JEw-sMUDxK_GFcld3O1PF1otyWo_Auw6Jl9eVMKO73Gr8WmJJG1m5J2wpEyn2TEYCw73eqsMesDyOBnUbTbnbGaC6P8W0YIM36lpzSelOqGkr_q4W5dFYJr)
+![](/img/blog/uploads/metricly-ec2-pricing-tool.png)
 
 Fig. 4 Viewing General Purpose Instances with Specific Criteria in US-East-1
 
