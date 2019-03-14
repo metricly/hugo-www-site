@@ -7,3 +7,4 @@ staticDir = ["static", "blog-page/dist"]
   author = "author"
   category = "category"
   tag = "tags"
+metaDataFormat = "yaml"
