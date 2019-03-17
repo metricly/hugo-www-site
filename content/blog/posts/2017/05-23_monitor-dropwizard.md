@@ -17,7 +17,7 @@ Dropwizard's key features include:
 -   Google Guava, Logback, Hibernate Validator, Liquibase, Joda Time and many other useful libraries.
 -   Performance metrics and monitoring
 
-Out of all of those, the last one, **Performance Metrics and Monitoring**,is the one we're going to focus on in this article. We'll explore what is included in the metrics and monitoring package, and then look at how we can use [Metricly Java integration](https://help.netuitive.com/Content/Integrations/java.htm?Highlight=java) to push those metrics into the Metricly ecosystem, perform more advanced analysis, and create a more substantial and useful way to monitor Dropwizard web services.
+Out of all of those, the last one, **Performance Metrics and Monitoring**,is the one we're going to focus on in this article. We'll explore what is included in the metrics and monitoring package, and then look at how we can use [Metricly Java integration](https://docs.metricly.com/integrations/agents/java-agent/) to push those metrics into the Metricly ecosystem, perform more advanced analysis, and create a more substantial and useful way to monitor Dropwizard web services.
 
 A Very Basic Shipping Cost Service
 ----------------------------------
@@ -117,7 +117,7 @@ Next, click on the **Types** dropdown and select *Dropwizard.*
 
  ![Monitor Dropwizard: Select Type](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Select-Type-1.png)
 
-Finally, click on the **Metrics** dropdown. There are hundreds of [metrics being pushed from the application](https://help.app.netuitive.com/Content/Metrics/metrics_page.htm) every minute, and you can view them all at once if you want. Let's just monitor Dropwizard metrics related to the *calculate* endpoint. Select *Tree* as the view, and then open the com Item by clicking on the plus sign next to it. The tree follows the naming convention in the application so that you can drill all the way down to the *calculateShipping* endpoint.
+Finally, click on the **Metrics** dropdown. There are hundreds of [metrics being pushed from the application](https://docs.metricly.com/data-visualization/metrics/) every minute, and you can view them all at once if you want. Let's just monitor Dropwizard metrics related to the *calculate* endpoint. Select *Tree* as the view, and then open the com Item by clicking on the plus sign next to it. The tree follows the naming convention in the application so that you can drill all the way down to the *calculateShipping* endpoint.
 
 ![Monitor Dropwizard: Select Metrics](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Select-Metrics-1.png)
 
@@ -145,7 +145,7 @@ The 99th percentile is a measure of response time, and in our case is being meas
 
 ![Monitor Dropwizard: Metrics Dashboard](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Metrics-Dashboard-1.png)
 
-This chart has now been added to your [monitoring dashboard](https://help.app.netuitive.com/Content/Dashboards/dashboards.htm). While we're in the metrics section, though, let's add a couple more metrics to monitor Dropwizard. First, add the count metrics for the calculateShipping endpoint while we have it on the screen.
+This chart has now been added to your [monitoring dashboard](https://docs.metricly.com/data-visualization/dashboards/). While we're in the metrics section, though, let's add a couple more metrics to monitor Dropwizard. First, add the count metrics for the calculateShipping endpoint while we have it on the screen.
 
 Next, change the Metric type to *jvm.* We'll look at:
 
@@ -201,6 +201,6 @@ We'll name this policy the **Shipping Service Error Alert**. Set the category to
     -   Email
         -   Your email address
 
-Add a description under the *Description* tab if you would like, and then click on **Save.** You now have a [Metricly policy](https://help.app.netuitive.com/Content/Policies/policies.htm) which will monitor Dropwizard error rates and email you whenever the errors returned by the service exceed the good responses for more than a five-minute period.
+Add a description under the *Description* tab if you would like, and then click on **Save.** You now have a [Metricly policy](https://docs.metricly.com/alerts-notifications/policies/) which will monitor Dropwizard error rates and email you whenever the errors returned by the service exceed the good responses for more than a five-minute period.
 
-We went through a couple of topics pretty quickly here. If you would like to learn more, the [Metricly Help](https://help.app.netuitive.com/Content/home.htm) documentation is excellent.
+We went through a couple of topics pretty quickly here. If you would like to learn more, the [Metricly Help](https://docs.metricly.com/) documentation is excellent.

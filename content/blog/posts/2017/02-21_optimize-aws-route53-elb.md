@@ -57,7 +57,7 @@ It's also easier to deploy your SSL certs to your Elastic Load Balancers using [
 
 Metricly provides metrics on ELBs, and these can all be seen [alongside](/getting-started-metricly-aws/) other AWS metrics such as EC2 and EBS.
 
-*Editor's note: In addition to ELB, EC2, and EBS, Metricly offers support for a number of other AWS products. For more information, see* [*our documentation*](https://help.netuitive.com/Content/Integrations/aws.htm)*.*
+*Editor's note: In addition to ELB, EC2, and EBS, Metricly offers support for a number of other AWS products. For more information, see* [*our documentation*](https://docs.metricly.com/integrations/aws-integration/)*.*
 
 Optimize AWS Availability and Performance
 -----------------------------------------

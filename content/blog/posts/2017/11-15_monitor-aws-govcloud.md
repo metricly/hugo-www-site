@@ -10,7 +10,7 @@ layout: "single"
 
 When you're supporting computer systems, insights into what is happening within the system are crucial in the quest to ensure that everything is running efficiently---with warnings if conditions begin to degrade. If you're supporting Linux-based systems, you use CollectD or a similar metrics agent to monitor the machine and to report key metrics about the performance of the instance, the state of the system, and your applications themselves. But if you're trying to monitor Windows, Collectd isn't an option. There is, however, another solution: the [Metricly Windows monitoring agent](https://docs.metricly.com/integrations/windows).
 
-In this article, I'll introduce you to the Metricly Windows monitoring agent, and show you how to use the agent to push metric data into the [Metricly platform](/product). I'm also going to walk you through why using the Metricly platform will make your jobs as an engineer significantly easier through Metricly's [preconfigured dashboards and policies](/aws-monitoring-best-practices) to monitor Windows.
+In this article, I'll introduce you to the Metricly Windows monitoring agent, and show you how to use the agent to push metric data into the [Metricly platform](/aws-cost-tool). I'm also going to walk you through why using the Metricly platform will make your jobs as an engineer significantly easier through Metricly's [preconfigured dashboards and policies](/aws-monitoring-best-practices) to monitor Windows.
 
 Finally, we'll talk about how you can customize each of those to provide a level of comfort with your support duties allowing you and your team to sleep peacefully at night, and focus on developing better applications during the day.
 
@@ -91,9 +91,9 @@ Starting with a Clean Slate: Microsoft Windows Server 2016
 
 With an active connection to a clean Windows instance, return to your local workstation and log into your Metricly account. Navigated to the **Integrations** page and select **Windows** from the list of available integrations.
 
-![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/11/2-Metricly-Windows-Inetgration.png)
+![Windows Integration](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/11/2-Metricly-Windows-Inetgration.png)
 
-Windows Integration
+
 
 You'll be taken to the Windows Integration page, which will include your Metricly API key and a personalized install command. At the top of the page, you'll notice a couple of toggle controls.
 
@@ -102,8 +102,7 @@ The first option, **Packages**, initiates the creation of preconfigured dashboar
 The second option, **API Key**, will become enabled once you have the integration successfully installed and running on your target machine.
 
 ![Monitor windows with metricly](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/11/3-Metricly-Windows-Agent-Installation.png)
-
-Personalized Agent Installation Instructions
+*Personalized Agent Installation Instructions*
 
 Starting with step one, navigate to the list of agent distributions and select the latest version for your particular instance type. It is important to choose the most current version of the agent to ensure that you get the latest updates and enhancements to the agent.
 
@@ -112,8 +111,7 @@ Copying the URL, return to your RDP session and open Internet Explorer. Paste th
 Once you have downloaded the file, open up a **Windows PowerShell** terminal, change to the Downloads folder, and run the command provided in step 3.
 
 ![Executing the Install Command for windows the monitoring agent in PowerShell](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/11/4-Executing-the-Install-Command-in-PowerShell.png)
-
-Executing the Install Command in PowerShell
+*Executing the Install Command in PowerShell*
 
 If you don't have a proxy enabled in your environment, you can skip step 4, but if your environment includes a web proxy, you can follow the instructions [here](https://docs.metricly.com/integrations/windows#proxy-configuration) to configure the proxy.
 
@@ -122,8 +120,7 @@ Once the agent is installed and the optional step of configuring the proxy is co
 Open the **Windows Task Manager** and click on the **Services** tab. You'll be looking for a service called *CollectdWinService* or a variant depending on the version of the agent installed. Right-click the service and select **Start**. If you need to make additional changes to the configuration of the agent, you'll want to come back to the task manager and restart the service using the same steps.
 
 ![Starting the windows monitoring agent in Task Manager](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/11/Starting-the-Agent-in-Task-Manager.png)
-
-Starting the Agent in Task Manager
+*Starting the Agent in Task Manager*
 
 Exploring the Preconfigured Dashboards and Policies
 ---------------------------------------------------
@@ -132,25 +129,21 @@ It will take a few minutes before metrics will begin to flow from the instance t
 
 ![Windows Quick Metrics Filter](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/11/Windows-Quick-Metrics-Filter.png)
 
-Windows Quick Metrics Filter
 
 And just like that, you'll see statistics for memory and CPU usage already being collected and analyzed.
 
 ![Monitor Windows WIth Basic Metrics for CPU and Memory Usage](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/11/Basic-Metrics-for-CPU-and-Memory-Usage.png)
-
-Basic Metrics for CPU and Memory Usage
+*Basic Metrics for CPU and Memory Usage*
 
 Let's navigate over to the Inventory page, and have a look at what other metrics are available. A list of all available sources will appear on the left of the screen. I had some other AWS resources visible on mine, but was able to identify my particular instance by its AWS name. Clicking on it, you'll be able to see a summary of the available metrics, and a link to ***View all Metrics for this Element****.*
 
 ![Inventory Summary for a Windows Element](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/11/Inventory-Summary-for-a-Windows-Element-e1511792005524.png)
-
-Inventory Summary for a Windows Element
+*Inventory Summary for a Windows Element*
 
 For a different view of these metrics, let's navigate to the **Dashboards** page. You'll observe that you have a new dashboard available called ***Windows Summary***, created by research@metricly.com. Let's check it out and see what it displays.
 
 ![Preconfigured Dashboard for Windows Servers](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/11/Preconfigured-Dashboard-for-Windows-Servers.png)
-
-Preconfigured Dashboard for Windows Servers
+*Preconfigured Dashboard for Windows Servers*
 
 The default dashboard includes:
 
@@ -165,8 +158,7 @@ The default dashboard includes:
 Let's leave this dashboard and navigate to the **Policies** page to see what other preconfigured tools we have by default. If you scroll down, you should see a list of related policies to monitor Windows.
 
 ![Policies Configured Automatically for Windows Instances](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/11/Policies-Configured-Automatically-for-Windows-Instances.png)
-
-Policies Configured Automatically to monitor Windows Instances
+*Policies Configured Automatically to monitor Windows Instances*
 
 If we click into one of these policies, we can learn more about it, and set up a notification to alert us when a critical error is encountered. We'd like to be notified if the server experiences unusually heavy CPU Load, so let's click on ***Windows -- Heavy CPU Load***. This Policy has a red dot indicating that it is a critical event, rather than an informational event.
 

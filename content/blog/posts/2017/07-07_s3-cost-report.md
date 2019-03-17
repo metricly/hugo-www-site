@@ -30,4 +30,4 @@ With this report, you gain key insights into your S3 spend, and can take action 
 
 * * * * *
 
-*Want to see where you can save? Try our [S3 cost report free for 21 days](http://app.netuitive.com/signup).*
+*Want to see where you can save? Try our [S3 cost report free for 21 days](/signup).*

@@ -16,14 +16,14 @@ S3 Cost Factors
 
 S3 costs are based on where and what type of storage you use and the size and quantity of data objects that exist in that storage. The cost is also affected by how often that storage is accessed and how much data is transferred in or out of the storage. Additional charges may also be incurred if transfer acceleration is used and if data replication between regions is enabled.
 
-While the beauty of S3 is that you only pay for what you use, once you start using S3 for anything more than a couple of files, the complexity of the cost model increases exponentially. Let's look at how we can leverage the [tools available from Metricly](https://metricly.com/product) to gain insights into how these different factors affect our S3 costs, and how we can use them to improve our management of the same.
+While the beauty of S3 is that you only pay for what you use, once you start using S3 for anything more than a couple of files, the complexity of the cost model increases exponentially. Let's look at how we can leverage the [tools available from Metricly](/aws-cost-tool) to gain insights into how these different factors affect our S3 costs, and how we can use them to improve our management of the same.
 
 Gaining Insight into S3 Costs
 -----------------------------
 
-The S3 Cost Report is currently offered for Beta testing as part of the Metricly application. If you don't already have an account, Metricly offers a [21-day free trial](http://app.netuitive.com/signup).
+The S3 Cost Report is currently offered for Beta testing as part of the Metricly application. If you don't already have an account, Metricly offers a [21-day free trial](/signup).
 
-Once you've logged into your account, you can navigate to the report by clicking on your account name/email address in the top right corner of the application, and selecting ***Beta* **from the list of options.
+Once you've logged into your account, you can navigate to the report by clicking on your account name/email address in the top right corner of the application, and selecting ***Beta*** from the list of options.
 
 ![S3 Costs: S3 Cost Report Tab](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/08/Pasted-image-at-2017_08_15-03_40-PM-1.png)
 
@@ -119,4 +119,4 @@ S3 costs are based on the size of your objects. Consider whether you can perform
 
 * * * * *
 
-*Explore your S3 costs today with Metricly's [21-day, no-obligation free trial](http://app.netuitive.com/signup).*
+*Explore your S3 costs today with Metricly's [21-day, no-obligation free trial](/signup).*

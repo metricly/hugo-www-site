@@ -23,8 +23,8 @@ The free CloudWatch tier polls once every five minutes, and the premium (paid) t
 
 But agent-based solutions go much further. They give you:
 
--   Increased flexibility in creating notification alerts based on custom alarms. For example, Metricly has a wide variety of [preset policies and alarms](https://help.netuitive.com/Content/Policies/DefaultPolicies/default_policies.htm).
--   Better [out-of-the-box dashboards](/aws-monitoring-best-practices/), which are fed by [analytics](https://hlp.app.netuitive.com/Content/Metrics/Analytics/analytics.htm) based on trends around how the entire solution and infrastructure behave over time. CloudWatch doesn't provide in-depth analytics.
+-   Increased flexibility in creating notification alerts based on custom alarms. For example, Metricly has a wide variety of [preset policies and alarms](https://docs.metricly.com/alerts-notifications/policies/default-policies/).
+-   Better [out-of-the-box dashboards](/aws-monitoring-best-practices/), which are fed by analytics based on trends around how the entire solution and infrastructure behave over time. CloudWatch doesn't provide in-depth analytics.
 
 Agentless Monitoring Is More Complex Than It Seems
 --------------------------------------------------

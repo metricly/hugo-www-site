@@ -18,7 +18,7 @@ Even if you *could* look through all those rows, further metric data is needed t
 Exploring Individual AWS EC2 Costs
 ----------------------------------
 
-To solve this issue, [Metricly](/product) offers a [detailed EC2 cost report](https://help.netuitive.com/Content/Reports/ec2_cost_report.htm) that offers five different views of the cost *and* utilization of your EC2 instances. When key performance metrics are compared with cost on an instance-by-instance basis, it's easy to spot cost-saving and other optimization opportunities.
+To solve this issue, [Metricly](/aws-cost-tool) offers a detailed EC2 cost report that offers several different views of the cost *and* utilization of your EC2 instances. When key performance metrics are compared with cost on an instance-by-instance basis, it's easy to spot cost-saving and other optimization opportunities.
 
 Here are the five views contained in the report:
 
@@ -30,6 +30,7 @@ Here are the five views contained in the report:
 | Total Cost Pareto | Pareto chart representation of the EC2 cost categories in use in your environment. |
 | Cost vs. Utilization Scatter | Scatterplot displaying the cost of each instance set against a choice of utilization dimensions for that instance. |
 
+___
 For the most precise metric data, we recommend you set up an AWS Cost Savings instance, which will pull your AWS billing data into Metricly. If you choose not to do this, you can still use the EC2 cost report -- but the data will be an estimate and won't include data transfer costs or discounts for reserved instances etc.
 
 All of these reports use CPU Utilization Percentage data as a default metric. You can also choose the Active Hours metric or, if you have a Metricly agent installed on your EC2 instances, you can also choose Memory Utilization Percent, Disk I/O Percent or Network I/O Percent.

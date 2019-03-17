@@ -13,15 +13,13 @@ Introduction
 
 ##### About The *DevOps Culture* Series
 
-*DevOps Culture at Metricly* will be an ongoing series that gives you a closer look at the way we think and work at Metricly. Being a truly DevOps oriented company, we put a culture of transparency and collaboration at the forefront of what we do. It results in greater trust from our customers, happier employees, and ultimately a [better monitoring tool](/product) for all to enjoy.
+*DevOps Culture at Metricly* will be an ongoing series that gives you a closer look at the way we think and work at Metricly. Being a truly DevOps oriented company, we put a culture of transparency and collaboration at the forefront of what we do. It results in greater trust from our customers, happier employees, and ultimately a [better monitoring tool](/aws-cost-tool) for all to enjoy.
 
 ##### What is DevOps Culture?
 
 DevOps is a term rapidly growing in use by technology & SaaS companies to describe the way in which they work. In essence DevOps culture is used to describe the breaking of barriers between Development and Operations who traditionally have been two separate silos that did not communicate nearly enough. DevOps also combines tools, development practices, and cultural ideas that can increase the velocity of which companies deliver their product. This speed helps to better serve customers and compete more effectively in the market.
 
 ![DevOps Culture](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/12/Metricly_graphics-development-operations-1024x727.png)
-
-What is DevOps?
 
 ##### What We'll Cover
 
@@ -36,31 +34,30 @@ Recently, we've added more cloud monitoring consultants to our team who reach ou
 
 ![DevOps Culture at Metricly using slack](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/12/Screen-Shot-2017-12-21-at-2.03.59-PM-1024x386.png)
 
-Manually alerting through slack
-
 We're a nimble team that has members working remote often, so keeping up with who was next in line became cumbersome. This resulted in confusion on who was next in line to reach out, wasted time going through manual processes, and delayed customer assistance. How is this significant? Well, it became easy for connecting with the signup to be delayed, or missed altogether.
 
 ##### The Idea
 
-Almost every piece of information that we see at Metricly runs through Slack. Naturally we wanted a solution that was extremely easy to use and view through chat, much like how our own users love [sending monitoring alerts to Slack](/product#alerts-and-notifications). We decided on a whim to try building a Slackbot of our own that could help keep the trial signups organized by assigning and alerting a consultant who could quickly engage with the user. Only a single button click would be needed, avoiding the hassle of checking lists and potentially delaying user assistance.
+Almost every piece of information that we see at Metricly runs through Slack. Naturally we wanted a solution that was extremely easy to use and view through chat, much like how our own users love sending monitoring alerts to Slack. We decided on a whim to try building a Slackbot of our own that could help keep the trial signups organized by assigning and alerting a consultant who could quickly engage with the user. Only a single button click would be needed, avoiding the hassle of checking lists and potentially delaying user assistance.
 
 ##### Building The Bot
 
 To do this we used Slack's Event, and Web APIs. The idea was that when a new user came in, we could add a certain reaction to the new signup notification in Slack. This would trigger the bot to respond, tagging the rep that was next in line to assist. To keep the bot simple we decided to use Node.JS (since I already knew JavaScript). To tag a member of our team in Slack when a certain reaction was added we used:
 
-// Attach listeners to events by Slack Event "type". See: https://api.slack.com/events/message.im\
-slackEvents.on('reaction_added', (event)=> {\
-if (ifReactionApplicable(event.reaction, event.item.channel)) {\
-let teamMember = getNextTeamMember();\
-let message = `@${teamMember} YOU'RE UP!`;
+Attach listeners to events by Slack Event "type". See: https://api.slack.com/events/message.im 
+
+    slackEvents.on('reaction_added', (event)=> {\
+    if (ifReactionApplicable(event.reaction, event.item.channel)) {\
+    let teamMember = getNextTeamMember();\
+    let message = `@${teamMember} YOU'RE UP!`;
 
 But what if someone added this as a mistake? That would cycle through the list... Luckily Slack had an answer for that, so we added:
 
-slackEvents.on('reaction_removed', (event)=> {\
-if (ifReactionApplicable(event.reaction, event.item.channel)) {\
-let teamMember = getCurrentTeamMember();\
-index -= 1;\
-let message = `@${teamMember} YOU GET A SECOND LIFE`;
+    slackEvents.on('reaction_removed', (event)=> {\
+    if (ifReactionApplicable(event.reaction, event.item.channel)) {\
+    let teamMember = getCurrentTeamMember();\
+    index -= 1;\
+    let message = `@${teamMember} YOU GET A SECOND LIFE`;
 
 With this we had the basis of when someone should be assigned to a new signup, who it should be assigned to, and how to take this assignment away if it was a mistake.
 

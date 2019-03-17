@@ -28,7 +28,7 @@ These four items help eliminate potential project bottlenecks so that your curre
 
 The first and most basic step to right sizing is creating a well defined project goal. A large environment often consists of several different applications, web servers and databases, all relying on various combinations of spot, reserved, and on-demand instances. Here's a preview of what your environment could look like before narrowing your scope down to just one application:
 
-![](https://lh3.googleusercontent.com/VWXnY7dzABG15HfoM8cW4CiFBPuE5mrxJhfS_4g1yimjWH7hvI-mu0EtThBUVpYbAc7j4SKRrKjERtZFQNKguQ8JN09Iq-x93iWGMvLGLOBQ2I5pJLCZ2f2Lftqce-9dO6XBP1zg)
+![Cost vs CPU ec2 recommendations](https://lh3.googleusercontent.com/VWXnY7dzABG15HfoM8cW4CiFBPuE5mrxJhfS_4g1yimjWH7hvI-mu0EtThBUVpYbAc7j4SKRrKjERtZFQNKguQ8JN09Iq-x93iWGMvLGLOBQ2I5pJLCZ2f2Lftqce-9dO6XBP1zg)
 
 That's a lot of instances (and sizing opportunities) to take in all at once. So, where do you start? Start by asking yourself these questions:
 
@@ -56,25 +56,25 @@ AWS CloudWatch provides utilization metrics for CPU, and I/O utilization for eac
 
 Metricly's[ EC2 Recommendation Report](https://docs.metricly.com/reports/reports-ec2-recommendations/) ingests instance usage data from Amazon CloudWatch to analyze your historic capacity usage and formulate ideal instance candidates. These sizing recommendations are further adjusted based on your chosen target utilization levels, data aggregation method (ex. Min, max, average or 95 percentile), and a few other other constraints that can be added.
 
-![](https://lh6.googleusercontent.com/5OoD9sMseTQkwz1DXSR5YAC9CgZvMBhqGAQXrAowkKK3tYnqewHTkfm7G3X332w7ybWt4MQ4Os7VV0B1Hs4oswi6ratO8n0pK7fJ25KLuWhHpumCEGnQv16av6d2_WuK9bnAhbdN)
+![EC2 Recommendation Report](https://lh6.googleusercontent.com/5OoD9sMseTQkwz1DXSR5YAC9CgZvMBhqGAQXrAowkKK3tYnqewHTkfm7G3X332w7ybWt4MQ4Os7VV0B1Hs4oswi6ratO8n0pK7fJ25KLuWhHpumCEGnQv16av6d2_WuK9bnAhbdN)
 
 The screenshot above shows a user searching for EC2 recommendations that allow target CPU and Memory utilizations to be at 95% on average, 95% of the time. In the event that an agent is not deployed to measure memory utilization then a manual assumption can be made for purposes for Metricly's recommendation. In other words, you can tell the recommendation engine that it should assume that 80% (as an example) of the memory was used on average over the past week.Whether you use an agent to measure memory utilization or make an assumption manually, both are represented visually by either triangles and circles to give you context, like so:
 
-![](https://lh6.googleusercontent.com/TvPeigdVd2meKikyIMqcxFijZK5oUlm0TnjYK8jS_2owC-HZXS-R3oaJDvHVl4AK-E1G9hH3Z8RN0X25gRD75qLHaVHK6jDcSRyupXT0tpXIjJbSJiVe233jNqvVIY2-9eNplGXL)
+![Cost Vs CPU Utilization graph](https://lh6.googleusercontent.com/TvPeigdVd2meKikyIMqcxFijZK5oUlm0TnjYK8jS_2owC-HZXS-R3oaJDvHVl4AK-E1G9hH3Z8RN0X25gRD75qLHaVHK6jDcSRyupXT0tpXIjJbSJiVe233jNqvVIY2-9eNplGXL)
 
 Adjust the constraints used by Metricly's recommendation engine to strike a balance between savings and peace of mind.
 
 ### Selecting EC2 sizing candidates based on capacity utilization & needs
 
-Once you have established usage expectations for your new instances, you can draw conclusions about the kind of resources they require. Perhaps the general purpose EC2 family is not an ideal fit for your application's workload: it needs more memory, but less CPU. Compare the prices of memory optimized instance types and sizes against the original general purpose selection. You can do this and price other instances with free online tools like[ Metricly's EC2 Pricing Calculator](https://tools.metricly.com/).
+Once you have established usage expectations for your new instances, you can draw conclusions about the kind of resources they require. Perhaps the general purpose EC2 family is not an ideal fit for your application's workload: it needs more memory, but less CPU. Compare the prices of memory optimized instance types and sizes against the original general purpose selection. You can do this and price other instances with free online tools like[Metricly's EC2 Pricing Calculator](https://tools.metricly.com/).
 
 Metricly's EC2 Recommendation report automates this research phase and proposes new types that factor in target utilizations, instance family constraints, and size needs.
 
-![](https://lh4.googleusercontent.com/eZxkvGRm8aZebx88d3su0DHs7lD7aOHtH9C8oQHPgvb5L_-l32PozJE-vw9_XBhZPGXpUvY7EJN7f-ry85fVNXwoYhj02BNA9nsknwW4S9geE1CwBmuz7Qr0kAo2dqUy1Sgl6e02)
+![Metricly EC2 Recommendation report - Cost vs CPU ](https://lh4.googleusercontent.com/eZxkvGRm8aZebx88d3su0DHs7lD7aOHtH9C8oQHPgvb5L_-l32PozJE-vw9_XBhZPGXpUvY7EJN7f-ry85fVNXwoYhj02BNA9nsknwW4S9geE1CwBmuz7Qr0kAo2dqUy1Sgl6e02)
 
 In this example, we have constrained the EC2 Recommendation report to look for any candidates matching the r instance type. Notice, however, that the proposed type is an r5a.large. The a means that this instance uses an AMD chipset instead of intel; although these are indeed about 10% cheaper than a standard r instance, it is important to make sure your needs are compatible. If you aren't sure, filter out AMD instances and compare. Adding and re-factoring constraints to discover other sizing opportunities is quick and easy.
 
-![](https://lh3.googleusercontent.com/ekfWQzof90V5i7Nac2mieFrWvsdqbPJS9lWvri6d2HqOyuuMAdrLyoW3ZE961jDIMiXFIJKa1JeFuM-KLHAbSKOcVf5P2c6taGyKuzXZoQjjYHAwpbGBDsxpZCYOE1wkmWqJRZrM)
+![Filter out AMD instances](https://lh3.googleusercontent.com/ekfWQzof90V5i7Nac2mieFrWvsdqbPJS9lWvri6d2HqOyuuMAdrLyoW3ZE961jDIMiXFIJKa1JeFuM-KLHAbSKOcVf5P2c6taGyKuzXZoQjjYHAwpbGBDsxpZCYOE1wkmWqJRZrM)
 
 Continue dialing in your constraints and target utilization until you are satisfied with the savings and capacity offered by the proposed recommendation. If using Metricly's EC2 Recommendation Report, these results can be emailed or exported and the report saved to share with stakeholders. You can also set up a daily email to stay on top of rightsizing opportunities.
 

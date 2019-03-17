@@ -10,7 +10,7 @@ layout: "single"
 
 As the year comes to a close and most begin to think about New Year's resolutions, Metricly buckled down and released several new features!
 
-Metricly's December 2016 release highlights include Microsoft Azure monitoring; updated Chef, Salt, and Ansible integrations; and the Idle EC2 Daily Report card. Read more...
+Metricly's December 2016 release highlights include Microsoft Azure monitoring; updated Chef, Salt, and Ansible integrations; and the Idle EC2 Daily Report card.
 
 Microsoft Azure Monitoring
 --------------------------
@@ -19,16 +19,16 @@ Microsoft Azure Monitoring
 
 We intend to provide the same breadth (and depth) of our performance and capacity monitoring and analytics for the various Microsoft Azure services. We have launched our Azure integration with Quick Start [monitoring packages](/aws-monitoring-best-practices/) for Azure Virtual Machines and Azure Application Gateways which take a few minutes to activate. We're planning to roll out even more support for varying Azure services in the coming months, so stay tuned!
 
-To read more about our Azure integration, check out our [blog](/microsoft-azure-monitoring/) and the [help docs](https://help.netuitive.com/Content/Datasources/Netuitive/microsoft_azure.htm).
+To read more about our Azure integration, check out our [blog](/microsoft-azure-monitoring/) and the [help docs](https://docs.metricly.com/integrations/microsoft-azure/).
 
 Updated Chef, Salt, and Ansible Integrations
 --------------------------------------------
 
 [![December 2016 Release Highlights: Ansible, Chef, SaltStack](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/dec_rnh_chef-salt-ans.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/dec_rnh_chef-salt-ans.png)
 
-Our developers and user community have created a [Chef](https://www.chef.io/chef/) cookbook, a [Salt](https://saltstack.com/) pillar, and an [Ansible](https://www.ansible.com/) playbook, which are all available on our [Github Community page](https://github.com/Netuitive/Netuitive_PHP_Client). You can now install, update and configure our Linux agent across your entire infrastructure environment as part of your standard configuration management processes. Help documentation and in-app integration cards are available for each technology so you can follow the instructions to get you started.
+Our developers and user community have created a [Chef](https://www.chef.io/chef/) cookbook, a [Salt](https://saltstack.com/) pillar, and an [Ansible](https://www.ansible.com/) playbook, which are all available on our [Github Community page](https://github.com/metricly/netuitive-PHP-client). You can now install, update and configure our Linux agent across your entire infrastructure environment as part of your standard configuration management processes. Help documentation and in-app integration cards are available for each technology so you can follow the instructions to get you started.
 
-Be sure to check out Netuitive's [Github Community page](https://github.com/Netuitive/Netuitive_PHP_Client) to see the readmes and the source code; don't be afraid to reach out and contribute either!
+Be sure to check out Netuitive's [Github Community page](https://github.com/metricly/netuitive-PHP-client) to see the readmes and the source code; don't be afraid to reach out and contribute either!
 
 Detailed Collection Status for the Inventory Explorer
 -----------------------------------------------------

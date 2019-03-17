@@ -28,4 +28,4 @@ In the report view below, the change of data is observed over the last 30 days, 
 
 ![RDS Cost Report: 30 Day Cost Report](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/30DayCostReport-1024x690.png)
 
-Our new RDS cost report brings automated capacity and cost analysis to our robust [AWS monitoring](/product), which provides preset summary dashboards of your key performance indicators, and leverages behavior learning technology along with pre-configured alerting policies. Ready to see your RDS costs? It's [free for 21 days.](/signup)
+Our new RDS cost report brings automated capacity and cost analysis to our robust [AWS monitoring](/aws-cost-tool), which provides preset summary dashboards of your key performance indicators, and leverages behavior learning technology along with pre-configured alerting policies. Ready to see your RDS costs? It's [free for 21 days.](/signup)

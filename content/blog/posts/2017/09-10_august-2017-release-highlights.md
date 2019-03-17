@@ -25,7 +25,7 @@ Filter Metrics Using Regular Expression
 
 [Regular Expression](https://en.wikipedia.org/wiki/Regular_expression) (a.k.a. Regex) is popular in the DevOps community not only because its syntax is easy to remember but because if offers amazing flexibility for selecting exactly the metrics that you want in a sea of thousands of metrics that you are collecting.
 
-For example, [our Linux agent](https://help.netuitive.com/Content/Integrations/linux.htm) collects a metric that measures the average wait in milliseconds for accessing a disk on a given server. If you have dozens, hundreds, or thousands of disks in your environment, and you want to select them without having to click one at a time, then you can use a regular expression. In this case, the regex would be: iostat\..+?\.await.
+For example, [our Linux agent](https://docs.metricly.com/integrations/agents/linux-agent/) collects a metric that measures the average wait in milliseconds for accessing a disk on a given server. If you have dozens, hundreds, or thousands of disks in your environment, and you want to select them without having to click one at a time, then you can use a regular expression. In this case, the regex would be: iostat\..+?\.await.
 
 You can then narrow down your selection further by using a tag for specific servers such as app:dbc (in this case dbc stands for database cluster). This tag may be appended in AWS, be part of the OS image, or appended by your configuration management tool such as Chef or Ansible. The screen shot below shows 24 metrics selected using the criteria above. Creating new dashboards has never been faster!
 

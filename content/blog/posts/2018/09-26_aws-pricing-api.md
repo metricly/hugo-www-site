@@ -22,10 +22,10 @@ Before we get started, if your use-case happens to be EC2 rightsizing, I recomme
 
 Skip to section:
 
-- [Finding the EC2 SKU Report](/aws-pricing-api/#finding)
-- [Analyzing the Information in the Report](/aws-pricing-api/#analyzing)
-- [Using the Report to Optimize Costs and Performance](/aws-pricing-api/#using)
-- [The Metricly EC2 Recommendation Report](/aws-pricing-api/#recommendation)
+- [Finding the EC2 SKU Report](#finding)
+- [Analyzing the Information in the Report](#analyzing)
+- [Using the Report to Optimize Costs and Performance](#using)
+- [The Metricly EC2 Recommendation Report](#recommendation)
 
 <br/>
 In this article, we’ll first explain how to use the service index, which you can download in JSON format from the following link: https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/index.json (approx. 7 KB).
@@ -34,7 +34,7 @@ Second, we’ll trace down to the EC2 SKU report, which lists each possible conf
 
 To conclude, we’ll spend some time dissecting the report, identifying critical information fields, and then we’ll wrap it up by considering how the engineers at Metricly have used this information to help their customers reduce costs and take an informed and intelligent approach to provisioning their environments.
 
-### Finding the EC2 SKU Report
+### <h3 id="#finding">Finding the EC2 SKU Report</h3> 
 
 I’ll share the specific steps I used to locate the EC2 SKU report so you can find it yourself, and so you can replicate those steps if you’d like to dive into pricing information for other AWS offerings. The files are all presented in JSON format, which makes them easy to understand for humans and machines alike. After downloading the index file listed above, I was able to locate the AmazonEC2 object.
 
@@ -78,7 +78,7 @@ We’ll start by downloading the current pricing policy.
 
 <https://pricing.us-east-1.amazonaws.com/offers/v1.0/aws/AmazonEC2/current/index.json> (376,136 KB at the time of writing)
 
-### Analyzing the Information in the Report
+### <h3 id="#analyzing">Analyzing the Information in the Report</h3>
 
 The file I downloaded had over 10 million lines of data. Some text editors can handle files of this size; others may truncate the file, or experience runtime errors. Other options could include:
 
@@ -159,13 +159,13 @@ If your organization is large enough and has negotiated for a discounted rate fo
 
 Finally, it is important to consider that terms change regularly and that your analysis will need to be routinely conducted if you wish to remain current. Considering the date ranges within the versions index, it appears that modifications are made at the beginning of each month, although some versions did cover multiple months. Consumers can also subscribe to an SNS topic which will publish notifications when prices are modified.
 
-### Using the Report to Optimize Costs and Performance
+###  <h3 id="#using">Using the Report to Optimize Costs and Performance</h3>
 
 The real power in having a report which you can query programmatically is that you can use it to drive processes for the optimization of usage of resources and to manage costs. Combining this information with usage metrics of your AWS resources will allow you to manage your AWS infrastructure better.
 
 Combining all of this data into a consolidated system and writing the logic and functions to support reporting and optimization algorithms will require the commitment of engineering resources. If this is an endeavor your organization is interested in, but you lack the available resources to complete and maintain this system, I’d like to offer an alternative—the EC2 Recommendation report from Metricly.
 
-### The Metricly EC2 Recommendation Report
+### <h3 id="#recommendation">The Metricly EC2 Recommendation Report</h3>
 
 I’ve written about the EC2 Recommendation report before, and you can learn more about it from their [AWS sizing guide](/aws-sizing-tool/). The EC2 Recommendation report combines performance information gathered from your AWS account and the resources you’re using. A control panel allows you to specify which metrics you’d like to optimize for, as well as the level of risk your organization is willing to assume to optimize usage and costs.
 

@@ -12,7 +12,7 @@ Ruby on Rails is one of the most commonly used web application frameworks on the
 
 At a high level, Metricly's Ruby on Rails agent is an extension of their Ruby agent that acts as a no-code solution to monitoring any existing Ruby on Rails application. To understand exactly how it works, though, let's take a look at integrating the agent to a pre-built Rails application.
 
-[![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/rails-logotransparent.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/rails-logotransparent.png)
+[![Ruby on Rails logo](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/rails-logotransparent.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/rails-logotransparent.png)
 
 Introducing Discourse
 ---------------------

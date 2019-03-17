@@ -9,12 +9,12 @@ layout: "single"
 ---
 
 
-When we talk to DevOps teams, we hear a lot about time -- the limited time a small team has at its disposal, the increased amount of time it takes to use traditional monitoring, and the ways in which automation and useful out-of-the-box solutions help bridge the gap. Our engineering team certainly understands the value of time, and they've been working hard to not only make [Metricly](/product) easy to use, but to limit the amount of time you need to spend keeping your monitoring's configuration aligned with changes in your environment. Recently, they've brought those goals to our monitoring policy page. Here are some of the time-saving improvements!
+When we talk to DevOps teams, we hear a lot about time -- the limited time a small team has at its disposal, the increased amount of time it takes to use traditional monitoring, and the ways in which automation and useful out-of-the-box solutions help bridge the gap. Our engineering team certainly understands the value of time, and they've been working hard to not only make [Metricly](/aws-cost-tool) easy to use, but to limit the amount of time you need to spend keeping your monitoring's configuration aligned with changes in your environment. Recently, they've brought those goals to our monitoring policy page. Here are some of the time-saving improvements!
 
-New at Metricly: Policy Page UpgradesTurn Policies On and Off with One Click
+New at Metricly: Policy Page Upgrades:Turn Policies On and Off with One Click
 -----------------------------------------------------------------------------
 
-![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Enable-Policy-768x461.gif)
+![Policy Page Upgrades:One click](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Enable-Policy-768x461.gif)
 
 Need to deploy code that could spike an instance's CPU utilization, and want to turn off a specific policy to avoid alert noise during the deploy? The new "Enabled" column allows you to toggle policies on and off with a single click. This column also makes it simple to see which policies are active in your environment at any given time. Once the deploy is done, toggle the policy back on with a single click, and your monitoring is back online! This doesn't affect metrics, either; it just prevents the abnormal metric levels from creating an event.
 

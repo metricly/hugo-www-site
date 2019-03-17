@@ -8,7 +8,7 @@ url: "/java-monitoring-for-application/"
 layout: "single"
 ---
 
-When [implementing a monitoring solution](/product) for your Java environment, choosing the correct integration option is an essential part of that decision. The integration option you choose will determine several important characteristics, including:
+When [implementing a monitoring solution](/aws-cost-tool) for your Java environment, choosing the correct integration option is an essential part of that decision. The integration option you choose will determine several important characteristics, including:
 
 -   What metrics you are concerned about collecting and analyzing
 -   How metrics will be gathered from your application
@@ -18,7 +18,7 @@ When [implementing a monitoring solution](/product) for your Java environment, c
 Which Java Monitoring Integration is Best?
 ------------------------------------------
 
-Netuitive provides five different [integrations for monitoring your Java applications](https://docs.metricly.com/integrations/). Of course, the one that is the "best" choice for you will depend on your needs and your environment.
+Metricly provides five different [integrations for monitoring your Java applications](https://docs.metricly.com/integrations/). Of course, the one that is the "best" choice for you will depend on your needs and your environment.
 
 To help you determine the best fit for your needs, this article explores each of the integrations available for use with Metricly. For each, we'll explore what level of effort is involved in setting up the integration, any dependencies the integration relies on, and how to configure the integration and get metrics flowing into your Metricly account.
 
@@ -27,7 +27,7 @@ Before we begin, there are some fundamental questions which might narrow down wh
 **Are you looking to examine JVM metrics or Application metrics?**
 
 -   **JVM Metrics**
-    -   Consider either the [Java Agent](https://help.netuitive.com/Content/Integrations/java.htm?Highlight=java) or JMX integration.
+    -   Consider either the [Java Agent](https://docs.metricly.com/integrations/agents/java-agent/) or JMX integration.
 
 -   **Application Metrics**
     -   Are you using Dropwizard?
@@ -63,9 +63,9 @@ Choosing Between StatsD and the Metricly Rest API
 
 StatsD was originally developed by the engineers at Etsy, and is a simple NodeJS daemon that listens for messages, extracts metrics, and can then be used to push the data to a datastore, or a monitoring service like Metricly.
 
-The original StatsD offering has been used as a reference implementation for some other projects, including [Netuitive StatsD](/statsd-metricly-advanced-monitoring/). If you already have a StatsD server, you can configure it to push metrics to Netuitive. If you don't yet have a StatsD server, one is installed as part of the Netuitive [Linux Agent](https://help.app.netuitive.com/Content/Integrations/linux.htm).
+The original StatsD offering has been used as a reference implementation for some other projects, including [Metricly StatsD](/statsd-metricly-advanced-monitoring/). If you already have a StatsD server, you can configure it to push metrics to Metricly. If you don't yet have a StatsD server, one is installed as part of the Metricly [Linux Agent](https://docs.metricly.com/integrations/agents/linux-agent/).
 
-The [Netuitive RESTful API](/inside-metricly-api/) allows developers to interact with Netuitive, both to push metrics into the Netuitive system and to retrieve information programmatically. Metrics are received in the form of events, which are in turn digested by the Netuitive system, and are made available for use in Java [monitoring dashboards](/devops-dashboard-best-practices) and Netuitive's other analytical offerings.
+The [Metricly RESTful API](/inside-metricly-api/) allows developers to interact with Metricly, both to push metrics into the Metricly system and to retrieve information programmatically. Metrics are received in the form of events, which are in turn digested by the Metricly system, and are made available for use in Java [monitoring dashboards](/devops-dashboard-best-practices) and Metricly's other analytical offerings.
 
 Let's look at each of the integrations in more detail.
 
@@ -74,7 +74,7 @@ Ananke
 
 The name Ananke comes from Greek mythology and refers to a being that embodies necessity, and the idea of a force which exists from the beginning and encompasses all. It's an appropriate name for a metrics library that can monitor all aspects of your application.
 
-The [Ananke](https://help.app.netuitive.com/Content/Integrations/ananke.htm) library gathers and submits metrics to the StatsD daemon, which is a dependency of using this library, and is included in the Metricly Linux Agent. Ananke can report a variety of metrics, including:
+The [Ananke](https://docs.metricly.com/integrations/anake/) library gathers and submits metrics to the StatsD daemon, which is a dependency of using this library, and is included in the Metricly Linux Agent. Ananke can report a variety of metrics, including:
 
 -   Counters
 -   Events
@@ -145,7 +145,7 @@ After creating a list of IngestEvent objects called events, you could then submi
 
 [view raw](https://gist.github.com/cdisomma1/90913b24ad983f051172ab4958aee330/raw/3140095b9e55c6b50d26ea98737244646a611dc2/Different-Java-Integrations-Iris-Ingest) [Different-Java-Integrations-Iris-Ingest](https://gist.github.com/cdisomma1/90913b24ad983f051172ab4958aee330#file-different-java-integrations-iris-ingest) hosted with ![❤](https://s.w.org/images/core/emoji/11/svg/2764.svg) by [GitHub](https://github.com)
 
-An advantage of Iris is that it allows for both creation/submission of metrics to the API, as well as the retrieval of metrics and other Metricly resources from the API. The API is well documented and can be further explored if you have a [Metricly account](http://app.netuitive.com/signup).
+An advantage of Iris is that it allows for both creation/submission of metrics to the API, as well as the retrieval of metrics and other Metricly resources from the API. The API is well documented and can be further explored if you have a [Metricly account](/signup).
 
 Java Monitoring Agent
 ---------------------
@@ -174,7 +174,7 @@ JMX
 
 The Metricly JMX solution uses Jolokia to publish metrics to the Metricly Linux agent. The name Jolokia comes from the ghost pepper that is grown largely in eastern Asia, and was chosen to represent the Jolokia project because it was going to be the "hot" new way of gathering metrics using JMX.
 
-To set up the JMX integration, you'll need to first install the [Linux agent](https://help.netuitive.com/Content/Integrations/linux.htm?Highlight=linux). Log into your Metricly account, navigate to Integrations, and then click on the Linux button. You'll be shown a shell command with your personal API key included to be used for installing the Linux agent on your machine.
+To set up the JMX integration, you'll need to first install the [Linux agent](https://docs.metricly.com/integrations/agents/linux-agent/). Log into your Metricly account, navigate to Integrations, and then click on the Linux button. You'll be shown a shell command with your personal API key included to be used for installing the Linux agent on your machine.
 
 Once the Linux agent is installed, you'll want to download the Jolokia jar and install it in the */opt/netuitive-agent/* directory. Next, navigate to the collectors folder (Usually located at */opt/netuitive-agent/conf/collectors)* and open the JolokiaCollector.conf file and change the *enabled* setting to **true.**
 

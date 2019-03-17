@@ -9,7 +9,7 @@ layout: "single"
 ---
 When you hear people talking about DevOps, terms like "continuous integration," "continuous delivery" and "agile" tend to dominate the conversation. "Performance analytics" is less likely to feature prominently.
 
-Yet to do DevOps effectively, performance analytics are a crucial part of the picture. Sure, you could theoretically build a continuous delivery pipeline without [performance monitoring](/product). But it would be very difficult to keep your delivery chain running as smoothly and rapidly as possible.
+Yet to do DevOps effectively, performance analytics are a crucial part of the picture. Sure, you could theoretically build a continuous delivery pipeline without [performance monitoring](/aws-cost-tool). But it would be very difficult to keep your delivery chain running as smoothly and rapidly as possible.
 
 Below, I explain why performance analytics are a key part of an effective [DevOps workflow](/adding-analytics-to-devops-model), and where to fit them into your continuous delivery chain.
 

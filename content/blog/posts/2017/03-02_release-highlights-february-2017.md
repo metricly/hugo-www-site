@@ -30,14 +30,14 @@ Your Java code can be easily monitored with the use of our Java agent that is ba
 
 We are now introducing new libraries that allow your developers to instrument their Java code as they wish and send similar method-call level metrics (e.g., count, latency, and error rate) to our Linux agent or to our REST API. Please read more to learn about our various options:
 
-1.  Metricly's [Ananke library](https://github.com/Netuitive/Ananke) allows your Java applications to communicate with and send information to a StatsD listener. Use Ananke to send metrics from your Java Applications to a StatsD server, which will then relay the metrics to the Metricly REST API. For more information, check out the [help page](https://help.netuitive.com/Content/Integrations/ananke.htm).
-2.  Metricly's [Iris library](https://github.com/Netuitive/Iris) allows Java applications to communicate with Metricly's REST API. Use Iris to send metrics from your applications to Metricly; create dashboards, tags, and elements; and much more. Check out the [help page](https://help.netuitive.com/Content/Integrations/iris.htm) for more examples.
-3.  The Dropwizard integration uses Metricly's custom [Dropwizard Metrics Library](https://github.com/Netuitive/dropwizard-metrics) to send metrics collected by Dropwizard to a StatsD server, which can then be forwarded to Metricly for monitoring. The [help page](https://help.netuitive.com/Content/Integrations/dropwizard.htm) will get you started.
+1.  Metricly's [Ananke library](https://github.com/Netuitive/Ananke) allows your Java applications to communicate with and send information to a StatsD listener. Use Ananke to send metrics from your Java Applications to a StatsD server, which will then relay the metrics to the Metricly REST API. For more information, check out the [help page](https://docs.metricly.com/integrations/anake/).
+2.  Metricly's [Iris library](https://github.com/Netuitive/Iris) allows Java applications to communicate with Metricly's REST API. Use Iris to send metrics from your applications to Metricly; create dashboards, tags, and elements; and much more. Check out the [help page](https://docs.metricly.com/integrations/iris/) for more examples.
+3.  The Dropwizard integration uses Metricly's custom [Dropwizard Metrics Library](https://github.com/Netuitive/dropwizard-metrics) to send metrics collected by Dropwizard to a StatsD server, which can then be forwarded to Metricly for monitoring. The [help page](https://docs.metricly.com/integrations/dropwizard/) will get you started.
 
 Existing Integration Enhancements
 ---------------------------------
 
-[![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/feb_rnh_int_upd.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/feb_rnh_int_upd.png)
+[![Existing Integration Enhancements](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/feb_rnh_int_upd.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/feb_rnh_int_upd.png)
 
 Metricly's support and engineering teams improved several integrations with existing Quick Start monitoring packages. Read [this blog](/aws-monitoring-best-practices/) to better understand the value and concepts behind our Quick Start monitoring package. They've also worked on several new integrations to expand our ability to monitor more technologies in your environment.
 

@@ -12,7 +12,7 @@ When you truly have *a lot* of data, a managed data storage service is almost a 
 
 Redshift can support workloads ranging from a few gigabytes of data to more than a petabyte, and is designed to provide an easy path to data analytics for businesses seeking to make sense of all of the data they generate.
 
-While it is relatively easy to set up, using Redshift effectively and cost-efficiently requires you to use an [AWS monitoring platform like Metricly](/product). I explain how in this article.
+While it is relatively easy to set up, using Redshift effectively and cost-efficiently requires you to use an [AWS monitoring platform like Metricly](/aws-cost-tool). I explain how in this article.
 
 What is Amazon Redshift?
 ------------------------
@@ -23,7 +23,7 @@ Through the use of standard ODBC or JDBC protocols, accessing data is as straigh
 
 Here's a quick chart, to give a better idea of how Redshift works under the hood:
 
-![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/09/Redshift-Data-Distribution.png)\
+![how Redshift works](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/09/Redshift-Data-Distribution.png)\
 *Source: docs.aws.amazon.com*
 
 As you can see, stored data is distributed across multiple nodes within a data warehouse cluster. In order to facilitate connections, a leader node provides a consistent endpoint for database applications to communicate with. This allows your data store to increase drastically in size without any visible change on the client side.
@@ -40,7 +40,7 @@ Before we get into the data analysis, though, let's first take a look at how to 
 ![Metricly Integrations Page AWS](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/09/Metricly-Integrations-Page-AWS.png)\
 *Metricly Integrations Page*
 
-Next, we need to tell Metricly which AWS services we want to collect data from. But before we can do this, we first must give Metricly access to our AWS account. At a high level, all that is required is a read-only IAM role for Metricly to use to gather data with. However, if this is a relatively new process to you, then I highly recommend reading [Metricly's own documentation on AWS authorization](https://help.app.netuitive.com/Content/Integrations/aws.htm). Once we've given Metricly access to AWS, we need to tell it to collect data from Redshift. This can be set up by checking the "Redshift" box underneath the Advanced section of the AWS Integration Configuration page:
+Next, we need to tell Metricly which AWS services we want to collect data from. But before we can do this, we first must give Metricly access to our AWS account. At a high level, all that is required is a read-only IAM role for Metricly to use to gather data with. However, if this is a relatively new process to you, then I highly recommend reading [Metricly's own documentation on AWS authorization](https://docs.metricly.com/integrations/aws-integration/). Once we've given Metricly access to AWS, we need to tell it to collect data from Redshift. This can be set up by checking the "Redshift" box underneath the Advanced section of the AWS Integration Configuration page:
 
 ![Metricly AWS Integration Configuration](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/09/Metricly-AWS-Integration-Configuration.png)\
 *AWS Integration Configuration*

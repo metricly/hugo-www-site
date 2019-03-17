@@ -11,7 +11,7 @@ Amazon Web Services (AWS) offers dozens of services --- which is great if you li
 
 Elastic Beanstalk does this by providing an orchestration service that manages the configuration and instantiation of various AWS services, such as Elastic Compute Cloud, Elastic Load Balancers, and the Relational Database Service. By automating the configuration of these services, individuals and teams can easily spin up a new application on AWS without losing their minds in complicated permissions policies and individual service configuration.
 
-But, as with any online service, things can go wrong. And while Amazon does offer its own basic monitoring, the built-in [AWS monitoring](/aws-monitoring-best-practices/) is just that: basic. For this reason, it's helpful to have a more robust, [centralized platform for monitoring](/product) that can support every product you use, both within and beyond AWS.
+But, as with any online service, things can go wrong. And while Amazon does offer its own basic monitoring, the built-in [AWS monitoring](/aws-monitoring-best-practices/) is just that: basic. For this reason, it's helpful to have a more robust, [centralized platform for monitoring](/aws-cost-tool) that can support every product you use, both within and beyond AWS.
 
 That's where Metricly comes in. Metricly provides an easy way to monitor Elastic Beanstalk along with everything else you have running in your infrastructure.
 
@@ -20,7 +20,7 @@ In this article, I'll walk through using Metricly to monitor an AWS Beanstalk ap
 Getting Started with Elastic Beanstalk and Metricly
 ----------------------------------------------------
 
-Because Elastic Beanstalk is an orchestration service, rather than a distinct product, we need to install the [Metricly Linux Agent](https://help.netuitive.com/Content/Integrations/linux.htm?Highlight=linux) on each individual Elastic Compute Cloud (EC2) instance that Elastic Beanstalk instantiates. To accomplish this, we need to set up an [advanced environment configuration](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/ebextensions.html) file that Elastic Beanstalk will use to automatically install and configure the Metricly Linux Agent on every EC2 instance it manages. While this sounds complicated, it kind of is---but Metricly has thankfully already done the heavy lifting by creating the configuration file for us.
+Because Elastic Beanstalk is an orchestration service, rather than a distinct product, we need to install the [Metricly Linux Agent](https://docs.metricly.com/integrations/agents/linux-agent/) on each individual Elastic Compute Cloud (EC2) instance that Elastic Beanstalk instantiates. To accomplish this, we need to set up an [advanced environment configuration](https://docs.aws.amazon.com/elasticbeanstalk/latest/dg/ebextensions.html) file that Elastic Beanstalk will use to automatically install and configure the Metricly Linux Agent on every EC2 instance it manages. While this sounds complicated, it kind of is---but Metricly has thankfully already done the heavy lifting by creating the configuration file for us.
 
 To get started, we must first create a directory called .ebextensions in the root of our application directory. Next, download [netuitive.config](https://github.com/Netuitive/netuitive-agent-elasticbeanstalk/blob/develop/.ebextensions/netuitive.config) from Metricly's Elastic Beanstalk Configuration repository and put it in the .ebextensions directory. Finally, we need to add our API key to netuitive.config ---This can be found at the top of the Linux Integration management page:
 
@@ -37,7 +37,7 @@ Shortly after deploying your application with Metricly's Elastic Beanstalk confi
 
 The metrics that this element will show are the same as any standard Linux server: CPU utilization, memory utilization, disk utilization, etc. This information can be used to keep an eye on the [health of the individual EC2 instances](/view-manage-individual-aws-ec2-costs) within your Elastic Beanstalk environment. It should be noted that the name of the server in your inventory is pulled directly from the hostname of the EC2 instance.
 
-![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Elastic-Beanstalk-EC2-Instances-1024x319.png)
+![Elastic Beanstalk: New Elements](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Elastic-Beanstalk-EC2-Instances-1024x319.png)
 
 Dynamic Instance Monitoring
 ---------------------------
@@ -69,7 +69,7 @@ Additional Monitoring
 
 While the initial Elastic Beanstalk monitoring setup is good, it doesn't take into account the other services that Elastic Beanstalk manages, nor does it take into account top-level information about service health. In this case, our best bet is to set up a direct [integration with AWS through Metricly.](https://help.netuitive.com/Content/Integrations/aws.htm)
 
-![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/AWS-Integration-Setup.png)
+![Additional Monitoring](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/AWS-Integration-Setup.png)
 
 To accomplish this, head over to the Metricly Integrations page and click on the Amazon Web Services integration. It is important to note that while the crux of this functionality is the IAM Role, setting it up is outside the scope of this article, so I recommend reading over [Metricly's documentation](https://help.app.netuitive.com/Content/Integrations/aws.htm).
 
