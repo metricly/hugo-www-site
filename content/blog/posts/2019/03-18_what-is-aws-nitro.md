@@ -1,15 +1,15 @@
 ---
-author: "Mike Mackrory"
-date: "ADD DATE"
-description: "Understand the advantages that AWS Nitro offers users of EC2, and what you need to know before you deploy your AMI on an instance with Nitro Hypervisor."
-title: "What Are AWS Nitro Instances, and Why Use Them?"
-category: "DevOps"
-url: "/what-is-aws-nitro/"
-layout: "single"
-featured-image: ""
+author: Mike Mackrory
+date: '2019-03-18'
+description: Understand the advantages that AWS Nitro offers users of EC2, and what you need to know before you deploy your AMI on an instance with Nitro Hypervisor.
+title: AWS Nitro—What Are AWS Nitro Instances, and Why Use Them?
+category: DevOps
+url: "/aws-nitro/"
+layout: single
+featured-image: 'nitro.png'
 thumbnail-image: true
 featured: false
-draft: true
+draft: false
 ---
 
 At Re:Invent 2017, Anthony Liguori, a senior principal engineer within the EC2 space, introduced the Nitro Hypervisor. In his [presentation](https://www.youtube.com/watch?v=LabltEXk0VQ), he walked the audience through the Nitro Hypervisor's development and the advantages it offered AWS and AWS customers, both in terms of performance and cost.
@@ -58,7 +58,7 @@ Fig. 2 Nitro Increases the Resources Available to the VMs
 
 ### Deploying Your AMI on an Instance with Nitro Hypervisor
 
-If you've been using instances from the C3, C4 or I3 family, then you've already benefited from the Nitro team's work. Different aspects of the Nitro Hypervisor were included in those instance types to increase performance to users.
+If you've been using [EC2 instance types](/ec2-instance-types/) from the C3, C4 or I3 family, then you've already benefited from the Nitro team's work. Different aspects of the Nitro Hypervisor were included in those instance types to increase performance to users.
 
 The new C5 instance type and many of the new instance types announced by AWS include the Nitro Hypervisor, and as such, have a few requirements.
 
