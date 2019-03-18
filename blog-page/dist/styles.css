@@ -1188,7 +1188,7 @@ a.header_logo {
 
 .header_nav_list_item_sublist_item_head .icon {
   margin-right: 8px;
-  height: 17px; }
+  height: 22px; }
 
 .header_nav_list_item_sublist_item_head .arrow {
   display: block;
@@ -5111,24 +5111,13 @@ a.default-cursor {
     -ms-flex-pack: justify;
     justify-content: space-between; } }
 
-.demo_head_content_suggestions_item:nth-child(2) h2:before {
-  content: url(https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/assets/demo/icon_monitoring.svg); }
-
 .demo_head_content_suggestions_item > h2 {
   font-size: 20px;
   font-weight: 600;
   margin-bottom: 12px;
   position: relative;
-  padding-left: 48px;
   letter-spacing: 0.02px;
   color: #1fb59d; }
-
-.demo_head_content_suggestions_item > h2:before {
-  content: url(https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/assets/demo/icon_aws.svg);
-  position: absolute;
-  left: 0;
-  top: -5px;
-  width: 36px; }
 
 .demo_head_content_suggestions_item > p {
   font-size: 16px;
@@ -6140,7 +6129,6 @@ a.default-cursor {
   position: relative;
   font-size: 20px;
   font-weight: 600;
-  padding-left: 36px;
   margin-bottom: 18px; }
 
 @media (min-width: 719px) and (max-width: 1440px) {
@@ -6150,12 +6138,6 @@ a.default-cursor {
 @media (max-width: 719px) {
   .aws-head h1 {
     font-size: 16px; } }
-
-.aws-head h1:before {
-  content: url(https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/assets/aws/icons/icon_aws.svg);
-  position: absolute;
-  left: 0;
-  top: 0; }
 
 @media (max-width: 719px) {
   .aws-head h1 {
@@ -6921,10 +6903,6 @@ a.default-cursor {
 
 .monitoring .aws-head h1 {
   color: #fff; }
-
-.monitoring .aws-head h1:before {
-  content: url(https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/assets/monitoring/monit_icon.svg);
-  left: -5px; }
 
 .monitoring .aws-head .or {
   color: rgba(255, 255, 255, 0.6); }
