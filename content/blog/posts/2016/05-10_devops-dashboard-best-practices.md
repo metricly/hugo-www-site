@@ -8,7 +8,7 @@ url: "/devops-dashboard-best-practices/"
 layout: "single"
 ---
 
-You can have the best, most precise [monitoring solution](https://www.metricly.com) in the world, but if you aren't viewing your data correctly, important alerts and key trends are going to pass you by. As our chief data scientist is fond of saying, "Context is everything" -- and an effective DevOps [dashboard](/product) is key to providing that context.
+You can have the best, most precise [monitoring solution](https://www.metricly.com) in the world, but if you aren't viewing your data correctly, important alerts and key trends are going to pass you by. As our chief data scientist is fond of saying, "Context is everything" -- and an effective DevOps [dashboard](/aws-cost-tool) is key to providing that context.
 
 So what makes a great DevOps dashboard? We asked Metricly's resident UI/UX designer for pointers, and he gave us these four essential elements to viewing your data and metrics in an effective manner.
 
@@ -23,7 +23,7 @@ If you're creating dashboards for the benefit of a specific person or team, don'
 
 [![DevOps dashboard: Confusing Dashboard](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/ConfusingDashboard-1024x530.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/ConfusingDashboard.png)
 
-On the other hand, this dashboard only has metrics pertaining to [EC2 instances](https://help.netuitive.com/Content/Misc/Datasources/AWS/new_aws_datasource.htm), and is arranged so that you can quickly and easily see key metrics (for instance, ReadOps, WriteOps, and Total Ops are all in one row):
+On the other hand, this dashboard only has metrics pertaining to [EC2 instances](https://docs.metricly.com/integrations/aws-integration/), and is arranged so that you can quickly and easily see key metrics (for instance, ReadOps, WriteOps, and Total Ops are all in one row):
 
 [![DevOps Dashboard: BetterDashboard](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/BetterDashboard-1024x532.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/BetterDashboard.png)
 
@@ -34,7 +34,7 @@ This is where a lot of DevOps dashboards really fall short. You've got a limited
 
 [![DevOps Dashboard: CPUall](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/CPUall-1024x531.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/CPUall.png)
 
-With a [stacked time series widget](https://help.netuitive.com/Content/Dashboards/Widgets/widget_library.htm), you can combine all of these metrics into a single widget:
+With a [stacked time series widget](https://docs.metricly.com/data-visualization/dashboards/widgets/), you can combine all of these metrics into a single widget:
 
 [![DevOps Dashboard: CPUaggregate](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/CPUaggregate.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/CPUaggregate.png)
 

@@ -51,4 +51,4 @@ Dynamic Dashboards automatically populate a dashboard using one of two widgets b
 
 EC2 Cost Report
 
-The EC2 cost report shows weekly cost and utilization of your EC2 instances. You can change the report view to see different aspects of the data and filter or group the data to analyze cost and utilization by different dimensions. Note that to see this report you must have a valid AWS Cost data source active for 7 days or more. Follow activation instructions [here](https://help.netuitive.com/Content/Misc/Datasources/new_aws_cost_datasource.htm).
+The EC2 cost report shows weekly cost and utilization of your EC2 instances. You can change the report view to see different aspects of the data and filter or group the data to analyze cost and utilization by different dimensions. Note that to see this report you must have a valid AWS Cost data source active for 7 days or more. Follow activation instructions [here](https://docs.metricly.com/integrations/aws-integration/).

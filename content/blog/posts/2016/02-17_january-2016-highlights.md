@@ -28,7 +28,7 @@ The panel includes summary and detail information about the metric such as colle
 -   Historical Min
 -   Historical Max
 
-For more details, including descriptions of the data points, here's a direct link to our [product documentation](https://help.netuitive.com/Content/Metrics/metrics_page.htm).
+For more details, including descriptions of the data points, here's a direct link to our [product documentation](https://docs.metricly.com/data-visualization/metrics/).
 
 Performance Explorer Graphs on Dashboards
 -----------------------------------------
@@ -49,7 +49,7 @@ Automatically Adjusting Units on Graphs
 ---------------------------------------
 
 [![Automatically Adjust Units (January 2016 Releases)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/Automatically-Adjust-Units.jpg)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/Automatically-Adjust-Units.jpg)\
-We enabled units on every Performance Explorer graph and compatible widgets. While Metricly will use a default unit for each metric graph you view, you can easily change the unit on the graph by accessing the graph/widget settings. Our library of supported units include such a wide array of options that most conceivable units should be covered. Note that changing a graph's units only affects how it is displayed in the UI---it will not change the metric's metadata. Check out the [Performance Explorer](https://help.netuitive.com/Content/Performance/performance_explorer.htm#Metric_charts_section) and [individual widget](https://help.netuitive.com/Content/Dashboards/Widgets/widget_library.htm) documentation for more information.
+We enabled units on every Performance Explorer graph and compatible widgets. While Metricly will use a default unit for each metric graph you view, you can easily change the unit on the graph by accessing the graph/widget settings. Our library of supported units include such a wide array of options that most conceivable units should be covered. Note that changing a graph's units only affects how it is displayed in the UI---it will not change the metric's metadata. Check out the [Performance Explorer](https://docs.metricly.com/data-visualization/metrics/#Metric_charts_section) and [individual widget](https://docs.metricly.com/data-visualization/dashboards/widgets/) documentation for more information.
 
-* * * * *\
+* * * * *
 Want to see these release highlights in action? We offer a 21-day, [free trial of Metricly.](/signup)

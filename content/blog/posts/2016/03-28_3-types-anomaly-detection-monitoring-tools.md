@@ -11,7 +11,7 @@ layout: "single"
 
 *Ed. Note: This is Part 2 of a three-part series on anomaly detection and its role in a DevOps environment. [Part 1](/what-is-anomaly-detection) covered the basics of anomaly detection, and [Part 3](/adding-analytics-to-devops-model) discusses how anomaly detection fits within the larger DevOps model. Want to see these tools in action? [Try our free demo.](/signup)*
 
-Smart DevOps teams typically evolve through three levels of [anomaly detection](/product) or monitoring tools.  They start with simple dashboards to track basic metrics then add increasingly sophisticated analytics.
+Smart DevOps teams typically evolve through three levels of [anomaly detection](/aws-cost-tool) or monitoring tools.  They start with simple dashboards to track basic metrics then add increasingly sophisticated analytics.
 
 A common progression for analytics adoption is to start with static thresholds, then add simple data transformations, and finally introduce machine learning and other models and algorithms designed to increase alarm quality.  For example, static thresholds are the most common "starter" analytics.  Static thresholds automatically flag simple anomalies in a collection of point observations.
 

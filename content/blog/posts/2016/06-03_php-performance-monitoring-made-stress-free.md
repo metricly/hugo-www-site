@@ -9,7 +9,7 @@ layout: "single"
 ---
 
 
-PHP [performance monitoring](/product) using open-source tools requires a huge time commitment. These tools, while free, usually entail extensive setup and configuration. The time commitment required is extended further when your tools don't alert correctly or generate noise with frequent false alarms.
+PHP [performance monitoring](/aws-cost-tool) using open-source tools requires a huge time commitment. These tools, while free, usually entail extensive setup and configuration. The time commitment required is extended further when your tools don't alert correctly or generate noise with frequent false alarms.
 
 Luckily, paid tools and SaaS solutions take a lot of the wasted time (and extra cost) out of open-source tools. Here's how to make your PHP monitoring stress-free!
 

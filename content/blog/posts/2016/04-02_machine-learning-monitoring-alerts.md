@@ -7,7 +7,7 @@ category: "Cloud Monitoring"
 url: "/machine-learning-monitoring-alerts/"
 layout: "single"
 ---
-Three basic ingredients are required for [monitoring](https://www.metricly.com) success:
+Three basic ingredients are required for [monitoring](/monitoring) success:
 
 1.  Collection of key performance indicators (KPIs) used in alarming rules
 2.  Machine learning technology and proactive anomaly detection
@@ -25,7 +25,7 @@ Metricly recently detected a disk issue before the Windows system reported the p
 Understanding KPIs for Proactive Monitoring Success
 ---------------------------------------------------
 
-One of the keys to success is also understanding the metrics. Here we know the disk queue length is a good leading indicator of an issue which is the reason behind including it in a default alerting policy. At Metricly, we research best practices for monitoring and have created a number of [out-of-the-box policies](https://help.netuitive.com/Content/Policies/policies.htm) that leverage these KPIs. It helps get our users up and running as soon as they set up a data source.
+One of the keys to success is also understanding the metrics. Here we know the disk queue length is a good leading indicator of an issue which is the reason behind including it in a default alerting policy. At Metricly, we research best practices for monitoring and have created a number of [out-of-the-box policies](https://docs.metricly.com/alerts-notifications/policies/) that leverage these KPIs. It helps get our users up and running as soon as they set up a data source.
 
 [![Proactive Monitoring: Pic2](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/Pic2-1024x413.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/Pic2.png)
 
@@ -36,7 +36,7 @@ In this example, Metricly detected a performance issue on the disk a full hour b
 
 [![Proactive Monitoring: Pic3](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/Pic3-1024x419.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/Pic3.png)
 
-In the screenshot, you can Metricly's machine learning in action. Metricly automatically learns the behaviors of this environment over time and creates [bands of normalcy](/product) (purple and green highlights.) These bands act like dynamic thresholds -- they indicate where expected values for this metric should be at the given point in time. In Metricly, you can create policies that alert off of these ranges instead of just setting static threshold alerts.
+In the screenshot, you can Metricly's machine learning in action. Metricly automatically learns the behaviors of this environment over time and creates [bands of normalcy](/aws-cost-tool) (purple and green highlights.) These bands act like dynamic thresholds -- they indicate where expected values for this metric should be at the given point in time. In Metricly, you can create policies that alert off of these ranges instead of just setting static threshold alerts.
 
 In our example, when the metric values went out of the expected range, alerts in Metricly fired immediately. However, you can see the event generated in Windows Event Viewer on the right side came an hour later than Metricly's alert.
 

@@ -11,7 +11,7 @@ layout: "single"
 
 *Ed. Note: This is part 3 of a three-part series on anomaly detection and the impact it has on a DevOps model.  [Part 1](/what-is-anomaly-detection) examined anomaly detection in performance monitoring and the four possible outcomes of its implementation. [Part 2](/3-types-anomaly-detection-monitoring-tools) analyzed various tools DevOps teams can use to detect and respond to anomalies.*
 
-Ideally, anomaly detection is not simply an isolated monitoring step or the only factor in deciding whether or not to issue and alarm or take some action. For the most accurate results, [advanced analytics](/product) should be applied within a more comprehensive monitoring workflow. Here is one such DevOps model that has worked well for us.
+Ideally, anomaly detection is not simply an isolated monitoring step or the only factor in deciding whether or not to issue and alarm or take some action. For the most accurate results, [advanced analytics](/aws-cost-tool) should be applied within a more comprehensive monitoring workflow. Here is one such DevOps model that has worked well for us.
 
 A DevOps Model: The Ideal Monitoring Workflow
 ---------------------------------------------
@@ -20,7 +20,7 @@ A DevOps Model: The Ideal Monitoring Workflow
 2.  Apply multiple types of analytics to the observations
 3.  Discover deviations in the observed data
 4.  Apply structural knowledge such as relationships between components to refine raw analytic results
-5.  Assess the results within the contexts of environmental semantics and other human knowledge (at Metricly, we call this a "[policy](https://help.netuitive.com/Content/Policies/policies.htm).")
+5.  Assess the results within the contexts of environmental semantics and other human knowledge (at Metricly, we call this a "[policy](https://docs.metricly.com/alerts-notifications/policies/).")
 
 [![Devops Model: DevOps Workflow](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/workflowPNG-1024x659.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/05/workflowPNG.png)
 
@@ -49,4 +49,3 @@ Using analytics together within a workflow such as the one shown above, DevOps s
 * * * * *
 
 *Want to see how Metricly can fit seamlessly in your team's workflow? [Try us free for 21 days.](/signup)*\
-www.
