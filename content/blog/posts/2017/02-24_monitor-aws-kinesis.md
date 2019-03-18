@@ -9,7 +9,7 @@ layout: "single"
 ---
 
 
-This post is Part 2 of a two part series on how to monitor AWS Kinesis Streams. In Part 1 of this series, [Best Practices for Kinesis Streams Monitoring](/analyzing-aws-kinesis-streams-metrics), we discussed [Amazon Kinesis Streams](https://aws.amazon.com/kinesis/streams/), and how it is a managed service hosting by AWS. Kinesis provides a pipeline for continuous streaming of various types of data between data producers and data consumers. Also discussed were the various metrics provided by Kinesis and [Metricly](/product), and what they mean when monitoring Amazon Kinesis.
+This post is Part 2 of a two part series on how to monitor AWS Kinesis Streams. In Part 1 of this series, [Best Practices for Kinesis Streams Monitoring](/analyzing-aws-kinesis-streams-metrics), we discussed [Amazon Kinesis Streams](https://aws.amazon.com/kinesis/streams/), and how it is a managed service hosting by AWS. Kinesis provides a pipeline for continuous streaming of various types of data between data producers and data consumers. Also discussed were the various metrics provided by Kinesis and [Metricly](/aws-cost-tool), and what they mean when monitoring Amazon Kinesis.
 
 In this post, we're going to cover using Metricly to monitor AWS Kinesis Streams; including how to configure Metricly AWS integration; a few tips around that configuration; and what Kinesis metrics might look like on your Metricly dashboard while running Kinesis Streams in your application stack.
 
@@ -22,14 +22,14 @@ First, you'll need an Amazon Web Services account. If you don't already have one
 
 Second, you should also consider taking a few minutes to familiarize yourself with Amazon Kinesis Streams, how it works, and what it can do for you. Amazon helpfully provides [Youtube videos](https://www.youtube.com/watch?v=7bhXafN9uNg) of various conferences where they discuss Kinesis Streams, and the [Amazon Kinesis Developer Guide](http://docs.aws.amazon.com/streams/latest/dev/introduction.html) covers the subject in great detail.
 
-Third, to try out Metricly, you can sign up for a [21-day free trial](/signup). To learn a little more about Metricly and what it does, watch the [What is Metricly](/) overview video. The [Metricly Blog](/blog) also provides helpful posts about monitoring with Metricly.
+Third, to try out Metricly, you can sign up for a [21-day free trial](/signup). To learn a little more about Metricly and what it does, watch the [What is Metricly](/demo) overview video. The [Metricly Blog](/blog) also provides helpful posts about monitoring with Metricly.
 
 Metricly AWS Integration
 -------------------------
 
 Now that you've created your Metricly account, you'll need to create a [Metricly integration](https://docs.metricly.com/integrations/) with your AWS account. One advantage of using Netuitive as your monitoring solution is that you can integrate it with other services you are using and see all of your metrics in a single place.
 
-The Metricly help documentation provides [detailed instructions](https://help.app.netuitive.com/Content/Integrations/aws.htm) for creating an AWS integration. The recommended method for creating this integration is covered under "Installation Via IAM Role".
+The Metricly help documentation provides [detailed instructions](https://docs.metricly.com/integrations/aws-integration/) for creating an AWS integration. The recommended method for creating this integration is covered under "Installation Via IAM Role".
 
 Be sure you select **Kinesis Stream** as an option when you create your integration, as illustrated below.
 

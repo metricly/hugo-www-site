@@ -21,12 +21,12 @@ So, how exactly do we plug a 21st century API into a 20th century codebase?
 
 Before we consume Metricly's API, we first need to gather some necessary authentication information. Metricly's API uses HTTP Basic Authentication, so the first two things we need to gather are our username and password (this should be pretty self explanatory). Next, we need to get an API key. To do this, head on over to Metricly's [Integrations](https://app.netuitive.com/#/integrations) page and click on the "Custom Datasource" integration and take note of the "API Key" field. It is important to note that the "Data Collection" field should be enabled as well.
 
-[![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Netuitive-API-Key-1024x168.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Netuitive-API-Key.png)
+[![Custom Integration](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Netuitive-API-Key-1024x168.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Netuitive-API-Key.png)
 
 Making The Call
 ---------------
 
-Now that we have the proper authentication information, let's compose a basic API call to better understand the format and process that is required to communicate with it. I should note that, for the sake of this article, we will only be consuming the event creation API endpoint, but there are several other endpoints listed in [Metricly's API documentation](https://help.netuitive.com/Content/Misc/API/api.htm) that can be taken advantage of as well.
+Now that we have the proper authentication information, let's compose a basic API call to better understand the format and process that is required to communicate with it. I should note that, for the sake of this article, we will only be consuming the event creation API endpoint, but there are several other endpoints listed in [Metricly's API documentation](https://docs.metricly.com/api/) that can be taken advantage of as well.
 
 To test API calls, I'm a big fan of [Postman](https://www.getpostman.com/), a cross-platform application that can be used to manually compose and make calls to any RESTful API. Making a request to Metricly's event creation API endpoint requires a few things in addition to the information gathered above: a URL, a custom request header, and a JSON representation of the event.
 
@@ -40,7 +40,7 @@ Next, we need to add our login credentials to the Authorization tab:
 
 [![Metricly API: Postman Authentication](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Postman-Authentication-1024x250.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Postman-Authentication.png)
 
-Then, we need to create a JSON string representing the event we are posting to the API. While there are a few choices listed in [Metricly's documentation](https://help.netuitive.com/Content/Misc/API/Events/ingest_events_api-creating_events.htm), the majority of them are optional. That said, some of the optional fields provide some great value, so we will be including them where appropriate.
+Then, we need to create a JSON string representing the event we are posting to the API. While there are a few choices listed in [Metricly's documentation](https://docs.metricly.com/api/api-events/), the majority of them are optional. That said, some of the optional fields provide some great value, so we will be including them where appropriate.
 
 So, what do all of these values mean?
 

@@ -28,6 +28,7 @@ When talking about anomaly detection, there are four specific types of results: 
 | **True** | *You have a problem and get an alarm.* | *You don't have a problem and don't get an alarm.* |
 | **False** | *You don't have a problem but you do get an alarm.* | *You do have a problem and don't get an alarm.* |
 
+___
 True Positives\
 This is the ideal scenario and exactly how anomaly detection is supposed to work. Unfortunately, it's not always that simple.
 

@@ -30,7 +30,7 @@ These are just a few examples of how any standard message queuing system can go 
 
 With Metricly's Amazon SQS monitoring integration, staying on top of the health of your SQS queues is incredibly easy. Metricly's [integrations](https://docs.metricly.com/integrations/) are easy to install and use, and they pack a powerful punch, giving you incredible transparency into your application architecture.
 
-But, before we get into what we can [monitor with Metricly](/product), let's first touch on how to set up Metricly's Amazon SQS monitoring integration.
+But, before we get into what we can [monitor with Metricly](/aws-cost-tool), let's first touch on how to set up Metricly's Amazon SQS monitoring integration.
 
 ![SQS Monitoring: AWS Integration](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/SetUpAWSIntegration-1024x304.png)
 

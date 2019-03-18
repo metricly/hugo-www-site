@@ -50,7 +50,7 @@ Your custom metrics will then be saved in CloudWatch, and you can access them by
 Partnering with a Monitoring Solution Provider
 ----------------------------------------------
 
-CloudWatch provides a lot of information based on the metrics, both standard and custom, as well as ways to visualize and alert on that data. However, to truly revolutionize your monitoring approach; you'll want to leverage the power of a monitoring solution such as [Metricly](/product). I like Metricly because for many of the metrics you import into their system, a great deal of the configuration has already been done, and with the selection of a few options, your monitoring plan will be iterations ahead of anything you may have already set up with CloudWatch.
+CloudWatch provides a lot of information based on the metrics, both standard and custom, as well as ways to visualize and alert on that data. However, to truly revolutionize your monitoring approach; you'll want to leverage the power of a monitoring solution such as [Metricly](/aws-cost-tool). I like Metricly because for many of the metrics you import into their system, a great deal of the configuration has already been done, and with the selection of a few options, your monitoring plan will be iterations ahead of anything you may have already set up with CloudWatch.
 
 If you already have a Metricly account, and your data is being read and analyzed by Metricly, then you're ready to go. If this isn't the case, then you'll want to set up an account before proceeding through this article. Metricly offers a 21-day free trial which you can sign up for [here](/signup).
 
@@ -61,7 +61,7 @@ If you log into your Metricly account, you'll want to navigate to the [Integrati
 
 [![AWS Custom Metrics: Integration](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/AWS-Integration.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/AWS-Integration.png)
 
-Unless you already have it set up, you'll need to configure AWS integration on your account. This will allow metrics data to be read from your AWS account and make it viewable in Metricly. I prefer the IAM role integration, but you can also integrate via an AWS Access Key. Both are explained with step-by-step directions [here](https://help.app.netuitive.com/Content/Integrations/aws.htm).
+Unless you already have it set up, you'll need to configure AWS integration on your account. This will allow metrics data to be read from your AWS account and make it viewable in Metricly. I prefer the IAM role integration, but you can also integrate via an AWS Access Key. Both are explained with step-by-step directions [here](https://docs.metricly.com/integrations/aws-integration/).
 
 Once your access is set up, you'll need to scroll down on the AWS Setup page to include the [Custom CloudWatch Metric](/aws-cloudwatch-metrics-integration/) Type. Additional options are available if you click the plus sign to the right of the metric, such as filtering by namespace.
 
@@ -69,4 +69,4 @@ Once your access is set up, you'll need to scroll down on the AWS Setup page to 
 
 With AWS custom metrics enabled, you can now navigate to the Inventory Management page and use the AWS custom metric to develop dashboards, and if appropriate, create policies and events.
 
-Ready to bring the power of Metricly's anomaly detection to your AWS custom metrics? Get started with our [21-day, fully-featured free trial](/signup).
+*Ready to bring the power of Metricly's anomaly detection to your AWS custom metrics? Get started with our [21-day, fully-featured free trial](/signup).*

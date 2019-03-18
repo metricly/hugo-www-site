@@ -111,8 +111,8 @@ At this point in the process, the real power of Metricly can be brought to bear 
 
 Actions can include alerting DevOps engineers through various mediums, triggering webhooks into tools to automatically adapt the environment to changing needs.
 
-You can create a solution such as this for yourself by implementing policies into your Metricly account. The documentation on [default policies](https://help.netuitive.com/Content/Policies/DefaultPolicies/default_policies.htm) will be an invaluable resource in the pursuit of this, as well as articles featured on the Metricly website.
+You can create a solution such as this for yourself by implementing policies into your Metricly account. The documentation on [default policies](https://docs.metricly.com/alerts-notifications/policies/default-policies/) will be an invaluable resource in the pursuit of this, as well as articles featured on the Metricly website.
 
 * * * * *
 
-*Ready to manage your RDS costs? Start today with Metricly's [21-day, no-obligation free trial.](http://app.netuitive.com/signup)*
+*Ready to manage your RDS costs? Start today with Metricly's [21-day, no-obligation free trial.](/signup)*

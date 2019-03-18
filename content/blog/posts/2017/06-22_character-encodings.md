@@ -7,7 +7,7 @@ category: "DevOps"
 url: "/character-encodings/"
 layout: "single"
 ---
-The Metricly team was recently plagued by a very interesting (read: "frustrating") behavior pattern in our data ingest platform. Element documents (denormalized JSON documents storing an element's metadata) were spontaneously growing to enormous sizes (up to 700MB). Peeking into these documents showed the majority of them were corrupted characters.
+The Metricly team was recently plagued by a very interesting *(read: "frustrating")* behavior pattern in our data ingest platform. Element documents (denormalized JSON documents storing an element's metadata) were spontaneously growing to enormous sizes (up to 700MB). Peeking into these documents showed the majority of them were corrupted characters.
 
 This is bad for multiple reasons:
 
@@ -28,7 +28,7 @@ We had reproduced the problem (albeit not reliably), so we could at least create
 Invalid Element Documents
 -------------------------
 
-A few weeks went by and we still weren't able to reproduce the problem reliably. The issue hadn't sprung up again, so it became a lower priority. Unfortunately, it was only silent for a little while, and sprung up again a couple weeks ago. We had instrumented our applications and used a [Netuitive policy to fire an OpsGenie alert](/whats-new-metricly-opsgenie-custom-data-more/) if a document got too large so we were able to get in front of the issues, but they were still disruptive events. Also, our metrics showed that these documents grew in size *exponentially*, not linearly as I had thought.\
+A few weeks went by and we still weren't able to reproduce the problem reliably. The issue hadn't sprung up again, so it became a lower priority. Unfortunately, it was only silent for a little while, and sprung up again a couple weeks ago. We had instrumented our applications and used a [Metricly policy to fire an OpsGenie alert](/whats-new-metricly-opsgenie-custom-data-more/) if a document got too large so we were able to get in front of the issues, but they were still disruptive events. Also, our metrics showed that these documents grew in size *exponentially*, not linearly as I had thought.\
 ![Character Encoding: Query](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Query-1024x213.png)
 
 These characters weren't getting into the system anymore, but how many lay dormant? A database query showed around 30 IEDs (Invalid Element Documents) which could spontaneously grow.

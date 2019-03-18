@@ -10,7 +10,7 @@ layout: "single"
 
 AWS monitoring is time-consuming, and it only gets worse as you scale up your cloud environment. Simply configuring the monitoring for each element or instance is complicated, to say nothing of writing policies and setting thresholds. Discovering best practices and figuring out what works best for your environment takes research and a certain amount of trial and error. Having a DevOps model ourselves, we recognized this problem early -- so we put our certified research team to work designing pre-configured monitoring packages, so you don't have to! Here's how these packages work.
 
-When you first create a [Metricly datasource](https://www.metricly.com) to bring in metrics for Linux, AWS monitoring, or one of many other supported systems, a number of other features and configuration settings are activated as well. Brought in by pre-configured monitoring packages, these additional components create best practice monitoring dashboards and suggested alerting policies that ensure that you can start getting value from Metricly right away.
+When you first create a [Metricly datasource](/) to bring in metrics for Linux, AWS monitoring, or one of many other supported systems, a number of other features and configuration settings are activated as well. Brought in by pre-configured monitoring packages, these additional components create best practice monitoring dashboards and suggested alerting policies that ensure that you can start getting value from Metricly right away.
 
 *If you want to see these Linux or AWS monitoring packages in action, [try our free demo](/signup).*
 
@@ -27,7 +27,7 @@ Let's take a look at each of these in turn.
 
 Metric Configurations
 
-Metric configurations define the behavior of the metrics being collected and how [Metricly's analytics](/support/metrics/analytics) should be applied. They also define the formulas for any computed metrics; for example, an error rate might be computed from the number of calls and an error count.
+Metric configurations define the behavior of the metrics being collected and how Metricly's analytics should be applied. They also define the formulas for any computed metrics; for example, an error rate might be computed from the number of calls and an error count.
 
 Some of the key properties that can be defined for each metric are:
 
@@ -45,7 +45,7 @@ In the Metricly UI, when you click on a metric name, you get a pop-up showing me
 
 Policies
 
-[Policies](/support/events/policies) define the criteria by which Metricly will decide to generate an event. Each Metricly package comes with multiple pre-defined policies based on industry best practices, designed specifically to detect meaningful events from the metrics in that package. The policies look for a combination of deviations and best practices that together identify a particular type of performance problem.
+[Policies](https://docs.metricly.com/alerts-notifications/policies/) define the criteria by which Metricly will decide to generate an event. Each Metricly package comes with multiple pre-defined policies based on industry best practices, designed specifically to detect meaningful events from the metrics in that package. The policies look for a combination of deviations and best practices that together identify a particular type of performance problem.
 
 For example, the Linux package comes with the following policies:
 
@@ -63,7 +63,7 @@ The final component of a package is a set of one or more dashboards. These dashb
 
 [![EC2 Summary Dashboard](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/06/EC2-Summary-Dashboard-1024x471.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/06/EC2-Summary-Dashboard.png)
 
-Our monitoring packages also contain a special type of dashboard, the "[element detail summary](/support/inventory#element-detail-panel)." These do not show up under the "Dashboards" menu. Rather, when you select an element from your inventory, you can choose to view "Element Details"; this will bring up a dashboard like the one below, showing a summary of the particular element you have selected. This summary will include key performance metrics, tags, attributes, and any recent events associated with the element.
+Our monitoring packages also contain a special type of dashboard, the "element detail summary." These do not show up under the "Dashboards" menu. Rather, when you select an element from your inventory, you can choose to view "Element Details"; this will bring up a dashboard like the one below, showing a summary of the particular element you have selected. This summary will include key performance metrics, tags, attributes, and any recent events associated with the element.
 
 [![Linux Server Element Detail Policy](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/06/Linux-Server-Element-Detail-Policy-1024x481.jpg)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/06/Linux-Server-Element-Detail-Policy.jpg)
 

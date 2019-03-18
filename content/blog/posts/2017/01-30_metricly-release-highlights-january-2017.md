@@ -1,5 +1,4 @@
 ---
-
 date: "2017-01-30"
 title: "Metricly Release Highlights – January 2017"
 description: "Metricly’s January 2017 release highlights include a Riemann integration, support for custom AWS metrics, & the release of the EC2 Recommendations Report."
@@ -10,18 +9,18 @@ layout: "single"
 
 After a nice holiday break, we're ready to get back into the swing of things. And with a new year comes resolutions, and we're resolving to serve up some great new features.
 
-Metricly's January 2017 release highlights include a Riemann integration, support for custom AWS metrics, and the official release of the EC2 Recommendations Report. Read more...
+Metricly's January 2017 release highlights include a Riemann integration, support for custom AWS metrics, and the official release of the EC2 Recommendations Report.
 
 Riemann Integration
 -------------------
 
-[![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/rnh_riemann.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/rnh_riemann.png)
+[![Riemann logo](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/rnh_riemann.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/rnh_riemann.png)
 
 In an effort to help consolidate your environment, Metricly now offers an integration with [Riemann](http://riemann.io/). Riemann aggregates events from your environment and can now be easily configured to forward the certain event streams to Metricly's API. This allows you to see key events from your environment alongside performance, capacity, and cost data in a single tool.
 
 Setup is simple: grab the [Metricly Riemann library](https://github.com/riemann/riemann/blob/master/src/riemann/netuitive.clj) from Github and an API key from the Riemann integration page in Metricly; from there it's plug and play.
 
-Check out the [help documentation](https://help.netuitive.com/Content/Integrations/riemann.htm) for more information.
+Check out the [help documentation](https://docs.metricly.com/integrations/riemann/) for more information.
 
 Custom AWS Metrics Support
 --------------------------
@@ -37,7 +36,7 @@ EC2 Recommendations Report General Release
 
 [![January 2017 Release Highlights: EC2 Recommendation Report](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/rnh_ec2_reco-1024x585.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/rnh_ec2_reco.png)
 
-After 2 months in beta, Metricly's [EC2 Recommendations Report](https://help.netuitive.com/Content/Reports/ec2_recommendation_report.htm?Highlight=ec2%20recommendation) is now available to all users. [Recent improvements](/optimize-aws-instance-types) include:
+After 2 months in beta, Metricly's [EC2 Recommendations Report](https://docs.metricly.com/reports/reports-ec2-recommendations/) is now available to all users. [Recent improvements](/optimize-aws-instance-types) include:
 
 -   Better handling of matching reserved and spot instances to their recommended instance counterparts.
 -   Actual costs are now used for recommendation calculations, so the report reconciles with the EC2 Cost Report and the recommendations take your current and specific discounts into account.

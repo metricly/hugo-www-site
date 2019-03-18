@@ -7,7 +7,7 @@ category: "Cloud Cost Management"
 url: "/updated-ec2-cost-report/"
 layout: "single"
 ---
-Being an AWS shop ourselves, we at [Metricly](/product) understand the impact AWS costs have on business. Last year, we [demystified AWS billing](/demystify-your-ec2-cost-analysis) with our EC2 cost report, and followed that up with [tailored EC2 recommendations](/ec2-cost-analysis-recommendations) to help you get the most from your AWS spend. Now, we've taken it one step further, replacing the old EC2 cost report with some truly innovative improvements in a new EC2 cost report. Read on to see what's new!
+Being an AWS shop ourselves, we at [Metricly](/aws-cost-tool) understand the impact AWS costs have on business. Last year, we [demystified AWS billing](/demystify-your-ec2-cost-analysis) with our EC2 cost report, and followed that up with [tailored EC2 recommendations](/ec2-cost-analysis-recommendations) to help you get the most from your AWS spend. Now, we've taken it one step further, replacing the old EC2 cost report with some truly innovative improvements in a new EC2 cost report. Read on to see what's new!
 
 Compare EC2 Cost and Performance Over Time
 ------------------------------------------

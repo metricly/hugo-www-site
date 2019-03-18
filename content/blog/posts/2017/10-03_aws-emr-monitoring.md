@@ -10,7 +10,7 @@ layout: "single"
 
 When it comes to Big Data processing, Amazon's Elastic MapReduce (EMR) is one of the most popular services available. A cloud-based platform that integrates popular Big Data frameworks like Hadoop and Flink with other AWS services like S3 and DynamoDB, EMR provides a cohesive, powerful platform for working with large datasets.
 
-But with Big Data comes big responsibility. In order to make the most of EMR, it's important to stay on top of the health of your EMR cluster using an [EMR monitoring platform like Metricly](/product). In this article, I show how.
+But with Big Data comes big responsibility. In order to make the most of EMR, it's important to stay on top of the health of your EMR cluster using an [EMR monitoring platform like Metricly](/aws-cost-tool). In this article, I show how.
 
 Understanding Amazon EMR's Architecture
 ---------------------------------------
@@ -49,9 +49,9 @@ If you've read this far, you understand that EMR life cycles are relatively comp
 
 This is where a tool like Metricly comes into play. We make EMR monitoring easy by allowing you to easily monitor your EMR environment and identify performance problems *before* they disrupt your EMR workflows.
 
-1.  To monitor Amazon Elastic MapReduce with Metricly, first [log in to your Metricly account](https://app.netuitive.com/#/login) and navigate to the Amazon Web Services Integration configuration panel.
-2.  If you haven't yet connected Metricly with your AWS account, follow the setup instructions presented on the [AWS Setup page](https://help.netuitive.com/Content/Integrations/aws.htm) before continuing.
-3.  Once we've successfully connected Metricly to AWS, we can then set up the EMR integration. The simplest way to do this is to check the EMR box on the same AWS Setup page:
+1. To monitor Amazon Elastic MapReduce with Metricly, first [log in to your Metricly account](https://app.netuitive.com/#/login) and navigate to the Amazon Web Services Integration configuration panel.
+2. If you haven't yet connected Metricly with your AWS account, follow the setup instructions presented on the [AWS Setup page](https://docs.metricly.com/integrations/aws-integration/) before continuing.
+3. Once we've successfully connected Metricly to AWS, we can then set up the EMR integration. The simplest way to do this is to check the EMR box on the same AWS Setup page:
 
 ![Amazon EWS Monitoring with Metricly](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/10/Amazon-EWS-Monitoring-with-Metricly.png)*Enable AWS EMR Monitoring in Metricly*
 

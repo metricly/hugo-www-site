@@ -98,4 +98,4 @@ Happy dashboard-ing!
 
 * * * * *
 
-*See our new monitoring dashboard improvements in action with our [21-day free trial](http://app.netuitive.com/signup).*
+*See our new monitoring dashboard improvements in action with our [21-day free trial](/signup).*

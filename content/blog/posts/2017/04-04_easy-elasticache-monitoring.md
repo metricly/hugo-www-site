@@ -7,14 +7,16 @@ category: "Cloud Monitoring"
 url: "/easy-elasticache-monitoring/"
 layout: "single"
 ---
-Amazon ElastiCache was first released as a service of Amazon Web Services (AWS) in August of 2011. The service provides users with a managed in-memory data store that can provide applications with a highly performant data backend for their services. Currently provided using either Memcached or Redis, the service has been shown to help organizations reduce their [![Elasticache Monitoring: AWS Elasticache](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/ElasticacheIcon.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/ElasticacheIcon.png)dependence on slower disk-based datastores, and can be leveraged during periods of high traffic to reduce load.
+Amazon ElastiCache was first released as a service of Amazon Web Services (AWS) in August of 2011. The service provides users with a managed in-memory data store that can provide applications with a highly performant data backend for their services. Currently provided using either Memcached or Redis, the service has been shown to help organizations reduce their dependence on slower disk-based datastores, and can be leveraged during periods of high traffic to reduce load.
+
+[![Elasticache Monitoring: AWS Elasticache](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/ElasticacheIcon.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/ElasticacheIcon.png)
 
 The configuration of ElastiCache clusters on AWS, and how to monitor their default functionality, has been written about a great deal. This article is going to go beyond that and explore the work the engineers and researchers at Metricly have been doing. We'll look at Metricly's Quick Start Package for AWS ElastiCache, and explore their configurations for dashboards, reports and [alert policies](/reduce-alert-multi-criteria-policies). These configurations have been designed to make it easier for engineers and operations support teams to implement industry best practices in Elasticache monitoring, and achieve the most from their organizations' investments in the Amazon ecosystem.
 
 What to Monitor on Amazon ElastiCache
 -------------------------------------
 
-We all know that monitoring is essential to a well-maintained environment, and that tools such as [those offered by Metricly](/product) make that task significantly easier. Before we look at Metricly in-depth and examine exactly how easy it makes setting up a world class monitoring solution, let's start at ground level and consider some of the Elasticache monitoring metrics we need to be concerned with, and why.
+We all know that monitoring is essential to a well-maintained environment, and that tools such as [those offered by Metricly](/aws-cost-tool) make that task significantly easier. Before we look at Metricly in-depth and examine exactly how easy it makes setting up a world class monitoring solution, let's start at ground level and consider some of the Elasticache monitoring metrics we need to be concerned with, and why.
 
 -   CPU Utilization
     -   At this most basic level, this is a measure of how much of the available processing power of the host machine is being used to support the datastore. The optimal level for this depends on whether you've implemented your ElastiCache using Memcache or Redis, and their distinctly different implementations of thread utilization.

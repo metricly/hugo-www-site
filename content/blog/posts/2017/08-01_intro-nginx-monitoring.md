@@ -71,7 +71,7 @@ Finally, reading, writing, and waiting all indicate the status of the current ac
 Monitoring NGINX in Production
 ------------------------------
 
-While the above information is interesting, monitoring a basic NGINX status page and parsing logfiles isn't really all that valuable in a production environment. With the potential for thousands of requests a second, it is important to establish an [effective monitoring solution](/product) that can keep you informed and aware of the health of your infrastructure.
+While the above information is interesting, monitoring a basic NGINX status page and parsing logfiles isn't really all that valuable in a production environment. With the potential for thousands of requests a second, it is important to establish an [effective monitoring solution](/aws-cost-tool) that can keep you informed and aware of the health of your infrastructure.
 
 To accomplish this, let's take a look at how to monitor an NGINX server using Metricly, and dig into what statistics we can actually monitor. The first thing we need to do to set up NGINX monitoring in Metricly is to set up the Metricly Linux agent. To do this, head on over to the [Integrations page in your Metricly](https://docs.metricly.com/integrations/) account, click on the Linux Integration, and follow the installation instructions.
 

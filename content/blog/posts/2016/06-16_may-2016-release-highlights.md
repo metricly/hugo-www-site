@@ -8,7 +8,7 @@ url: "/may-2016-release-highlights/"
 layout: "single"
 ---
 
-[Metricly's](https://www.metricly.com) engineers have been hard at work rolling out key features we think you'll love. May release highlights coming at you below:
+[Metricly's](/) engineers have been hard at work rolling out key features we think you'll love. May release highlights coming at you below:
 
 Node.js and PHP Monitoring
 --------------------------
@@ -49,9 +49,9 @@ New Status Checks
 
 Metricly added status checking support for Sensu and our HTTP Code Collector so instead of watching three or four apps at once, you can log into Metricly for a consolidated look into the health of your environment.
 
-Sensu: Monitor up- and down-states for elements, processes, REST API endpoints, and other concepts using external events. Check out our [Sensu documentation](https://help.netuitive.com/Content/Events/sensu.htm) for more information.
+Sensu: Monitor up- and down-states for elements, processes, REST API endpoints, and other concepts using external events. Check out our [Sensu documentation](https://docs.metricly.com/integrations/sensu/) for more information.
 
-HTTP Code Collector: See HTTP response codes come in as two separate metrics, which you can use to trigger policy alerts. Check out our [HTTP Code collector documentation](https://help.netuitive.com/Content/Misc/Datasources/Netuitive/integrations/http_code.htm) for more information.
+HTTP Code Collector: See HTTP response codes come in as two separate metrics, which you can use to trigger policy alerts. 
 
 * * * * *
 

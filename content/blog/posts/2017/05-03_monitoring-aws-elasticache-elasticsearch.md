@@ -61,7 +61,7 @@ Creating an AWS ElasticSearch Domain
 
 The [monitoring plan](/evaluate-monitoring-strategy) I'm going to present involves streaming log data from an AWS ElasticCache service via CloudWatch to an ElasticSearch (ES) domain, with some [AWS Lambda function](/monitoring-aws-lambdas-with-metricly/) magic to connect it all. Before we begin, I'd like to reiterate a warning which Amazon includes in their documentation on the topic of streaming log data to ElasticSearch (ES).
 
-**Note: **Streaming large amounts of CloudWatch Logs data to Amazon ES might result in high usage charges. We recommend that you [monitor your AWS bill](/view-manage-individual-aws-ec2-costs) to help avoid higher-than-expected charges.
+**Note:** Streaming large amounts of CloudWatch Logs data to Amazon ES might result in high usage charges. We recommend that you [monitor your AWS bill](/view-manage-individual-aws-ec2-costs) to help avoid higher-than-expected charges.
 
 So, with the acceptance of the fact that we may incur high usage charges from AWS, let's set up an ElasticSearch (ES) domain. Navigate to the AWS ElasticSearch home page. If this is your first domain, click on the **Get Started** button; otherwise, click on the **Create a new domain** button.
 
@@ -98,84 +98,84 @@ AWS Lambda is the [serverless offering from AWS](/best-practices-aws-lambda-moni
 
 ESMetrics is a POJO with a collection of properties for storing the values, and from there we'll build a JSON log entry.
 
-> public class ESMetrics {
->
-> @JsonProperty("StartDateTime")\
-> private Date startDate;\
-> @JsonProperty("EndDateTime")\
-> private Date endDate;\
-> @JsonProperty("CPUUtilization")\
-> private Double cpuUtilization;\
-> @JsonProperty("CacheHits")\
-> private Double cacheHits;\
-> @JsonProperty("CacheMisses")\
-> private Double cacheMisses;
->
-> //*** Lines ommitted\
-> public Double getCpuUtilization() {\
-> return cpuUtilization;\
-> }
->
-> public void setCpuUtilization(Double cpuUtilization) {\
-> this.cpuUtilization = cpuUtilization;\
-> }\
-> //*** Lines ommitted\
-> }
+    > public class ESMetrics {
+    >
+    > @JsonProperty("StartDateTime")\
+    > private Date startDate;\
+    > @JsonProperty("EndDateTime")\
+    > private Date endDate;\
+    > @JsonProperty("CPUUtilization")\
+    > private Double cpuUtilization;\
+    > @JsonProperty("CacheHits")\
+    > private Double cacheHits;\
+    > @JsonProperty("CacheMisses")\
+    > private Double cacheMisses;
+    >
+    > //*** Lines ommitted\
+    > public Double getCpuUtilization() {\
+    > return cpuUtilization;\
+    > }
+    >
+    > public void setCpuUtilization(Double cpuUtilization) {\
+    > this.cpuUtilization = cpuUtilization;\
+    > }\
+    > //*** Lines ommitted\
+    > }
 
-> public class ECMetricExporter implements RequestHandler<ScheduledEvent, String> {
->
-> private static final String EC_NAMESPACE = "AWS/ElastiCache";
->
-> private static final String CPU_UTILIZATION = "CPUUtilization";\
-> private static final String CACHE_HITS = "CacheHits";\
-> private static final String CACHE_MISSES = "CacheMisses";\
-> //*** Lines ommitted\
-> private static final String AVERAGE = "Average";
->
-> private ObjectMapper mapper = new ObjectMapper();
->
-> public String handleRequest(final ScheduledEvent event, final Context context) {\
-> LambdaLogger logger = context.getLogger();
->
-> try {\
-> GregorianCalendar calendar = new GregorianCalendar(TimeZone.getTimeZone("UTC"));\
-> calendar.add(GregorianCalendar.SECOND, -1 * calendar.get(GregorianCalendar.SECOND)); // 1 second ago\
-> Date endTime = calendar.getTime();\
-> calendar.add(GregorianCalendar.MINUTE, -1);\
-> Date startTime = calendar.getTime();
->
-> ESMetrics metrics = new ESMetrics();\
-> metrics.setStartDate(startTime);\
-> metrics.setEndDate(endTime);
->
-> AmazonCloudWatch cwClient = AmazonCloudWatchClientBuilder.defaultClient();\
-> GetMetricStatisticsResult cpuResult = cwClient.getMetricStatistics(getGetMetricStatisticsRequest(\
-> endTime, startTime, EC_NAMESPACE, CPU_UTILIZATION, Arrays.asList(AVERAGE)));\
-> GetMetricStatisticsResult hitsResult = cwClient.getMetricStatistics(getGetMetricStatisticsRequest(\
-> endTime, startTime, EC_NAMESPACE, CACHE_HITS, Arrays.asList(AVERAGE)));\
-> GetMetricStatisticsResult missResult = cwClient.getMetricStatistics(getGetMetricStatisticsRequest(\
-> endTime, startTime, EC_NAMESPACE, CACHE_MISSES, Arrays.asList(AVERAGE)));
->
-> //*** Lines ommitted\
-> for (Datapoint p : cpuResult.getDatapoints()) {\
-> metrics.setCpuUtilization(p.getAverage());\
-> }\
-> for (Datapoint p : hitsResult.getDatapoints()) {\
-> metrics.setCacheHits(p.getAverage());\
-> }\
-> for (Datapoint p : missResult.getDatapoints()) {\
-> metrics.setCacheMisses(p.getAverage());\
-> }
->
-> //*** Lines ommitted\
-> logger.log(mapper.writeValueAsString(metrics));\
-> } catch (Exception e) {\
-> e.printStackTrace();\
-> }\
-> return "Complete";\
-> }
->
-> private GetMetricStatisticsRequest getGetMetricStatisticsRequest(final Date endTime, final Date startTime, final String namespace, final String metricName, final List statistics) {
+    > public class ECMetricExporter implements RequestHandler<ScheduledEvent, String> {
+    >
+    > private static final String EC_NAMESPACE = "AWS/ElastiCache";
+    >
+    > private static final String CPU_UTILIZATION = "CPUUtilization";\
+    > private static final String CACHE_HITS = "CacheHits";\
+    > private static final String CACHE_MISSES = "CacheMisses";\
+    > //*** Lines ommitted\
+    > private static final String AVERAGE = "Average";
+    >
+    > private ObjectMapper mapper = new ObjectMapper();
+    >
+    > public String handleRequest(final ScheduledEvent event, final Context context) {\
+    > LambdaLogger logger = context.getLogger();
+    >
+    > try {\
+    > GregorianCalendar calendar = new GregorianCalendar(TimeZone.getTimeZone("UTC"));\
+    > calendar.add(GregorianCalendar.SECOND, -1 * calendar.get(GregorianCalendar.SECOND)); // 1 second ago\
+    > Date endTime = calendar.getTime();\
+    > calendar.add(GregorianCalendar.MINUTE, -1);\
+    > Date startTime = calendar.getTime();
+    >
+    > ESMetrics metrics = new ESMetrics();\
+    > metrics.setStartDate(startTime);\
+    > metrics.setEndDate(endTime);
+    >
+    > AmazonCloudWatch cwClient = AmazonCloudWatchClientBuilder.defaultClient();\
+    > GetMetricStatisticsResult cpuResult = cwClient.getMetricStatistics(getGetMetricStatisticsRequest(\
+    > endTime, startTime, EC_NAMESPACE, CPU_UTILIZATION, Arrays.asList(AVERAGE)));\
+    > GetMetricStatisticsResult hitsResult = cwClient.getMetricStatistics(getGetMetricStatisticsRequest(\
+    > endTime, startTime, EC_NAMESPACE, CACHE_HITS, Arrays.asList(AVERAGE)));\
+    > GetMetricStatisticsResult missResult = cwClient.getMetricStatistics(getGetMetricStatisticsRequest(\
+    > endTime, startTime, EC_NAMESPACE, CACHE_MISSES, Arrays.asList(AVERAGE)));
+    >
+    > //*** Lines ommitted\
+    > for (Datapoint p : cpuResult.getDatapoints()) {\
+    > metrics.setCpuUtilization(p.getAverage());\
+    > }\
+    > for (Datapoint p : hitsResult.getDatapoints()) {\
+    > metrics.setCacheHits(p.getAverage());\
+    > }\
+    > for (Datapoint p : missResult.getDatapoints()) {\
+    > metrics.setCacheMisses(p.getAverage());\
+    > }
+    >
+    > //*** Lines ommitted\
+    > logger.log(mapper.writeValueAsString(metrics));\
+    > } catch (Exception e) {\
+    > e.printStackTrace();\
+    > }\
+    > return "Complete";\
+    > }
+    >
+    > private GetMetricStatisticsRequest getGetMetricStatisticsRequest(final Date endTime, final Date startTime, final String namespace, final String metricName, final List statistics) {
 
 With that Lambda uploaded and set with a Cloudwatch trigger to run every minute, I now have a log group which I can stream into my ElasticSearch Domain.
 

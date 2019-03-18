@@ -22,11 +22,10 @@ Create a new Datasource in Metricly to obtain an API Key
 2.  Install Jolokia on your JVM (for remote JMX with JSON over HTTP)
 3.  Set the Metricly agent configuration file to conform to your Cassandra cluster
 
-For more detailed instruction, visit the [Metricly product documentation.](https://help.netuitive.com/Content/FrontMatter/frameless_home_page.htm)
 
 ### What are the most important Cassandra metrics for monitoring?
 
-Even with a good [performance monitoring tool](/), it can be difficult to tell which metrics are absolutely crucial and which can be relegated to a secondary dashboard. Ignoring a key metric or focusing on the wrong data can have a serious impact on the health of your environment. Ideally, when monitoring Cassandra, you'll want to understand the following 3 aspects:
+Even with a good [performance monitoring tool](/aws-cost-tool), it can be difficult to tell which metrics are absolutely crucial and which can be relegated to a secondary dashboard. Ignoring a key metric or focusing on the wrong data can have a serious impact on the health of your environment. Ideally, when monitoring Cassandra, you'll want to understand the following 3 aspects:
 
 1.  How much the cluster is being used
 2.  How fast and effectively nodes are able to respond to requests
@@ -80,6 +79,6 @@ Compaction should be run regularly, as this is the task that allows Cassandra to
 
 Monitoring Cassandra can be tricky if you have a large cluster or one that responds to a large number of queries. Graphs are helpful, but no DevOps team can keep an eye on their dashboards 24/7. Thresholds can be difficult to set and often create false alarms that waste time and resources.
 
-Netuitive makes monitoring a Cassandra cluster simple. Once setup is complete, you've got full access to Netuitive's advanced analytics platform, including [anomaly detection using machine learning.](/machine-learning-monitoring-alerts/) Using these best practices as guidelines, Netuitive makes it easy to customize Cassandra monitoring dashboards with an intuitive UI and extensive widget library.
+Metricly makes monitoring a Cassandra cluster simple. Once setup is complete, you've got full access to Metricly's advanced analytics platform, including [anomaly detection using machine learning.](/machine-learning-monitoring-alerts/) Using these best practices as guidelines, Metricly makes it easy to customize Cassandra monitoring dashboards with an intuitive UI and extensive widget library.
 
-Ready to start monitoring Cassandra? Metricly offers a [no-obligation, free trial.](/signup/)
+*Ready to start monitoring Cassandra? Metricly offers a [no-obligation, free trial.](/signup/)*

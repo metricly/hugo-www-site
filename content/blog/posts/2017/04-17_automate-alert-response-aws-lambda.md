@@ -10,7 +10,7 @@ layout: "single"
 
 By now, you've probably heard of AWS Lambda functions. They've become famous as the go-to solution for compute-intensive tasks like resizing photos.
 
-But did you know you can also make Lambda a powerful part of your monitoring routine? By using webhooks to trigger Lambda functions in response to [monitoring alerts,](/understanding-alert-noise-monitoring) you can. Below, I'll show you how, using [Metricly](/product).
+But did you know you can also make Lambda a powerful part of your monitoring routine? By using webhooks to trigger Lambda functions in response to [monitoring alerts,](/understanding-alert-noise-monitoring) you can. Below, I'll show you how, using [Metricly](/aws-cost-tool).
 
 Intro to AWS Lambda
 -------------------
@@ -51,59 +51,59 @@ The Lambda I created for this example is simple, and is not to be considered a p
 -   Ensuring that the IAM role you use for the Lambda has rights to perform the *"dynamodb:UpdateTable"* action.
 -   Ensuring that you specify the region where the table is located, either as a property in the handler, or passed in parameter.
 
-> package com.echovue.dynamoCapacityUpdater;
->
-> import com.amazonaws.regions.Region;\
-> import com.amazonaws.regions.Regions;\
-> import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClient;\
-> import com.amazonaws.services.dynamodbv2.document.DynamoDB;\
-> import com.amazonaws.services.dynamodbv2.document.Table;\
-> import com.amazonaws.services.dynamodbv2.model.ProvisionedThroughput;\
-> import com.amazonaws.services.lambda.runtime.Context;\
-> import com.amazonaws.services.lambda.runtime.LambdaLogger;\
-> import com.amazonaws.services.lambda.runtime.RequestHandler;\
-> import com.echovue.dynamoCapacityUpdater.model.CapacityConfigEvent;
->
-> public class DynamoCapacityUpdater implements RequestHandler<CapacityConfigEvent, String> {\
-> private AmazonDynamoDBClient amazonDynamoDBClient;\
-> private DynamoDB dynamoDB;\
-> private Region region = Region.getRegion(Regions.US_WEST_2);
->
-> @Override\
-> public String handleRequest(CapacityConfigEvent event, Context context) {\
-> LambdaLogger logger = context.getLogger();\
-> Table table = getDynamoDB().getTable(event.getDynamoDBTableName());\
-> ProvisionedThroughput provisionedThroughput = new ProvisionedThroughput()\
-> .withReadCapacityUnits(event.getReadCapacityUnits())\
-> .withWriteCapacityUnits(event.getWriteCapacityUnits());\
-> logger.log("Updating " + event.getDynamoDBTableName() + " in region " +\
-> region.toString());\
-> table.updateTable(provisionedThroughput);
->
-> return "Scaled Table (" + event.getDynamoDBTableName()\
-> + ") to [" + event.getReadCapacityUnits() + ":"\
-> + event.getWriteCapacityUnits() + "]";\
-> }
->
-> private DynamoDB getDynamoDB() {\
-> if (amazonDynamoDBClient == null || dynamoDB == null) {\
-> amazonDynamoDBClient = new AmazonDynamoDBClient().withRegion(region);\
-> dynamoDB = new DynamoDB(amazonDynamoDBClient);\
-> }\
-> return dynamoDB;\
-> }\
-> }
+    >package com.echovue.dynamoCapacityUpdater;
+
+    > import com.amazonaws.regions.Region;\
+    > import com.amazonaws.regions.Regions;\
+    > import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClient;\
+    > import com.amazonaws.services.dynamodbv2.document.DynamoDB;\
+    > import com.amazonaws.services.dynamodbv2.document.Table;\
+    > import com.amazonaws.services.dynamodbv2.model.ProvisionedThroughput;\
+    > import com.amazonaws.services.lambda.runtime.Context;\
+    > import com.amazonaws.services.lambda.runtime.LambdaLogger;\
+    > import com.amazonaws.services.lambda.runtime.RequestHandler;\
+    > import com.echovue.dynamoCapacityUpdater.model.CapacityConfigEvent;
+
+    > public class DynamoCapacityUpdater implements RequestHandler<CapacityConfigEvent, String> {\
+    > private AmazonDynamoDBClient amazonDynamoDBClient;\
+    > private DynamoDB dynamoDB;\
+    > private Region region = Region.getRegion(Regions.US_WEST_2);
+
+    > @Override\
+    > public String handleRequest(CapacityConfigEvent event, Context context) {\
+    > LambdaLogger logger = context.getLogger();\
+    > Table table = getDynamoDB().getTable(event.getDynamoDBTableName());\
+    > ProvisionedThroughput provisionedThroughput = new ProvisionedThroughput()\
+    > .withReadCapacityUnits(event.getReadCapacityUnits())\
+    > .withWriteCapacityUnits(event.getWriteCapacityUnits());\
+    > logger.log("Updating " + event.getDynamoDBTableName() + " in region " +\
+    > region.toString());\
+    > table.updateTable(provisionedThroughput);
+
+    > return "Scaled Table (" + event.getDynamoDBTableName()\
+    > + ") to [" + event.getReadCapacityUnits() + ":"\
+    > + event.getWriteCapacityUnits() + "]";\
+    > }
+
+    > private DynamoDB getDynamoDB() {\
+    > if (amazonDynamoDBClient == null || dynamoDB == null) {\
+    > amazonDynamoDBClient = new AmazonDynamoDBClient().withRegion(region);\
+    > dynamoDB = new DynamoDB(amazonDynamoDBClient);\
+    > }\
+    > return dynamoDB;\
+    > }\
+    > }
 
 The handler accepts a custom event object, which includes the name of the table to be updated, and values for the new read and write capacities. Accessor functions are excluded from the code below for brevity.
 
-> package com.echovue.dynamoCapacityUpdater.model;
->
-> import com.amazonaws.services.lambda.runtime.events.ConfigEvent;
->
-> public class CapacityConfigEvent extends ConfigEvent {\
-> private String dynamoDBTableName;\
-> private Long readCapacityUnits;\
-> private Long writeCapacityUnits;
+    > package com.echovue.dynamoCapacityUpdater.model;
+    >
+    > import com.amazonaws.services.lambda.runtime.events.ConfigEvent;
+    >
+    > public class CapacityConfigEvent extends ConfigEvent {\
+    > private String dynamoDBTableName;\
+    > private Long readCapacityUnits;\
+    > private Long writeCapacityUnits;
 
 Enabling Access Through the API Gateway
 ---------------------------------------
@@ -130,11 +130,11 @@ When you click on the **Save** button, you'll receive a notification asking you 
 
 Your Lambda is now configured and can be tested, secured and deployed. To test your API, click on the **Test** box, and then enter a test payload for the API. I used the following JSON object to test both my Lambda function and this API.
 
-> {\
-> "dynamoDBTableName": "My_Dynamo_Table",\
-> "readCapacityUnits": 1,\
-> "writeCapacityUnits": 1\
-> }
+    > {\
+    > "dynamoDBTableName": "My_Dynamo_Table",\
+    > "readCapacityUnits": 1,\
+    > "writeCapacityUnits": 1\
+    > }
 
 Once your API is tested and working, you'll want to secure it. You have some options, which should be reviewed to select the best one for your situation. Configuration for access controls is done through the **Authorizers** option under the name of your API in the left-most column.
 
@@ -157,11 +157,11 @@ Click on the **Notifications** option, and then click the **Add Notification** b
 
 The configuration of the Webhook is fairly straightforward. You'll need a name and the URL created for the API. I selected the custom payload option, and then entered the following as my payload, which will set the capacity of my table to one read and write per second, simply to demonstrate the functionality.
 
-> {\
-> "dynamoDBTableName": "${elementId}",\
-> "readCapacityUnits": 1,\
-> "writeCapacityUnits": 1\
-> }
+    > {\
+    > "dynamoDBTableName": "${elementId}",\
+    > "readCapacityUnits": 1,\
+    > "writeCapacityUnits": 1\
+    > }
 
 ![AWS Lambda Automate Response: Configure Webhook](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Webhook-Configuration-768x448.png)
 
@@ -170,6 +170,6 @@ Click **Test and Save** and your webhook will be configured and ready for action
 Additional Resources
 --------------------
 
-Unfortunately with a topic this broad, I have only been able to touch on the very basic steps in the process covered here. To find out more about the capabilities offered by Metricly for monitoring, and especially those for creating alerts and notifications, check out the excellent [Metricly Help system](https://help.netuitive.com/Content/home.htm).
+Unfortunately with a topic this broad, I have only been able to touch on the very basic steps in the process covered here. To find out more about the capabilities offered by Metricly for monitoring, and especially those for creating alerts and notifications, check out the excellent [Metricly Help system](https://docs.metricly.com/).
 
 The AWS documentation is an invaluable resource if you would like additional information on [AWS Lambda](http://docs.aws.amazon.com/lambda/latest/dg/welcome.html) and the [AWS API Gateway](http://docs.aws.amazon.com/apigateway/latest/developerguide/welcome.html).

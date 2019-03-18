@@ -11,7 +11,7 @@ Systems administrators sometimes face the arduous task of transitioning their en
 
 Wrong.
 
-In fact, there are some really good reasons to consider adding resource utilization and performance analysis to your environment before you migrate. Good monitoring offers reporting and alerting functionality (especially [anomaly detection](/product)) that can help with the performance and resource utilization aspects of such a project. Here are three reasons not to wait to implement a performance monitoring solution.
+In fact, there are some really good reasons to consider adding resource utilization and performance analysis to your environment before you migrate. Good monitoring offers reporting and alerting functionality (especially [anomaly detection](/aws-cost-tool)) that can help with the performance and resource utilization aspects of such a project. Here are three reasons not to wait to implement a performance monitoring solution.
 
 *If you'd like to see resource utilization and performance analysis for your own environment, [try our free demo](/signup).*
 
@@ -22,7 +22,7 @@ Your team is moving to a new environment -- but how do you know what size enviro
 
 The most important aspect of capacity planning is ensuring you fully understand the "footprint" of the application workload before making any changes. In simple terms, you need to measure the server resource utilization as well as the utilization of memory, disk and network I/O. You also need to know the disk space of the existing servers based on historic application workload.
 
-Metricly's [utilization report](https://help.netuitive.com/Content/Reports/utilization_boxplot_report.htm) uses two techniques to help this analysis:
+Metricly's [utilization report](https://docs.metricly.com/reports/reports-resource-utilization/) uses two techniques to help this analysis:
 
 First, it makes it easier to visualize relevant data measured in multiple dimensions by using a box-plot. A box-plot or a whisker-plot shows the minimum, maximum, and median as well as upper and lower quartile of utilization over the course of time. The upper and lower quartiles (shown as a rectangle) indicate the range of values for 50% of the measurements over time. A wide rectangle indicates volatility in usage, for which appropriate provisioning is required during peak hours.
 

@@ -14,7 +14,9 @@ In order to provide organizations with an environment in which to deploy their D
 Anatomy of Amazon EC2 Container Service
 ---------------------------------------
 
-[![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/ECSIcon.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/ECSIcon.png)Amazon ECS is essentially just a platform to support Docker instances, with added support to manage those instances and simplify implementation for the user. With that said, it is important to note that Amazon has introduced slightly different terms to describe aspects of the Docker environment, and it is worth examining these before we continue.
+[![Anatomy of Amazon EC2 Container Service](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/ECSIcon.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/ECSIcon.png)
+
+Amazon ECS is essentially just a platform to support Docker instances, with added support to manage those instances and simplify implementation for the user. With that said, it is important to note that Amazon has introduced slightly different terms to describe aspects of the Docker environment, and it is worth examining these before we continue.
 
 **Cluster:** This refers to the group of EC2 instances which will be used to host your Docker containers.
 
@@ -50,7 +52,7 @@ The following steps assume you already have a Metricly account. If you don't yet
 
 Log in to your Metricly account, and click on the Integrations option at the top of the page. We're going to include two integrations in our container---First, the Linux agent itself, and then we'll enable Docker metrics collection on the agent. There are two approaches to adding these to your containers.
 
-The first is by installing the Linux agent manually on a base image, enabling the Docker collector, and then saving the resulting image as a new Docker image for your projects. This is the process I followed, and is detailed on the [Linux Agent](https://hlp.app.netuitive.com/Content/Integrations/linux.htm) and [Docker Integration](https://hlp.app.netuitive.com/Content/Integrations/docker.htm) pages.
+The first is by installing the Linux agent manually on a base image, enabling the Docker collector, and then saving the resulting image as a new Docker image for your projects. This is the process I followed, and is detailed on the [Linux Agent](https://docs.metricly.com/integrations/agents/linux-agent/) and [Docker Integration](https://docs.metricly.com/integrations/docker/) pages.
 
 The second approach is the use of the docker-agent image available on [Docker Hub](https://hub.docker.com/r/netuitive/docker-agent/). While I did not attempt this approach, the documentation appeared to be very comprehensive in detailing the installation steps and presenting the various options available.
 

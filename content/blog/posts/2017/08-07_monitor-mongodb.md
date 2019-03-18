@@ -26,7 +26,7 @@ Beyond simply being able to deal with "dirty" data better than a relational data
 Behind the Scenes
 -----------------
 
-As with all things, understanding the ins-and-outs of MongoDB can be an invaluable step towards setting up an [effective monitoring solution](/product). So...How exactly does it work?
+As with all things, understanding the ins-and-outs of MongoDB can be an invaluable step towards setting up an [effective monitoring solution](/aws-cost-tool). So...How exactly does it work?
 
 To steal a little bit from the [official website](https://www.mongodb.com/mongodb-architecture), MongoDB stores JSON-like documents in a binary format called BSON (literally "Binary JSON"). Similar to how MySQL uses tables to collect like datasets together, MongoDB uses collections; the big difference is that the unstructured nature of MongoDB allows for data that is typically separated into multiple tables to be grouped into one individual record. This nearly eliminates the need to JOIN tables, increases performance, and reduces reads to single operations.
 

@@ -8,7 +8,7 @@ url: "/metricly-linux-monitoring-agent/"
 layout: "single"
 ---
 
-Software engineers can only solve problems they know about. And they can only know if their proposed solutions actually resolve problems by being able to see and measure the results. Timely access to data and the ability to analyze and understand that information is critical to success. The capacity to provide solutions which help in this is what makes the products offered by organizations like Metricly so valuable. In this article, we're going to take a deep dive into the Linux monitoring agent used by [Metricly](/product) to gather key metrics.
+Software engineers can only solve problems they know about. And they can only know if their proposed solutions actually resolve problems by being able to see and measure the results. Timely access to data and the ability to analyze and understand that information is critical to success. The capacity to provide solutions which help in this is what makes the products offered by organizations like Metricly so valuable. In this article, we're going to take a deep dive into the Linux monitoring agent used by [Metricly](/aws-cost-tool) to gather key metrics.
 
 We're going to look at the origins of the agent and discuss how to extend the agent and deploy it onto your Linux machines. We'll look at adding readily available collectors to gather metrics from a variety of applications, as well as [custom metrics](/enable-aws-custom-metrics). Finally, we'll look at how Metricly compiles and organizes this data into preconfigured dashboards and provides you with the tools to debug, [detect anomalies](/what-is-anomaly-detection), and ensure that your applications are running smoothly without needing to keep an eye on them constantly.
 
@@ -42,7 +42,7 @@ With minimal effort, you'll be able to access recommendations to optimize cost, 
 Linux Monitoring Agent Installation
 -----------------------------------
 
-Metricly provides detailed instructions for [installing the Metricly Linux monitoring agent](https://docs.metricly.com/integrations/linux) on your server. They walk you through the process of downloading, installing, and configuring the agent with additional information about Docker container installation, troubleshooting, and upgrading.
+Metricly provides detailed instructions for [installing the Metricly Linux monitoring agent](https://docs.metricly.com/integrations/agents/linux-agent/linux-standard-install/) on your server. They walk you through the process of downloading, installing, and configuring the agent with additional information about Docker container installation, troubleshooting, and upgrading.
 
 Installing the Linux monitoring agent on a couple of servers is the perfect way to see what the agent can do and let you experiment with what metrics are available. To fully appreciate the value of what the agent can do and how Metricly can analyze and report on data, however, you need to have the agent deployed on all machines in your deployment. In the past, the Diamond agent has been successfully installed across [a thousand worker nodes, reporting three million data points each minute](https://answers.launchpad.net/graphite/+question/178969), so it's very scalable if you have a system to handle it.
 
@@ -61,9 +61,8 @@ If you want to gather additional metrics from your applications, there are two o
 
 Your first choice is to find one of the Integrations that Metricly has developed and provides on their site. An overwhelming benefit of this approach is that any configuration, including access keys, account IDs and the like are included as part of the scripts used in the installation. You can access a full listing of the Integrations available on the [Integrations page](https://docs.metricly.com/integrations/) in the Help Documentation.
 
-![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/11/Screen-Shot-2017-11-08-at-2.43.24-PM-1024x642.png)
-
-Metricly Integrations Page
+![Metricly Integrations](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/11/Screen-Shot-2017-11-08-at-2.43.24-PM-1024x642.png)
+*Metricly Integrations Page*
 
 Your second choice is to extend the agent with one of many collectors which have been developed for different applications. The [metricly-diamond project](https://github.com/Netuitive/netuitive-diamond/tree/master/src/collectors) contains more than 125 collectors, including the following popular packages:
 

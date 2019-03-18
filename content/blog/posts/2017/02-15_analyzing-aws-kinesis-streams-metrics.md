@@ -14,7 +14,7 @@ Amazon Kinesis Streams is [managed service hosting by AWS](https://aws.amazon.co
 
 The messages that flow through Kinesis can include logs, streaming metrics, notifications, or almost any other type of data. From there, Kinesis can expose that data for data consumers, which could ingest, store, or process that data for analysis with various data analytics tools.
 
-This is Part 1 of a two-part post. In this post, we're going to dive into the metrics provided by Amazon when using Kinesis; give a brief description of what each means; and try to cover some of the best practices surrounding the metrics provided by Kinesis and [Metricly](/product).
+This is Part 1 of a two-part post. In this post, we're going to dive into the metrics provided by Amazon when using Kinesis; give a brief description of what each means; and try to cover some of the best practices surrounding the metrics provided by Kinesis and [Metricly](/aws-cost-tool).
 
 Kinesis Streams Monitoring Metrics
 
@@ -50,7 +50,7 @@ The metrics provided by Amazon and Metricly for Kinesis are listed below. Key me
 
 In general, when working with Kinesis, watch for higher latency on both sides of your stream. Watch the amount of data going into and out of the stream for sudden changes. Failures with producers emitting data to the stream, and consumers retrieving data from the stream are likely indicators of problems with your stack.
 
-You can also find additional information about the metrics provided by referring to Amazon [documentation](http://docs.aws.amazon.com/streams/latest/dev/monitoring-with-cloudwatch.html), as well as the [Metricly AWS Integration Metrics](https://help.netuitive.com/Content/Integrations/aws_metrics.htm#kinesis-1) documentation.
+You can also find additional information about the metrics provided by referring to Amazon [documentation](http://docs.aws.amazon.com/streams/latest/dev/monitoring-with-cloudwatch.html), as well as the [Metricly AWS Integration Metrics](https://docs.metricly.com/integrations/aws-integration/metrics/#kinesis-1) documentation.
 
 Conclusion
 ----------

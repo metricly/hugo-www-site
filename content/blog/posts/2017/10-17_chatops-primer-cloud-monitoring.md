@@ -30,9 +30,8 @@ One of the most useful functions of Slack's API is the ability to define message
 
 ![ChatOps in Slack Explained](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/10/ChatOps-in-Slack-Explainedpng-1.png)
 
-Slack message actions
 
-Metricly ![❤](https://s.w.org/images/core/emoji/11/svg/2764.svg) ChatOps
+ChatOps
 ------------------------------------------------------------------------
 
 Slack alerts can go beyond text, and vendors such as Metricly offer feature-rich notifications to convey more information. For example, a graph showing Java heap usage quickly outlines a problem as predefined thresholds are crossed, without having to read through the details. In this case, the graph shows just how urgent the situation is.
@@ -46,7 +45,7 @@ Metric charts become especially useful with external tools and environments, suc
 Amazon Web Service (AWS) Monitoring with ChatOps
 ------------------------------------------------
 
-With Metricly and Slack, you can easily create and integrate Incoming WebHooks to support notifications from web-based applications such as those in AWS. To do this, we first must begin by [connecting Metricly with Slack](https://help.netuitive.com/Content/Misc/Notifications/slack_notification.htm), and then configure it to post events to the appropriate channels. Direct integration with AWS is enabled by adding a Metricly role in the *AWS Identity and Access Management (IAM) Roles* configuration.
+With Metricly and Slack, you can easily create and integrate Incoming WebHooks to support notifications from web-based applications such as those in AWS. To do this, we first must begin by [connecting Metricly with Slack](https://docs.metricly.com/alerts-notifications/notifications/notifications-slack/), and then configure it to post events to the appropriate channels. Direct integration with AWS is enabled by adding a Metricly role in the *AWS Identity and Access Management (IAM) Roles* configuration.
 
 ![ChatOps setup on AWS](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/10/ChatOps-setup-on-AWS.png)
 
@@ -64,7 +63,7 @@ While this integration will be enough for 90% of standard use cases, if needed, 
 
 Metricly custom integration
 
-The Metricly [Ingest API Documentation](https://help.netuitive.com/Content/Misc/API/Metrics/ingest_api-creating_metric_data.htm#create-a-data-sample) describes how to define a custom integration data sample to ingest into Slack or other ChatOps tools. For more manual interactions, Slack also allows you to define what are called [Slash Commands](https://api.slack.com/slash-commands) to trigger actions. By integrating various tools (Metricly, Slack, and AWS, for example), you can trigger commands that can be sent to an application or service. All you need to do is define the Slack command, the URL where you host the integration (inside Metricly, for instance) and a custom icon as a visual cue within the Slack channel. You then add your new Slack commands to a custom Slack app to complete the integration.
+The Metricly [Ingest API Documentation](https://docs.metricly.com/api/api-metrics/#create-a-data-sample) describes how to define a custom integration data sample to ingest into Slack or other ChatOps tools. For more manual interactions, Slack also allows you to define what are called [Slash Commands](https://api.slack.com/slash-commands) to trigger actions. By integrating various tools (Metricly, Slack, and AWS, for example), you can trigger commands that can be sent to an application or service. All you need to do is define the Slack command, the URL where you host the integration (inside Metricly, for instance) and a custom icon as a visual cue within the Slack channel. You then add your new Slack commands to a custom Slack app to complete the integration.
 
 Taking ChatOps Further
 ----------------------
@@ -75,6 +74,6 @@ This is because the chatbot itself effectively becomes the interface engineers i
 
 Metricly currently offers [over 65 pre-built integration points](https://docs.metricly.com/integrations/) with external tools and systems. This includes very specific integrations (such as with Slack, Chef, Docker, GitHub, and more) and broader integrations, such as with AWS, Java, Red Hat, Windows, and so on. With these, you can gather a wide range of full-stack metrics, including end-user browser statistics, Java VM and application instrumentation, OS-level monitoring, and custom application data gathering that you define.
 
-While the benefits are pretty self-evident, ChatOps requires some work for the integration between the group chat facility (e.g. Slack) and the rest of your infrastructure and processes. Some use repositories such as Git, scripting languages, or even products such as Amazon Echo for voice input. For most, the best approach is to use a standard interface for integration, such as JSON or XML. Additionally, a pre-packaged solution such as Metricly, [which offers hooks](https://help.netuitive.com/Content/Misc/API/webhook_api.htm) to integrate with common IT systems through standard interfaces, is often the best way to start.
+While the benefits are pretty self-evident, ChatOps requires some work for the integration between the group chat facility (e.g. Slack) and the rest of your infrastructure and processes. Some use repositories such as Git, scripting languages, or even products such as Amazon Echo for voice input. For most, the best approach is to use a standard interface for integration, such as JSON or XML. Additionally, a pre-packaged solution such as Metricly, [which offers hooks](https://docs.metricly.com/api/api-webhooks/) to integrate with common IT systems through standard interfaces, is often the best way to start.
 
 When it comes to ChatOps, Metricly's solution set is the culmination of years of [advanced machine learning](/machine-learning-monitoring-alerts) expertise, deployed as a SaaS offering, and is targeted at the rapidly growing market of public cloud computing. Machine learning helps to provide [smart alerts and monitoring](/reduce-alert-multi-criteria-policies), alerting you to the most important events first, based on past occurrences. Analytics and intelligence inform you of future issues before they occur, forecast future needs based on growth patterns, and reduce noisy alerts that result in wasted time. By combining performance, capacity, and cloud cost analysis, Metricly learns the behavior and workload patterns of your environment to optimize your resource utilization, reduce your cloud spending, and identify performance anomalies that matter to your business.

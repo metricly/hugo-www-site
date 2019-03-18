@@ -34,7 +34,7 @@ We've also made widget creation much easier. Just click the blue button at the t
 
 **Auto-Save Changes**
 
-Finally, [Metricly](/product) preserves all of these changes in real time as you make them -- no need to remember to hit "save."
+Finally, [Metricly](/aws-cost-tool) preserves all of these changes in real time as you make them -- no need to remember to hit "save."
 
 * * * * *
 

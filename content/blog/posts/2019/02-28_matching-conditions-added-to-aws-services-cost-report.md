@@ -16,7 +16,7 @@ Dollar change and percentage change conditions have been added under the **Match
 -   **Any Group Delta**: filter for dollar amount changes in cost compared to previous billing period
 -   **Any Group Delta %**: set min/max percentage change in cost compared to previous billing period
 
-![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2019/02/dollar-percent-filters-optimized.gif)
+![New matching conditions to simplify bill monitoring](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2019/02/dollar-percent-filters-optimized.gif)
 
 ### Set a budget for one or all services
 

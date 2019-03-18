@@ -21,12 +21,12 @@ It's assumed you already have an Amazon Web Services account where you have set 
 
 If you're unfamiliar with RDS, it's advisable that you take some time to review the [Amazon RDS documentation](https://aws.amazon.com/rds/getting-started/) and learn a little more about how it works and the features provided. Once you've done this, configuring RDS is relatively painless and shouldn't take more than a few minutes.
 
-Finally, you should also have a Metricly account to configure your monitoring for RDS. Metricly provides a [21-day free trial](/signup) to get you started. You can learn more about Metricly by watching the [What is Metricly](/) overview video, and the [Metricly Blog](/blog) provides helpful posts about monitoring with Metricly.
+Finally, you should also have a Metricly account to configure your monitoring for RDS. Metricly provides a [21-day free trial](/signup) to get you started. You can learn more about Metricly by watching the [What is Metricly](/demo) overview video, and the [Metricly Blog](/blog) provides helpful posts about monitoring with Metricly.
 
 Metricly's Integration
 -----------------------
 
-At this point, we'll assume you have all of the prerequisites out of the way. The next step is to create a Metricly AWS integration with which you'll monitor AWS RDS. Metricly provides [detailed instructions](https://help.app.netuitive.com/Content/Integrations/aws.htm) for creating an AWS integration. It is recommended that you create your integration using the "Installation Via IAM Role" in the previously linked documentation.
+At this point, we'll assume you have all of the prerequisites out of the way. The next step is to create a Metricly AWS integration with which you'll monitor AWS RDS. Metricly provides [detailed instructions](https://docs.metricly.com/integrations/aws-integration/) for creating an AWS integration. It is recommended that you create your integration using the "Installation Via IAM Role" in the previously linked documentation.
 
 One additional step you'll need to perform is checking **RDS** box on the *AWS Setup* page when configuring your integration, as shown below.
 
@@ -83,7 +83,7 @@ You can read more about [The Benefits of Computed Metrics in Monitoring](/comput
 RDS Metrics
 -----------
 
-There are a number of RDS metrics gathered by Metricly. Covering each one in detail is outside the scope of this post, but you can see the [complete list](https://help.netuitive.com/Content/Integrations/aws_metrics.htm) in the Metricly documentation. For now, we're going to focus on the ones you are most likely to need to watch closely for signs of problems.
+There are a number of RDS metrics gathered by Metricly. Covering each one in detail is outside the scope of this post, but you can see the [complete list](https://docs.metricly.com/integrations/aws-integration/metrics/) in the Metricly documentation. For now, we're going to focus on the ones you are most likely to need to watch closely for signs of problems.
 
 In particular, you should pay attention to the following:
 

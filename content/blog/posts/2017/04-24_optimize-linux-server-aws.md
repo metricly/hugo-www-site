@@ -12,16 +12,16 @@ Linux itself may be (usually) free, but the server resources you host it on are 
 
 To optimize Linux server performance, you need to consider two main factors. First, you'll want to consider which resources are not being fully utilized, and could therefore be scaled back to save money and maintenance overhead. Second, you'll need to consider which resources need to be increased in order for critical apps and services to run faster.
 
-In this article, we'll use[ Metricly](/product) to collect data and analyze it in order to optimize Linux server performance. Specifically, we'll focus on optimizing a virtual Linux server hosted on AWS.
+In this article, we'll use[ Metricly](/aws-cost-tool) to collect data and analyze it in order to optimize Linux server performance. Specifically, we'll focus on optimizing a virtual Linux server hosted on AWS.
 
 Prerequisites: Setting Up Accounts and a Linux Server
 -----------------------------------------------------
 
-To start collecting data, we first need to set up an AWS account host on our server, and a Metricly account. In the AWS account, we need to create an IAM Role and then associate it with Metricly. You can follow [these steps](https://help.app.netuitive.com/Content/Integrations/aws.htm) to create and associate it.
+To start collecting data, we first need to set up an AWS account host on our server, and a Metricly account. In the AWS account, we need to create an IAM Role and then associate it with Metricly. You can follow [these steps](https://docs.metricly.com/integrations/aws-integration/) to create and associate it.
 
 You also need to set up a Linux server to monitor on AWS, of course. Feel free to use any flavor of Linux that you like; the instructions below apply to any Linux-based OS. For the purposes of this article, we'll use an AWS instance with Ubuntu 16.04.2 LTS, the latest version available on AWS.
 
-Once your Linux server is set up, you need to install Metricly's Linux integration. You can do this by following [these simple steps](https://help.netuitive.com/Content/Integrations/linux.htm). After installation, you'll start receiving data metrics about virtual memory statistics, network, memory, load average, heartbeat, disk usage, disk space and CPU in Metricly.
+Once your Linux server is set up, you need to install Metricly's Linux integration. You can do this by following [these simple steps](https://docs.metricly.com/integrations/agents/linux-agent/). After installation, you'll start receiving data metrics about virtual memory statistics, network, memory, load average, heartbeat, disk usage, disk space and CPU in Metricly.
 
 Netuitive has a [customized dashboard](/metricly-dashboard-upgrades/) dedicated to showing data collected from your Linux server on EC2. In this dashboard, you can monitor the data sources outlined above---network performance, CPU, and so on. You can also create customized metrics not available in Netuitive by default.
 
@@ -66,9 +66,9 @@ The [Utilization Boxplot Report](/) helps to identify what resources could be op
 
 Another useful resource provided by Metricly is Policies. In AWS EC2, [you can use policies](/reduce-alert-multi-criteria-policies) to monitor elevated CPU activity and network activity. This is particularly helpful when your Linux server is a web server, because in this scenario, an increase in processing normally accompanies an increase in traffic---but when you see an increase of one of these metrics in the absence of the other, that could be a sign of a problem.
 
-Metricly also allows you to define notifications to be sent when a policy reaches a predetermined condition. These notifications can be sent by email or webhook, or can be integrated with ChatOps apps. You can [read more about all of the available default policies](https://help.netuitive.com/Content/Policies/DefaultPolicies/default_policies.htm) in the documentation. The image below illustrates one of the available visualizations of policies, showing the events that were generated when the policy conditions were reached.
+Metricly also allows you to define notifications to be sent when a policy reaches a predetermined condition. These notifications can be sent by email or webhook, or can be integrated with ChatOps apps. You can [read more about all of the available default policies](https://docs.metricly.com/alerts-notifications/policies/default-policies/) in the documentation. The image below illustrates one of the available visualizations of policies, showing the events that were generated when the policy conditions were reached.
 
-![](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Events-1024x568.png)
+![Visualizations of policies](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Events-1024x568.png)
 
 Conclusion
 ----------

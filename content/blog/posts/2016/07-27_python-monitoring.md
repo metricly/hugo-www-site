@@ -8,7 +8,7 @@ url: "/python-monitoring/"
 layout: "single"
 ---
 
-Application [monitoring](/product) can be a tricky, time-consuming business with the potential to cause major headaches if not configured properly. Recognizing that, we put our team to work [configuring our StatsD server to integrate with Python](https://help.netuitive.com/Content/Misc/Datasources/Netuitive/integrations/python.htm) so you can bring the power of anomaly detection to your applications. Here's our quick-and-easy guide to monitoring with Python and how to get the most from your metrics!
+Application [monitoring](/aws-cost-tool) can be a tricky, time-consuming business with the potential to cause major headaches if not configured properly. Recognizing that, we put our team to work [configuring our StatsD server to integrate with Python](https://docs.metricly.com/integrations/python/) so you can bring the power of anomaly detection to your applications. Here's our quick-and-easy guide to monitoring with Python and how to get the most from your metrics!
 
 What is Python?
 ---------------
@@ -20,7 +20,7 @@ Python is a programming language that has almost infinite capabilities. It's eas
 How do you collect metrics for Python applications?
 ---------------------------------------------------
 
-Collecting metrics for your Python application through Metricly requires the Metricly agent, which utilizes [our StatsD server](https://help.netuitive.com/Content/Misc/Datasources/new_statsd_datasource.htm). Once the agent is deployed, your application uses it to send metrics via the Python client library to the StatsD daemon to collect and aggregate them. At a predetermined interval, StatsD "flushes" all the data it's collected to Metricly.
+Collecting metrics for your Python application through Metricly requires the Metricly agent, which utilizes [our StatsD server](https://docs.metricly.com/integrations/etsy-statsd/). Once the agent is deployed, your application uses it to send metrics via the Python client library to the StatsD daemon to collect and aggregate them. At a predetermined interval, StatsD "flushes" all the data it's collected to Metricly.
 
 The StatsD daemon is intended to instrument method calls associated with the classes used in your application code. Each time an object is spawned, StatsD measures the behavior of each invocation. It's also important here to note that StatsD metrics need to be configured through one of three entities -- counters, gauges, or timers. Each is self-explanatory; counters measure the number of times a given metric is triggered, gauges tell you the percentage or amount of a particular attribute, and timers are used to quantify the time it takes to perform an action.
 
@@ -54,7 +54,7 @@ Why use anomaly detection for performance monitoring for Python applications?
 
 [![timeserieswidget](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/07/timeserieswidget-1024x252.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/07/timeserieswidget.png)
 
-[Anomaly detection](/blog/category/cloud-monitoring/) improves upon [static thresholds](https://help.netuitive.com/Content/Performance/Analytics/statis_thresholds.htm), a basic tenet of traditional or manual monitoring often used in conjunction with basic free open source monitoring tools. Static thresholds are a line in the sand for your metrics. With this type of monitoring, you will receive an alert whenever that line is crossed, whether that is predictable behavior or a genuinely unusual event.
+[Anomaly detection](/blog/category/cloud-monitoring/) improves upon static thresholds, a basic tenet of traditional or manual monitoring often used in conjunction with basic free open source monitoring tools. Static thresholds are a line in the sand for your metrics. With this type of monitoring, you will receive an alert whenever that line is crossed, whether that is predictable behavior or a genuinely unusual event.
 
 Metricly's anomaly detection, by contrast, uses calculated "bands of normalcy" that automatically learn and conform to the expected behavior of your application metrics at a given time. For example, if a code deploy causes a spike your load metrics every Thursday morning at 4 a.m., Metricly's machine learning engine will recognize that and factor it into those bands of normalcy. On the other hand, if you're using static thresholds, you'll be forced into an impossible choice -- raise the threshold to perhaps dangerous levels to account for the expected spike or get used to receiving and ignoring an alert every Thursday at 4 a.m.
 
@@ -67,7 +67,7 @@ Configuring your Python application to push data to the Metricly agent through o
 3.  Enable the StatsD server in the Metricly agent configuration file
 4.  Instrument your Python application to collect and send custom metrics to the StatsD server
 
-For more detailed instruction, check out [our documentation](https://help.netuitive.com/Content/Misc/Datasources/Netuitive/integrations/python.htm).
+For more detailed instruction, check out [our documentation](https://docs.metricly.com/integrations/python/).
 
 * * * * *
 

@@ -32,9 +32,9 @@ Once you've done that, you'll need to [set up an EC2 instance](/pick-perfect-ec2
 Configuring Metricly's ELB Monitoring
 --------------------------------------
 
-Configuring Metricly is simple, and Metricly provides great documentation to [get you started](https://help.netuitive.com/Content/where_to_start.htm).
+Configuring Metricly is simple, and Metricly provides great documentation to [get you started](https://docs.metricly.com/getting-started/).
 
-Once you're up and running, you'll need to configure the AWS integration in order to see the metrics available for ELB monitoring. Instructions to do so can be found in the Netuitive documentation. Netuitive recommends using "Installation Via IAM Role," described in the documentation linked above when configuring the AWS integration. (Also, see [Getting Started with Netuitive and AWS](/getting-started-metricly-aws/) for more information.)
+Once you're up and running, you'll need to configure the AWS integration in order to see the metrics available for ELB monitoring. Instructions to do so can be found in the Metricly documentation. Netuitive recommends using "Installation Via IAM Role," described in the documentation linked above when configuring the AWS integration. (Also, see [Getting Started with Metricly and AWS](/getting-started-metricly-aws/) for more information.)
 
 When configuring the integration, be sure the **ELB** box is checked on the *AWS Setup* page, as illustrated below. (Now would also be a good time to configure Metricly for any other AWS services you wish to monitor by checking those boxes as well.)
 
@@ -44,7 +44,7 @@ Once you've configured the AWS integration, it will usually take a few minutes t
 
 **Metricly and AWS**
 
-Dashboards are provided by Netuitive as a way to access and [visualize](https://help.netuitive.com/Content/Dashboards/dashboards.htm?Highlight=dashboards) ELB monitoring data (and any othe metrics) collected by Netuitive. You can find a high-level overview of what monitoring dashboards can do on the [Dashboards and Reports](/) page. For a deeper dive into using Netuitive dashboards, see [AWS Monitoring Best Practices Using Pre-Configured Dashboards](/aws-monitoring-best-practices/).
+Dashboards are provided by Metricly as a way to access and [visualize](https://docs.metricly.com/data-visualization/dashboards/) ELB monitoring data (and any othe metrics) collected by Metricly. You can find a high-level overview of what monitoring dashboards can do on the *Dashboards and Reports* page. For a deeper dive into using Metricly dashboards, see [AWS Monitoring Best Practices Using Pre-Configured Dashboards](/aws-monitoring-best-practices/).
 
 -   Installed dashboards can be accessed in the Metricly interface by clicking **Dashboards**, then **Manage Dashboards**. The screenshot below shows both the *Dashboards* menu, and the *Manage Dashboards* screen.
 
@@ -114,7 +114,7 @@ Several metrics are collected by Metricly from AWS for ELB monitoring. They are 
 
 -   *aws.elb.spillovercount* is the number of requests that the ELB was unable to answer due to the surge queue length exceeding the maximum of 1,024 queued requests. This metric should also be as close to zero as possible.
 
-Additional information about the metrics Metricly collects is available in the [Metricly AWS metrics documentation](https://help.netuitive.com/Content/Integrations/aws_metrics.htm?Highlight=surge%2523elb). There is also more [detailed information](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/elb-metricscollected.html) about these metrics available directly from Amazon.
+Additional information about the metrics Metricly collects is available in the [Metricly AWS metrics documentation](https://docs.metricly.com/integrations/aws-integration/metrics/). There is also more [detailed information](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/elb-metricscollected.html) about these metrics available directly from Amazon.
 
 **ELB Monitoring Metrics Computed by Metricly**
 
@@ -144,18 +144,18 @@ Additional information about the metrics Metricly collects is available in the [
 
 -   *netuitive.aws.elb.requestspersecond* is, simply put, the number of requests per second the ELB is servicing.
 
-For more information on the computed metrics provided by Metricly, see the [documentation](https://help.netuitive.com/Content/Integrations/aws_metrics.htm?Highlight=surge%2523elb-1). If you still need further information for troubleshooting your ELB, see the AWS documentation [Troubleshoot Your Classic Load Balancer](http://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-troubleshooting.html) or [Troubleshoot Your Application Load Balancers](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-troubleshooting.html).
+For more information on the computed metrics provided by Metricly, see the [documentation](https://docs.metricly.com/integrations/aws-integration/metrics/). If you still need further information for troubleshooting your ELB, see the AWS documentation [Troubleshoot Your Classic Load Balancer](http://docs.aws.amazon.com/elasticloadbalancing/latest/classic/elb-troubleshooting.html) or [Troubleshoot Your Application Load Balancers](http://docs.aws.amazon.com/elasticloadbalancing/latest/application/load-balancer-troubleshooting.html).
 
 Default ELB Monitoring Policies
 -------------------------------
 
-When you configure your Metricly AWS integration for ELB, a set of default ELB monitoring [alerting policies](https://help.netuitive.com/Content/Policies/DefaultPolicies/default_policies.htm) will be created. They include alerting for front and backend error rates, elevated latency, surge queue utilization, and unhealthy host counts. These default policies are based on best practices when monitoring ELB and help jump start your integration monitoring.
+When you configure your Metricly AWS integration for ELB, a set of default ELB monitoring [alerting policies](https://docs.metricly.com/alerts-notifications/policies/default-policies/) will be created. They include alerting for front and backend error rates, elevated latency, surge queue utilization, and unhealthy host counts. These default policies are based on best practices when monitoring ELB and help jump start your integration monitoring.
 
-The best way to familiarize yourself is to read the [Metricly documentation](https://help.netuitive.com/Content/Policies/DefaultPolicies/default_policies.htm), as the docs contain detailed explanations with illustrations as to how each policy functions.
+The best way to familiarize yourself is to read the [Metricly documentation](https://docs.metricly.com/alerts-notifications/policies/default-policies/), as the docs contain detailed explanations with illustrations as to how each policy functions.
 
-onclusion
+### Conclusion
 
-Hopefully this blog post helped you get started with Metricly and monitoring your Elastic Load Balancer, as well as understanding what some of the metrics provided by Metricly mean. For further help, see the [Metricly Help](https://help.netuitive.com/Content/home.htm) documentation. There are a number of useful articles and blog posts on the [Metricly Blog](/blog) to help you gain more insight into using Metricly with other platforms and integrations.
+Hopefully this blog post helped you get started with Metricly and monitoring your Elastic Load Balancer, as well as understanding what some of the metrics provided by Metricly mean. For further help, see the [Metricly Help](https://docs.metricly.com/) documentation. There are a number of useful articles and blog posts on the [Metricly Blog](/blog) to help you gain more insight into using Metricly with other platforms and integrations.
 
 You can also browse through the [Metricly Community Packages](https://github.com/netuitive-community-packages) repository to see other packages and integrations available with Metricly.
 
