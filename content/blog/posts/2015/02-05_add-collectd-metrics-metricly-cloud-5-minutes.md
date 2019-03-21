@@ -16,13 +16,8 @@ To setup a collectd data source in Metricly, there are 5 simple steps:
 1.  Create a new collectd data source and type a name.
 2.  Click Generate to generate a new API key.
 3.  In the following code, replace {customer API key} with your new API key.
-
-    > 7 lines
-
-1.
-
-2.  Edit your collectd.config file to include the new code
-3.  Restart collectd to being monitoring your data with Metricly
+4.  Edit your collectd.config file to include the new code
+5.  Restart collectd to being monitoring your data with Metricly
 
 Metricly's API is ready to receive metrics directly from the collectd http_write plugin.  You should see data populate in about 5 minutes.
 

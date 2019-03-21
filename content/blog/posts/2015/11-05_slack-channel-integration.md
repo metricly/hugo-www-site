@@ -9,7 +9,7 @@ layout: "single"
 ---
 ***PLEASE NOTE THIS IS AN ARCHIVED POST*** - Netuitive has since become Metricly, and the tool has matured greatly since the time this was written!
 
-DevOps teams are moving away from basic email alerts for issues or events and are instead using chat tools like [Slack](https://slack.com/) for notifications to allow greater flexibility in response and communication. [Slack](https://slack.com/) offers several ways to send data to a Slack Channel, and Metricly has provided an easy way to integrate the services. In this blog, we will walk-through how to use webhooks to send Metricly monitoring events into Slack.
+DevOps teams are moving away from basic email alerts for issues or events and are instead using chat tools like [Slack](https://slack.com/) for notifications to allow greater flexibility in response and communication. Slack offers several ways to send data to a Slack Channel, and Metricly has provided an easy way to integrate the services. In this blog, we will walk-through how to use webhooks to send Metricly monitoring events into Slack.
 
 **Use Case:** For monitoring a cluster of NGINX web servers for performance and availability, the DevOps team set up a Slack Channel to have a single place to view and coordinate efforts on all events coming from Metricly monitoring.
 
@@ -31,5 +31,5 @@ Here you can add any static message or leverage Netutive's system variables to s
 
 While surprisingly quick to set up, the process offers much needed flexibility without creating longer implementation times.
 
-* * * * *\
+* * * * *
 Try it for yourself -- take advantage of our 21-day [free trial](/signup) and start monitoring with [Metricly](/) today!

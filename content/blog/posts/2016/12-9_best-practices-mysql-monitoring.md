@@ -9,7 +9,7 @@ layout: "single"
 ---
 
 
-In today's data-driven world, most applications are backed by a database. A large number of those databases are powered by MySQL. To keep those databases and the applications they power running smoothly, you need to be able to [monitor them](/product) effectively.
+In today's data-driven world, most applications are backed by a database. A large number of those databases are powered by MySQL. To keep those databases and the applications they power running smoothly, you need to be able to [monitor them](/aws-cost-tool) effectively.
 
 This article provides an overview of what you can monitor in MySQL in order to get a picture of overall health, and to help plan for future growth.
 
@@ -24,12 +24,12 @@ You could monitor whether the process is alive by checking for mysqld on your pr
 
 I recommend checking with a simple command line using the -e flag so that the client will run an SQL command, then exit. Something as simple as "SELECT 1;" proves the engine is running.
 
-> $ mysql -e "SELECT 1;" -h192.169.0.13 test\
-> +---+\
-> | 1 |\
-> +---+\
-> | 1 |\
-> +---+
+    > $ mysql -e "SELECT 1;" -h192.169.0.13 test\
+    > +---+\
+    > | 1 |\
+    > +---+\
+    > | 1 |\
+    > +---+
 
 MySQL Log Files
 ---------------
@@ -56,30 +56,30 @@ Here's a sampling of some of the more valuable information for tracking basic cl
 
 You can also monitor MySQL users. To see who is connected to a MySQL instance, run:
 
-> mysql> show full processlist;\
-> +----+------+--------------------+------+---------+------+----------+-----------------------+\
-> | Id | User | Host               | db   | Command | Time | State    | Info                  |\
-> +----+------+--------------------+------+---------+------+----------+-----------------------+\
-> |  5 | test | 192.168.0.13:60394 | test | Query   |    0 | starting | show full processlist |\
-> +----+------+--------------------+------+---------+------+----------+-----------------------+\
-> 1 row in set (0.00 sec)
+    > mysql> show full processlist;\
+    > +----+------+--------------------+------+---------+------+----------+-----------------------+\
+    > | Id | User | Host               | db   | Command | Time | State    | Info                  |\
+    > +----+------+--------------------+------+---------+------+----------+-----------------------+\
+    > |  5 | test | 192.168.0.13:60394 | test | Query   |    0 | starting | show full processlist |\
+    > +----+------+--------------------+------+---------+------+----------+-----------------------+\
+    > 1 row in set (0.00 sec)
 
 In addition, it can be useful to retrieve the size of all the tables in the database you are currently using. (In other words, add the data and index columns together in order to determine the total disk space in bytes.) The query to do this is:
 
-> mysql> SELECT table_name,table_rows,Data_length,Index_length FROM information_schema.tables WHERE table_schema = DATABASE();\
-> +---------------------------+------------+-------------+--------------+\
-> | table_name                | table_rows | Data_length | Index_length |\
-> +---------------------------+------------+-------------+--------------+\
-> | columns_priv              |          0 |           0 |         4096 |\
-> | db                        |          3 |        1464 |         5120 |\
-> | engine_cost               |          2 |       16384 |            0 |\
-> | event                     |          0 |           0 |         2048 |\
-> ...\
-> | time_zone_transition      |          0 |       16384 |            0 |\
-> | time_zone_transition_type |          0 |       16384 |            0 |\
-> | user                      |          4 |         492 |         4096 |\
-> +---------------------------+------------+-------------+--------------+\
-> 31 rows in set (0.01 sec)
+    > mysql> SELECT table_name,table_rows,Data_length,Index_length FROM information_schema.tables WHERE table_schema = DATABASE();\
+    > +---------------------------+------------+-------------+--------------+\
+    > | table_name                | table_rows | Data_length | Index_length |\
+    > +---------------------------+------------+-------------+--------------+\
+    > | columns_priv              |          0 |           0 |         4096 |\
+    > | db                        |          3 |        1464 |         5120 |\
+    > | engine_cost               |          2 |       16384 |            0 |\
+    > | event                     |          0 |           0 |         2048 |\
+    > ...\
+    > | time_zone_transition      |          0 |       16384 |            0 |\
+    > | time_zone_transition_type |          0 |       16384 |            0 |\
+    > | user                      |          4 |         492 |         4096 |\
+    > +---------------------------+------------+-------------+--------------+\
+    > 31 rows in set (0.01 sec)
 
 Summary
 -------

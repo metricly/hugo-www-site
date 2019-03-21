@@ -15,7 +15,7 @@ In our last blog, we explored the different types of alerts, and the impact they
 Generate One Alert for One System Versus One Metric
 ---------------------------------------------------
 
-Traditional monitoring tools set a [static threshold](https://help.netuitive.com/Content/Performance/Analytics/static_thresholds.htm) for each metric. Every time that threshold is breached, you received one alert. This can add up to having too many alerts.
+Traditional monitoring tools set a [static threshold](https://docs.metricly.com/data-visualization/analytics/static-thresholds/) for each metric. Every time that threshold is breached, you received one alert. This can add up to having too many alerts.
 
 A better approach is to generate one alert for a group of metrics associated with a system or application -- like a host or a database.
 
@@ -26,7 +26,7 @@ This concept is at the core of Metricly's approach to alert generation -- by ale
 Use Analytics to Learn Normal Behavior
 --------------------------------------
 
-Machine learning techniques can be applied to your monitoring data to offer you an idea of how your environment normally performs, making it easier to separate true alerts from false ones. Metricly's [advanced analytics](/adding-analytics-to-devops-model) are built on more of a decade of experience in IT statistical analysis and monitoring, with proven success at improving your metrics and signal-to-noise ratio. Our [computed metrics](https://help.netuitive.com/Content/Metrics/computed_metrics.htm) combine two or more metrics (like memory usage, CPU utilization, or latency) in functions that provide valuable data on the utilization and performance of your elements. An example of a computed metric is IOPS Utilization, which compares the current number of IOPS a disk is performing to the total IOPS capacity, yielding a percent representation of an EBS volume's utilization.
+Machine learning techniques can be applied to your monitoring data to offer you an idea of how your environment normally performs, making it easier to separate true alerts from false ones. Metricly's [advanced analytics](/adding-analytics-to-devops-model) are built on more of a decade of experience in IT statistical analysis and monitoring, with proven success at improving your metrics and signal-to-noise ratio. Our [computed metrics](https://docs.metricly.com/data-visualization/metrics/) combine two or more metrics (like memory usage, CPU utilization, or latency) in functions that provide valuable data on the utilization and performance of your elements. An example of a computed metric is IOPS Utilization, which compares the current number of IOPS a disk is performing to the total IOPS capacity, yielding a percent representation of an EBS volume's utilization.
 
 [![Reduce Alert Noise: EBS IOPS 5](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/09/EBS05IOPS.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/09/EBS05IOPS.png)
 

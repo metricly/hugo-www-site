@@ -36,7 +36,7 @@ First, go to our [GitHub page](https://github.com/Netuitive/statsd-netuitive-bac
 
 Then, save both to your StatsD backends directory. If you don't have it installed yet, see [Etsy's GitHub page](https://github.com/etsy/statsd) to learn more about getting started.
 
-After downloading the file, all you'll need to do is make a few changes to your configuration file. For complete integration instructions, see **[our documentation](https://help.netuitive.com/Content/Misc/Datasources/new_statsd_datasource.htm?Highlight=statsd)** on setting up a new StatsD datasource. After saving your configuration file and restarting StatsD, you are ready to begin monitoring your data with Metricly.
+After downloading the file, all you'll need to do is make a few changes to your configuration file. For complete integration instructions, see **[our documentation](https://docs.metricly.com/integrations/etsy-statsd/)** on setting up a new StatsD datasource. After saving your configuration file and restarting StatsD, you are ready to begin monitoring your data with Metricly.
 
 * * * * *
 

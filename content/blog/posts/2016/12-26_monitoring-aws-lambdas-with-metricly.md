@@ -28,9 +28,9 @@ The first thing we need to do is create a connection, or integration between Met
 
 Determine and enter a name for your integration, ensure that the Data Collection option is checked, and then decide on the method of authentication to AWS. There are two ways to connect the accounts. The first is by creating an IAM role in your AWS account, and the second is to create a new user with read-only access in your AWS account. I would recommend the IAM role approach, although both are clearly explained in the detailed instructions provided by Metricly.
 
-[IAM Role](https://hlp.app.netuitive.com/Content/Datasources/Netuitive/aws.htm#installation-via-iam-role)[--](https://hlp.app.netuitive.com/Content/Datasources/Netuitive/aws.htm#installation-via-iam-role)[Based Integration](https://hlp.app.netuitive.com/Content/Datasources/Netuitive/aws.htm#installation-via-iam-role) (Recommended)
+[IAM Role-Based Integration](https://docs.metricly.com/integrations/aws-integration/aws-iam-installation/)(Recommended)
 
-[AWS User](https://hlp.app.netuitive.com/Content/Datasources/Netuitive/aws.htm#installation-via-access-key)[--](https://hlp.app.netuitive.com/Content/Datasources/Netuitive/aws.htm#installation-via-access-key)[Based Integration](https://hlp.app.netuitive.com/Content/Datasources/Netuitive/aws.htm#installation-via-access-key)
+[AWS User-Based Integration](https://docs.metricly.com/integrations/aws-integration/)
 
 If you're using the recommended IAM role approach, you should have an ARN to paste into the appropriate field on the page. The final step is to ensure that the Lambda type is included in the Integration. It is not checked by default, so you'll want to scroll down the list of types and ensure that it is checked. With that complete, your screen should look similar to the image below, and you can click on Save.
 
@@ -39,7 +39,7 @@ If you're using the recommended IAM role approach, you should have an ARN to pas
 AWS Lambda Summary Dashboard
 ----------------------------
 
-Metricly automatically generates a simple Lambda dashboard for you named "AWS Lambda Summary." This [dashboard](/) includes widgets which show:
+Metricly automatically generates a simple Lambda dashboard for you named "AWS Lambda Summary." This [dashboard](https://docs.metricly.com/data-visualization/dashboards/) includes widgets which show:
 
 -   The top five functions based on count of invocations during the time period.
 -   The top five functions with the highest latency, or duration.
@@ -56,7 +56,7 @@ In addition to the graph view, each of the widgets also has a "Table" view which
 Element Detail Dashboard
 ------------------------
 
-Metricly also provides an Element Detail dashboard for each Lambda function which can be accessed through the [Inventory](https://help.netuitive.com/Content/Inventory/inventory_explorer.htm) option on the navigation panel at the top of the page.
+Metricly also provides an Element Detail dashboard for each Lambda function which can be accessed through the [Inventory](https://docs.metricly.com/data-visualization/inventory/) option on the navigation panel at the top of the page.
 
 By selecting a specific element from the list of elements, you will be taken to a detailed view of the Lambda function which shows both the current state of the function in terms of Invocations and Latency, and the state of each of those metrics over time.
 
@@ -69,7 +69,7 @@ How to Know When Things Go Awry
 
 Dashboards are great to look at, but not if you have to watch them continuously, looking for anomalies. We need a way to automate the process of monitoring AWS Lambdas so that we can focus on other tasks, but still know when something is happening which demands our attention. Metricly Policies fill that need, and the key policies have already been created for you.
 
-While looking at the Detailed Element Report, you should notice a Policies link right above the graphics. You can also access these by clicking on the [Policies](https://help.netuitive.com/Content/Policies/policies.htm) option on the navigation panel at the top of the page.
+While looking at the Detailed Element Report, you should notice a Policies link right above the graphics. You can also access these by clicking on the [Policies](https://docs.metricly.com/alerts-notifications/policies/) option on the navigation panel at the top of the page.
 
 [![Monitoring AWS Lambdas: Lambda Policy](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Element-Detail-Policies.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Element-Detail-Policies.png)
 
@@ -81,6 +81,7 @@ Three policies are provided for you automatically by Metricly. The descriptions 
 | AWS Lambda -- Elevated Invocation Count | The number of calls to the function (invocations) have been greater than expected for at least the last 30 minutes. |
 | AWS Lambda -- Elevated Latency | The average duration per function call (latency) has been higher than expected for at least the past 30 minutes. |
 
+___
 Each of the policies can be viewed in more detail by clicking on the policy name. Some of the aspects which can be configured include:
 
 -   Scope, which can be used to filter which elements this policy will be applied to.
@@ -100,4 +101,4 @@ Each of the policies can be viewed in more detail by clicking on the policy name
 Going Beyond Monitoring AWS Lambdas
 -----------------------------------
 
-Hopefully this article provides enough information to get started with monitoring AWS Lambdas using [Metricly](/product). What I've covered here barely scratches the surface of what Metricly offers in terms of monitoring and alerting. Aside from the integration and monitoring of Lambdas, EC2 instances, and other offerings of the AWS ecosystem, one thing which really impressed me with Metricly is the content and the quality of the context-specific help system. Clicking on the Help link in the top right corner of each page opens a new tab with definitions, screenshots, and helpful tips related to the topic you're viewing.
+Hopefully this article provides enough information to get started with monitoring AWS Lambdas using [Metricly](/aws-cost-tool). What I've covered here barely scratches the surface of what Metricly offers in terms of monitoring and alerting. Aside from the integration and monitoring of Lambdas, EC2 instances, and other offerings of the AWS ecosystem, one thing which really impressed me with Metricly is the content and the quality of the context-specific help system. Clicking on the Help link in the top right corner of each page opens a new tab with definitions, screenshots, and helpful tips related to the topic you're viewing.

@@ -23,14 +23,14 @@ AWS Lambda Support
 
 [![Lambda logo](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/09/Lambda-logo.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/09/Lambda-logo.png)
 
-Metricly now includes AWS Lambda on the list of supported services using our [AWS integration](https://help.netuitive.com/Content/Misc/Datasources/AWS/new_aws_datasource.htm). Metricly can provide visualization of the performance of your Lambda function(s), including duration, errors, invocations, and throttles metrics. As with any AWS services that you monitor with Metricly, pre-built monitoring dashboards, computed metrics, and alerting policies will automatically populate in your account as soon as a Lambda instance is enabled for monitoring. Now you can apply anomaly detection to your Lambda function by simply checking a configuration box in the user interface and letting Metricly do the rest.
+Metricly now includes AWS Lambda on the list of supported services using our [AWS integration](https://docs.metricly.com/integrations/aws-integration/). Metricly can provide visualization of the performance of your Lambda function(s), including duration, errors, invocations, and throttles metrics. As with any AWS services that you monitor with Metricly, pre-built monitoring dashboards, computed metrics, and alerting policies will automatically populate in your account as soon as a Lambda instance is enabled for monitoring. Now you can apply anomaly detection to your Lambda function by simply checking a configuration box in the user interface and letting Metricly do the rest.
 
 Alerting Policy Improvements
 ----------------------------
 
 [![POLICY~1](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/09/POLICY1-1024x342.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/09/POLICY1.png)
 
-Based on user feedback, we've improved the value and utility of alerting policies and the [policy setup page](https://help.netuitive.com/Content/Policies/PolicyEditor/policy_editor.htm). New and additional features include:
+Based on user feedback, we've improved the value and utility of alerting policies and the [policy setup page](https://docs.metricly.com/alerts-notifications/policies/create-edit-policies/). New and additional features include:
 
 -   Filtering and searching for your favorite policies on the main Policies page based on policy name, who created the policy, whether the policy is enabled, and the element type used in the policy.
 -   Policy duration range increased to span 5 minutes to 6 hours. This will help capture any anomalies that may happen over a longer period of time greater than 30 minutes.
@@ -41,7 +41,7 @@ EC2 Cost Savings Report Improvements
 
 [![ec2_cost](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/09/ec2_cost-1024x602.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/09/ec2_cost.png)
 
-The [EC2 cost savings report](https://help.netuitive.com/Content/Reports/ec2_cost_report.htm) is now easier to use and more comprehensive. You can now compare costs with additional metrics, such as memory utilization percent and disk I/O percent, to provide a multi-faceted look into resource utilization. We've also added a new summary table below the cost graph. This displays summary data for all of your EC2 instances and can also be sorted using the column headers, which will update the cost graph to match the selected sorting order.
+The [EC2 cost savings report](https://docs.metricly.com/reports/reports-cost/) is now easier to use and more comprehensive. You can now compare costs with additional metrics, such as memory utilization percent and disk I/O percent, to provide a multi-faceted look into resource utilization. We've also added a new summary table below the cost graph. This displays summary data for all of your EC2 instances and can also be sorted using the column headers, which will update the cost graph to match the selected sorting order.
 
 * * * * *
 

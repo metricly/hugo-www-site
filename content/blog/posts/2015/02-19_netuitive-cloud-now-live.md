@@ -1,5 +1,4 @@
 ---
-
 date: "2015-02-19"
 title: "Metricly Cloud Is Now Live!"
 description: "Yesterday, February 18, 2015, Metricly Cloud went live and out of beta! Here’s a look at what it took to launch the Metricly 7.x platform in the cloud."

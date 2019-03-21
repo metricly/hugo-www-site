@@ -36,6 +36,7 @@ The benefits of Collectd over AWS CloudWatch show up in several areas of compari
 | Frequency | Every 10 seconds (default) or 60 seconds (best practice) | Every 5 minutes on free tier, 1 minute for paid tier |
 | Extensibility | Users can write and deploy plug-ins for additional metrics | No open source community for creating plug-ins |
 
+___
 Collectd and Metricly...How does it work?
 ----------------------------------------
 

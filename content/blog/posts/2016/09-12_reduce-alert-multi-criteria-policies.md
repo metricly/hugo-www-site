@@ -20,7 +20,7 @@ For instance, Metricly has a default policy to alert on elevated browser respons
 
 [![Multi-Criteria Alerting: Browser Policy](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/09/Image1-1024x535.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/09/Image1.png)
 
-Metricly also has a default policy to alert on [elevated EC2 network activity.](https://help.netuitive.com/Content/Policies/GlobalPolicies/aws_global_policies.htm#ec2) This policy consists of two metrics (read operations, and write operations), each with two conditions: values outside the baseline and contextual bands.
+Metricly also has a default policy to alert on [elevated EC2 network activity.](https://docs.metricly.com/alerts-notifications/policies/default-policies/#ec2) This policy consists of two metrics (read operations, and write operations), each with two conditions: values outside the baseline and contextual bands.
 
 [![Multi-Criteria Alerting: EC2 Policy](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/09/Image2-1024x531.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/09/Image2.png)
 
@@ -35,7 +35,7 @@ If you have 3 metric conditions in one policy, then you receive a third of the n
 
 **2) Including multiple criteria promotes alert accuracy.**
 
-You can have much more control when you evaluate multiple conditions at the same time. Let's say you have a policy set to alert when the backend error rate is [elevated on an ELB instance](https://help.netuitive.com/Content/Policies/GlobalPolicies/aws_global_policies.htm#elbGlobalPolicies). With a traditional policy, you could set a single condition -- for example, that the error rate is more than 2%. Depending upon the instance in question (as well as time of day, expected load, etc.), an error rate of 2% may or may not be worrisome, but you'll receive an alert every time it occurs regardless. With multi-condition alerting, you can add in other factors that could affect the error rate, such as total request count:
+You can have much more control when you evaluate multiple conditions at the same time. Let's say you have a policy set to alert when the backend error rate is [elevated on an ELB instance](https://docs.metricly.com/alerts-notifications/policies/default-policies/#elbGlobalPolicies). With a traditional policy, you could set a single condition -- for example, that the error rate is more than 2%. Depending upon the instance in question (as well as time of day, expected load, etc.), an error rate of 2% may or may not be worrisome, but you'll receive an alert every time it occurs regardless. With multi-condition alerting, you can add in other factors that could affect the error rate, such as total request count:
 
 [![Multi-Criteria Alerting: Elevated Error Rate Policy](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/09/Image3-1024x531.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/09/Image3.png)
 
@@ -46,7 +46,7 @@ How you can improve multi-criteria policies?
 
 **1) Use anomaly detection to refine the conditions themselves.**
 
-Multi-criteria policies can consist solely of a set of [static thresholds](https://help.netuitive.com/Content/Performance/Analytics/static_thresholds.htm), but anomaly detection and advanced analytics add a whole new level of precision to your monitoring.
+Multi-criteria policies can consist solely of a set of [static thresholds](https://docs.metricly.com/data-visualization/analytics/static-thresholds/), but anomaly detection and advanced analytics add a whole new level of precision to your monitoring.
 
 Metricly's EC2 network activity policy, for example, relies on conditions related to the baseline and contextual thresholds of read and write metrics. These thresholds, or bands of normalcy, are built by our behavior learning engine, which applies advanced analytics to an element's historical performance data. These dynamic bands provide a level of improved accuracy as they conform to the normal behavior of each element.
 
@@ -56,7 +56,7 @@ Where anomaly detection really shines, however, is in combination with static th
 
 By applying mathematical expressions to multiple metrics, you can create a new [computed metric that is insightful for anomaly detection](/the-power-of-computed-metrics).
 
-For example, Metricly provides a pre-configured policy for Linux servers, "[Heavy CPU Load](https://help.netuitive.com/Content/Policies/GlobalPolicies/diamond_linux_global_policies.htm)," that includes two conditions: the first looks for an upper deviation from learned behavior on CPU utilization, while the second condition looks for normalized load average (defined as load average/# of CPUs) greater than 2.  The combination of the two conditions detects a condition definitely worthy of operational attention.
+For example, Metricly provides a pre-configured policy for Linux servers, "[Heavy CPU Load](https://docs.metricly.com/alerts-notifications/policies/default-policies/diamond-linux-policies/)," that includes two conditions: the first looks for an upper deviation from learned behavior on CPU utilization, while the second condition looks for normalized load average (defined as load average/# of CPUs) greater than 2.  The combination of the two conditions detects a condition definitely worthy of operational attention.
 
 [![Multi-Criteria Alerting: Heavy CPU Policy](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/09/Image4-1024x531.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/09/Image4.png)
 

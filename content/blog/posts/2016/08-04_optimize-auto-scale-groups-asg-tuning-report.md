@@ -9,12 +9,12 @@ layout: "single"
 ---
 
 
-AWS [auto scaling groups](https://help.netuitive.com/Content/Misc/Datasources/AWS/new_aws_datasource.htm#auto-scaling-groups) (ASGs) are a great way to automatically manage [EC2 capacity](https://help.netuitive.com/Content/Misc/Datasources/AWS/new_aws_datasource.htm?#ec2) to meet fluctuations in demand, but it is all too easy to over-provision capacity, resulting in unused resources and too much spend on redundant EC2 instances.
+AWS [auto scaling groups](https://docs.metricly.com/integrations/aws-integration/#auto-scaling-groups) (ASGs) are a great way to automatically manage [EC2 capacity](https://docs.metricly.com/integrations/aws-integration/#ec2) to meet fluctuations in demand, but it is all too easy to over-provision capacity, resulting in unused resources and too much spend on redundant EC2 instances.
 
 Common auto scaling use cases
 -----------------------------
 
-A typical ASG use-case is to link to a [load balancer (ELB).](https://help.netuitive.com/Content/Misc/Datasources/AWS/new_aws_datasource.htm#elb) If traffic to the ELB is low, then just one or two EC2 instances may be sufficient to share the load. If there is a regular pattern in workload where  requests to the ELB increase at particular times of day, then an ASG scaling policy can be used to automatically increase the number of EC2 instances in the ASG so that traffic is shared accordingly. The policy can return the instance count back to the normal level when traffic returns to lower levels.. If an unexpected increase in traffic occurs, a CloudWatch alarm may be triggered and an ASG scaling policy can be linked to the alarm to automatically increase the EC2 instance count. Another policy could scale back the EC2 instance count again once the alarm has cleared.
+A typical ASG use-case is to link to a [load balancer (ELB).](https://docs.metricly.com/integrations/aws-integration/#elb) If traffic to the ELB is low, then just one or two EC2 instances may be sufficient to share the load. If there is a regular pattern in workload where  requests to the ELB increase at particular times of day, then an ASG scaling policy can be used to automatically increase the number of EC2 instances in the ASG so that traffic is shared accordingly. The policy can return the instance count back to the normal level when traffic returns to lower levels.. If an unexpected increase in traffic occurs, a CloudWatch alarm may be triggered and an ASG scaling policy can be linked to the alarm to automatically increase the EC2 instance count. Another policy could scale back the EC2 instance count again once the alarm has cleared.
 
 ASGs need not always be linked to ELBs; load can also be distributed between EC2s by, for instance:
 
@@ -42,7 +42,7 @@ In many cases ASGs are misconfigured simply because the scaling policies have ne
 Introducing the ASG Tuning Report
 ---------------------------------
 
-The new [*Metricly ASG Tuning Report*](https://help.netuitive.com/Content/Reports/asg_tuning_report.htm) offers a new approach to meet the problems of visualizing and configuring auto scaling rules.
+The new [*Metricly ASG Tuning Report*](https://docs.metricly.com/reports/reports-asg-recommendations/) offers a new approach to meet the problems of visualizing and configuring auto scaling rules.
 
 The report provides the tools needed for AWS customers to effectively monitor their overall ASG estate, identify over (and under) provisioned ASGs, trial 'what-if' configuration settings to see how different scaling strategies will affect projected utilization, and model potential cost savings.
 
@@ -65,7 +65,7 @@ The report provides the tools needed for AWS customers to effectively monitor th
 -   Choose scale-in/scale-out rates according to load
 -   Choose more aggressive or conservative scaling rules to balance utilization vs cost savings
 
-The Metricly [ASG Tuning report](https://help.netuitive.com/Content/Reports/asg_tuning_report.htm) generates continually-adjusted recommendations for sizing the ASG. Recommended instance counts, based on your tuning strategies and historical ASG performance, can be combined with advanced policies to leverage real-time changes in utilization and other metrics. This allows you to generate [notifications](https://help.netuitive.com/Content/Misc/notifications.htm) or [webhooks](https://help.netuitive.com/Content/Misc/API/webhook_endpoint.htm) for automating workload-driven adjustments to the number of EC2s (up or down) in the ASG.
+The Metricly [ASG Tuning report](https://docs.metricly.com/reports/reports-asg-recommendations/) generates continually-adjusted recommendations for sizing the ASG. Recommended instance counts, based on your tuning strategies and historical ASG performance, can be combined with advanced policies to leverage real-time changes in utilization and other metrics. This allows you to generate [notifications](https://docs.metricly.com/alerts-notifications/notifications/) or [webhooks](https://docs.metricly.com/api/api-webhooks/) for automating workload-driven adjustments to the number of EC2s (up or down) in the ASG.
 
 * * * * *
 

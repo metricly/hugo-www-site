@@ -69,7 +69,7 @@ The biggest reason you move to the AWS cloud is to take advantage of its scalabi
 
 #### Cost
 
-The next biggest reason to move to the cloud is to save on server costs. If this is your biggest consideration, you should probably take a good look at Spot Instances and Reserved Instances. Fortunately, there is a [calculator](https://awstcocalculator.com/) to help you estimate cost savings with either option.
+The next biggest reason to move to the cloud is to save on server costs. If this is your biggest consideration, you should probably take a good look at Spot Instances and Reserved Instances. Fortunately, there is a [calculator](https://tools.metricly.com/) to help you estimate cost savings with either option.
 
 #### Isolation & Control
 

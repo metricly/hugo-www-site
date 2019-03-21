@@ -17,4 +17,4 @@ He confirmed that while DevOps leaders continue to be interested in basic monito
 
 He noted that analytics is now clearly top of mind and cited a noticeable increase in analytics discussions and presentations, especially around entire conferences such as Monitorama 2014. He assessed that more than half of the discussions at this year's event went beyond traditional methods of manual alert configuration, and were focused on approaches to detect anomalies in real-time.
 
-The confirmation from his vantage point helped validate the timing for the launch of our [cloud offering](/product) for DevOps. So for that, we are very appreciative of Gene's time.
+The confirmation from his vantage point helped validate the timing for the launch of our [cloud offering](/aws-cost-tool) for DevOps. So for that, we are very appreciative of Gene's time.

@@ -16,7 +16,7 @@ So how is this set up? Both Metricly and Service Now support a robust REST based
 Metricly and ServiceNow Integration Setup
 ------------------------------------------
 
-Your operations team has Metricly dynamic policies deployed to monitor the mission critical web application. An event has fired in Metricly when the KPIs deviate above the learned baseline. You can learn more about our [anomaly detection](/product) from the website.
+Your operations team has Metricly dynamic policies deployed to monitor the mission critical web application. An event has fired in Metricly when the KPIs deviate above the learned baseline. You can learn more about our [anomaly detection](/aws-cost-tool) from the website.
 
 [![Service Now Ticketing 1](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/ServiceNowBlog_1.jpg)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/03/ServiceNowBlog_1.jpg)
 
