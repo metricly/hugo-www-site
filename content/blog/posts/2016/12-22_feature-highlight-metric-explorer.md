@@ -9,7 +9,7 @@ layout: "single"
 ---
 
 
-Metricly's Metric Explorer [offers a new way](https://help.netuitive.com/Content/Metrics/metrics_page.htm) to look at the health of your environment as a whole, while retaining the ability to make deep dives into your metrics where necessary. Now [dashboards](/) aren't the only way to track your analytics. You can explore your metrics across your entire environment with a few simple clicks -- no dashboard creation required!
+Metricly's Metric Explorer [offers a new way](https://docs.metricly.com/data-visualization/metrics/) to look at the health of your environment as a whole, while retaining the ability to make deep dives into your metrics where necessary. Now [dashboards](/aws-cost-tool) aren't the only way to track your analytics. You can explore your metrics across your entire environment with a few simple clicks -- no dashboard creation required!
 
 This post highlights recent improvements to the Metric Explorer that enhance usability, design, and function:
 
@@ -18,7 +18,7 @@ Quick-Start Monitoring Metrics
 
 We've made radical changes to the way you view metrics in Metricly with Quick-Start Metrics. The blue boxes below the events graph now pre-populate the filters and render charts for their respective metrics immediately. Each box provides all metrics of that type across your environment -- no more wondering if you've forgotten to add an element to your dashboard! Metrics Explorer simplifies your metrics, helping you find the analytics you need faster.
 
-We've also added an [Events](https://help.netuitive.com/Content/Events/events.htm) graph across the top of the Explorer, giving you immediate insight into possible performance problems. Each event offers the option to view the violating metrics, which makes problem-solving quicker and easier.
+We've also added an [Events](https://docs.metricly.com/alerts-notifications/events/) graph across the top of the Explorer, giving you immediate insight into possible performance problems. Each event offers the option to view the violating metrics, which makes problem-solving quicker and easier.
 
 [![Metric Explorer: QuickStart Metrics](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/QuickStartMetrics-1024x528.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/QuickStartMetrics.png)
 

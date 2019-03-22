@@ -8,7 +8,7 @@ url: "/ec2-cost-analysis-recommendations/"
 layout: "single"
 ---
 
-Our research team embarked on a new mission: design a cost report that can not only display your current EC2 cost data, but make recommendations on cost savings as well. Metricly's new [EC2 Recommendation](https://help.netuitive.com/Content/Reports/ec2_recommendation_report.htm) report (beta) is the product of that mission.
+Our research team embarked on a new mission: design a cost report that can not only display your current EC2 cost data, but make recommendations on cost savings as well. Metricly's new [EC2 Recommendation](https://docs.metricly.com/reports/reports-ec2-recommendations/) report (beta) is the product of that mission.
 
 See Also: [The Ultimate Guide to EC2 Instances](/ec2-instances/)
 
@@ -43,7 +43,7 @@ The bottom half of the report contains recommendation details. For this user, re
 
 As well as showing the proposed instance type, the table also includes information on how the number of VCPUs and memory will be affected.
 
-For the best results we recommend installing the [Metricly agent](https://help.netuitive.com/Content/Datasources/Netuitive/aws_cost.htm) on your EC2 instances. However, the report can provide substantial insights even without this data. This report is currently in beta, and we plan to keep enhancing and expanding it as we get more feedback and data.
+For the best results we recommend installing the [Metricly agent](https://docs.metricly.com/integrations/agents/) on your EC2 instances. However, the report can provide substantial insights even without this data. This report is currently in beta, and we plan to keep enhancing and expanding it as we get more feedback and data.
 
 AWS provides an enormous number of EC2 configurations -- deciding on the best one for every instance in your estate can quickly become "humanly impossible!" The EC2 Recommendation report takes the guesswork out of the process, providing detailed recommendations and a concrete cost-savings amount.
 

@@ -40,5 +40,5 @@ Metricly collects measurements from EC2s that are members of an Auto Scale group
 
 An ASG element will automatically show up in the inventory page if the user has an ASG in their AWS account. This new element can be added to a policy or as a group status widget, which provides a visual update on the size and condition of EC2s.
 
-* * * * *\
+* * * * *
 Want to see these release highlights in action? We offer a 21-day, [free trial of Metricly.](/signup)

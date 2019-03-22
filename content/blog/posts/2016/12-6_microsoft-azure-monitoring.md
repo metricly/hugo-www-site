@@ -8,7 +8,7 @@ url: "/microsoft-azure-monitoring/"
 layout: "single"
 ---
 
-Microsoft Azure is the second-largest cloud computing platform in the world -- and now, Azure users have access to world-class monitoring too. [Metricly](/product) is proud to announce a new integration with Azure VMs and Application Gateway.
+Microsoft Azure is the second-largest cloud computing platform in the world -- and now, Azure users have access to world-class monitoring too. [Metricly](/aws-cost-tool) is proud to announce a new integration with Azure VMs and Application Gateway.
 
 Set Up Azure Monitoring
 -----------------------
@@ -42,7 +42,7 @@ Metricly's [anomaly detection](/monitoring/) fuels the out-of-the-box and custom
 
 [![Azure Monitoring Policy](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Policy-1024x509.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Policy.png)
 
-To see the other policies included in the Azure Quick-Start Monitoring package, [read our documentation](https://help.netuitive.com/Content/Policies/GlobalPolicies/global_policies.htm?Highlight=azure#microsoft-azure). As always, you have the freedom to add or edit policies as well to fit your system's monitoring needs.
+To see the other policies included in the Azure Quick-Start Monitoring package, [read our documentation](https://docs.metricly.com/integrations/microsoft-azure/). As always, you have the freedom to add or edit policies as well to fit your system's monitoring needs.
 
 Finally, the Azure Quick-Start Monitoring package includes access to utilization reports that highlight over- and under-provisioned resources, to help you make informed decisions about the capacity of your environment. These reports are the final piece to a full, holistic view of your Azure environment.
 

@@ -19,7 +19,7 @@ After getting feedback, opinions and suggestions, we decided to extend the origi
 
 Check it out and, as always, your opinions (and suggestions for a third installment) are welcome.
 
-**Mark Burgess** -- **[@markburgess_osl](https://twitter.com/markburgess_osl) **-- A well-known theoretician in the area of information systems, Burgess' work has focused largely on distributed information infrastructure.  He is particularly well-known for his work on Configuration Management and Promise Theory. He is the principal Founder of CFEngine, an emeritus professor of Network and System Administration at Oslo University College, and author of numerous books, articles and papers on topics ranging from physics, Network and System Administration, to fiction.
+**Mark Burgess** -- **[@markburgess_osl](https://twitter.com/markburgess_osl)**-- A well-known theoretician in the area of information systems, Burgess' work has focused largely on distributed information infrastructure.  He is particularly well-known for his work on Configuration Management and Promise Theory. He is the principal Founder of CFEngine, an emeritus professor of Network and System Administration at Oslo University College, and author of numerous books, articles and papers on topics ranging from physics, Network and System Administration, to fiction.
 
 **Luke Kanies** -- [**@puppetmasterd**](https://twitter.com/puppetmasterd "Luke Kanies") -- Founder and CEO of PuppetLabs, Kanies describes himself as a Unix system administrator and developer turned entrepreneur. He says he has focused his administration career on server automation, and working as a consultant with the current generation of tools convincing him that things could be better.
 

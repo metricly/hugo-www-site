@@ -43,5 +43,5 @@ Now users can subscribe to a daily emailed report summary. The emailed report pr
 
 This report is automatically activated in all accounts. To disable the report, change the preference from your account profile page.
 
-* * * * *\
+* * * * *
 Want to see these release highlights in action? We offer a 21-day, [free trial of Metricly.](/signup)

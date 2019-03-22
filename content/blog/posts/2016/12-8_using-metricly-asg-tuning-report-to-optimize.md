@@ -18,8 +18,7 @@ The Auto Scale Group Tuning Report and How to View It
 Once you have logged into Metricly, the [Auto Scale Group Tuning Report](https://app.netuitive.com/#/reports/asgtuning/latest) can be accessed through the Reports Menu on the main navigation bar.
 
 [![ASG Tuning Report Dropdown](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/ReportsDropdown.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/ReportsDropdown.png)
-
-Fig 1. Location of ASG Tuning Report
+*Fig 1. Location of ASG Tuning Report*
 
 Before you can view the report, you'll need to have at least one calendar week of data which has been reported to Metricly. This data is required to analyze and identify trends within the ASG. While one week is the minimum, Metricly can analyze up to four weeks of data to better understand the traffic and operations of your ASG. Once Metricly has gathered sufficient data, you'll be able to view the Auto Scale Tuning Report, and move on with the rest of the steps.
 
@@ -29,8 +28,7 @@ Understanding the Historical Report
 When first observed, the Auto Scale Group tuning report is divided into two distinct sections. The first section, located on the left, contains both the history of the ASG size or instance count, and utilization of those instances.
 
 [![Historical Auto Scale Group Performance](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Historical-ASG-Performance.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Historical-ASG-Performance.png)
-
-Fig. 2 Historical Performance of the ASG.
+*Fig. 2 Historical Performance of the ASG.*
 
 You can observe in the Historical Instance Count graph above that there were four occasions during the week when the ASG policies were invoked and the size of the group was increased to greater than 15 instances. At all other times, the group retained a constant size of 15 instances. The four periods of instance increase correlate to the Historical Utilization graph, where utilization surpassed what appears to be approximately 75% utilization. So we can confirm that our ASG is increasing when needed to handle additional traffic.
 
@@ -43,19 +41,17 @@ The tuning suggestions for the ASG are displayed in the series of graphs located
 
 [![Auto Scale Group Tuning Model Preset Selection](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Auto-Scale-Group-Tuning-Model-Preset-Selection.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Auto-Scale-Group-Tuning-Model-Preset-Selection.png)
 
-Fig 3. Tuning Model Preset Selection
+*Fig 3. Tuning Model Preset Selection*
 
-You also have the option to further refine current options, depending on what you know about traffic patterns and how you would like the ASG to respond to increases and decreases in traffic. Each of these settings is explained in greater detail on the help page for the [Auto Scale Group Tuning Report](https://hlp.app.netuitive.com/Content/Reports/asg_tuning_report.htm).
+You also have the option to further refine current options, depending on what you know about traffic patterns and how you would like the ASG to respond to increases and decreases in traffic. Each of these settings is explained in greater detail on the help page for the [Auto Scale Group Tuning Report](https://docs.metricly.com/reports/reports-asg-recommendations/).
 
 [![Auto Scale Group Tuning Settings](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Auto-Scale-Group-Tuning-Settings-1024x59.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Auto-Scale-Group-Tuning-Settings.png)
-
-Fig 4. Tuning Settings
+*Fig 4. Tuning Settings*
 
 As you use different models, and refine the settings for the ASG, you can automatically see the projected savings and estimated cost of the ASG, relative to its historical state. This is useful if you want to weigh availability against cost, and determine how much risk you are prepared to embrace. In addition to observing cost savings, you can also view the effect that the proposed tuning will have on the instance count, and corresponding utilization.
 
 [![Tuned or Projected Auto Scale Group Performance](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Tuned-or-Projected-Auto-Scale-Group-Performance.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Tuned-or-Projected-Auto-Scale-Group-Performance.png)
-
-Fig. 5 Tuned/Projected Performance of the ASG.
+*Fig. 5 Tuned/Projected Performance of the ASG.*
 
 Enabling the Use of Tuning Suggestions
 --------------------------------------
@@ -68,8 +64,7 @@ Configuring the Instance Resize Policy
 --------------------------------------
 
 [![Metric Deviations for Auto Scale Group Resize Policy](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Metric-Deviations-for-Auto-Scale-Group-Resize-Policy.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Metric-Deviations-for-Auto-Scale-Group-Resize-Policy.png)
-
-Fig. 6 Metric Deviations for ASG Resize Policy
+*Fig. 6 Metric Deviations for ASG Resize Policy*
 
 Finally, click on the "Notifications" tab, and click "Add Notification." Metricly supports multiple options for notifications, including:
 

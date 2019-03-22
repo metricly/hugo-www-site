@@ -111,4 +111,4 @@ While each environment is unique, the outlined framework here can be used as a s
 
 * * * * *
 
-*To learn more about how Metricly can help you take your monitoring to the next level with machine learning technology and integrations to open source agents, check out our [product page](/product) or sign up for a [free trial](/signup).*
+*To learn more about how Metricly can help you take your monitoring to the next level with machine learning technology and integrations to open source agents, check out our [feature page](/aws-cost-tool) or sign up for a [free trial](/signup).*

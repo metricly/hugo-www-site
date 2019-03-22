@@ -52,7 +52,7 @@ Costs for Lambda functions are charged on a per-request basis. The cost is a pro
 Getting Started
 ---------------
 
-The first step in any Lambda monitoring project is to determine how you are going to track the required metrics and establish a connection between your monitoring solution and your AWS environment. In a subsequent article, I'll focus on establishing this connection and configuring a monitoring solution for your Lambdas using [Metricly's monitoring solution](/product).
+The first step in any Lambda monitoring project is to determine how you are going to track the required metrics and establish a connection between your monitoring solution and your AWS environment. In a subsequent article, I'll focus on establishing this connection and configuring a monitoring solution for your Lambdas using [Metricly's monitoring solution](/monitoring).
 
 With the connection to AWS enabled, the next step is to put together a method of monitoring each of the key metrics. In the case of Metricly you'll want to set up the [dashboard](/) to display each of the key metrics previously identified. These are:
 
@@ -66,7 +66,7 @@ The next step is to determine a baseline for each of these metrics, and then con
 Best Practices for Lambda Monitoring
 ------------------------------------
 
-To wrap this discussion up, here is what I would recommend for a successful [monitoring solution](/) for your Lambda functions.
+To wrap this discussion up, here is what I would recommend for a successful [monitoring solution](/monitoring) for your Lambda functions.
 
 -   Determine a monitoring solution for your Lambda functions which assesses and reports each of the key metrics:
     -   Invocations or count of requests

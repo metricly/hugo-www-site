@@ -49,5 +49,5 @@ For example, seeing a processor run queue length more than double the number of 
 
 These are easy pitfalls to avoid when determining your systems capacity utilization, however, it's easy to fall into old habits of over-provisioning infrastructure, applications, and services; but this doesn't always protect us from issues. You can avoid this by creating a capacity plan, deploying some real-time monitoring solutions like [Metricly](/), and effectively right-sizing your environment.
 
-* * * * *\
+* * * * *
 *See how real-time monitoring with Metricly can help you right-size your environment. [Try us free for 21 days.](/signup)*

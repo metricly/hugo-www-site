@@ -31,5 +31,5 @@ Seamlessly connecting your DevOps tools is a high priority -- look for more popu
 
 Metricly now accepts events generated from external sources. You can send data from any source, such as AWS SNS, Webhooks, OpsGenie, Pingdom, Logstash and many other third party tools. These external events can be viewed on the events timeline next to Metricly-generated events. Particularly useful scenarios for external event generation include pushing a notification for a system restart, sending data to Metricly when a configuration change has been executed, or sending relevant application or system log entries. The ability to see external events on a timeline alongside performance anomalies detected by Metricly's behavior learning engine helps shorten the time that it takes to troubleshoot a problem.
 
-* * * * *\
+* * * * *
 Want to see these release highlights in action? We offer a 21-day, [free trial of Metricly.](/signup)

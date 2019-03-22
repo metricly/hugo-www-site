@@ -27,7 +27,7 @@ Our Ruby agent is now more robust in terms of collection and agent customization
 
 The Ruby agent can now silently track exceptions and record them as external events that would be ingested inside of our product in addition to numeric time-series values. Third party support for sidekiq is also enabled to record sidekiq errors as external events in Metricly. To help with busier rails applications, we added improved caching configuration to avoid excessive thread growth.
 
-Check out all the settings in our [Ruby agent setup documentation](https://help.netuitive.com/Content/Datasources/Netuitive/ruby.htm).
+Check out all the settings in our [Ruby agent setup documentation](https://docs.metricly.com/integrations/agents/ruby-agent/).
 
 [![ruby-improvements](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Ruby-Improvements-1024x600.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/Ruby-Improvements.png)
 
@@ -47,7 +47,7 @@ User Scripts Collector
 
 We added the User Scripts Collector as a new collector supported by our Linux agent. The User Scripts Collector schedules and regularly runs an external script designed by you and placed in a special directory and then collects its output. This collector has a wide variety of uses as the collector's functionality and output are entirely dependent on your custom scripts. Our Help page will provide an increasing number of examples to help guide you and provide ideas. Some use cases are: Ping a URL or IP address and return the state, tail a log file to parse for a keyword and post it as external event to our API, run the Linux PS command to check if a process is running or not and post the result to our API so that you can send a notification if a service stop running. You get the idea... the possibilities are endless.
 
-For more information on how to setup the collector, check out our [User Scripts Collector documentation](https://help.netuitive.com/Content/Integrations/user_scripts_collector.htm).
+For more information on how to setup the collector, check out our [User Scripts Collector documentation](https://docs.metricly.com/integrations/user-scripts-collector/).
 
 [![October 2016- User Scripts Collector](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/User-Scripts-Collector-1024x600.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/User-Scripts-Collector.png)
 

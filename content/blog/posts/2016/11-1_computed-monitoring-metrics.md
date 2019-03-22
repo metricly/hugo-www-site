@@ -36,7 +36,7 @@ For example, let's say you have an EBS volume for which Amazon is providing 600 
 
 [![Computed Metrics: IOPS Utilization](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/IOPSUtilizationPSD.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/IOPSUtilizationPSD.png)
 
-Dale V. Georg, our Principal Data Scientist, [wrote a wonderfully in-depth piece](/iops-calculator-for-ebs-volumes) on EBS IOPS utilization and its usefulness in AWS monitoring. [Read it here](/iops-calculator-for-ebs-volumes) for more detail.
+Dale V. Georg, our Principal Data Scientist, [wrote a wonderfully in-depth piece](/iops-calculator-for-ebs-volumes) on EBS IOPS utilization and its usefulness in AWS monitoring. 
 
 **Linux Load Average Normalized**
 

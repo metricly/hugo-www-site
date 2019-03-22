@@ -43,5 +43,5 @@ This core engine automatically discovers relationships between various metrics a
 
 With this approach to monitoring, you get the ultimate combination: anomaly detection and industry best practices.
 
-* * * * *\
+* * * * *
 *Set up your own data sources and see how behavior learning technology starts processing information immediately. Metricly offers a [no-obligation, 21-day trial with full featured access.](/signup)*

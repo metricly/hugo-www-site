@@ -24,7 +24,7 @@ Python Integration via StatsD
 
 [![Python](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/07/imageedit_1_7254343722.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2016/07/imageedit_1_7254343722.png)
 
-As of this past month, we can add Python to Metricly's ever-growing list of supported integrations. All of your Python code can be instrumented with gauges and timers at the class and method call level using open source StatsD agents. Decide where to create key metrics in your most important code blocks, and Metricly's StatsD server picks them up and applies analytics and behavior learning to generate metric charts. These custom metrics can then be monitored using Metricly policies and dashboards. To get started with the Python integration, install the Metricly Linux agent and take a look at the [Python configuration instructions](https://help.netuitive.com/Content/Datasources/Netuitive/python.htm).
+As of this past month, we can add Python to Metricly's ever-growing list of supported integrations. All of your Python code can be instrumented with gauges and timers at the class and method call level using open source StatsD agents. Decide where to create key metrics in your most important code blocks, and Metricly's StatsD server picks them up and applies analytics and behavior learning to generate metric charts. These custom metrics can then be monitored using Metricly policies and dashboards. To get started with the Python integration, install the Metricly Linux agent and take a look at the [Python configuration instructions](https://docs.metricly.com/integrations/python/).
 
 Reduce Alarm Noise w/ Policy Improvements
 -----------------------------------------

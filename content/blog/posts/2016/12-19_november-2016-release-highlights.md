@@ -41,7 +41,7 @@ EC2 Recommendation Report Beta
 
 The EC2 Recommendation Report is designed to help you reduce EC2 instance running costs by suggesting alternative instance types that may provide a similar level of service at a lower cost. Using characteristics like memory, VCPUs, and hourly instance running costs, the report estimates the memory and number of VCPUs that are actually needed. The graph on the page displays the current state of your element and connects it to the projected state of the instance, allowing you to visualize how large of an improvement you would achieve by following the recommendations.
 
-For additional information about the EC2 Recommendation Report, check out our [documentation](https://help.netuitive.com/Content/Reports/ec2_recommendation_report.htm).
+For additional information about the EC2 Recommendation Report, check out our [documentation](https://docs.metricly.com/reports/reports-ec2-recommendations/).
 
 Updated Amazon Kinesis Monitoring Package
 -----------------------------------------

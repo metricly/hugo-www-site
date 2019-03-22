@@ -35,5 +35,5 @@ Redesigned Multiple Metric Time Series Widget
 
 The Multiple Metric Time Series widget has been redesigned to provide ultimate flexibility in metric selection and filtering. Users will notice an updated configuration screen that features more detailed filters. Users are now able to select multiple metrics independently of whether they belong to one or multiple elements. Two new filters allow users to select metrics that simply contain (or do not contain) certain letters in their full qualified name. A new new area of the configuration now shows the shortlist of metrics based on the filter results to make the configuration process more intuitive.
 
-* * * * *\
+* * * * *
 Want to see these release highlights in action? We offer a 21-day, [free trial of Metricly.](/signup)

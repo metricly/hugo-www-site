@@ -24,20 +24,20 @@ Getting Started
 
 To get started, first and foremost read the [Metricly Overview page](/) and watch the introductory video. It's only about six minutes and will give a high-level review of what's possible with Metricly.
 
-Next, you'll want to sign up for a 21 day free [trial account](/signup). Once the required fields are filled out and you click "Sign Up," you will receive a verification email.After you have your trial account created, review the introductory "[Where to Start" slideshow](https://hlp.app.netuitive.com/Content/where_to_start.htm) to get going.
+Next, you'll want to sign up for a 21 day free [trial account](/signup). Once the required fields are filled out and you click "Sign Up," you will receive a verification email.After you have your trial account created, review the introductory "[Where to Start" slideshow](https://docs.metricly.com/getting-started/) to get going.
 
-Then, after activating your Metricly account and logging in via <https://app.netuitive.com>, you will be presented with a helpful tutorial explaining the steps needed to set up a new datasource. Each of the Metricly menu options presents a similar tutorial outlining how each feature works.
+Then, after activating your Metricly account and logging in via <https://app.metricly.com/>, you will be presented with a helpful tutorial explaining the steps needed to set up a new datasource. Each of the Metricly menu options presents a similar tutorial outlining how each feature works.
 
-If you have any questions about how to set up a particular integration or other feature, you can find answers on the [Metricly help page](https://help.netuitive.com/Content/home.htm). For our purposes, we will be referencing the AWS integration [documentation](https://help.netuitive.com/Content/Datasources/Netuitive/aws.htm). It is strongly suggested that you review this documentation *prior* to beginning setup of your new integration. This can save you from having to troubleshoot potential problems a bit later down the road.
+If you have any questions about how to set up a particular integration or other feature, you can find answers on the [Metricly help page](https://docs.metricly.com/). For our purposes, we will be referencing the AWS integration [documentation](https://docs.metricly.com/integrations/aws-integration/). It is strongly suggested that you review this documentation *prior* to beginning setup of your new integration. This can save you from having to troubleshoot potential problems a bit later down the road.
 
 Setup
 -----
 
 Now that you've logged in, if you aren't immediately presented with the list of integrations available with Metricly, click *Integrations* from the menu bar at the top of the page. Next, click *Amazon Web Services* from the list.
 
-At this point, you will want to log in to your own Amazon Web Services dashboard in a separate tab. It is suggested that you use the [Installation Via IAM Role instructions](https://help.netuitive.com/Content/Datasources/Netuitive/aws.htm#installation-via-iam-role) to configure the integration.
+At this point, you will want to log in to your own Amazon Web Services dashboard in a separate tab. It is suggested that you use the [Installation Via IAM Role instructions](https://docs.metricly.com/integrations/aws-integration/aws-iam-installation/) to configure the integration.
 
-For this article, I created a [Read Only Role (with full permissions)](https://help.netuitive.com/Content/Datasources/Netuitive/aws.htm#creating-a-read-only-role-with-full-permissions). This will allow us to monitor all of the AWS services that Metricly supports. If you wish to limit the permissions your new IAM role has available to monitor your AWS infrastructure, consider using the [Creating a Read Only Role (with limited permissions)](https://help.netuitive.com/Content/Datasources/Netuitive/aws.htm#creating-a-read-only-role-with-limited-permissions).
+For this article, I created a [Read Only Role (with full permissions)](https://docs.metricly.com/integrations/aws-integration/). This will allow us to monitor all of the AWS services that Metricly supports. If you wish to limit the permissions your new IAM role has available to monitor your AWS infrastructure, consider using the [Creating a Read Only Role (with limited permissions)](https://docs.metricly.com/integrations/aws-integration/#creating-a-read-only-role-with-limited-permissions).
 
 The initial setup is fairly straightforward and it took me about 10 minutes to create an AWS IAM role and connect Metricly to our AWS infrastructure using the Metricly AWS documentation. When creating the integration, I selected EC2, EBS, and ELB, as shown in the image below. Once all of the fields are filled out, click *Save*.
 
@@ -46,7 +46,7 @@ The initial setup is fairly straightforward and it took me about 10 minutes to c
 Dashboards
 ----------
 
-Metricly provides a default set of [dashboards to help visualize your data](https://help.netuitive.com/Content/Dashboards/dashboards.htm?Highlight=dashboards) once an integration has been created. To access your dashboards, click *Dashboards*, then click *All* on the menu bar at the top of the page.
+Metricly provides a default set of [dashboards to help visualize your data](https://docs.metricly.com/data-visualization/dashboards/) once an integration has been created. To access your dashboards, click *Dashboards*, then click *All* on the menu bar at the top of the page.
 
 You can favorite a particular dashboard you frequently access by clicking the star icon to the left of the dashboard name.
 
@@ -71,7 +71,7 @@ The widget on the middle left shows aggregated metrics for our EBS volumes. Here
 
 -   *avg(avg(netuitive.aws.ebs.averagelatency))* -- This is the average latency per EBS operation across the monitored instances described in milliseconds.
 -   *avg(avg(netuitive.aws.ebs.iopsutilization))* -- This shows a comparison of the current IOPS compared to the provisioned IOPS, expressed as a percentage, averaged across all of the monitored instances.
--   *avg(avg(netuitive.aws.ebs.queuelengthdifferential))* -- This measures the difference between the actual EBS queue length and the "ideal" queue length according to Amazon. The queue length is the number of pending IO requests waiting for a storage volume. Amazon describes the "ideal" queue length as 1 for every 200 IOPS. This number shows the actual queue length divided by 200, as an average across all of the instances. A more thorough explanation for this metric can be found in the Metricly [EBS documentation](https://help.netuitive.com/Content/Datasources/Netuitive/aws.htm?Highlight=disktotalops#ebs-1).
+-   *avg(avg(netuitive.aws.ebs.queuelengthdifferential))* -- This measures the difference between the actual EBS queue length and the "ideal" queue length according to Amazon. The queue length is the number of pending IO requests waiting for a storage volume. Amazon describes the "ideal" queue length as 1 for every 200 IOPS. This number shows the actual queue length divided by 200, as an average across all of the instances. A more thorough explanation for this metric can be found in the Metricly [EBS documentation](https://docs.metricly.com/integrations/aws-integration/metrics/aws-metrics-ebs/).
 
 The widget on the middle right shows the five volumes with the highest IOPS utilization. Again, you can hover over the graph to see the instance names and their respective utilization.
 
@@ -86,7 +86,7 @@ The widget on the lower left shows aggregated metrics for our ELB instances. In 
 
 The widgets on the lower middle and lower right show the five ELBs with the highest request count and latency, respectively. We are currently monitoring only a single ELB, so as expected, this shows just a single instance.
 
-For more information about configuring your AWS integration, and how to interpret metrics, see the Metricly AWS integration [documentation](https://help.netuitive.com/Content/Datasources/Netuitive/aws.htm).
+For more information about configuring your AWS integration, and how to interpret metrics, see the Metricly AWS integration [documentation](https://docs.metricly.com/integrations/aws-integration/).
 
 Pricing
 -------

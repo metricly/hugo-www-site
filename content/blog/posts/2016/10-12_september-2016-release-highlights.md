@@ -18,7 +18,7 @@ Even though it's still in beta, we cooked up improvements to help you fine tune 
 
 As you adjust the tuning settings, you'll now see your projected savings change on the report in real time. Whether you customize the settings or use preset strategies, the cost savings will vary depending on how aggressive or conservative you set your strategy.
 
-This report does more than help you with deriving your cost savings; it also allows you to ensure sufficient capacity for peak workload. Remember, you can [generate hourly notifications](https://help.netuitive.com/Content/Reports/asg_tuning_report.htm#creating-a-recommended-instance-related-policy) in the form of instant messages or Webhooks to help change your ASG node count on an hourly or daily basis.
+This report does more than help you with deriving your cost savings; it also allows you to ensure sufficient capacity for peak workload. Remember, you can [generate hourly notifications](https://docs.metricly.com/reports/reports-asg-recommendations/#creating-a-recommended-instance-related-policy) in the form of instant messages or Webhooks to help change your ASG node count on an hourly or daily basis.
 
 Package Auto-Provisioning
 -------------------------

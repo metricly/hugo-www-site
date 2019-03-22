@@ -36,5 +36,5 @@ Additional computed metrics for Diamond and collectd
 
 **Group metrics** compute values for related sets of metrics. For example, collectd provides 8 performance metrics for each disk being monitored, including read and write operations per second. Group metrics provide a general way to create a new computed metric for each disk without knowing ahead of time what the disks are; for example, summing read and write operations per second to get the total IOPS.
 
-* * * * *\
+* * * * *
 Want to see these release highlights in action?  [We offer a fully-functional, 21-day free trial of Metricly here.](/signup)

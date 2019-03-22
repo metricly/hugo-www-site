@@ -14,7 +14,7 @@ Think about it. Today, networks can transfer gigabytes in seconds. Multi-core CP
 
 This is why wringing all of the performance you can out of your databases and minimizing errors is so important. To obtain that performance, you need to be able to monitor your databases continuously by collecting metrics about data throughput and errors.
 
-Below, I explain how to use [Metricly](/product) to monitor the performance of one type of database, MySQL, which you are very likely to be using. And even if you run a different type of database, the lessons below will still apply to you, since [Netuitive provides integrations](https://docs.metricly.com/integrations/) for all of the other major databases (including the NoSQL options) in addition to MySQL.
+Below, I explain how to use [Metricly](/aws-cost-tool) to monitor the performance of one type of database, MySQL, which you are very likely to be using. And even if you run a different type of database, the lessons below will still apply to you, since [Metricly provides integrations](https://docs.metricly.com/integrations/) for all of the other major databases (including the NoSQL options) in addition to MySQL.
 
 Getting Started
 ---------------
@@ -32,9 +32,9 @@ This command installs and runs the Metricly Linux agent. This agent runs as a ba
 MySQL Database Monitoring
 -------------------------
 
-With the agent installed on the server, we can now set up the [Metricly MySQL Collector](https://help.netuitive.com/Content/Datasources/Netuitive/my_sql.htm) in order to collect detailed information about our MySQL database.
+With the agent installed on the server, we can now set up the [Metricly MySQL Collector](https://docs.metricly.com/integrations/mysql/) in order to collect detailed information about our MySQL database.
 
-To do this, we first need to give the Metricly agent access to the process data. It is best practice to create a new MySQL user and grant only the permissions needed by the Metricly agent to do its job. (Metricly has some more detail about MySQL permissions [here](https://hlp.app.netuitive.com/Content/Datasources/Netuitive/my_sql.htm).) But for the sake of this demonstration, granting all privileges is more than enough to send some data up to Metricly. You can do that by logging into the MySQL shell as root and running this command:
+To do this, we first need to give the Metricly agent access to the process data. It is best practice to create a new MySQL user and grant only the permissions needed by the Metricly agent to do its job. (Metricly has some more detail about MySQL permissions [here](https://docs.metricly.com/integrations/mysql/).) But for the sake of this demonstration, granting all privileges is more than enough to send some data up to Metricly. You can do that by logging into the MySQL shell as root and running this command:
 
 > GRANT ALL PRIVILEGES ON *.* TO '**--- USERNAME**'@'**127.0.0.1**' IDENTIFIED BY '**PASSWORD**';
 
@@ -42,7 +42,7 @@ Running this command in MySQL as root will grant all privileges to the defined *
 
 To accomplish this, open up: /opt/netuitive-agent/conf/collectors/MySQLCollector.conf in your favorite editor and change the enabled setting to True. You'll also want to update the hosts setting with the **username** and **password** you defined in the MySQL shell command above, which will give the Metricly agent direct access to your MySQL process. As with the NGINX step, you'll want to be sure to restart the Metricly agent before you start seeing data in your Metricly dashboard.
 
-[![MySQL Database Monitoring with Netuitive: MySQL Metrics](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/MySQL-Metrics-1024x337.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/MySQL-Metrics.png)
+[![MySQL Database Monitoring with Metricly: MySQL Metrics](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/MySQL-Metrics-1024x337.png)](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2017/07/MySQL-Metrics.png)
 
 Taking MySQL Database Monitoring Further
 ----------------------------------------
