@@ -132,3 +132,7 @@ function mobileMenuHeight() {
 
     document.documentElement.style.setProperty('--vh', `${vh}px`);
 }
+
+$(document).ready(function () {
+  $(".post-content table").addClass("table");
+});
