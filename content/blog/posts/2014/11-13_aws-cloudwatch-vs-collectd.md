@@ -28,13 +28,13 @@ The benefits of Collectd over AWS CloudWatch show up in several areas of compari
 
 -   While the metrics available from CloudWatch are limited to what AWS decides to provide, the set of metrics available via Collectd can be extended by the end user.
 
-|  | **Collectd for OS** | **CloudWatch for EC2** |
-| --- | --- | --- |
-| Metrics | Dozens | [Approximately 10](http://docs.aws.amazon.com/AmazonCloudWatch/latest/monitoring/ec2-metricscollected.html) |
-| Consistency | All the time | Eventually |
-| Cost | Open source | [Pricing](https://aws.amazon.com/cloudwatch/pricing/) |
-| Frequency | Every 10 seconds (default) or 60 seconds (best practice) | Every 5 minutes on free tier, 1 minute for paid tier |
-| Extensibility | Users can write and deploy plug-ins for additional metrics | No open source community for creating plug-ins |
+|               | Collectd for OS                                            | CloudWatch for EC2                                   |
+|---------------|------------------------------------------------------------|------------------------------------------------------|
+| Metrics       | Dozens                                                     | Approximately 10                                     |
+| Consistency   | All the time                                               | Eventually                                           |
+| Cost          | Open source                                                | Pricing                                              |
+| Frequency     | Every 10 seconds (default) or 60 seconds (best practice)   | Every 5 minutes on free tier, 1 minute for paid tier |
+| Extensibility | Users can write and deploy plug-ins for additional metrics | No open source community for creating plug-ins       |
 
 ___
 Collectd and Metricly...How does it work?
@@ -44,15 +44,15 @@ Collectd comes out-of-the-box with the http_write plugin.
 
 Metricly's API is ready to receive metrics directly from the http_write plugin. To get your Collectd metrics into Metricly, all you need to do is add a few lines to your existing Collectd configuration file.
 
-    Plugin write_http
+        Plugin write_http
 
-    URL "https://api.uat.netuitive.com/ingest/collectd/{customer API key}"
+        URL "https://api.uat.netuitive.com/ingest/collectd/{customer API key}"
 
-    Format "JSON"
+        Format "JSON"
 
-    /URL
+        /URL
 
-    /Plugin
+        /Plugin
 
 Collectd's simplicity combined with [Metricly's analytics](/) enables a much richer set of metrics at a higher frequency, at the same (or in some cases lower) cost.
 

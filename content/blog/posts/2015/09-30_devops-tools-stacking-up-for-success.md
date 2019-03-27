@@ -15,24 +15,25 @@ The fact is DevOps shops have one primary objective:  To advance their own appli
 
 The good news is that the open source community is aggressively addressing many of the required generic capabilities.  Here is a chart to highlight some examples:
 
-| Feature Capability | Requirements and Use Cases | DevOps Tool Provider |
-| --- | --- | --- |
-| **Instrumentation** | Agents to monitor systems infrastructure, middleware, and applications | Collectd\
-Diamond |
-| **Data Repositories** | Services that leverage a wide range of technologies for storing, organizing, querying, and managing time-series data | OpenTSDB\
-InfluxDB |
-| **Configuration Management** | Facilitate and automate configuration changes | Chef\
-SaltStack\
-Puppet |
-| **Graphing and UI Frameworks** | Dashboards and widgets that specialize in visualization of data | Graphite\
-Grafana |
-| **Analytics** | Algorithms that transform raw data into results that discover anomalies, assign categories, or make predictions | R\
-Spark/Mllib\
-Etsy Skyline |
-| **Log Management** | Index, transform, and search logs | ElasticSearch\
-Logstash\
-Kibana |
-| **Capacity Planning & Billing Analysis** | Specialized reporting for measuring capacity and analyzing cloud costs | Netflix/ice for AWS |
+| Feature Capability                   | Requirements and Use Cases                                                                                           | DevOps Tool Provider |
+|--------------------------------------|----------------------------------------------------------------------------------------------------------------------|----------------------|
+| Instrumentation                      | Agents to monitor systems infrastructure, middleware, and applications                                               | Collectd             |
+| Diamond                              |                                                                                                                      |                      |
+| Data Repositories                    | Services that leverage a wide range of technologies for storing, organizing, querying, and managing time-series data | OpenTSDB             |
+| InfluxDB                             |                                                                                                                      |                      |
+| Configuration Management             | Facilitate and automate configuration changes                                                                        | Chef                 |
+| SaltStack                            |                                                                                                                      |                      |
+| Puppet                               |                                                                                                                      |                      |
+| Graphing and UI Frameworks           | Dashboards and widgets that specialize in visualization of data                                                      | Graphite             |
+| Grafana                              |                                                                                                                      |                      |
+| Analytics                            | Algorithms that transform raw data into results that discover anomalies, assign categories, or make predictions      | R                    |
+| Spark/Mllib                          |                                                                                                                      |                      |
+| Etsy Skyline                         |                                                                                                                      |                      |
+| Log Management                       | Index, transform, and search logs                                                                                    | ElasticSearch        |
+| Logstash                             |                                                                                                                      |                      |
+| Kibana                               |                                                                                                                      |                      |
+| Capacity Planning & Billing Analysis | Specialized reporting for measuring capacity and analyzing cloud costs                                               | Netflix/ice for AWS  |
+___
 
 While each of these providers is advancing on their own technology frameworks, timeframes, and licensing terms, integration of these tools into a DevOps stack is left to the end-user. To further the workload, these components have to play nice together before a DevOps shop can begin to layer in their unique context to yield customized and directly beneficial results. Consequently, DevOps engineers are required to spend significant time and resources on integrating and maintaining their tools as opposed to advancing their own business objectives.
 

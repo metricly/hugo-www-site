@@ -20,16 +20,12 @@ Initial Tests
 
 Our initial theory was that the Dockerized agent was leaking in highly volatile environments. If hundreds or thousands of Docker containers were coming and going then the agent would be sending in data for thousands of unique metric names (each metric is prefixed by the container ID), so somehow those unique metrics could be getting stored somewhere leading to growth. To test I ran the following command locally and watched the memory usage of the agent container:
 
-| #!/bin/bash |
+    #!/bin/bash
 
-|\
- |
+    docker run -d --name agent -e APIKEY=<api-key> -v /var/run/docker.sock:/var/run/docker.sock netuitive/docker-agent
+    while true; do docker run --rm alpine sleep 10; sleep 5; done
 
-| docker run -d --name agent -e APIKEY=<api-key> -v /var/run/docker.sock:/var/run/docker.sock netuitive/docker-agent |
 
-| while true; do docker run --rm alpine sleep 10; sleep 5; done |
-
-[view raw](https://gist.github.com/cdisomma1/e3295010318adca448de79110a743ed1/raw/421e25d8b8cf07bb694aa60215797d061dc8d5d1/initial-test) [initial-test](https://gist.github.com/cdisomma1/e3295010318adca448de79110a743ed1#file-initial-test) hosted with ![❤](https://s.w.org/images/core/emoji/11/svg/2764.svg) by [GitHub](https://github.com)
 
 Over a couple hours there was no noticeable memory growth of the container, so we put the theory to rest.
 
@@ -79,181 +75,89 @@ Through all this testing I was not working alone. Multiple other engineers and s
 
 Our Python client library has a handy example script for testing. The best part is that it's a small, terminating script which means we could break out Pympler again to track memory usage -- a far smaller test case than the entire Diamond project. I wrote a small test script from the example file and ran it to get the following output.
 
-| import netuitive |
-
-| import time |
-
-| import os |
-
-|\
- |
-
-| from pympler import tracker |
-
-|\
- |
-
-| tr = tracker.SummaryTracker() |
-
-|\
- |
-
-| ApiClient = netuitive.Client(url=os.environ.get('API_URL'), api_key=os.environ.get('CUSTOM_API_KEY')) |
-
-|\
- |
-
-| MyElement = netuitive.Element() |
-
-|\
- |
-
-| counter = 0 |
-
-|\
- |
-
-| while True: |
-
-| timestamp = int(time.mktime(time.localtime())) |
-
-| MyElement.add_sample('app.error-' + str(counter), timestamp, 1, host='appserver01') |
-
-|\
- |
-
-| ApiClient.post(MyElement) |
-
-|\
- |
-
-| MyElement.clear_samples() |
-
-|\
- |
-
-| tr.print_diff() |
-
-|\
- |
-
-| counter += 1 |
-
-| Raw |
-
-[view raw](https://gist.github.com/cdisomma1/76b565d645a5b401c4b344076f19b9db/raw/5fcdf0a6ebc06ef6038b8b207a37d33ad623dd25/python-client-test.py) [python-client-test.py](https://gist.github.com/cdisomma1/76b565d645a5b401c4b344076f19b9db#file-python-client-test-py) hosted with ![❤](https://s.w.org/images/core/emoji/11/svg/2764.svg) by [GitHub](https://github.com)
-
-| types | # objects | total size |
-
-| =================================== | =========== | ============ |
-
-| list | 1301 | 133.17 KB |
-
-| str | 1320 | 73.91 KB |
-
-| dict | 21 | 10.24 KB |
-
-| int | 153 | 3.59 KB |
-
-| wrapper_descriptor | 9 | 720 B |
-
-| _sre.SRE_Pattern | 3 | 668 B |
-
-| instance | 9 | 648 B |
-
-| getset_descriptor | 4 | 288 B |
-
-| weakref | 3 | 264 B |
-
-| member_descriptor | 3 | 216 B |
-
-| <class 'urlparse.SplitResult | 2 | 208 B |
-
-| function (store_info) | 1 | 120 B |
-
-| cell | 2 | 112 B |
-
-| <class 'netuitive.element.Element | 1 | 64 B |
-
-| <class 'threading._RLock | 1 | 64 B |
-
-| types | # objects | total size |
-
-| ======= | =========== | ============ |
-
-| list | 5 | 480 B |
-
-| str | 7 | 414 B |
-
-| int | 2 | 48 B |
-
-| types | # objects | total size |
-
-| ======= | =========== | ============ |
-
-| str | 1 | 48 B |
-
-| types | # objects | total size |
-
-| ======= | =========== | ============ |
-
-| str | 1 | 48 B |
-
-| types | # objects | total size |
-
-| ======= | =========== | ============ |
-
-| str | 1 | 48 B |
-
-| list | 0 | 32 B |
-
-| types | # objects | total size |
-
-| ======= | =========== | ============ |
-
-| str | 1 | 48 B |
-
-| types | # objects | total size |
-
-| ======= | =========== | ============ |
-
-| str | 1 | 48 B |
-
-| types | # objects | total size |
-
-| ======= | =========== | ============ |
-
-| str | 1 | 48 B |
-
-| types | # objects | total size |
-
-| ======= | =========== | ============ |
-
-| list | 0 | 64 B |
-
-| str | 1 | 48 B |
-
-| types | # objects | total size |
-
-| ======= | =========== | ============ |
-
-| str | 1 | 48 B |
-
-| types | # objects | total size |
-
-| ======= | =========== | ============ |
-
-| str | 1 | 49 B |
-
-| types | # objects | total size |
-
-| ======= | =========== | ============ |
-
-| str | 1 | 49 B |
-
-| types | # objects | total size |
-
-[view raw](https://gist.github.com/cdisomma1/0aad510ece8f53aa7a9096f4324e813b/raw/543c088ac378530bb7e2dff38ccc00f78d2e12ed/python-client-test.txt) [python-client-test.txt](https://gist.github.com/cdisomma1/0aad510ece8f53aa7a9096f4324e813b#file-python-client-test-txt) hosted with ![❤](https://s.w.org/images/core/emoji/11/svg/2764.svg) by [GitHub](https://github.com)
+    import netuitive
+    import time
+    import os
+
+    from pympler import tracker
+
+    tr = tracker.SummaryTracker()
+
+    ApiClient = netuitive.Client(url=os.environ.get('API_URL'), api_key=os.environ.get('CUSTOM_API_KEY'))
+
+    MyElement = netuitive.Element()
+
+    counter = 0
+
+    while True:
+        timestamp = int(time.mktime(time.localtime()))
+        MyElement.add_sample('app.error-' + str(counter), timestamp, 1, host='appserver01')
+
+        ApiClient.post(MyElement)
+
+        MyElement.clear_samples()
+
+        tr.print_diff()
+
+        counter += 1
+    Raw
+___
+                                  types |   # objects |   total size
+    =================================== | =========== | ============
+                                list |        1301 |    133.17 KB
+                                 str |        1320 |     73.91 KB
+                                dict |          21 |     10.24 KB
+                                 int |         153 |      3.59 KB
+                  wrapper_descriptor |           9 |    720     B
+                    _sre.SRE_Pattern |           3 |    668     B
+                            instance |           9 |    648     B
+                   getset_descriptor |           4 |    288     B
+                             weakref |           3 |    264     B
+                   member_descriptor |           3 |    216     B
+        <class 'urlparse.SplitResult |           2 |    208     B
+               function (store_info) |           1 |    120     B
+                                cell |           2 |    112     B
+    <class 'netuitive.element.Element |           1 |     64     B
+            <class 'threading._RLock |           1 |     64     B
+    types |   # objects |   total size
+    ===== | =========== | ============
+    list |           5 |    480     B
+     str |           7 |    414     B
+     int |           2 |     48     B
+    types |   # objects |   total size
+    ===== | =========== | ============
+     str |           1 |     48     B
+    types |   # objects |   total size
+    ===== | =========== | ============
+     str |           1 |     48     B
+    types |   # objects |   total size
+    ===== | =========== | ============
+     str |           1 |     48     B
+    list |           0 |     32     B
+    types |   # objects |   total size
+    ===== | =========== | ============
+     str |           1 |     48     B
+    types |   # objects |   total size
+    ===== | =========== | ============
+     str |           1 |     48     B
+    types |   # objects |   total size
+    ===== | =========== | ============
+     str |           1 |     48     B
+    types |   # objects |   total size
+    ===== | =========== | ============
+    list |           0 |     64     B
+     str |           1 |     48     B
+    types |   # objects |   total size
+    ===== | =========== | ============
+     str |           1 |     48     B
+    types |   # objects |   total size
+    ===== | =========== | ============
+     str |           1 |     49     B
+    types |   # objects |   total size
+    ===== | =========== | ============
+     str |           1 |     49     B
+    types | # objects | total size
+___
 
 On each loop, after clearing the element samples, we have a single string leaking. Digging in we find that there is an array of distinct metrics in netuitive/client.py which is never cleared. There's our leak. The more distinct metrics collected, the faster the leak.
 

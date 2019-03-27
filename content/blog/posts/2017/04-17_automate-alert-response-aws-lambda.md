@@ -51,48 +51,48 @@ The Lambda I created for this example is simple, and is not to be considered a p
 -   Ensuring that the IAM role you use for the Lambda has rights to perform the *"dynamodb:UpdateTable"* action.
 -   Ensuring that you specify the region where the table is located, either as a property in the handler, or passed in parameter.
 
-    >package com.echovue.dynamoCapacityUpdater;
+        >package com.echovue.dynamoCapacityUpdater;
 
-    > import com.amazonaws.regions.Region;\
-    > import com.amazonaws.regions.Regions;\
-    > import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClient;\
-    > import com.amazonaws.services.dynamodbv2.document.DynamoDB;\
-    > import com.amazonaws.services.dynamodbv2.document.Table;\
-    > import com.amazonaws.services.dynamodbv2.model.ProvisionedThroughput;\
-    > import com.amazonaws.services.lambda.runtime.Context;\
-    > import com.amazonaws.services.lambda.runtime.LambdaLogger;\
-    > import com.amazonaws.services.lambda.runtime.RequestHandler;\
-    > import com.echovue.dynamoCapacityUpdater.model.CapacityConfigEvent;
+        > import com.amazonaws.regions.Region;\
+        > import com.amazonaws.regions.Regions;\
+        > import com.amazonaws.services.dynamodbv2.AmazonDynamoDBClient;\
+        > import com.amazonaws.services.dynamodbv2.document.DynamoDB;\
+        > import com.amazonaws.services.dynamodbv2.document.Table;\
+        > import com.amazonaws.services.dynamodbv2.model.ProvisionedThroughput;\
+        > import com.amazonaws.services.lambda.runtime.Context;\
+        > import com.amazonaws.services.lambda.runtime.LambdaLogger;\
+        > import com.amazonaws.services.lambda.runtime.RequestHandler;\
+        > import com.echovue.dynamoCapacityUpdater.model.CapacityConfigEvent;
 
-    > public class DynamoCapacityUpdater implements RequestHandler<CapacityConfigEvent, String> {\
-    > private AmazonDynamoDBClient amazonDynamoDBClient;\
-    > private DynamoDB dynamoDB;\
-    > private Region region = Region.getRegion(Regions.US_WEST_2);
+        > public class DynamoCapacityUpdater implements RequestHandler<CapacityConfigEvent, String> {\
+        > private AmazonDynamoDBClient amazonDynamoDBClient;\
+        > private DynamoDB dynamoDB;\
+        > private Region region = Region.getRegion(Regions.US_WEST_2);
 
-    > @Override\
-    > public String handleRequest(CapacityConfigEvent event, Context context) {\
-    > LambdaLogger logger = context.getLogger();\
-    > Table table = getDynamoDB().getTable(event.getDynamoDBTableName());\
-    > ProvisionedThroughput provisionedThroughput = new ProvisionedThroughput()\
-    > .withReadCapacityUnits(event.getReadCapacityUnits())\
-    > .withWriteCapacityUnits(event.getWriteCapacityUnits());\
-    > logger.log("Updating " + event.getDynamoDBTableName() + " in region " +\
-    > region.toString());\
-    > table.updateTable(provisionedThroughput);
+        > @Override\
+        > public String handleRequest(CapacityConfigEvent event, Context context) {\
+        > LambdaLogger logger = context.getLogger();\
+        > Table table = getDynamoDB().getTable(event.getDynamoDBTableName());\
+        > ProvisionedThroughput provisionedThroughput = new ProvisionedThroughput()\
+        > .withReadCapacityUnits(event.getReadCapacityUnits())\
+        > .withWriteCapacityUnits(event.getWriteCapacityUnits());\
+        > logger.log("Updating " + event.getDynamoDBTableName() + " in region " +\
+        > region.toString());\
+        > table.updateTable(provisionedThroughput);
 
-    > return "Scaled Table (" + event.getDynamoDBTableName()\
-    > + ") to [" + event.getReadCapacityUnits() + ":"\
-    > + event.getWriteCapacityUnits() + "]";\
-    > }
+        > return "Scaled Table (" + event.getDynamoDBTableName()\
+        > + ") to [" + event.getReadCapacityUnits() + ":"\
+        > + event.getWriteCapacityUnits() + "]";\
+        > }
 
-    > private DynamoDB getDynamoDB() {\
-    > if (amazonDynamoDBClient == null || dynamoDB == null) {\
-    > amazonDynamoDBClient = new AmazonDynamoDBClient().withRegion(region);\
-    > dynamoDB = new DynamoDB(amazonDynamoDBClient);\
-    > }\
-    > return dynamoDB;\
-    > }\
-    > }
+        > private DynamoDB getDynamoDB() {\
+        > if (amazonDynamoDBClient == null || dynamoDB == null) {\
+        > amazonDynamoDBClient = new AmazonDynamoDBClient().withRegion(region);\
+        > dynamoDB = new DynamoDB(amazonDynamoDBClient);\
+        > }\
+        > return dynamoDB;\
+        > }\
+        > }
 
 The handler accepts a custom event object, which includes the name of the table to be updated, and values for the new read and write capacities. Accessor functions are excluded from the code below for brevity.
 

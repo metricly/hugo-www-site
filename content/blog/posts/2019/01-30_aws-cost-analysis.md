@@ -42,11 +42,11 @@ Grouping becomes more refined and useful each time you filter to reduce scope.
 
 ### Add Next-Level Filters
 
-If you have discovered a significant cost delta but don't know what the money was spent on, group by attributes like *Usage Type* or *Operation*. Doing so enables you to better interpret the *EC2 -- Other *cost category, which captures most--but not all--of the non-instance running EC2 costs.
+If you have discovered a significant cost delta but don't know what the money was spent on, group by attributes like *Usage Type* or *Operation*. Doing so enables you to better interpret the *EC2 -- Other* cost category, which captures most--but not all--of the non-instance running EC2 costs.
 
 ##### Usage Type
 
-*Usage Type* is the next level of granularity below Service. Usage type attributes are typically prefixed with the region in which usage occurred; they can also be prefixed with multiple regions in cases such as data transfers.
+**Usage Type** is the next level of granularity below Service. Usage type attributes are typically prefixed with the region in which usage occurred; they can also be prefixed with multiple regions in cases such as data transfers.
 
 -   Single-Region Prefix: USW2-EBS:VolumeUsage.gp2
 -   Multi-Region Prefix: USE1-CAN1-AWS-Out-Bytes
@@ -61,12 +61,14 @@ Being familiar with the AWS services involved is important to fully understandin
 
 Operations are another granular dimension of cost that indicate the specific API action that took place.
 
-| Service | Usage Type | Operation |
-| EC2 -- Other | [REGION]-EBS:VolumeUsage | CreateVolume |
-|  | [REGION]-EBS:SnapshotUsage | CreateSnapshot |
-| CloudWatch | [REGION]-CW:Requests | GetMetricStatistics |
-|  |  | ListMetrics |
-|  |  | PutMetricData |
+| Service     | Usage type                | Operation          |
+|-------------|----------------------------|---------------------|
+| EC2 - Other | [REGION]-EBS:VolumeUsage   | CreateVolume        |
+|             | [REGION]-EBS:SnapshotUsage | CreateSnapshot      |
+| CloudWatch  | [REGION]-CW:Requests       | GetMetricStatistics |
+|             |                            | ListMetrics         |
+|             |                            | PutMetricData       |
+___
 
 ![AWS Cost Analysis: Period Comparison Grouped by Operation](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2019/01/word-image-5.png)
 
