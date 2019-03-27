@@ -134,5 +134,5 @@ function mobileMenuHeight() {
 }
 
 $(document).ready(function () {
-  $(".post-content table").addClass("table");
+  $(".post-content table").addClass("table").addClass("overflow-auto").addClass("text-left");
 });
