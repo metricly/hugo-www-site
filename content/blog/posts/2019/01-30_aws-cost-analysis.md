@@ -1,16 +1,18 @@
 ---
-author: "Lawrence Lane"
-date: "2019-01-30"
-title: "AWS Cost Analysis: Exploring Your Cost Deltas"
-description: "Learn the best AWS cost analysis techniques, and best-practices in this step-by-step guide. Understand large rises in your AWS spend, and find the root cause of cost delta."
-category: "Cloud Cost Management"
+author: Lawrence Lane
+date: 2019-01-30 00:00:00 +0000
+title: 'AWS Cost Analysis: Exploring Your Cost Deltas'
+description: Learn the best AWS cost analysis techniques, and best-practices in this
+  step-by-step guide. Understand large rises in your AWS spend, and find the root
+  cause of cost delta.
+category: Cloud Cost Management
 url: "/aws-cost-analysis/"
-layout: "single"
-featured-image: "cost-analysis.png"
+layout: single
+featured-image: cost-analysis.png
 thumbnail-image: true
 featured: true
----
 
+---
 ### Analyzing AWS Cost Deltas
 
 Cost deltas are noticeable rises in resource cost discovered when comparing two distinct time periods in your AWS billing history. This might seem like an obvious place to start when analyzing your bill, however many people do not know their average application workload costs---especially not on a per-instance level. Being familiar with that information is step one. With Metricly, you can take that step and a few more by setting up a daily cost email update in the AWS Services Cost report.
@@ -33,42 +35,43 @@ If just one service is showing a large delta and you want to learn more:
 
 AWS Cost Period Comparison Grouped by Service
 
-1.  Filter to the service in question.
-2.  Change grouping to one that provides more insight.
-3.  Add filters to reduce scope.
-4.  Repeat steps 2-3 to refine your findings.
+1. Filter to the service in question.
+2. Change grouping to one that provides more insight.
+3. Add filters to reduce scope.
+4. Repeat steps 2-3 to refine your findings.
 
 Grouping becomes more refined and useful each time you filter to reduce scope.
 
 ### Add Next-Level Filters
 
-If you have discovered a significant cost delta but don't know what the money was spent on, group by attributes like *Usage Type* or *Operation*. Doing so enables you to better interpret the *EC2 -- Other* cost category, which captures most--but not all--of the non-instance running EC2 costs.
+If you have discovered a significant cost delta but don't know what the money was spent on, group by attributes like _Usage Type_ or _Operation_. Doing so enables you to better interpret the _EC2 -- Other_ cost category, which captures most--but not all--of the non-instance running [EC2 costs](https://www.metricly.com/ec2-instances/#2-pricing "How does AWS charge for EC2s?").
 
 ##### Usage Type
 
 **Usage Type** is the next level of granularity below Service. Usage type attributes are typically prefixed with the region in which usage occurred; they can also be prefixed with multiple regions in cases such as data transfers.
 
--   Single-Region Prefix: USW2-EBS:VolumeUsage.gp2
--   Multi-Region Prefix: USE1-CAN1-AWS-Out-Bytes
+* Single-Region Prefix: USW2-EBS:VolumeUsage.gp2
+* Multi-Region Prefix: USE1-CAN1-AWS-Out-Bytes
 
 ![AWS Services Cost Report: Period Comparison Grouped by Usage Type](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2019/01/word-image-4.png)
 
 AWS Services Cost Report: Period Comparison Grouped by Usage Type
 
-Being familiar with the AWS services involved is important to fully understanding the descriptions provided. Use the regions mentioned to narrow your scope even more. For example, if you have large cost deltas with a usage type prefix of *USW2, *add the REGION *us-west-2* attribute filter to the report to hide usage types for other regions.
+Being familiar with the AWS services involved is important to fully understanding the descriptions provided. Use the regions mentioned to narrow your scope even more. For example, if you have large cost deltas with a usage type prefix of _USW2_, add the REGION _us-west-2_ attribute filter to the report to hide usage types for other regions.
 
 #### Operations
 
 Operations are another granular dimension of cost that indicate the specific API action that took place.
 
-| Service     | Usage type                | Operation          |
-|-------------|----------------------------|---------------------|
-| EC2 - Other | [REGION]-EBS:VolumeUsage   | CreateVolume        |
-|             | [REGION]-EBS:SnapshotUsage | CreateSnapshot      |
-| CloudWatch  | [REGION]-CW:Requests       | GetMetricStatistics |
-|             |                            | ListMetrics         |
-|             |                            | PutMetricData       |
-___
+| Service | Usage type | Operation |
+| --- | --- | --- |
+| EC2 - Other | \[REGION\]-EBS:VolumeUsage | CreateVolume |
+|  | \[REGION\]-EBS:SnapshotUsage | CreateSnapshot |
+| CloudWatch | \[REGION\]-CW:Requests | GetMetricStatistics |
+|  |  | ListMetrics |
+|  |  | PutMetricData |
+
+***
 
 ![AWS Cost Analysis: Period Comparison Grouped by Operation](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2019/01/word-image-5.png)
 
@@ -76,7 +79,7 @@ AWS Cost Analysis: Period Comparison Grouped by Operation
 
 #### Purchase Type
 
-Usually the Usage Type or Operation attribute is enough to determine the source of the cost delta. If not, another useful dimension to check is the *Purchase Type*. Very large deltas in *EC2 -- Other *costs are often due to upfront reserved instance costs. The *Purchase Type* attribute splits the costs into reserved, on-demand, and spot costs.
+Usually the Usage Type or Operation attribute is enough to determine the source of the cost delta. If not, another useful dimension to check is the _Purchase Type_. Very large deltas in _EC2 -- Other_ costs are often due to upfront reserved instance costs. The _Purchase Type_ attribute splits the costs into reserved, on-demand, and spot costs.
 
 ### Other Grouping Options
 
@@ -92,9 +95,9 @@ Grouping then filtering by Account ID can also help here: first group by account
 
 ### Some Tips
 
--   Hide different series in the chart by clicking on the legend. Notice that the grand totals update.
--   Zoom into the charts by clicking and dragging in the chart window.
--   Sort the chart and table data by clicking on a table column.
--   Download the data as a CSV for further analysis in a spreadsheet.
--   Save your report. It may be useful to return to later.
--   Set up a daily email on your favorite saved reports to stay on top of cost changes as they occur.
+* Hide different series in the chart by clicking on the legend. Notice that the grand totals update.
+* Zoom into the charts by clicking and dragging in the chart window.
+* Sort the chart and table data by clicking on a table column.
+* Download the data as a CSV for further analysis in a spreadsheet.
+* Save your report. It may be useful to return to later.
+* Set up a daily email on your favorite saved reports to stay on top of cost changes as they occur.
