@@ -227,3 +227,5 @@
 /product/ /
 
 http://metricly.netlify.com/* http://www.metricly.com/:splat 301!
+
+/ebook/success/ /files/pdf/Metricly_Cloud_Monitoring_Ebook.pdf
