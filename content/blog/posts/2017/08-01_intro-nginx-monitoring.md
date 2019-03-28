@@ -36,31 +36,20 @@ So, with all that in mind, let's take a look at how to [gather information from 
 
 To set up the NGINX status page, the first thing that must be done is to define the path where it can be accessed. To do this, open up your server's config file (generally found at /etc/nginx/sites-enabled/default) in your favorite editor, and inside the server block, add the following code:
 
-| location /nginx_status { |
-
-| stub_status on; |
-
-| access_log off; |
-
-| allow 127.0.0.1; |
-
-| deny all; |
-
-| } |
-
-[view raw](https://gist.github.com/cdisomma1/11f685f63bbddefdad48fc8ad3832e2e/raw/2880ae65b1fb7bb49d5e60e15df29cb1b9197926/Monitoring%20NGINX%201) [Monitoring NGINX 1](https://gist.github.com/cdisomma1/11f685f63bbddefdad48fc8ad3832e2e#file-monitoring-nginx-1) hosted with ![❤](https://s.w.org/images/core/emoji/11/svg/2764.svg) by [GitHub](https://github.com)
+    location /nginx_status {
+      stub_status on;
+      access_log off;
+      allow 127.0.0.1;
+      deny all;
+    }
 
 Take special note of the allow and deny directives, as this makes the status page inaccessible to every IP except the one that is explicitly allowed. In this particular case, allowing from 127.0.0.1 means that only the server that NGINX is running on can access the status page. Once that code is added, and NGINX is restarted, you can visit your website (for example, `http://example.com/nginx_status`), and get a text-based output that looks something like this:
 
-| Active connections: 16 |
+    Active connections: 16
+    server accepts handled requests
+     5262 5262 10552
+    Reading: 0 Writing: 6 Waiting: 10
 
-| server accepts handled requests |
-
-| 5262 5262 10552 |
-
-| Reading: 0 Writing: 6 Waiting: 10 |
-
-[view raw](https://gist.github.com/cdisomma1/cb14af218994424e08379cd4d376e791/raw/96c41a277eabf3da66abc3f076f56e08c4061e20/Monitoring%20NGINX%202) [Monitoring NGINX 2](https://gist.github.com/cdisomma1/cb14af218994424e08379cd4d376e791#file-monitoring-nginx-2) hosted with ![❤](https://s.w.org/images/core/emoji/11/svg/2764.svg) by [GitHub](https://github.com)
 
 Let's break that output down a little bit. Active connections, as the descriptor implies, are the number of currently open connections. Because a single pageview can make multiple concurrent connections to a web server, this is an indication of the number of resources that are being loaded at once, not necessarily the number of users on the site.
 
@@ -77,15 +66,10 @@ To accomplish this, let's take a look at how to monitor an NGINX server using Me
 
 Next, open up the Metricly NGINX collector config file at /opt/netuitive-agent/conf/collectors/NginxCollector.conf in your favorite editor and change the enabled value from False to True.
 
-| enabled = True |
-
-| req_host = localhost |
-
-| req_port = 80 |
-
-| req_path = /nginx_status |
-
-[view raw](https://gist.github.com/cdisomma1/b48bf1e34b8810ff6a3094c1a89e0ad1/raw/dc9c15c3e7ad078a7da96ce25535e922d03251f4/Monitoring%20NGINX%203) [Monitoring NGINX 3](https://gist.github.com/cdisomma1/b48bf1e34b8810ff6a3094c1a89e0ad1#file-monitoring-nginx-3) hosted with ![❤](https://s.w.org/images/core/emoji/11/svg/2764.svg) by [GitHub](https://github.com)
+    enabled = True
+    req_host = localhost
+    req_port = 80
+    req_path = /nginx_status
 
 Now, all we have to do is enable the NGINX status page as described in the previous section, restart both NGINX and the Metricly Linux agent, and metrics should start showing up in your Metricly account in about five minutes. If we take a look at our [server metrics](/server-resource-utilization-before-migration), we can see NGINX data start trickling in:
 

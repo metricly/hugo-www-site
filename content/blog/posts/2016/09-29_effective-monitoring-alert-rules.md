@@ -52,11 +52,13 @@ The baseline and contextual bands show the expected range of values for a metric
 
 Conditions that check for baseline or contextual deviations (or both) are the types of conditions that you will most often be setting, sometimes in conjunction with a static threshold. The following table summarizes when your policy should check a metric for each type of deviation:
 
-| **If the metric is....** | **Recommendation** |
-| Baselined, but not correlated | Check for baseline deviations |
-| Correlated, but not baselined | Check for contextual deviations |
-| Baselined AND correlated | Check for both baseline and contextual deviations |
-| NOT baselined and NOT correlated | Can't check for deviations! |
+| If the metric is….               | Recommendation                                    |
+|----------------------------------|---------------------------------------------------|
+| Baselined, but not correlated    | Check for baseline deviations                     |
+| Correlated, but not baselined    | Check for contextual deviations                   |
+| Baselined AND correlated         | Check for both baseline and contextual deviations |
+| NOT baselined and NOT correlated | Can’t check for deviations!                       |
+___
 
 ### Multiple Conditions
 

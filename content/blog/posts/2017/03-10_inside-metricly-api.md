@@ -74,193 +74,96 @@ While accomplishing this task in ISO C requires both the [libjansson](http://www
 
 With the proper libraries installed and the Makefile updated, we can now make our API calls. While the code to handle this isn't entirely [insignificant](https://github.com/zachflower/oasis-mud/blob/feature/netuitive/src/devops.c), there are two primary functions to be aware of. The first method to take note of is called curl_json_push. This function is what will actually send our JSON payload to the Metricly API:
 
-| void curl_json_push(const char* url, const char* payload, const char* method, const char* username, const char* password) { |
+    void curl_json_push(const char* url, const char* payload, const char* method, const char* username, const char* password) {
+      pid_t pid;
 
-| pid_t pid; |
+      curl_global_init(CURL_GLOBAL_ALL);
 
-|\
- |
+      pid = fork();
 
-| curl_global_init(CURL_GLOBAL_ALL); |
+      if ( pid == 0 ) {
+        CURL *curl;
+        struct curl_slist *headers = NULL;
 
-|\
- |
+        if ( (curl = curl_easy_init()) ) {
+          CURLcode res;
 
-| pid = fork(); |
+          headers = curl_slist_append(headers, "Content-Type: application/json");
+          headers = curl_slist_append(headers, "User-Agent: OASIS MUD");
+          headers = curl_slist_append(headers, "X-Netuitive-Api-Options: INJECT_TIMESTAMP");
 
-|\
- |
+          curl_easy_setopt(curl, CURLOPT_URL, url);
+          curl_easy_setopt(curl, CURLOPT_HTTPHEADER, headers);
+          curl_easy_setopt(curl, CURLOPT_CUSTOMREQUEST, method);
+          curl_easy_setopt(curl, CURLOPT_POSTFIELDS, payload);
 
-| if ( pid == 0 ) { |
+          if ( username != NULL ) {
+            curl_easy_setopt(curl, CURLOPT_USERNAME, username);
+          }
 
-| CURL *curl; |
+          if ( password != NULL ) {
+            curl_easy_setopt(curl, CURLOPT_PASSWORD, password);
+          }
 
-| struct curl_slist *headers = NULL; |
+          res = curl_easy_perform( curl );
 
-|\
- |
+          if(res != CURLE_OK) {
+            sprintf(log_buf, "curl_easy_perform() failed: %s\n", curl_easy_strerror(res));
+            bug(log_buf, 0);
+          }
 
-| if ( (curl = curl_easy_init()) ) { |
+          curl_easy_cleanup(curl);
+          curl_slist_free_all(headers);
+        }
 
-| CURLcode res; |
+        _exit(0);
+      } else if (pid > 0 ) {
+        curl_global_cleanup();
+      }
 
-|\
- |
+      return;
+    }
 
-| headers = curl_slist_append(headers, "Content-Type: application/json"); |
-
-| headers = curl_slist_append(headers, "User-Agent: OASIS MUD"); |
-
-| headers = curl_slist_append(headers, "X-Netuitive-Api-Options: INJECT_TIMESTAMP"); |
-
-|\
- |
-
-| curl_easy_setopt(curl, CURLOPT_URL, url); |
-
-| curl_easy_setopt(curl, CURLOPT_HTTPHEADER, headers); |
-
-| curl_easy_setopt(curl, CURLOPT_CUSTOMREQUEST, method); |
-
-| curl_easy_setopt(curl, CURLOPT_POSTFIELDS, payload); |
-
-|\
- |
-
-| if ( username != NULL ) { |
-
-| curl_easy_setopt(curl, CURLOPT_USERNAME, username); |
-
-| } |
-
-|\
- |
-
-| if ( password != NULL ) { |
-
-| curl_easy_setopt(curl, CURLOPT_PASSWORD, password); |
-
-| } |
-
-|\
- |
-
-| res = curl_easy_perform( curl ); |
-
-|\
- |
-
-| if(res != CURLE_OK) { |
-
-| sprintf(log_buf, "curl_easy_perform() failed: %s\n", curl_easy_strerror(res)); |
-
-| bug(log_buf, 0); |
-
-| } |
-
-|\
- |
-
-| curl_easy_cleanup(curl); |
-
-| curl_slist_free_all(headers); |
-
-| } |
-
-|\
- |
-
-| _exit(0); |
-
-| } else if (pid > 0 ) { |
-
-| curl_global_cleanup(); |
-
-| } |
-
-|\
- |
-
-| return; |
-
-| } |
-
-[view raw](https://gist.github.com/zachflower/99408924394cf2532a18dc78df9c794b/raw/ff9b37255ec9bf036ffe900c9dc174a585033fb4/curl_json_push.c) [curl_json_push.c](https://gist.github.com/zachflower/99408924394cf2532a18dc78df9c794b#file-curl_json_push-c) hosted with ![❤](https://s.w.org/images/core/emoji/11/svg/2764.svg) by [GitHub](https://github.com)
+*curl_json_push.c*
 
 The next method to be aware of is log_event, which is what we will call to compose our JSON payload:
 
-| void log_event( const char* title, const char* level, const char* message ) { |
+    void log_event( const char* title, const char* level, const char* message ) {
+      char *payload;
+      char url[MAX_STRING_LENGTH];
 
-| char *payload; |
+      json_t *obj = json_array();
+      json_t *event = json_object();
+      json_t *data = json_object();
 
-| char url[MAX_STRING_LENGTH]; |
+      if ( NETUITIVE_USERNAME != NULL && NETUITIVE_PASSWORD != NULL ) {
+        json_object_set_new(event, "title", json_string( title ));
+        json_object_set_new(event, "type", json_string( "INFO" ));
 
-|\
- |
+        json_object_set_new(data, "elementId", json_string( NETUITIVE_ELEMENT_ID ));
+        json_object_set_new(data, "level", json_string( level ));
+        json_object_set_new(data, "message", json_string( message ));
+        json_object_set_new(event, "data", data);
 
-| json_t *obj = json_array(); |
+        json_array_append_new(obj, event);
 
-| json_t *event = json_object(); |
+        sprintf(url, "https://api.app.netuitive.com/ingest/events/%s", NETUITIVE_API_KEY);
+        payload = json_dumps(obj, 0);
 
-| json_t *data = json_object(); |
+        curl_json_push(url, payload, "POST", NETUITIVE_USERNAME, NETUITIVE_PASSWORD);
 
-|\
- |
+        free(payload);
+      }
 
-| if ( NETUITIVE_USERNAME != NULL && NETUITIVE_PASSWORD != NULL ) { |
+      return;
+    }
 
-| json_object_set_new(event, "title", json_string( title )); |
-
-| json_object_set_new(event, "type", json_string( "INFO" )); |
-
-|\
- |
-
-| json_object_set_new(data, "elementId", json_string( NETUITIVE_ELEMENT_ID )); |
-
-| json_object_set_new(data, "level", json_string( level )); |
-
-| json_object_set_new(data, "message", json_string( message )); |
-
-| json_object_set_new(event, "data", data); |
-
-|\
- |
-
-| json_array_append_new(obj, event); |
-
-|\
- |
-
-| `sprintf(url, "https://api.app.netuitive.com/ingest/events/%s", NETUITIVE_API_KEY);` |
-
-| payload = json_dumps(obj, 0); |
-
-|\
- |
-
-| curl_json_push(url, payload, "POST", NETUITIVE_USERNAME, NETUITIVE_PASSWORD); |
-
-|\
- |
-
-| free(payload); |
-
-| } |
-
-|\
- |
-
-| return; |
-
-| } |
-
-[view raw](https://gist.github.com/zachflower/ea103853cd77a6cb8532296bb1b6606a/raw/0ad8de512e5f71063deb5abaa9d10fb5d5b4f4e0/log_event.c) [log_event.c](https://gist.github.com/zachflower/ea103853cd77a6cb8532296bb1b6606a#file-log_event-c) hosted with ![❤](https://s.w.org/images/core/emoji/11/svg/2764.svg) by [GitHub](https://github.com)
+*log_event.c*
 
 These two methods make up the bulk of the code necessary to send requests to the Metricly API in ISO C. Additionally, some configuration settings can be found in the proper [header file](https://github.com/zachflower/oasis-mud/blob/feature/netuitive/src/devops.h#L16-L24), allowing us to change the login credentials, API key, and even the element. To illustrate their use, let's add a call to the log_event method where players [log in to the game](https://github.com/zachflower/oasis-mud/blob/feature/netuitive/src/comm.c#L2133):
 
-> sprintf(log_buf,"%s!%s@%s has connected.", ch->name, d->user, d->host);\
-> log_event("Player login", NETUITIVE_LEVEL_INFO, log_buf);
+    > sprintf(log_buf,"%s!%s@%s has connected.", ch->name, d->user, d->host);\
+    > log_event("Player login", NETUITIVE_LEVEL_INFO, log_buf);
 
 This call composes a request to the Metricly API with "Player login" as the title, "INFO" as the level, and the player's username and hostname in the description. Taking a look at the Metricly dashboard, we can see the event that gets posted whenever a player logs into the game:
 

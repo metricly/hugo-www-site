@@ -43,14 +43,15 @@ MySQL internally tracks lots of runtime statistics and raw data about how the My
 
 Here's a sampling of some of the more valuable information for tracking basic client performance.
 
-| **What to look for** | **Why** | **Command** |
-| Uptime | Low uptimes mean things were recently restarted. | SHOW GLOBAL STATUS LIKE 'Uptime'; |
-| Threads Connected | Good to trend, and bad if the number is 1 or 0--- Shouldn't your app be connected? | SHOW GLOBAL STATUS LIKE 'Threads_connected'; |
-| Max Connections | Good to know what your peak was. | SHOW GLOBAL STATUS LIKE 'Max_used_connections'; |
-| Max Connection Time | Gives the exact date/time it reached the max | SHOW GLOBAL STATUS LIKE 'Max_used_connections_time'; |
-| Failed Connections | This indicates bad connections, like a bad password. Security teams love this kind of thing. | SHOW GLOBAL STATUS LIKE 'Aborted_connects'; |
+| What to look for    | Why                                                                                          | Command                                              |
+|---------------------|----------------------------------------------------------------------------------------------|------------------------------------------------------|
+| Uptime              | Low uptimes mean things were recently restarted.                                             | SHOW GLOBAL STATUS LIKE ‘Uptime’;                    |
+| Threads Connected   | Good to trend, and bad if the number is 1 or 0— Shouldn’t your app be connected?             | SHOW GLOBAL STATUS LIKE ‘Threads_connected’;         |
+| Max Connections     | Good to know what your peak was.                                                             | SHOW GLOBAL STATUS LIKE ‘Max_used_connections’;      |
+| Max Connection Time | Gives the exact date/time it reached the max                                                 | SHOW GLOBAL STATUS LIKE ‘Max_used_connections_time’; |
+| Failed Connections  | This indicates bad connections, like a bad password. Security teams love this kind of thing. | SHOW GLOBAL STATUS LIKE ‘Aborted_connects’;          |
+___
 
-**\
 **MySQL Additional Queries**
 ------------------------------
 

@@ -24,11 +24,11 @@ Getting Started with the Ruby on Rails Agent
 
 To get started with monitoring Discourse in Metricly, we first need to add the Metricly Rails agent to the project. This is accomplished by first adding the following line to the project's Gemfile:
 
-> gem 'netuitive_rails_agent'
+    > gem 'netuitive_rails_agent'
 
 Next, we need to actually *install* the agent:
 
-> bundle update
+    > bundle update
 
 Starting the Daemon
 -------------------
@@ -37,25 +37,25 @@ Installing the Rails agent is the first of two steps required to send applicatio
 
 To do this, we first need to install the daemon:
 
-> gem install netuitived
+    > gem install netuitived
 
 Next, we need to start and configure the daemon itself. Before we can do this, we first need to retrieve the API key for our Metricly Ruby API key. This API key can be found within the Ruby Integration Setup page within your Metricly account---which can be found by clicking on the Ruby logo on your [Integrations](https://app.netuitive.com/#/integrations) page.
 
 Once you've copied your API key, we can start the Metricly daemon:
 
-> netuitived start
+    > netuitived start
 
 When the daemon is first run, it will ask for an element name and an API key. The process will look something like this:
 
-> please enter an element name:
->
-> discourse
->
-> please enter an api key:
->
-> **API KEY**
->
-> netuitived started
+    > please enter an element name:
+    >
+    > discourse
+    >
+    > please enter an api key:
+    >
+    > **API KEY**
+    >
+    > netuitived started
 
 Putting It All Together
 -----------------------
@@ -72,13 +72,13 @@ One feature that is disabled by default that I find incredibly useful, however, 
 
 To enable Sidekiq monitoring, simply add the following to your environment variables (in the case of Discourse, this is managed using the awesome [dotenv library](https://github.com/bkeepers/dotenv) for Ruby):
 
-> NETUITIVE_RAILS_SIDEKIQ_ENABLED=true
->
-> NETUITIVE_RAILS_SEND_ERROR_EVENTS=true
+    > NETUITIVE_RAILS_SIDEKIQ_ENABLED=true
+    >
+    > NETUITIVE_RAILS_SEND_ERROR_EVENTS=true
 
 While slightly out of the scope of this article, it's also important to mention that, because the Metricly Ruby on Rails agent is an extension of their [Ruby agent](https://github.com/Netuitive/netuitive_ruby_api), custom metrics can be logged using the following command:
 
-> NetuitiveRubyAPI::netuitivedServer.addSample("metric.name", [metric value])
+    > NetuitiveRubyAPI::netuitivedServer.addSample("metric.name", [metric value])
 
 In a nutshell, the above code allows us to track any metric name and value, which means that we can track any additional data within our application with minimal overhead.
 

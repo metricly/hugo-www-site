@@ -1,18 +1,18 @@
 ---
-author: "Mike Mackrory"
-date: "2019-03-14"
-description: "Metricly just released its free EC2 instance pricing tool—here's how it stacks up against other EC2 pricing tools available."
-title: "EC2 Instance Pricing—4 Ways to Find The Instance You Need"
-category: "DevOps"
+author: Mike Mackrory
+date: 2019-03-14 00:00:00 +0000
+description: Metricly just released its free EC2 instance pricing tool—here's how
+  it stacks up against other EC2 pricing tools available.
+title: EC2 Instance Pricing—4 Ways to Find The Instance You Need
+category: DevOps
 url: "/ec2-instance-pricing/"
-layout: "single"
-featured-image: "calculator.png"
+layout: single
+featured-image: calculator.png
 thumbnail-image: true
 featured: false
-draft: false
----
 
-Amazon's Elastic Cloud Computing (EC2) has revolutionized our industry. Distilled down to its most basic components, provisioning a new server is as simple as selecting an instance configuration and then waiting for a minute or two while AWS creates and deploys a new instance for you.
+---
+Amazon's [Elastic Cloud Computing (EC2)](https://www.metricly.com/ec2-instances/ "The Ultimate Guide to EC2 Instances") has revolutionized our industry. Distilled down to its most basic components, provisioning a new server is as simple as selecting an instance configuration and then waiting for a minute or two while AWS creates and deploys a new instance for you.
 
 It is in the determination of the right configuration for your EC2 instance that the process becomes complicated. Between processing power, memory, storage, deployed region, and other options, your instance configuration is one of over 24,000 possible configurations, each with varying costs.
 

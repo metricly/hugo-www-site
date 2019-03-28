@@ -84,17 +84,12 @@ The [Ananke](https://docs.metricly.com/integrations/anake/) library gathers and 
 
 To use Ananke to monitor your application, you'll need to include Ananke as a dependency for your project, and instantiate a StatsDClient which can be accessed from all relevant classes.
 
-| StatsDClient client = new NetuitiveStatsDClient("localhost", "8000"); |
-
-[view raw](https://gist.github.com/cdisomma1/90913b24ad983f051172ab4958aee330/raw/3140095b9e55c6b50d26ea98737244646a611dc2/Different-Java-Integrations%20-%20Ananke1) [Different-Java-Integrations - Ananke1](https://gist.github.com/cdisomma1/90913b24ad983f051172ab4958aee330#file-different-java-integrations-ananke1) hosted with ![❤](https://s.w.org/images/core/emoji/11/svg/2764.svg) by [GitHub](https://github.com)
+    StatsDClient client = new NetuitiveStatsDClient("localhost", "8000");
 
 To submit an event, such as the time for a page to load, you would pass a callable function into the client.
 
-| client.timed(new TimedRequest()  |
-
-| .withFunc("pageloadtime()"); |
-
-[view raw](https://gist.github.com/cdisomma1/90913b24ad983f051172ab4958aee330/raw/3140095b9e55c6b50d26ea98737244646a611dc2/Different-Java-Integrations-Ananke2) [Different-Java-Integrations-Ananke2](https://gist.github.com/cdisomma1/90913b24ad983f051172ab4958aee330#file-different-java-integrations-ananke2) hosted with ![❤](https://s.w.org/images/core/emoji/11/svg/2764.svg) by [GitHub](https://github.com)
+    client.timed(new TimedRequest()   
+    .withFunc("pageloadtime()");
 
 Dropwizard
 ----------
@@ -103,47 +98,38 @@ Dropwizard is a collection of libraries that have been curated into a framework 
 
 Dropwizard metrics are typically accessed through the admin endpoint for the application; however, by including Metricly dropwizard-metrics as a runtime dependency for your project; you can configure the submission of the entire metrics suite to the StatsD daemon, or to the Metricly Restful API.
 
-| metrics:  |
+    metrics:   
+      frequency: 1 minute   
+    reporters:				     
+      - type: statsd       
+    host: netuitive-agent       
+    port: 8125;
 
-| frequency: 1 minute  |
+*Different-Java-Integrations-Dropwizard*
 
-| reporters:  |
+    metrics:   
+      frequency: 1 minute   
+      reporters:     
+        - type: netuitive-rest       
+        apiKey: YourCustomNetuitiveAPIKey       
+    elementName: HelloWorld
 
-| - type: statsd  |
-
-| host: netuitive-agent  |
-
-| port: 8125; |
-
-[view raw](https://gist.github.com/cdisomma1/90913b24ad983f051172ab4958aee330/raw/3140095b9e55c6b50d26ea98737244646a611dc2/Different-Java-Integrations-Dropwizard) [Different-Java-Integrations-Dropwizard](https://gist.github.com/cdisomma1/90913b24ad983f051172ab4958aee330#file-different-java-integrations-dropwizard) hosted with ![❤](https://s.w.org/images/core/emoji/11/svg/2764.svg) by [GitHub](https://github.com)
-
-| metrics:  |
-
-| frequency: 1 minute  |
-
-| reporters:  |
-
-| - type: netuitive-rest  |
-
-| apiKey: YourCustomNetuitiveAPIKey  |
-
-| elementName: HelloWorld |
-
-[view raw](https://gist.github.com/cdisomma1/90913b24ad983f051172ab4958aee330/raw/3140095b9e55c6b50d26ea98737244646a611dc2/Different-Java-Integrations-RESTAPI-Configuration) [Different-Java-Integrations-RESTAPI-Configuration](https://gist.github.com/cdisomma1/90913b24ad983f051172ab4958aee330#file-different-java-integrations-restapi-configuration) hosted with ![❤](https://s.w.org/images/core/emoji/11/svg/2764.svg) by [GitHub](https://github.com)
+*Different-Java-Integrations-RESTAPI-Configuration*
 
 Iris
 ----
 
 Iris is a Java SDK from Metricly that allows you to interact programmatically with the Metricly API. After including the library as a dependency of your project, you will need to create an instance of the appropriate Metricly client, which is accessible by relevant classes with your application.
 
-| NetuitiveIngestEventRestClient ingestClient = new NetuitiveIngestEventRestClient("username", "password"); |
+    NetuitiveIngestEventRestClient ingestClient = new NetuitiveIngestEventRestClient("username", "password");
 
-[view raw](https://gist.github.com/cdisomma1/90913b24ad983f051172ab4958aee330/raw/3140095b9e55c6b50d26ea98737244646a611dc2/Different-Java-Integrations-Iris) [Different-Java-Integrations-Iris](https://gist.github.com/cdisomma1/90913b24ad983f051172ab4958aee330#file-different-java-integrations-iris) hosted with ![❤](https://s.w.org/images/core/emoji/11/svg/2764.svg) by [GitHub](https://github.com)\
+*Different-Java-Integrations-Iris*
+
 After creating a list of IngestEvent objects called events, you could then submit them to the ingestClient instance as follows:
 
-| ingestClient.ingest(events); |
+    ingestClient.ingest(events);
 
-[view raw](https://gist.github.com/cdisomma1/90913b24ad983f051172ab4958aee330/raw/3140095b9e55c6b50d26ea98737244646a611dc2/Different-Java-Integrations-Iris-Ingest) [Different-Java-Integrations-Iris-Ingest](https://gist.github.com/cdisomma1/90913b24ad983f051172ab4958aee330#file-different-java-integrations-iris-ingest) hosted with ![❤](https://s.w.org/images/core/emoji/11/svg/2764.svg) by [GitHub](https://github.com)
+*Different-Java-Integrations-Iris-Ingest*
 
 An advantage of Iris is that it allows for both creation/submission of metrics to the API, as well as the retrieval of metrics and other Metricly resources from the API. The API is well documented and can be further explored if you have a [Metricly account](/signup).
 
@@ -165,9 +151,9 @@ You will need to have an active Metricly account to make use of the agent. To in
 
 Finally, you'll need to restart your JVM, passing in the *-javaagent* flag with the path to the netuitive-zorka directory as a property. Your command should look similar to the following.
 
-| java -javaagent:/opt/netuitive-zorka/netuitive.jar=/opt/netuitive-zorka -jar application.jar |
+    java -javaagent:/opt/netuitive-zorka/netuitive.jar=/opt/netuitive-zorka -jar application.jar
 
-[view raw](https://gist.github.com/cdisomma1/90913b24ad983f051172ab4958aee330/raw/3140095b9e55c6b50d26ea98737244646a611dc2/Different-Java-Integrations-Java-Agent) [Different-Java-Integrations-Java-Agent](https://gist.github.com/cdisomma1/90913b24ad983f051172ab4958aee330#file-different-java-integrations-java-agent) hosted with ![❤](https://s.w.org/images/core/emoji/11/svg/2764.svg) by [GitHub](https://github.com)
+*[Different-Java-Integrations-Java-Agent*
 
 JMX
 ---
@@ -180,21 +166,18 @@ Once the Linux agent is installed, you'll want to download the Jolokia jar and i
 
 Restart the Linux agent, using the appropriate command for your Linux distribution.
 
-| $ service netuitive-agent restart |
+    $ service netuitive-agent restart
+    $ /etc/init.d/netuitive-agent restart
+    $ initctl restart netuitive-agent
+    $ systemctl restart netuitive-agent
 
-| $ /etc/init.d/netuitive-agent restart |
-
-| $ initctl restart netuitive-agent |
-
-| $ systemctl restart netuitive-agent |
-
-[view raw](https://gist.github.com/cdisomma1/90913b24ad983f051172ab4958aee330/raw/3140095b9e55c6b50d26ea98737244646a611dc2/Different-Java-Integrations-Restart-Agent) [Different-Java-Integrations-Restart-Agent](https://gist.github.com/cdisomma1/90913b24ad983f051172ab4958aee330#file-different-java-integrations-restart-agent) hosted with ![❤](https://s.w.org/images/core/emoji/11/svg/2764.svg) by [GitHub](https://github.com)
+*Different-Java-Integrations-Restart-Agent*
 
 Finally, add the javaagent flag to the command which starts your application. It should look similar to the command below.
 
-| java -javaagent:/opt/agent.jar=port=8778,host=0.0.0.0 -jar application.jar |
+    java -javaagent:/opt/agent.jar=port=8778,host=0.0.0.0 -jar application.jar
 
-[view raw](https://gist.github.com/cdisomma1/90913b24ad983f051172ab4958aee330/raw/3140095b9e55c6b50d26ea98737244646a611dc2/Different-Java-Integrations-Java-Agent-Flag) [Different-Java-Integrations-Java-Agent-Flag](https://gist.github.com/cdisomma1/90913b24ad983f051172ab4958aee330#file-different-java-integrations-java-agent-flag) hosted with ![❤](https://s.w.org/images/core/emoji/11/svg/2764.svg) by [GitHub](https://github.com)
+*Different-Java-Integrations-Java-Agent-Flag*
 
 Which Java Monitoring Works For You?
 ------------------------------------
