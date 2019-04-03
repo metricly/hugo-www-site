@@ -1,15 +1,15 @@
 ---
 author: "Mike Mackrory"
-date: "ADD DATE"
+date: "2019-04-03"
 description: "Understand the basics of what an EC2 reserved instance is, and the types available. Learn Reserved Instance use cases that can lead to real cost benefits, as well as ones that are a poor use of Reserved Instances."
 title: "EC2 Reserved Instances—Understanding The Basics"
 category: "Cloud Cost Management"
 url: "/ec2-reserved-instance-basics/"
 layout: "single"
-featured-image: ""
+featured-image: "ec2reserving.png"
 thumbnail-image: true
 featured: false
-draft: true
+draft: false
 ---
 
 Amazon EC2 Reserved Instances, which offer a discount of up to 75% over regular On-Demand Instances, are an attractive option for AWS users. However, to make the most of Reserved Instances, it's critical to understand the terms, conditions, and restrictions that impact the discounted price of Reserved Instances.
@@ -18,7 +18,7 @@ We're going to tackle that topic in this article. We'll look at the different ty
 
 ### What Exactly Is a Reserved Instance?
 
-Elastic Cloud Computing, or EC2, allows an AWS user to provision a virtual server with configurations of memory, processing power, storage, and network capacity. These instances are usually provisioned using the On-Demand pricing tier. An On-Demand instance provides the user with their instances for as long as they are required. On-Demand instances are billed based on hourly usage of the instance.
+[Elastic Cloud Computing, or EC2](/ec2-instances/), allows an AWS user to provision a virtual server with configurations of memory, processing power, storage, and network capacity. These instances are usually provisioned using the On-Demand pricing tier. An On-Demand instance provides the user with their instances for as long as they are required. On-Demand instances are billed based on hourly usage of the instance.
 
 Spot instances allow users to take advantage of increased capacity at a reduced price. Unlike On-Demand instances, the Spot instance is only available as long as AWS has excess capacity. AWS may terminate Spot instances following 10-second notification if needed.
 
