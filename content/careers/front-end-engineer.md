@@ -1,20 +1,23 @@
 ---
-title: "Front-end Engineer"
-layout: "info"
-description: ""
+title: Front-end Engineer
+layout: info
+description: ''
 header-light: true
 hide-cta: true
-careers-department: "UI/UX"
+careers-department: UI/UX
+
 ---
 #### About Metricly
 
-Metricly is a SaaS-based adaptive monitoring solution that helps organizations monitor cloud services, applications, infrastructure, and public cloud costs. Metricly's advanced machine learning algorithms learn the behavior and workload patterns of your environment to optimize your resource allocation, reduce your cloud spending, and identify performance anomalies that matter to your business. To learn more and start a free trial, visit: [www.metricly.com](/).
+Metricly provides tools and coaching to users throughout their cloud journey to safely and easily control their public cloud spending. The Metricly platform provides tools addressing the 6 major disciplines of cloud cost management: Administration, Billing Analysis, Idle Resources, Right Sizing, Reservations, and Capacity Monitoring. Our tools leverage real-time capacity metrics and deep learning analytics to identify opportunities for optimizing cloud resources and reducing AWS spend—without the typical hassles or consulting fees.
+
+We are headquartered in Reston VA (Washington D.C. area) with remote employees in multiple US states and countries. The company is growing rapidly and funded by leading venture capital investment firms that specialize in financing Software as a Service (SaaS) providers.
 
 #### Our Stack
 
--   Amazon Web Services, Docker
--   Cassandra, Elasticsearch, Kafka, Redis, Spark
--   Java 8, Spring Boot, Node.js, Ember.js
+* Amazon Web Services, Docker
+* Cassandra, Elasticsearch, Kafka, Redis, Spark
+* Java 8, Spring Boot, Node.js, Ember.js
 
 #### The Opportunity
 
@@ -26,31 +29,31 @@ The ideal candidate has experience developing intuitive and modern user interfac
 
 #### Responsibilities
 
--   Build out the company's single page application within the Ember framework
--   Collaborate with product management to create new features or improve existing functionality in the user interface
--   Collaborate with backend engineering team to optimize use of REST API and backend support for a high performing and scalable user interface
--   Write clean code with reusability, testing, and performance in mind. Maintain consistencies with UI throughout the application
--   Collaborate with support team to identify and address bugs and help deliver a high level of customer satisfaction and directly hear feedback from end users
--   Maintain design and progress information in Atlassian Jira and Confluence
+* Build out the company's single page application within the Ember framework
+* Collaborate with product management to create new features or improve existing functionality in the user interface
+* Collaborate with backend engineering team to optimize use of REST API and backend support for a high performing and scalable user interface
+* Write clean code with reusability, testing, and performance in mind. Maintain consistencies with UI throughout the application
+* Collaborate with support team to identify and address bugs and help deliver a high level of customer satisfaction and directly hear feedback from end users
+* Maintain design and progress information in Atlassian Jira and Confluence
 
 #### Desired Skills
 
--   Significant experience with Ember, Angular or React
--   Significant experience with JavaScript, Node.js, CSS, and Sass
--   Experience with continuous delivery using Atlassian Bamboo or Jenkins
--   Experience with Amazon Web Services (AWS) services
--   Experience with JSON and REST API
--   Working knowledge of SQL
+* Significant experience with Ember, Angular or React
+* Significant experience with JavaScript, Node.js, CSS, and Sass
+* Experience with continuous delivery using Atlassian Bamboo or Jenkins
+* Experience with Amazon Web Services (AWS) services
+* Experience with JSON and REST API
+* Working knowledge of SQL
 
 #### Personal Qualifications
 
--   Self-motivated, quick learner, detail oriented and well organized
--   Independent problem solver with superior technical, analytical and troubleshooting skills
--   Ability to work independently and efficiently in small teams
--   Comfortable in fast-paced, start-up environments
--   Strong interpersonal and communication (written and oral) skills
--   Bachelor in Computer Science with at least 2-5 years of experience
--   Must be a US Citizen. Preference will be given to candidates based in the DC area.
+* Self-motivated, quick learner, detail oriented and well organized
+* Independent problem solver with superior technical, analytical and troubleshooting skills
+* Ability to work independently and efficiently in small teams
+* Comfortable in fast-paced, start-up environments
+* Strong interpersonal and communication (written and oral) skills
+* Bachelor in Computer Science with at least 2-5 years of experience
+* Must be a US Citizen. Preference will be given to candidates based in the DC area.
 
 #### Compensation
 
@@ -58,4 +61,4 @@ Metricly values talent and offers a competitive salary, a high amount of stock o
 
 #### Ready to Apply?
 
-Email your resume to our team at <careers@metricly.com>.
+Email your resume to our team at [careers@metricly.com](mailto:careers@metricly.com).
