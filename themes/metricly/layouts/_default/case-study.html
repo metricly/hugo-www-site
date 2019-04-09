@@ -1,0 +1,108 @@
+{{ define "main" }}
+<div class="grid-container -thin"><a class="cu-story_back-link" href="/customers/">Back to Stories</a>
+  <div class="cu-story_head row">
+    <div class="cu-story_head_subwrap col-md-6 col-lg-7 bg-darkblue rounded-left">
+      <div class="cu-story_head_content">
+        <h3 class="cu-story_head_content_subtitle"><span>customer story</span><img src="{{ .Param "customer-logo" }}" style="width: auto;"></h3>
+        <h1 class="cu-story_head_content_title">{{ .Title }}</h1>
+        <div class="cu-story_head_content_featured">
+          <p class="cu-story_head_content_featured_label">Featured commentators</p>
+          <p class="cu-story_head_content_featured_name">
+            <b>{{ .Param "featured-name" }}</b><span> - </span><br class="hide-desktop hide-laptop">{{ .Param "featured-title" }}
+          </p>
+        </div>
+        </div>
+        </div>
+        <div class="col-md-6 col-lg-5 rounded-right" style="background:linear-gradient(hsla(0, 0%, 0%, 0.5), hsla(0, 0%, 0%, 0.5)),url({{ .Params.background }});background-size: contain;">
+        </div>
+      </div>
+    </div>
+<div class="cu-story_content">
+  <div class="grid-container -thin">
+    <div class="cu-story_sidebar">
+    <div class="position-sticky p-3 rounded shadow" style="top: 23%;">
+      <div class="cu-story_sidebar_block -about">
+        <h5>About</h5>
+        <ul class="cu-story_sidebar_block_content">
+          <li class="cu-story_sidebar_block_content_item">
+            <p class="cu-story_sidebar_block_content_item_title">Industry</p>
+            <p class="cu-story_sidebar_block_content_item_value">{{ .Params.industry }}</p>
+          </li>
+          <li class="cu-story_sidebar_block_content_item">
+            <p class="cu-story_sidebar_block_content_item_title">Company size</p>
+            <p class="cu-story_sidebar_block_content_item_value">{{ .Params.size }}</p>
+          </li>
+          <li class="cu-story_sidebar_block_content_item">
+            <p class="cu-story_sidebar_block_content_item_title">Headquarters</p>
+            <p class="cu-story_sidebar_block_content_item_value">{{ .Params.headquarters }}</p>
+          </li>
+        </ul>
+      </div>
+      <div class="cu-story_sidebar_block">
+        <h5>Objective</h5>
+        <p>{{ .Params.objective }}</p>
+      </div>
+      <div class="cu-story_sidebar_block -product">
+        <h5>Success</h5>
+        <p class="mb-0">{{ .Params.success }}</p>
+      </div>
+      </div>
+    </div>
+    <main class="cu-story_article">
+      {{.Content}}
+    </main>
+  </div>
+</div>
+<div class="stories -with-slider">
+  <div class="grid-container -thin">
+    <h2 class="stories_title">More Stories</h2>
+    <div class="stories_subwrap">
+      <div class="stories_story">
+        <div class="stories_story_main">
+          <div class="stories_story_main_img"><img src="/img/customers/oomnitza.png" alt="Oomnitza" /></div>
+          <h4 class="stories_story_main_title"><b>Oomnitza Saves 15% on AWS Costs Using Metricly</b></h4>
+          <p class="stories_story_main_summary"><b>Result:</b> AWS bill reduced by 15% from EC2 sizing reccomendations, while maintaining performance.</p>
+          <a class="stories_story_main_link" href="/customers/oomnitza/">Read Case Study </a>
+
+        </div>
+      </div>
+      <div class="stories_story">
+        <div class="stories_story_main">
+          <div class="stories_story_main_img"><img src="/img/customers/Mixbook-dark-e1536944573865.png" alt="Mixbook" /></div>
+          <h4 class="stories_story_main_title"><b>Mixbook Achieves “High Level of Confidence” in AWS Monitoring</b></h4>
+          <p class="stories_story_main_summary"><b>Result:</b> Monitoring that automatically learns the behaviour of metrics and newly added resources.</p>
+          <a class="stories_story_main_link" href="/customers/mixbook/">Read Case Study </a>
+        </div>
+      </div>
+      <div class="stories_story -with-review">
+        <div class="stories_story_main">
+          <div class="stories_story_main_img"><img src="https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/assets/stories/icons/lines.svg" alt="" /></div>
+          <p class="stories_story_main_title">“Great AWS cost saving features and performance monitoring capabilities”</p>
+          <ul class="stories_story_review_score">
+            <li class="stories_story_review_score_item"><span class="stories_story_review_score_item_label">Ease of Use</span>
+              <div class="stories_story_review_score_item_stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fal fa-star"></i><i class="fal fa-star"></i></div>
+            </li>
+            <li class="stories_story_review_score_item"><span class="stories_story_review_score_item_label">Features &amp; Functionality</span>
+              <div class="stories_story_review_score_item_stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fal fa-star"></i></div>
+            </li>
+            <li class="stories_story_review_score_item"><span class="stories_story_review_score_item_label">Customer Support</span>
+              <div class="stories_story_review_score_item_stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            </li>
+            <li class="stories_story_review_score_item"><span class="stories_story_review_score_item_label">Value for Money</span>
+              <div class="stories_story_review_score_item_stars"><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i></div>
+            </li>
+          </ul>
+          <p class="stories_story_review_summary"><b>James W.</b><br>Product Ops and IT Manager</p>
+          <div class="stories_story_review">
+            <div class="stories_story_main_img -review-img"><img src="https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/assets/stories/icons/lines.svg" alt="" /></div>
+            <p class="stories_story_main_summary">“I love the weekly AWS potential cost saving notifications. We've been able to reduce our monthly costs by resizing several EC2 instances. The performance monitoring and alerts have helped us with
+              proactive issue resolution before our customers noticed and performance issues. Customer support is always ready and eager to help with any issues or questions...”</p>
+            <a class="stories_story_main_link -review-link" target="_blank" href="https://www.capterra.com/p/167977/Metricly/">Read Full Review</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <a class="stories_link-more" href="/customers/">Read More...</a>
+</div>
+{{ end }}
