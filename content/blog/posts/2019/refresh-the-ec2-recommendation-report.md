@@ -10,9 +10,11 @@ title = "Refresh: Metricly's Navigation Update"
 url = "/refresh-metricly-nav"
 
 +++
-Metricly has released an updated navigation for our users! You can check it out for yourself on your next login. Here's a quick look:
+Metricly has released an updated navigation for our users! Here's a quick look:
 
 ![](/new-left-nave-blogpost.png)
+
+You can check it out for yourself on your next login. Just go to your **User Profile** and enable **Updated Navigation**. New users have it enabled automatically.
 
 ### What's Changed
 
