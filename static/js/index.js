@@ -1747,36 +1747,6 @@
       }
     }(n(11)),
     o = n(1);
-  document.querySelector(".cu-story_head") && document.addEventListener("DOMContentLoaded", function() {
-    var t = document.querySelector(".cu-story_sidebar_block.-product");
-    if (t) {
-      t.setAttribute("data-sticky-class", "-sticky"), t.setAttribute("data-sticky-for", "719"), t.parentNode.parentNode.setAttribute("data-sticky-container", "true");
-      new i.default(".cu-story_sidebar_block.-product");
-      var e = document.querySelector(".stories.-with-slider .stories_subwrap");
-      (0, o.tns)({
-        container: e,
-        controls: !1,
-        nav: !1,
-        mouseDrag: !0,
-        loop: !1,
-        swipeAngle: 100,
-        gutter: 23,
-        autoWidth: !0,
-        autoHeight: !0,
-        responsive: {
-          1080: {
-            disable: !0
-          },
-          720: {
-            items: 1
-          },
-          375: {
-            items: 1
-          }
-        }
-      })
-    }
-  })
 }, function(t, e, n) {
   var i = n(12);
   t.exports = i
