@@ -1,53 +1,60 @@
 +++
 category = "Product Updates"
 date = "2019-03-13T19:00:00+00:00"
-description = "Compare EC2 utilization data against ideal AWS instance configurations"
+description = "Metricly has an updated UI featuring a left navigation panel."
 draft = true
 featured = false
 layout = "single"
 nofollow = false
-title = "Refresh: The EC2 Recommendation Report"
-url = "/refresh-ec2-recommendation-report/"
+title = "Refresh: Metricly's Navigation Update"
+url = "/refresh-metricly-nav"
 
 +++
-The [EC2 Recommendation report](https://docs.metricly.com/reports/reports-ec2-recommendations/ "EC2 Recommendation report") simplifies the task of sizing your instances. In this article, we're going to take a quick tour through its new UI. But first, let's go over some common uses for the EC2 Recommendation report.
+Metricly has released an updated navigation for our users! You can check it out for yourself on your next login. Here's a quick look:
 
-**Common Uses**
-
-* Comparing EC2 utilization data against the AWS SKU library to find optimal configurations
-* Planning instance family migrations or upgrades
-* Pricing efficient resource scaling
-* Reducing cost and size of over-allocated resources
-
-Want to see this report in action? See [How to Right Size EC2s and Maximize Your AWS Budget](https://www.metricly.com/right-size-aws-ec2/ "How to Right Size EC2s and Maximize Your AWS Budget").
+![](/new-left-nave-blogpost.png)
 
 ### What's Changed
 
-The Nav Bar has been streamlined to house all of your major actions. Let’s go through them left to right.
+The links from the original top-level navigation have moved to the left and have been organized into different workflows or categorizations to help you find what you want faster.
 
-![](/ec2 recommendation nav.png)
+#### Top-Down Explanation of Left Navigation
 
-* **Report Title & Saved Reports**: Access any saved reports.
-* **Time Frame**: Adjust report’s examination period of your services with several intervals from _Latest Day_ to _Year to Date_.
-* **Configure**: Set visualization, filters, and report sorting.
-* **Download**: Get a .CSV file of the report for your records.
-* **Save**: Save a new report.
-* **Save As..**: Overwrite a currently loaded, existing report save.
-* **Clear All**: Restart your data exploration from scratch. (Does not delete saved reports).
+* **Metricly Home**: Goes to your Metricly home page (Inventory by default).
+* **Dashboards**: Goes to your dashboard list. Favorite dashboards populate in the second-level navigation pane. 
 
-### Configuration
+![](/left-nav-dashboard-view.png)
 
-All configuration options have been centralized in the modal shown below.
+* **Cost Management**: Goes to all Cost Management tools.
+  * **Billing Analysis**: Goes to the AWS Services Cost tool.
+  * **Idle Resources**: Goes to the Unattached ELB, EBS, and EBS on Stopped EC2 tools.
+  * **Right Sizing**: Goes to the Utilization Boxplot, EC2 Cost, RDS Cost, S3 Cost,  ASG Recommendation and EC2 Recommendation tools.
 
-![](/ec2 reco config modal.png)You can access this modal by clicking **CONFIGURE** in the navigation bar.
+![](/left-nav-cost-manage-idle.png)
 
-* **Scope of Analysis**: Find and select elements based on name, attributes, tags, or use exclusions.
-* **Utilization Preferences**: Set target utilization percentages for CPU and memory and select your preferred data aggregation method.
-* **Instance Type Preferences**: Add recommendation constraints based on instance series, generation, and size.
-* **Display Options**: Customize your table of results.
+* **Capacity Monitoring**: Goes to all Capacity Monitoring tools.
+  * **Inventory**: Goes to all resources integrated and monitored with Metricly.
+  * **Metrics**: Goes to the Metric Explorer page.
+  * **Alerts**: Goes to your active Alerts and Policy creation tools.
+  * **Events**: Goes to your Events Timeline. 
 
-### What's New
+![](/left-nav-monitoring-alerts.png)
 
-Like the refreshed [AWS Services Cost report](https://docs.metricly.com/reports/reports-aws-services-cost/ "AWS Services Cost report"), configuration now comes with a **live preview** report of your data! As you update your visualization, filtering, and other report options, the preview updates _before_ you hit apply.
+* **Integrations**: Goes to your existing integrations and setup instructions.
+* **Announcements**: Expands a list of Metricly announcements.
+* **Support & Docs**: Guides you to relevant help documentation or inputting a ticket.
+* **User Profile**: Goes to your User Profile options and Admin settings (if applicable). 
 
-Check out the [user guide](https://docs.metricly.com/reports/reports-ec2-recommendations/ "EC2 Recommendation report user guide") to learn more.
+![](/left-nav-integrations.png)
+
+#### Switching Between Navigations
+
+Not quite ready to make the change? You can go to your **User Profile** settings and toggle **Updated Navigation** to revert back to the original navigation.
+
+#### Help Navigation has Changed, Too!
+
+Our documentation library has moved to [https://docs.metricly.com/](https://docs.metricly.com/ "https://docs.metricly.com/") and now features better search, tagging, and modularized articles. 
+
+![](/metricly-docs.png)
+
+We hope you'll enjoy these new user experiences as much as we do! 
