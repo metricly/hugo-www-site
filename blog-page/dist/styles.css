@@ -6115,25 +6115,6 @@ a.default-cursor {
   -ms-flex-align: center;
   align-items: center; }
 
-.aws-head h1 {
-  color: #00A98E;
-  position: relative;
-  font-size: 20px;
-  font-weight: 600;
-  margin-bottom: 18px; }
-
-@media (min-width: 719px) and (max-width: 1440px) {
-  .aws-head h1 {
-    font-size: calc( 16px + 4 * ((100vw - 719px) / 721)); } }
-
-@media (max-width: 719px) {
-  .aws-head h1 {
-    font-size: 16px; } }
-
-@media (max-width: 719px) {
-  .aws-head h1 {
-    margin-bottom: 14px; } }
-
 .aws-head h3 {
   max-width: 400px;
   margin-bottom: 40px; }
@@ -6179,17 +6160,6 @@ a.default-cursor {
   .aws-head form input {
     margin-bottom: 20px;
     margin-right: 0; } }
-
-.aws-head form button {
-  width: 162px;
-  padding: 13px 0;
-  border-radius: 4px;
-  background: #439BC3;
-  color: #fff;
-  text-align: center;
-  font-size: 16px;
-  letter-spacing: 0.2px;
-  font-weight: 600; }
 
 .aws-head .or {
   font-size: 16px;
@@ -6362,7 +6332,9 @@ a.default-cursor {
 .aws-billing .tabs-block li h4 {
   color: #2D516B;
   margin-bottom: 6px;
-  position: relative; }
+  position: relative;
+  font-weight: 600;
+  font-size: 1rem; }
 
 .aws-billing .tabs-block li h4:before {
   position: absolute;
@@ -6377,8 +6349,7 @@ a.default-cursor {
     border-right: 2px solid #00a98e; } }
 
 .aws-billing .tabs-block li.active h4 {
-  color: #439BC3;
-  font-weight: 400; }
+  color: #00a98f; }
 
 @media (max-width: 1079px) {
   .aws-billing .tabs-block {
@@ -6890,9 +6861,6 @@ a.default-cursor {
   background-size: cover; }
 
 .monitoring .aws-head h3 {
-  color: #fff; }
-
-.monitoring .aws-head h1 {
   color: #fff; }
 
 .monitoring .aws-head .or {
