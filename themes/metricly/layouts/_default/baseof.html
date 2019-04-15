@@ -24,6 +24,7 @@
     <title>{{ if .Param "custom-title" }}{{ .Title }}{{ else }}{{ .Title }} - Metricly{{ end }}</title>
     <!-- Open Graph -->
     {{ template "_internal/opengraph.html" . }}
+    {{ if .Params.description }}<meta name="description" content="{{ .Params.description }}}"/>{{ end }}
     {{ if .Param "featured-image" }}
     <meta property="og:image" content="/img/blog/small-version/{{ .Param "featured-image" }}" />
     {{ end }}
@@ -33,7 +34,7 @@
     {{if or (eq .Params.layout "blog") (eq .Params.layout "single") (eq .Params.layout "category")}}
     <!-- Blog Theme -->
     <link rel="stylesheet" href="/normalize.css">
-    <link rel="stylesheet" href="/mytheme.min.css">
+    <link rel="stylesheet" href="/css/mytheme.min.css">
     <link rel="stylesheet" href="/styles.css">
     <link rel="stylesheet" href="/swiper.min.css">
     <link rel="stylesheet" href="/blog.css">
@@ -41,7 +42,7 @@
     {{ else }}
     <!-- Standard Theme -->
     <link rel="stylesheet" href="/normalize.css" type="text/css">
-    <link rel="stylesheet" href="/mytheme.min.css" type="text/css">
+    <link rel="stylesheet" href="/css/mytheme.min.css" type="text/css">
     <link rel="stylesheet" href="/styles.css" type="text/css">
     <link rel="stylesheet" href="/swiper.min.css" type="text/css">
     <link rel="stylesheet" href="/main.css" type="text/css">
