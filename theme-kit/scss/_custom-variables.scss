@@ -27,7 +27,7 @@ $tertiary-purple: #9F6BAD;
 $tertiary-pink: #F06098;
 $tertiary-orange: #F26522;
 $tertiary-lightgrey: #F1F2F2;
-$tertiary-grey: #939598;
+$tertiary-grey: #797b7d;
 
 // Typography
 $font-family-sans-serif: "Open Sans", sans-serif;
@@ -40,7 +40,7 @@ $success: $primary-green;
 $info: $primary-lime;
 $warning: $tertiary-orange;
 $danger: #ff293a;
-$light: $tertiary-lightgrey;
+$light: $tertiary-grey;
 $dark: $secondary-darkblue;
 
 // Adding (!) an additional theme color (ex. classes btn-cool, bg-cool)
@@ -48,7 +48,8 @@ $theme-colors: (
  "green": $primary-green,
  "blue": $primary-blue,
  "darkblue": $secondary-darkblue,
- "white": #ffffff
+ "white": #fff,
+ "lighter": $tertiary-lightgrey,
 );
 
 
@@ -70,3 +71,5 @@ $spacers: map-merge(
   ),
   $spacers
 );
+
+$lead-font-weight: 400;
