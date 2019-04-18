@@ -1,22 +1,42 @@
 {{ if .Param "hide-cta" }}
 {{ else }}
-<section class="devops-join">
-      <div class="container">
-        <div class="row container m-0 p-0">
-          <div class="devops-join_image"><img src="https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/assets/footer/capterra.png" alt="capterra"></div>
-          <div class="devops-join_email">
-            <h2>Ready to get started with Metricly?</h2>
-            <p>Sign up for free, and join DevOps who rate us 5-stars on Capterra!</p>
-            <form action="/signup" method="GET">
-              <input type="email" id="email" name="email" placeholder="Work Email">
-              <button type="submit" value="Submit" class="btn btn-green">Sign Up Free</button>
-            </form>
-			<p class="small mb-0 mt-3" style="font-size: 14px;">
-				<i class="fal fa-calendar-check" style="margin-right: 5px;"></i> 21-day free trial<br class="d-lg-none"><i class="fal fa-unlock-alt mt-2 mt-lg-0" style="margin-left: 15px; margin-right: 5px;"></i> No credit card required</p>
+<section class="py-md">
+  <div class="container">
+    <div class="row">
+      <div class="w-100 p-sm bg-gradient-green rounded shadow">
+        <div class="row align-items-end">
+          <div class="col-md-6 mb-sm mb-md-0">
+            <h2 class="h1 text-white font-weight-bold">Get Started</h2>
+            <p class="lead text-white">Start a free 21-day trial. No credit card required.</p>
+            <a href="/signup/" class="btn btn-darkblue">Try Metricly Free</a>
+          </div>
+          <div class="col-md-6">
+            <h3 class="text-white mb-3 font-weight-bold">Questions?</h3>
+
+            <p class="lead text-white">Talk with one of our cloud specialists.</p>
+            <div class="d-flex align-items-center">
+              <a onclick="Intercom('show')" class="btn btn-lighter mr-5 text-light">Chat With Us</a>
+
+            </div>
           </div>
         </div>
+
       </div>
-    </section>
+    </div>
+    <div class="row mt-sm">
+      <div class="col-sm-6 mb-5 mb-sm-0 border-right" style="border-style: dashed 1px;">
+        <div>
+          <p class="mb-0 text-darkblue font-weight-bold text-center">🏆<br>Metricly is <a href="https://www.capterra.com/p/167977/Metricly/" target="_blank" class="text-green">rated 4.8 out of 5 stars</a> on Capterra</p>
+        </div>
+      </div>
+      <div class="col-sm-6">
+        <div>
+          <p class="mb-0 text-darkblue font-weight-bold text-center">💸<br>Most customers <a href="/customers/" class="text-green">save 32%+</a> on their AWS bill</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
 {{ end }}
     <footer>
       <div class="footer-top">
