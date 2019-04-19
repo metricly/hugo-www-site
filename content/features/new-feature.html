@@ -4,18 +4,24 @@ title: "New Feature Page Draft"
 layout: "page"
 url: "/new-feature/"
 custom-title: true
+draft: true
 ---
-<section class="py-md pt-lg bg-lighter">
+<!-- Main Section -->
+<section class="py-md pt-lg bg-gradient-blue">
   <div class="container">
     <div class="row align-items-center">
       <div class="col-6">
-        <a href="#"><i class="far fa-long-arrow-left mr-3"></i>Back to All Features</a>
-        <div class="d-flex align-items-center">
+        <a href="#" class="font-weight-bold text-darkblue"><i class="far fa-long-arrow-left mr-3"></i>Back to All Features</a>
+        <div class="d-flex align-items-center mt-4">
           <img src="/img/graphics/icons/sizing.svg" alt="">
-          <h1 class="h6 font-weight-bold text-green">AWS Sizing Tool</h1>
+          <h1 class="h6 font-weight-bold text-white mb-0 ml-2">AWS Sizing Tool</h1>
         </div>
-        <h2>Size Resources with Data</h2>
-        <p>Match capacity to performance the right way, the first time.</p>
+        <h2 class="text-white mt-2">Size Resources with Data</h2>
+        <p class="text-lighter lead">Match capacity to performance the right way, the first time.</p>
+        <div class="d-flex">
+          <img src="/img/customers/gotransverse-mark.jpeg" class="rounded-circle" style="max-width: 50px;">
+          <p class="text-white">The cost savings is greater than the tool cost, enabling DevOps to justify Metricly use case</p>
+        </div>
       </div>
       <div class="col-6">
         <img src="/img/graphics/public-cloud.png" class="img-fluid">
@@ -23,14 +29,14 @@ custom-title: true
     </div>
   </div>
 </section>
+
+<!-- Feature -->
 <section class="py-md">
   <div class="container">
-    <div class="row mb-sm">
-      <h3>Visualize actual versus ideal EC2 configuration</h3>
-    </div>
-    <div class="row">
+    <div class="row align-items-center">
       <div class="col-4">
-        <p class="mb-0 lead">Toggle between Cost vs CPU, Cost vs Memory, CPU vs Memory, and Table view to communicate data findings to instance planning stakeholders.</p>
+        <img src="https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/assets/icons/ec2-sizing.svg" class="mb-2">
+        <h3 class="font-weight-normal text-blue mb-3">Visualize Actual Versus Ideal EC2 Configuration</h3><p class="mb-0 text-light">Toggle between Cost vs CPU, Cost vs Memory, CPU vs Memory, and Table view to communicate data findings to instance planning stakeholders.</p>
       </div>
       <div class="col-8">
         <img src="https://lh4.googleusercontent.com/SXf1qQYEY2wUpVVM6RncdFkyISVqoniiyAgxTQHhSHAK3SoqMUTvsfxYwvmdvHdKWWu_23llhUR-phEAFgx5bDNAZZ2omgITlyb7Kn6Ro5kq5bxRyHYe2B1aw4ZR0BqEEiP3NEVz" class="img-fluid rounded shadow">
@@ -38,29 +44,29 @@ custom-title: true
     </div>
   </div>
 </section>
-<section class="py-md">
+
+<!-- Feature -->
+<section class="py-md bg-lighter">
   <div class="container">
-    <div class="row mb-sm">
-      <h3 class="font-weight-normal text-darkblue">Set instance preferences when scouting for recommendations</h3>
-    </div>
-    <div class="row">
-      <div class="col-4">
-        <p class="mb-0 lead">Set instance preferences based on instance series, generation, and size to be factored into proposal calculations.</p>
-      </div>
+    <div class="row align-items-center">
       <div class="col-8">
         <img src="https://lh5.googleusercontent.com/m90_3fVgK08Vvx2Ji81e3MR0lFLbd6FVdPRIrI6KvtUlltnAYZDBPfFuImW7bxK7hvuB41Z1USNFFgawmKT4V7EfMseAqO5mrvdjCZ06rqO6x2X3LddATHZ_07VnSE98Mjzz1cvD" class="img-fluid rounded shadow">
+      </div>
+      <div class="col-4">
+                <img src="https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/assets/icons/ec2-sizing.svg" class="mb-2">
+        <h3 class="font-weight-normal text-darkblue mb-3">Set Instance Preferences For Recommendations</h3><p class="mb-0 text-light">Set instance preferences based on instance series, generation, and size to be factored into proposal calculations.</p>
       </div>
     </div>
   </div>
 </section>
+
+<!-- Feature -->
 <section class="py-md">
   <div class="container">
-    <div class="row mb-sm">
-      <h3>Scope your sizing projects with precision</h3>
-    </div>
     <div class="row">
       <div class="col-4">
-        <p class="mb-0 lead">Focus on the instances you’re ready to size with filters for element (resource), attribute, tags, and set utilization preferences.</p>
+        <h3 class="font-weight-normal text-green mb-3">Scope Your Sizing Projects with Precision</h3>
+        <p class="mb-0 text-light">Focus on the instances you’re ready to size with filters for element (resource), attribute, tags, and set utilization preferences.</p>
       </div>
       <div class="col-8">
         <ul>
@@ -80,9 +86,10 @@ custom-title: true
     </div>
   </div>
 </section>
-<section class="py-md">
+<section class="py-md bg-lighter">
   <div class="container">
     <div class="row mb-sm">
+              <img src="https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/assets/icons/ec2-sizing.svg" class="mb-2">
       <h3 class="font-weight-normal text-darkblue">Set instance preferences when scouting for recommendations</h3>
     </div>
     <div class="row">
