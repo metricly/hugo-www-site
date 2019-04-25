@@ -136,3 +136,12 @@ function mobileMenuHeight() {
 $(document).ready(function () {
   $(".post-content table").addClass("table").addClass("overflow-auto").addClass("text-left");
 });
+
+
+$(window).scroll(function () {
+  var scrollDistance = $(document).scrollTop(),
+      contentHeight = $("#blog-content").height(),
+      barWidth = (scrollDistance / contentHeight) * 100,
+      style = "width: " + barWidth + "%";
+  $('#progress-bar').attr('style', style);
+});

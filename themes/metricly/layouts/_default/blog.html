@@ -11,6 +11,11 @@
   {{ $recent := where $pages ".Params.category" "!=" "Product Updates" | complement $top1 $top2 $popular | first 5 }}
   {{ $updates := where $pages ".Params.category" "=" "Product Updates" | first 6 }}
 
+  <style>
+    .progress {
+      display: none !important;
+    }
+  </style>
   <main class="main-wrapper">
     <section class="post">
       <div class="container">
