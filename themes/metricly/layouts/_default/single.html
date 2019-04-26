@@ -19,7 +19,7 @@
       {{ end }}
       {{ end }}
       </div>
-      <h2 class="title">{{ .Title }}</h2>
+      <h1 class="title">{{ .Title }}</h1>
       <div class="author d-flex justify-content-center mt-3 align-items-center">
         {{- with .Params.author }}
         {{- with $.Site.GetPage "taxonomyTerm" (printf "author/%s" (urlize .)) }}
@@ -46,7 +46,7 @@
       <div class="pb-md-5"></div>
       {{ end }}
       <div class="row">
-        <div class="col-lg-1 col-md-1 col-sm-1">
+        <div class="d-none">
           <div class="social-block">
             <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.metricly.com/{{ .Params.url }}" target="_blank">
               <svg class="icon --facebook" height="30" viewBox="0 0 30 30" width="30" xmlns="http://www.w3.org/2000/svg">
@@ -78,7 +78,7 @@
             </a>
           </div>
         </div>
-        <div class="col-lg-11 col-md-11 col-sm-11 d-flex">
+        <div class="col-lg-9 col-md-12 col-sm-12">
           <div class="post-content" id="blog-content">
             {{.Content}}
             <div class="learn-more">
@@ -102,32 +102,32 @@
             {{ end }}
             {{ end }}
           </div>
-          <div class="aside-stories">
-            <div class="similar-stories">
-              <div class="title-h3">Similar Articles</div>
-              {{ $pages := .Site.Pages.ByPublishDate.Reverse }}
-              {{ $currentcategory := .Params.category }}
-              {{ $top1 := where $pages ".Params.category" "=" $currentcategory | first 2 }}
-              {{ $featured := where $pages ".Params.featured" "=" true | complement $top1 | first 5 }}
-              <ul class="stories-list">
-                {{ range $top1 }}
-                <li>
-                  <a href="{{ if .Params.url }}{{ .Params.url }}{{ else }}{{ .Permalink }}{{ end }}">
-                    <div>
-                      <div class="title-category">{{ .Params.category }}</div>
-                      <div class="stories-list__title">{{ .Title }}</div>
-                    </div>
-                  </a>
-                </li>
-                {{ end }}
-              </ul>
-            </div>
-            <div class="learn-more">
-              <div class="title-category">Learn more</div>
-              <div class="learn-more__title">About Metricly</div>
-              <p>Metricly coaches users throughout their cloud journey to organize, plan, analyze, and optimize their public cloud resources.</p>
-              <a href="/signup/?utm_source=post&utm_campaign={{ .Params.url }}" class="btn">Try Metricly Free</a>
-            </div>
+        </div>
+        <div class="aside-stories col-lg-3">
+          <div class="similar-stories">
+            <div class="title-h3">Similar Articles</div>
+            {{ $pages := .Site.Pages.ByPublishDate.Reverse }}
+            {{ $currentcategory := .Params.category }}
+            {{ $top1 := where $pages ".Params.category" "=" $currentcategory | first 2 }}
+            {{ $featured := where $pages ".Params.featured" "=" true | complement $top1 | first 5 }}
+            <ul class="stories-list">
+              {{ range $top1 }}
+              <li>
+                <a href="{{ if .Params.url }}{{ .Params.url }}{{ else }}{{ .Permalink }}{{ end }}">
+                  <div>
+                    <div class="title-category">{{ .Params.category }}</div>
+                    <div class="stories-list__title">{{ .Title }}</div>
+                  </div>
+                </a>
+              </li>
+              {{ end }}
+            </ul>
+          </div>
+          <div class="learn-more">
+            <div class="title-category">Learn more</div>
+            <div class="learn-more__title">About Metricly</div>
+            <p>Metricly coaches users throughout their cloud journey to organize, plan, analyze, and optimize their public cloud resources.</p>
+            <a href="/signup/?utm_source=post&utm_campaign={{ .Params.url }}" class="btn">Try Metricly Free</a>
           </div>
         </div>
       </div>

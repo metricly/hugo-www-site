@@ -133,11 +133,12 @@ function mobileMenuHeight() {
     document.documentElement.style.setProperty('--vh', `${vh}px`);
 }
 
-$(document).ready(function () {
-  $(".post-content table").addClass("table").addClass("overflow-auto").addClass("text-left");
-});
+// Add responsive classes to table and images for blogs to prevent overflow
+$(".post-content table").addClass("table").addClass("table-responsive").addClass("text-left");
+$(".main-wrapper img").addClass("img-fluid");
 
 
+// Scroll indicator
 $(window).scroll(function () {
   var scrollDistance = $(document).scrollTop(),
       contentHeight = $("#blog-content").height(),

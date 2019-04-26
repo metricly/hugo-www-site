@@ -532,7 +532,6 @@ body, html {
           height: 24px;
           width: 24px; } }
   .blog.blog--post .post-content {
-    max-width: 730px;
     padding: 0 6% 0 0; }
     @media (max-width: 767px) {
       .blog.blog--post .post-content {
@@ -547,6 +546,33 @@ body, html {
         .blog.blog--post .post-content h3 {
           font-size: 16px;
           margin: 0 0 6px; } }
+    .blog.blog--post .post-content h2 {
+      margin: 0 0 18px;
+      font-size: 1.8rem;
+      font-weight: normal;
+      color: #00a98f; }
+      @media (max-width: 992px) {
+        .blog.blog--post .post-content h2 {
+          font-size: 1.65rem;
+          margin: 0 0 10px; } }
+      @media (max-width: 575px) {
+        .blog.blog--post .post-content h2 {
+          font-size: 1.4rem;
+          margin: 0 0 5px; } }
+    .blog.blog--post .post-content .note-block {
+      background: rgba(67, 155, 195, 0.06);
+      position: relative;
+      border-right: 2px solid #439bc3; }
+      .blog.blog--post .post-content .note-block h6 {
+        font-weight: bold;
+        font-size: 15px; }
+      .blog.blog--post .post-content .note-block h6:before {
+        content: url(/wp-content/uploads/assets/guide/info.svg);
+        position: absolute;
+        left: 30px;
+        top: 24px; }
+      .blog.blog--post .post-content .note-block p {
+        font-size: 14px; }
     .blog.blog--post .post-content p {
       margin: 0 0 40px;
       font-weight: 400;
