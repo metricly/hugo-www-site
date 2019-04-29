@@ -8,8 +8,8 @@ title = "The Efficiency Index: Tracking the Progress of Cloud Savings"
 url = "the-efficiency-index-tracking-progress-of-Cloud-Savings"
 
 +++
-_“Our AWS bill is 50% higher than it was last year. Can increased workload alone account for this figure?”  
-_  
+_“Our AWS bill is 50% higher than it was last year. Can increased workload alone account for this figure?”_
+
 Sometimes the question isn’t whether or not you’re doing enough to capture savings. But how do you convince management that your resources are being properly utilized when the cloud bill keeps going up?
 
 Registering every time you downsize an EC2 or adjust reservation purchases isn’t very practical. Even a complete list of specific actions doesn’t address the underlying concern: how do we know _missed_ savings don’t account for a large portion of the hike?
@@ -31,7 +31,7 @@ As you improve cloud cost management by dividing average utilization by average 
 
 Don’t want to do all of this calculating by yourself? Metricly captures requisite performance metrics for your resources and tracks cost in our Efficiency Index tool.
 
-![](https://lh3.googleusercontent.com/D-8zzvbjRhSqtY_TtlgGokLo5v3R1nNvW2iQJYdD_r3IL8g2YFjPWH1GxOfMz4KiETpgTwdAcVK75_F9VuJF-JHsX-u5ca7ojaqxcmzbHk6dGMGHT69P70o9wM5WnxC4fNINl9jB =624x183)
+![](/e-index-blog-cody.png)
 
 You can view your Efficiency Index scores for each day across multiple time periods using the Quick Ranges dropdown.
 
