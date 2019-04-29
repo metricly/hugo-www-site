@@ -8,7 +8,7 @@ title = "The Efficiency Index: Tracking the Progress of Cloud Savings"
 url = "the-efficiency-index-tracking-progress-of-Cloud-Savings"
 
 +++
-_“Our AWS bill is 50% higher than it was last year. Can increased workload alone account for this figure?”_
+_"Our AWS bill is 50% higher than it was last year. Can increased workload alone account for this figure?"_
 
 Sometimes the question isn’t whether or not you’re doing enough to capture savings. But how do you convince management that your resources are being properly utilized when the cloud bill keeps going up?
 
