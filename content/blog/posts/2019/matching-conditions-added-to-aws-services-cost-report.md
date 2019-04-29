@@ -1,47 +1,38 @@
 +++
-author = "Lawrence Lane"
+author = "Cody Tipton"
 category = "Product Updates"
 date = "2019-02-28"
 draft = true
 layout = "single"
 title = "Matching Conditions Added to AWS Services Cost Report"
-url = "/matching-conditions-added-to-aws-services-cost-report/"
+url = ""
 
 +++
-Dollar change and percentage change conditions have been added under the **Matching Conditions** section of the [AWS Services Cost Report](https://docs.metricly.com/reports/reports-aws-services-cost/) configuration modal.
+_“Our AWS bill is 50% higher than it was last year. Can increased workload alone account for this figure?”  
+_  
+Sometimes the question isn’t whether or not you’re doing enough to capture savings. But how do you convince management that your resources are being properly utilized when the cloud bill keeps going up?
 
-### Try these four new matching conditions to simplify bill monitoring
+Registering every time you downsize an EC2 or adjust reservation purchases isn’t very practical. Even a complete list of specific actions doesn’t address the underlying concern: how do we know _missed_ savings don’t account for a large portion of the hike?
 
--   **Any Group Comparison Cost:** set min/max dollar amount value of previous billing period's total cost
--   **Any Group Current Cost**: set min/max current dollar amount values
--   **Any Group Delta**: filter for dollar amount changes in cost compared to previous billing period
--   **Any Group Delta %**: set min/max percentage change in cost compared to previous billing period
+Validating your infrastructure optimization efforts and communicating them effectively requires an uncomplicated visualization—not a series on Amazon’s multitude of EC2 offerings _or_ performance monitoring.
 
-![New matching conditions to simplify bill monitoring](https://s3-us-west-2.amazonaws.com/com-netuitive-app-usw2-public/wp-content/uploads/2019/02/dollar-percent-filters-optimized.gif)
+# Escape the Weeds Using Normalized EC2 Performance Data
 
-### Set a budget for one or all services
+A visualization for tracking optimization must achieve two things:
 
-Use conditions to monitor spending amounts across groups that match any given cost criteria. You can then save these reports to create a budgeted view into targeted areas of your AWS bill.
+* Expressing utilization of resources over time
+* Comparing that utilization to total-cost over time
 
-**Monthly Budget --- Any Costs Exceeding $200 Example:**
+This approach purposely avoids the details of individual or groups of EC2s by normalizing data to the CPU-level across your environment. Per-instance utilization trends upward as you right size resources and remove unused capacity; per-CPU cost trends downward as you make reservations where appropriate.
 
-1.  Set a matching condition of **Any Group Current Cost > 200**.
-2.  Select the **Current month** time interval.
-3.  Save the report as "$200 monthly budget per service."
+## Turning Trends Into Efficiency Index Scores
 
-This would allow your team to track any AWS service group that surpassed the $200 threshold in your current month. If you needed to set different limits for different services, simply filter by service (like CloudWatch) and save each report individually.
+As you improve cloud cost management by dividing average utilization by average cost-per-element, you can create a single score which demonstrates increased efficiency regardless of rising or waning total cost over time. This creates a simple, transparent way of updating management on the cost-effectiveness of your resources over time. You can use this data to initiate optimization projects, validate completed projects, and monitor overall cost-effectiveness as your workloads increase or change throughout the years.
 
-**Daily Budget --- CloudWatch Costs Increasing 20% Example:**
+Don’t want to do all of this calculating by yourself? Metricly captures requisite performance metrics for your resources and tracks cost in our Efficiency Index tool.
 
-1.  Filter by Service and select **CloudWatch**.
-2.  Set a matching condition of **Any Group Delta % > 20**.
-3.  Select the **Latest day** time interval.
-4.  Save the report as "Daily CloudWatch Costs."
+![](https://lh3.googleusercontent.com/D-8zzvbjRhSqtY_TtlgGokLo5v3R1nNvW2iQJYdD_r3IL8g2YFjPWH1GxOfMz4KiETpgTwdAcVK75_F9VuJF-JHsX-u5ca7ojaqxcmzbHk6dGMGHT69P70o9wM5WnxC4fNINl9jB =624x183)
 
-You can also combined multiple conditions for full control over your AWS Services Cost report.
+You can view your Efficiency Index scores for each day across multiple time periods using the Quick Ranges dropdown.
 
-### Get emailed when cost exceeds threshold
-
-These conditions also apply to saved reports with **Send Daily Email** enabled; a saved report with matching conditions only sends a daily email if the conditions applied are true. This essentially operates as an email alert for your cost reports, allowing you to automate routine billing check-ins.
-
-Simplify monitoring cost changes today with these new matching conditions and manage your [cost deltas](/aws-cost-analysis/) like a pro.
+This same principle can be applied to other resource dimensions, such as memory and IOPS, and even to service offerings such as RDS and [Lambda](https://www.metricly.com/aws-lambda-cost/).
