@@ -1,11 +1,11 @@
 +++
 author = "Cody Tipton"
-category = "Product Updates"
+category = ["Product Updates", "Cloud Cost Management"]
 date = "2019-02-28"
 draft = true
 layout = "single"
-title = "Matching Conditions Added to AWS Services Cost Report"
-url = ""
+title = "The Efficiency Index: Tracking the Progress of Cloud Savings"
+url = "the-efficiency-index-tracking-progress-of-Cloud-Savings"
 
 +++
 _“Our AWS bill is 50% higher than it was last year. Can increased workload alone account for this figure?”  
