@@ -1,13 +1,13 @@
 ---
-category: "Product Updates"
-date: "2019-03-13T19:00:00+00:00"
-description: "Metricly has an updated UI featuring a left navigation panel."
-draft: true
+category: Product Updates
+date: 2019-03-13T19:00:00+00:00
+description: Metricly has an updated UI featuring a left navigation panel.
 featured: false
-layout: "single"
+layout: single
 nofollow: false
-title: "Refresh: Metricly's Navigation Update"
+title: 'Refresh: Metricly''s Navigation Update'
 url: "/refresh-metricly-nav"
+
 ---
 Metricly has released an updated navigation for our users! Here's a quick look:
 
