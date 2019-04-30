@@ -1,52 +1,54 @@
 ---
+url: "/aws-reserved-instances/"
+title: "AWS Reserved Instances - The Definitive Guide (2019)"
+description: "In this guide, we'll tackle the core concepts of AWS Reserved Instances: what they are, how they're billed, where they can be applied, and when to buy them. Updated for 2019!"
 author: "Lawrence Lane"
 date: "2019-01-01"
-description: "The Ultimate Guide to EC2 Instances that tackles 9 different EC2 topics, ranging from beginner to advanced, to provide you with the ultimate resource."
-title: "EC2 Instances - The Ultimate Guide to Understanding AWS EC2"
-category: "DevOps"
-url: "/aws-reserved-instances/"
+category: "Cloud Cost Management"
 layout: "single"
 featured: false
 draft: false
+use-toc: true
 ---
 In this guide, we'll tackle the core concepts of AWS Reserved Instances: what they are, how they're billed, where they can be applied, and when to buy them. Feel free to dive right in or jump to a topic that interests you.
 
-[Need to start with EC2 basics? Check out our EC2 Guide.](/ec2-instances/)
+{{< note title="Need to start with EC2 basics?" >}}
+<a href="/ec2-instances/">Check out the ultimate EC2 Guide</a> we wrote which has 9 topics covering everything from what an EC2 instance is, to setting up Auto-Scaling Groups.
+{{< /note >}}
 
-## AWS Reserved Instances: The Basics
+# I. The Basics
 
 ## What is a Reserved Instance?
 
 The term Reserved Instance (RI) causes a lot of confusion. This is because a Reserved Instance is not really an instance, but a term agreement for reserved capacity and resource allocation to be used by an EC2 instance fitting specified criteria. By signing a 1 or 3 year commitment, you get a reduced rate on that amount (and type) of usage. Think of it like a coupon or voucher that you've paid for---you still have to apply the reservation correctly to gain its value.
 
-Why Should I Have Reserved Instances?
+### Why Should I Have Reserved Instances?
 
 There are three main reasons to add Reserved Instances to your portfolio.
 
-### 1\. Savings
+**1\. Savings**
 
 You can save up to 65% in comparison to running On-Demand instances. The amount of savings you can achieve depends on the [RI attributes](https://docs.google.com/document/d/1AJMuYHsYS1KzgujgRZ6blhKMqOPxnVTk6ndnWha60SM/edit#heading=h.p0kb1ic0xzmr) and term of your reservation contract.
 
-### 2\. Avoid Delayed Provisioning
+**2\. Avoid Delayed Provisioning**
 
 Zonal Reserved Instances come with capacity guarantee. This is especially useful for autoscaling applications that may experience a spike in usage during peak hours when you contend with other AWS users in the same Availability Zone. If you have not reserved capacity in your Availability Zone before the spike occurs, there may be none available exactly at the time that you ask for it resulting in a delay of provisioning by a few minutes.
 
-### 3\. Disaster Recovery Strategy
+**3\. Disaster Recovery Strategy**
 
 Buying zonal reservations in other Regions can be strategic for securing capacity in the event of a natural disaster or general outage. Let's say the bulk of your infrastructure resides in us-east-1. Purchasing a few reservations in us-west-1 could be smart in the event of a hurricane; if an outage occurs, the demand (and competition) for resources in other regions will spike, putting your workloads at risk of having insufficient resources. Having at least a few zonal reservations in Availability Zones in remote Regions could be part of your disaster recovery strategy.  
 
-What are Reserved Instance Attributes?
---------------------------------------
+### What are Reserved Instance Attributes?
 
 There are four attributes that affect AWS Reserved Instance pricing. AWS uses these attributes to match your RI purchase to instance usage:
 
--   Instance Type: A specific ratio of CPU/memory/storage/networking capacity optimized for a particular workload type
+-   **Instance Type:** A specific ratio of CPU/memory/storage/networking capacity optimized for a particular workload type
 
--   Platform: Linux/UNIX, SUSE Linux, Red Hat Enterprise Linux, Microsoft Windows Server, and Microsoft SQL Server
+-   **Platform:** Linux/UNIX, SUSE Linux, Red Hat Enterprise Linux, Microsoft Windows Server, and Microsoft SQL Server
 
--   Scope: Whether the Reserved Instance applies to a Region or specific Availability Zone.
+-   **Scope:** Whether the Reserved Instance applies to a Region or specific Availability Zone.
 
--   Tenancy: Default (shared) or dedicated
+-   **Tenancy:** Default (shared) or dedicated
 
 Let's say you bought a 1 year, no-upfront reservation for an EC2 instance with the following attributes:
 
@@ -57,10 +59,10 @@ Let's say you bought a 1 year, no-upfront reservation for an EC2 instance with t
 -   Default (shared)
 
 -   Linux/Unix\
+
 If you were to then go into the EC2 console and launch an m5.xlarge with those same attributes, you'd pay the reserved price ($0.168/hour) instead of paying the On-Demand hourly rate for that instance ($0.225/hour). That comes out to a $500 in savings for 1 year of usage. You'd save $25,000 per year if you were to run 50 on-demand m5.xlarge, as long as the instances run all the time. Below, we will cover the special reservation considerations that are required when you scale your instance usage up and down during the course of a typical day.
 
-RI Contracts Options, Types, Costs, & Purchasing Limits
--------------------------------------------------------
+## RI Contracts Options, Types, Costs, & Purchasing Limits
 
 The amount you can save depends on each RI attribute and the contract's details. Longer, all-upfront contracts have the deepest discounts.
 
@@ -78,13 +80,13 @@ The amount you can save depends on each RI attribute and the contract's details.
 
 ### Contract Types:
 
-Standard:
+**Standard:**
 
 -   You can modify Availability Zone, scope, platform, and instance size (within the same instance type)
 
 -   You can sell these on the AWS Reserved Instance Marketplace
 
-Convertible:
+**Convertible:**
 
 -   You can exchange one or more Convertible Reserved Instance contracts for another Convertible Reserved Instance with new attributes.
 
@@ -117,8 +119,7 @@ These limits are independent of each other.  So, for example:.
 
 You can exceed these default limits by contacting AWS and requesting these limits be raised for your account. Later in this article, we'll go over the [best purchasing frequency](https://docs.google.com/document/d/1AJMuYHsYS1KzgujgRZ6blhKMqOPxnVTk6ndnWha60SM/edit#heading=h.o3hgfricgnpb) for reservations.
 
-How are Reserved Instances Applied?
------------------------------------
+## How are Reserved Instances Applied?
 
 In[ a blog post about common RI mistakes](https://www.metricly.com/aws-reserved-instances-mistake/), our chief data scientist Andrew Paine writes, "Reservations must be thought of in terms of a purchase of concurrent instance counts, not monthly instance hours."
 
@@ -136,8 +137,7 @@ As long as 2 concurrent m5.xlarge instances are running for the entire month, yo
 
 The cycle of your workload needs dictate the type and number of reservation that, you should purchase. In certain scenarios such as concurrent usage concentrated during peak hours of the day, buying reservations would cost you more than running On-Demand instances.
 
-Regional vs Availability Zonal Reserved Instances
--------------------------------------------------
+## Regional vs Availability Zonal
 
 Reserved instances are applied differently depending on whether they are fixed to a Region or Availability Zone.
 
@@ -173,8 +173,7 @@ The above shows that reservations can be shared with linked accounts running EC2
 
 Let's say you purchase 2 reservations for m5.xlarge use in the Us-west-2a Availability Zone in account-1. You then link account-1 with account-2 and run 3 m5.xlarge EC2s in account-2. None are running in account-1. Both of your reservations would then be applied to account-2, and the third m5.xlarge would be billed at full price.
 
-Sharing Reservations
---------------------
+## Sharing Reservations
 
 You must use [Consolidated Billing](https://docs.aws.amazon.com/aws-technical-content/latest/cost-optimization-reservation-models/consolidated-billing.html) in order to benefit from Reserved Instance Sharing.  Consolidated billing aggregates the costs for a group of AWS accounts in a single AWS account.  This account is called the "payer account," while the other accounts are known as "linked accounts." Once you have created a consolidated billing family, Reserved Instance Sharing is turned on by default for the payer account and linked accounts. This can be turned off per-account within the consolidated billing family to ensure reservations apply only to their purchased account if desired..
 
@@ -188,166 +187,29 @@ You must use [Consolidated Billing](https://docs.aws.amazon.com/aws-technical-co
 
 Regional Reserved Instances on the [Linux/Unix platform with default tenancy](https://docs.aws.amazon.com/aws-technical-content/latest/cost-optimization-reservation-models/maximizing-utilization-with-size-flexibility-in-regional-reserved-instances.html) also provide instance size flexibility. This means their discount can be applied to instance usage within that instance type, regardless of size. The discount applied is calculated using a Normalization Factor value.
 
-|
-
-Instance Size
-
- |
-
-Normalization Factor
-
- |
-|
-
-nano
-
- |
-
-0.25
-
- |
-|
-
-micro
-
- |
-
-0.5
-
- |
-|
-
-small
-
- |
-
-1
-
- |
-|
-
-medium
-
- |
-
-2
-
- |
-|
-
-large
-
- |
-
-4
-
- |
-|
-
-xlarge
-
- |
-
-8
-
- |
-|
-
-2xlarge
-
- |
-
-16
-
- |
-|
-
-4xlarge
-
- |
-
-32
-
- |
-|
-
-8xlarge
-
- |
-
-64
-
- |
-|
-
-9xlarge
-
- |
-
-72
-
- |
-|
-
-10xlarge
-
- |
-
-80
-
- |
-|
-
-12xlarge
-
- |
-
-96
-
- |
-|
-
-16xlarge
-
- |
-
-128
-
- |
-|
-
-18xlarge
-
- |
-
-144
-
- |
-|
-
-24xlarge
-
- |
-
-192
-
- |
-|
-
-32xlarge
-
- |
-
-256
-
- |
+| Instance Size | Normalization Factor |
+|---------------|----------------------|
+| nano          | 0.25                 |
+| micro         | 0.5                  |
+| small         | 1                    |
+| medium        | 2                    |
+| large         | 4                    |
+| xlarge        | 8                    |
+| 2xlarge       | 16                   |
+| 4xlarge       | 32                   |
+| 8xlarge       | 64                   |
+| 10xlarge      | 80                   |
+| 12xlarge      | 96                   |
+| 16xlarge      | 128                  |
+| 18xlarge      | 144                  |
+| 24xlarge      | 192                  |
+| 32xlarge      | 256                  |
 
 Using the table above, if you have a reservation for an i3.medium instance on the Linux/Unix platform with default tenancy  (Normalization Factor of 2) and you run an i3.large instance on the Linux/Unix platform with default tenancy (4), the running instance receives a 50% discount. The same applies for larger reservations; one large instance reservation can cover 2 medium or 4 small instances of the same family.
 
 Sharing reservations between accounts is a great way to ensure you maximize your reservation investments. Metricly recommends creating a Consolidated Billing Family, linking your accounts, and leaving Reserved Instance Sharing on. Deeper analysis can be performed once your accounts are linked to a payer account. For example, you can [compare spending periods](https://www.metricly.com/aws-cost-analysis/) and[ monitor dimensional budget spend](https://www.metricly.com/matching-conditions-added-to-aws-services-cost-report/).
 
-Tips for Planning Reserved Instance Purchasing
-----------------------------------------------
+## RI Purchasing Tips
 
 To round out your introduction to Reserved Instances, we're going to cover a few simple strategies you can use for your purchase planning. These tips all assume you have completed some [preliminary resource tagging](https://www.metricly.com/aws-tagging-best-practices/).
 
@@ -365,8 +227,7 @@ To round out your introduction to Reserved Instances, we're going to cover a few
 
 These five steps produce a short-list of candidates ready for reservation. Take that list and note where those workloads currently sit both regionally and in what Availability Zone. Then determine whether it makes more sense to purchase the more flexible Regional Reserved Instances, the more dedicated Zonal Reserved Instances, or a combination of both.
 
-Establish an RI Purchasing Cadence
-----------------------------------
+## Establish an RI Purchasing Cadence
 
 Knowing when to purchase Reserved Instances is equally important to knowing what resources you'll need. It's likely that your company only purchases new RIs on a yearly or semi-yearly basis. But how often do your infrastructural needs remain unchanged over a whole year--or even six months?
 
@@ -386,8 +247,7 @@ Making RI purchases on a yearly basis is not frequent enough to achieve the full
 
 When you purchase reservations only once or twice per year, you create a stressful renewal situation that can get costly.This is because planning your entire reservation portfolio for a whole year requires research, talking to stakeholders, and committing to bulk purchasing. If you aren't ready to act by the time your reservations end, you'll wind up paying On-Demand prices for existing resource usage until new reservations are in place.
 
-Reserved Instances: Basics Recap
---------------------------------
+<h2 data-toc-skip>Reserved Instances: Basics Recap</h2>
 
 Buying reservations is a smart thing to do. You can use reservations to:
 
@@ -397,13 +257,12 @@ Buying reservations is a smart thing to do. You can use reservations to:
 
 -   Ensure proper reservation coverage as you  auto-scale during peak hours
 
-Intermediate
-============
+# II. Intermediate
 
 In this section of our guide, we'll tackle some intermediate topics on AWS EC2 Reservations. This section assumes that you have an existing portfolio of reservations and that you have the needed permissions to access your organization's [AWS Billing Console](https://docs.aws.amazon.com/awsaccountbilling/latest/aboutv2/billing-what-is.html).
 
-3 Ways to Track Reserved Instance Usage
----------------------------------------
+## Tracking Reserved Instance Usage
+
 
 You can save a lot of money when reservations are applied correctly. Tracking and maximizing Reserved Instance utilization ensures that you get the most out of your commitments. Here are 3 ways to track your Reserved Instance usage:
 
@@ -439,7 +298,7 @@ This data is available via files delivered to an S3 bucket and can be manipulate
 
 After you've prepped your data, it's time to investigate. For this topic's example, we are going to use Metricly's EC2 Cost tool to track reservation utilization at a granular level. Metricly simplifies usage analysis by integrating with your AWS billing accounts and ingesting your detailed billing files---removing your need to download, edit, and upload data into another system.
 
-How to view per-instance RI usage:
+**How to view per-instance RI usage:**
 
 1.  Open the EC2 Cost tool found in Cost Management
 
@@ -479,14 +338,13 @@ These details answer where reservations need to be purchased and allow you to de
 
 You can always go back to the EC2 Cost tool and then filter by those same attributes to determine if there's a particular account or region that needs more reservations. With account-wide RI Usage reports, Reserved Instance Budget Alerts, and Metricly's EC2 Cost tool, you gain full control and visibility into your RI costs and usage.
 
-Understanding Convertible Reserved Instances
---------------------------------------------
+## Convertible RIs
 
-[Earlier in this guide](http://google.com) we went over the basic differences between Standard and Convertible Reserved Instances. In this section, we'll tackle Convertible Reserved Instances (CRI) in more depth and show you how to maximize their flexibility to your advantage.
+[Earlier in this guide](#4-regional-vs-availability-zonal-reserved-instances) we went over the basic differences between Standard and Convertible Reserved Instances. In this section, we'll tackle Convertible Reserved Instances (CRI) in more depth and show you how to maximize their flexibility to your advantage.
 
 The key selling point of CRIs is that they can be exchanged. The challenge they present, however, is that the exchange process can be confusing.
 
-10 things you need to know about exchanging CRIs
+**10 things you need to know about exchanging CRIs:**
 
 1.  You must exchange your CRI(s) for one of equal or greater value.
 
@@ -510,17 +368,17 @@ The key selling point of CRIs is that they can be exchanged. The challenge they 
 
 Let's apply what we know and dive into an example to show the limitations and workarounds you'll need to be familiar with.
 
-Scenario: 12 months ago you bought a Full Upfront 3 year r4.large CRI
+**Scenario:** 12 months ago you bought a Full Upfront 3 year r4.large CRI
 
-Situation: You no longer need a high-memory instance
+**Situation:** You no longer need a high-memory instance
 
-Desired Outcome: You want a general purpose instance, like an m4.large
+**Desired Outcome:** You want a general purpose instance, like an m4.large
 
-Problem #1: You can't just convert an r4.large to an m4.large because the m4.large is cheaper
+**Problem #1:** You can't just convert an r4.large to an m4.large because the m4.large is cheaper
 
-Problem #2: You don't want to buy more than you need (2 m4.larges) and incur a true-up charge
+**Problem #2:** You don't want to buy more than you need (2 m4.larges) and incur a true-up charge
 
-Solution:
+**Solution:**
 
 1.  First, we are going to use rule number #3 and split-convert our r4.large CRI into its price equivalent in t3.nanos. This gives us the smallest building block of individual CRIs to work with.
 
@@ -534,11 +392,11 @@ All new CRIs in this scenario have 24 months remaining in term length. This is b
 
 We've gone over the rules to keep in mind and laid out a high-level plan for converting an r4.large into an m4.large + t3.nanos, but how do you do it? There are two ways:
 
--   Via the AWS Console
+-   A. Via the AWS Console
 
--   Via the Command Line Interface
+-   B. Via the Command Line Interface
 
-CRI exchange via AWS Console
+**A. CRI exchange via AWS Console**
 
 1.  Navigate to the [EC2 service in your AWS Console](https://console.aws.amazon.com/ec2/).
 
@@ -556,7 +414,7 @@ CRI exchange via AWS Console
 
 Your exchange may take a few minutes to be reflected in your account.
 
-CRI exchange via command line
+**B. CRI exchange via command line**
 
 1.  Find and select a target instance using  [describe-reserved-instances-offerings](https://docs.aws.amazon.com/cli/latest/reference/ec2/describe-reserved-instances-offerings.html).
 
@@ -576,12 +434,11 @@ Now that you know the basic rules and exchange process for CRIs, let's recap how
 
 CRIs are the better reservation choice for steady-state usage that may anticipate shifts in performance needs. This is because CRIs can switch performance families, operating systems, tenancy, and payment options. We recommend buying the largest CRI that makes sense for you and then, when necessary, split-converting it into smaller components as needs change. This helps you avoid true-up costs of incrementally upgrading your resources. Split-converting from one parent contract also avoids unnecessarily refreshing and complicating your term length expiration dates.
 
-Selling a Reserved Instance contract
-------------------------------------
+## Selling a RI Contract
 
 You have the option to sell your contracts before they expire thanks to the [AWS Reserved Instance Marketplace](https://aws.amazon.com/ec2/purchasing-options/reserved-instances/marketplace/). This can be an ideal solution to optimizing your cloud budget when capacity needs change abruptly. Let's go over how the AWS RI Marketplace works.
 
-Basic requirements of selling a Reserved Instance:
+**Basic requirements of selling a Reserved Instance:**
 
 -   Reservation must be at least 30 days old
 
@@ -605,15 +462,19 @@ Buyers can see who is selling the reservation by checking the Seller column.
 
 It can take up to 2 weeks for your first sale to be processed. This is because AWS needs to set up a relationship with your US-based bank to send wire transfers to your account. All other sales typically take between 1-3 days for processing.
 
-Important things to keep in mind:
+**Important things to keep in mind:**
 
--   A 12% AWS seller fee is applied to the finalized sale based on the total upfront price you set on the reservation
+{{< note title="Important things to keep in mind:" >}}
+<ul class="mb-0 mt-3">
+<li><p>A 12% AWS seller fee is applied to the finalized sale based on the total upfront price you set on the reservation</p></li>
 
--   You retain the reservation and capacity benefits of your on-market reservation until the sale's transaction is complete
+<li><p>You retain the reservation and capacity benefits of your on-market reservation until the sale’s transaction is complete</p></li>
 
--   A reservation's remaining duration is rounded down to the nearest month for the buyer
+<li><p>A reservation’s remaining duration is rounded down to the nearest month for the buyer</p></li>
 
--   If you are outside of the US, consider setting up a US bank account before purchasing reservations. AWS only deposits marketplace sales in US-based accounts. While alternatives such as Transferwise do exist, you should do a thorough vetting of your options before choosing what works best for you
+<li><p>If you are outside of the US, consider setting up a US bank account before purchasing reservations. AWS only deposits marketplace sales in US-based accounts. While alternatives such as Transferwise do exist, you should do a thorough vetting of your options before choosing what works best for you</p></li>
+</ul>
+{{< /note >}}
 
 ### Should I sell my Reserved Instance?
 
@@ -629,15 +490,13 @@ If your existing reservation can be applied to other resources and still be maxi
 
 AWS regularly provides new, more powerful instance generations. These newer generations are put at competitive price points to encourage users to adopt future solutions. As time passes, older generations become more expensive. Knowing this is important when deciding what instance generation and term to commit to.
 
-Commiting to a 3 year t2 instance contract, for example, is less ideal than committing to the same term length for the newest, t3 generation. Committing to the older generation for such a long time could wind up negating your savings if the price of t2 rises each year. However, commiting to a 1 year contract for t2 would mitigate the risk of rising costs if you are not ready to commit to a t3.
+Committing to a 3 year t2 instance contract, for example, is less ideal than committing to the same term length for the newest, t3 generation. Committing to the older generation for such a long time could wind up negating your savings if the price of t2 rises each year. However, committing to a 1 year contract for t2 would mitigate the risk of rising costs if you are not ready to commit to a t3.
 
 Overall, newest generations are the best to commit to because they offer the deepest savings. 3 year commitments are only ideal for newest generations because baseline price rises for older generations and that rise eats  into your savings.
 
-Advanced
-========
+# III. Advanced
 
-Scheduled Reserved Instances Explained
---------------------------------------
+## Scheduled Reserved Instances
 
 For bulk workloads that only happen on a routine basis---once per day, per week, or per month---a Standard or Convertible RI contract might go underutilized. This is where Scheduled Reserved Instances shine: you still get reserved capacity and discounts without worrying about overpaying for an underutilized contract.
 
@@ -667,12 +526,13 @@ These reservations operate around firm timelines and terminate 3 minutes before 
 
 Availability is also affected by terminations. Scheduled RIs can be terminated manually, however if they are not relaunched within a few minutes after termination, you will have to wait until the next interval to relaunch.
 
-Common Reserved Instance Pitfalls to Consider
----------------------------------------------
+## Common RI Pitfalls
 
 ### Zonal vs Regional Purchasing
 
-It's easy to accidentally purchase a Zonal Reservation when you meant to purchase a Regional Reservation. Selecting the checkbox Only show offerings that reserve capacity switches your options from Regional to Zonal. Make sure you uncheck this box when buying Regional reservations. ![](https://lh5.googleusercontent.com/d4JLNwvBFYf-bPOjaCb5e9FXM3UK_6hxQC477_JOcbqq6EnUOwVBrYuOgiphXieHeV6j7Kl9QWYNx6Mb-v3ClHg0yGisAFcUML9J9mR_P60F66PHLdh5BBl-t0Sv0G-3-XWANY8r)
+It's easy to accidentally purchase a Zonal Reservation when you meant to purchase a Regional Reservation. Selecting the checkbox Only show offerings that reserve capacity switches your options from Regional to Zonal. Make sure you uncheck this box when buying Regional reservations.
+
+![](https://lh5.googleusercontent.com/d4JLNwvBFYf-bPOjaCb5e9FXM3UK_6hxQC477_JOcbqq6EnUOwVBrYuOgiphXieHeV6j7Kl9QWYNx6Mb-v3ClHg0yGisAFcUML9J9mR_P60F66PHLdh5BBl-t0Sv0G-3-XWANY8r)
 
 ### Reservation Purchasing Cadence
 
@@ -688,8 +548,7 @@ A common mistake users make is selecting the wrong platform for the type of inst
 
 ![](https://lh4.googleusercontent.com/DLK_hYbX4vOD1VplB3LSrGhOSZYDc14B3hxVOlQuUDeWnI1La4AXBI3FqQSkUZ1F4TO3aYGHHt0n_b9ZqdLkKXlb9XG4ya5_G768C8epAXhziysviws0xNIxFh9-xxuSSmJnZUtI)
 
-Reserved Instance Trends
-------------------------
+## RI Trends
 
 What does a typical EC2 portfolio look like for a business hosted by AWS? In this section, we're going to explore some statistics around reservation purchases. Metricly analyzes tens of thousands of Reserved Instance contracts for its customers, and over the years we've noticed a few trends you might find interesting.
 
@@ -697,135 +556,25 @@ What does a typical EC2 portfolio look like for a business hosted by AWS? In thi
 
 Over 90% of businesses prefer No-Upfront RIs to any kind of upfront payment. Most customers prefer sacrificing small overall savings to avoid upfront payments altogether. Here's a quick look at purchasing trends from the past 3 years:
 
-#### Overall contract value across payment methods
+**Overall contract value across payment methods**
 
-|
-
-Year
-
- |
-
-All Upfront
-
- |
-
-Partial Upfront
-
- |
-
-No Upfront
-
- |
-|
-
-2018
-
- |
-
-4%
-
- |
-
-2%
-
- |
-
-94%
-
- |
-|
-
-2017
-
- |
-
-16%
-
- |
-
-2%
-
- |
-
-82%
-
- |
-|
-
-2016
-
- |
-
-9%
-
- |
-
-11%
-
- |
-
-80%
-
- |
+|  Year | All Upfront | Partial Upfront | No Upfront |
+| --- | --- | --- | --- |
+|  2018 | 4% | 2% | 94% |
+|  2017 | 16% | 2% | 82% |
+|  2016 | 9% | 11% | 80% |
 
 ### Convertible Reserved Instances are gaining popularity
 
 Convertible reservations were introduced in late 2016 and have been growing in popularity over the last few years due to the additional flexibility they provide.
 
-#### Percentage of total instances across contract types
+**Percentage of total instances across contract types**
 
-|
-
-Year
-
- |
-
-Standard
-
- |
-
-Convertible
-
- |
-|
-
-2018
-
- |
-
-85%
-
- |
-
-15%
-
- |
-|
-
-2017
-
- |
-
-92%
-
- |
-
-8%
-
- |
-|
-
-2016
-
- |
-
-99%
-
- |
-
-<1%
-
- |
+|  Year | Standard | Convertible |
+| --- | --- | --- |
+|  2018 | 85% | 15% |
+|  2017 | 92% | 8% |
+|  2016 | 99% | <1% |
 
 Even though their adoption has nearly doubled since 2017, Convertible Reserved Instances still only represent a small subset of reservations. Their more limited savings and benefits may be preventing them from toppling Standard RIs as the go-to contract type. It's also likely that most AWS customers who require this level of flexibility are not quite ready to commit to reservations in general, as their infrastructure needs have yet to become predictable enough.
 
@@ -833,60 +582,13 @@ Even though their adoption has nearly doubled since 2017, Convertible Reserved I
 
 The option to sacrifice actual capacity reservation for flexibility with a regional scope was introduced in late 2016 and quickly become the standard most customers use with 99% opting for this in 2018.
 
-#### Percentage of total instances across scope options
+**Percentage of total instances across scope options**
 
-|
-
-Year
-
- |
-
-Region
-
- |
-
-Availability Zone
-
- |
-|
-
-2018
-
- |
-
-99%
-
- |
-
-1%
-
- |
-|
-
-2017
-
- |
-
-92%
-
- |
-
-8%
-
- |
-|
-
-2016
-
- |
-
-4%
-
- |
-
-96%
-
- |
+|  Year | Region | Availability Zone |
+| --- | --- | --- |
+|  2018 | 99% | 1% |
+|  2017 | 92% | 8% |
+|  2016 | 4% | 96% |
 
 We have found that most AWS customers we work with are not aware that regional reservations do not reserve capacity. Similarly, many AWS customers we work with who have purchased zonal reservations are not aware of the implications of their decision to reserve capacity.
 
@@ -894,86 +596,13 @@ We have found that most AWS customers we work with are not aware that regional r
 
 Scope and Offering Class options are both affect the flexibility you have in the choice of instances. Take a look at the combination trends across the past 3 years:
 
-#### Percentage of total instances across Scope & Offering Class combinations
+**Percentage of total instances across Scope & Offering Class combinations**
 
-|
-
-Year
-
- |
-
-Region / Convertible
-
- |
-
-Region / Standard
-
- |
-
-AZ / Convertible
-
- |
-
-AZ / Standard
-
- |
-|
-
-2018
-
- |
-
-15%
-
- |
-
-84%
-
- |
-
-< 1%
-
- |
-
-1%
-
- |
-|
-
-2017
-
- |
-
-8%
-
- |
-
-84%
-
- |\
- |
-
-8%
-
- |
-|
-
-2016
-
- |
-
-< 1%
-
- |
-
-4%
-
- |\
- |
-
-96%
-
- |
+|  Year | Region/Convertible | Region/Standard | AZ/Convertible | AZ/Standard |
+| --- | --- | --- | --- | --- |
+|  2018 | 15% | 84% | < 1% | 1% |
+|  2017 | 8% | 84% |  | 8% |
+|  2016 | < 1% | 4% |  | 96% |
 
 -   Regional Standard Reserved Instance combinations provide flexible scope and (if on Linux/Unix platform) size flexibility. They are also sellable on the RI Marketplace.
 
@@ -983,185 +612,16 @@ AZ / Standard
 
 Out of over 150 different Instance types in around 50 different series (including the generation) there is a surprising lack of diversity in the instance types customers reserve. In 2018 over 93% of reservations by instance count fell into just 5 families:
 
-#### Percentage of total instances across top 5 instance families
-
-|
-
-Instance Family
-
-2018
-
- |
-
-Contribution
-
- |
-
-Instance Family 2017
-
- |
-
-Contribution
-
- |
-
-Instance Family 2016
-
- |
-
-Contribution
-
- |
-|
-
-m5
-
- |
-
-28%
-
- |
-
-t2
-
- |
-
-33%
-
- |
-
-t2
-
- |
-
-42%
-
- |
-|
-
-t2
-
- |
-
-24%
-
- |
-
-m4
-
- |
-
-26%
-
- |
-
-c4
-
- |
-
-25%
-
- |
-|
-
-m4
-
- |
-
-23%
-
- |
-
-c4
-
- |
-
-18%
-
- |
-
-m4
-
- |
-
-9%
-
- |
-|
-
-i3
-
- |
-
-16%
-
- |
-
-m3
-
- |
-
-9%
-
- |
-
-m3
-
- |
-
-9%
-
- |
-|
-
-c5
-
- |
-
-3%
-
- |
-
-i2
-
- |
-
-9%
-
- |
-
-r3
-
- |
-
-9%
-
- |
-|
-
-Total:
-
- |
-
-94%
-
- |
-
-Total
-
- |
-
-95%
-
- |
-
-Total:
-
- |
-
-94%
-
- |
+**Percentage of total instances across top 5 instance families:**
+
+|  Instance Family 2018 | Contribution | Instance Family 2017 | Contribution | Instance Family 2016 | Contribution |
+| --- | --- | --- | --- | --- | --- |
+|  m5 | 28% | t2 | 33% | t2 | 42% |
+|  t2 | 24% | m4 | 26% | c4 | 25% |
+|  m4 | 23% | c4 | 18% | m4 | 9% |
+|  i3 | 16% | m3 | 9% | m3 | 9% |
+|  c5 | 3% | i2 | 9% | r3 | 9% |
+|  Total: | **94%** | Total | **95%** | Total: | **94%** |
 
 -   The top 3 instance families have included t2 and m4 instances each year
 
@@ -1169,7 +629,6 @@ Total:
 
 The m5 and c5 families were introduced in November 2017 and are slightly cheaper than the older generation equivalent. We expect those to be gradually replaced over time.
 
-Beyond
-======
+<h2 data-toc-skip>Beyond</h2>
 
 This guide has covered a wide variety of topics on EC2 Reservations, but it doesn't stop here. [Tell us what you'd like to know more about](mailto:content@metricly.com) or subscribe to our Cloud Compass Newsletter. Every month we publish new articles that explore ways you can save money and be more efficient in the public cloud.
