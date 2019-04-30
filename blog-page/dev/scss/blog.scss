@@ -623,6 +623,19 @@ body,html {
                     margin: 0 0 5px;
                 }
             }
+            h1{
+              margin: 0 0 30px;
+              color: #275a7d;
+              font-weight: 600;
+              @media (max-width: $lg){
+                  font-size: 1.85rem;
+                  margin: 0 0 20px;
+              }
+              @media (max-width: $sm){
+                  font-size: 1.65rem;
+                  margin: 0 0 10px;
+              }
+            }
             .note-block {
               background:rgba(67,155,195,0.06);
               position:relative;
@@ -950,4 +963,80 @@ transition: width .3s ease-out;
 
 .blog.blog--category ul {
     list-style: none;
+}
+
+.dropdown-item ul {
+  display: none;
+}
+.dropdown-item.hover ul {
+  display: block !important;
+}
+
+/*!
+ * Bootstrap Table of Contents v1.0.1 (http://afeld.github.io/bootstrap-toc/)
+ * Copyright 2015 Aidan Feldman
+ * Licensed under MIT (https://github.com/afeld/bootstrap-toc/blob/gh-pages/LICENSE.md) */
+
+nav[data-toggle=toc] .nav>li>a {
+	display: block;
+	padding: 4px 20px;
+	font-size: 15px;
+	font-weight: 500;
+	color: #767676;
+}
+
+nav[data-toggle=toc] .nav>li>a:focus,
+nav[data-toggle=toc] .nav>li>a:hover {
+	padding-left: 19px;
+	color: #275A7D;
+	text-decoration: none;
+	background-color: transparent;
+	/* border-left: 2px solid #275A7D; */
+}
+
+nav[data-toggle=toc] .nav-link.active,
+nav[data-toggle=toc] .nav-link.active:focus,
+nav[data-toggle=toc] .nav-link.active:hover {
+	padding-left: 18px;
+	font-weight: 700;
+	color: #275A7D;
+	background-color: transparent;
+	--font-family-monospace: 2px solid #275A7D;
+}
+
+nav[data-toggle=toc] .nav-link+ul {
+	display: none;
+	padding-bottom: 10px;
+}
+
+nav[data-toggle=toc] .nav .nav>li>a {
+	padding-left: 30px;
+	font-size: 12px;
+	font-weight: 400;
+}
+
+nav[data-toggle=toc] .nav .nav>li>a:focus,
+nav[data-toggle=toc] .nav .nav>li>a:hover {
+	padding-left: 29px
+}
+
+nav[data-toggle=toc] .nav .nav>li>.active,
+nav[data-toggle=toc] .nav .nav>li>.active:focus,
+nav[data-toggle=toc] .nav .nav>li>.active:hover {
+	padding-left: 28px;
+	font-weight: 600;
+	transition: font-weight 0.3s ease;
+	border-left: 2px solid;
+}
+
+nav[data-toggle=toc] .nav-link.active+ul {
+	display: block
+}
+
+/*  Offsets a link scrolling for the head  */
+:target:before {
+    content: "";
+    display: block;
+    height: 100px;
+    margin: 100px 0 0;
 }

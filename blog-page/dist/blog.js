@@ -136,6 +136,7 @@ function mobileMenuHeight() {
 // Add responsive classes to table and images for blogs to prevent overflow
 $(".post-content table").addClass("table").addClass("table-responsive").addClass("text-left");
 $(".main-wrapper img").addClass("img-fluid");
+$(".post-content img").addClass("rounded").addClass("shadow-sm");
 
 
 // Scroll indicator
@@ -146,3 +147,9 @@ $(window).scroll(function () {
       style = "width: " + barWidth + "%";
   $('#progress-bar').attr('style', style);
 });
+
+// Side bar nav on pillar pages
+$('.dropdown-item').hover(
+       function(){ $(this).addClass('hover') },
+       function(){ $(this).removeClass('hover') }
+);
