@@ -2,14 +2,17 @@
 author: "Lawrence Lane"
 date: "2019-01-01"
 description: "The Ultimate Guide to EC2 Instances that tackles 9 different EC2 topics, ranging from beginner to advanced, to provide you with the ultimate resource."
-title: "EC2 Instances - The Ultimate Guide to Understanding AWS EC2"
+title: "EC2 Instances - The Ultimate Guide to AWS EC2 (2019)"
 category: "DevOps"
 url: "/ec2-instances/"
 layout: "single"
 featured: false
 draft: false
+use-toc: true
 ---
-## 1\. What is an Amazon EC2 Instance?
+# I. The Basics
+
+## What is an Amazon EC2 Instance?
 
 ### EC2 is short for Amazon Elastic Compute Cloud. But what does that mean?
 
@@ -66,7 +69,7 @@ It's important to pick carefully when choosing your AMI, Instance Family, and In
 
 Speaking of pricing, let's take a look at amazon's pricing options.
 
-## 2\. EC2 Instance Pricing Options
+## EC2 Instance Pricing Options
 
 When it comes to paying for Amazon Web Services, there are four main purchasing options: On-demand Instances, Reserved Instances, Spot Instances, and Dedicated Hosts. Each pricing option is tailored to benefit a particular usage behavior.
 
@@ -115,7 +118,11 @@ If you're still unsure about committing to using RIs, consider the following:
 -   You can modify or exchange your reserved instances with convertible reservations
 -   Standard reserved instances can be put up for sale on the Reserved Instance Marketplace
 
-There's a lot more that can be said about Reserved Instances. Want to know more? Skip to our [overview of Reserved Instances.](http://localhost:1313/ec2-instances/#8-reserved)
+There's a lot more that can be said about Reserved Instances. Want to know more? Skip to our [overview of Reserved Instances.](/ec2-instances/#8-reserved)
+
+{{< note title="Want to know more about AWS Reserved Instances?" >}}
+Check out our <a href="/aws-reserved-instances/">AWS Reserved Instances guide</a>!
+{{< /note >}}
 
 ### Dedicated Hosts
 
@@ -132,7 +139,7 @@ Dedicated Hosts are great for:
 The difference is that Dedicated Instances may be provisioned on a different physical server each time (preventing you from using your own software licenses tied to a specific socket, core, or CPU serial number).
 {{< /note >}}
 
-## 3\. How Does AWS Charge for EC2s?
+## How Does AWS Charge for EC2s?
 
 In October of 2017, AWS announced that Amazon EC2 usage of Linux-based instances launched in On-Demand, Reserved and Spot form (along with provisioned EBS volumes) will be billed on one second increments, with a minimum of 60 seconds. This means that you would no longer pay for a full hour if you only use the instance in a running state for a few minutes. You also get the benefit of reserved instance pricing for multiple instances used within the hour. Remember that AWS EC2 pricing may still be expressed in the form of instance-hour on many of their pricing pages to preserve consistency.
 
@@ -177,10 +184,12 @@ A typical need for data transfer across Availability Zones or AZ (considered reg
 If resiliency is not your objective, then you can eliminate the data transfer fee by launching your EC2s that are transferring data within the same Availability Zone as long as you are using a private IP address (vs. Elastic IP address). Note that you can also reduce the fees by choosing different regions or by transferring data across AZs instead of across full Regions.
 
 Looking for a tool to make your savings journey easier?\
-Consider [Metricly's AWS Cost reports.](http://localhost:1313/aws-cost-tool/?utm_source=ec2-guide)\
+Consider [Metricly's AWS Cost reports.](/aws-cost-tool/?utm_source=ec2-guide)\
 We're very proud of the granularity they provide, on a per-instance level, to help you reduce spend and proactively dodge unwanted surprises in your bill.
 
-## 4\. More About Instance Types
+# II. Intermediate
+
+## More About Instance Types
 
 ### Burstable Performance Instances
 
@@ -264,7 +273,7 @@ Keep in mind that this hourly cost is in addition to your other hourly EC2 insta
 
 Setting up a cluster placement group is great for creating low-latency networks between all instances within a cluster. Traffic between clustered instances within the same region can achieve up to 5 Gbps for single-flow and 25 Gbps for multi-flow traffic in either direction. If you're launching high-performance analytic systems or complex science and engineering applications with high data transfer between nodes, Cluster Networking is a great solution.
 
-## 5\. Picking The Right EC2 Size
+## Picking The Right EC2 Size
 
 With so many EC2 types and sizes, choosing one that's just right is quite a challenge. This is especially true when you toss in the added complexities surrounding storage options or specialized use case requirements. And let's not forget the difficulty in deciding whether a 1-3 year reservation contract is worth the up-front cost for long-term savings.
 
@@ -286,9 +295,9 @@ Rushing into your migration and "playing it safe" by provisioning oversized or o
 
 7. You can now select the appropriately typed and sized EC2 for your instances according to workload requirements.
 
-If all of that sounds like a lot of work, well, it can be. But it doesn't have to be. Most of the heavy lifting can be done through [Metricly's Utilization and Cost vs Utilization reports.](http://localhost:1313/aws-cost-tool/?utm_source=ec2-guide) We even have recommendation reports for EC2s and ASGs to help automate that final process between reviewing your aggregated historical workload data and inferring which EC2 instances are best suited to your needs.
+If all of that sounds like a lot of work, well, it can be. But it doesn't have to be. Most of the heavy lifting can be done through [Metricly's Utilization and Cost vs Utilization reports.](/aws-cost-tool/?utm_source=ec2-guide) We even have recommendation reports for EC2s and ASGs to help automate that final process between reviewing your aggregated historical workload data and inferring which EC2 instances are best suited to your needs.
 
-Interested in automating the bulk of your capacity planning with our personalized EC2 sizing recommendations? Try out our [21-day free trial.](http://localhost:1313/signup/?utm_source=ec2-guide) Sizing up your needs before migrating to the Amazon cloud platform is important, but don't forget that right-sizing is an ongoing process. Your infrastructure should continue to evolve as your business grows and workload patterns change.
+Interested in automating the bulk of your capacity planning with our personalized EC2 sizing recommendations? Try out our [21-day free trial.](/signup/?utm_source=ec2-guide) Sizing up your needs before migrating to the Amazon cloud platform is important, but don't forget that right-sizing is an ongoing process. Your infrastructure should continue to evolve as your business grows and workload patterns change.
 
 ### Based on Performance Data
 
@@ -345,7 +354,9 @@ Certain AMIs have dependencies by type and size. For example, SQL Server Enterpr
 
 If you depend on a high volume of network activity then you must ensure that your instance type can support it. For example, some families support enhanced networking with up to 10 Gbps such as the C3, C4, D2, I2, and R3 families.
 
-## 6\. Pairing EBS Volumes
+# III. Advanced
+
+## Pairing EBS Volumes
 
 When first introduced, an AWS EC2 only came with local ephemeral storage. However, over time, various flavors of Elastic Block Store (EBS) volumes were introduced that could be paired with an expanding list of EC2 selections. Below is a summary of EBS history:
 
@@ -376,7 +387,7 @@ At present (November 2018), when it comes to selecting an EBS volume, there are 
 
 For higher performance, remember to also consider using RAID configuration for Linux and Windows, and read [RAID Configuration on Linux](http://docs.aws.amazon.com/AWSEC2/latest/UserGuide/raid-config.html) and [RAID Configuration on Windows to learn more.](http://docs.aws.amazon.com/AWSEC2/latest/WindowsGuide/raid-config.html)
 
-## 7\. Using Spot Instances
+## Using Spot Instances
 
 Before we diving into use cases, let's take a minute to review how Spot Instances work and where their resources come from. Spot Instances are comprised of unused AWS infrastructure within a given capacity pool. Every capacity pool has its own price, determined by the resources available.
 
@@ -451,11 +462,11 @@ Resume workloads when resources are available.
 
 Spot instances can be intimidating at first due to their risk of interruptions, but today you've learned several ways to mitigate that risk. Now go get those epic savings!
 
-## 8\. Understanding EC2 Reserved Instances
+## Understanding EC2 Reserved Instances
 
-In the [EC2 Pricing Options](http://localhost:1313/ec2-instances/#2-pricing) section, we gave you a quick summary of the benefits and pitfalls of choosing a Reserved instance. Now, let's look at Reserved Instances (RI) in more detail.
+In the [EC2 Pricing Options](/ec2-instances/#2-pricing) section, we gave you a quick summary of the benefits and pitfalls of choosing a Reserved instance. Now, let's look at Reserved Instances (RI) in more detail.
 
-First, let's tackle a common misconception about RIs. People generally tend to think of a Reserved Instance as one particular instance that you deploy for the duration of the contract term. That is not the case; RIs are simply a 1 or 3 year coupon that applies to [any instance usage which matches what you paid for in the reservation](http://localhost:1313/aws-reserved-instances-mistake/?utm_source=ec2-guide) (e.g. m5.2xl in us-east-1b running Linux). At the end of the month, any instance usage matching that criteria is billed at the discounted rate.
+First, let's tackle a common misconception about RIs. People generally tend to think of a Reserved Instance as one particular instance that you deploy for the duration of the contract term. That is not the case; RIs are simply a 1 or 3 year coupon that applies to [any instance usage which matches what you paid for in the reservation](/aws-reserved-instances-mistake/?utm_source=ec2-guide) (e.g. m5.2xl in us-east-1b running Linux). At the end of the month, any instance usage matching that criteria is billed at the discounted rate.
 
 The price of a Reserved Instance is determined by three main factors: instance attributes, term commitment, and payment method. Here's a breakdown:
 
@@ -524,10 +535,9 @@ Size flexibility is an important and practically useful benefit which should not
 
 A reservation subscription does not equate to availability of capacity in a given region when you require to launch an EC2, unless you purchase your reservation for only a specific Availability Zone. There lies a common mistake: If you buy your reservation for a specific AZ, the downside is that your subscription would not only not work for instances launched in any other AZ, but also not work for instances launched of a different size. So you are trading off capacity reservation for flexibility. You must watch your reservation coverage using tools provided in the AWS console to be sure that your usage is as expected.
 
-In environments where the number of running instances vary during the day (peak vs. non-peak hours), it is easy to over-buy reservations if you don't consider the hourly distribution of usage during the course of a day. The concept is a tricky, so it's worth [reading this blog](http://localhost:1313/aws-reserved-instances-mistake/?utm_source=ec2-guide) if you scale your environment during the day.
+In environments where the number of running instances vary during the day (peak vs. non-peak hours), it is easy to over-buy reservations if you don't consider the hourly distribution of usage during the course of a day. The concept is a tricky, so it's worth [reading this blog](/aws-reserved-instances-mistake/?utm_source=ec2-guide) if you scale your environment during the day.
 
-9\. Auto Scaling your EC2s
---------------------------
+## Auto Scaling your EC2s
 
 Auto Scaling is a powerful tool which automates the sizing of your infrastructure based on your chosen throughput demands (such as increased traffic or workloads). Using Auto Scaling with EC2s ensures stable user experiences without overpaying for unused resources.
 
