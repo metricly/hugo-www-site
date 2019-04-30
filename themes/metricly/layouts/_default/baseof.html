@@ -51,7 +51,7 @@
 
     {{ end }}
   </head>
-  <body>
+  <body data-spy="scroll" data-target="#aside-nav" data-offset="100" style="position: relative;">
 
     {{if or (eq .Params.layout "blog") (eq .Params.layout "single") (eq .Params.layout "category") (eq .Params.layout "signup")}}
     <!-- Don't insert normal header -->
