@@ -1,5 +1,5 @@
 +++
-author = "Cody Tipton"
+author = ""
 category = ["Product Updates", "Cloud Cost Management"]
 date = "2019-02-28"
 draft = true
