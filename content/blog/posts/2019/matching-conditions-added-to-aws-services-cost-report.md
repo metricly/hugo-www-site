@@ -1,5 +1,5 @@
 +++
-author = "Cody Tipton"
+author = "Cody-Tipton"
 category = ["Product Updates", "Cloud Cost Management"]
 date = "2019-02-28"
 draft = true
@@ -37,4 +37,4 @@ You can view your Efficiency Index scores for each day across multiple time peri
 
 # Expanding Indexing Across More Dimensions
 
-This same principle can be applied to other resource dimensions, such as memory and IOPS, and even to service offerings such as RDS and [Lambda](https://www.metricly.com/aws-lambda-cost/). Keep an eye out for more feature announcements around the Efficiency Index tool! 
+This same principle can be applied to other resource dimensions, such as memory and IOPS, and even to service offerings such as RDS and [Lambda](https://www.metricly.com/aws-lambda-cost/). Keep an eye out for more feature announcements around the Efficiency Index tool!
