@@ -1,7 +1,7 @@
 +++
 author = "Cody Tipton"
-category = ["Product Updates", "Cloud Cost Management"]
-date = "2019-02-28"
+category = ["Product Updates"]
+date = "2019-05-03T04:00:00+00:00"
 layout = "single"
 title = "The Efficiency Index: Tracking the Progress of Cloud Savings"
 url = "the-efficiency-index-tracking-progress-of-Cloud-Savings"
