@@ -4,7 +4,7 @@ category = ["Product Updates"]
 date = "2019-05-03T04:00:00+00:00"
 layout = "single"
 title = "The Efficiency Index: Tracking the Progress of Cloud Savings"
-url = "the-efficiency-index-tracking-progress-of-Cloud-Savings"
+url = "the-efficiency-index-tracking-progress-of-cloud-savings"
 
 +++
 _"Our AWS bill is 50% higher than it was last year. Can increased workload alone account for this figure?"_
