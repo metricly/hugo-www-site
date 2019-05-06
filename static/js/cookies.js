@@ -184,14 +184,27 @@ var getUrlParameter = function getUrlParameter(sParam) {
     }
 };
 
-
 function setUtmcookies() {
-  var source = getUrlParameter('utm_source');
-  var medium = getUrlParameter('utm_medium');
-  var keyword = getUrlParameter('utm_keyword');
-  var campaign = getUrlParameter('utm_campaign');
-  console.log(source, keyword, medium, campaign);
-  Cookies.set('utm_source', source);
-  Cookies.set('utm_campaign', campaign);
+	// 1. Create variables for our chosen UTM params in the URL
+	var source = getUrlParameter('utm_source');
+	var medium = getUrlParameter('utm_medium');
+	var keyword = getUrlParameter('utm_keyword');
+	var campaign = getUrlParameter('utm_campaign');
+
+	// 2. Set the URL UTMs as a cookie (even if undefined)
+	Cookies.set('utm_source', source);
+	Cookies.set('utm_medium', medium);
+	Cookies.set('utm_keyword', keyword);
+	Cookies.set('utm_campaign', campaign);
+
+
+	// 3. If the cookie is undefined (first page visit with no UTM params), create one from the current URL
+	if (Cookies.get('utm_campaign') == "undefined") {
+		Cookies.set('utm_campaign', window.location.pathname);
+	}
+	if (Cookies.get('utm_source') == "undefined") {
+		console.log("site is the source");
+		Cookies.set('utm_source', "site");
+	}
 }
 setUtmcookies();
