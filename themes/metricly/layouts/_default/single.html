@@ -180,7 +180,8 @@
 </div>
 <script>
   $('.signup-link').each(function() {
-      $(this).attr("href", $(this).attr("href") + "?utm_source=post&utm_campaign={{ .Params.url }}");
+      $(this).attr("href", $(this).attr("href") + "?utm_source=blog&utm_campaign={{ trim .Params.url "/" }}");
   });
 </script>
+<script src="/js/cookies.js"></script>
 {{ end }}
