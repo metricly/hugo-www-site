@@ -86,7 +86,7 @@
               <div class="title-category">Learn more</div>
               <div class="learn-more__title">About Metricly</div>
               <p>Metricly coaches users throughout their cloud journey to organize, plan, analyze, and optimize their public cloud resources.</p>
-              <a href="/signup/?utm_source=post&utm_campaign={{ .Params.url }}" class="btn">Try Metricly Free</a>
+              <a href="/signup/" class="btn">Try Metricly Free</a>
             </div>
             {{- with .Params.author }}
             {{- with $.Site.GetPage "taxonomyTerm" (printf "author/%s" (urlize .)) }}
@@ -128,12 +128,14 @@
             {{ if .Param "use-toc" }}
             <nav id="aside-nav" class="navbar border rounded" data-toggle="toc">
             </nav>
+            <img src="/img/graphics/main.png" class="img-fluid mt-3">
+            <p class="mt-3 small text-center mb-0">Cloud Compass is a free publication produced by Metricly—the experts in cloud efficiency.<a href="/" class="btn text-center mt-3 signup-link">Learn About Metricly</a></p>
             {{ else }}
             <div class="blog-cta">
               <div class="title-category">Learn more</div>
               <div class="learn-more__title">About Metricly</div>
               <p>Metricly coaches users throughout their cloud journey to organize, plan, analyze, and optimize their public cloud resources.</p>
-              <a href="/signup/?utm_source=post&utm_campaign={{ .Params.url }}" class="btn">Try Metricly Free</a>
+              <a href="/signup/" class="btn signup-link">Try Metricly Free</a>
             </div>
             {{ end }}
           </div>
@@ -176,7 +178,9 @@
     </section>
   </main>
 </div>
-<!-- add after bootstrap.min.js -->
-<script src="https://cdn.rawgit.com/afeld/bootstrap-toc/v1.0.1/dist/bootstrap-toc.min.js"></script>
-
+<script>
+  $('.signup-link').each(function() {
+      $(this).attr("href", $(this).attr("href") + "?utm_source=post&utm_campaign={{ .Params.url }}");
+  });
+</script>
 {{ end }}
