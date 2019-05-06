@@ -4,7 +4,7 @@ category = ["Product Updates"]
 date = "2019-05-03T04:00:00+00:00"
 layout = "single"
 title = "The Efficiency Index: Tracking the Progress of Cloud Savings"
-url = "the-efficiency-index-tracking-progress-of-Cloud-Savings"
+url = "/the-efficiency-index-tracking-progress-of-cloud-savings/"
 
 +++
 _"Our AWS bill is 50% higher than it was last year. Can increased workload alone account for this figure?"_
@@ -36,4 +36,4 @@ You can view your Efficiency Index scores for each day across multiple time peri
 
 # Expanding Indexing Across More Dimensions
 
-This same principle can be applied to other resource dimensions, such as memory and IOPS, and even to service offerings such as RDS and [Lambda](https://www.metricly.com/aws-lambda-cost/). Keep an eye out for more feature announcements around the Efficiency Index tool!
+This same principle can be applied to other resource dimensions, such as memory and IOPS, and even to service offerings such as RDS and [Lambda](https://www.metricly.com/aws-lambda-cost/). Keep an eye out for more feature announcements around the Efficiency Index tool! 
