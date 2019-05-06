@@ -912,9 +912,8 @@ nav[data-toggle=toc] .nav .nav > li > .active:hover {
 nav[data-toggle=toc] .nav-link.active + ul {
   display: block; }
 
-/*  Offsets a link scrolling for the head  */
-:target:before {
+:target::before {
   content: "";
   display: block;
-  height: 100px;
-  margin: 100px 0 0; }
+  height: 98px;
+  margin: -98px 0 0; }
