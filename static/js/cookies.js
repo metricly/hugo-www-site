@@ -186,11 +186,11 @@ var getUrlParameter = function getUrlParameter(sParam) {
 
 function setUtmcookies() {
 	// 3. If the cookie is undefined (first page visit with no UTM params), create one from the current URL
-	if (Cookies.get('utm_campaign') == "undefined") {
+	if (Cookies.get('utm_campaign') == undefined) {
 		console.log(window.location.pathname);
 		Cookies.set('utm_campaign', window.location.pathname);
 	}
-	if (Cookies.get('utm_source') == "undefined") {
+	if (Cookies.get('utm_source') == undefined) {
 		console.log("site is the source");
 		Cookies.set('utm_source', "site");
 	}
