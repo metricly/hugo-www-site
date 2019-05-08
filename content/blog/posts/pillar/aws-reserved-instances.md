@@ -318,10 +318,15 @@ The key selling point of CRIs is that they can be exchanged. The challenge they 
 Let's apply what we know and dive into an example to show the limitations and workarounds you'll need to be familiar with.
 
 **Scenario:** 12 months ago you bought a Full Upfront 3 year r4.large CRI
+
 **Situation:** You no longer need a high-memory instance
+
 **Desired Outcome:** You want a general purpose instance, like an m4.large
+
 **Problem #1:** You can't just convert an r4.large to an m4.large because the m4.large is cheaper
+
 **Problem #2:** You don't want to buy more than you need (2 m4.larges) and incur a true-up charge
+
 **Solution:**
 
 1.  First, we are going to use rule number #3 and split-convert our r4.large CRI into its price equivalent in t3.nanos. This gives us the smallest building block of individual CRIs to work with.
@@ -394,11 +399,8 @@ It can take up to 2 weeks for your first sale to be processed. This is because A
 {{< note title="Important things to keep in mind:" >}}
 <ul class="mb-0 mt-3">
 <li><p>A 12% AWS seller fee is applied to the finalized sale based on the total upfront price you set on the reservation</p></li>
-
 <li><p>You retain the reservation and capacity benefits of your on-market reservation until the sale’s transaction is complete</p></li>
-
 <li><p>A reservation’s remaining duration is rounded down to the nearest month for the buyer</p></li>
-
 <li><p>If you are outside of the US, consider setting up a US bank account before purchasing reservations. AWS only deposits marketplace sales in US-based accounts. While alternatives such as Transferwise do exist, you should do a thorough vetting of your options before choosing what works best for you</p></li>
 </ul>
 {{< /note >}}
@@ -524,7 +526,6 @@ Scope and Offering Class options are both affect the flexibility you have in the
 |  2016 | < 1% | 4% |  | 96% |
 
 -   Regional Standard Reserved Instance combinations provide flexible scope and (if on Linux/Unix platform) size flexibility. They are also sellable on the RI Marketplace.
-
 -   Zonal Convertible Reserved Instance combinations are the least common. In all likelihood, such a combination is due to user error when selecting the Scope of their contract (as described in our pitfalls section). This is because Convertible Instances are designed for flexibility, whereas Zonal scopes are not.
 
 ### Top 5 most popular Instance Families
@@ -543,7 +544,6 @@ Out of over 150 different Instance types in around 50 different series (includin
 |  Total: | **94%** | Total | **95%** | Total: | **94%** |
 
 -   The top 3 instance families have included t2 and m4 instances each year
-
 -   The top 3 instance families have contributed over 75% of the total reservations each year
 
 The m5 and c5 families were introduced in November 2017 and are slightly cheaper than the older generation equivalent. We expect those to be gradually replaced over time.
