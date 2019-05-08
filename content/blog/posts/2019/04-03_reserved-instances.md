@@ -12,7 +12,7 @@ featured: false
 draft: false
 ---
 
-Amazon EC2 Reserved Instances, which offer a discount of up to 75% over regular On-Demand Instances, are an attractive option for AWS users. However, to make the most of Reserved Instances, it's critical to understand the terms, conditions, and restrictions that impact the discounted price of Reserved Instances.
+[Amazon EC2 Reserved Instances], which offer a discount of up to 75% over regular On-Demand Instances, are an attractive option for AWS users. However, to make the most of Reserved Instances, it's critical to understand the terms, conditions, and restrictions that impact the discounted price of Reserved Instances.
 
 We're going to tackle that topic in this article. We'll look at the different types of Reserved Instances which are available, and then talk about Reserved Instance use cases that can lead to real cost benefits, as well as ones that are a poor use of Reserved Instances.
 
@@ -28,7 +28,7 @@ When you purchase a reserved instance, the discount is applied immediately to on
 
 ### Zonal Reserved Instances
 
-When a Reserved Instance is assigned to a specific Availability Zone, it is designated as a Zonal Reserved Instance. Zonal Reserved Instances ensure that AWS sets aside the reserved capacity within the AZ, but the instance must match the exact type and size of the reservation to be eligible for the discount.
+When a Reserved Instance is assigned to a specific Availability Zone, it is designated as a [Zonal Reserved Instance][2]. Zonal Reserved Instances ensure that AWS sets aside the reserved capacity within the AZ, but the instance must match the exact type and size of the reservation to be eligible for the discount.
 
 For example, if I purchase eight m4.medium instances in the US-East-1C, then I can only receive the discount on eight m4.medium instances in the "C" AZ. My monthly invoice includes the hourly contract rate on eight m4.medium instances, whether or not they were up and running in the AZ during the month.
 
@@ -78,3 +78,6 @@ Regional Reserved Instances are appropriate when your applications are receiving
 The ability to reduce costs is an attractive proposition, and implementing strategic purchases of Reserved Instances can reduce your bottom line. Purchasing Reserved Instances without a plan or fully understanding the terms of the agreement can also turn into a very costly mistake.
 
 Recently, Andrew Paine wrote an excellent post about [Mistakes to Avoid with AWS Reserved Instances](/aws-reserved-instances-mistake/), which is a must-read before deciding on a final strategy. You also need to understand your current and historical usage patterns and requirements. The [EC2 Recommendation Report](https://docs.metricly.com/reports/reports-ec2-recommendations/) is an excellent source of data and a useful tool in determining what instance types best fit your usage model.
+
+[1]: /pillar/aws-reserved-instances
+[2]: /pillar/aws-reserved-instances/#regional-vs-availability-zonal
