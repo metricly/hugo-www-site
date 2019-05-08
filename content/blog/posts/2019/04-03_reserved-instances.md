@@ -79,5 +79,5 @@ The ability to reduce costs is an attractive proposition, and implementing strat
 
 Recently, Andrew Paine wrote an excellent post about [Mistakes to Avoid with AWS Reserved Instances](/aws-reserved-instances-mistake/), which is a must-read before deciding on a final strategy. You also need to understand your current and historical usage patterns and requirements. The [EC2 Recommendation Report](https://docs.metricly.com/reports/reports-ec2-recommendations/) is an excellent source of data and a useful tool in determining what instance types best fit your usage model.
 
-[1]: /pillar/aws-reserved-instances
-[2]: /pillar/aws-reserved-instances/#regional-vs-availability-zonal
+[1]: /blog/posts/pillar/aws-reserved-instances
+[2]: /blog/posts/pillar/aws-reserved-instances/#regional-vs-availability-zonal
