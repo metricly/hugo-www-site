@@ -31,6 +31,10 @@ As you improve [cloud cost management](/blog/category/cloud-cost-management/) by
 
 Don’t want to do all of this calculating by yourself? Metricly captures requisite performance metrics for your resources and tracks cost in our Efficiency Index tool.
 
+{{< note title="Don't have a Metricly account yet?" >}}
+<a href="/signup/">Start your 21-day free trial</a>, to begin using our Efficiency Index Tool!
+{{< /note >}}
+
 ![](/e-index-blog-cody.png)
 
 You can view your Efficiency Index scores for each day across multiple time periods using the Quick Ranges dropdown.
