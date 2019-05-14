@@ -1,113 +1,96 @@
 +++
 author = "Mike Mackrory"
 category = "DevOps"
-date = "2019-04-15"
-description = "We'll cover everything you need to know about AWS AMI management in this article, ranging from best practices, to the overall strategy for managing an AMI lifecycle."
+date = "2019-05-14T14:39:47+00:00"
+description = ""
 draft = true
 featured = false
-featured-image = "ami.png"
+featured-image = ""
 layout = "single"
 thumbnail-image = true
-title = "AWS AMI Management—A Lifecycle Strategy With Best Practices"
-url = "/aws-ami-management/"
+title = "Metricly’s Guide to Cost Optimization for AWS (or any) Cloud"
+url = ""
 
 +++
-[Amazon's Elastic Compute Cloud (EC2)](/ec2-instances/) is one of the foundational services that launched Amazon Web Services (AWS) into the successful Cloud empire of today. When Amazon announced its new EC2 service in 2006, the Amazon Machine Image (AMI) was the virtual appliance which would define and create virtual machines on the platform.
+Like everyone else these days, you are probably running most of your workloads in AWS or another cloud. And like everyone else these days, you are probably struggling to control your AWS cloud computing costs.
 
-If you've deployed applications on EC2, your deployment process would have included the creation of an AMI. Each new version of your application which you build and deploy to AWS has a unique AMI associated with it. As DevOps teams embrace continuous integration and deployment (CI/CD), a surfeit of AMIs ensues.
+If so, keep reading. This article discusses why AWS cost optimization is hard, then offers tips on optimizing costs for AWS and other clouds.
 
-In this article, we're going to talk about best practices associated with managing your organization's AMI collection. We're going to start by looking at what goes into an AMI, and we'll talk about recommended practices surrounding the creation of new AMIs, including golden AMIs and the golden AMI pipeline. Finally, we'll discuss strategies for retention and decommissioning of old AMIs.
+## Why the cloud is like email...
 
-### Anatomy of an AMI
+The cloud is to money what email is to time.
 
-An AMI is made up of several core components.
+In theory, email is an opportunity to save lots of time. It allows information to travel quickly, and reduces the need to meet in person or go through the ritual of a phone call in order to communicate with a colleague.
 
--   Pointer to the default kernel
+As pretty much anyone living in the twenty-first century knows, however, email can end up being a [huge time sink](https://www.forbes.com/sites/annabelacton/2017/07/13/innovators-challenge-how-to-stop-wasting-time-on-emails/#675a14149788) if you don’t approach it in a wise way. The time you spend sorting through emails, trying to remember which ones you’ve answered, and following up on messages that have not received a response can quickly outweigh the time email saves you, unless you have a disciplined plan in place for using email efficiently.
 
-AMIs include a pointer to the kernel on which to create an EC2 instance. Since its inception, this collection of available kernels has grown from a single Linux option to multiple flavors of Linux and Windows.
+In a similar way, cloud computing theoretically saves businesses money by allowing them to avoid the costs of purchasing and maintaining physical hardware. It also enables seamless scalability.
 
--   Template for the root volume
+But when it comes to the real world, realizing the cost benefits of the cloud is easier said than done. If you allocate more resources than are required for a given workload, you’ll be spending money unnecessarily (and if you under-provision, you risk performance problems, so most engineers end up erring on the side of over-provisioning). The same thing happens if you choose the wrong kind of cloud service for your needs.
 
-The template defines all libraries, application servers, and applications which the root volume requires.
+To make matters worse, cloud computing vendors don’t go out of their way to help you right-size your workloads or identify opportunities to save money. (You can’t blame them; they’re in the business of making money, and helping customers pay less does not make for a strong business model.) They provide basic monitoring tools and billing reports.
 
--   Block device mapping for attached storage
+## The six phases of AWS cost optimization
 
-Defines the Elastic Block Storage (EBS) volumes which are to be attached to the new EC2 instance.
+Fortunately, by taking advantage of the data that you can pull from your cloud computing environment and bills, and implementing the right communication strategies and processes within your organization, it’s possible to achieve cost optimization in the cloud.
 
--   Launch control permissions
+To help in that endeavor, Metricly has prepared an eBook, “The 6 Phases of Cloud Cost Management,” that identifies six specific steps or policies that developers and IT teams can take to help optimize AWS or other cloud costs.
 
-Permissions define the AWS accounts which can use the AMI to launch new instances.
+The phases include:
 
-AMIs are stored in AWS S3 after being compressed and encrypted. There is a small charge associated with this storage.
+1. **Efficiency Benchmarking**: Coordinating across teams and updating management
+2. **Bill analysis**: Catching and preventing end-of-the-month surprises
+3. **Idle resources**: Discovering wasted spend that’s safest to remove
+4. **Right-sizing**: Addressing your over-allocated resources and planning for auto-scale
+5. **Purchase planning**: Striking a balance between deep savings and infrastructure agility
+6. **Capacity monitoring**: Detecting performance bottlenecks before your users
 
-### A Tale of Two AMIs
+Let’s walk through what each of these disciplines entails.
 
-There are two different types of AMIs we are concerned with in this article. The first type is known as a master image, base image or golden image. We'll be referring to this as a "golden AMI" in this article.
+### Efficiency Benchmarking
 
-A golden image is created with a stable version of the operating system and includes all of the latest security patches. Organizations typically include common services in this AMI that are applicable for all applications. Examples of these types of services are:
+This discipline refers to the way that you organize resources and information within your company in order to help optimize cloud costs. In an organization of any size, it can be easy for information to fall through the cracks, or for different departments to fail to communicate efficiently with each other. This makes it hard for team members to identify which cloud resources they are currently using, what the associated costs are, and whether there are opportunities for cost optimization. Auditing and reporting on this topic is also difficult if information is not managed effectively.
 
--   Monitoring agents, such as [StatsD](https://github.com/statsd/statsd), Diamond agent, Java agent, and other services which report on the health and performance of the instance and its hosted applications.
+As Metricly’s eBook explains, there are several specific steps that businesses can take to help improve Efficiency Benchmarking in ways that lead to better cloud computing cost optimization:
 
--   Security agents which control access to the instance and monitor processes for unauthorized access and modification.
+* **Tagging**: By tagging your AWS resources or other cloud resources, you create an easy way of identifying how much your various applications are costing your organization. You can then plan for transparency or even charge-back. You also gain visibility into which resources are running, and you can map their relationships to each other. You don’t have to rely on team members to remember what they set up (and communicate it in an ad hoc fashion). Using a tool to enforce tagging rules is a great way to avoid mis-tagging resources, which can lead to a great deal of confusion.
+* **Efficiency indexing**: This is a feature offered in Metricly that provides a score for your overall cloud computing cost efficiency. By using your Efficiency Index to track your cloud’s cost performance, you can more easily determine whether your efforts to optimize AWS costs are paying off at the level of per-unit economics, even if your overall cloud footprint increases in size.
+* **Benchmarking**: To get a full picture of how well your cloud cost optimization efforts are paying off, it’s helpful to be able to compare yourself to others. Metricly allows you to track how your Efficiency Index compares to that of anonymized businesses similar to yours, so that you can place your performance within a real-world context.
 
--   Log forwarding agents
+### Bill analysis
 
-Corporations may also include application servers and frameworks within their golden AMIs. The new golden AMI is added to a golden registry, which can then be accessed by the development teams to obtain the latest version of the golden AMI.
+Your cloud computing bill from AWS or other cloud providers offer helpful tools to analyze your overall cost, but getting proactive saved reports, detecting sudden changes, or analyzing your cost on a per-instance level is challenging using these tools.
 
-The second type of AMI is an "application AMI." When a new version of an application is ready to be deployed, the team starts a new instance based on the latest version of the golden AMI. The application and any dependencies are added to the instance, which is then used to create the latest version of the application.
+With Metricly, you can take a more systematic approach to bill analysis. Metricly allows you to drill down into specific cost categories and identify change over time. You can also configure email reports, which act as alerts to notify you when your spend within certain subcategories changes suddenly. This helps you to avoid an end-of-month surprise.
 
-Development teams typically use a deployment pipeline to automate the process of creating new application AMIs. The pipeline automatically retrieves the latest version of the golden AMI from the registry, and after the new Application AMI is created, the pipeline deploys into the cloud environment and executes automated integration and performance tests against the new image.
+### Idle resources
 
-### Why You Need an AMI Management Strategy
+Finding and addressing idle resources (meaning resources that are turned on but not currently being used within your cloud workload) is an easy step toward reducing costs. Metricly helps you do this by sending automatic notifications when a resource becomes idle or detached.
 
-As engineers improve applications and their underlying systems, each new AMI should represent an incremental improvement over previous versions. An effective AMI management strategy acknowledges this fact, but also recognizes that bugs can make it through the review process and automated testing suites and end up in the production environment. Providing development teams with access to prior versions of an application supports troubleshooting, auditing and rollback efforts as needed.
+By identifying idle resources immediately, your team can take prompt action to shut them down or move them to a less costly service tier. One of the simple benefits of Metricly’s approach is proactive emailed reports to keep it top-of-mind and not let it linger for weeks.
 
-An effective strategy should define:
+### Right-sizing
 
--   Naming and cataloging procedures for new AMIs within the organization.
+Right-sizing, or ensuring that your cloud resources are sufficiently provisioned to ensure proper performance (while at the same time not being over-provisioned), is a complex discipline. Attempting to do it by hand is not feasible — not only because it would require so much manual effort, but also because there are so many AWS configurations, and so much real-time data to interpret, that engineers cannot reasonably be expected to set the right size for every resource in various computing dimensions within a fast-changing cloud environment.
 
--   An appropriate retention policy for AMIs which also addresses any legal and regulatory requirements.
+Metricly helps to automate the process by analyzing your cloud workloads in real time and making recommendations for right-sizing them while considering long term workload patterns. Metricly’s analysis is especially important to help you allocate resources appropriately prior to committing to a long-term reservation.
 
--   A refresh policy based on new versions of the golden AMI. Even if an application isn't regularly updated, it may still benefit from being rebuilt using more recent versions of the underlying operating systems and services.
+### Purchase planning
 
-An effective strategy preserves AMIs which may still be required for the system and removes AMIs which are expired, out of date, and don't have the latest versions of security patches and monitoring and security agents.
+Taking advantage of AWS Reserved Instances is a great strategy for AWS cost optimization. However, the challenge is determining how many resources to reserve before you commit. If you choose too little, you won’t have enough reservations to cover a high enough percentage of your resources; too many, and you will be stuck paying for what you won’t even be running, undercutting the value of choosing a Reserved Instance in the first place.
 
-### The Golden AMI Pipeline
+Metricly can help in two ways. First, we analyze your instance usage on an hourly (instead of daily) basis to prevent you from over-buying during peak hours or being stuck with unused reservations during off-peak hours. Second, with every standard product subscription, Metricly offers Premier support services, which provide hands-on support for choosing the right reservation purchasing strategy.
 
-Amazon and some of their customers have collaborated to define a formal process for creating golden AMIs. In May of 2018, Amazon [announced](https://aws.amazon.com/blogs/awsmarketplace/announcing-the-golden-ami-pipeline/) a formalized golden AMI pipeline. The pipeline consists of sample configurations which are available for customers to use and adapt to meet their needs. The high-level workflow below describes the process for creating, publishing and decommissioning golden AMIs.
+### Capacity monitoring
 
-![](https://lh6.googleusercontent.com/BkClrGJFa0DQ7E-F8t1NOt0DxI64mM_18ogHwA-Z2E8HOYRxgDmPgibBje3VJGwdkIJQkrWqMP_JhD_ZRMVDdQjxxjVw0RIUodLJJXOXV2ImB5j5-UUD0aSXwGxw8WvA7QCfBO--)
+Capacity monitoring allows you to pinpoint performance bottlenecks as you right-size your environment, which minimizes your risk. This discipline not only helps to resolve performance problems before they impact end-users, but also to gain confidence that problems will be detected quickly should you make a configuration change to a cloud resource that leads to a performance bottleneck.
 
-Fig. 1 Golden AMI Pipeline. Source: [aws.amazon.com](https://aws.amazon.com/blogs/awsmarketplace/announcing-the-golden-ami-pipeline/)
+Metricly offers built-in capacity monitoring algorithms that use machine learning to identify bottlenecks and send notifications accordingly. Alerting policies are based on industry best practices, so you’ll get meaningful alerts without having to configure them manually; you can, however, customize the alerting policies if you choose.
 
-The pipeline is implemented using CloudFormation templates, and is available from the [Golden AMI Pipeline](https://github.com/aws-samples/aws-golden-ami-pipeline-sample) GitHub repository. A [step-by-step guide](https://github.com/aws-samples/aws-golden-ami-pipeline-sample/blob/master/Golden-AMI-Pipeline-Guide%20V1.0.pdf) walks you through all of the necessary steps to build your golden AMI pipeline. We'll review the construction and components of the pipeline below.
+## Metricly Premier Service
 
-### Infrastructure as Code with CloudFormation
+As noted above, Metricly offers [Premier support service](https://www.metricly.com/premier-services/) with every standard subscription. By providing personalized support for project planning and cost-analysis coaching from our team of experts, Premier service is another way that Metricly helps organizations optimize cost in complex cloud environments.
 
-Infrastructure as Code, or IaC, is the process of defining the infrastructure requirements for an application in a standard and machine-readable format. These requirements are included in the version-control repository for the project, ensuring that users can provision the technology stack for an application, and then deploy the application on that stack.
+## Learn more about mastering AWS cost optimization
 
-IaC reduces the cost of manually configuring infrastructure, and removes most or all of the frustrations associated with setting up a new environment. AWS uses CloudFormation as its IaC implementation. You can create a CloudFormation template using standard JSON or YAML format. The templates are uploaded to AWS, and then used to provision and configure the stacks and resources defined in the templates.
-
-### Components of the Golden AMI Pipeline
-
-The golden AMI pipeline consists of the following components:
-
--   Identification of a suitable starting AMI. You can select this AMI from the AWS marketplace. The AMI-ID of the latest version is used to configure the pipeline.
-
--   A cross-account IAM role defined in  [CloudFormation template](https://raw.githubusercontent.com/aws-samples/aws-golden-ami-pipeline-sample/master/Golden-AMI-Cross-Account-Role.json). Prompts ask for account specific information.
-
--   The pipeline environment, also defined in a [CloudFormation template](https://raw.githubusercontent.com/aws-samples/aws-golden-ami-pipeline-sample/master/Gold-AMi-Stack-CFT-CI.json). Prompts ask you to define options, such as the appropriate instance type and Amazon Inspector inspection frequency.
-
--   You can also include a custom CloudFormation template to install monitoring and security agents on the new instance. A sample [CloudFormation template](https://raw.githubusercontent.com/aws-samples/aws-golden-ami-pipeline-sample/master/simpleEC2-SSMParamInput.json) demonstrates adding an SSH key pair, defining an ingress port, and limiting SSH access to a defined range of IP addresses.
-
-Once you've provisioned the infrastructure for your pipeline, you can initiate a new golden AMI build process from the [AWS System Manager - Automation Dashboard](https://console.aws.amazon.com/systems-manager/automation). After selecting the newly created automation action, you can select Execute Automation. Many of the input parameters have default values already set, and all you'll need to provide are the source AMI-ID, preferred instance size, and the name of the AMI you'll be creating.
-
-The infrastructure provisioned by the CloudFormation templates we executed before create a new instance using the provided AMI-ID. The pipeline updates all patches and libraries on the instance. When the update is complete, the custom CloudFormation template is executed on the instance.
-
-The complete and hardened instance is now used to create a new golden AMI which is tagged with the name and version defined by the automation. The new AMI is now used to create an instance which has the Amazon Inspector installed on it. The [Amazon Inspector](https://aws.amazon.com/inspector/) performs a security assessment; the results are emailed to the originator of the process.
-
-Based on the inspection frequency defined by the pipeline, the Amazon Inspector conducts periodic inspections of the golden AMI.  The originator is notified when security patches are required and when dependencies need to be updated. When this occurs, the pipeline can be used to create a new, updated version of the golden AMI.
-
-### Benefits of the Golden AMI Pipeline
-
-Organizations which use a formalized golden AMI pipeline improve the quality and security of their golden AMIs. Development teams can also be confident that they have access to a secure, stable and hardened image on which to deploy their applications.
+The cloud cost optimization tips that we’ve outlined above represent just a summary of the information you’ll find in “The 6 Disciplines of Cloud Cost Management.” For details and more tips on reducing your cloud-computing bill without compromising performance, check out the free eBook.
