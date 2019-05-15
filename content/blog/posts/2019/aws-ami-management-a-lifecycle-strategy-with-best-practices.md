@@ -90,6 +90,8 @@ Right-sizing, or ensuring that your cloud resources are sufficiently provisioned
 
 Metricly helps to automate the process by analyzing your cloud workloads in real time and making recommendations for right-sizing them while considering long term workload patterns. Metricly’s analysis is especially important to help you allocate resources appropriately prior to committing to a long-term reservation.
 
+![](/ec2 recommendations.png)
+
 ### Purchase planning
 
 Taking advantage of AWS Reserved Instances is a great strategy for AWS cost optimization. However, the challenge is determining how many resources to reserve before you commit. If you choose too little, you won’t have enough reservations to cover a high enough percentage of your resources; too many, and you will be stuck paying for what you won’t even be running, undercutting the value of choosing a Reserved Instance in the first place.
