@@ -64,11 +64,15 @@ As Metricly’s eBook explains, there are several specific steps that businesses
 
 Most cloud providers offer their own helpful tools to analyze your overall cost, but getting proactive saved reports, detecting sudden changes, or analyzing your cost on a per-instance level is challenging using these tools.
 
+![](/cost dashboard.png)
+
 With Metricly, you can take a more systematic approach to bill analysis. Metricly allows you to drill down into specific cost categories and identify change over time. You can also configure email reports, which act as alerts to notify you when your spend within certain subcategories changes suddenly. This helps you to avoid an end-of-month surprise.
 
 ### Idle resources
 
 Finding and addressing idle resources (meaning resources that are turned on but not currently being used within your cloud workload) is an easy step toward reducing costs. Metricly helps you do this by sending automatic notifications when a resource becomes idle or detached.
+
+![](/left-nav-cost-manage-idle-1.png)
 
 By identifying idle resources immediately, your team can take prompt action to shut them down or move them to a less costly service tier. One of the simple benefits of Metricly’s approach is proactive emailed reports to keep it top-of-mind and not let it linger for weeks.
 
