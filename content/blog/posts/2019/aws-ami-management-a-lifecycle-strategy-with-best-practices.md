@@ -45,6 +45,8 @@ The phases include:
 5. **Right Sizing**: Addressing your over-allocated resources and planning for auto-scale
 6. **Planned Purchases**: Striking a balance between deep savings and infrastructure agility
 
+![Outlines the steps of cost optimization](/Group 8.jpg "Cloud Cost Journey")
+
 Let’s walk through what each of these phases entails.
 
 ### Efficiency Benchmarking
