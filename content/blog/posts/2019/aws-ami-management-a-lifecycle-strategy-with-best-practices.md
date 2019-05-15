@@ -98,6 +98,8 @@ Taking advantage of AWS Reserved Instances is a great strategy for AWS cost opti
 
 Metricly can help in two ways. First, we analyze your instance usage on an hourly (instead of daily) basis to prevent you from over-buying during peak hours or being stuck with unused reservations during off-peak hours. Second, with every standard product subscription, Metricly offers Premier support services, which provide hands-on support for choosing the right reservation purchasing strategy.
 
+![](/purchase planning.png)
+
 ## Metricly Premier Service
 
 As noted above, Metricly offers [Premier support service](https://www.metricly.com/premier-services/) with every standard subscription. By providing personalized support for project planning and cost-analysis coaching from our team of experts, Premier service is another way that Metricly helps organizations optimize cost in complex cloud environments.
