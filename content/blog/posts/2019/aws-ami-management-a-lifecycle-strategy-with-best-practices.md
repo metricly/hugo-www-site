@@ -82,6 +82,8 @@ Capacity monitoring allows you to pinpoint performance bottlenecks as you right-
 
 Metricly offers built-in capacity monitoring algorithms that use machine learning to identify bottlenecks and send notifications accordingly. Alerting policies are based on industry best practices, so you’ll get meaningful alerts without having to configure them manually; you can, however, customize the alerting policies if you choose.
 
+![](/left-nav-monitoring-alerts-1.png)
+
 ### Right-sizing
 
 Right-sizing, or ensuring that your cloud resources are sufficiently provisioned to ensure proper performance (while at the same time not being over-provisioned), is a complex phase. Attempting to do it by hand is not feasible — not only because it would require so much manual effort, but also because there are so many AWS configurations, and so much real-time data to interpret, that engineers cannot reasonably be expected to set the right size for every resource in various computing dimensions within a fast-changing cloud environment.
