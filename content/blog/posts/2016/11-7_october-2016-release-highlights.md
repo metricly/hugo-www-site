@@ -6,6 +6,7 @@ description: "Metricly’s October 2016 release highlights include improvements 
 category: "Cloud Monitoring"
 url: "/october-2016-release-highlights/"
 layout: "single"
+draft: true
 ---
 
 While fall settles in outside, Metricly focused on improving some of our most popular integrations and monitoring packages as well as adding support for a new integration.
