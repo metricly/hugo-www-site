@@ -13,7 +13,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "index": "node algolia-index.js",
     "hugo": "hugo",
-    "fullbuild": "hugo && index"
+    "fullbuild": "hugo && npm run index"
   },
   "repository": {
     "type": "git",
