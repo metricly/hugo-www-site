@@ -8,3 +8,5 @@ staticDir = ["static", "blog-page/dist"]
   category = "category"
   tag = "tags"
 metaDataFormat = "yaml"
+[outputs]
+  home = ["HTML", "JSON"]
