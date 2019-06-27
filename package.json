@@ -1,0 +1,28 @@
+{
+  "name": "hugo-www-site",
+  "version": "1.0.0",
+  "description": "",
+  "main": "build-scripts.js",
+  "dependencies": {
+    "algoliasearch": "^3.33.0",
+    "fuse.js": "^3.4.5",
+    "gulp": "^4.0.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "index": "node algolia-index.js",
+    "hugo": "hugo",
+    "fullbuild": "hugo && index"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/metricly/hugo-www-site.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/metricly/hugo-www-site/issues"
+  },
+  "homepage": "https://github.com/metricly/hugo-www-site#readme"
+}
