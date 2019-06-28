@@ -1039,3 +1039,36 @@ nav[data-toggle=toc] .nav-link.active+ul {
     height: 98px;
     margin: -98px 0 0;
 }
+
+// Algolia Search
+form.ais-SearchBox-form {
+    padding: 10px 20px;
+    border: 1px solid;
+    border-radius: 30px;
+    display: flex;
+}
+input.ais-SearchBox-input {
+    width: 100%;
+    color: #33cfb8;
+}
+//Hide search button
+button.ais-SearchBox-submit {
+    order: -1;
+    margin-right: 8px;
+}
+span.ais-SearchBox-loadingIndicator {
+    margin-left: 10px;
+}
+.ais-Hits {
+    text-align: left;
+}
+.ais-Hits.ais-Hits--empty {
+    padding: 20px 30px;
+}
+li.ais-Hits-item {
+    padding: 20px 30px;
+}
+li.ais-Hits-item:hover {
+    background: #ecf4fb;
+    transition: background 0.2s ease;
+}
