@@ -14,22 +14,33 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="msapplication-config" content="/favicons/browserconfig.xml">
     <meta name="theme-color" content="#ffffff">
+
+    <!-- Font links & Cookie Script -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-6jHF7Z3XI3fF4XZixAuSu0gGKrXwoX/w3uFPxC56OtjChio7wtTGJWRW53Nhx6Ev" crossorigin="anonymous">
     <script src="/js/cookies.js"></script>
+
+
     {{ if .Params.nofollow }}
       <!-- No Follow If Enabled  -->
       <meta name="robots" content="noindex" />
     {{ end }}
 
+    <!-- Title, with "- Metricly" by default  -->
     <title>{{ if .Param "custom-title" }}{{ .Title }}{{ else }}{{ .Title }} - Metricly{{ end }}</title>
-    <!-- Open Graph -->
+
+    <!-- Open Graph & Description -->
     {{ template "_internal/opengraph.html" . }}
+    <meta name="description" content="{{ .Description }}">
+
+    <!-- Featured image, if set in front matter -->
     {{ if .Param "featured-image" }}
     <meta property="og:image" content="/img/blog/small-version/{{ .Param "featured-image" }}" />
     {{ end }}
-    <!--Common Scripts -->
+
+    <!-- Common Scripts -->
     {{ partial "header/common-scripts.html" . }}
+
 
     {{if or (eq .Params.layout "blog") (eq .Params.layout "single") (eq .Params.layout "category")}}
     <!-- Blog Theme -->
