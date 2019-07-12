@@ -225,5 +225,6 @@
 /support/getting-started/managing-users/sso-login  https://docs.metricly.com/integrations/sso/
 /product /
 /product/ /
+/terms-service-paid/   /legal/terms-service-paid/
 
 http://metricly.netlify.com/* http://www.metricly.com/:splat 301!
