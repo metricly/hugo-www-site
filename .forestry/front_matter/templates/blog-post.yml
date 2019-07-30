@@ -52,3 +52,5 @@ fields:
       file: 
       path: 
   label: Category
+pages:
+- content/blog/posts/2019/aws-reserved-instances-marketplace.md
