@@ -15,9 +15,6 @@ fields:
   name: description
   label: description
 - type: text
-  name: category
-  label: category
-- type: text
   name: url
   label: url
 - type: text
@@ -32,3 +29,19 @@ fields:
 - type: boolean
   name: featured
   label: featured
+- name: category
+  type: select
+  default: []
+  config:
+    required: true
+    options:
+    - Cloud Cost Management
+    - DevOps
+    - Product Updates
+    - Cloud Monitoring
+    source:
+      type: simple
+      section: 
+      file: 
+      path: 
+  label: Category
