@@ -42,6 +42,8 @@
         </div>
       </div>
       {{ if .Param "featured-image" }}<img class="image shadow" src="/img/blog/{{ .Param "featured-image" }}" alt="post image">
+      {{ else if .Param "new-featured-image" }}
+<img class="image shadow" src="{{ .Param "new-featured-image" }}" alt="post image">
       {{ else }}
       <!-- Insert Div as space for no image -->
       <div class="pb-md-5"></div>

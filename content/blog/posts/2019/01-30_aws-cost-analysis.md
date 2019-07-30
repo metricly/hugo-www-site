@@ -1,17 +1,16 @@
 ---
 author: Lawrence Lane
-date: 2019-01-30 00:00:00 +0000
-title: 'AWS Cost Analysis: Exploring Your Cost Deltas'
-description: Learn the best AWS cost analysis techniques, and best-practices in this
+date: "2019-01-30"
+title: "AWS Cost Analysis: Exploring Your Cost Deltas"
+description: "Learn the best AWS cost analysis techniques, and best-practices in this
   step-by-step guide. Understand large rises in your AWS spend, and find the root
-  cause of cost delta.
-category: Cloud Cost Management
+  cause of cost delta."
+category: "Cloud Cost Management"
 url: "/aws-cost-analysis/"
 layout: single
 featured-image: cost-analysis.png
 thumbnail-image: true
 featured: true
-
 ---
 ### Analyzing AWS Cost Deltas
 

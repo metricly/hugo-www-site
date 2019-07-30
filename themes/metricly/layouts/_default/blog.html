@@ -22,7 +22,18 @@
         <div class="row">
           <div class="col-lg-7 col-sm-7  post__item">
             {{ range $top1 }}
-            <a href="{{ if .Params.url }}{{ .Params.url }}{{ else }}{{ .Permalink }}{{ end }}"><img class="image img-fluid" src="/img/blog/{{ if .Param "featured-image" }}{{ if .Param "thumbnail-image" }}small-version/{{ .Param "featured-image" }}{{ else }}small-version/default.svg{{ end }}{{ else }}small-version/default.svg{{ end }}" alt="blog image"></a>
+            <a href="{{ if .Params.url }}{{ .Params.url }}{{ else }}{{ .Permalink }}{{ end }}">
+              <img class="image img-fluid" src="{{ if .Param "thumbnail" }}
+              {{ .Param "thumbnail" }}
+          {{ else if .Param "featured-image" }}
+              {{ if .Param "thumbnail-image" }}
+              /img/blog/small-version/{{ .Param "featured-image" }}
+              {{ else }}
+              /img/blog/small-version/default.svg
+              {{ end }}
+          {{ else }}
+          /img/blog/small-version/default.svg
+          {{ end }}" alt="blog image"></a>
             {{- with .Params.category }}
             {{- with $.Site.GetPage "taxonomyTerm" (printf "category/%s" (urlize .)) }}
             <a href="{{ .Permalink }}" class="title-category">{{ .Params.name }}</a>

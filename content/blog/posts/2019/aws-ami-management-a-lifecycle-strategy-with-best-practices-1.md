@@ -10,7 +10,6 @@ layout = "single"
 thumbnail-image = true
 title = "AWS AMI Management—A Lifecycle Strategy With Best Practices"
 url = "/aws-ami-management/"
-
 +++
 [Amazon's Elastic Compute Cloud (EC2)](/ec2-instances/) is one of the foundational services that launched Amazon Web Services (AWS) into the successful Cloud empire of today. When Amazon announced its new EC2 service in 2006, the Amazon Machine Image (AMI) was the virtual appliance which would define and create virtual machines on the platform.
 
