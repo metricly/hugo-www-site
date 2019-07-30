@@ -22,9 +22,14 @@ fields:
   label: layout
   hidden: true
   default: single
+- name: thumbnail
+  type: file
+  config:
+    maxSize: 250
+  label: Thumbnail
 - type: file
-  name: featured-image
-  label: featured-image
+  name: new-featured-image
+  label: Featured Image
 - type: boolean
   name: thumbnail-image
   label: thumbnail-image
