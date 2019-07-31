@@ -8,8 +8,8 @@ layout = "single"
 new-featured-image = "/metricly_marketplace-4x1.png"
 thumbnail = "/metricly_marketplace-2x1.png"
 thumbnail-image = false
-title = "Using The AWS Reserved Instances Marketplace"
-url = "/aws-reserved-instances-marketplace/"
+title = "Using The AWS Reserved Instance Marketplace"
+url = "/aws-reserved-instance-marketplace/"
 
 +++
 In a previous article, [I introduced the concept of Reserved Instances](/ec2-reserved-instance-basics/) and discussed the importance of strategic planning to ensure that your plans to save money don’t end up costing you more in the long run. In this article, we’re going to talk about the Amazon Web Services (AWS) Reserved Instance (RI) Marketplace.
