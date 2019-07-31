@@ -53,4 +53,4 @@ fields:
       path: 
   label: Category
 pages:
-- content/blog/posts/2019/test.md
+- content/blog/posts/2019/aws-reserved-instances-marketplace.md
