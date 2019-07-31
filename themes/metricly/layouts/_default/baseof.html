@@ -36,6 +36,8 @@
     <!-- Featured image, if set in front matter -->
     {{ if .Param "featured-image" }}
     <meta property="og:image" content="/img/blog/small-version/{{ .Param "featured-image" }}" />
+    {{ else if .Param "thumbnail" }}
+    <meta property="og:image" content="{{ .Param "thumbnail" }}" />
     {{ end }}
 
     <!-- Common Scripts -->
