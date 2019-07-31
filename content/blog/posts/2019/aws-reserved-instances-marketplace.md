@@ -2,22 +2,21 @@
 author = "Mike Mackrory"
 category = "Cloud Cost Management"
 date = "2019-07-30T04:00:00+00:00"
-description = ""
-draft = true
+description = "We explore what the AWS Reserved Instance (RI) Marketplace is, and how to use it. We'll also cover good-to-know restrictions, limitations, and financial considerations of using it."
 featured = false
 layout = "single"
 new-featured-image = "/metricly_marketplace-4x1.png"
 thumbnail = "/metricly_marketplace-2x1.png"
 thumbnail-image = false
-title = "AWS Reserved Instances Marketplace"
+title = "Using The AWS Reserved Instances Marketplace"
 url = "/aws-reserved-instances-marketplace/"
 
 +++
-In a previous article, I introduced the concept of Reserved Instances and discussed the importance of strategic planning to ensure that your plans to save money don’t end up costing you more in the long run. In this article, we’re going to talk about the Amazon Web Services (AWS) Reserved Instance (RI) Marketplace.
+In a previous article, [I introduced the concept of Reserved Instances](/ec2-reserved-instance-basics/) and discussed the importance of strategic planning to ensure that your plans to save money don’t end up costing you more in the long run. In this article, we’re going to talk about the Amazon Web Services (AWS) Reserved Instance (RI) Marketplace.
 
 The RI Marketplace can be a useful place to sell your excess capacity, and it can also be a handy resource if you’re looking for RI capacity with a shorter term commitment. Let’s explore the RI marketplace, and discuss everything you need to know to take full advantage of it.
 
-**Introduction to the RI Marketplace**
+### Introduction to the RI Marketplace
 
 AWS hosts the RI Marketplace, which supports the sale of Reserved Instances by AWS and third parties. Sales are limited to Amazon EC2 Standard Reserved Instances, and while instances are listed free of charge, AWS charges a 12% service fee on the total upfront price of an instance.
 
@@ -29,12 +28,11 @@ You can filter by several options, including platform, instance type, and term. 
 
 ![](https://lh3.googleusercontent.com/4qjaf6N6CXDAUorGODo2V5YmllpkjZ_2EjH09a19FK5XFD_mFyOGnZB9XMVkb7hpfKfWcx0PUd3D3xrimBUIB9e45z6uHLqq-wkf7Snb4XorjflR7d1zzMyxRBrmaQKy5fuV0g9T =624x324)_Fig. 1 Purchasing Reserved Instances from the RI Marketplace_
 
-  
 Purchasing Reserved Instances from a third party is precisely the same as purchasing directly from AWS, except that your invoice includes the name of the person or organization who listed the instance for sale.
 
 Now that we’ve looked at purchasing instances from Reserved Instance Marketplace, let’s look at what’s involved in listing your instance on the Marketplace.
 
-**Limitations and Restrictions on Selling Reserved Instances**
+### Limitations and Restrictions on Selling Reserved Instances
 
 Before we get to listing your instances, there are some limitations and restrictions of which you should be aware. You can only sell Standard Reserved Instances. Convertible Reserved Instances aren’t eligible to be listed on the Marketplace. Any instance you list needs to have at least one month left in the term. You also need to be the owner of a Reserved Instance for at least a month before you can list it.
 
@@ -45,7 +43,7 @@ Additional requirements include:
 * Reserved Instances within the GovCloud region are not eligible to be sold.
 * Your company name and address are shared with the buyer for tax purposes.
 
-**Selling Your Reserved Instances in the RI Marketplace**
+### Selling Your Reserved Instances in the RI Marketplace
 
 Assuming your instance meets the criteria listed above, the first step is to [register as a seller](https://portal.aws.amazon.com/ec2/ri/seller_registration). During this process, AWS collects information about your bank account to disburse funds following a sale, and for tax information. Tax information is used to determine if there are any tax reporting requirements related to the sale of instances by you or your organization. The screenshots below show the stages of registering your account.
 
@@ -73,12 +71,12 @@ You can list Reserved Instances for sale by navigating to the [Reserved Instance
 
 _Fig. 3 Listing a Reserved Instance for Sale_
 
-**Financial Considerations When Using The RI Marketplace**
+### Financial Considerations When Using The Reserved Instance Marketplace
 
-The RI Marketplace is an excellent option to consider if your capacity needs change, but it relies on another party purchasing the remaining term on all of your instances. As the seller, you decide on the sale price, and you should consider any upfront costs you paid as well as similarly priced instances in the market at the time.
+The Reserved Instance Marketplace is an excellent option to consider if your capacity needs change, but it relies on another party purchasing the remaining term on all of your instances. As the seller, you decide on the sale price, and you should consider any upfront costs you paid as well as similarly priced instances in the market at the time.
 
 As I mentioned above, AWS charges 12% of the upfront sale price when an instance is sold in the marketplace. The remaining amount is transferred to the bank account associated with the Marketplace account within 1-3 business days of any sales being completed. At this time you’ll receive an email from AWS with the details of the transaction.
 
 **Learning More**
 
-The AWS documentation on the [Reserved Instance Marketplace](https://aws.amazon.com/ec2/purchasing-options/reserved-instances/marketplace/) is an excellent resource for the current state of the marketplace and includes links to additional resources. If you would like more information about Reserved Instances in general, including pricing and different options, the[ AWS Reserved Instance](https://aws.amazon.com/ec2/pricing/reserved-instances/) page is beneficial. Finally, the [2019 Definitive Guide to AWS Reserved Instances](https://www.metricly.com/aws-reserved-instances/) contains everything you need to understand Reserved Instances, and how to use them effectively.
+The AWS documentation on the [Reserved Instance Marketplace](https://aws.amazon.com/ec2/purchasing-options/reserved-instances/marketplace/) is an excellent resource for the current state of the marketplace and includes links to additional resources. If you would like more information about Reserved Instances in general, including pricing and different options, the[ AWS Reserved Instance](https://aws.amazon.com/ec2/pricing/reserved-instances/) page is beneficial. Finally, Metricly's [2019 Definitive Guide to AWS Reserved Instances](/aws-reserved-instances/) contains everything you need to understand Reserved Instances, and how to use them effectively.
