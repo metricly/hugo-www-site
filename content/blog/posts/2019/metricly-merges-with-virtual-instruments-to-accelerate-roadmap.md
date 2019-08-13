@@ -13,7 +13,7 @@ title = "Metricly Merges With Virtual Instruments to Accelerate Roadmap"
 url = "/metricly-virtual-instruments/"
 
 +++
-We are excited to announce that Metricly has merged with Virtual Instruments, a leading global provider of AIOps for hybrid IT infrastructure management.
+We are excited to announce that Metricly has merged with [Virtual Instruments](https://www.virtualinstruments.com), a leading global provider of AIOps for hybrid IT infrastructure management.
 
 ### What does this mean for you?
 
@@ -39,8 +39,6 @@ We could not have reached this point on our own, and I want to thank each and ev
 
 To read the full press release from Virtual Instruments please click here.
 
-Sincerest gratitude,
-
-Bob Farzami
-
+Sincerest gratitude,  
+Bob Farzami  
 Metricly CEO
