@@ -2,7 +2,7 @@
 author = "Bob Farzami"
 category = "Product Updates"
 date = "2019-08-13T04:00:00+00:00"
-description = ""
+description = "We are excited to announce that Metricly has merged with Virtual Instruments, a leading global provider of AIOps for hybrid IT infrastructure management."
 draft = true
 featured = false
 layout = "single"
