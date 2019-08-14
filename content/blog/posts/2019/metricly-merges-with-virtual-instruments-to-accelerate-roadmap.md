@@ -36,7 +36,7 @@ This is also Virtual Instruments mission. We could not be any more philosophical
 
 We could not have reached this point on our own, and I want to thank each and every one of our users who supported us, advised us and pushed us to develop valuable new features. Our product managers, developers, support engineers, data scientists, and customer success managers are all driven to make cloud performance monitoring and cost reduction easier and safer for our customers. This commitment is stronger than ever for the next chapter of our journey.
 
-To read the full press release from Virtual Instruments please click here.
+To read the full press release from Virtual Instruments please [click here](https://www.virtualinstruments.com/virtualwisdom/virtual-instruments-metricly/).
 
 Sincerest gratitude,  
 Bob Farzami  
