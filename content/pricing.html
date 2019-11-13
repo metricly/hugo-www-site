@@ -4,10 +4,38 @@ description: "Start in minutes with our monitoring & AWS cost tools. Get a 21 da
 layout: "page"
 header-light: true
 ---
+<script>
+document.addEventListener("DOMContentLoaded", function(){
+  $( "#pricing-toggle" ).click(function() {
+    if ($("#pricing-toggle").hasClass("monthly")) {
+      console.log("click");
+        $("#pricing-toggle").html("Billed annually, show monthly<i class=\"ml-2 far fa-long-arrow-right\"></i>");
+        $("#pricing-toggle").removeClass("monthly");
+        $("#pricing-toggle").addClass("yearly");
+        $("#cost-price").html("$5");
+        $("#monitoring-price").html("$10");
+        $("#full-price").html("$15");
+      }
+
+    // Yearly, switch to monthly  
+    else if ($("#pricing-toggle").hasClass("yearly")) {
+        $("#pricing-toggle").html("<i class=\"mr-2 far fa-long-arrow-left\"></i>Back to annual");
+        $("#pricing-toggle").removeClass("yearly");
+        $("#pricing-toggle").addClass("monthly");
+        $("#cost-price").html("$6");
+        $("#monitoring-price").html("$12");
+        $("#full-price").html("$18");
+    }
+});
+});
+</script>
+<link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+<script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
 <section class="pricing pt-lg pt-lg-xl pb-md bg-green">
   <div class="container">
-    <div class="justify-content-center">
-      <h1 class="text-white text-center font-weight-light mb-5">Pick Your Metricly Plan</h1>
+    <div class="justify-content-center text-center">
+      <h1 class="text-white text-center font-weight-light">Pick Your Metricly Plan</h1>
+      <p id="pricing-toggle" class="yearly mb-5 text-white font-weight-bold" style="cursor: pointer;">Billed annually, show monthly<i class="ml-2 far fa-long-arrow-right"></i></p>
     </div>
     <div class="row">
       <!-- Free Tier -->
@@ -15,7 +43,7 @@ header-light: true
         <div class="card mb-5 mb-lg-0">
           <div class="card-body">
             <h5 id="cost-card-title" class="card-title cost-card-title text-muted text-uppercase text-center d-flex align-items-center"><img src="/img/graphics/icons/cost.svg" style="height: 35px;" class="mr-2">Cost Management</h5>
-            <h6 class="card-price text-center">$5<span class="period">/month</span></h6>
+            <h6 class="card-price text-center"><span id="cost-price">$5</span><span class="period">/month</span></h6>
             <p class="text-muted text-center">Per Host</p>
             <hr>
             <ul class="fa-ul">
@@ -38,7 +66,7 @@ header-light: true
         <div class="card mb-5 mb-lg-0">
           <div class="card-body">
             <h5 id="monitoring-card-title" class="card-title text-green text-muted text-uppercase text-center d-flex align-items-center"><img src="/img/graphics/icons/monitoring.svg" style="height: 35px;" class="mr-2">Cloud Monitoring</h5>
-            <h6 class="card-price text-center">$10<span class="period">/month</span></h6>
+            <h6 class="card-price text-center"><span id="monitoring-price">$10</span><span class="period">/month</span></h6>
             <p class="text-muted text-center">Per Host</p>
             <hr>
             <ul class="fa-ul">
@@ -61,7 +89,7 @@ header-light: true
         <div class="card">
           <div class="card-body">
             <h5 class="card-title text-green text-uppercase text-center pt-2 pb-1">All Features</h5>
-            <h6 class="card-price text-center">$15<span class="period">/month</span></h6>
+            <h6 class="card-price text-center"><span id="full-price">$15</span><span class="period">/month</span></h6>
             <p class="text-muted text-center">Per Host</p>
             <hr>
             <ul class="fa-ul">
