@@ -49,7 +49,7 @@ header-light: true
 				    <div id="demo_form" class="forms-theme-none">
 				        <div class="cb-submission cb-loaded">
 				            <div class="cb-form">
-				                <form id="ebook-form" name="ebook" data-netlify="true" method="POST" action="/ebook/success/" accept-charset="UTF-8">
+				                <form id="ebook-form" name="ebook" method="POST" action="/ebook/success/" netlify>
 				                    <div class="cb-field">
 				                        <label for="email">Work Email</label>
 				                        <input type="email" id="email" name="email" required="" autocomplete="email" value="">
@@ -82,13 +82,3 @@ header-light: true
 		</div>
 	</div>
 </section>
-<script>
-	$("#ebook-form").submit(function(e) {
-  e.preventDefault();
-
-  var $form = $(this);
-  $.post($form.attr("action"), $form.serialize()).then(function() {
-    alert("Thank you!");
-  });
-});
-</script>
