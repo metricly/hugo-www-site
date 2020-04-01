@@ -205,8 +205,8 @@
 /support/reports/asg-tuning-report	https://docs.metricly.com/right-sizing/reports-asg-recommendations/
 /support/reports/asg-tuning-report/	https://docs.metricly.com/right-sizing/reports-asg-recommendations/
 /support/reports/aws-services-cost-report-admin-guide/	https://docs.metricly.com/right-sizing/reports-cost/
-/support/reports/aws-services-cost-report-beta/	https://docs.metricly.com/right-sizing/reports-cost/
-/support/reports/aws-services-cost-report-user-guide/	https://docs.metricly.com/right-sizing/reports-cost/
+/support/reports/aws-services-cost-report-beta/	https://docs.metricly.com/billing-analysis/
+/support/reports/aws-services-cost-report-user-guide/	https://docs.metricly.com/billing-analysis/ba-guides/
 /support/reports/cost-vs-utilization	https://docs.metricly.com/right-sizing/reports-cost/
 /support/reports/cost-vs-utilization/	https://docs.metricly.com/right-sizing/reports-cost/
 /support/reports/daily-report	https://docs.metricly.com/account-admin/reports-email/
