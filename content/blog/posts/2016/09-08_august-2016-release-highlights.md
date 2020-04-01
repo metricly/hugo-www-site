@@ -45,4 +45,4 @@ The [EC2 cost savings report](https://docs.metricly.com/reports/reports-cost/) i
 
 * * * * *
 
-*Want to see all these new features in your own environment? Metricly offers a [21-day, no-obligation free trial](/signup).*
+*Want to see all these new features in your own envrionment? Metricly offers a [21-day, no-obligation free trial](/signup).*
