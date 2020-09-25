@@ -227,7 +227,6 @@
 /product/ /
 /terms-service-paid/   /legal/terms-service-paid/
 
-/signup/   https://try.cloudwisdom.virtana.com/?utm_source=metricly
-
+/signup/   https://try.cloudwisdom.virtana.com/
 http://metricly.netlify.com/* http://www.metricly.com/:splat 301!
 
