@@ -228,6 +228,6 @@
 /terms-service-paid/   /legal/terms-service-paid/
 
 /signup/   https://try.cloudwisdom.virtana.com/
-/aws-ecu-vcpu/   https://www.virtana.com/blog/aws-ecu-vcpu/
-http://metricly.netlify.com/* http://www.metricly.com/:splat 301!
 
+http://metricly.netlify.com/* http://www.metricly.com/:splat 301!
+/aws-ecu-vcpu/   https://www.virtana.com/blog/aws-ecu-vcpu/
