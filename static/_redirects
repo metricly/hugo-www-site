@@ -230,4 +230,5 @@
 /signup/   https://try.cloudwisdom.virtana.com/
 
 http://metricly.netlify.com/* http://www.metricly.com/:splat 301!
-/aws-ecu-vcpu/   https://www.virtana.com/blog/aws-ecu-vcpu/
+
+/aws-ecu-vcpu/ https://www.virtana.com/blog/aws-ecu-vcpu/
