@@ -232,3 +232,4 @@
 http://metricly.netlify.com/* http://www.metricly.com/:splat 301!
 
 /aws-ecu-vcpu/ https://www.virtana.com/blog/aws-ecu-vcpu/ 301!
+/demystifying-terminology-aws-instances/  https://www.virtana.com/blog/demystifying-terminology-aws-instances/ 301!
