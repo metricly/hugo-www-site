@@ -1,5 +1,5 @@
 # Test redirect
-/test-redirect   https://docs.metricly.com
+/test-redirect   https://docs.virtana.com/
 
 /category/release-highlights  /category/product-updates/  200
 
