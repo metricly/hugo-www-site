@@ -235,4 +235,4 @@ http://metricly.netlify.com/* http://www.metricly.com/:splat 301!
 /demystifying-terminology-aws-instances/  https://www.virtana.com/blog/demystifying-terminology-aws-instances/ 301!
 /customers/mixbook/   https://www.virtana.com/wp-content/uploads/2019/10/CS_Virtana_CW_Mixbook-2.pdf 301!
 https://www.metricly.com/*   https://www.virtana.com/ 301!
-http://netuitive.com/*  https://www.virtana.com/ 301!
+http://www.netuitive.com/*  https://www.virtana.com/ 301!
