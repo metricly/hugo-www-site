@@ -237,3 +237,5 @@ http://metricly.netlify.com/* http://www.metricly.com/:splat 301!
 https://www.metricly.com/*   https://www.virtana.com/ 301!
 https://www.netuitive.com/*  https://www.virtana.com/ 301!
 https://metricly.netlify.app/*  https://www.virtana.com/ 301!
+http://netuitive.com/*  https://www.virtana.com/ 301!
+netuitive.com/*  https://www.virtana.com/ 301!
